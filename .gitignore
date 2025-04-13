@@ -1,12 +1,6 @@
 # project files
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.cpg
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.dbf
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.prj
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.shp
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.shp.ea.iso.xml
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.shp.iso.xml
-data/cb_2022_us_county_20m/cb_2022_us_county_20m.shx
 cb_2022_us_county_20m.zip
+data/*
 
 
 # Byte-compiled / optimized / DLL files
