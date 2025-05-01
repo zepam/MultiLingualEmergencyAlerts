@@ -1,0 +1,1 @@
+Can you write an emergency text about a {DISASTER} in {LANGUAGE}?

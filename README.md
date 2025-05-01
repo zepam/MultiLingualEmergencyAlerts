@@ -16,10 +16,11 @@ DEEPSEEK_API_KEY=""
 
 Claude and Google Translate are accessed via Google. 
 
+1) Enable the Cloud Translation API in your project
 1) Download the gcloud CLI (https://cloud.google.com/sdk/docs/install)
 2) Run `gcloud init`
-3) Run `gcloud auth application-default login` to set up your credentials. This will save a credentials file in a set location based on your OS (https://cloud.google.com/docs/authentication/application-default-credentials#personal)
-4) Get your project ID and enable the Vertex AI API (https://console.cloud.google.com/apis/library/aiplatform.googleapis.com) and the Claude 3.7 Sonnet API (https://console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-3-7-sonnet)
+3) Run `gcloud auth application-default login` to set up your credentials. This will save a credentials file in a set location based on your OS (https://cloud.google.com/translate/docs/authentication#user-credentials-adc)
+4) (If needed; gcloud init will generally handle this for you) Get your project ID and set a billing quota (https://cloud.google.com/docs/authentication/troubleshoot-adc#user-creds-client-based); make sure your user has an IAM role for "service usage" (https://cloud.google.com/docs/authentication/troubleshoot-adc)
 
 ### Microsoft Azure setup
 

@@ -1,8 +1,7 @@
 import os
 from dotenv import load_dotenv
 from google import genai
-from anthropic import AnthropicVertex
-from google.cloud import translate_v2
+from google.cloud import translate_v2 as translate
 from openai import AzureOpenAI
 from openai import OpenAI
 
@@ -17,42 +16,44 @@ response = client.models.generate_content(
 )
 print(response.text) """
 
-"""
-# Claude test via Vertex AI
-# https://docs.anthropic.com/en/api/claude-on-vertex-ai
-# This can't be used with the free $300 trial. Maybe the $50 student credits?
-LOCATION="us-east5"
-client = AnthropicVertex(region=LOCATION, project_id=os.getenv("VERTEX_AI_PROJECT_ID"))
-
-message = client.messages.create(
- max_tokens=1024,
- messages=[
-   {
-     "role": "user",
-     "content": "Send me a recipe for banana bread.",
-   }
- ],
- model="claude-3-7-sonnet@20250219"
-)
-print(message.model_dump_json(indent=2))
-"""
 
 # Google translate test
+translate_client = translate.Client()
+input_text = "Hello world!"
+
+if isinstance(input_text, bytes):
+    text = input_text.decode("utf-8")
+
+# Text can also be a sequence of strings, in which case this method
+# will return a sequence of results for each text.
+# See https://g.co/cloud/translate/v2/translate-reference#supported_languages
+result = translate_client.translate(input_text, target_language="es")
+
+print("Text: {}".format(result["input"]))
+print("Translation: {}".format(result["translatedText"]))
+print("Detected source language: {}".format(result["detectedSourceLanguage"]))
+
 
 # Deepseek
-# Deepseek directly costs money... try OpenRouter. 50 free requests a day? https://openrouter.ai/deepseek/deepseek-chat-v3/api
-client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url="https://api.deepseek.com")
-
-response = client.chat.completions.create(
-    model="deepseek-chat",
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant"},
-        {"role": "user", "content": "Hello"},
-    ],
-    stream=False
+"""
+client = OpenAI(
+  base_url="https://openrouter.ai/api/v1",
+  api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
-print(response.choices[0].message.content)
+completion = client.chat.completions.create(
+  model="deepseek/deepseek-chat-v3-0324:free",
+  messages=[
+    {
+      "role": "user",
+      "content": "What is the meaning of life?"
+    }
+  ]
+)
+gcloud auth application-default print-access-token
+
+print(completion.choices[0].message.content)
+"""
 
 # ChatGPT via Azure
 """

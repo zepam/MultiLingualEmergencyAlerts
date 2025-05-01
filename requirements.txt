@@ -1,6 +1,5 @@
 # packages for API access
 google-genai
-anthropic[vertex]
 google-cloud-translate==2.0.1
 openai
 
