@@ -5,11 +5,11 @@
 To run `collect_responses`, you'll need to configure several environmental variables for API access inside a file called `.env`.
 
 ```
-GEMINI_API_KEY="" # https://aistudio.google.com/app/apikey
-VERTEX_AI_PROJECT_ID="" # https://cloud.google.com/vertex-ai?hl=en
+GEMINI_API_KEY=""
 AZURE_OPENAI_API_KEY=""
 AZURE_OPENAI_ENDPOINT=""
-DEEPSEEK_API_KEY=""
+AZURE_DEPLOYMENT_NAME=""
+OPENROUTER_API_KEY=""
 ```
 
 ### Google setup
@@ -28,7 +28,7 @@ ChatGPT is accessed via Azure.
 
 1) Within the Azure online console, create an OpenAI account
 2) Go to the Azure AI Foundry and deploy an instance of GPT-4o; I did "global standard" as the deployment option as it seemed to be the only one I could with my quota and chose version "2024-12-01-preview". Whichever name you choose for this deployment needs to go in `AZURE_DEPLOYMENT_NAME`
-3) Once it deploys, you should see your endpoint and API key. These are `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`.
+3) Once it deploys, you should see your endpoint and API key. These are your `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`.
 
 ### DeepSeek setup
 
