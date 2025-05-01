@@ -27,7 +27,8 @@ Claude and Google Translate are accessed via Google.
 ChatGPT is accessed via Azure.
 
 1) Within the Azure online console, create an OpenAI account
-2) Once your service deploys, navigate to it and click "Keys and Endpoint" under the "Resource Management" menu item. You can use either key 1 or key 2 as your `AZURE_OPENAI_API_KEY`; your `AZURE_OPENAI_ENDPOINT` is also on this page.
+2) Go to the Azure AI Foundry and deploy an instance of GPT-4o; I did "global standard" as the deployment option as it seemed to be the only one I could with my quota and chose version "2024-12-01-preview". Whichever name you choose for this deployment needs to go in `AZURE_DEPLOYMENT_NAME`
+3) Once it deploys, you should see your endpoint and API key. These are `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`.
 
 ### DeepSeek setup
 
