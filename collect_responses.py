@@ -10,14 +10,12 @@ if __name__ == "__main__":
   load_dotenv()
 
   gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"))
-  gemini_client.chat("prompts/prompt_simple.txt")
-
-  # Gemini test
-  """ client = genai.Client(api_key=gemini_key)
-  response = client.models.generate_content(
-      model="gemini-2.0-flash", contents="Explain how AI works in a few words"
+  gemini_client.chat(
+    prompt_files=["prompts/prompt_simple.txt"],
+    language="Spanish",
+    disaster="tornado"
   )
-  print(response.text) """
+
 
 
   """
