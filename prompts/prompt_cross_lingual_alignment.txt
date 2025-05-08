@@ -1,0 +1,1 @@
+Imagine you are an expert in multilingual understanding in {LANGUAGE}. Write a short emergency alert, no more than 100 words, about {DISASTER}. Include a field for [TIME], [LOCATION], and a [URL] for more information so it can be customized. The alert doesn’t need a header, just a message body. Let’s understand the task step by step in English!

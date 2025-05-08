@@ -1,0 +1,5 @@
+Write a short emergency alert, no more than 100 words, about {DISASTER} in {LANGUAGE}. Include a field for [TIME], [LOCATION], and a [URL] for more information so it can be customized. The alert doesn’t need a header, just a message body.
+
+For example, here’s how the English template might look for a tornado: 
+
+[SENDING AGENCY]: A TORNADO EMERGENCY is in effect for [LOCATION] until [TIME]. Tornado spotted in this area. This is a life-threatening situation. Take shelter now in a basement or an interior room on the lowest floor of a sturdy building. If you are outdoors, in a mobile home, or in a vehicle, move to the closest sturdy shelter and protect yourself from flying objects. Check media. [URL]

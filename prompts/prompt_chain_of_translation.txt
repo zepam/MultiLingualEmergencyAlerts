@@ -1,0 +1,4 @@
+Write a short emergency alert, no more than 100 words, about {DISASTER} in {LANGUAGE}. Include a field for [TIME], [LOCATION], and a [URL] for more information so it can be customized.The alert doesn’t need a header, just a message body. Perform the following steps:
+
+Generate the template in English first
+Translate it to {LANGUAGE} and output it”

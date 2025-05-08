@@ -5,6 +5,40 @@ from clients.deepseek import DeepSeekClient
 from clients.chatgpt import ChatGPTClient
 from clients.cloud_translation import GoogleCloudTranslationClient
 
+PROMPT_FILES = [
+  "prompts/prompt_simple.txt",
+  "prompts/prompt_chain_of_translation.txt",
+  "prompts/prompt_one_shot.txt",
+  "prompts/prompt_cross_lingual_alignment.txt",
+  "prompts/prompt_persona.txt"
+]
+
+LANGUAGES = [
+  "Spanish",
+  "Arabic",
+  "Mandarin",
+  "Vietnamese",
+  "Haitian Creole"
+]
+
+DISASTERS = [
+  # standard disasters
+  "a tornado",
+  "a flood",
+  "extreme wind",
+  "a wildfire or fire",
+  "a boil water notice",
+  "a 911 outage",
+
+  # new disasters
+  "an alien invasion",
+  "a meteor strike",
+  "a nuclear power plant warning",
+  "a volcanic eruption",
+  "a contagious disease called SARD-26",
+  "a dam break"
+]
+
 def chat_gemini():
   gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"))
   gemini_client.chat(
