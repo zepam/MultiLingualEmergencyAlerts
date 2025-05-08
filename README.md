@@ -32,4 +32,4 @@ ChatGPT is accessed via Azure.
 
 ### DeepSeek setup
 
-Create an API key: https://platform.deepseek.com/api_keys
+Sign up to OpenRouter and create an API key: https://openrouter.ai/settings/keys
