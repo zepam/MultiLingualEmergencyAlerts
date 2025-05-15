@@ -6,14 +6,21 @@ class GoogleCloudTranslationClient(Client):
     def __init__(self, key="blah"):
         super().__init__(key)
 
-    def chat(self, prompt_files, disaster, language, sending_agency=None, location=None, time=None, url=None):
-        prompts = self.gather_prompts(prompt_files=prompt_files, disaster=disaster, language=language, sending_agency=sending_agency, location=location, time=time, url=url)
-        for prompt in prompts:
-            translate_client = translate.Client()
+    def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
+        prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language, sending_agency=sending_agency, location=location, time=time, url=url)
+        translate_client = translate.Client()
 
-            # Text can also be a sequence of strings, in which case this method
-            # will return a sequence of results for each text.
-            # See https://g.co/cloud/translate/v2/translate-reference#supported_languages
-            result = translate_client.translate(prompt, target_language=language)
+        language_code = self.translation_map()[language]
+        result = translate_client.translate(prompt, target_language=language_code)
 
-            print("Translation: {}".format(result["translatedText"]))
+        return result["translatedText"]
+
+    # See https://g.co/cloud/translate/v2/translate-reference#supported_languages
+    def translation_map(self):
+        return {
+            "Spanish": "es",
+            "Arabic": "ar",
+            "Haitian Creole": "ht",
+            "Vietnamese": "vi",
+            "Mandarin": "zh"
+        }
