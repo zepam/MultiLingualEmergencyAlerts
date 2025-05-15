@@ -9,22 +9,23 @@ class ChatGPTClient(Client):
         self.azure_model = "2024-12-01-preview"
         self.deployment_name = deployment_name
 
-    def chat(self, prompt_files, disaster, language, sending_agency=None, location=None, time=None, url=None):
-        prompts = self.gather_prompts(prompt_files=prompt_files, disaster=disaster, language=language, sending_agency=sending_agency, location=location, time=time, url=url)
-        for prompt in prompts:
-            client = AzureOpenAI(
+    def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
+        prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language, sending_agency=sending_agency, location=location, time=time, url=url)
+        client = AzureOpenAI(
             azure_endpoint=self.base_url, 
             api_key=self.key,  
             api_version=self.azure_model
         )
 
-        # roles: system, user, assistant...which one? System?
         response = client.chat.completions.create(
             model=self.deployment_name,
             messages=[
                 {"role": "user", "content": prompt}
-            ]
+            ],
+            temperature=self.temperature,
+            max_tokens=self.max_tokens,
+            top_p=self.top_p
         )
 
-        print(response.choices[0].message.content)
+        return response.choices[0].message.content
 
