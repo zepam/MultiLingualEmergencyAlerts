@@ -170,13 +170,13 @@ if __name__ == "__main__":
     }
   }
 
-  for language in LANGUAGES:
+  for language in ["Haitian Creole"]: # LANGUAGES
     if language == "Haitian Creole":
       language_name = "haitian_creole"
     else:
       language_name = language.lower()
 
-    for disaster in DISASTERS:
+    for disaster in ["a fire"]: # DISASTERS
       disaster_name = disaster.replace("a ", "").replace(" ", "_")
       for prompt in ["prompts/prompt_simple.txt"]: # PROMPT_FILES
         prompt_name = prompt.replace("prompts/", "")
@@ -184,16 +184,16 @@ if __name__ == "__main__":
         #gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt)
         #output_json["gemini"][language_name][disaster_name][prompt_name] = gemini_output
 
-        #chatgpt_output = chat_chatgpt(language=language, disaster=disaster, prompt=prompt)
-        #output_json["chatgpt"][language_name][disaster_name][prompt_name] = chatgpt_output
+        chatgpt_output = chat_chatgpt(language=language, disaster=disaster, prompt=prompt)
+        output_json["chatgpt"][language_name][disaster_name][prompt_name] = chatgpt_output
 
         #deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt)
         #output_json["deepseek"][language_name][disaster_name][prompt_name] = deepseek_output
 
       prompt_file = f"prompts/{disaster_name}.txt"
 
-      google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file)
-      output_json["google_translate"][language_name][disaster_name] = google_translate_output
+      #google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file)
+      #output_json["google_translate"][language_name][disaster_name] = google_translate_output
 
   with open('responses.json', 'w', encoding='utf-8') as f:
     json.dump(output_json, f, ensure_ascii=False, indent=4)

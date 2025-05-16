@@ -2,7 +2,7 @@
 class Client:
     def __init__(self, key):
         self.key = key
-        self.temperature = 0.7
+        self.temperature = 1.0
         self.max_tokens = 2048
         self.top_p = 1.0
 
