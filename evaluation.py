@@ -36,8 +36,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 "METEOR": meteor.compute(predictions=[pred], references=[ref])["meteor"],
                 "FKGL": textstat.flesch_kincaid_grade(pred),
                 "DCRS": textstat.dale_chall_readability_score(pred),
-                "CLI": textstat.coleman_liau_index(pred),
-                "LENS": textstat.linsear_write_formula(pred) #,
+                "CLI": textstat.coleman_liau_index(pred) #,
+                #"LENS": textstat.linsear_write_formula(pred) 
                 #"SummaC": summaC.score([ref], [pred])[0]
             }
             results.append(result)
