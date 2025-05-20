@@ -82,11 +82,11 @@ if __name__ == "__main__":
   load_dotenv()
 
   prompt_breakdown_json = {
-    "prompt_simple.txt": {},
-    "prompt_persona.txt": {},
-    "prompt_one_shot.txt": {},
-    "prompt_cross_lingual_alignment.txt": {},
-    "prompt_chain_of_translation.txt": {}
+    "prompt_simple.txt": [],
+    "prompt_persona.txt": [],
+    "prompt_one_shot.txt": [],
+    "prompt_cross_lingual_alignment.txt": [],
+    "prompt_chain_of_translation.txt": []
   }
 
   breakdown_json = {
@@ -133,39 +133,39 @@ if __name__ == "__main__":
     "deepseek": { **breakdown_json },
     "google_translate": {
       "spanish": { 
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
+        "flood": [],
+        "extreme_wind": [],
+        "fire": [],
+        "boil_water_notice": [],
+        "911_outage": []
       },
       "arabic": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
+        "flood": [],
+        "extreme_wind": [],
+        "fire": [],
+        "boil_water_notice": [],
+        "911_outage": []
       },
       "mandarin": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
+        "flood": [],
+        "extreme_wind": [],
+        "fire": [],
+        "boil_water_notice": [],
+        "911_outage": []
       },
       "vietnamese": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
+        "flood": [],
+        "extreme_wind": [],
+        "fire": [],
+        "boil_water_notice": [],
+        "911_outage": []
       },
       "haitian_creole": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
+        "flood": [],
+        "extreme_wind": [],
+        "fire": [],
+        "boil_water_notice": [],
+        "911_outage": []
       }
     }
   }
@@ -181,19 +181,19 @@ if __name__ == "__main__":
       for prompt in ["prompts/prompt_simple.txt"]: # PROMPT_FILES
         prompt_name = prompt.replace("prompts/", "")
         
-        #gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt)
-        #output_json["gemini"][language_name][disaster_name][prompt_name] = gemini_output
+        gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt)
+        output_json["gemini"][language_name][disaster_name][prompt_name].append(gemini_output)
 
         chatgpt_output = chat_chatgpt(language=language, disaster=disaster, prompt=prompt)
-        output_json["chatgpt"][language_name][disaster_name][prompt_name] = chatgpt_output
+        output_json["chatgpt"][language_name][disaster_name][prompt_name].append(chatgpt_output)
 
-        #deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt)
-        #output_json["deepseek"][language_name][disaster_name][prompt_name] = deepseek_output
+        deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt)
+        output_json["deepseek"][language_name][disaster_name][prompt_name].append(deepseek_output)
 
       prompt_file = f"prompts/{disaster_name}.txt"
 
-      #google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file)
-      #output_json["google_translate"][language_name][disaster_name] = google_translate_output
+      google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file)
+      output_json["google_translate"][language_name][disaster_name].append(google_translate_output)
 
   with open('responses.json', 'w', encoding='utf-8') as f:
     json.dump(output_json, f, ensure_ascii=False, indent=4)
