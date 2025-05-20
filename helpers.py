@@ -68,7 +68,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -105,7 +105,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -142,7 +142,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -179,7 +179,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -216,7 +216,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -255,7 +255,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -292,7 +292,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -329,7 +329,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -366,7 +366,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -403,7 +403,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -442,7 +442,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -479,7 +479,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -516,7 +516,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -553,7 +553,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],
@@ -590,7 +590,7 @@ def generate_output_schema():
           "prompt_cross_lingual_alignment.txt": [],
           "prompt_chain_of_translation.txt": []
         },
-        "911 outage": {
+        "911_outage": {
           "prompt_simple.txt": [],
           "prompt_persona.txt": [],
           "prompt_one_shot.txt": [],

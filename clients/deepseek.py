@@ -2,6 +2,8 @@ from openai import OpenAI
 from clients.client import Client
 
 # Client to interact with the DeepSeek API via OpenRouter
+# 50 free requests per day
+# 20 free requests per minute
 class DeepSeekClient(Client):
     def __init__(self, key):
         super().__init__(key)
