@@ -5,3 +5,4 @@ openai
 
 # general usage
 python-dotenv
+logging

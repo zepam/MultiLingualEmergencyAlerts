@@ -2,599 +2,607 @@
     "chatgpt": {
         "spanish": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "911 outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "haitian_creole": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": "Gen yon dife! Tanpri evakye zòn nan imedyatman. Rejte tout sa ki ka anpeche w deplase vit. Rele 911 pou èd si sa nesesè. Rete an sekirite!",
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [
+                    "Alèt Ijans: Gen yon dife k'ap boule nan zòn nan! Tanpri evakye imedyatman pou sekirite w. Rele sèvis ponpye yo nan nimewo ijans si ou bezwen èd."
+                ],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "vietnamese": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "arabic": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "mandarin": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         }
     },
     "gemini": {
         "spanish": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "911 outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "haitian_creole": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": "Gen yon dife! Tanpri evakye zòn nan imedyatman. Rejte tout sa ki ka anpeche w deplase vit. Rele 911 pou èd si sa nesesè. Rete an sekirite!",
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [
+                    "Dife! Dife! Gen yon dife! M bezwen èd imedyat! [Adrès egzak]! Rele ponpye yo! Danje!\n"
+                ],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "vietnamese": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "arabic": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "mandarin": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         }
     },
     "deepseek": {
         "spanish": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "911 outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "haitian_creole": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": "Gen yon dife! Tanpri evakye zòn nan imedyatman. Rejte tout sa ki ka anpeche w deplase vit. Rele 911 pou èd si sa nesesè. Rete an sekirite!",
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [
+                    "**\"ATANSYON! Gen yon dife ki nan zòn nan. Tanpri evakye imedyatman epi rele nimewo ijans lokal yo. Rete byen lwen dife a epi suiv enstriksyon otorite yo. Pote enfòmasyon sa a bay lòt moun ki nan zòn nan. Se pou Bondye pwoteje nou!\"**"
+                ],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "vietnamese": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "arabic": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         },
         "mandarin": {
             "flood": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "extreme_wind": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "fire": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
             "boil_water_notice": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             },
-            "911_outage": {
-                "prompt_simple.txt": {},
-                "prompt_persona.txt": {},
-                "prompt_one_shot.txt": {},
-                "prompt_cross_lingual_alignment.txt": {},
-                "prompt_chain_of_translation.txt": {}
+            "911 outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": []
             }
         }
     },
     "google_translate": {
         "spanish": {
-            "flood": {},
-            "extreme_wind": {},
-            "fire": {},
-            "boil_water_notice": {},
-            "911_outage": {}
+            "flood": [],
+            "extreme_wind": [],
+            "fire": [],
+            "boil_water_notice": [],
+            "911_outage": []
         },
         "arabic": {
-            "flood": {},
-            "extreme_wind": {},
-            "fire": {},
-            "boil_water_notice": {},
-            "911_outage": {}
+            "flood": [],
+            "extreme_wind": [],
+            "fire": [],
+            "boil_water_notice": [],
+            "911_outage": []
         },
         "mandarin": {
-            "flood": {},
-            "extreme_wind": {},
-            "fire": {},
-            "boil_water_notice": {},
-            "911_outage": {}
+            "flood": [],
+            "extreme_wind": [],
+            "fire": [],
+            "boil_water_notice": [],
+            "911_outage": []
         },
         "vietnamese": {
-            "flood": {},
-            "extreme_wind": {},
-            "fire": {},
-            "boil_water_notice": {},
-            "911_outage": {}
+            "flood": [],
+            "extreme_wind": [],
+            "fire": [],
+            "boil_water_notice": [],
+            "911_outage": []
         },
         "haitian_creole": {
-            "flood": {},
-            "extreme_wind": {},
-            "fire": {},
-            "boil_water_notice": {},
-            "911_outage": {}
+            "flood": [],
+            "extreme_wind": [],
+            "fire": [
+                "[AJANS KI VOYE AVÈTISMAN]: Yon AVÈTISMAN DIFE nan [LOKALITE] an vigè jiska [TIME]. Evakye fanmi w ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap redwi epi wout yo ka bloke. Si ou pa kite kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki toupre [LOKALITE]. Atann vizibilite redwi, lafimen lou ak difikilte pou respire. Fè atansyon lè w ap kondui. Veye pèsonèl sekirite piblik k ap opere nan zòn nan epi swiv enstriksyon yo. [URL]"
+            ],
+            "boil_water_notice": [],
+            "911_outage": []
         }
     }
 }
