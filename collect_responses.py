@@ -1,5 +1,6 @@
 import json
 import logging
+import time
 
 from dotenv import load_dotenv
 from helpers import generate_output_schema, chat_gemini, chat_chatgpt, chat_google_translate, chat_deepseek
@@ -59,6 +60,7 @@ if __name__ == "__main__":
 
   output_json = generate_output_schema()
 
+  iteration_counter = 0
   for language in LANGUAGES:
     language_name = language.replace(" ", "_").lower()
 
@@ -66,6 +68,11 @@ if __name__ == "__main__":
       disaster_name = disaster.replace("a ", "").replace(" ", "_")
       for prompt in PROMPT_FILES:
         prompt_name = prompt.replace("prompts/", "")
+
+        # simple rate-limiting. Gemini limits free tier to 10 requests per minute
+        if iteration_counter == 10:
+          time.sleep(60)
+          iteration_counter = 0
         
         logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: Gemini")
         gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt)
@@ -78,6 +85,8 @@ if __name__ == "__main__":
         logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: DeepSeek")
         deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt)
         output_json["deepseek"][language_name][disaster_name][prompt_name].append(deepseek_output)
+
+        iteration_counter += 1
 
       logger.info(f"Running {language_name}: {disaster_name}: Google Translate")
       prompt_file = f"prompts/{disaster_name}.txt"
