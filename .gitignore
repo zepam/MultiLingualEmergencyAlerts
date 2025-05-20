@@ -1,6 +1,7 @@
 # project files
 cb_2022_us_county_20m.zip
 data/*
+responses.log
 
 
 # Byte-compiled / optimized / DLL files
