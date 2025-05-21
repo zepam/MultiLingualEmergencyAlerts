@@ -5,8 +5,8 @@ from clients.client import Client
 # Client to interact with the Gemini API
 # Free tier: 10 requests per minute
 class GeminiClient(Client):
-    def __init__(self, key):
-        super().__init__(key)
+    def __init__(self, key, logger):
+        super().__init__(key, logger)
         self.model = "gemini-2.0-flash"
 
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):

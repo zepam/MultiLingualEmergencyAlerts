@@ -3,8 +3,8 @@ from clients.client import Client
 
 # Client to interact with the Google Cloud Translation API
 class GoogleCloudTranslationClient(Client):
-    def __init__(self, key="blah"):
-        super().__init__(key)
+    def __init__(self, logger, key="unused"):
+        super().__init__(key, logger)
 
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
         prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language,

@@ -3,8 +3,8 @@ from clients.client import Client
 
 # Client to interact with the ChatGPT API via Azure
 class ChatGPTClient(Client):
-    def __init__(self, key, base_url, deployment_name):
-        super().__init__(key)
+    def __init__(self, key, base_url, deployment_name, logger):
+        super().__init__(key, logger)
         self.base_url = base_url
         self.azure_model = "2024-12-01-preview"
         self.deployment_name = deployment_name

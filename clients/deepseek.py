@@ -5,8 +5,8 @@ from clients.client import Client
 # 50 free requests per day
 # 20 free requests per minute
 class DeepSeekClient(Client):
-    def __init__(self, key):
-        super().__init__(key)
+    def __init__(self, key, logger):
+        super().__init__(key, logger)
         self.base_url = "https://openrouter.ai/api/v1"
         self.model = "deepseek/deepseek-chat-v3-0324:free"
 
