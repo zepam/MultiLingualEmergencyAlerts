@@ -7,7 +7,8 @@ class GoogleCloudTranslationClient(Client):
         super().__init__(key)
 
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
-        prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language, sending_agency=sending_agency, location=location, time=time, url=url)
+        prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language,
+                                    sending_agency=sending_agency, location=location, time=time, url=url)
         translate_client = translate.Client()
 
         language_code = self.translation_map()[language]

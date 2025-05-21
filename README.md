@@ -14,7 +14,7 @@ OPENROUTER_API_KEY=""
 
 ### Google setup
 
-Claude and Google Translate are accessed via Google. 
+Gemini and Google Translate are accessed via Google. 
 
 1) Enable the Cloud Translation API in your project
 1) Download the gcloud CLI (https://cloud.google.com/sdk/docs/install)
@@ -26,9 +26,8 @@ Claude and Google Translate are accessed via Google.
 
 ChatGPT is accessed via Azure.
 
-1) Within the Azure online console, create an OpenAI account
-2) Go to the Azure AI Foundry and deploy an instance of GPT-4o; I did "global standard" as the deployment option as it seemed to be the only one I could with my quota and chose version "2024-12-01-preview". Whichever name you choose for this deployment needs to go in `AZURE_DEPLOYMENT_NAME`
-3) Once it deploys, you should see your endpoint and API key. These are your `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`.
+1) Go to the Azure AI Foundry and deploy an instance of GPT-4o; I did "global standard" as the deployment option as it seemed to be the only one I could with my quota and chose version "2024-12-01-preview". Whichever name you choose for this deployment needs to go in `AZURE_DEPLOYMENT_NAME`
+2) Once it deploys, you should see your endpoint and API key. These are your `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`.
 
 ### DeepSeek setup
 
