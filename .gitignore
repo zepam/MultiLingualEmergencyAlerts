@@ -2,7 +2,7 @@
 cb_2022_us_county_20m.zip
 data/*
 output.log
-
+UniEval/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -178,4 +178,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
 
