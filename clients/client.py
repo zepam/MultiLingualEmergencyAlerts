@@ -25,9 +25,9 @@ class Client:
 
         return prompt_text
     
-    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=60, max=180), stop=tenacity.stop_after_attempt(2))
+    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=60, max=180), stop=tenacity.stop_after_attempt(3))
     def safe_chat(self, prompt_file, language, disaster):
         try:
             return self.chat(prompt_file=prompt_file, language=language, disaster=disaster)
-        except (openai.RateLimitError, genai.APIError, tenacity.RetryError) as e:
+        except (openai.RateLimitError, tenacity.RetryError) as e:
             self.logger.info(f"Error: {e.message}")
