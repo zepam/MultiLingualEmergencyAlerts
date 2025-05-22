@@ -58,6 +58,8 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output_file", type=str, default="./output_file.json",
                       help="Filename for where JSON output of responses will be stored")
+    parser.add_argument("--total_responses", type=int, default=5,
+                        help="The number of responses to collect per service")
     
     parser.add_argument("--preserve_output", type=bool, default=False,
                         help="If a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits")
@@ -80,7 +82,7 @@ if __name__ == "__main__":
     output_json = None
     if args.preserve_output:
         try:
-            with open(args.output_file, "r") as file:
+            with open(args.output_file, "r", encoding="utf-8") as file:
                 output_json = json.load(file)
         except FileNotFoundError:
             print(f"Error: File not found: {args.output_file}")
@@ -94,6 +96,7 @@ if __name__ == "__main__":
     skip_chatgpt = args.skip_chatgpt
     skip_deepseek = args.skip_deepseek
     skip_google_translate = args.skip_google_translate
+    total_responses = args.total_responses
 
     for language in LANGUAGES:
         language_name = language.replace(" ", "_").lower()
@@ -103,7 +106,7 @@ if __name__ == "__main__":
             for prompt in PROMPT_FILES:
                 prompt_name = prompt.replace("prompts/", "")
                 
-                if not skip_gemini:
+                while not skip_gemini and (len(output_json["gemini"][language_name][disaster_name][prompt_name]) < total_responses):
                     logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: Gemini")
                     gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt, logger=logger)
                     if gemini_output is None:
@@ -111,7 +114,7 @@ if __name__ == "__main__":
                     else:
                         output_json["gemini"][language_name][disaster_name][prompt_name].append(gemini_output)
 
-                if not skip_chatgpt:
+                while not skip_chatgpt and (len(output_json["chatgpt"][language_name][disaster_name][prompt_name]) < total_responses):
                     logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: ChatGPT")
                     chatgpt_output = chat_chatgpt(language=language, disaster=disaster, prompt=prompt, logger=logger)
                     if chat_chatgpt is None:
@@ -119,7 +122,7 @@ if __name__ == "__main__":
                     else:
                         output_json["chatgpt"][language_name][disaster_name][prompt_name].append(chatgpt_output)
                 
-                if not skip_deepseek:
+                while not skip_deepseek and (len(output_json["deepseek"][language_name][disaster_name][prompt_name]) < total_responses):
                     logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: DeepSeek")
                     deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt, logger=logger)
                     if deepseek_output is None:
@@ -127,7 +130,7 @@ if __name__ == "__main__":
                     else:
                         output_json["deepseek"][language_name][disaster_name][prompt_name].append(deepseek_output)
 
-            if not skip_google_translate:
+            while not skip_google_translate and (len(output_json["google_translate"][language_name][disaster_name]) < total_responses):
                 logger.info(f"Running {language_name}: {disaster_name}: Google Translate")
                 prompt_file = f"prompts/{disaster_name}.txt"
                 google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file, logger=logger)
