@@ -39,16 +39,21 @@ Sign up to OpenRouter and create an API key: https://openrouter.ai/settings/keys
 
 `collect_responses.py` supports several arguments:
 
-`--output_file`: specify the file to write to. It will be a JSON object of the responses.
-`--total_responses`: the number of responses to collect per service. The script will loop until all are collected or it can't collect anymore (API errors, rate limiting, etc.)
-`--preserve_output`: if a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits
+- `--output_file`: specify the file to write to. It will be a JSON object of the responses.
+
+- `--total_responses`: the number of responses to collect per service. The script will loop until all are collected or it can't collect anymore (API errors, rate limiting, etc.)
+
+- `--preserve_output`: if a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits
 
 You can also choose to skip calling certain API endpoints with these bools:
 
-`--skip_gemini`
-`--skip_chatgpt`
-`--skip_deepseek`
-`--skip_google_translate`
+- `--skip_gemini`
+
+- `--skip_chatgpt`
+
+- `--skip_deepseek`
+
+- `--skip_google_translate`
 
 You can `tail -f output.log` to keep an eye on how things are running.
 
