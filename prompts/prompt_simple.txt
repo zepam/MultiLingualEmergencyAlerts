@@ -1,1 +1,3 @@
 Can you write an emergency text about {DISASTER} in {LANGUAGE} please?
+
+Only return the text of the alert. Do not include any other response to the prompt.

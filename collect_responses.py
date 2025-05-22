@@ -1,10 +1,9 @@
-import os
 import json
+import logging
+import argparse
+
 from dotenv import load_dotenv
-from clients.gemini import GeminiClient
-from clients.deepseek import DeepSeekClient
-from clients.chatgpt import ChatGPTClient
-from clients.cloud_translation import GoogleCloudTranslationClient
+from helpers import generate_output_schema, chat_gemini, chat_chatgpt, chat_google_translate, chat_deepseek
 
 PROMPT_FILES = [
   "prompts/prompt_simple.txt",
@@ -46,154 +45,99 @@ DISASTERS = [
   #"a contagious disease called SARD-26",
 ]
 
-def chat_gemini(language, disaster, prompt):
-  gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"))
-  return gemini_client.chat(
-    prompt_file=prompt,
-    language=language,
-    disaster=disaster
-  )
+# Configure logging
+logger = logging.getLogger(__name__)
 
-def chat_deepseek(language, disaster, prompt):
-  deepseek_client = DeepSeekClient(key=os.getenv("OPENROUTER_API_KEY"))
-  return deepseek_client.chat(
-    prompt_file=prompt,
-    language=language,
-    disaster=disaster
-  )
+logging.basicConfig(
+    level=logging.INFO,
+    filename="output.log",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
 
-def chat_chatgpt(language, disaster, prompt):
-  chatgpt_client = ChatGPTClient(key=os.getenv("AZURE_OPENAI_API_KEY"), base_url=os.getenv("AZURE_OPENAI_ENDPOINT"), deployment_name=os.getenv("AZURE_DEPLOYMENT_NAME"))
-  return chatgpt_client.chat(
-    prompt_file=prompt,
-    language=language,
-    disaster=disaster
-  )
-
-def chat_google_translate(language, disaster, prompt):
-  google_translate_client = GoogleCloudTranslationClient()
-  return google_translate_client.chat(
-    prompt_file=prompt,
-    language=language,
-    disaster=disaster
-  )
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output_file", type=str, default="./output_file.json",
+                      help="Filename for where JSON output of responses will be stored")
+    parser.add_argument("--total_responses", type=int, default=5,
+                        help="The number of responses to collect per service")
+    
+    parser.add_argument("--preserve_output", type=bool, default=False,
+                        help="If a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits")
+    
+    parser.add_argument("--skip_gemini", type=bool, default=False,
+                        help="Forcibly skip any calls to Gemini")
+    parser.add_argument("--skip_chatgpt", type=bool, default=False,
+                    help="Forcibly skip any calls to ChatGPT")
+    parser.add_argument("--skip_deepseek", type=bool, default=False,
+                    help="Forcibly skip any calls to DeepSeek")
+    parser.add_argument("--skip_google_translate", type=bool, default=False,
+                    help="Forcibly skip any calls to Google Translate")
+  
+    return parser.parse_args()
 
 if __name__ == "__main__":
-  load_dotenv()
+    load_dotenv()
+    args = parse_args()
 
-  prompt_breakdown_json = {
-    "prompt_simple.txt": {},
-    "prompt_persona.txt": {},
-    "prompt_one_shot.txt": {},
-    "prompt_cross_lingual_alignment.txt": {},
-    "prompt_chain_of_translation.txt": {}
-  }
-
-  breakdown_json = {
-    "spanish": {
-      "flood": { **prompt_breakdown_json },
-      "extreme_wind": { **prompt_breakdown_json },
-      "fire": { **prompt_breakdown_json },
-      "boil_water_notice": { **prompt_breakdown_json },
-      "911 outage": { **prompt_breakdown_json }
-    },
-    "haitian_creole": {
-      "flood": { **prompt_breakdown_json },
-      "extreme_wind": { **prompt_breakdown_json },
-      "fire": { **prompt_breakdown_json },
-      "boil_water_notice": { **prompt_breakdown_json },
-      "911_outage": { **prompt_breakdown_json }
-    },
-    "vietnamese": {
-      "flood": { **prompt_breakdown_json },
-      "extreme_wind": { **prompt_breakdown_json },
-      "fire": { **prompt_breakdown_json },
-      "boil_water_notice": { **prompt_breakdown_json },
-      "911_outage": { **prompt_breakdown_json }
-    },
-    "arabic": {
-      "flood": { **prompt_breakdown_json },
-      "extreme_wind": { **prompt_breakdown_json },
-      "fire": { **prompt_breakdown_json },
-      "boil_water_notice": { **prompt_breakdown_json },
-      "911_outage": { **prompt_breakdown_json }
-    },
-    "mandarin": {
-      "flood": { **prompt_breakdown_json },
-      "extreme_wind": { **prompt_breakdown_json },
-      "fire": { **prompt_breakdown_json },
-      "boil_water_notice": { **prompt_breakdown_json },
-      "911_outage": { **prompt_breakdown_json }
-    }
-  }
-
-  output_json = {
-    "chatgpt": { **breakdown_json },
-    "gemini": { **breakdown_json },
-    "deepseek": { **breakdown_json },
-    "google_translate": {
-      "spanish": { 
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
-      },
-      "arabic": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
-      },
-      "mandarin": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
-      },
-      "vietnamese": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
-      },
-      "haitian_creole": {
-        "flood": { },
-        "extreme_wind": { },
-        "fire": { },
-        "boil_water_notice": { },
-        "911_outage": { }
-      }
-    }
-  }
-
-  for language in LANGUAGES:
-    if language == "Haitian Creole":
-      language_name = "haitian_creole"
+    output_json = None
+    if args.preserve_output:
+        try:
+            with open(args.output_file, "r", encoding="utf-8") as file:
+                output_json = json.load(file)
+        except FileNotFoundError:
+            print(f"Error: File not found: {args.output_file}")
     else:
-      language_name = language.lower()
+        output_json = generate_output_schema()
 
-    for disaster in DISASTERS:
-      disaster_name = disaster.replace("a ", "").replace(" ", "_")
-      for prompt in ["prompts/prompt_simple.txt"]: # PROMPT_FILES
-        prompt_name = prompt.replace("prompts/", "")
-        
-        #gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt)
-        #output_json["gemini"][language_name][disaster_name][prompt_name] = gemini_output
+    if output_json is None:
+        exit()
 
-        #chatgpt_output = chat_chatgpt(language=language, disaster=disaster, prompt=prompt)
-        #output_json["chatgpt"][language_name][disaster_name][prompt_name] = chatgpt_output
+    skip_gemini = args.skip_gemini
+    skip_chatgpt = args.skip_chatgpt
+    skip_deepseek = args.skip_deepseek
+    skip_google_translate = args.skip_google_translate
+    total_responses = args.total_responses
 
-        #deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt)
-        #output_json["deepseek"][language_name][disaster_name][prompt_name] = deepseek_output
+    for language in LANGUAGES:
+        language_name = language.replace(" ", "_").lower()
 
-      prompt_file = f"prompts/{disaster_name}.txt"
+        for disaster in DISASTERS:
+            disaster_name = disaster.replace("a ", "").replace(" ", "_")
+            for prompt in PROMPT_FILES:
+                prompt_name = prompt.replace("prompts/", "")
+                
+                while not skip_gemini and (len(output_json["gemini"][language_name][disaster_name][prompt_name]) < total_responses):
+                    logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: Gemini")
+                    gemini_output = chat_gemini(language=language, disaster=disaster, prompt=prompt, logger=logger)
+                    if gemini_output is None:
+                        skip_gemini = True
+                    else:
+                        output_json["gemini"][language_name][disaster_name][prompt_name].append(gemini_output)
 
-      google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file)
-      output_json["google_translate"][language_name][disaster_name] = google_translate_output
+                while not skip_chatgpt and (len(output_json["chatgpt"][language_name][disaster_name][prompt_name]) < total_responses):
+                    logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: ChatGPT")
+                    chatgpt_output = chat_chatgpt(language=language, disaster=disaster, prompt=prompt, logger=logger)
+                    if chat_chatgpt is None:
+                        skip_chatgpt = True
+                    else:
+                        output_json["chatgpt"][language_name][disaster_name][prompt_name].append(chatgpt_output)
+                
+                while not skip_deepseek and (len(output_json["deepseek"][language_name][disaster_name][prompt_name]) < total_responses):
+                    logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: DeepSeek")
+                    deepseek_output = chat_deepseek(language=language, disaster=disaster, prompt=prompt, logger=logger)
+                    if deepseek_output is None:
+                        skip_deepseek = True
+                    else:
+                        output_json["deepseek"][language_name][disaster_name][prompt_name].append(deepseek_output)
 
-  with open('responses.json', 'w', encoding='utf-8') as f:
-    json.dump(output_json, f, ensure_ascii=False, indent=4)
+            while not skip_google_translate and (len(output_json["google_translate"][language_name][disaster_name]) < total_responses):
+                logger.info(f"Running {language_name}: {disaster_name}: Google Translate")
+                prompt_file = f"prompts/{disaster_name}.txt"
+                google_translate_output = chat_google_translate(language=language, disaster=disaster, prompt=prompt_file, logger=logger)
+                if google_translate_output is None:
+                    skip_google_translate = True
+                else:
+                    output_json["google_translate"][language_name][disaster_name].append(google_translate_output)
+
+    with open(args.output_file, 'w', encoding='utf-8') as f:
+        json.dump(output_json, f, ensure_ascii=False, indent=4)
