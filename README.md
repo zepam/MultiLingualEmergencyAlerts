@@ -2,7 +2,9 @@
 
 ## Setup
 
-To run `collect_responses`, you'll need to configure several environmental variables for API access inside a file called `.env`.
+Install all the libraries in requirements.txt: `pip install -r requirements.txt`.
+
+Then you'll need to configure several environmental variables for API access inside a file called `.env`.
 
 ```
 GEMINI_API_KEY=""
