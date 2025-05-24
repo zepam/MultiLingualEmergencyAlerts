@@ -1,5 +1,6 @@
 from openai import OpenAI
 from clients.client import Client
+import httpx
 
 # Client to interact with the DeepSeek API via OpenRouter
 # 50 free requests per day
@@ -13,9 +14,13 @@ class DeepSeekClient(Client):
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
         prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language, sending_agency=sending_agency,
                                     location=location, time=time, url=url)
-        client = OpenAI(base_url=self.base_url, api_key=self.key)
+        client = OpenAI(base_url=self.base_url, api_key=self.key, http_client=httpx.Client(headers={
+                    "HTTP-Referer": "http://localhost",
+                    "User-Agent": "OpenAI-Python"
+    }))
 
         completion = client.chat.completions.create(model=self.model,
+                                                    extra_body={},
                                                     messages=[
                                                         {
                                                             "role": "user",
