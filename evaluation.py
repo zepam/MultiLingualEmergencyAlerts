@@ -8,16 +8,21 @@ from evaluate import load
 #from summac.model_summac import SummaCZS
 import pandas as pd
 import argparse
+import json
 
 
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None, summaC=None):
     # Read text files
-    with open(generated_path, "r", encoding="utf-8") as f:
-        preds = [line.strip() for line in f]
-    with open(reference_path, "r", encoding="utf-8") as f:
-        refs = [line.strip() for line in f]
+    # with open(generated_path, "r", encoding="utf-8") as f:
+    #     preds = [line.strip() for line in f]
+    # with open(reference_path, "r", encoding="utf-8") as f:
+    #     refs = [line.strip() for line in f]
 
+    with open(reference_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    preds = [item["generated_text"] for item in data]
+    refs = [item["reference_text"] for item in data]
     assert len(preds) == len(refs), "Mismatched number of lines in generated and reference files"
 
     results = []
@@ -92,5 +97,7 @@ if __name__ == "__main__":
 
     """
     python evaluation.py data/test_generated_text.txt data/test_reference_text.txt --output_csv results.csv
+
+    python evaluation.py output_file.json REFERENCE_FILE --output_csv results.csv
 
     """
