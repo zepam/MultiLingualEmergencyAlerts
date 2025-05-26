@@ -2310,7 +2310,8 @@
                     "**Emergency Alert:**  \n\nThere is currently a 911 outage in [LOCATION] as of [TIME]. In case of an emergency, please contact local authorities directly via alternate numbers listed on [URL]. Avoid testing 911 unless it’s a real emergency. Updates will be provided at [URL]. Stay informed and share this alert with others.  \n\n[URL]",
                     "**Emergency Alert:**  \nAs of [TIME], the 911 emergency service is experiencing outages in [LOCATION]. If you need immediate assistance, please contact local authorities directly or go to the nearest emergency facility. For updates and alternative contact numbers, visit [URL]. Stay alert and share this information with others who may be affected.",
                     "**Emergency Alert:**  \n\nThere is currently a 911 outage in [LOCATION] as of [TIME]. If you have an emergency, please contact local authorities directly through alternative numbers. Visit [URL] for updates and further instructions. Stay alert and share this information with others who may be affected.  \n\n**Note:** Replace [TIME], [LOCATION], and [URL] with the appropriate details before dissemination.",
-                    "**Emergency Alert**  \n**⚠️ 911 Outage Alert ⚠️**  \nAs of [TIME], the 911 emergency service is experiencing an outage in [LOCATION]. If you need immediate assistance, please contact local authorities directly using alternative numbers provided by your municipality. Avoid testing the 911 system during this time. Updates will be posted at [URL]. Stay informed and share this alert with others.  \n**Do not reply to this message.**"
+                    "**Emergency Alert**  \n**⚠️ 911 Outage Alert ⚠️**  \nAs of [TIME], the 911 emergency service is experiencing an outage in [LOCATION]. If you need immediate assistance, please contact local authorities directly using alternative numbers provided by your municipality. Avoid testing the 911 system during this time. Updates will be posted at [URL]. Stay informed and share this alert with others.  \n**Do not reply to this message.**",
+                    "\"،\"  \n\n[الوقت]: [أدخل الوقت]  \n[الموقع]: [أدخل الموقع]  \n[رابط للمزيد من المعلومات]: [أدخل الرابط]  \n\n\"ننبه إلى وجود انقطاع في خدمة الطوارئ 911. يرجى استخدام أرقام الطوارئ البديلة أو التوجه إلى أقرب مركز شرطة في حالات الطوارئ. نعتذر عن أي إزعاج وسنعمل على استعادة الخدمة في أقرب وقت ممكن.\""
                 ],
                 "prompt_chain_of_translation.txt": [
                     "**English Template:**  \n\"Emergency alert: 911 services are currently unavailable in [LOCATION] as of [TIME]. In case of an emergency, please contact local authorities directly or visit [URL] for updates. Avoid using 911 until services are restored. Share this alert to inform others.\"  \n\n**Arabic Translation:**  \n\"تنبيه طارئ: خدمات الطوارئ 911 غير متاحة حالياً في [LOCATION] اعتباراً من [TIME]. في حالة الطوارئ، يرجى الاتصال بالسلطات المحلية مباشرة أو زيارة [URL] للحصول على التحديثات. تجنب استخدام 911 حتى استعادة الخدمة. شارك هذا التنبيه لإعلام الآخرين.\"",
@@ -2327,7 +2328,8 @@
                     "紧急洪水警报！  \n\n尊敬的居民，请注意：  \n目前【地区名称】发生严重洪水，水位快速上涨，可能危及生命财产安全。请立即撤离至就近高地或避难所，避免靠近河流、低洼地区。听从当地政府指挥，确保安全。  \n\n如需帮助，请拨打紧急电话：【当地紧急联系电话】。  \n\n请转发此消息，提醒更多人！",
                     "紧急洪水警报：由于持续强降雨，预计未来几小时内可能引发严重洪水。请立即撤离低洼地区，前往指定避难所或高处避险。避免靠近河流、下水道及危险区域。随时关注官方通知，确保人身安全。如需帮助，请拨打紧急电话119或110。请相互转告，保持警惕！",
                     "【紧急洪水预警】洪水即将到达！请立即撤离至安全区域，避免靠近河流、低洼地带。确保家人安全，随身携带必需品。听从当地政府指挥，切勿冒险涉水。紧急救援电话：110、119。请迅速行动，确保安全！",
-                    "紧急通知：由于持续强降雨，本地区即将发生严重洪水。请居民立即撤离至安全区域，避免靠近低洼地带和河流。听从当地政府指挥，确保人身安全。切勿冒险涉水，关闭家中电源和燃气。紧急联系电话：XXX-XXXXXXX。请互相转告，保持冷静！"
+                    "紧急通知：由于持续强降雨，本地区即将发生严重洪水。请居民立即撤离至安全区域，避免靠近低洼地带和河流。听从当地政府指挥，确保人身安全。切勿冒险涉水，关闭家中电源和燃气。紧急联系电话：XXX-XXXXXXX。请互相转告，保持冷静！",
+                    "\"紧急洪水警报：目前[地区名称]正遭遇严重洪水，水位持续上涨，请立即撤离至安全区域。避免靠近河流、低洼地带，切勿涉水行走或驾驶。听从当地政府指挥，确保人身安全。紧急救援电话：[联系电话]。请互相转告，保持冷静！\""
                 ],
                 "prompt_persona.txt": [
                     "紧急通知：洪水警报！[TIME]在[LOCATION]发生严重洪水，请居民立即撤离至安全区域，避免靠近低洼地带及河流。听从当地政府指挥，确保人身安全。更多信息请访问[URL]。请保持警惕，注意安全！",
@@ -2337,10 +2339,11 @@
                     "【紧急警报】洪水预警：[TIME]，[LOCATION]发生严重洪水，请立即撤离至安全区域。避免靠近河流、低洼地带，听从当地救援指挥。更多信息请访问：[URL]  \n\n（本条信息由联邦通信委员会FCC发布）"
                 ],
                 "prompt_one_shot.txt": [
-                    "&#x4E0A;&#x6D41;&#x5B9E;&#x65F6;&#x6C34;&#x60C5;&#x62A5;&#x544A;&#xFF1A;&#x5F53;&#x524D;&#x5F00;&#x59CB;&#x5728;[TIME]&#x5BF9;[LOCATION]&#x53D1;&#x5E03;&#x6D41;&#x6C34;&#x7EA2;&#x8272;&#x9884;&#x8B66;&#x3002;&#x8BF7;&#x5C45;&#x6C11;&#x7ACB;&#x5373;&#x8F6C;&#x79FB;&#x81F3;&#x5B89;&#x5168;&#x533A;&#x57DF;&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x5F00;&#x4F4E;&#x6D3C;&#x5730;&#x3001;&#x5F00;&#x653E;&#x5F0F;&#x7A7A;&#x95F4;&#x3002;&#x4E0D;&#x8981;&#x5C1D;&#x8BD5;&#x5EA6;&#x8FC7;&#x6D41;&#x6C34;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x5904;&#x4E8E;&#x5371;&#x9669;&#x4E2D;&#xFF0C;&#x8BF7;&#x7ACB;&#x5373;&#x62A2;&#x6551;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x67E5;&#x770B;[URL]&#x3002;",
                     "紧急通知：洪水警报！[LOCATION]地区于[TIME]发生严重洪水，请立即前往高处避险，远离低洼地区和河道。洪水可能导致生命危险，请勿涉水行走或驾车通过积水区域。保持警惕，关注当地媒体和政府发布的最新消息。详情请访问：[URL]",
                     "紧急洪水警报：上海市浦东新区 [LOCATION] 正发生严重洪水，预警持续至 [TIME] 今日。洪水已导致部分道路被淹，请居民立即转移至高地或安全区域，避免靠近河道、低洼地带。关闭电器电源，勿涉水行走或驾车。更多实时信息请访问 [URL]。保持警惕，注意安全。",
-                    "紧急通知：洪水警报！[LOCATION]地区目前正面临洪水威胁，预计持续至[TIME]。洪水已导致部分区域严重积水，可能危及生命。请立即撤离至安全地带，避免靠近河流、低洼地区。如无法撤离，请前往高层建筑避难，远离窗户。切勿涉水行走或驾车通过积水区域，以防意外。请密切关注当地媒体和政府发布的最新信息，确保自身安全。更多详情请访问[URL]。请保持冷静，迅速行动！"
+                    "紧急通知：洪水警报！[LOCATION]地区目前正面临洪水威胁，预计持续至[TIME]。洪水已导致部分区域严重积水，可能危及生命。请立即撤离至安全地带，避免靠近河流、低洼地区。如无法撤离，请前往高层建筑避难，远离窗户。切勿涉水行走或驾车通过积水区域，以防意外。请密切关注当地媒体和政府发布的最新信息，确保自身安全。更多详情请访问[URL]。请保持冷静，迅速行动！",
+                    "紧急洪水警报：[LOCATION] 发布洪水紧急预警，警报将持续到[TIME]。该地区已出现洪水，情况危及生命。请立即撤离至高地或安全区域，避免靠近河流或低洼地带。如已受困，请尽快拨打求救电话并等待救援。随时关注最新消息。[URL]",
+                    "洪水紧急警报：[LOCATION]地区目前发生洪水，警报持续至[TIME]。洪水可能导致严重危险，请立即向高处转移，避免靠近河流、低洼地区和积水区域。确保家人安全，听从当地应急部门指挥。更多信息请查看[URL]。请保持警惕，确保安全。"
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "\"Emergency Alert: A flood has been reported in [LOCATION]. Please take immediate precautions and move to higher ground if necessary. Stay updated with the latest information at [URL]. This alert is current as of [TIME].\"",
@@ -2365,11 +2368,27 @@
                     "紧急通知：极端大风天气预警！预计未来几小时内将出现强风，风力可达10级以上，请市民立即采取防范措施，避免外出，确保门窗紧闭，远离临时搭建物和高空悬挂物。如遇紧急情况，请拨打110或119求助。请相互转告，确保安全！",
                     "【极端大风紧急警报】预计未来2小时内将出现10级以上极端大风，伴有强对流天气。请立即停止户外活动，远离临时建筑、广告牌、大树等危险区域，确保人身安全。车辆请减速慢行，注意横风。如有必要，请前往避难场所躲避。保持关注最新天气预报，非必要不出门！"
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [
-                    "**[发送机构]：极端大风警报** 现已在 **[地点]** 生效，持续至 **[时间]**。预计风速极强，可能造成树木倒塌、电力中断及高空坠物。请立即采取防护措施，远离窗户，避免外出。如身处户外，请迅速进入坚固建筑物内躲避，并注意防范飞溅碎片。更多信息请访问 **[网址]**。"
+                "prompt_persona.txt": [
+                    "紧急通知：预计[TIME]，[LOCATION]将遭遇极端大风天气，风力可能达到破坏性级别。请居民立即采取防护措施，避免外出，固定户外物品，远离树木和电线杆。更多信息请访问[URL]。保持警惕，注意安全。",
+                    "【极端大风警报】  \n据国家气象局报告，[TIME]在[LOCATION]将出现极端大风，风速预计高达每小时XX公里，可能造成树木倒塌、停电等危险。请居民避免外出，固定户外物品，远离窗户，确保安全。如需更多信息，请访问[URL]。",
+                    "紧急警报：极端大风预警。时间：[TIME]。地点：[LOCATION]。预计将有极端大风，可能导致树木倒塌、停电等危险情况。请避免外出，确保门窗紧闭，远离危险物体。更多信息请访问：[URL]。保持警惕，注意安全。",
+                    "【紧急警报】[TIME]，[LOCATION]将遭遇极端大风天气，风力可能达到破坏性级别，请立即采取防范措施。避免外出，固定户外物品，远离树木和电线。详情请访问[URL]。请保持警惕，安全第一。",
+                    "**紧急警报：极端大风警告**  \n\n时间：[TIME]  \n地点：[LOCATION]  \n\n预计将出现极端大风天气，风速可能达到危险级别。请尽量避免外出，远离树木、电线及不稳固的建筑物。确保门窗紧闭，固定室外物品以防损坏。如需更多信息，请访问 [URL]。保持警惕，注意安全。"
                 ],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_one_shot.txt": [
+                    "**[发送机构]：极端大风警报** 现已在 **[地点]** 生效，持续至 **[时间]**。预计风速极强，可能造成树木倒塌、电力中断及高空坠物。请立即采取防护措施，远离窗户，避免外出。如身处户外，请迅速进入坚固建筑物内躲避，并注意防范飞溅碎片。更多信息请访问 **[网址]**。",
+                    "**[时间]：** [TIME]  \n**[地点]：** [LOCATION]  \n**[详情]：** 极端强风警报！预计风速将达危险级别，可能造成树木倒塌、电线断裂及建筑物损坏。请立即采取防护措施，远离窗户，避免外出。若在户外，请迅速寻找坚固的室内躲避，并注意高空坠物。更多信息请访问：[URL]",
+                    "**[时间]：** [TIME]  \n**[地点]：** [LOCATION]  \n**紧急通知：** 极端强风警报！预计风速将达危险级别，可能造成树木倒塌、建筑物损坏及电力中断。请立即采取防护措施，远离窗户，避免外出。如身处户外，迅速寻找坚固的室内躲避，并远离高空坠物风险区域。更多实时信息请访问：[URL]。",
+                    "][时间] [地点] 发布极端大风预警。预计未来几小时内将出现强风天气，风力可达[风力等级]。请居民立即采取防范措施，远离临时搭建物、广告牌等易被吹倒的物体，避免外出。如必须外出，请注意高空坠物，确保安全。室内请关好门窗，加固易被风吹动的物品。更多详情请访问[网址]。",
+                    "][时间] [地点] 发布极端大风预警。预计未来几小时内将出现强风天气，风力可达[风力等级]。请居民立即采取防范措施，远离临时搭建物、广告牌等易被吹倒的物体，避免外出。如必须外出，请注意高空坠物，确保安全。室内请关好门窗，加固易被风吹动的物品。更多详情请访问[网址]。"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "紧急通知：[TIME]在[LOCATION]预计将出现极端强风天气，阵风可达10级以上，可能引发高空坠物、树木倒伏等危险。请避免外出，远离临时搭建物，妥善安置室外物品。更多详情请访问：[URL]。注意安全！",
+                    "紧急通知：预计[TIME]，[LOCATION]将遭遇极端大风天气，风力可达xx级，请居民避免外出，加固门窗，远离临时搭建物。注意防范高空坠物和树木倒伏。更多详情请访问[URL]。请互相转告，确保安全。",
+                    "紧急通知：预计[TIME]，[LOCATION]将出现极端强风天气，风速可能达到危险级别。请居民避免外出，固定户外物品，注意高空坠物。如遇紧急情况，及时联系当地应急部门。更多详情请访问[URL]。请注意安全！",
+                    "Emergency alert: Extreme winds expected. [TIME] at [LOCATION]. Stay indoors, secure loose objects. Avoid travel. Check [URL] for updates.",
+                    "Tornado warning in effect until [TIME] for [LOCATION]. Seek shelter immediately. Stay away from windows and move to the lowest floor. For updates, visit [URL]."
+                ],
                 "prompt_chain_of_translation.txt": [
                     "Extreme wind alert: [TIME] in [LOCATION]. Expect gusts up to [SPEED] mph, posing risks to property and safety. Secure outdoor items, avoid travel if possible. More info: [URL]  \n\n极端大风警报：[TIME]在[LOCATION]。预计阵风可达[SPEED]公里/小时，可能对财产和安全造成威胁。请固定户外物品，尽量避免出行。更多信息：[URL]",
                     "**English Template:**  \n\"Extreme winds expected in [LOCATION] until [TIME]. Avoid outdoor activities, secure loose objects, and stay indoors if possible. Monitor updates at [URL] for more information.\"\n\n**Mandarin Translation:**  \n\"预计 [LOCATION] 将持续极端大风直至 [TIME]。请避免户外活动，固定松散物品，尽量待在室内。更多信息请访问 [URL] 查看最新动态。\"",
@@ -2379,18 +2398,56 @@
                 ]
             },
             "fire": {
-                "prompt_simple.txt": [],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": []
+                "prompt_simple.txt": [
+                    "\"紧急通知：发生火灾，请立即撤离！保持冷静，迅速沿安全出口疏散，不要使用电梯。用湿毛巾捂住口鼻，低姿前行。如被困，请拨打119求助。切勿返回火场！\"",
+                    "火灾警报！紧急疏散！请立即撤离建筑物，不要使用电梯，按照安全出口指示迅速离开。远离火源，确保自身安全。拨打119报警！",
+                    "\"紧急警报：火灾发生！请立即撤离到安全区域，不要使用电梯，听从现场指挥。拨打119报警。保持冷静，注意安全！\"",
+                    "\"紧急通知：发现火情，请立即撤离！保持冷静，迅速沿安全通道疏散，勿乘电梯。拨打119报警。确保自身安全，切勿返回火场。 [应急管理部门]\"",
+                    "紧急通知：发现火情，请立即撤离！保持冷静，迅速沿安全通道疏散，勿乘电梯。拨打119报警。确保自身安全，切勿返回火场。"
+                ],
+                "prompt_persona.txt": [
+                    "紧急通知：在[时间]于[地点]发生火灾，请附近居民立即撤离至安全区域，并听从现场指挥。请勿靠近火灾现场，避免造成不必要的人员伤亡。更多信息请访问[网址]。请保持冷静，注意安全。",
+                    "紧急通知：火灾警报  \n\n[时间]：2023年11月15日 14:30  \n[地点]：北京市朝阳区建国路88号  \n[详情链接]：http://example.com/fire-alert  \n\n请立即撤离该区域，并听从消防人员指挥。避免使用电梯，保持冷静。更多信息请访问上述链接。",
+                    "紧急通知：火灾警报  \n\n[时间]：请在此处填写具体时间  \n[地点]：请在此处填写具体位置  \n\n请注意，火灾已发生，请立即撤离该区域并遵循当地消防部门的指示。如需了解更多信息，请访问[网址]：请在此处填写具体网址。保持冷静，确保安全。",
+                    "紧急通知：火灾警报  \n\n[时间]：请在此处填写具体时间  \n[地点]：请在此处填写具体位置  \n\n请注意，火灾已发生，请立即撤离该区域并遵循当地消防部门的指示。如需了解更多信息，请访问[网址]：请在此处填写具体网址。保持冷静，确保安全。",
+                    "紧急通知：火灾警报  \n\n[时间]：请在此处插入具体时间  \n[地点]：请在此处插入具体位置  \n\n请注意，火灾已发生，请立即撤离该区域并遵循当地消防部门的指示。如需了解更多信息，请访问：[网址]  \n\n请保持冷静，确保自身安全。"
+                ],
+                "prompt_one_shot.txt": [
+                    "]\"[发送机构]：火灾紧急警报，[时间]在[地点]发生火灾。火势可能迅速蔓延，请立即撤离至安全区域，避免吸入烟雾。关闭门窗，使用湿毛巾捂住口鼻，低姿势逃生。切勿使用电梯，听从消防人员指挥。更多信息请访问[网址]。请保持冷静，确保自身安全。\"",
+                    "【火灾紧急警报】[LOCATION]发生火灾，火势正在蔓延，请立即撤离该区域，并远离火源。预计火势将持续至[TIME]。请听从当地应急部门指挥，尽快前往安全地点。切勿靠近火灾现场，避免吸入烟雾。更多实时信息请访问[URL]。注意安全，保持冷静。",
+                    "][TIME] [LOCATION] 发生火灾，请立即撤离。火灾可能危及生命，请迅速前往安全区域。如您身处室外，请远离火源并寻找避难所。更多信息请访问 [URL]。",
+                    "[时间] [地点] 发生火灾，请立即撤离。火灾可能危及生命，请迅速前往安全区域。如您身处室内，请使用楼梯撤离，切勿使用电梯。如您身处室外，请远离火灾区域，并听从现场指挥。更多信息请访问 [网址]。",
+                    "[时间：TIME] [地点：LOCATION] 发生火灾，火势正在蔓延。请附近居民立即撤离至安全区域，避免吸入烟雾。关闭门窗，减少烟雾进入室内。切勿使用电梯。请关注官方通报获取最新信息。[URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "  \n\n[时间] [地点] 发生火灾，请立即撤离至安全区域。更多信息请访问 [网址]。保持冷静，听从指挥。",
+                    "\"[TIME] 2023年10月15日 14:30  \n[LOCATION] 北京市朝阳区光华路5号  \n[URL] www.example.com/fire-alert  \n\n紧急通知：光华路5号发生火灾，请附近居民立即撤离至安全区域，听从现场指挥。避免使用电梯，拨打119报告火情。更多信息请访问上述链接。\"",
+                    "紧急通知：  \n[TIME]在[LOCATION]发生火灾，请附近居民立即撤离至安全区域，避免靠近事发地点。相关部门已赶往现场处置。更多实时信息请访问[URL]。保持冷静，注意安全。  \n\nUrgent Alert:  \nA fire has occurred at [LOCATION] at [TIME]. Residents nearby are advised to evacuate immediately and avoid the area. Authorities are on the scene. For updates, visit [URL]. Stay calm and prioritize safety.",
+                    "**紧急火灾警报**  \n请注意，[TIME]在[LOCATION]发生火灾。请立即远离该区域，听从应急人员指挥。如需更多信息，请访问[URL]。保持冷静，注意安全。  \n\n**Emergency Fire Alert**  \nA fire has been reported at [LOCATION] at [TIME]. Evacuate the area immediately and follow instructions from emergency personnel. For more details, visit [URL]. Stay calm and stay safe.",
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急通知：在[时间]于[地点]发生火灾，请附近居民立即撤离至安全区域，并听从现场指挥。更多信息请访问[网址]。  \n\nEmergency notice: A fire occurred at [TIME] in [LOCATION]. Residents nearby are advised to evacuate immediately to a safe area and follow on-site instructions. For more information, please visit [URL].",
+                    "**English:**  \nEmergency alert: A fire has been reported at [LOCATION] as of [TIME]. Authorities are responding. Avoid the area and follow official updates. For more information, visit [URL].  \n\n**Mandarin:**  \n紧急警报：据报[TIME]在[LOCATION]发生火灾。相关部门正在处理。请避开该区域并关注官方更新。更多信息请访问[URL]。",
+                    "**English Template:**  \nEmergency alert: A fire has been reported at [LOCATION] as of [TIME]. Evacuate the area immediately and follow local authorities' instructions. Avoid the vicinity to ensure safety. For updates, visit [URL].  \n\n**Mandarin Translation:**  \n紧急警报：据报[TIME]在[LOCATION]发生火灾。请立即撤离该区域，并听从当地部门的指示。避开附近区域以确保安全。更多信息请访问[URL]。",
+                    "# English Template\nA fire has been reported at [LOCATION] as of [TIME]. Please evacuate the area immediately and follow local authorities' instructions. For more information, visit [URL].  \n\n# Chinese Translation  \n[LOCATION]于[TIME]发生火灾。请立即撤离该区域，并听从当地当局的指示。更多信息，请访问[URL]。",
+                    "**English Template:**  \n\"[TIME]: A fire has been reported at [LOCATION]. Evacuate immediately if nearby. Avoid the area and follow instructions from authorities. For updates, visit [URL].\"  \n\n**Mandarin Translation:**  \n\"[TIME]：在[LOCATION]发生火灾。附近人员请立即疏散，避免靠近该区域，并听从当局指挥。获取最新信息，请访问[URL]。\""
+                ]
             },
             "boil_water_notice": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    "【紧急通知】由于水质问题，现发布煮沸饮用水通知。请立即停止直接饮用自来水，务必煮沸至少1分钟后再使用。此通知即日起生效，恢复时间另行通知。请相互转告，确保用水安全。【市水务局】",
+                    "紧急通知：由于水质问题，现发布煮沸水通知。请居民在饮用、刷牙或烹饪前将水煮沸至少一分钟，以确保安全。请勿直接饮用未经煮沸的自来水。具体恢复时间将另行通知。请相互转告，注意用水安全。",
+                    "  \n\n**紧急通知：自来水煮沸饮用通告**  \n\n因供水系统检测异常，为确保用水安全，现发布煮沸水通告。请居民务必做到：  \n1. 将自来水煮沸至少1分钟后再饮用或烹饪。  \n2. 暂勿直接饮用、制冰或漱口使用未煮沸自来水。  \n3. 恢复时间另行通知，请关注后续公告。  \n\n（注：此通知由[相关部门名称]发布，紧急联系电话：[XXX-XXXXXXX]）",
+                    "**紧急通知：煮沸用水警报**  \n\n尊敬的居民：  \n\n由于水质检测异常，现发布煮沸用水通知。请将所有饮用水煮沸至少1分钟后再使用，包括饮用、做饭、刷牙等。避免直接使用未煮沸的自来水。  \n\n恢复正常供水时间将另行通知。给您带来不便，敬请谅解。  \n\n**市水务局**  \n[日期]",
+                    "【紧急通知】  \n\n尊敬的居民：  \n\n因供水系统临时检修，水质可能受到影响。为确保安全，现发布**煮沸用水通知**，请务必在饮用、刷牙或烹饪前将自来水煮沸至少1分钟。该通知即时生效，解除时间另行通知。  \n\n给您带来不便，敬请谅解。请互相转告！  \n\n—— [您的单位/社区名称]"
+                ],
                 "prompt_persona.txt": [],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": []
+                "prompt_chain_of_translation.txt": [
+                    "**English Template:**  \n\"Due to water contamination, a boil water notice is in effect for [LOCATION] as of [TIME]. Residents must boil water for at least one minute before drinking, cooking, or brushing teeth until further notice. For updates, visit [URL].\"\n\n**Mandarin Translation:**  \n\"因水质污染，自[TIME]起，[LOCATION]地区实施煮沸水通知。居民在饮用水、烹饪或刷牙前必须将水煮沸至少一分钟，直至另行通知。最新信息请访问[URL]。\"",
+                    "**English Template:**  \nEmergency Alert: A boil water notice has been issued for [LOCATION] as of [TIME]. Residents must boil water before drinking, cooking, or brushing teeth until further notice. For details and updates, visit [URL]. Stay safe.  \n\n**Mandarin Translation:**  \n紧急通知：自[TIME]起，[LOCATION]地区发布煮沸用水通知。居民在另行通知前，必须将水煮沸后饮用、烹饪或刷牙。详情及更新请访问[URL]。注意安全。"
+                ]
             },
             "911_outage": {
                 "prompt_simple.txt": [],
