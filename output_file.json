@@ -2273,7 +2273,8 @@
                     "[LOCATION] is under a boil water advisory. Boil all tap water for at least one minute before drinking, cooking, or brushing teeth. The advisory is in effect until [TIME]. For updates, visit [URL]. Stay safe.",
                     "[تنبيه عاجل] يُنصح بعدم استخدام مياه الصنبور للشرب أو الطهي دون غليها أولاً بسبب احتمال التلوث. يُرجى غلي الماء لمدة دقيقة واحدة على الأقل قبل الاستخدام. ينطبق هذا الإخطار على منطقة [LOCATION] حتى الساعة [TIME]. لمزيد من المعلومات، يرجى زيارة [URL]. نعتذر عن أي إزعاج ونشكركم على تعاونكم.",
                     "**Emergency Alert:**  \nDue to water contamination, a boil water notice has been issued for [LOCATION] effective [TIME]. Residents must boil water for at least one minute before drinking, cooking, or brushing teeth until further notice. Use bottled water if boiling is not possible. Updates will be provided at [URL]. Stay safe and follow local guidance.  \n\n**تنبيه طوارئ:**  \nبسبب تلوث المياه، تم إصدار تنبيه غلي الماء لـ [LOCATION] ابتداءً من [TIME]. يرجى غلي الماء لمدة دقيقة على الأقل قبل الشرب أو الطهي أو تنظيف الأسنان حتى إشعار آخر. استخدم المياه المعبأة إذا لم يتيسر الغلي. سيتم نشر التحديثات على [URL]. حافظوا على سلامتكم واتبعوا تعليمات الجهات المختصة.",
-                    "**Boil Water Notice**  \n**Time:** [TIME]  \n**Location:** [LOCATION]  \nDue to potential contamination, boil all water before use. This includes drinking, cooking, and brushing teeth. Bring water to a rolling boil for at least one minute and let it cool before use. For updates, visit [URL]. Stay safe!"
+                    "**Boil Water Notice**  \n**Time:** [TIME]  \n**Location:** [LOCATION]  \nDue to potential contamination, boil all water before use. This includes drinking, cooking, and brushing teeth. Bring water to a rolling boil for at least one minute and let it cool before use. For updates, visit [URL]. Stay safe!",
+                    "krk. [TIME] [LOCATION] [URL]"
                 ],
                 "prompt_chain_of_translation.txt": [
                     "**English Template:**  \n\"URGENT: Boil Water Notice for [LOCATION]. Due to possible contamination, boil all tap water for at least 1 minute before drinking, cooking, or brushing teeth until further notice. Issued at [TIME]. For details, visit [URL].\"\n\n**Arabic Translation:**  \n\"عاجل: إشعار غلي الماء لـ [LOCATION]. بسبب احتمال وجود تلوث، يُرجى غلي مياه الصنبور لمدة دقيقة على الأقل قبل الشرب أو الطهي أو تنظيف الأسنان حتى إشعار آخر. صدر في [TIME]. للمزيد من التفاصيل، زوروا [URL].\"",
@@ -2291,12 +2292,27 @@
                     "**تنبيه طوارئ:**  \n\"بسبب عطل فني، خدمة الطوارئ 911 غير متاحة حاليًا في بعض المناطق. يرجى الاتصال بأرقام الطوارئ المحلية المباشرة أو التوجه إلى أقرب مركز شرطة أو مستشفى في حالة الحاجة إلى مساعدة عاجلة. نعتذر عن هذا الإزعاج ونعمل على إصلاح المشكلة بأسرع وقت ممكن.\"",
                     "\"تحذير عاجل: انقطاع مؤقت في خدمة الطوارئ 911. يرجى استخدام رقم الطوارئ البديل: [أدخل الرقم هنا] أو التوجه لأقرب مركز شرطة أو مستشفى. نعتذر عن هذا الإزعاج ونعمل على حل المشكلة بأسرع وقت ممكن.\""
                 ],
-                "prompt_persona.txt": [],
+                "prompt_persona.txt": [
+                    "**تنبيه طارئ:**  \nتعاني خدمة الطوارئ 911 حاليًا من انقطاع في [LOCATION]. حتى إشعار آخر، يُرجى استخدام الخطوط الأرضية أو الهواتف المحمولة للاتصال بأرقام الطوارئ المحلية المباشرة. للحصول على التحديثات، يرجى زيارة [URL].  \n**الوقت:** [TIME]  \n**الموقع:** [LOCATION]",
+                    ">[TIME]  \n>[LOCATION]  \n>تنبيه طوارئ: تعطل نظام 911 حالياً في [LOCATION]. يرجى استخدام الخطوط البديلة للاتصال بالطوارئ. لمزيد من المعلومات، تفضل بزيارة [URL]. نعتذر عن أي إزعاج ونعمل على حل المشكلة في أقرب وقت ممكن.",
+                    "# 1. **Emergency Alert in Arabic**  \n\n**Text:**  \n[تنبيه طوارئ]  \nتعطل نظام الطوارئ 911 حاليًا. يرجى استخدام رقم بديل للاتصال بالشرطة أو الإسعاف أو الإطفاء.  \n[الوقت]: [أدخل الوقت هنا]  \n[الموقع]: [أدخل الموقع هنا]  \nلمزيد من المعلومات، تفضل بزيارة: [أدخل الرابط هنا]  \nنعتذر عن أي إزعاج ونعمل على حل المشكلة بأسرع وقت ممكن.  \n\n# 2. **Customizable Fields**  \n- **[الوقت]**: (e.g., \"من 10:00 صباحًا حتى 12:00 ظهرًا\")  \n- **[الموقع]**: (e.g., \"مدينة نيويورك\")  \n- **[الرابط]**: (e.g., \"https://www.example.com/911-update\")  \n\n# 3. **Notes**  \n- **Word Count**: ~60 words (within the 100-word limit).  \n- **Format**: No header, just the message body as requested.  \n- **Purpose**: Clear, concise, and actionable for Arabic-speaking audiences.  \n\nLet me know if you'd like any modifications!",
+                    "**[TIME]  \n[LOCATION]  \n[URL]  \n\nانتباه: هناك انقطاع في خدمة الطوارئ 911 حاليًا في [LOCATION]. يرجى استخدام رقم الطوارئ البديل المخصص للمنطقة أو التوجه إلى أقرب مركز شرطة أو مستشفى في حالة الطوارئ. ستتم استعادة الخدمة في أقرب وقت ممكن. لمزيد من المعلومات، يرجى زيارة [URL].**",
+                    "```  \nتنبيه طارئ: تعطل خدمة الطوارئ 911 في [الموقع]. حتى الساعة [الوقت]. الرجاء استخدام رقم الهاتف المحلي لخدمات الطوارئ إذا لزم الأمر. لمزيد من المعلومات، تفضل بزيارة [الرابط]. اتخذ الاحتياطات اللازمة وشارك هذه المعلومة مع الآخرين.  \n```"
+                ],
                 "prompt_one_shot.txt": [
                     "تحذير طوارئ: انقطاع خدمة 911 في [LOCATION] حتى [TIME]. في حالة الطوارئ، اتصل بالرقم المحلي للشرطة أو الإسعاف. لا تستخدم خدمة 911 حتى إشعار آخر. تابع [URL] للحصول على تحديثات.",
-                    "انتباه: تعطل خدمة الطوارئ 911 في [LOCATION] حتى [TIME]. في حالة الطوارئ، يرجى الاتصال بالرقم المحلي لخدمات الطوارئ أو التوجه إلى أقرب مركز شرطة أو مستشفى. نعتذر عن أي إزعاج ونعمل على حل المشكلة في أسرع وقت ممكن. لمزيد من المعلومات، تفضلوا بزيارة [URL]."
+                    "انتباه: تعطل خدمة الطوارئ 911 في [LOCATION] حتى [TIME]. في حالة الطوارئ، يرجى الاتصال بالرقم المحلي لخدمات الطوارئ أو التوجه إلى أقرب مركز شرطة أو مستشفى. نعتذر عن أي إزعاج ونعمل على حل المشكلة في أسرع وقت ممكن. لمزيد من المعلومات، تفضلوا بزيارة [URL].",
+                    "**[إرسال من الجهة المختصة]: حالة طوارئ لانقطاع خدمة 911 في [الموقع] حتى [الوقت]. لا يمكن الوصول إلى خدمات الطوارئ عبر الهاتف حاليًا. يرجى التوجه إلى أقرب مركز شرطة أو مستشفى في حالة الطوارئ. للحصول على مزيد من المعلومات، يرجى زيارة [الرابط].**",
+                    "⚠️ تنبيه طوارئ: تعطل خدمة 911 ⚠️  \n[الوقت]: [أدخل الوقت]  \n[الموقع]: [أدخل الموقع]  \n\nتعذر الوصول إلى خدمة الطوارئ 911 حاليًا. يرجى استخدام خطوط الهاتف البديلة أو التوجه إلى أقرب مركز شرطة أو مستشفى في حالة الطوارئ. نعمل على حل المشكلة بأسرع وقت ممكن. لمزيد من المعلومات، يرجى زيارة الرابط التالي: [أدخل الرابط]  \n\nحافظ على الهدوء واتخذ الإجراءات اللازمة لسلامتك.",
+                    "إلى جميع المواطنين: انقطاع طارئ في خدمة الطوارئ 911 في [الموقع] حتى [الوقت]. يرجى عدم الاتصال بالرقم 911 خلال هذه الفترة. في حالة الطوارئ، اتصل بالسلطات المحلية مباشرة أو توجه إلى أقرب مركز شرطة أو مستشفى. نعمل على حل المشكلة في أسرع وقت ممكن. لمزيد من المعلومات، يرجى زيارة الرابط التالي: [الرابط]. نعتذر عن أي إزعاج قد يسببه هذا الانقطاع."
                 ],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    "**Emergency Alert:**  \n\nThere is currently a 911 outage in [LOCATION] as of [TIME]. In case of an emergency, please contact local authorities directly via alternate numbers listed on [URL]. Avoid testing 911 unless it’s a real emergency. Updates will be provided at [URL]. Stay informed and share this alert with others.  \n\n[URL]",
+                    "**Emergency Alert:**  \nAs of [TIME], the 911 emergency service is experiencing outages in [LOCATION]. If you need immediate assistance, please contact local authorities directly or go to the nearest emergency facility. For updates and alternative contact numbers, visit [URL]. Stay alert and share this information with others who may be affected.",
+                    "**Emergency Alert:**  \n\nThere is currently a 911 outage in [LOCATION] as of [TIME]. If you have an emergency, please contact local authorities directly through alternative numbers. Visit [URL] for updates and further instructions. Stay alert and share this information with others who may be affected.  \n\n**Note:** Replace [TIME], [LOCATION], and [URL] with the appropriate details before dissemination.",
+                    "",
+                    "**Emergency Alert**  \n**⚠️ 911 Outage Alert ⚠️**  \nAs of [TIME], the 911 emergency service is experiencing an outage in [LOCATION]. If you need immediate assistance, please contact local authorities directly using alternative numbers provided by your municipality. Avoid testing the 911 system during this time. Updates will be posted at [URL]. Stay informed and share this alert with others.  \n**Do not reply to this message.**"
+                ],
                 "prompt_chain_of_translation.txt": [
                     "**English Template:**  \n\"Emergency alert: 911 services are currently unavailable in [LOCATION] as of [TIME]. In case of an emergency, please contact local authorities directly or visit [URL] for updates. Avoid using 911 until services are restored. Share this alert to inform others.\"  \n\n**Arabic Translation:**  \n\"تنبيه طارئ: خدمات الطوارئ 911 غير متاحة حالياً في [LOCATION] اعتباراً من [TIME]. في حالة الطوارئ، يرجى الاتصال بالسلطات المحلية مباشرة أو زيارة [URL] للحصول على التحديثات. تجنب استخدام 911 حتى استعادة الخدمة. شارك هذا التنبيه لإعلام الآخرين.\"",
                     "alert the English and Arabic versions below:\n\nEnglish:  \nEmergency alert: 911 services are currently unavailable in [LOCATION] as of [TIME]. Please use alternative emergency numbers or contact local authorities directly. For updates, visit [URL]. Stay safe.  \n\nArabic:  \nتنبيه طوارئ: خدمات الطوارئ 911 غير متاحة حاليًا في [LOCATION] اعتبارًا من [TIME]. يرجى استخدام أرقام الطوارئ البديلة أو الاتصال بالسلطات المحلية مباشرة. للحصول على التحديثات، تفضل بزيارة [URL]. حافظوا على سلامتكم.",
@@ -2308,18 +2324,62 @@
         },
         "mandarin": {
             "flood": {
-                "prompt_simple.txt": [],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": []
+                "prompt_simple.txt": [
+                    "紧急洪水警报！  \n\n尊敬的居民，请注意：  \n目前【地区名称】发生严重洪水，水位快速上涨，可能危及生命财产安全。请立即撤离至就近高地或避难所，避免靠近河流、低洼地区。听从当地政府指挥，确保安全。  \n\n如需帮助，请拨打紧急电话：【当地紧急联系电话】。  \n\n请转发此消息，提醒更多人！",
+                    "紧急洪水警报：由于持续强降雨，预计未来几小时内可能引发严重洪水。请立即撤离低洼地区，前往指定避难所或高处避险。避免靠近河流、下水道及危险区域。随时关注官方通知，确保人身安全。如需帮助，请拨打紧急电话119或110。请相互转告，保持警惕！",
+                    "```# 1.0.0 (2022-10-20)\n\n\n### Features\n\n* **init:** 初始化项目 ([0c0a0c1](https://github.com/liuweiqiang1/liuweiqiang1.github.io/commit/0c0a0c1a1a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0))\n",
+                    "【紧急洪水预警】洪水即将到达！请立即撤离至安全区域，避免靠近河流、低洼地带。确保家人安全，随身携带必需品。听从当地政府指挥，切勿冒险涉水。紧急救援电话：110、119。请迅速行动，确保安全！",
+                    "紧急通知：由于持续强降雨，本地区即将发生严重洪水。请居民立即撤离至安全区域，避免靠近低洼地带和河流。听从当地政府指挥，确保人身安全。切勿冒险涉水，关闭家中电源和燃气。紧急联系电话：XXX-XXXXXXX。请互相转告，保持冷静！"
+                ],
+                "prompt_persona.txt": [
+                    "紧急通知：洪水警报！[TIME]在[LOCATION]发生严重洪水，请居民立即撤离至安全区域，避免靠近低洼地带及河流。听从当地政府指挥，确保人身安全。更多信息请访问[URL]。请保持警惕，注意安全！",
+                    "紧急通知：洪水警报  \n\n[时间]：请在此处插入具体时间  \n[地点]：请在此处插入具体位置  \n\n请注意，您所在地区可能发生洪水，请立即采取安全措施，避免前往低洼地带。如需更多信息，请访问[网址]：请在此处插入具体网址。保持警惕，确保安全。",
+                    "紧急警报：[TIME]，[LOCATION]发生洪水灾害，请立即撤离至安全区域。避开低洼地带和积水道路，听从当地政府指挥。更多实时信息请访问[URL]。确保安全，保持警惕！",
+                    "【紧急警报】洪水预警：预计[TIME]在[LOCATION]将发生严重洪水。请立即撤离至高地，远离河流和低洼地区。密切关注官方通知，避免不必要的出行。更多详情请访问[URL]。保持冷静，注意安全。",
+                    "【紧急警报】洪水预警：[TIME]，[LOCATION]发生严重洪水，请立即撤离至安全区域。避免靠近河流、低洼地带，听从当地救援指挥。更多信息请访问：[URL]  \n\n（本条信息由联邦通信委员会FCC发布）"
+                ],
+                "prompt_one_shot.txt": [
+                    "&#x4E0A;&#x6D41;&#x5B9E;&#x65F6;&#x6C34;&#x60C5;&#x62A5;&#x544A;&#xFF1A;&#x5F53;&#x524D;&#x5F00;&#x59CB;&#x5728;[TIME]&#x5BF9;[LOCATION]&#x53D1;&#x5E03;&#x6D41;&#x6C34;&#x7EA2;&#x8272;&#x9884;&#x8B66;&#x3002;&#x8BF7;&#x5C45;&#x6C11;&#x7ACB;&#x5373;&#x8F6C;&#x79FB;&#x81F3;&#x5B89;&#x5168;&#x533A;&#x57DF;&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x5F00;&#x4F4E;&#x6D3C;&#x5730;&#x3001;&#x5F00;&#x653E;&#x5F0F;&#x7A7A;&#x95F4;&#x3002;&#x4E0D;&#x8981;&#x5C1D;&#x8BD5;&#x5EA6;&#x8FC7;&#x6D41;&#x6C34;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x5904;&#x4E8E;&#x5371;&#x9669;&#x4E2D;&#xFF0C;&#x8BF7;&#x7ACB;&#x5373;&#x62A2;&#x6551;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x67E5;&#x770B;[URL]&#x3002;",
+                    "\"C# 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+                    "紧急通知：洪水警报！[LOCATION]地区于[TIME]发生严重洪水，请立即前往高处避险，远离低洼地区和河道。洪水可能导致生命危险，请勿涉水行走或驾车通过积水区域。保持警惕，关注当地媒体和政府发布的最新消息。详情请访问：[URL]",
+                    "紧急洪水警报：上海市浦东新区 [LOCATION] 正发生严重洪水，预警持续至 [TIME] 今日。洪水已导致部分道路被淹，请居民立即转移至高地或安全区域，避免靠近河道、低洼地带。关闭电器电源，勿涉水行走或驾车。更多实时信息请访问 [URL]。保持警惕，注意安全。",
+                    "紧急通知：洪水警报！[LOCATION]地区目前正面临洪水威胁，预计持续至[TIME]。洪水已导致部分区域严重积水，可能危及生命。请立即撤离至安全地带，避免靠近河流、低洼地区。如无法撤离，请前往高层建筑避难，远离窗户。切勿涉水行走或驾车通过积水区域，以防意外。请密切关注当地媒体和政府发布的最新信息，确保自身安全。更多详情请访问[URL]。请保持冷静，迅速行动！"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "\"Emergency Alert: A flood has been reported in [LOCATION]. Please take immediate precautions and move to higher ground if necessary. Stay updated with the latest information at [URL]. This alert is current as of [TIME].\"",
+                    "Emergency alert: A flood has been reported in [LOCATION] as of [TIME]. Residents are advised to move to higher ground immediately and follow local authorities' instructions. For more details, visit [URL]. Stay safe and avoid floodwaters.",
+                    "紧急洪水警报：预计[TIME]在[LOCATION]将发生严重洪水。请立即撤离至安全区域，避免靠近河流或低洼地带。随身携带必要物资，听从当地救援指挥。更多详情请访问[URL]。注意安全，保持警惕！",
+                    "Emergency alert: A flood has been reported in [LOCATION] as of [TIME]. Please evacuate to higher ground immediately and follow local authorities' instructions. For more details, visit [URL]. Stay safe.",
+                    "紧急洪水警报：根据最新监测，[TIME]在[LOCATION]附近发生严重洪水，水位持续上涨，可能威胁居民安全。请立即撤离至高地或指定避难所，避免涉水通行。关闭电器和燃气，确保人身安全。更多实时信息请访问[URL]。保持警惕，听从官方指挥！"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急通知：由于持续暴雨，[LOCATION]地区发生洪水。请居民立即撤离至安全区域，避免靠近低洼地带。预计洪水将持续至[TIME]。更多信息请访问[URL]。请保持警惕，确保安全。  \n\n紧急通知：由于持续暴雨，[LOCATION]地区发生洪水。请居民立即撤离至安全区域，避免靠近低洼地带。预计洪水将持续至[TIME]。更多信息请访问[URL]。请保持警惕，确保安全。",
+                    "**English Template:**  \nEmergency Alert: Flooding reported in [LOCATION] as of [TIME]. Avoid the area and seek higher ground if nearby. Follow instructions from local authorities. For updates, visit [URL]. Stay safe.  \n\n**Mandarin Translation:**  \n紧急警报：[LOCATION]于[TIME]发生洪水。请避开该区域，附近人员立即转移至高处。听从当地政府指示。更多信息请访问[URL]。注意安全。",
+                    "**English Template:**  \n\"Emergency Alert: Flood warning in effect for [LOCATION] until [TIME]. Avoid flooded areas and seek higher ground. Follow instructions from local authorities. For updates, visit [URL].\"  \n\n**Mandarin Translation:**  \n\"紧急警报：[LOCATION]洪水预警持续至[TIME]。请避开积水区域，前往高地。遵循当地政府指示。更多信息请访问[URL]。\"",
+                    "[SENDER] [TIME] [LOCATION] [URL]  \n\n[时间] [地点] [网址]",
+                    "紧急通知：由于持续暴雨，[LOCATION]地区发生洪水，请居民立即撤离至安全区域。洪水预计将持续至[TIME]。请远离低洼地带，避免涉水行走或驾车。更多信息请访问[URL]。请保持警惕，确保安全。  \n\n紧急通知：由于持续暴雨，[LOCATION]地区发生洪水，请居民立即撤离至安全区域。洪水预计将持续至[TIME]。请远离低洼地带，避免涉水行走或驾车。更多信息请访问[URL]。请保持警惕，确保安全。"
+                ]
             },
             "extreme_wind": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    "【极端大风预警】紧急通知：预计未来3小时内将出现极端大风天气，瞬时风力可达10级以上，部分地区伴有强降雨或沙尘。请立即停止户外作业，避免外出，妥善安置易受大风影响的物品，注意防范高空坠物。务必远离树木、广告牌等临时搭建物，确保人身安全。如遇紧急情况，请拨打110或119求助。请互相转告！",
+                    "Here is the emergency alert text for extreme wind in Mandarin:\n\n\"【极端大风预警】预计未来X小时内，本地区将出现X级及以上极端大风天气，可能伴随强对流活动。请立即停止户外作业，远离临时搭建物，加固门窗，避免外出，确保人身安全。政府及相关部门已启动应急响应，请密切关注最新气象预警信息。\"",
+                    "  \n\n【极端大风预警】预计未来3小时内，本地将出现10级以上极端大风，伴有强阵风或龙卷风。请立即停止户外活动，远离临时搭建物、广告牌、大树等危险区域，确保人身安全。车辆减速慢行，避免高空作业。如遇紧急情况，请拨打110或119求助。",
+                    "紧急通知：极端大风天气预警！预计未来几小时内将出现强风，风力可达10级以上，请市民立即采取防范措施，避免外出，确保门窗紧闭，远离临时搭建物和高空悬挂物。如遇紧急情况，请拨打110或119求助。请相互转告，确保安全！",
+                    "【极端大风紧急警报】预计未来2小时内将出现10级以上极端大风，伴有强对流天气。请立即停止户外活动，远离临时建筑、广告牌、大树等危险区域，确保人身安全。车辆请减速慢行，注意横风。如有必要，请前往避难场所躲避。保持关注最新天气预报，非必要不出门！"
+                ],
                 "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
+                "prompt_one_shot.txt": [
+                    "**[发送机构]：极端大风警报** 现已在 **[地点]** 生效，持续至 **[时间]**。预计风速极强，可能造成树木倒塌、电力中断及高空坠物。请立即采取防护措施，远离窗户，避免外出。如身处户外，请迅速进入坚固建筑物内躲避，并注意防范飞溅碎片。更多信息请访问 **[网址]**。"
+                ],
                 "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": []
+                "prompt_chain_of_translation.txt": [
+                    "Extreme wind alert: [TIME] in [LOCATION]. Expect gusts up to [SPEED] mph, posing risks to property and safety. Secure outdoor items, avoid travel if possible. More info: [URL]  \n\n极端大风警报：[TIME]在[LOCATION]。预计阵风可达[SPEED]公里/小时，可能对财产和安全造成威胁。请固定户外物品，尽量避免出行。更多信息：[URL]",
+                    "**English Template:**  \n\"Extreme winds expected in [LOCATION] until [TIME]. Avoid outdoor activities, secure loose objects, and stay indoors if possible. Monitor updates at [URL] for more information.\"\n\n**Mandarin Translation:**  \n\"预计 [LOCATION] 将持续极端大风直至 [TIME]。请避免户外活动，固定松散物品，尽量待在室内。更多信息请访问 [URL] 查看最新动态。\"",
+                    "**English Template:**  \nEmergency Alert: Extreme winds expected in [LOCATION] from [TIME]. Avoid outdoor activities. Secure loose objects. Stay indoors if possible. Monitor updates at [URL].  \n\n**Mandarin Translation:**  \n紧急警报：[LOCATION]将于[TIME]起出现极端大风天气。请避免户外活动，加固易吹散物品，尽量待在室内。更多信息请查看[URL]。",
+                    "紧急通知：预计[时间]在[地点]将出现极端大风天气，风速可能达到[风速]级。请居民注意安全，避免外出，固定好户外物品，防止高空坠物。更多详情请访问[网址]。  \n\n紧急通知：预计[TIME]在[LOCATION]将出现极端大风天气，风速可能达到[风速]级。请居民注意安全，避免外出，固定好户外物品，防止高空坠物。更多详情请访问[URL]。",
+                    "Extreme wind alert: [TIME] in [LOCATION]. Expect gusts up to [SPEED] mph, causing potential damage to trees, power lines, and structures. Secure loose objects and avoid outdoor activities. Stay updated at [URL].  \n\n极端大风警报：[TIME]在[LOCATION]。预计阵风可达[SPEED]公里/小时，可能对树木、电线和建筑物造成破坏。请固定松散物品并避免户外活动。更多信息请访问[URL]。"
+                ]
             },
             "fire": {
                 "prompt_simple.txt": [],
