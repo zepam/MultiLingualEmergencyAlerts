@@ -4,6 +4,17 @@ from clients.deepseek import DeepSeekClient
 from clients.chatgpt import ChatGPTClient
 from clients.cloud_translation import GoogleCloudTranslationClient
 
+def chat_with_service(service_name, language, disaster, prompt, logger):
+    match service_name:
+        case "gemini":
+            return chat_gemini(language, disaster, prompt, logger)
+        case "chatgpt":
+            return chat_chatgpt(language, disaster, prompt, logger)
+        case "deepseek":
+            return chat_deepseek(language, disaster, prompt, logger)
+        case "google_translate":
+            return chat_google_translate(language, disaster, prompt, logger)
+
 def chat_gemini(language, disaster, prompt, logger):
     gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"), logger=logger)
     return gemini_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
@@ -26,6 +37,23 @@ def chat_google_translate(language, disaster, prompt, logger):
 def generate_output_schema():
     return {
         "chatgpt": {
+            "english": {
+                "UAP_landed": {
+                    "prompt_new_disaster.txt": []
+                },
+                "meteor_strike": {
+                    "prompt_new_disaster.txt": []
+                },
+                "freeway_closure": {
+                    "prompt_new_disaster.txt": []
+                },
+                "new_disease_called_SARD-26": {
+                    "prompt_new_disaster.txt": []
+                },
+                "police_activity_near_mall": {
+                    "prompt_new_disaster.txt": []
+                }
+            },
             "spanish": {
                 "flood": {
                     "prompt_simple.txt": [],
@@ -213,6 +241,23 @@ def generate_output_schema():
             }
         },
         "gemini": {
+            "english": {
+                "UAP_landed": {
+                    "prompt_new_disaster.txt": []
+                },
+                "meteor_strike": {
+                    "prompt_new_disaster.txt": []
+                },
+                "freeway_closure": {
+                    "prompt_new_disaster.txt": []
+                },
+                "new_disease_called_SARD-26": {
+                    "prompt_new_disaster.txt": []
+                },
+                "police_activity_near_mall": {
+                    "prompt_new_disaster.txt": []
+                }
+            },
             "spanish": {
                 "flood": {
                     "prompt_simple.txt": [],
@@ -400,6 +445,23 @@ def generate_output_schema():
             }
         },
         "deepseek": {
+            "english": {
+                "UAP_landed": {
+                    "prompt_new_disaster.txt": []
+                },
+                "meteor_strike": {
+                    "prompt_new_disaster.txt": []
+                },
+                "freeway_closure": {
+                    "prompt_new_disaster.txt": []
+                },
+                "new_disease_called_SARD-26": {
+                    "prompt_new_disaster.txt": []
+                },
+                "police_activity_near_mall": {
+                    "prompt_new_disaster.txt": []
+                }
+            },
             "spanish": {
                 "flood": {
                     "prompt_simple.txt": [],

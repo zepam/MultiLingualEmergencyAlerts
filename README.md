@@ -47,7 +47,13 @@ Sign up to OpenRouter and create an API key: https://openrouter.ai/settings/keys
 
 - `--preserve_output`: if a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits
 
-You can also choose to skip calling certain API endpoints with these bools:
+There are two parts of the script: collecting multilingual responses, and collecting English responses for novel disasters. You can choose to skip either of them with these bools:
+
+- `--skip_multilingual`
+
+- `--skip_new_disasters`
+
+You can also choose to skip calling certain API endpoints with the following bools:
 
 - `--skip_gemini`
 

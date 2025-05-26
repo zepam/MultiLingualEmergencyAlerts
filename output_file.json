@@ -1,5 +1,52 @@
 {
     "chatgpt": {
+        "english": {
+            "UAP_landed": {
+                "prompt_new_disaster.txt": [
+                    "This is an emergency alert. At [TIME], an unidentified aerial phenomenon (UAP) landed at [LOCATION]. Authorities are on-site. Residents are urged to avoid the area and shelter indoors. Remain calm and await further instructions. Updates will be provided as information becomes available. Visit [URL] for details. Stay tuned to local broadcasts for updates.",
+                    "Emergency Alert: At [TIME], an unidentified aerial phenomenon (UAP) landed at [LOCATION]. Authorities are investigating. Please remain calm and avoid the area to ensure your safety and allow emergency personnel to work. Updates and guidance will be provided as more information becomes available. Visit [URL] for official updates.",
+                    "This is an emergency alert. At [TIME], an unidentified aerial phenomenon (UAP) was reported landed at [LOCATION]. Local authorities are responding. Residents are urged to remain indoors, avoid the area, and follow official updates. Do not approach the site. For more information and ongoing updates, visit [URL].",
+                    "Emergency Alert: At [TIME], an unidentified aerial phenomenon (UAP) has reportedly landed at [LOCATION]. Authorities are assessing the situation. Residents are advised to avoid the area, remain indoors, and monitor updates. Visit [URL] for more information and instructions.",
+                    "This is an emergency alert issued at [TIME]. Unidentified Aerial Phenomenon (UAP) has landed in [LOCATION]. Authorities are responding, and the situation is under investigation. Residents are advised to avoid the area, remain indoors, and follow official updates. Please do not approach the site. For more information and ongoing updates, visit [URL]. Stay safe and vigilant."
+                ]
+            },
+            "meteor_strike": {
+                "prompt_new_disaster.txt": [
+                    "This is an emergency alert regarding a meteor strike. At approximately [TIME], a meteor impacted near [LOCATION]. Significant damage has been reported in the surrounding area. Residents are advised to seek shelter immediately, avoid debris, and follow instructions from local authorities. Emergency services are responding to the situation. For updates and safety information, visit [URL]. Stay safe and remain alert.",
+                    "Emergency Alert: At [TIME], a meteor strike has occurred near [LOCATION]. Residents are advised to seek shelter immediately and remain indoors. Possible impacts include damage to structures, fires, and hazardous debris. Emergency services are responding. Stay tuned to local media for updates and follow instructions from authorities. More information available at [URL].",
+                    "Emergency Alert: A meteor strike has been reported at [TIME] in the vicinity of [LOCATION]. Significant damage and potential hazards have been identified. Residents are urged to stay indoors, avoid impacted areas, and follow instructions from local authorities. Monitor official updates for evacuation notices and safety instructions. For more information, visit [URL].",
+                    "Emergency Alert: At [TIME], a meteor strike occurred near [LOCATION]. Significant damage has been reported, and hazards such as fire and debris may impact surrounding areas. Emergency services are responding. Residents are urged to avoid the area, remain indoors, and follow instructions from local authorities. For updates and safety information, visit [URL].",
+                    "Emergency Alert: At [TIME], a meteor strike was reported in [LOCATION]. Authorities are assessing the impact and potential hazards. Residents are urged to avoid the area and follow instructions from local officials. Stay indoors and monitor emergency updates. For more information, visit [URL]."
+                ]
+            },
+            "freeway_closure": {
+                "prompt_new_disaster.txt": [
+                    "Emergency Alert: A freeway closure is in effect at [LOCATION] due to [REASON]. Avoid the area and seek alternate routes. Expect delays until further notice. Updates will be provided as available. Check [URL] for more information. Time of alert: [TIME].",
+                    "Emergency Alert: As of [TIME], the freeway at [LOCATION] is closed due to an incident. Authorities are working to clear the area, but significant delays are expected. Please use alternate routes and avoid the area if possible. For updates, visit [URL].",
+                    "Emergency Alert: A freeway closure is in effect as of [TIME] on [LOCATION]. Please avoid the area and use alternate routes. Expect delays and follow instructions from local authorities. For updates and more information, visit [URL].",
+                    "A freeway closure is in effect at [LOCATION] starting at [TIME] due to emergency conditions. Drivers are advised to avoid the area and use alternate routes. Significant delays are expected. Stay tuned to local traffic updates for real-time information. Visit [URL] for details and updates.",
+                    "Emergency Alert: As of [TIME], the freeway at [LOCATION] is closed due to an emergency incident. Expect significant delays and use alternate routes. Avoid the area if possible to allow emergency personnel to respond. For updates and detailed information, visit [URL]."
+                ]
+            },
+            "new_disease_called_SARD-26": {
+                "prompt_new_disaster.txt": [
+                    "At [TIME], health officials in [LOCATION] confirmed cases of SARD-26, a highly contagious respiratory disease. Symptoms include fever, cough, and shortness of breath. Residents are urged to limit gatherings, wear masks, and follow public health guidance to prevent the spread. If you experience symptoms, contact a healthcare provider immediately. For updates and safety information, visit [URL].",
+                    "This is an emergency alert for [LOCATION] issued at [TIME]. A new contagious disease, SARD-26, has been reported in the area. Symptoms include fever, difficulty breathing, and severe fatigue. Residents are advised to reduce movement, practice hygiene precautions, and follow local health directives. If you experience symptoms, seek medical attention immediately. For updates and safety guidelines, visit [URL].",
+                    "Emergency Alert [TIME]: A new disease, SARD-26, has been detected in [LOCATION]. Symptoms include fever, fatigue, and respiratory distress. Residents in the affected area should avoid gatherings, practice hygiene measures, and monitor for symptoms. Health officials are working to contain the spread. If you experience symptoms, isolate immediately and contact a healthcare provider. For updates and safety guidelines, visit [URL]. Stay informed and take precautions.",
+                    "Emergency Alert: At [TIME], officials confirmed cases of a contagious respiratory disease, SARD-26, in [LOCATION]. Symptoms include severe cough, fever, and shortness of breath. Individuals in the area are advised to exercise caution, wear masks, and limit non-essential travel. If you experience symptoms, seek medical care immediately. Stay updated at [URL].",
+                    "Emergency Alert: As of [TIME], a new disease, SARD-26, has been reported in [LOCATION]. SARD-26 is highly contagious and symptoms include fever, shortness of breath, and severe fatigue. Residents are advised to avoid public gatherings, wear masks, and follow official health guidelines. If you experience symptoms, isolate immediately and seek medical advice. For updates and guidance, visit [URL]. Stay safe."
+                ]
+            },
+            "police_activity_near_mall": {
+                "prompt_new_disaster.txt": [
+                    "Police activity is underway near [LOCATION] as of [TIME]. Authorities advise avoiding the area and seeking alternate routes. Residents and visitors should remain alert and follow official instructions. For updates and safety information, visit [URL].",
+                    "Police activity reported near [LOCATION] as of [TIME]. Please avoid the area and follow instructions from local authorities. Stay informed and prioritize safety. For updates, visit [URL].",
+                    "Police activity reported near [LOCATION] as of [TIME]. Avoid the area for your safety and follow instructions from local authorities. Updates and further details available at [URL].",
+                    "Police activity reported near [LOCATION] as of [TIME]. Please avoid the area and follow instructions from local authorities. Stay tuned to official updates for your safety. For more information, visit [URL].",
+                    "Police activity reported near [LOCATION] at [TIME]. Authorities request the public to avoid the area for safety reasons. Follow all official instructions and stay tuned for updates. For more information, visit [URL]."
+                ]
+            }
+        },
         "spanish": {
             "flood": {
                 "prompt_simple.txt": [
@@ -937,6 +984,53 @@
         }
     },
     "gemini": {
+        "english": {
+            "UAP_landed": {
+                "prompt_new_disaster.txt": [
+                    "THIS IS A NATIONAL EMERGENCY BROADCAST.\n\nUnidentified Aerial Phenomenon reported to have landed.\n\nConfirmed landing at [LOCATION] at approximately [TIME]. Authorities are on scene. Avoid the area. Remain indoors and monitor official channels for updates.\n\nDo not approach the object. Do not attempt to communicate. Potential for unknown hazards.\n\nFurther information and updates will be available at: [URL]\n\nThis is not a test.\n",
+                    "THIS IS AN OFFICIAL ALERT. A confirmed Unidentified Aerial Phenomenon has landed.\n\nTIME: [TIME]\n\nLOCATION: [LOCATION]\n\nCivilian authorities are requesting immediate public cooperation. Remain calm. Do NOT approach the object or attempt communication. Stay indoors, lock doors and windows, and monitor official channels for updates. Avoid unnecessary travel.\n\n Further information is available at: [URL]\n\nThis is not a test.\n",
+                    "THIS IS AN EMERGENCY ALERT. An Unidentified Aerial Phenomenon has landed.\n\nREPORT: UAP LANDING\nTIME: [TIME]\nLOCATION: [LOCATION]\n\nAuthorities are on scene. Stay away from the area. DO NOT approach the object. Follow instructions from law enforcement and emergency personnel. Monitor official channels for updates.\n\nFURTHER INFORMATION: [URL]\nThis is not a test.\n",
+                    "THIS IS AN EMERGENCY ALERT.\n\nUnidentified Aerial Phenomenon (UAP) landing confirmed.\n\n[LOCATION] at approximately [TIME].\n\nAuthorities are on scene, but the situation is rapidly evolving. Exercise extreme caution and avoid the area. Shelter in place if possible, monitor radio and television broadcasts for updates.\n\nDo not approach the object or any personnel within its vicinity.\n\nFor more information, please visit: [URL]\n\nThis is not a test.\n",
+                    "THIS IS A NATIONAL EMERGENCY ALERT. Unidentified Aerial Phenomenon (UAP) LANDED.\n\nA UAP has landed at [LOCATION] at approximately [TIME]. Authorities are investigating.\n\nDO NOT approach the location. Remain calm and monitor official channels for updates. Further instructions will be provided as they become available.\n\nFor more information, visit [URL]. This is not a test.\n"
+                ]
+            },
+            "meteor_strike": {
+                "prompt_new_disaster.txt": [
+                    "A meteor strike has been reported. Impact occurred at [TIME] in [LOCATION]. Authorities are assessing the situation. Stay indoors and away from windows. Monitor official news channels for updates. Do not travel unless absolutely necessary. Check [URL] for further information and safety guidelines. Stand by for further instructions.\n",
+                    "A meteor strike has been confirmed. Impact occurred at [TIME] in [LOCATION]. Residents are advised to seek shelter indoors, away from windows. Stay tuned to local news and weather channels for updates and instructions from emergency personnel. Do not travel unless absolutely necessary. Avoid downed power lines and potential debris fields. The situation is rapidly evolving. Check [URL] for further information and safety guidelines.\n",
+                    "A meteor strike has been confirmed. Impact occurred at [TIME] in the vicinity of [LOCATION]. Authorities are assessing the situation. Seek shelter indoors immediately, away from windows. Stay tuned to local news and official channels for updates. Do not travel unless absolutely necessary. For further information and safety guidelines, please visit: [URL].\n",
+                    "A meteor strike has been confirmed. Impact occurred at [TIME] in [LOCATION]. Seek immediate shelter indoors, away from windows. Expect potential disruptions to communications, power, and transportation. First responders are being deployed. Monitor official channels for updates and further instructions. Do not attempt to travel unless absolutely necessary. For more information and safety guidelines, visit [URL]. Stay safe.\n",
+                    "A meteor strike has been confirmed. This is NOT a drill. Seek immediate shelter indoors, preferably in a basement or interior room away from windows. Expect significant structural damage possible. Stay informed.\n\n[TIME] of impact: [TIME]\nImpact [LOCATION]: [LOCATION]\nFurther information and safety guidelines are available at: [URL]\nRepeat. This is not a drill. Seek Shelter.\n"
+                ]
+            },
+            "freeway_closure": {
+                "prompt_new_disaster.txt": [
+                    "TRAFFIC ALERT: I-80 Westbound is CLOSED due to a major accident. Expect significant delays. Avoid the area if possible.\n\n[LOCATION]: I-80 Westbound between [EXIT 1] and [EXIT 2].\n\n[TIME]: Effective immediately and until further notice.\n\nDetour: Use alternate routes. Check the [URL] for updates and alternate routes. Do NOT call 911 for traffic information.\n",
+                    "**URGENT - FREEWAY CLOSURE**\n\nDue to a severe traffic incident, all lanes of [LOCATION] are CLOSED until further notice. Expect significant delays and seek alternate routes. Closure began at [TIME].\n\nAvoid the area if possible. Emergency crews are on scene.\n\nFor updates and detour information, please visit: [URL]\n",
+                    "EMERGENCY ALERT: Due to a major accident, Interstate [LOCATION] is CLOSED in both directions effective immediately. Expect significant delays and seek alternate routes. Closure expected to last until approximately [TIME]. Avoid the area. For updates and detour information, please visit [URL].\n",
+                    "SEVERE TRAFFIC ALERT: I-80 WESTBOUND CLOSED. Due to a major accident, all lanes of I-80 Westbound are currently closed between [LOCATION]. Expect significant delays and seek alternate routes. Closure expected to last several hours as of [TIME]. Emergency crews are on scene. DO NOT attempt to access I-80 Westbound in the affected area. For updates and detour information, please visit [URL].\n",
+                    "ATTENTION MOTORISTS:\n\nDue to a major traffic incident, all lanes of [LOCATION] are currently CLOSED until further notice. Expect significant delays and seek alternate routes. Avoid the area if possible.\n\nClosure in effect as of [TIME].\n\nFor updates and more information, please visit: [URL]\n"
+                ]
+            },
+            "new_disease_called_SARD-26": {
+                "prompt_new_disaster.txt": [
+                    "A new infectious disease, SARD-26, has been identified in [LOCATION]. Symptoms include rapid onset fever, severe respiratory distress, and disorientation. Transmission is airborne. Avoid crowded areas and wear a NIOSH-approved N95 mask. Seek immediate medical attention if you experience any of these symptoms. This is a rapidly evolving situation. Stay tuned to official channels for updates. More information is available at [URL]. This alert is effective as of [TIME]. Do not call 911 unless you are experiencing a medical emergency.\n",
+                    "A public health emergency has been declared. A novel disease, SARD-26, is spreading rapidly. Symptoms include fever, respiratory distress, and neurological impairment. Seek immediate medical attention if you experience these symptoms.\n\n[LOCATION] residents are advised to wear masks in public and practice social distancing. Vaccination is currently unavailable.\n\nStay tuned to local news and monitor official channels for updates.\n\nFor more information, visit: [URL]\n\nTime of issue: [TIME]\n",
+                    "A new, highly contagious disease, SARD-26, has been identified in [LOCATION]. Symptoms include sudden fever, respiratory distress, and neurological impairment.\n\nSeek immediate medical attention if experiencing these symptoms. Isolate yourself to prevent further spread. Authorities recommend wearing masks and practicing strict hygiene.\n\n[TIME] - This is a developing situation. Stay tuned to official channels for updates.\n\nFor more information and guidance, visit: [URL]\n",
+                    "***\n\nATTENTION! URGENT PUBLIC HEALTH WARNING.\n\nA new and highly contagious disease, SARD-26, has been identified. Symptoms include fever, respiratory distress, and neurological impairment. Seek immediate medical attention if experiencing these symptoms. Protect yourself by wearing a mask, practicing social distancing, and frequent handwashing. Avoid large gatherings.\n\n[LOCATION] residents are urged to take extra precautions.\n\nEffective immediately.\n\n[TIME].\n\nFor up-to-date information and resources visit: [URL]\n***\n",
+                    "NEW DISEASE ALERT: A novel respiratory illness, SARD-26, has been identified in [LOCATION]. Symptoms include fever, cough, and shortness of breath. SARD-26 appears highly contagious.\n\nIf you experience these symptoms, isolate immediately and contact your healthcare provider. Wear a mask if you must be around others.\n\n[TIME]: Government and health officials are monitoring the situation closely. Please avoid unnecessary travel to affected areas.\n\nFor important updates and guidelines, please visit: [URL]\n"
+                ]
+            },
+            "police_activity_near_mall": {
+                "prompt_new_disaster.txt": [
+                    "EMERGENCY ALERT: Police activity reported near [LOCATION] impacting traffic and pedestrian access. Avoid the area if possible. Seek alternate routes. Shelter in place if in the immediate vicinity of [LOCATION] if advised by law enforcement. Monitor local news and social media for updates. AVOID THE AREA. Do not call 911 for information unless you have a genuine emergency. Time of issue: [TIME]. For further information, visit [URL].\n",
+                    "POLICE ACTIVITY ALERT: There is ongoing police activity near [LOCATION] as of [TIME]. Avoid the area if possible. Roads may be closed and traffic may be affected. Shelter in place if you are in the immediate vicinity. Monitor local news and social media for updates. Do not approach or interfere with law enforcement personnel. For more information, visit [URL].\n",
+                    "POLICE ACTIVITY NEAR [LOCATION].\n\nDue to ongoing police activity, avoid the area of [LOCATION] until further notice. Expect increased police presence and possible road closures. Seek alternate routes.\n\nThe activity began at approximately [TIME].\n\nMonitor local news and [URL] for updates. Do not call 911 unless you have a life-threatening emergency. Obey all instructions from law enforcement.\n",
+                    "POLICE ACTIVITY NEAR [LOCATION]. Authorities are responding to an incident in the vicinity of the mall. Avoid the area if possible. Seek shelter in place if you are in the immediate area. Monitor media for updates. Do not approach or interfere with law enforcement. Incident reported at [TIME]. For more information, visit [URL].\n",
+                    "EMERGENCY ALERT: Police activity reported near [LOCATION] at [TIME]. Avoid the area if possible. Shelter in place if you are in the vicinity. Expect traffic delays and road closures. Follow instructions from law enforcement personnel on scene. Do not approach or interfere with police operations. Stay tuned to local news or visit [URL] for updates.\n"
+                ]
+            }
+        },
         "spanish": {
             "flood": {
                 "prompt_simple.txt": [
@@ -1874,6 +1968,23 @@
         }
     },
     "deepseek": {
+        "english": {
+            "UAP_landed": {
+                "prompt_new_disaster.txt": []
+            },
+            "meteor_strike": {
+                "prompt_new_disaster.txt": []
+            },
+            "freeway_closure": {
+                "prompt_new_disaster.txt": []
+            },
+            "new_disease_called_SARD-26": {
+                "prompt_new_disaster.txt": []
+            },
+            "police_activity_near_mall": {
+                "prompt_new_disaster.txt": []
+            }
+        },
         "spanish": {
             "flood": {
                 "prompt_simple.txt": [
@@ -2423,7 +2534,7 @@
                     "  \n\n[时间] [地点] 发生火灾，请立即撤离至安全区域。更多信息请访问 [网址]。保持冷静，听从指挥。",
                     "\"[TIME] 2023年10月15日 14:30  \n[LOCATION] 北京市朝阳区光华路5号  \n[URL] www.example.com/fire-alert  \n\n紧急通知：光华路5号发生火灾，请附近居民立即撤离至安全区域，听从现场指挥。避免使用电梯，拨打119报告火情。更多信息请访问上述链接。\"",
                     "紧急通知：  \n[TIME]在[LOCATION]发生火灾，请附近居民立即撤离至安全区域，避免靠近事发地点。相关部门已赶往现场处置。更多实时信息请访问[URL]。保持冷静，注意安全。  \n\nUrgent Alert:  \nA fire has occurred at [LOCATION] at [TIME]. Residents nearby are advised to evacuate immediately and avoid the area. Authorities are on the scene. For updates, visit [URL]. Stay calm and prioritize safety.",
-                    "**紧急火灾警报**  \n请注意，[TIME]在[LOCATION]发生火灾。请立即远离该区域，听从应急人员指挥。如需更多信息，请访问[URL]。保持冷静，注意安全。  \n\n**Emergency Fire Alert**  \nA fire has been reported at [LOCATION] at [TIME]. Evacuate the area immediately and follow instructions from emergency personnel. For more details, visit [URL]. Stay calm and stay safe.",
+                    "**紧急火灾警报**  \n请注意，[TIME]在[LOCATION]发生火灾。请立即远离该区域，听从应急人员指挥。如需更多信息，请访问[URL]。保持冷静，注意安全。  \n\n**Emergency Fire Alert**  \nA fire has been reported at [LOCATION] at [TIME]. Evacuate the area immediately and follow instructions from emergency personnel. For more details, visit [URL]. Stay calm and stay safe."
                 ],
                 "prompt_chain_of_translation.txt": [
                     "紧急通知：在[时间]于[地点]发生火灾，请附近居民立即撤离至安全区域，并听从现场指挥。更多信息请访问[网址]。  \n\nEmergency notice: A fire occurred at [TIME] in [LOCATION]. Residents nearby are advised to evacuate immediately to a safe area and follow on-site instructions. For more information, please visit [URL].",
