@@ -3,9 +3,7 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 import textstat
-#import torch
 from evaluate import load
-#from summac.model_summac import SummaCZS
 import pandas as pd
 import argparse
 import json
@@ -19,8 +17,69 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     # with open(reference_path, "r", encoding="utf-8") as f:
     #     refs = [line.strip() for line in f]
 
+
     with open(reference_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        reference_data = json.load(f)
+
+    with open(generated_path, "r", encoding="utf-8") as f:
+        prediction_data = json.load(f)
+    
+    # insert any preprocessing of prediction_data here
+
+    results = []
+
+    """
+    we want to collect fine-tuned results that tell us:
+    1) if prompt A better than prompt B
+    2) if disaster A did better than disaster B
+    3) if service A did better than service B
+    4) if language A did better than language B
+
+    so let's evaluate on a per-prompt level. We can then take the average to broaden the evaluation to larger categories like disaster, language
+    iterate over every language - {disaster: reference_text} pair
+    """
+    for key, values in reference_data.items():
+
+        # iterate over each disaster and reference text
+        for disaster, gold_standard in values.items():
+
+            # there should be another loop here over each language service. ChatGPT is here for an example
+            # pull the prompts relevant to this language - service - disaster pairing
+            relevant_prompts = prediction_data["chatgpt"][key][disaster]
+
+            # iterate over the individual prompts and the collected predictions
+            for prompt, predictions in relevant_prompts.items():
+                total_predictions = len(predictions)
+
+                # we only have one gold standard. Make it equal in length to the predictions
+                duplicated_gold_standards = [gold_standard] * total_predictions
+
+                # FKGL, DCRS, CLI should only be calculated for the generated English templates, not the translated ones
+                # textstat only supports a very small amount of non-English languages https://pypi.org/project/textstat/
+                try:
+                    # this ID format isn't particularly nice for a CSV? Any other ideas?
+                    id = f"{key}:chatgpt:{disaster}:{prompt}"
+                    result = {
+                        "ID": id,
+                        "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
+                        "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
+                        "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
+                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards)["score"],
+                        "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
+                        "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
+                        "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
+                        "METEOR": meteor.compute(predictions=predictions, references=duplicated_gold_standards)["meteor"],
+                        #"FKGL": textstat.flesch_kincaid_grade(predictions),
+                        #"DCRS": textstat.dale_chall_readability_score(predictions),
+                        #"CLI": textstat.coleman_liau_index(predictions)
+                    }
+                    results.append(result)
+                except Exception as e:
+                    print(f"[Error on line {id}] {e}")
+                    #continue
+
+        
+    """
     preds = [item["generated_text"] for item in data]
     refs = [item["reference_text"] for item in data]
     assert len(preds) == len(refs), "Mismatched number of lines in generated and reference files"
@@ -41,14 +100,13 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 "METEOR": meteor.compute(predictions=[pred], references=[ref])["meteor"],
                 "FKGL": textstat.flesch_kincaid_grade(pred),
                 "DCRS": textstat.dale_chall_readability_score(pred),
-                "CLI": textstat.coleman_liau_index(pred) #,
-                #"LENS": textstat.linsear_write_formula(pred) 
-                #"SummaC": summaC.score([ref], [pred])[0]
+                "CLI": textstat.coleman_liau_index(pred)
             }
             results.append(result)
         except Exception as e:
             print(f"[Error on line {i}] {e}")
             continue
+    """
     
     df = pd.DataFrame(results)
 
@@ -73,10 +131,6 @@ def main():
     bertscore = load("bertscore")
     meteor = load("meteor")
 
-    # Load SummaC for factuality
-    # summaC = SummaCZS(granularity="sentence", model_name="mnli", device="cuda" if torch.cuda.is_available() else "cpu")
-    # summaC.load()
-
     df = evaluate_generated_texts(
         args.generated_path,
         args.reference_path,
@@ -84,8 +138,7 @@ def main():
         rouge,
         bleu,
         bertscore,
-        meteor #,
-        #summaC
+        meteor
     )
 
     # Print the DataFrame
@@ -96,8 +149,6 @@ if __name__ == "__main__":
 
 
     """
-    python evaluation.py data/test_generated_text.txt data/test_reference_text.txt --output_csv results.csv
-
-    python evaluation.py output_file.json REFERENCE_FILE --output_csv results.csv
+    python evaluation.py output_file.json test_reference_text.txt --output_csv results.csv
 
     """
