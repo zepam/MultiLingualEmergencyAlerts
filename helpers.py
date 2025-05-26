@@ -37,6 +37,23 @@ def chat_google_translate(language, disaster, prompt, logger):
 def generate_output_schema():
     return {
         "chatgpt": {
+            "english": {
+                "UAP_landed": {
+                    "prompt_new_disaster.txt": []
+                },
+                "meteor_strike": {
+                    "prompt_new_disaster.txt": []
+                },
+                "freeway_closure": {
+                    "prompt_new_disaster.txt": []
+                },
+                "new_disease_called_SARD-26": {
+                    "prompt_new_disaster.txt": []
+                },
+                "police_activity_near_mall": {
+                    "prompt_new_disaster.txt": []
+                }
+            },
             "spanish": {
                 "flood": {
                     "prompt_simple.txt": [],
@@ -224,6 +241,23 @@ def generate_output_schema():
             }
         },
         "gemini": {
+            "english": {
+                "UAP_landed": {
+                    "prompt_new_disaster.txt": []
+                },
+                "meteor_strike": {
+                    "prompt_new_disaster.txt": []
+                },
+                "freeway_closure": {
+                    "prompt_new_disaster.txt": []
+                },
+                "new_disease_called_SARD-26": {
+                    "prompt_new_disaster.txt": []
+                },
+                "police_activity_near_mall": {
+                    "prompt_new_disaster.txt": []
+                }
+            },
             "spanish": {
                 "flood": {
                     "prompt_simple.txt": [],
@@ -411,6 +445,23 @@ def generate_output_schema():
             }
         },
         "deepseek": {
+            "english": {
+                "UAP_landed": {
+                    "prompt_new_disaster.txt": []
+                },
+                "meteor_strike": {
+                    "prompt_new_disaster.txt": []
+                },
+                "freeway_closure": {
+                    "prompt_new_disaster.txt": []
+                },
+                "new_disease_called_SARD-26": {
+                    "prompt_new_disaster.txt": []
+                },
+                "police_activity_near_mall": {
+                    "prompt_new_disaster.txt": []
+                }
+            },
             "spanish": {
                 "flood": {
                     "prompt_simple.txt": [],

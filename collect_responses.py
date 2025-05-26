@@ -15,7 +15,7 @@ PROMPT_FILES = [
 ]
 
 # prompt for English response
-ENGLISH_PROMPT_FILES = "prompts/prompt_new_disaster.txt"
+ENGLISH_PROMPT_FILE = "prompts/prompt_new_disaster.txt"
 
 # languages to evaluate
 LANGUAGES = [
@@ -110,7 +110,12 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
 
 def collect_english_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses):
     for disaster in CUSTOM_DISASTERS:
-        disaster_name = disaster.replace("a ", "").replace(" ", "_")
+        prompt = ENGLISH_PROMPT_FILE
+        language = "English"
+
+        skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
+        skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
+        skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
 
 
 if __name__ == "__main__":
