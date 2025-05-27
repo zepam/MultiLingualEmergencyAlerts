@@ -5,3 +5,7 @@ openai
 
 # general usage
 python-dotenv
+
+# evaluation
+textstat
+evaluate
