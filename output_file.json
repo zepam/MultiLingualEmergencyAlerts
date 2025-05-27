@@ -2534,7 +2534,8 @@
                     "  \n\n[时间] [地点] 发生火灾，请立即撤离至安全区域。更多信息请访问 [网址]。保持冷静，听从指挥。",
                     "\"[TIME] 2023年10月15日 14:30  \n[LOCATION] 北京市朝阳区光华路5号  \n[URL] www.example.com/fire-alert  \n\n紧急通知：光华路5号发生火灾，请附近居民立即撤离至安全区域，听从现场指挥。避免使用电梯，拨打119报告火情。更多信息请访问上述链接。\"",
                     "紧急通知：  \n[TIME]在[LOCATION]发生火灾，请附近居民立即撤离至安全区域，避免靠近事发地点。相关部门已赶往现场处置。更多实时信息请访问[URL]。保持冷静，注意安全。  \n\nUrgent Alert:  \nA fire has occurred at [LOCATION] at [TIME]. Residents nearby are advised to evacuate immediately and avoid the area. Authorities are on the scene. For updates, visit [URL]. Stay calm and prioritize safety.",
-                    "**紧急火灾警报**  \n请注意，[TIME]在[LOCATION]发生火灾。请立即远离该区域，听从应急人员指挥。如需更多信息，请访问[URL]。保持冷静，注意安全。  \n\n**Emergency Fire Alert**  \nA fire has been reported at [LOCATION] at [TIME]. Evacuate the area immediately and follow instructions from emergency personnel. For more details, visit [URL]. Stay calm and stay safe."
+                    "**紧急火灾警报**  \n请注意，[TIME]在[LOCATION]发生火灾。请立即远离该区域，听从应急人员指挥。如需更多信息，请访问[URL]。保持冷静，注意安全。  \n\n**Emergency Fire Alert**  \nA fire has been reported at [LOCATION] at [TIME]. Evacuate the area immediately and follow instructions from emergency personnel. For more details, visit [URL]. Stay calm and stay safe.",
+                    "**紧急火灾警报**  \n时间：[TIME]  \n地点：[LOCATION]  \n目前发生火灾，请附近居民迅速撤离，远离危险区域。切勿使用电梯，听从现场指挥。更多详情请访问：[URL]  \n\n**Emergency Fire Alert**  \nTime: [TIME]  \nLocation: [LOCATION]  \nA fire has been reported. Residents nearby, evacuate immediately and avoid the area. Do not use elevators. Follow instructions from authorities. For more info: [URL]"
                 ],
                 "prompt_chain_of_translation.txt": [
                     "紧急通知：在[时间]于[地点]发生火灾，请附近居民立即撤离至安全区域，并听从现场指挥。更多信息请访问[网址]。  \n\nEmergency notice: A fire occurred at [TIME] in [LOCATION]. Residents nearby are advised to evacuate immediately to a safe area and follow on-site instructions. For more information, please visit [URL].",
@@ -2552,16 +2553,40 @@
                     "**紧急通知：煮沸用水警报**  \n\n尊敬的居民：  \n\n由于水质检测异常，现发布煮沸用水通知。请将所有饮用水煮沸至少1分钟后再使用，包括饮用、做饭、刷牙等。避免直接使用未煮沸的自来水。  \n\n恢复正常供水时间将另行通知。给您带来不便，敬请谅解。  \n\n**市水务局**  \n[日期]",
                     "【紧急通知】  \n\n尊敬的居民：  \n\n因供水系统临时检修，水质可能受到影响。为确保安全，现发布**煮沸用水通知**，请务必在饮用、刷牙或烹饪前将自来水煮沸至少1分钟。该通知即时生效，解除时间另行通知。  \n\n给您带来不便，敬请谅解。请互相转告！  \n\n—— [您的单位/社区名称]"
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": [
+                    "【紧急通知】  \n\n请注意，[LOCATION] 地区发布烧水通知。由于水质问题，请居民将自来水煮沸至少1分钟后再饮用或烹饪。此通知自[TIME]起生效，直至另行通知。  \n\n更多详情请访问：[URL]  \n\n请互相转告，确保安全用水。",
+                    "紧急通知：由于水质问题，[LOCATION]地区居民需将自来水煮沸后饮用。请将水煮沸至少1分钟，待冷却后使用。此措施自[TIME]起生效，直至另行通知。更多详情请访问[URL]。请相互转告，确保用水安全。",
+                    "【紧急通知】请注意，[TIME]起，[LOCATION]地区的自来水可能受到污染，请务必煮沸后再饮用或烹饪。将水煮沸至少1分钟，或使用瓶装水替代。此通知有效期直至进一步通知。详情请访问[URL]。请互相转告，确保安全。",
+                    "紧急通知：由于水质问题，[LOCATION]地区现发布煮沸水通知。请居民在饮用、烹饪或刷牙前将水煮沸至少一分钟。此通知自[TIME]起生效，直至另行通知。更多详情请访问[URL]。请相互转告，确保用水安全。",
+                    "紧急通知：由于水质问题，[LOCATION]地区居民需将自来水煮沸后饮用。请将水煮沸至少1分钟，待冷却后使用。此措施自[TIME]起生效，直至另行通知。更多详情请访问[URL]。请相互转告，确保用水安全。"
+                ],
+                "prompt_one_shot.txt": [
+                    "\n\n\n\n[发送机构]：在[时间]之前，[地点]发布煮沸水通知。由于水质问题，请务必在饮用、烹饪或刷牙前将水煮沸至少1分钟。此通知可能影响您的健康，请严格遵守。更多信息请访问[网址]。",
+                    "紧急通知： [LOCATION] 地区发布煮沸用水通告，直至 [TIME]。请居民将水煮沸至少1分钟后使用，或饮用瓶装水，以确保安全。详情请访问 [URL]。请相互转告，确保用水安全。",
+                    "紧急通知：[LOCATION] 区域发布烧水通知，直至 [TIME]。因水质问题，请将自来水煮沸至少1分钟后使用，或饮用瓶装水。此期间请勿直接饮用未煮沸的自来水，刷牙、制作冰块或准备食物时也需使用煮沸水或瓶装水。详情请访问 [URL]。请相互转告，注意安全。",
+                    "  \n\n[时间] [地点] 发布紧急烧水通知。由于水质问题，请居民在饮用、刷牙或烹饪前将水煮沸至少1分钟。请勿直接饮用未经处理的自来水。更多信息请访问 [网址]。",
+                    "紧急通告：[LOCATION]地区居民请注意，因水质问题，现发布煮沸水通知，请立即执行。所有饮用水必须煮沸至少1分钟后才能饮用、烹饪或刷牙，直至[TIME]另行通知。此措施为预防性安全建议，请严格遵循以避免健康风险。更多详情请访问[URL]。请互相转告，确保安全。"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "It is important to boil your water before drinking or cooking due to potential contamination. Boil water for at least one minute and let it cool before use. This notice is in effect from [TIME] in [LOCATION]. For updates, visit [URL]. Stay safe and follow these precautions until further notice.",
+                    "紧急通知：  \n[LOCATION] 地区的居民请注意，由于水质问题，请在 [TIME] 前将自来水煮沸至少1分钟后使用，以确保安全。请勿直接饮用未经煮沸的自来水，避免用于刷牙或做饭。相关部门正在处理问题，最新进展请访问 [URL] 查询。感谢您的配合与理解！  \n\n（本通知限100字以内）",
+                    "紧急通知：[LOCATION] 的居民请注意，自来水供应暂时无法直接饮用。请在 [TIME] 之前将水煮沸至少1分钟后再使用，或使用瓶装水。此通知即时生效，直至另行通知。更多详情请访问 [URL]。请互相转告，确保用水安全。",
+                    "**# What is 1 percent of 201?\n\nAnswer: 1% of 201 is 2.01.\n\nYou want to know the answer to this question: what is 1 percent of 201? Here is a very simple step-by-step guide to find out.\n\nStep 1: A percentage is a number or ratio expressed as a fraction of 100.\n\n\\(1\\%\\) = \\(1 \\over 100 \\) = \\(0.01\\)\n\nStep 2: We use the following formula:\n\n\\(\\text{Percentage of a value}\\) = \\(X \\cdot P\\%\\)\n\n• \\(X = 201\\)\n\n• \\(P\\% = 1\\%\\) = \\(1 \\over 100 \\) = \\(0.01\\)\n\n\\(Answer: 201 \\cdot 1\\%\\) = \\(201 \\cdot 0.01\\) = \\(2.01\\)\n\nUse the percentage calculator to solve other similar percentage calculation questions.\n\nPercentage Calculator: What is ... % of ... ?\n\nWhat is % of ?\n\nRounding,",
+                    ""
+                ],
                 "prompt_chain_of_translation.txt": [
                     "**English Template:**  \n\"Due to water contamination, a boil water notice is in effect for [LOCATION] as of [TIME]. Residents must boil water for at least one minute before drinking, cooking, or brushing teeth until further notice. For updates, visit [URL].\"\n\n**Mandarin Translation:**  \n\"因水质污染，自[TIME]起，[LOCATION]地区实施煮沸水通知。居民在饮用水、烹饪或刷牙前必须将水煮沸至少一分钟，直至另行通知。最新信息请访问[URL]。\"",
-                    "**English Template:**  \nEmergency Alert: A boil water notice has been issued for [LOCATION] as of [TIME]. Residents must boil water before drinking, cooking, or brushing teeth until further notice. For details and updates, visit [URL]. Stay safe.  \n\n**Mandarin Translation:**  \n紧急通知：自[TIME]起，[LOCATION]地区发布煮沸用水通知。居民在另行通知前，必须将水煮沸后饮用、烹饪或刷牙。详情及更新请访问[URL]。注意安全。"
+                    "**English Template:**  \nEmergency Alert: A boil water notice has been issued for [LOCATION] as of [TIME]. Residents must boil water before drinking, cooking, or brushing teeth until further notice. For details and updates, visit [URL]. Stay safe.  \n\n**Mandarin Translation:**  \n紧急通知：自[TIME]起，[LOCATION]地区发布煮沸用水通知。居民在另行通知前，必须将水煮沸后饮用、烹饪或刷牙。详情及更新请访问[URL]。注意安全。",
+                    "紧急通知：由于水质问题，[时间]起，[地点]的居民需将自来水煮沸至少一分钟后方可饮用。请勿直接饮用未经煮沸的自来水，包括刷牙、制冰等用途。更多详情请访问[网址]。请相互转告，确保安全用水。  \n\nEmergency notice: Due to water quality issues, residents in [LOCATION] must boil tap water for at least one minute before consumption starting from [TIME]. Do not drink unboiled tap water, including for brushing teeth or making ice. For more details, visit [URL]. Please share this notice to ensure safe water usage.",
+                    "**English Template:**  \n\"Emergency Alert: A boil water notice has been issued for [LOCATION] as of [TIME]. Tap water may be unsafe to drink. Boil water for at least one minute before use or use bottled water. For updates, visit [URL].\"  \n\n**Mandarin Translation:**  \n\"紧急通知：[LOCATION] 自 [TIME] 起发布烧水通知。自来水可能不安全饮用。使用前请将水煮沸至少一分钟或使用瓶装水。了解更多信息，请访问 [URL]。\"",
+                    "**English Template:**  \nA boil water notice is in effect for [LOCATION] until [TIME]. Water must be boiled for at least one minute before drinking, cooking, or brushing teeth. Use bottled water as an alternative. For updates, visit [URL].  \n\n**Chinese Translation:**  \n[LOCATION] 地区正在实施煮沸水通知，直至 [TIME]。饮用、烹饪或刷牙前必须将水煮沸至少一分钟。可使用瓶装水替代。更多信息请访问 [URL]。"
                 ]
             },
             "911_outage": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    "【紧急通知】当前911紧急电话服务出现故障，暂时无法接通。如有紧急情况，请直接联系当地警察局或消防部门的非紧急电话。故障修复后将另行通知。请保持冷静，注意安全。",
+                    "【紧急通知】由于系统故障，本地区911紧急呼叫服务暂时中断。请民众在遇到紧急情况时，直接拨打当地警察局或消防局的非紧急电话XXX-XXX-XXXX寻求协助。目前技术人员正在全力抢修，恢复后将另行通知。请互相转告，带来不便敬请谅解。"
+                ],
                 "prompt_persona.txt": [],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
