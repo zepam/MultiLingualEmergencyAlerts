@@ -5,8 +5,8 @@ import argparse
 from dotenv import load_dotenv
 from helpers import generate_output_schema, chat_with_service
 
-# prompts for multilingual responses
-PROMPT_FILES = [
+# prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
+ITERATIVE_PROMPT_FILES = [
   "prompts/prompt_simple.txt",
   "prompts/prompt_chain_of_translation.txt",
   "prompts/prompt_one_shot.txt",
@@ -101,14 +101,23 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
 def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses):
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
-            for prompt in PROMPT_FILES:                
+            for prompt in ITERATIVE_PROMPT_FILES:
                 skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
                 skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
                 skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
 
+            # Google Translate needs to take an original template and translate directly
+            disaster_name = disaster.replace("a ", "").replace(" ", "_")
+            prompt = f"prompts/{disaster_name}.txt"
             skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, total_responses)
 
-def collect_english_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses):
+            # Direct translations also need a short description and the original template
+            prompt = f"prompts/translate_{disaster_name}.txt"
+            skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
+            skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
+            skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
+
+def collect_english_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, total_responses):
     for disaster in CUSTOM_DISASTERS:
         prompt = ENGLISH_PROMPT_FILE
         language = "English"
@@ -145,7 +154,7 @@ if __name__ == "__main__":
         collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses)
 
     if not args.skip_new_disasters:
-        collect_english_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses)
+        collect_english_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, total_responses)
 
     with open(args.output_file, 'w', encoding='utf-8') as f:
         json.dump(output_json, f, ensure_ascii=False, indent=4)

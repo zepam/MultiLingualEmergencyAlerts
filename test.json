@@ -1,0 +1,1376 @@
+{
+    "chatgpt": {
+        "english": {
+            "UAP_landed": {
+                "prompt_new_disaster.txt": []
+            },
+            "meteor_strike": {
+                "prompt_new_disaster.txt": []
+            },
+            "freeway_closure": {
+                "prompt_new_disaster.txt": []
+            },
+            "new_disease_called_SARD-26": {
+                "prompt_new_disaster.txt": []
+            },
+            "police_activity_near_mall": {
+                "prompt_new_disaster.txt": []
+            }
+        },
+        "spanish": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "⚠️ **ALERTA DE EMERGENCIA** ⚠️  \nSe informa de una **inundación** activa en [ubicación]. Por favor, evacúe inmediatamente a áreas seguras y altas. No intente cruzar áreas inundadas. Manténgase atento a las instrucciones de las autoridades locales y evite el uso innecesario de vías transitadas. Para ayuda o información, comuníquese al [número de emergencia local]. Su seguridad es la prioridad."
+                ],
+                "prompt_persona.txt": [
+                    "Inundación de emergencia reportada en [LOCATION]. Evacúe inmediatamente si vive en zonas bajas o cerca de cuerpos de agua. Manténgase alejado de áreas inundadas y siga las instrucciones de las autoridades locales. Hora de impacto: [TIME]. Para más información, visite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "[AGENCIA EMISORA]: Una emergencia por inundación está en efecto para [LOCATION] hasta [TIME]. Inundaciones graves reportadas en esta área. Esta es una situación peligrosa para la vida. Evacúe a terrenos más altos o busque refugio seguro de inmediato. Evite conducir en carreteras inundadas y permanezca atento a las actualizaciones de las autoridades. Consulte los medios de comunicación. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Un aviso de inundación ha sido emitido. [TIME]: En este momento se espera que las condiciones empeoren rápidamente. [LOCATION]: Por favor, evacúe áreas en riesgo y evite salir si no es necesario. Manténgase al tanto de las actualizaciones y siga las instrucciones de las autoridades locales. Para más información, visite [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Alerta de emergencia: Se ha emitido una advertencia de inundación en [LOCATION] a partir de [TIME]. Por favor, busque un lugar seguro de inmediato y evite áreas bajas o con riesgo de inundación. Manténgase informado a través de las autoridades locales y consulte [URL] para más detalles."
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: UNA EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "⚠️ ALERTA DE EMERGENCIA ⚠️  \nSe pronostican vientos extremos en la zona. Permanezca en un lugar seguro, evite salir al exterior y asegure objetos sueltos que puedan ser arrastrados por el viento. Siga las indicaciones de las autoridades locales. Manténgase informado. 🌀"
+                ],
+                "prompt_persona.txt": [
+                    "Vientos extremos están afectando la zona de [LOCATION]. Por favor, permanezca en interiores y asegure objetos sueltos al exterior. Este evento podría causar daños severos. Manténgase alerta y siga las instrucciones de las autoridades locales. Para más información, visite [URL]. Hora estimada: [TIME]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Se emite una alerta de vientos extremados en [LOCATION] hasta las [TIME]. Vientos peligrosos reportados en la zona. Esta es una situación de riesgo para la vida. Permanezca en interiores, lejos de ventanas. Si está afuera, en un vehículo o en una casa móvil, busque refugio en un edificio sólido inmediatamente. Manténgase informado a través de los medios. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Se pronostican vientos extremos en [LOCATION] a partir de las [TIME]. Por favor, tome precauciones y evite salir al exterior si no es necesario. Manténgase alejado de ventanas y objetos que puedan convertirse en proyectiles debido a las fuertes ráfagas. Para obtener más información y actualizaciones, visite [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Se emite una alerta de emergencia por vientos extremos para [LOCATION] a partir de [TIME]. Es posible que se produzcan daños a estructuras, árboles y cortes de energía. Por favor, evite áreas inseguras y asegúrese de asegurar objetos sueltos. Consulte [URL] para más información y actualizaciones."
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] debido al peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos que puedan volar. ¡NO salga si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "⚠️ URGENTE: Se reporta un incendio en [ubicación]. Evacúe el área inmediatamente y siga las instrucciones de las autoridades locales. Manténgase alejado del fuego y zonas peligrosas. Para información actualizada, comuníquese al [número de emergencia]."
+                ],
+                "prompt_persona.txt": [
+                    "Hay un incendio activo reportado. Por favor, evacúe inmediatamente si está en las cercanías. [LOCATION]. Manténgase informado y siga las instrucciones de las autoridades locales. El incidente fue reportado a las [TIME]. Para más información, visite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "[AGENCIA]: Una EMERGENCIA POR INCENDIO está en efecto para [LOCATION] hasta [TIME]. Se ha detectado un incendio en esta área. Esto es una situación de peligro para la vida. Evacúe inmediatamente y siga las instrucciones de las autoridades locales. Si está cerca, manténgase en un lugar seguro, lejos del fuego y del humo. Consulte los medios. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Se informa de un incendio en [LOCATION]. La situación comenzó a las [TIME]. Por favor, evite la zona y siga las indicaciones de las autoridades locales. Para obtener más información y actualizaciones, visite [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Hay un incendio. Se informó a las [TIME] en [LOCATION]. Por favor, evacúe el área inmediatamente y manténgase alejado. Para más información y actualizaciones, visite [URL]."
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área será reducida y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, lesionado o muerto. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo pesado y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en el área y siga sus instrucciones. [URL]"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "AVISO DE EMERGENCIA: Se ha emitido un aviso de hervir el agua. No consuma agua del grifo sin hervirla previamente. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o realizar actividades de higiene personal. Este aviso estará vigente hasta nuevo aviso. Por favor, siga las instrucciones para garantizar su seguridad."
+                ],
+                "prompt_persona.txt": [
+                    "Aviso de emergencia: Se ha emitido un aviso de hervir agua en [LOCATION] el [TIME]. Hierva agua durante al menos un minuto antes de usarla para beber, cocinar o higiene personal. Esta medida es necesaria para garantizar su seguridad debido a posibles contaminantes. Para más información, visite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Se ha emitido un aviso de hervir agua para [LOCATION] hasta nuevo aviso. Toda el agua destinada al consumo humano debe hervirse durante al menos un minuto antes de usarla. Esto incluye agua para beber, cocinar y cepillarse los dientes. No consuma agua directamente del grifo sin hervir. Para más información y actualizaciones, visite [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Se ha emitido un aviso de hervir agua a partir de [TIME] para [LOCATION]. No consuma agua del grifo sin hervirla primero. Hierva el agua durante al menos un minuto antes de usarla para beber, cocinar o cepillarse los dientes. Este aviso está vigente hasta nuevo aviso. Para obtener más información y actualizaciones, visite [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Se ha emitido un aviso de hervir el agua en [LOCATION] el [TIME]. Por favor, hierva el agua potable durante al menos un minuto antes de usarla para beber, cocinar o lavar alimentos. Esto es necesario debido a posible contaminación. Consulte más información en [URL]."
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua del grifo o agua filtrada hasta que la hierva. Lleve el agua a hervor completo durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no se haya hervido. Si utiliza fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no se haya hervido. [URL]"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "⚠️ Atención: Actualmente hay una interrupción en el servicio de llamadas al 911. En caso de emergencia, utilice los siguientes números alternativos [inserte números aquí] o comuníquese con su agencia local de emergencia. Manténgase seguro y comparta esta información."
+                ],
+                "prompt_persona.txt": [
+                    "Una interrupción del servicio 911 está afectando actualmente a la zona de [LOCATION] desde las [TIME]. Si necesita asistencia de emergencia, utilice un teléfono fijo, un dispositivo alternativo o comuníquese directamente con los servicios locales de emergencia. Para obtener más información y actualizaciones, visite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Se informa un corte en el servicio de llamadas al 911 en [LOCATION] desde las [TIME]. Si necesita asistencia de emergencia, utilice los números alternativos proporcionados o comuníquese con los servicios locales de emergencia directamente. Este problema está siendo atendido. Para más información y actualizaciones, visite [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Debido a una interrupción en el servicio, el 911 no está disponible actualmente en [LOCATION]. Si necesita ayuda de emergencia, por favor llame al [ALTERNATE NUMBER] o acuda directamente a los servicios de emergencia más cercanos. Estamos trabajando para resolver el problema lo antes posible. Para obtener más información y actualizaciones, visite [URL]. Tiempo estimado de la interrupción: [TIME]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Actualmente hay una interrupción del servicio 911 en [LOCATION] desde las [TIME]. Si necesita ayuda de emergencia, comuníquese directamente con los servicios locales de emergencia usando números alternativos. Para obtener más información y actualizaciones, visite [URL]."
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: Una ALERTA DE INTERRUPCIÓN DEL SERVICIO 9-1-1 está vigente para [LOCATION]. Por favor, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia a través de sus números telefónicos locales en caso de emergencia. Si llama al 9-1-1, es posible que no reciba ayuda. [URL]"
+                ]
+            }
+        },
+        "haitian_creole": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "ALÈ IJANS: Gen gwo inondasyon nan zòn nan. Evite leve kote dlo ap monte. Chèche kote ki an sekirite imedyatman. Swiv enfòmasyon otorite lokal yo pou asistans. Rete vijilan, pran prekosyon!"
+                ],
+                "prompt_persona.txt": [
+                    "Gen inondasyon ki ap fèt nan zòn nan. Pran prekosyon imedyatman pou pwoteje lavi w ak fanmi w. Evakye si otorite yo mande sa. [TIME], nan [LOCATION]. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Gen inondasyon grav nan zòn [LOCATION] jiskaske [TIME]. Inondasyon sa yo ka danjere e menase lavi. Evakye si otorite yo mande sa, oswa chèche kote ki pi wo pou sekirite w. Pa travèse wout ki inonde. Swiv nouvèl yo pou plis enfòmasyon. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Gen yon inondasyon nan [LOCATION] a [TIME]. Tanpri evakye imedyatman epi chèche yon kote ki an sekirite sou tè ki pi wo. Suiv enfòmasyon mete ajou avèk otorite lokal yo epi vizite [URL] pou plis detay sou sitiyasyon an."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Gen yon gwo inondasyon nan [LOCATION] nan dat [TIME]. Tanpri evite zòn sa a epi rete nan kote ki an sekirite. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: Yon ijans inondasyon flash ap fèt pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere ak menasan lavi. Pa tante vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "**Alèt Ijans: Van Ekstrèm**  \nGen van trè fò k ap pase nan zòn ou a. Tanpri rete andedan kay la, evite deplase si sa pa nesesè, epi rete lwen fenèt ak zòn ki an danje. Swiv enstriksyon otorite yo pou pwoteksyon ou."
+                ],
+                "prompt_persona.txt": [
+                    "Fè atansyon! Van ekstrèm ap afekte nan zòn [LOCATION] nan dat [TIME]. Sa ka lakòz danje fò pou sekirite ak pwopriyete. Moun yo dwe rete an sekirite, evite zòn ki deyò epi swiv enstriksyon otorite yo. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Ajans Enviye: Gen yon ijans akòz van ekstrèm nan [LOCATION] jiska [TIME]. Van yo trè fò nan zòn sa a. Sa a se yon sitiyasyon ki ka menase lavi ou. Chèche pratikman kouvri anba yon kay solid nan yon zòn ki an sekirite san fenèt. Si w deyò, nan yon kay mobil oswa nan yon machin, deplase rapidman nan yon zòn ki fèmen ki pi solid pou pwoteje tèt ou kont objè ki ka vole. Verifye enfòmasyon nan medya yo. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Gen gwo van ki danjere nan zòn nan. Tanpri rete an sekirite epi evite ale deyò si sa pa nesesè. [TIME] nan zòn [LOCATION], van yo ka lakòz domaj grav. Swiv enfòmasyon ak enstriksyon otorite lokal yo pou pwoteksyon ou. Pou plis detay, vizite [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Atansyon! Nan [TIME], gen van ekstrèm ki prale frape nan zòn [LOCATION]. Tanpri pran prekosyon, epi rete andedan si sa posib. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: Gen yon AVÈTISMAN VAN EKSTRÈM ki an efè pou [LOCATION] pou danje imedya van ki menase lavi jouk [TIME]. Pran kouvèti KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè kap vole. PA ale deyò si van an kalme! Van yo ap vin danjere ankò vit. [URL]"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "Gen yon dife! Tanpri evakyé imedyatman. Rete lwen zòn an danje epi kontakte sèvis ijans si ou bezwen asistans."
+                ],
+                "prompt_persona.txt": [
+                    "Gen yon dife k ap boule kounye a nan zòn [LOCATION]. Tanpri evakye zòn nan san pèdi tan epi swiv enstriksyon otorite yo. Dife a te rapòte nan [TIME]. Pou plis enfòmasyon, ale sou [URL]. Tanpri rete vijilan epi pran prekosyon."
+                ],
+                "prompt_one_shot.txt": [
+                    "Yon ijans dife ap fèt nan [LOCATION] nan dat [TIME]. Tanpri evakye zòn nan imedyatman si ou nan risk. Chèche kote ki gen sekirite epi evite zòn nan. Swiv enstriksyon otorite yo epi kontinye veye nouvèl nan lokal la pou plis enfòmasyon. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Gen yon dife ki rive. Tanpri evakye imedyatman epi evite zòn nan pou sekirite ou. [TIME], dife a te rapòte nan [LOCATION]. Pou plis enfòmasyon, vizite [URL]. Tanpri rete vijilan epi swiv enstriksyon otorite lokal yo."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Gen yon dife ki ap boule! Tanpri evakye imedyatman nan zòn [LOCATION] apati de [TIME]. Vizite [URL] pou plis enfòmasyon."
+                ],
+                "translate_fire.txt": [
+                    "[AGANS KI VOYE]: Yon AVI DIFÉ nan [LOCATION] ap rete an efè jiska [TIME]. Evakye fanmi ou ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap diminye e wout yo ka vin bloke. Si ou pa kite kounye a, ou ka rete bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou ak vizibilite ki redwi, anpil lafimen, ak difikilte pou respire. Fè atansyon lè wap kondwi. Surveye pou pèsonèl sekirite piblik ki ap opere nan zòn nan epi swiv enstriksyon yo. [URL]"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "**Avètisman Ijans:** Yo mete yon avi pou bouyi dlo nan zòn ou. Tanpri bouyi tout dlo w ap itilize pou bwè, kwit manje, bwose dan, oswa lave manje. Bouyi dlo pou omwen 1 minit. Swiv avi lokal yo pou plis detay."
+                ],
+                "prompt_persona.txt": [
+                    "Gen yon avètisman ijans! Dapre otorite yo, dlo nan [LOCATION] pa pwòp pou bwè. Tanpri bouyi tout dlo ou sèvi pou bwè, kwit manje, ak lave jiskaske otorite yo bay plis detay. Dat: [TIME]. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Gen yon AVÈTISMAN bouyi dlo pou [LOCATION] jiskaske [TIME]. Dlo nan zòn sa pa an sekirite pou bwè oswa itilize san li pa bouyi an premye. Bouyi tout dlo pou bwè, kwit manje, oswa lave men pandan omwen 1 minit. Swiv nouvèl pou plis enfòmasyon. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Gen yon avètisman pou bouyi dlo ki aplike apati [TIME] nan [LOCATION]. Dlo la ka kontamine epi li pa an sekirite pou bwè oswa sèvi. Tanpri bouyi tout dlo pandan omwen 1 minit anvan ou bwè, kwit manje, lave men, oswa itilize pou lòt aktivite. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Atansyon: Gen yon avi pou bouyi dlo nan [LOCATION] apati [TIME]. Pa bwè dlo san ou pa bouyi li pandan omwen 1 minit. Sa a enpòtan pou sante w. Pou plis enfòmasyon, ale sou [URL]."
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: YON ALÈT BOUYI DLO soti pou [LOCATION] epi li ap rete an efè jiskaske [TIME]. Dlo nan kominote w ka fè w malad. Sèvi ak dlo nan boutèy si li disponib. Pa bwè, kwit manje, bwose dan w, oswa netwaye kay ou ak dlo tiyo oswa dlo filtre si li pa bouyi. Mennen dlo a bouyi nèt nan yon gwo bouyi pou TWA MINIT. Kite dlo a refwadi anvan w itilize li. Pa itilize glas ki fèt ak dlo ki pa te bouyi. Si w itilize fomil pou bay pitit ou manje, sèvi ak fomil ki pare pou itilize. Asire w bèt kay ou yo pa bwè dlo ki pa te bouyi. [URL]"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "Se yon ijans: Sistèm 911 pa disponib kounye a. Tanpri rele [nimewo altènatif] pou ijans oswa kontakte otorite lokal yo pou asistans."
+                ],
+                "prompt_persona.txt": [
+                    "Sistèm 911 pa fonksyone nan [LOCATION] kòmanse nan [TIME]. Tanpri itilize nimewo altènatif pou sèvis ijans lokal yo. Vizite [URL] pou plis enfòmasyon."
+                ],
+                "prompt_one_shot.txt": [
+                    "Sistèm 911 pa disponib nan [LOCATION] apati [TIME]. Si ou bezwen asistans ijans, tanpri rele lòt nimewo ijans lokal yo oswa chèche èd nan estasyon lapolis ki pi pre ou. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Sèvis 911 yo pa disponib kounye a nan [LOCATION]. Si ou gen yon ijans, tanpri rele nimewo sèvis lapolis oswa ponpye lokal yo dirèkteman. Nou ap travay pou rezoud pwoblèm nan osi vit ke posib. Tanpri verifye pou plis enfòmasyon nan [URL]. Mèsi pou konpreyansyon ou. Lè: [TIME]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Te gen yon pwoblèm ak sèvis 911 nan zòn [LOCATION] depi [TIME]. Si ou genyen yon ijans, tanpri kontakte sèvis ijans lokal yo lè w rele yon lòt nimewo oswa itilize yon metòd altènatif. Pou plis enfòmasyon, vizite [URL]."
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: Yon ALÈ PANIK 9-1-1 ap valide pou [LOCATION]. Tanpri kontakte polis, ponpye, medikal, oswa lòt sèvis ijans dirèkteman sou nimewo lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]"
+                ]
+            }
+        },
+        "vietnamese": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "Cảnh báo khẩn cấp: \n\nLũ lụt đang diễn ra trong khu vực của bạn. Vui lòng di chuyển đến nơi cao và an toàn ngay lập tức. Tránh các con đường ngập nước và theo dõi thông tin từ chính quyền địa phương. Giữ an toàn!"
+                ],
+                "prompt_persona.txt": [
+                    "Cảnh báo khẩn cấp: Lũ lụt nghiêm trọng tại [LOCATION]. Tình hình nguy hiểm, hãy di chuyển đến nơi cao ráo ngay lập tức. Cập nhật mới nhất sẽ có vào lúc [TIME]. Vui lòng truy cập [URL] để biết thêm thông tin."
+                ],
+                "prompt_one_shot.txt": [
+                    "Cơ quan phát đi thông báo: Tình trạng khẩn cấp do lũ lụt đang diễn ra tại [LOCATION] đến [TIME]. Lũ lụt nghiêm trọng ghi nhận ở khu vực này. Đây là tình huống nguy hiểm đến tính mạng. Vui lòng di chuyển ngay tới khu vực cao ráo hoặc nơi trú ẩn an toàn. Tránh các khu vực có nước sâu, dòng chảy mạnh hoặc những nơi dễ xảy ra sạt lở. Theo dõi thông tin từ các phương tiện truyền thông. Chi tiết xem tại: [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Lũ lụt nghiêm trọng đã xảy ra lúc [TIME] tại khu vực [LOCATION]. Cư dân được khuyến cáo di chuyển đến nơi cao hơn và tránh các khu vực bị ngập nước. Vui lòng theo dõi thông tin cập nhật tại [URL] để biết thêm chi tiết và hướng dẫn."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Nước lũ đang xảy ra tại [LOCATION]. Vui lòng tránh khu vực này và tuân thủ hướng dẫn từ cơ quan chức năng. Thời gian: [TIME]. Để biết thêm thông tin, truy cập [URL]."
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT đang có hiệu lực tại [LOCATION] cho đến [TIME]. Đây là một tình huống cực kỳ nguy hiểm và đe dọa đến tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có nguy cơ bị lũ hoặc đang tuân theo lệnh sơ tán. [URL]"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "Cảnh báo khẩn cấp: Gió mạnh cực độ đang diễn ra. Hãy ở trong nhà, tránh ra ngoài nếu không thực sự cần thiết. Đảm bảo cửa sổ và cửa ra vào được đóng chặt, tránh gần các vật liệu có thể bị bay hoặc đổ. Theo dõi thông báo từ cơ quan chức năng để cập nhật tình hình."
+                ],
+                "prompt_persona.txt": [
+                    "Cảnh báo khẩn cấp: Gió cực mạnh dự kiến tại [LOCATION] vào [TIME]. Điều kiện gió nguy hiểm có thể gây thiệt hại tài sản và nguy hiểm cho tính mạng. Hãy ở trong nhà, tránh xa cửa sổ, và hạn chế di chuyển bên ngoài. Theo dõi thêm thông tin tại [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Cơ quan [SENDING AGENCY]: CẢNH BÁO KHẨN CẤP VỀ GIÓ GIẬT MẠNH đang có hiệu lực tại [LOCATION] cho đến [TIME]. Gió cực kỳ mạnh đang xảy ra trong khu vực này. Đây là tình huống nguy cấp đe dọa tính mạng. Hãy tìm nơi trú ẩn ngay lập tức trong tầng hầm hoặc một phòng bên trong ở tầng thấp nhất của tòa nhà kiên cố. Nếu bạn đang ở ngoài trời, trong nhà di động hoặc trong xe cộ, hãy di chuyển đến nơi trú ẩn kiên cố gần nhất và bảo vệ bản thân khỏi các vật thể bay. Theo dõi thông tin qua phương tiện truyền thông. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Gió mạnh cực đoan dự kiến xảy ra vào [TIME] tại [LOCATION]. Đề nghị cư dân trong khu vực giữ an toàn, tránh xa các khu vực nguy hiểm như cây cối hay công trình không vững chắc. Hãy bảo vệ tài sản của bạn và chuẩn bị đối phó với các điều kiện thời tiết xấu. Theo dõi thông tin chính thức để nhận thêm cập nhật tại [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Cảnh báo khẩn cấp: Gió cực mạnh tại [LOCATION] vào [TIME]. Để đảm bảo an toàn, hãy tránh các hoạt động ngoài trời, tìm nơi trú ẩn an toàn và cập nhật thông tin thời tiết thường xuyên. Xem thông tin chi tiết tại [URL]."
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: Cảnh báo Gió Cực Đoạn đang có hiệu lực tại [LOCATION] do nguy hiểm ngay lập tức của gió đe dọa mạng sống cho đến [TIME]. Hãy trú ẩn NGAY BÂY GIỜ trong một phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu của bạn khỏi các vật thể bay. Tuyệt ĐỐI không ra ngoài nếu gió lặng! Gió sẽ trở lại nguy hiểm nhanh chóng. [URL]"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "Khẩn cấp: Có hỏa hoạn! Hãy rời khỏi khu vực ngay lập tức và tìm nơi an toàn. Gọi 114 để báo cáo sự cố."
+                ],
+                "prompt_persona.txt": [
+                    "Cảnh báo khẩn cấp: Có một đám cháy nghiêm trọng đã xảy ra lúc [TIME] tại [LOCATION]. Người dân được khuyến cáo tránh khu vực này và tuân thủ hướng dẫn của cơ quan chức năng. Vui lòng kiểm tra thông tin mới nhất tại [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Cơ quan gửi thông báo: Tình trạng khẩn cấp do cháy đang diễn ra tại [LOCATION] cho đến [TIME]. Đã xảy ra một vụ cháy trong khu vực này. Đây là tình huống nguy hiểm đến tính mạng. Vui lòng sơ tán ngay lập tức và tránh xa khu vực bị ảnh hưởng. Tuân thủ hướng dẫn của chính quyền địa phương và cơ quan cứu hỏa. Kiểm tra tin tức để biết thêm thông tin chi tiết. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Vào lúc [TIME], một đám cháy đã xảy ra tại [LOCATION]. Để đảm bảo an toàn, hãy tránh xa khu vực này và tuân thủ hướng dẫn từ cơ quan chức năng. Để biết thêm thông tin chi tiết, vui lòng truy cập [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Có hỏa hoạn xảy ra lúc [TIME] tại [LOCATION]. Vui lòng tránh khu vực này và tuân theo hướng dẫn của cơ quan chức năng. Để biết thêm thông tin, truy cập: [URL]."
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng của bạn ngay bây giờ, đừng chần chừ. Tầm nhìn trong khu vực sẽ bị giảm và đường có thể bị chặn. Nếu bạn không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc thiệt mạng. RỜI khỏi khu vực gần [LOCATION]. Dự kiến tầm nhìn bị giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Lưu ý các nhân viên an toàn công cộng hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "Thông báo khẩn cấp: Hiện đang có tình trạng cần đun sôi nước trước khi sử dụng tại khu vực của bạn. Vui lòng đun sôi nước ít nhất 1 phút trước khi uống, nấu ăn, rửa thực phẩm hoặc dùng cho đánh răng. Thông báo này có hiệu lực cho đến khi có thông tin mới."
+                ],
+                "prompt_persona.txt": [
+                    "Thông báo khẩn cấp: Có thông báo nước phải đun sôi tại [LOCATION]. Vì lý do an toàn, hãy đun sôi nước trong ít nhất một phút trước khi sử dụng để uống, nấu ăn, hoặc làm vệ sinh. Thông báo có hiệu lực từ [TIME] cho đến khi có thông tin cập nhật. Vui lòng truy cập [URL] để biết thêm chi tiết."
+                ],
+                "prompt_one_shot.txt": [
+                    "[CƠ QUAN GỬI]: Thông báo KHẨN CẤP về việc nấu sôi nước áp dụng tại [LOCATION] cho đến [TIME]. Nước trong khu vực này có thể không an toàn để sử dụng trực tiếp. Vui lòng đun sôi nước trong ít nhất 1 phút trước khi uống, chế biến thực phẩm, hoặc vệ sinh cá nhân. Theo dõi thông tin từ các cơ quan chức năng. Chi tiết tại: [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Thông báo khẩn cấp: Vui lòng đun sôi nước trước khi sử dụng tại [LOCATION]. Thông tin này có hiệu lực từ [TIME] cho đến khi có thông báo mới. Để biết thêm chi tiết, vui lòng truy cập [URL]. Xin cảm ơn sự hợp tác của quý vị!"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Thông báo khẩn cấp: Có hiệu lực từ [TIME], một thông báo yêu cầu nước đun sôi đã được ban hành tại [LOCATION]. Vui lòng đun sôi nước ít nhất 1 phút trước khi sử dụng để uống, nấu ăn hoặc sinh hoạt. Điều này nhằm đảm bảo an toàn sức khỏe của bạn. Để biết thêm chi tiết, vui lòng truy cập [URL]."
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: Cảnh báo NƯỚC SÔI đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng, hoặc dọn dẹp nhà cửa bằng nước máy hoặc nước đã lọc trừ khi nước đã được đun sôi. Đun nước đến sôi hoàn toàn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn dùng sữa công thức để nuôi con, hãy sử dụng sữa công thức pha sẵn. Đảm bảo thú cưng không uống nước chưa được đun sôi. [URL]"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "Khẩn cấp: Đang xảy ra sự cố gián đoạn dịch vụ 911. Nếu cần hỗ trợ khẩn cấp, vui lòng gọi số điện thoại thay thế hoặc liên hệ trực tiếp với cơ quan chức năng địa phương."
+                ],
+                "prompt_persona.txt": [
+                    "Dịch vụ 911 hiện không hoạt động tại [LOCATION] từ [TIME]. Nếu quý vị cần hỗ trợ khẩn cấp, vui lòng gọi số cơ quan địa phương hoặc sử dụng các phương pháp liên lạc thay thế. Để biết thêm thông tin, vui lòng truy cập [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "Dịch vụ khẩn cấp: Một sự cố mất kết nối 911 đang diễn ra tại [LOCATION] cho đến [TIME]. Hiện không thể gọi đến 911. Nếu cần hỗ trợ khẩn cấp, vui lòng sử dụng số điện thoại thay thế nếu có hoặc liên hệ trực tiếp với cơ quan ứng phó khẩn cấp địa phương. Theo dõi tin tức để cập nhật thông tin. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Dịch vụ 911 hiện không hoạt động tại [LOCATION] vào thời gian [TIME]. Vui lòng gọi các số khẩn cấp địa phương thay thế hoặc sử dụng ứng dụng dịch vụ khẩn cấp để yêu cầu hỗ trợ. Để biết thêm thông tin, truy cập [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Dịch vụ 911 hiện không hoạt động trong khu vực [LOCATION] từ [TIME]. Vui lòng gọi dịch vụ cấp cứu địa phương hoặc số điện thoại không khẩn cấp để hỗ trợ. Để biết thêm thông tin, truy cập [URL]."
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: Cảnh báo MẤT DỊCH VỤ 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]"
+                ]
+            }
+        },
+        "arabic": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "تحذير طارئ: فيضانات شديدة في منطقتكم. يرجى الإخلاء فوراً إلى مناطق آمنة بعيداً عن المياه. اتبعوا تعليمات السلطات المحلية واحرصوا على سلامة الجميع."
+                ],
+                "prompt_persona.txt": [
+                    "الرجاء الانتباه! حدث فيضان في [LOCATION] في [TIME]. يُرجى الابتعاد عن المناطق المتضررة واتباع تعليمات السلطات المحلية. لمزيد من المعلومات، يرجى زيارة [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "[الوكالة المرسلة]: حالة طوارئ بسبب الفيضانات جارية في [LOCATION] حتى [TIME]. تم الإبلاغ عن فيضانات في هذه المنطقة. هذه حالة تهدد الحياة. تجنب المناطق المنخفضة والمناطق المعرضة للفيضانات. ابقَ في مكان آمن على أرض مرتفعة. إذا كنت في الخارج، انتقل فوراً إلى منطقة آمنة. تحقق من وسائل الإعلام للحصول على تفاصيل إضافية. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "توجد فيضانات خطيرة. الوقت: [TIME]. الموقع: [LOCATION]. يرجى اتخاذ الحيطة والحذر والابتعاد عن المناطق المنخفضة والخطرة. لمزيد من المعلومات والتحديثات، يُرجى زيارة: [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "إعلان طارئ: حدث فيضان في [LOCATION] في [TIME]. يُرجى أخذ الحيطة والحذر وتجنب المناطق المتأثرة. للحصول على المزيد من المعلومات والتحديثات، يُرجى زيارة [URL]."
+                ],
+                "translate_flood.txt": [
+                    "[الجهة المرسلة]: حالة طوارئ بسبب الفيضانات المفاجئة سارية في [LOCATION] حتى [TIME]. هذه حالة خطيرة للغاية وتهدد الحياة. لا تحاول السفر إلا إذا كنت تهرب من منطقة قد تتعرض للفيضانات أو كنت تحت أمر إخلاء. [URL]"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "تحذير طارئ: رياح شديدة جدًا تؤثر على المنطقة. يُرجى تجنب المناطق المفتوحة وتوخي الحذر عند التنقل. ابقوا في منازلكم وتأكّدوا من تأمين الأشياء القابلة للطيران خارج المباني. تابعوا التحديثات الرسمية والبقاء آمنين."
+                ],
+                "prompt_persona.txt": [
+                    "الرياح القوية متوقعة في [LOCATION] في [TIME]. يُنصح بالبقاء في الداخل وتجنب المناطق المفتوحة. احرص على تأمين الممتلكات وتجنب القيادة غير الضرورية. لمزيد من المعلومات، يُرجى زيارة [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "[الوكالة المرسلة]: حالة طوارئ بسبب الرياح الشديدة في [LOCATION] حتى [TIME]. سرعة رياح خطيرة محتملة في هذه المنطقة. هذه حالة تهدد الحياة. يُرجى البقاء في الداخل بعيدًا عن النوافذ والأبواب. إذا كنت في الخارج، ابتعد عن الأشجار والأجسام القابلة للطيران وابحث عن مأوى قوي. تابع وسائل الإعلام. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "تحذير عاجل: يُتوقع حدوث رياح شديدة في [LOCATION] في [TIME]. يُرجى أخذ الحيطة والحذر، وتجنب المناطق المفتوحة إذا أمكن. للحصول على معلومات إضافية، يُرجى زيارة [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "تحذير عاجل: رياح شديدة متوقعة في [LOCATION] في [TIME]. يرجى اتخاذ الاحتياطات اللازمة للحفاظ على سلامتك والحد من السفر غير الضروري. للحصول على معلومات إضافية وتحديثات، يرجى زيارة [URL]."
+                ],
+                "translate_extreme_wind.txt": [
+                    "[الوكالة المرسلة]: تحذير من رياح شديدة للغاية ساري المفعول في [LOCATION] بسبب خطر الرياح المهددة للحياة حتى [TIME]. احتمِ الآن في غرفة داخلية في مبنى قوي بعيدًا عن النوافذ. احمِ رأسك من الأشياء المتطايرة. لا تخرج إذا هدأت الرياح! ستحول الرياح بسرعة لتصبح خطرة مرة أخرى. [URL]"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "تحذير طارئ: يرجى الانتباه! تم الإبلاغ عن حريق في المنطقة. إذا كنت قريبًا، غادر فورًا إلى منطقة آمنة. اتبع تعليمات السلطات المحلية. سلامتك أهم الأولويات."
+                ],
+                "prompt_persona.txt": [
+                    "اندلاع حريق في [LOCATION] في تمام الساعة [TIME]. يُرجى الابتعاد عن المنطقة واتخاذ الاحتياطات اللازمة. للحصول على مزيد من المعلومات، قم بزيارة: [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "تم الإبلاغ عن حريق في [LOCATION] في تمام الساعة [TIME]. يُنصح السكان في المنطقة بالبقاء بعيدًا عن المنطقة المتضررة واتباع تعليمات السلامة الصادرة عن السلطات المحلية. يرجى إخلاء المنطقة إذا طلب منك ذلك فورًا. لمزيد من المعلومات، يرجى زيارة [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "اندلاع حريق في [LOCATION] في تمام الساعة [TIME]. يرجى الابتعاد عن المنطقة والبقاء آمنين. للحصول على المزيد من المعلومات، يُرجى زيارة [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "يوجد حريق في [LOCATION] في [TIME]. يُرجى الابتعاد عن المنطقة واتباع التعليمات الصادرة عن السلطات المحلية. لمزيد من المعلومات، يُرجى زيارة [URL]."
+                ],
+                "translate_fire.txt": [
+                    "[الوكالة المرسلة]: تحذير من حريق في [LOCATION] ساري المفعول حتى [TIME]. قم بإخلاء عائلتك وحيواناتك الأليفة الآن، لا تتأخر. ستقل الرؤية في المنطقة وقد تصبح الطرق مغلقة. إذا لم تغادر الآن، قد تتعرض للحصار أو الإصابة أو الموت. غادر المناطق القريبة من [LOCATION]. توقع رؤية منخفضة، دخان كثيف، وصعوبة في التنفس. كن حذرًا أثناء القيادة. انتبه لوجود أفراد السلامة العامة في المنطقة واتبع تعليماتهم. [URL]"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "تنبيه طارئ: يُطلب من جميع السكان غلي المياه قبل استخدامها للشرب أو الطهي أو تنظيف الأسنان أو غسل الطعام. يرجى غلي المياه لمدة دقيقة واحدة على الأقل لضمان سلامتها. هذا التحذير سيكون سارياً حتى إشعار آخر. شكراً لتعاونكم."
+                ],
+                "prompt_persona.txt": [
+                    "تم إصدار إشعار بغلي الماء في [LOCATION] اعتبارًا من [TIME]. يرجى غلي الماء المستخدم للشرب والطهي لمدة دقيقة واحدة على الأقل لضمان سلامته. هذا الإشعار يظل ساريًا حتى إشعار آخر. لمزيد من المعلومات، يرجى زيارة: [URL]"
+                ],
+                "prompt_one_shot.txt": [
+                    "تم إصدار إشعار غلي الماء في [LOCATION] حتى إشعار آخر بسبب تلوث محتمل. يُطلب من السكان غلي الماء لمدة دقيقة واحدة على الأقل قبل استخدامه للشرب أو الطهي أو تنظيف الأسنان. هذا الإجراء مهم لضمان السلامة العامة. يرجى متابعة المعلومات عبر الرابط التالي: [URL]. وقت بدء الحالة: [TIME]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "عاجل: يُرجى الغليان على الفور. تم إصدار إشعار بغلي المياه في [الوقت] في [الموقع]. لا تستخدم الماء للشرب أو الطهي قبل غليه لمدة دقيقة واحدة على الأقل. يمكن استخدامه للغسل والتنظيف فقط. للحصول على مزيد من المعلومات، يُرجى زيارة [الرابط]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "يرجى أخذ الحذر: تم إصدار إشعار بغلي الماء في [LOCATION] اعتبارًا من [TIME]. يُوصى بغلي الماء لمدة دقيقة واحدة على الأقل للاستخدامات الشخصية، بما في ذلك الشرب والطهي. لمزيد من المعلومات والتحديثات، يرجى زيارة: [URL]."
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[إرسال الجهة]: تم إصدار تنبيه غلي الماء لـ [LOCATION] وهو ساري المفعول حتى [TIME]. يمكن للمياه في مجتمعك أن تسبب لك المرض. استخدم المياه المعبأة إذا كانت متوفرة. لا تشرب أو تطبخ أو تنظف أسنانك أو منزلك باستخدام المياه من الصنبور أو المياه المفلترة حتى تقوم بغليها. اغلي الماء حتى يصل إلى غليان كامل لمدة ثلاث دقائق. دع الماء يبرد قبل الاستخدام. لا تستخدم الثلج المصنوع من مياه لم يتم غليها. إذا كنت تستخدم الحليب الصناعي لإطعام طفلك، استخدم الحليب الجاهز للاستخدام. تأكد من أن الحيوانات الأليفة لا تشرب مياه لم يتم غليها. [URL]"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "انقطاع خدمة 911: يوجد حاليًا انقطاع في خدمة الاتصال بالطوارئ 911. إذا كنت بحاجة إلى مساعدة طارئة، يرجى الاتصال برقم الطوارئ البديل [أدخل الرقم هنا] أو التواصل مع السلطات المحلية مباشرة. شكراً لتفهمكم."
+                ],
+                "prompt_persona.txt": [
+                    "انقطاع في خدمة 911 [LOCATION] في [TIME]. إذا كنت بحاجة إلى خدمات طوارئ، يرجى الاتصال برقم الطوارئ المحلي البديل أو التواصل مع الجهات المختصة مباشرة. لمزيد من المعلومات، يرجى زيارة [URL]."
+                ],
+                "prompt_one_shot.txt": [
+                    "تحديث عاجل من [SENDING AGENCY]: يوجد عطل في خدمة 911 في [LOCATION] حتى [TIME]. إذا كنت في حاجة إلى مساعدة طارئة، يرجى الاتصال بالرقم البديل أو التواصل مع الجهات المحلية المناسبة. للحصول على المزيد من المعلومات، يرجى زيارة [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "يوجد عطل في نظام 911 اعتبارًا من [TIME] في [LOCATION]. إذا كنت بحاجة إلى مساعدة طارئة، يرجى الاتصال برقم الطوارئ المحلي أو استخدام وسائل الاتصال البديلة. لمزيد من المعلومات، يرجى زيارة [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "انقطاع في خدمة 911 جارٍ حاليًا في [LOCATION]. إذا كنت بحاجة إلى مساعدة طارئة، يرجى الاتصال بالرقم البديل المحلي لخدمة الطوارئ. التفاصيل الكاملة متاحة على [URL]. وقت الانقطاع: [TIME]."
+                ],
+                "translate_911_outage.txt": [
+                    "[سENDING AGENCY]: هناك تحذير بانقطاع خدمة 9-1-1 ساري المفعول في [LOCATION]. يرجى الاتصال بالشرطة أو خدمات الإطفاء أو الخدمات الطبية أو خدمات الطوارئ الأخرى مباشرة عبر أرقام هواتفهم المحلية في حالة الطوارئ. إذا اتصلت بـ 9-1-1، قد لا تحصل على مساعدة. [URL]"
+                ]
+            }
+        },
+        "mandarin": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "紧急警报： 洪水警告！受暴雨影响，当地已发生严重洪水。请立即撤离至高地或安全区域，避免前往低洼地带。保持警惕，密切关注官方消息。如需帮助，请拨打当地紧急救援电话。"
+                ],
+                "prompt_persona.txt": [
+                    "洪水警报：请注意，[LOCATION] 地区发生洪水，危险程度高。请立即采取安全措施，避免进入低洼地区。遵循当地应急部门的指示，确保您的安全。有关更多信息，请访问 [URL] 或拨打紧急热线。如果您处于受影响区域，请在 [TIME] 前采取行动保护自己和家人安全。"
+                ],
+                "prompt_one_shot.txt": [
+                    "[发送机构]：洪水紧急情况在[LOCATION]持续至[TIME]。该地区已发生洪水。这是危及生命的情况。请立即前往高处或安全的地点避难，不要试图穿越被水覆盖的道路或区域。保持对最新天气预报的关注。详情请查看：[URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "因暴雨导致的洪水，在[TIME]于[LOCATION]发生。请保持警惕，避免前往危险区域，确保自身安全。如需更多信息，请访问[URL]。"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "[时间Time]，[地点Location]发生严重洪水。请迅速撤离危险区域，确保自身安全。更多信息请访问：[链接URL]。"
+                ],
+                "translate_flood.txt": [
+                    "[发布机构]：针对[LOCATION]发布的山洪紧急情况已生效，持续至[TIME]。这是一个极其危险且威胁生命的情况。除非您正在逃离可能发生洪水的区域或已接到撤离命令，否则请不要尝试出行。[URL]"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "紧急通知：极端强风天气来袭，请立即采取安全措施！确保门窗关紧，避免外出，防止高空坠物。关注天气预报，保持紧急联络方式畅通。请保护自身安全！"
+                ],
+                "prompt_persona.txt": [
+                    "强风警报：请注意，[LOCATION] 地区将于 [TIME] 出现极端强风天气。建议避免户外活动，保护自身安全，并确保建筑物和财产牢固固定。有关更多信息，请访问 [URL]。"
+                ],
+                "prompt_one_shot.txt": [
+                    "[发送机构]：极端大风警告在[LOCATION]区域生效，直至[TIME]。此地区出现强风天气。这是一个危及生命的情况。请立即前往坚固建筑物的地下室或最低楼层的内部房间避难。如果您在户外、活动房屋或车辆内，请尽快移动到最近的坚固避难所，并保护自己免受飞散物体的伤害。请关注媒体获取最新信息。[URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "强风警报：请注意，[LOCATION] 将在 [TIME] 出现极端强风天气，可能造成危险情况。请确保安全，远离易受风影响的区域，并将松动物品固定。有关详细信息，请访问 [URL]。"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "[时间]，[地点]出现极端大风，可能引发安全风险。请避免户外活动，远离树木、电线杆等危险区域，并确保窗户牢固关闭。更多信息，请访问[URL]。"
+                ],
+                "translate_extreme_wind.txt": [
+                    "[发送机构]：针对[LOCATION]的极端强风警告已经生效，且将持续至[TIME]，目前存在生命危险的强风威胁。立即前往坚固建筑的内部房间，远离窗户进行避难。保护好头部，防止被飞行物体击中。即使风暂时减弱，切勿外出！强风会迅速再次变得危险。[URL]"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "注意！紧急火情警报！附近发生火灾，立即疏散至安全区域。请远离火源，保持冷静，如需帮助，请拨打火警电话119。"
+                ],
+                "prompt_persona.txt": [
+                    "发生火灾！时间：[TIME] 地点：[LOCATION] 请立即撤离该区域，并遵循当地应急服务的指示。如需更多信息，请访问：[URL]"
+                ],
+                "prompt_one_shot.txt": [
+                    "[发送机构]：火灾紧急情况正在 [LOCATION] 发生，预计持续到 [TIME]。该地区发生火灾。这是一个危及生命的情况，请立即疏散到安全地点。如在室内，请关闭门窗，切断电源，并远离火源。如在室外，请远离火灾区域并躲避浓烟。请密切关注新闻报道了解最新情况。[URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "发生火灾！请注意，[TIME] 在 [LOCATION] 发生火灾。请立即远离该区域并遵循当地安全指示。如需更多信息，请访问 [URL]。"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "火灾警报：位于 [LOCATION] 的区域发生火灾，时间为 [TIME]。请尽量避免靠近此区域并遵守当地紧急服务的指示。更多信息请访问 [URL]。"
+                ],
+                "translate_fire.txt": [
+                    "[发送机构]：对[LOCATION]的火灾警告有效期至[TIME]。立即带领家人和宠物撤离，不要耽搁。该区域的能见度将降低，道路可能被阻断。如果现在不离开，您可能会被困，受伤或死亡。离开[LOCATION]附近的区域。预计将出现能见度降低、浓烟弥漫和呼吸困难的情况。驾车时请小心。注意在该区域工作的公共安全人员，并遵从他们的指示。[URL]"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "紧急通知：因水质安全问题，请勿直接饮用自来水。请将水煮沸至少1分钟后再使用。此通知有效期直至另行通知。如需更多信息，请联系当地供水部门。"
+                ],
+                "prompt_persona.txt": [
+                    "请注意，[TIME] 在 [LOCATION] 发布了一项紧急通告。该地区的饮用水可能受到污染，请务必煮沸后再使用，以避免健康风险。详情请访问：[URL]"
+                ],
+                "prompt_one_shot.txt": [
+                    "敬告：[LOCATION] 的居民，请注意，于 [TIME] 发布煮水通知。本地区的饮用水可能受到污染，为确保您的健康与安全，请在饮用、烹饪或清洁器具之前，务必将水煮沸至少一分钟。如需更多信息，请访问 [URL]。感谢您的配合。"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "因水质问题，自[时间]起，[地点]地区居民需将饮用水煮沸至少一分钟后使用。请勿饮用未经煮沸的水，避免健康风险。欲了解更多信息，请访问[URL]。"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "由于水质问题，[LOCATION] 于 [TIME] 发布煮水通知。请将饮用水煮沸至少 1 分钟后再使用，以确保安全。如需更多信息，请访问 [URL]。"
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[发送机构]：已对[LOCATION]发布煮沸水警报，并将持续到[TIME]。您社区中的水可能会使您生病。如有瓶装水，请使用瓶装水。未煮沸的自来水或过滤水请勿饮用、烹饪、刷牙或清洁家中。将水煮至完全沸腾并保持沸腾三分钟。使用前让水冷却。不要使用未煮沸的水制成的冰块。如果您使用配方喂养儿童，请使用现成的配方奶粉。确保宠物不饮用未煮沸的水。[URL]"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "紧急通知：由于技术问题，911紧急电话目前无法使用。如需紧急帮助，请拨打本地应急联系号码或联系最近的警察局。请保持冷静并通知邻里关注此情况。"
+                ],
+                "prompt_persona.txt": [
+                    "911服务当前无法使用。[TIME]，在[LOCATION]发生故障。请拨打其他紧急电话号码或通过其他方式寻求帮助。有关更多信息，请访问[URL]。"
+                ],
+                "prompt_one_shot.txt": [
+                    "911服务目前中断，[LOCATION]地区受影响，预计直到[TIME]才能恢复。如有紧急情况，请拨打当地非紧急号码或寻求替代联系方式。有关最新进展，请访问[URL]获取更多信息。"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "由于[LOCATION]地区的911服务中断，紧急情况下请拨打备用号码或前往最近的急救中心寻求帮助。服务中断时间：[TIME]。有关更多信息，请访问：[URL]。"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "由于技术问题，[LOCATION]地区的911紧急服务目前无法使用。此问题开始时间为：[TIME]。请拨打当地非紧急电话或使用其他方式寻求帮助。如需更多信息，请访问：[URL]。"
+                ],
+                "translate_911_outage.txt": [
+                    "[发送机构]：针对[LOCATION]的9-1-1中断警报现已生效。如遇紧急情况，请直接拨打警察、消防、医疗或其他紧急服务的当地电话号码。拨打9-1-1时可能无法获得帮助。[URL]"
+                ]
+            }
+        }
+    },
+    "gemini": {
+        "english": {
+            "UAP_landed": {
+                "prompt_new_disaster.txt": []
+            },
+            "meteor_strike": {
+                "prompt_new_disaster.txt": []
+            },
+            "freeway_closure": {
+                "prompt_new_disaster.txt": []
+            },
+            "new_disease_called_SARD-26": {
+                "prompt_new_disaster.txt": []
+            },
+            "police_activity_near_mall": {
+                "prompt_new_disaster.txt": []
+            }
+        },
+        "spanish": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "INUNDACIÓN GRAVE! ¡Evacúen INMEDIATAMENTE a zonas altas! ¡El río/arroyo [Nombre del río/arroyo] se ha desbordado! ¡Peligro de muerte! ¡No intenten cruzar el agua! ¡Informen a sus vecinos!\n"
+                ],
+                "prompt_persona.txt": [
+                    "Atención! Inundaciones repentinas reportadas en [LOCATION]. Busque refugio en terrenos más altos inmediatamente. Evite viajar si es posible. Las carreteras están peligrosas. El agua está subiendo rápidamente. La inundación empezó a las [TIME]. Manténgase informado sobre la situación. Para más información y actualizaciones sobre la emergencia, visite [URL]. Proteja su vida y la de sus seres queridos.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "¡ALERTA DE EMERGENCIA! Inundaciones severas en [LOCATION]. Se espera que el nivel del agua siga subiendo hasta [TIME]. Busque refugio en un lugar alto inmediatamente. Evite viajar y no conduzca por áreas inundadas. Manténgase informado y siga las instrucciones de las autoridades locales. Para más información, visite [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "¡ALERTA DE INUNDACIÓN! [LOCATION] está bajo aviso de inundación hasta nuevo aviso. Se esperan niveles de agua peligrosamente altos. Evacúe las zonas bajas INMEDIATAMENTE. No intente cruzar carreteras inundadas. Busque refugio en un lugar alto y seguro. Manténgase informado. Para más información y actualizaciones, visite [URL]. Hora de emisión: [TIME].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "INUNDACIÓN! Alerta de emergencia por inundación en [LOCATION] a las [TIME]. Por favor, evacúe las áreas bajas inmediatamente y busque refugio en terrenos altos. Las fuertes lluvias han provocado el desbordamiento de ríos y arroyos. No intente cruzar aguas rápidas. Manténgase informado y siga las instrucciones de las autoridades. Para más información y actualizaciones, visite: [URL]\n"
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]\n"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "ALERTA EXTREMA! Vientos peligrosos huracanados. NO SALGAS. Peligro de caída de árboles y tendido eléctrico. Busca refugio INMEDIATO y permanece en un lugar seguro. Mantente informado: [Insert official website/radio station].\n"
+                ],
+                "prompt_persona.txt": [
+                    "Atención! Vientos extremadamente peligrosos azotan [LOCATION]. Ráfagas superiores a [knots/kmh] son posibles. Busque refugio inmediatamente en un lugar seguro y evite ventanas. Manténgase alejado de cables eléctricos caídos. La situación es crítica. Para más información y actualizaciones, visite [URL]. Alerta emitida a las [TIME].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "ALERTA DE EMERGENCIA: Vientos extremadamente fuertes se esperan en [LOCATION] hasta [TIME]. Ráfagas peligrosas pueden causar daños significativos. Evite viajar. Asegure o guarde objetos sueltos en el exterior, como muebles de jardín y botes de basura. Manténgase alejado de ventanas. Para más información y actualizaciones, visite [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "ALERTA DE EMERGENCIA: Vientos extremadamente peligrosos azotarán [LOCATION] a partir de las [TIME]. Se esperan ráfagas dañinas capaces de derribar árboles y causar cortes de energía. Manténgase en interiores, alejado de ventanas y puertas. Asegure objetos sueltos en el exterior. Para más información y actualizaciones, visite: [URL]\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "ATENCIÓN: Vientos extremadamente fuertes impactarán [LOCATION] a partir de las [TIME]. Se esperan ráfagas peligrosas que podrían causar daños y cortes de energía. Permanezca en interiores, lejos de ventanas y asegure objetos sueltos. Evite viajar si es posible. Manténgase informado y siga las instrucciones de las autoridades locales. Más información disponible en [URL].\n"
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta [TIME]. ¡Refúgiate AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Protege tu cabeza de los objetos que vuelan. ¡NO salgas si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]\n"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "¡FUEGO! ¡INCENDIO! ¡SALGAN AHORA! ¡LLAMEN AL 112!\n"
+                ],
+                "prompt_persona.txt": [
+                    "ATENCIÓN: Hay un incendio en [LOCATION]. Evacúe el área inmediatamente si está cerca del fuego. Manténgase alejado de la zona hasta que las autoridades indiquen que es seguro. El incidente comenzó a [TIME]. Para obtener información actualizada, visite [URL]. Por favor, manténgase informado.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "URGENTE: Hay un incendio en [LOCATION]. [TIME]! Evacúe la zona inmediatamente. NO entre al edificio. Llame al 112 si necesita asistencia. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "¡Emergencia! Incendio reportado. Evacúe inmediatamente el área de [LOCATION]. El incendio se inició a las [TIME] y aún está fuera de control. Manténgase alejado de la zona y siga las instrucciones de los servicios de emergencia. Para información actualizada y rutas de evacuación, visite [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "ATENCIÓN: Hay un incendio en [LOCATION].  Evacúe la zona inmediatamente. El fuego se está extendiendo rápidamente. Manténgase alejado del área y siga las instrucciones de las autoridades. Más información disponible en [URL].  Emitido a las [TIME].\n"
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacue a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, herido o morir. SALGA de las áreas cerca de [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en el área y siga sus instrucciones. [URL]\n"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "**¡URGENTE! AVISO DE HERVIR EL AGUA en [Zona/Neighborhood]. Hierva el agua durante 1 minuto antes de beber, cocinar o cepillarse los dientes. Más info en [Website/Phone Number].**\n"
+                ],
+                "prompt_persona.txt": [
+                    "AVISO DE EMERGENCIA: Se ha emitido un aviso de hervir el agua para [LOCATION] a partir de [TIME]. No consuma agua del grifo sin hervirla primero durante un minuto completo. Use agua embotellada o hervida para beber, cocinar, cepillarse los dientes y lavar los platos. Esté atento a más actualizaciones. Para más información, visite: [URL]\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "AVISO DE EMERGENCIA: Se ha emitido un aviso de hervir el agua para [LOCATION] a partir de [TIME].  Se les recomienda a los residentes que hiervan el agua utilizada para beber, cocinar, cepillarse los dientes y preparar alimentos.  Deje que el agua hierva durante un minuto.  Este aviso es por precaución.  Para más información, visite [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "AVISO DE EMERGENCIA: Se ha emitido un aviso de hervir agua para [LOCATION] a partir de las [TIME] debido a una posible contaminación. Es imperativo hervir el agua durante un minuto antes de consumirla para beber, cocinar, cepillarse los dientes, etc. Esta medida es preventiva. Para más información, por favor visite: [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "**EMERGENCY ALERT TEMPLATE (English)**\n\nBoil Water Notice: Due to [REASON, e.g., a water main break], all residents in [LOCATION] are advised to boil their water for one minute before drinking, cooking, or brushing teeth. This notice is effective as of [TIME]. The problem is expected to be resolved by [ESTIMATED RESOLUTION TIME]. Visit [URL] for updates and more information.\n\n**ALERTA DE EMERGENCIA (Spanish)**\n\nAviso de Hervir el Agua: Debido a [REASON, e.g., una rotura de tubería principal de agua], se recomienda a todos los residentes en [LOCATION] que hiervan el agua durante un minuto antes de beberla, cocinar o cepillarse los dientes. Este aviso entra en vigor a partir de [TIME]. Se espera que el problema se resuelva antes de [ESTIMATED RESOLUTION TIME]. Visite [URL] para obtener actualizaciones y más información.\n"
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y está en efecto hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se lave los dientes ni limpie su casa con agua del grifo o agua filtrada hasta que la hierva. Lleve el agua a ebullición completa durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]\n"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "¡ALERTA! El 911 no está funcionando. Para emergencias, llama directamente a la policía al [Número de teléfono de la policía local] o a los bomberos al [Número de teléfono de los bomberos local]. Comparte esta información.\n"
+                ],
+                "prompt_persona.txt": [
+                    "ATENCIÓN. Existe una interrupción del servicio 911 en [LOCATION] desde [TIME]. Debido a esto, no podrá comunicarse con los servicios de emergencia marcando el 911. En caso de emergencia, contacte directamente a su estación de policía o departamento de bomberos local. Para más información, visite [URL]. Tenga paciencia mientras trabajamos para resolver este problema.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "ATENCIÓN: El servicio de emergencias 911 no está disponible en [LOCATION] hasta [TIME]. En caso de emergencia, contacte directamente a los servicios de policía, bomberos o ambulancia a través de sus números locales. No intente contactar al 911. Para más información y actualizaciones, visite [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Atención: El servicio de emergencias 911 no está disponible actualmente en algunas áreas debido a una interrupción. Si tiene una emergencia, diríjase al departamento de bomberos o estación de policía más cercanos. Alternativamente, llame al [ALTERNATE NUMBER] si está disponible en su región. Esta interrupción comenzó a las [TIME] y afecta a [LOCATION]. Para obtener actualizaciones e información adicional, visite [URL]. Disculpe las molestias.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Servicio 911 no disponible en [LOCATION] a partir de [TIME]. En caso de emergencia, contacte a la policía local directamente usando el número de teléfono [Número de teléfono local] (si disponible) o diríjase a la estación de bomberos o policía más cercana. Revise para más información: [URL].\n"
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: Una ALERTA DE FALLA DEL 9-1-1 está en efecto para [LOCATION]. Por favor, contacte a la policía, bomberos, servicios médicos u otros servicios de emergencia directamente a sus números de teléfono locales en caso de emergencia. Si marca el 9-1-1, es posible que no reciba ayuda. [URL]\n"
+                ]
+            }
+        },
+        "haitian_creole": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "SEKOU! INONDASYON! GWO DLO AP MONTE RAPIDMAN! EVAKYE ZÒN NAN IMEDYATMAN! ALE NAN YON KOTE KI SEKLÈ! PA RETE!\n"
+                ],
+                "prompt_persona.txt": [
+                    "Atansyon! Inondasyon grav ap frape. [LOCATION] an danje. Evakye imedyatman si otorite yo mande sa. Chèche abri nan yon kote ki wo. Pa eseye travèse inondasyon an. Gen gwo risk pou lavi ou. Al gade [URL] pou plis enfòmasyon ak mizajou sou sitiyasyon an. Alèt la anvigè apati [TIME]. Pwoteje tèt ou!"
+                ],
+                "prompt_one_shot.txt": [
+                    "Ijans inondasyon! Gen yon gwo inondasyon ki afekte [LOCATION] kounye a. Tanpri pran prekosyon imedyatman. Deplase nan yon kote ki wo si sa posib. Evite vwayaje sof si li absoliman nesesè. Swiv enstriksyon otorite yo. Situasyon an ap chanje rapidman. Rete enfòme. Tanpri rete an sekirite! Pou plis enfòmasyon, vizite [URL] nan [TIME].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Atansyon! Inondasyon grav ap vini. [TIME], gwo lapli ap lakòz inondasyon rapid nan zòn [LOCATION]. Evakye imedyatman si otorite yo mande w sa. Chèche kote ki wo epi rete an sekirite. Pa eseye travèse dlo a kouran. Pou plis enfòmasyon, vizite [URL]. Fè atansyon!\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "**Template (English):**\n\nEmergency! Severe flooding reported in [LOCATION] at [TIME]. Seek higher ground immediately! Avoid travel if possible. Stay tuned to local radio for updates. For more information and assistance, visit [URL]. Your safety is our priority.\n\n**Translation (Haitian Creole):**\n\nIjans! Gwo inondasyon rapòte nan [LOCATION] a [TIME]. Chèche kote ki wo imedyatman! Evite vwayaje si sa posib. Rete branche sou radyo lokal pou dènye enfòmasyon yo. Pou plis enfòmasyon ak asistans, vizite [URL]. Sekirite w se priyorite nou.\n"
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: GEN YON IJAN FLOOD RAPID ap afekte [LOCATION] jiskaske [TIME]. Sa se yon sitiyasyon ki trè danjere e ki ka koute lavi. Pa eseye vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]\n"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "Gwo van ap frape! Rete anndan kay. Pa soti. Gen danje! Mare tout sa kap vole deyò. Chèche abri imedyatman!\n"
+                ],
+                "prompt_persona.txt": [
+                    "Gwo van ap frape [LOCATION] kounye a. Rete andedan kay imedyatman. Gwo domaj posib. Alèt la anfòs jiskas [TIME]. Pran tout prekosyon nesesè. Vizite [URL] pou plis enfòmasyon ak sekirite.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "Atansyon! Gwo van ap frape [LOCATION] jiska [TIME]. Van an danjere anpil. Rete anndan kay solid. Pa soti si pa nesesè. Prepare w pou pann kouran. Tcheke [URL] pou plis enfòmasyon.\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Gwo van ap vini rapid! Van an ap trè fò nan [LOCATION] ozalantou [TIME]. Rete andedan kay la imedyatman. Pa soti sof si li nesesè anpil. Mare tout sa ki lach deyò. Kenbe je ou sou nouvèl la. Pou plis enfòmasyon, vizite [URL]. Fè atansyon!\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Gwo van ap frape [LOCATION] kounye a. Rete andedan kay la imedyatman. Pa vwayaje. Van an ap gen fòs siklòn jiska [TIME]. Gen risk pou blesi grav ak domaj pwopriyete. Tcheke [URL] pou plis enfòmasyon ak kijan pou pwoteje tèt ou.\n"
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: Gen yon AVÈTISMAN GWO VAN EKSTRÈM an efè pou [LOCATION] pou danje imedya van ki ka menase lavi jiskaske [TIME]. Chache refij KOUNYE A nan yon chanm anndan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole yo. PA soti deyò si van an kalme! Van an ap rapidman vin danjere ankò. [URL]\n"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "Dife! Dife! Gen yon dife! Rele 911 imedyatman! [Adrès egzak] Dife a ap pwopaje! Ede nou!\n"
+                ],
+                "prompt_persona.txt": [
+                    "Ijan! Gen yon dife danjere nan [LOCATION]. Evakye imedyatman si w nan zòn nan. Chèche abri. Fè atansyon ak lafimen. Tanpri, rete okouran de dènye enfòmasyon yo. Al gade [URL] pou plis detay ak sekirite. Alète a te pibliye a [TIME].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "ALARME! Gen yon gwo dife nan [LOCATION]. Evakye imedyatman si ou nan zòn nan. Fè atansyon pou lafimen epi swiv enstriksyon otorite yo. Al gade [URL] pou plis enfòmasyon sou sitiyasyon an ak kijan pou pwoteje tèt ou. [TIME]\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Atansyon! Gen yon dife ki eklate. Evakye imedyatman si ou nan zon nan. [TIME] [LOCATION]. Pa retounen jiskaske otorite yo di li an sekirite. Pou plis enfòmasyon, ale nan: [URL]. Pwoteje tèt ou!\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Gwo dife! Gen yon dife k ap boule nan [LOCATION] a [TIME]. Evakye imedyatman si w nan zòn nan. Chèche abri. Kenbe yon distans de zòn nan. Pou plis enfòmasyon, ale sou sitwèb sa a: [URL].\n"
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]: Gen yon AVÈTISMAN DIFE nan [LOCATION] ki an vigè jiska [TIME]. Evakye fanmi ou ak bèt ou yo kounye a, pa pèdi tan. Vizibilite nan zòn nan ap redwi epi wout yo ka bloke. Si ou pa ale kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki tou pre [LOCATION]. Atann vizibilite redwi, gwo lafimen, ak pwoblèm pou respire. Fè atansyon lè w ap kondui. Fè atansyon ak pèsonèl sekirite piblik ki ap opere nan zòn nan, epi swiv enstriksyon yo. [URL]\n"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "**AVÈTISMAN! Dlo a pa bon pou bwè kounye a. Bouyi dlo a anvan ou bwè li, fè manje avèk li, oubyen bwose dan ou. Gade pou plis enfòmasyon.**\n"
+                ],
+                "prompt_persona.txt": [
+                    "Atansyon! Gouvènman an mande tout moun nan [LOCATION] pou bouyi dlo anvan yo bwè li, prepare manje avèk li, oubyen bwose dan yo apre [TIME]. Genyen yon pwoblèm ak dlo a. Bouyi dlo pandan omwen 1 minit. Pou plis enfòmasyon, vizite [URL].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "AVÈTISMAN: Yo bay yon avètisman bouyi dlo pou [LOCATION]. Kòmanse a [TIME], ou dwe bouyi tout dlo w ap itilize pou bwè, fè manje, bwose dan, oswa fè glas. Kite dlo a bouyi pandan omwen 1 minit. Kontakte otorite lokal yo pou plis enfòmasyon.  Pou plis detay, vizite sit entènèt sa a: [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "ATANSYON! Gen yon avètisman bouyi dlo pou [LOCATION] kounye a. Tanpri, bouyi tout dlo pou bwè, lave dan, fè manje, oswa prepare bibwon pou omwen yon minit. Avètisman sa a ap an vigè depi [TIME]. Pou plis enfòmasyon, vizite [URL]. Mèsi pou koperasyon w.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Ijans! Gen yon avètisman bouyi dlo an vigè pou [LOCATION] apati [TIME]. Dlo a ka kontamine epi li pa an sekirite pou bwè, fè manje, bwose dan, ni fè glas san ou pa bouyi li. Bouyi dlo a byen pou omwen yon minit anvan ou itilize li. Tcheke [URL] pou plis enfòmasyon.\n"
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: Yo bay yon ALÈT DLO BOUYI pou [LOCATION] e li anfòs jiskaske [TIME]. Dlo nan kominote w la ka fè ou malad. Itilize dlo nan boutèy si ou genyen. Pa bwè dlo tiyo, pa kwit manje avèk li, pa bwose dan w avèk li, ni netwaye kay ou avèk dlo tiyo oswa dlo filtre jiskaske ou bouyi li. Pote dlo a nan yon bouyi plen pandan TWA MINIT. Kite dlo a refwadi anvan ou itilize li. Pa itilize glas ki fèt avèk dlo ki pa bouyi. Si ou itilize fòmil pou bay pitit ou manje, itilize fòmil ki tou pare pou itilize. Asire w ke bèt kay yo pa bwè dlo ki pa bouyi. [URL]\n"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "URGENT! Gen yon pwoblèm ak 911. Yo pap travay kounye a. Si gen yon ijans, eseye rele polis dirèkteman nan [nimewo telefòn polis ou]. Pataje mesaj sa a.\n"
+                ],
+                "prompt_persona.txt": [
+                    "Atansyon! Gen yon pwoblèm ak sistèm 911 nan [LOCATION]! Nou pa ka resevwa apèl ijans kounye a. Si ou gen yon ijans medikal, dife, oswa krim, tanpri eseye kontakte depatman polis lokal ou oswa depatman ponpye dirèkteman. Sitiyasyon sa a ap afekte apèl 911 depi [TIME]. Tanpri vizite [URL] pou plis enfòmasyon ak mizajou. Mèsi pou pasyans ou pandan n ap travay pou rezoud pwoblèm sa a.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "Ijans! Gen yon pwoblèm ak sistèm 911 nan [LOCATION]. 911 pa ap travay kounye a. Si ou gen yon ijans, tanpri kontakte polis dirèkteman nan nimewo abityèl yo.  Sistèm 911 a ap retabli nan [TIME].  Pou plis enfòmasyon, vizite [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "ATANSYON! Gen yon pwoblèm ak sèvis 911 nan zòn [LOCATION] jodi a, [TIME]. Si ou gen yon ijans, tanpri rele [nimewo altènatif]. Y ap travay pou rezoud pwoblèm nan pi vit posib. Pou plis enfòmasyon, vizite [URL]. Mèsi pou pasyans ou.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Ijans! Sistèm 911 la pa fonksyone nan zòn [LOCATION] kounye a, apati [TIME]. Tanpri, pa eseye rele 911. Si ou gen yon ijans, kontakte depatman ponpye lokal ou a dirèkteman oswa itilize liy telefòn ki pa ijans lan. Pou plis enfòmasyon, vizite [URL]. Nou pral fè w konnen lè sistèm nan retounen nan nòmal. Mèsi.\n"
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: YON PWOBLÈM AK SISTÈM 9-1-1 genyen nan [LOCATION]. Tanpri kontakte lapolis, ponpye, sèvis medikal, osinon lòt sèvis ijans yo dirèkteman nan nimewo telefòn lokal yo si gen ijans. Si ou konpoze 9-1-1, ou gendwa pa jwenn èd. [URL]\n"
+                ]
+            }
+        },
+        "arabic": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "⚠️ تنبيه هام! فيضان قادم! غادروا المناطق المنخفضة فورا و توجهوا إلى أماكن مرتفعة آمنة. اتبعوا تعليمات الدفاع المدني. شاركوا الرسالة!\n"
+                ],
+                "prompt_persona.txt": [
+                    "تنبيه طارئ! تحذير من فيضان مفاجئ في [LOCATION]! يرجى الانتقال إلى مناطق مرتفعة على الفور. الفيضان بدأ في [TIME]. ابتعدوا عن الأنهار والمجاري المائية. لا تحاولوا عبور المياه الجارية سيرًا على الأقدام أو بالسيارات. لمزيد من المعلومات والتحديثات، يرجى زيارة [URL]. ابقوا آمنين!\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "تنبيه طارئ: تحذير من فيضان في منطقة [LOCATION] حتى الساعة [TIME]. يرجى الابتعاد عن المناطق المنخفضة ومجاري الأودية. الفيضان يشكل خطرًا على الحياة. انتقلوا إلى مناطق مرتفعة وآمنة فورًا. للمزيد من المعلومات والتحديثات، تفضلوا بزيارة الموقع [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "تحذير طارئ!\n\nفيضان مفاجئ يجتاح منطقة [LOCATION]. ارتفع منسوب المياه بشكل خطير. يرجى الابتعاد عن المناطق المنخفضة وضفاف الأنهار. تم تسجيل الفيضان في تمام الساعة [TIME]. توجهوا إلى مناطق مرتفعة وآمنة. لمزيد من المعلومات وتحديثات السلامة، يرجى زيارة: [URL]. سلامتكم أولاً.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "تنبيه طارئ! تحذير من الفيضانات في [LOCATION] الساعة [TIME]. يرجى الابتعاد عن المناطق المنخفضة والأودية. اتّبع تعليمات السلامة الصادرة عن السلطات المحلية. لمزيد من المعلومات، يرجى زيارة: [URL]\n"
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: حالة طوارئ بسبب فيضان مفاجئ سارية المفعول في [LOCATION] حتى [TIME]. هذا وضع خطير للغاية ويهدد الحياة. لا تحاول السفر إلا إذا كنت تهرب من منطقة قد تغمرها الفيضانات أو كنت تحت أمر إخلاء. [URL]\n"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "تحذير! رياح شديدة جداً متوقعة. ابقوا في المنازل وتجنبوا النوافذ. احتمال سقوط أشجار وأجسام متطايرة. اتصلوا بالطوارئ في حالة الضرورة.\n"
+                ],
+                "prompt_persona.txt": [
+                    "تنبيه طارئ! رياح شديدة متوقعة في [LOCATION] حتى [TIME]. ابقوا في منازلكم وتجنبوا النوافذ. قد تنقطع الكهرباء. للإبلاغ عن الأضرار، أو للحصول على معلومات إضافية، تفضلوا بزيارة: [URL].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "تحذير طارئ: رياح شديدة تهب على [LOCATION] حتى [TIME]. يُرجى توخي الحذر الشديد وتجنب المناطق المفتوحة والأشجار المتساقطة والأجسام المتحركة. ابقوا في أماكن آمنة ومحمية. للمزيد من المعلومات والتحديثات، يرجى زيارة: [URL]\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "تحذير! رياح شديدة متوقعة في [LOCATION] ابتداءً من [TIME]. يرجى البقاء في المنازل وتجنب المناطق المفتوحة. تأمين الممتلكات المعرضة للخطر. لمزيد من المعلومات، يرجى زيارة [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "تحذير طارئ: رياح شديدة متوقعة في [LOCATION] حوالي الساعة [TIME]. يرجى البقاء في أماكن آمنة وتجنب الخروج إلا للضرورة القصوى. تأكد من تأمين الممتلكات الخارجية. للمزيد من المعلومات، يرجى زيارة [URL].\n"
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: تحذير من رياح شديدة للغاية ساري المفعول في [LOCATION] بسبب الخطر المباشر من رياح تهدد الحياة حتى [TIME]. احتموا الآن في غرفة داخلية في مبنى متين، بعيدًا عن النوافذ. احموا رؤوسكم من الأجسام المتطايرة. لا تخرجوا إذا هدأت الرياح! ستصبح الرياح خطرة بسرعة مرة أخرى. [URL]\n"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "حريق! حريق! ساعدونا! يوجد حريق في [الموقع]! اتصلوا بالدفاع المدني فورا! [اذكر تفاصيل إضافية إذا أمكن]\n"
+                ],
+                "prompt_persona.txt": [
+                    "تنبيه طارئ: حريق كبير في [LOCATION]! الرجاء الإخلاء الفوري للمنطقة المحيطة واتباع تعليمات السلامة. الدخان الكثيف يمثل خطرًا على الصحة. التزموا الهدوء وتوجهوا إلى أقرب منطقة تجمّع آمنة. الحريق بدأ في الساعة [TIME]. للمزيد من المعلومات والتحديثات، يرجى زيارة [URL].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "تنبيه طارئ! حريق في [LOCATION] الساعة [TIME]. يرجى الابتعاد عن المنطقة واتباع تعليمات السلامة. للمزيد من المعلومات والتحديثات، يرجى زيارة: [URL]\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "حريق! تم الإبلاغ عن حريق في [LOCATION] في الساعة [TIME]. يرجى الابتعاد عن المنطقة ومتابعة تعليمات السلامة الصادرة عن السلطات. للمزيد من المعلومات، يرجى زيارة: [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "حريق! تم الإبلاغ عن حريق في [LOCATION] في الساعة [TIME]. يرجى الابتعاد عن المنطقة واتباع تعليمات السلامة. للمزيد من المعلومات، يرجى زيارة: [URL]\n"
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]: تحذير من حريق في [LOCATION] سارٍ حتى [TIME]. قم بإخلاء عائلتك وحيواناتك الأليفة الآن، لا تتأخر. ستنخفض الرؤية في المنطقة وقد تصبح الطرق مسدودة. إذا لم تغادر الآن، فقد تكون محاصرًا أو مصابًا أو تُقتل. غادر المناطق القريبة من [LOCATION]. توقع انخفاض الرؤية ودخانًا كثيفًا وصعوبة في التنفس. كن حذرًا عند القيادة. انتبه إلى أفراد السلامة العامة العاملين في المنطقة واتبع تعليماتهم. [URL]\n"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "تنبيه هام: إشعار بغلي المياه في منطقتك. يرجى غلي جميع المياه المستخدمة للشرب، تحضير الطعام، تنظيف الأسنان لمدة دقيقة واحدة على الأقل قبل الاستخدام. سيتم إعلامك عند انتهاء الإشعار. نرجو اتخاذ الحيطة والحذر.\n"
+                ],
+                "prompt_persona.txt": [
+                    "تنبيه طارئ! [LOCATION]: صدر إشعار بغلي الماء. يجب غلي جميع المياه المستخدمة للشرب، تحضير الطعام، وتنظيف الأسنان لمدة دقيقة واحدة على الأقل. سيستمر هذا الإشعار حتى إشعار آخر. بدأ في [TIME]. لمزيد من المعلومات، يرجى زيارة [URL].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "تنبيه هام: إشعار بغلي المياه في [LOCATION] ابتداءً من [TIME]. يجب غلي جميع المياه المستخدمة للشرب، أو إعداد الطعام، أو تنظيف الأسنان لمدة دقيقة واحدة على الأقل. سيتم رفع هذا الإشعار عندما تصبح المياه آمنة. للمزيد من المعلومات، يرجى زيارة [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "تنبيه هام: يرجى غلي الماء قبل استخدامه للشرب أو الطبخ في [LOCATION] ابتداءً من [TIME] بسبب مشكلة في محطة معالجة المياه. يجب غلي الماء لمدة دقيقة واحدة على الأقل. للمزيد من المعلومات، يرجى زيارة [URL]. نعتذر عن الإزعاج.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "تنبيه طارئ: إشعار بغلي المياه في [LOCATION]. يجب غلي جميع المياه المستخدمة للشرب والطبخ وغسل الأسنان لمدة دقيقة واحدة على الأقل قبل الاستخدام. يسري هذا الإشعار اعتبارًا من الساعة [TIME]. للمزيد من المعلومات، يرجى زيارة [URL].\n"
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: تم إصدار تنبيه بغلي الماء لمنطقة [LOCATION] وهو ساري المفعول حتى [TIME]. قد يجعلك الماء في مجتمعك مريضًا. استخدم المياه المعبأة إذا كانت متوفرة. لا تشرب أو تطبخ أو تغسل أسنانك أو تنظف منزلك بماء الصنبور أو الماء المفلتر حتى تقوم بغليه. اغلي الماء حتى يصل إلى درجة الغليان الكاملة لمدة ثلاث دقائق. اترك الماء يبرد قبل الاستخدام. لا تستخدم الثلج المصنوع من الماء الذي لم يتم غليه. إذا كنت تستخدم الحليب الصناعي لإطعام طفلك، فاستخدم الحليب الصناعي الجاهز للاستخدام. تأكد من أن الحيوانات الأليفة لا تشرب الماء الذي لم يتم غليه. [URL]\n"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "تنبيه هام: يوجد عطل في نظام الطوارئ 911. للابلاغ عن حالة طارئة، اتصل على [رقم هاتف بديل] أو [رقم هاتف بديل آخر]. الرجاء مشاركة هذا التنبيه.\n\n(Optional addition if you know the estimated downtime)\n\nالعطل متوقع حتى الساعة [Time].\n"
+                ],
+                "prompt_persona.txt": [
+                    "تنبيه طارئ: يوجد انقطاع في خدمة 911 في [LOCATION] اعتبارًا من [TIME]. لا يمكن إجراء مكالمات إلى 911. في حالة الطوارئ، يرجى الاتصال برقم الطوارئ البديل [URL] أو التوجه مباشرة إلى أقرب مركز شرطة أو مستشفى. سنقوم بتحديث الوضع حال توفر معلومات إضافية.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "تنبيه: يوجد عطل في نظام 911 في منطقة [LOCATION] حتى الساعة [TIME]. في حالة الطوارئ، يرجى الاتصال مباشرة برقم الشرطة المحلي أو التوجه إلى أقرب مركز إطفاء أو مستشفى. للمزيد من المعلومات، يرجى زيارة [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "تنبيه: تعطل خدمة الطوارئ 911 في [LOCATION] الساعة [TIME]. يرجى استخدام الرقم البديل (XXX-XXX-XXXX) للإبلاغ عن الحالات الطارئة. للحصول على آخر التحديثات، يرجى زيارة: [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "تنبيه: يوجد عطل في نظام ٩١١ في منطقة [LOCATION] منذ الساعة [TIME]. لا يمكن إجراء مكالمات للطوارئ عبر الرقم ٩١١ حاليًا. في حالات الطوارئ، يرجى الاتصال مباشرة بأقرب مركز شرطة أو وحدة إطفاء أو مستشفى. للمزيد من المعلومات، يرجى زيارة: [URL]\n"
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: تنبيه بانقطاع خدمة الطوارئ 9-1-1 ساري المفعول في [LOCATION]. يرجى الاتصال بالشرطة أو الإطفاء أو الخدمات الطبية أو خدمات الطوارئ الأخرى مباشرة على أرقام هواتفهم المحلية في حالات الطوارئ. إذا اتصلت بالرقم 9-1-1، فقد لا تحصل على المساعدة. [URL]\n"
+                ]
+            }
+        },
+        "mandarin": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "紧急警报！洪水预警！请立即撤离低洼地区，前往高处避难。注意安全！\n"
+                ],
+                "prompt_persona.txt": [
+                    "洪水警报！[TIME]，[LOCATION] 发生严重洪水。请立即前往高地避难。不要尝试驾驶或步行穿过洪水。注意安全，并留意您的邻居。请访问 [URL] 获取更多信息和最新动态。\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "紧急警报！[LOCATION]地区从现在起至[TIME]发生洪水。请立即前往高地避难。水位正在迅速上涨。请勿尝试驾车或步行通过淹没区域。关注媒体报道并查看[URL]获取最新信息。请互相帮助，确保安全。"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "紧急警报！ [TIME]，[LOCATION] 区域发生洪水，情况危急。请立即撤离至地势较高处，注意安全。务必远离河流和低洼地区。更多信息请访问：[URL]。请互相转告！\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急警报！[TIME]起，[LOCATION]发生洪水。请立即前往高地避难。避免涉水或开车经过被淹区域。更多信息请访问[URL]。\n"
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: [LOCATION] 地区已发布山洪暴发紧急警报，持续至[TIME]。 情况极其危险且威胁生命。 除非您是为了逃离可能发生洪水的区域或已接到疏散命令，否则请勿尝试出行。[URL]\n"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "紧急警报！狂风大作，请留在室内，远离窗户。小心坠物，注意安全！\n"
+                ],
+                "prompt_persona.txt": [
+                    "[TIME] 紧急警报！ [LOCATION] 地区正遭受极端强风侵袭。请立即寻找安全避风处。避免外出，远离树木、电线杆和其他可能倒塌的物体。关注当地新闻和天气预报，了解最新情况。更多信息请访问 [URL]。 注意安全！\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "紧急警报！[LOCATION]地区将于[TIME]迎来极端大风天气。请注意安全，尽量避免外出。高层建筑居民请关闭门窗，固定好室外物品。详情请访问[URL]。"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "紧急警报！ [TIME]， [LOCATION] 将遭遇极端大风天气。请立即采取预防措施，包括固定室外物品，远离高层建筑物和树木。注意安全！欲了解更多信息，请访问 [URL]。\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急警报：[TIME]，[LOCATION] 地区将出现极端大风天气。请居民留在室内，远离窗户。户外活动非常危险。请固定好室外物品，如家具和垃圾桶。更多信息请访问 [URL]。\n"
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]：关于[LOCATION]的极端大风警报现已生效，立即面临危及生命的大风，持续至[TIME]。立即躲避到坚固建筑的室内房间，远离窗户。保护头部，防止被飞行物体击中。即使风势减弱，也请勿外出！风势将很快再次变得危险。[URL]\n"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "着火了！着火了！快逃！ 地点：[Insert Location Here]. 打电话给119！\n"
+                ],
+                "prompt_persona.txt": [
+                    "紧急警报！[TIME] 发生火灾，地点：[LOCATION]。请立即撤离该区域并听从疏散指挥。如果您在该区域附近，请避开。 更多信息请访问：[URL]。\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "紧急警报：普通话地区发生火灾。 [LOCATION] 发生火灾，请立刻撤离该区域。[TIME]前请勿返回. 更多信息请访问[URL]。\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "紧急警报！[TIME]，[LOCATION]发生火灾。请立即撤离该区域，听从疏散指示。详情请查阅[URL]。请保持冷静，互相帮助。\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急警报：[TIME]， 文华区发生火灾。[LOCATION] 受影响。请立即撤离该区域并寻找安全地点。更多信息请访问 [URL]。\n"
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]：[LOCATION]地区的火灾警告生效至[TIME]。立即疏散您的家人和宠物，不要拖延。该地区能见度将降低，道路可能会被封锁。如果您现在不离开，您可能会被困住、受伤或死亡。离开[LOCATION]附近的区域。预计能见度降低、浓烟滚滚以及呼吸困难。驾驶时请小心。注意在该区域作业的公共安全人员，并听从他们的指示。[URL]\n"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "紧急通知！因供水系统问题，全市范围即日起暂停直接饮用自来水。请务必烧开后饮用或使用瓶装水。恢复正常供水时间另行通知。请互相转告！\n"
+                ],
+                "prompt_persona.txt": [
+                    "紧急通知！[LOCATION]地区的居民请注意， [TIME]起，自来水已发布煮沸通知。 在饮用、烹饪或刷牙前，请将自来水煮沸一分钟。更多信息请访问[URL]。\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "紧急通知：普通话区 [LOCATION] 已发布煮沸饮用水的通知，即日起至 [TIME]。 请煮沸水一分钟后再饮用或用于烹饪。详情请见 [URL]。\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "紧急通知：[LOCATION] 区域因水质问题，即日起请勿直接饮用自来水。请将水烧开至少一分钟后再饮用。[TIME]起生效。更多信息请访问：[URL]\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急通知：在[LOCATION]的自来水用户请注意，由于水压下降，我们已发布煮沸饮用水通知。请将所有用于饮用、烹饪、刷牙和制冰的水煮沸一分钟。此通知从 [TIME] 开始生效，直至另行通知。请访问 [URL] 获取更多信息。\n"
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]：已对[LOCATION]发布饮用水煮沸警报，生效至[TIME]。您所在社区的水可能会让您生病。如有瓶装水，请使用瓶装水。在将水煮沸之前，请勿饮用、烹饪、用自来水或过滤水刷牙或清洁房屋。将水完全煮沸三分钟。使用前让水冷却。不要使用未经煮沸的水制成的冰。如果您使用配方奶粉喂养您的孩子，请使用即用型配方奶粉。确保宠物不饮用未煮沸的水。[URL]\n"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "紧急通知！911系统中断，无法接通。如遇紧急情况，请直接联系最近的警察局或消防局。请广而告之！\n"
+                ],
+                "prompt_persona.txt": [
+                    "紧急警报：[LOCATION]地区的911服务目前中断。请勿尝试拨打911。如果您需要紧急援助，请先尝试联系当地警察部门或消防部门的非紧急电话。更多信息，请访问[URL]。中断时间从[TIME]开始。 感谢您的合作。\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "紧急通知：目前[LOCATION] 地区 911 电话服务中断。如果您需要紧急援助，请直接拨打[URL] 上列出的替代电话号码。 我们正在努力尽快恢复服务。[TIME] 将更新进一步信息。\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "紧急通知：目前[LOCATION]地区的911服务中断。[TIME]起，紧急情况请尝试以下替代方案：联系临近警局或使用非紧急电话。更多信息请访问[URL]。请互相转告。\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "紧急警报：[LOCATION]地区的911服务目前中断。如果您需要紧急援助，请直接拨打以下临时号码：[临时号码]. 请勿重复拨打。技术人员正在努力解决问题。[TIME]更新请访问[URL]。谢谢您的合作与耐心。\n"
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: [LOCATION] 地区现已发生 9-1-1 故障警报。如遇紧急情况，请直接拨打当地警察、消防、医疗或其他紧急服务部门的电话号码。如果您拨打 9-1-1，您可能无法获得帮助。[URL]\n"
+                ]
+            }
+        },
+        "vietnamese": {
+            "flood": {
+                "prompt_simple.txt": [
+                    "**Cảnh báo lũ lụt khẩn cấp! Nước đang dâng nhanh. Di chuyển ngay đến nơi cao ráo an toàn. Sơ tán nếu có lệnh từ chính quyền. Cập nhật thông tin thường xuyên trên [Tên nguồn tin đáng tin cậy, ví dụ Đài Phát Thanh]. Tránh xa khu vực ngập nước. Báo cho [Số điện thoại khẩn cấp hoặc Cảnh Sát] nếu cần cứu hộ.**\n"
+                ],
+                "prompt_persona.txt": [
+                    "Cảnh báo lũ lụt khẩn cấp! [TIME] có lũ lụt nguy hiểm tại [LOCATION]. Tìm nơi trú ẩn cao ngay lập tức. Không lái xe qua vùng nước lũ. Để biết thêm thông tin, truy cập [URL].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "CẢNH BÁO LŨ LỤT KHẨN CẤP! Khu vực [LOCATION] đang bị ảnh hưởng bởi lũ lụt nghiêm trọng đến [TIME]. Người dân cần di tản ngay lập tức đến khu vực an toàn cao hơn. Tránh xa các vùng trũng, sông và suối. Tắt hết các thiết bị điện. Theo dõi các thông báo tiếp theo. Để biết thêm thông tin, vui lòng truy cập: [URL]. An toàn của bạn là ưu tiên hàng đầu.\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "**Bước 1: Xác định các yếu tố chính của cảnh báo lũ lụt.**\n\nCảnh báo cần phải ngắn gọn, rõ ràng và cung cấp thông tin thiết yếu: thời gian, địa điểm, và nguồn thông tin thêm.\n\n**Bước 2: Dịch các yếu tố đó sang tiếng Việt.**\n\n* Lũ lụt: Lũ/Ngập lụt\n* Thời gian\": [TIME]\n* Địa điểm: [LOCATION]\n* Xem thêm thông tin: Xem thêm thông tin tại\n* Cảnh Báo: Cảnh Báo! / Khẩn Cấp!\n\n**Bước 3: Xây dựng cấu trúc câu cảnh báo bằng tiếng Việt.**\n\nSử dụng cấu trúc câu ngắn gọn, trực tiếp.\n\n**Bước 4: Kết hợp các yếu tố và tạo một cảnh báo ngắn gọn.**\n\nCảnh báo! Ngập lụt nghiêm trọng tại [LOCATION]. Tình hình trở nên nguy cấp lúc [TIME]. Vui lòng di chuyển đến nơi an toàn. Xem thêm thông tin tại [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "CẢNH BÁO LŨ LỤT! Lũ lụt nghiêm trọng đang xảy ra tại [LOCATION] vào lúc [TIME]. Sơ tán ngay lập tức nếu bạn ở trong khu vực nguy hiểm. Tìm chỗ ở an toàn trên vùng đất cao hơn. Không lái xe qua vùng nước lũ. Để biết thêm thông tin, truy cập [URL].\n"
+                ],
+                "translate_flood.txt": [
+                    "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT đang có hiệu lực cho [LOCATION] đến [TIME]. Đây là tình huống vô cùng nguy hiểm và đe dọa tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có thể bị ngập lụt hoặc đang tuân theo lệnh sơ tán. [URL]\n"
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    "CẢNH BÁO KHẨN CẤP! Gió lớn cực đoan! Ở yên trong nhà, tránh xa cửa sổ. Cây cối, đường dây điện có thể bị đổ. Cập nhật thông tin thường xuyên!\n"
+                ],
+                "prompt_persona.txt": [
+                    "Cảnh báo khẩn cấp! Gió cực mạnh đang xảy ra tại [LOCATION]. Gió có thể gây nguy hiểm đến tính mạng và tài sản. Hãy tìm nơi trú ẩn an toàn ngay lập tức. Tránh xa cây cối, đường dây điện và các vật thể lỏng lẻo khác. Thông tin cập nhật sẽ được phát trên đài phát thanh và truyền hình địa phương. Thời gian có hiệu lực: [TIME]. Truy cập [URL] để biết thêm chi tiết và hướng dẫn an toàn.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "CẢNH BÁO! Gió cực mạnh đang ảnh hưởng đến [LOCATION] đến [TIME]. Tình hình rất nguy hiểm. Hạn chế ra ngoài đường. Nếu buộc phải ra ngoài, hãy cẩn thận với cây đổ, vật bay và đường dây điện. Cập nhật thông tin tại [URL]. An toàn là trên hết!\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Cảnh báo khẩn cấp! Gió cực mạnh dự kiến tại [LOCATION] vào khoảng [TIME]. Gió có thể gây ra thiệt hại đáng kể đến tài sản và nguy hiểm đến tính mạng. Hãy ở trong nhà, tránh xa các khu vực cây cối, đường dây điện và các vật thể dễ bị thổi bay. Cập nhật thông tin chi tiết tại [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Cảnh báo khẩn cấp! Gió cực mạnh đang xảy ra tại [LOCATION] vào lúc [TIME]. Hãy ở trong nhà và tránh xa các khu vực nguy hiểm như cây cối và đường dây điện. Theo dõi tin tức địa phương và truy cập [URL] để biết thêm thông tin và hướng dẫn an toàn. Hãy cẩn thận và giữ an toàn!\n"
+                ],
+                "translate_extreme_wind.txt": [
+                    "[SENDING AGENCY]: CẢNH BÁO GIÓ CỰC MẠNH đang có hiệu lực cho [LOCATION] vì nguy cơ tức thì về gió đe dọa tính mạng cho đến [TIME]. HÃY tìm nơi trú ẩn NGAY LẬP TỨC trong một căn phòng bên trong của một tòa nhà chắc chắn, tránh xa cửa sổ. Bảo vệ đầu của bạn khỏi các vật thể bay. KHÔNG ra ngoài nếu gió dịu bớt! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]\n"
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    "CHÁY! CHÁY! Có cháy lớn! Cần giúp đỡ khẩn cấp! Địa điểm: [Địa điểm xảy ra cháy]! Gọi cứu hỏa ngay!\n"
+                ],
+                "prompt_persona.txt": [
+                    "Có hỏa hoạn tại [LOCATION]. Xin di tản ngay lập tức nếu bạn ở gần khu vực này. Hỏa hoạn bắt đầu lúc [TIME]. Để biết thêm thông tin và cập nhật, vui lòng truy cập [URL]. Hãy giữ bình tĩnh và tuân theo hướng dẫn của nhân viên cứu hỏa và chính quyền địa phương. An toàn là trên hết.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "Cảnh báo khẩn cấp! Có hỏa hoạn tại [LOCATION] vào lúc [TIME]. Xin hãy sơ tán ngay lập tức khỏi khu vực. Để biết thêm thông tin chi tiết và hướng dẫn an toàn, vui lòng truy cập [URL].\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "Cảnh báo khẩn cấp! Hỏa hoạn đã xảy ra. Xin hãy tránh khu vực [LOCATION] ngay lập tức. Thời gian: [TIME]. Đảm bảo an toàn cho bản thân và những người xung quanh. Theo dõi thông tin cập nhật tại [URL] để biết thêm chi tiết và hướng dẫn.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Chú ý khẩn cấp! Có hỏa hoạn tại [LOCATION] lúc [TIME]. Hãy sơ tán ngay lập tức nếu bạn ở gần đó. Tránh khu vực này và tuân theo hướng dẫn của nhân viên cứu hỏa. Để biết thêm thông tin, truy cập [URL]. Cập nhật sẽ được cung cấp thường xuyên. An toàn là trên hết!\n"
+                ],
+                "translate_fire.txt": [
+                    "[SENDING AGENCY]: CẢNH BÁO CHÁY ở [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng của bạn ngay bây giờ, đừng trì hoãn. Tầm nhìn trong khu vực sẽ bị giảm và đường xá có thể bị chặn. Eğer şimdi ayrılmazsanız, bạn có thể bị mắc kẹt, bị thương hoặc thiệt mạng. HÃY RỜI KHỎI các khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Quan sát nhân viên an toàn công cộng đang làm việc trong khu vực và làm theo hướng dẫn của họ. [URL]\n"
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    "**THÔNG BÁO KHẨN CẤP: NƯỚC SINH HOẠT KHU VỰC BỊ Ô NHIỄM. VUI LÒNG ĐUN SÔI KỸ TRƯỚC KHI UỐNG HOẶC SỬ DỤNG NẤU ĂN. Thông báo có hiệu lực đến khi có thông báo mới.**\n"
+                ],
+                "prompt_persona.txt": [
+                    "Cảnh báo khẩn cấp: Khu vực [LOCATION] đang trong tình trạng thông báo đun sôi nước. Hãy đun sôi nước máy ít nhất một phút trước khi uống, đánh răng, rửa rau quả hoặc dùng để nấu ăn. Thông báo có hiệu lực từ [TIME]. Truy cập [URL] để biết thêm chi tiết và cập nhật.\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "**THÔNG BÁO KHẨN CẤP: NƯỚC UỐNG**\n\nThông báo về việc đun sôi nước đang có hiệu lực tại [LOCATION] đến [TIME]. Tất cả người dân được yêu cầu đun sôi nước trước khi uống, nấu ăn, đánh răng, hoặc rửa thực phẩm. Đun sôi nước trong ít nhất một phút. Để biết thêm thông tin, vui lòng truy cập: [URL]\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "**Step 1: Understand the Task**\n\nThe task is to create a short emergency alert in Vietnamese about a boil water notice. It needs to be concise (under 100 words) and include placeholders for time, location, and a URL for further information.\n\n**Step 2: Craft the Vietnamese Alert**\n\nHere's the Vietnamese alert, making sure it is clear and easy to understand:\n\nCảnh báo! Khu vực [LOCATION] hiện đang có thông báo về việc đun sôi nước trước khi dùng do vấn đề ô nhiễm. Vui lòng đun sôi nước trước khi uống, nấu ăn, đánh răng và rửa rau quả. Thông báo có hiệu lực từ [TIME]. Xem thêm thông tin chi tiết tại [URL].\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Cảnh báo khẩn cấp: Thông báo đun sôi nước ở [LOCATION] có hiệu lực từ [TIME]. Để đảm bảo an toàn, tất cả nước dùng để uống, đánh răng, rửa rau quả và nấu ăn phải được đun sôi kỹ trong ít nhất một phút trước khi sử dụng. Vui lòng xem trang web [URL] để biết thêm thông tin chi tiết.\n"
+                ],
+                "translate_boil_water_notice.txt": [
+                    "[SENDING AGENCY]: CẢNH BÁO NƯỚC ĐUN SÔI đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể khiến bạn bị bệnh. Sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng hoặc lau dọn nhà cửa bằng nước máy hoặc nước lọc cho đến khi bạn đun sôi. Đun nước sôi sùng sục trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng nước đá làm bằng nước chưa được đun sôi. Nếu bạn sử dụng sữa công thức để cho con bạn ăn, hãy sử dụng sữa công thức pha sẵn. Đảm bảo vật nuôi không uống nước chưa được đun sôi. [URL]\n"
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    "Cảnh báo! Số 911 đang bị mất liên lạc trên diện rộng. Nếu có tình huống khẩn cấp, hãy gọi trực tiếp số điện thoại của sở cảnh sát, cứu hỏa, hoặc bệnh viện địa phương của bạn. Thông tin chi tiết sẽ được cập nhật sớm. Xin lỗi vì sự bất tiện này.\n"
+                ],
+                "prompt_persona.txt": [
+                    "Chú ý khẩn cấp. Dịch vụ 911 đang bị gián đoạn tại [LOCATION] từ [TIME]. Gọi số 112 hoặc liên hệ trực tiếp sở cảnh sát địa phương nếu cần giúp đỡ khẩn cấp. Để biết thêm chi tiết, vui lòng truy cập [URL].\n"
+                ],
+                "prompt_one_shot.txt": [
+                    "**NGẮT KẾT NỐI 911**\n\nDịch vụ 911 tạm thời không hoạt động tại [LOCATION] cho đến [TIME]. Trong trường hợp khẩn cấp, gọi trực tiếp số điện thoại của sở cảnh sát, cứu hỏa địa phương, hoặc bệnh viện gần nhất. Cập nhật thông tin chi tiết tại [URL]. Chúng tôi đang nỗ lực khôi phục dịch vụ. Xin lỗi vì sự bất tiện này.\n"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "**The task, broken down:**\n\n1.  **Understand the premise:** A 911 outage is happening. We need to tell people about it.\n2.  **Understand the constraints:**\n    *   The message must be in Vietnamese.\n    *   The message cannot be longer than 100 words.\n    *   It's an emergency, so the tone should be urgent but not panicky.\n    *   It must include placeholders for TIME, LOCATION, and a URL. These placeholders must remain in English in the final Vietnamese alert.\n3.  **Write the alert:** It should be concise, informative, and give people alternative methods to contact emergency services.\n\n**The output (Vietnamese alert text):**\n\n**CHÚ Ý!** Dịch vụ 911 đang bị gián đoạn tạm thời tại [LOCATION] vào lúc [TIME]. Để báo cáo tình huống khẩn cấp, xin vui lòng gọi số 113 (cảnh sát) hoặc 115 (cứu thương). Bạn cũng có thể liên hệ trực tiếp với sở cảnh sát địa phương hoặc cơ sở y tế gần nhất. Để biết thêm chi tiết, vui lòng truy cập: [URL]. Chúng tôi đang nỗ lực khắc phục sự cố. Xin cám ơn sự thông cảm của quý vị.\n"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "Chú ý! Dịch vụ 911 đang bị gián đoạn tại [LOCATION] vào lúc [TIME]. Trong trường hợp khẩn cấp, vui lòng gọi số [Số điện thoại thay thế]. Để biết thêm thông tin, truy cập [URL].\n"
+                ],
+                "translate_911_outage.txt": [
+                    "[SENDING AGENCY]: THÔNG BÁO MẤT DỊCH VỤ 9-1-1 đang có hiệu lực cho khu vực [LOCATION]. Vui lòng liên hệ trực tiếp cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác theo số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]\n"
+                ]
+            }
+        }
+    },
+    "deepseek": {
+        "english": {
+            "UAP_landed": {
+                "prompt_new_disaster.txt": []
+            },
+            "meteor_strike": {
+                "prompt_new_disaster.txt": []
+            },
+            "freeway_closure": {
+                "prompt_new_disaster.txt": []
+            },
+            "new_disease_called_SARD-26": {
+                "prompt_new_disaster.txt": []
+            },
+            "police_activity_near_mall": {
+                "prompt_new_disaster.txt": []
+            }
+        },
+        "spanish": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_flood.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_extreme_wind.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_fire.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_boil_water_notice.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_911_outage.txt": []
+            }
+        },
+        "haitian_creole": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_flood.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_extreme_wind.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_fire.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_boil_water_notice.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_911_outage.txt": []
+            }
+        },
+        "arabic": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_flood.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_extreme_wind.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_fire.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_boil_water_notice.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_911_outage.txt": []
+            }
+        },
+        "mandarin": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_flood.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_extreme_wind.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_fire.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_boil_water_notice.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_911_outage.txt": []
+            }
+        },
+        "vietnamese": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_flood.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_extreme_wind.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_fire.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_boil_water_notice.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_persona.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "translate_911_outage.txt": []
+            }
+        }
+    },
+    "google_translate": {
+        "spanish": {
+            "flood": [
+                "[AGENCIA DE ENVÍO]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está vigente para [UBICACIÓN] hasta [HORA]. Esta es una situación extremadamente peligrosa y potencialmente mortal. No intente viajar a menos que esté huyendo de una zona que podría inundarse o esté bajo una orden de evacuación. [URL]"
+            ],
+            "extreme_wind": [
+                "[AGENCIA DE ENVÍO]: Una ADVERTENCIA DE VIENTOS EXTREMOS está vigente para [UBICACIÓN] por peligro inminente de vientos potencialmente mortales hasta [HORA]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Protéjase la cabeza de objetos que salgan volando. ¡NO salga si el viento se calma! El viento volverá a ser peligroso rápidamente. [URL]"
+            ],
+            "fire": [
+                "[AGENCIA DE ENVÍO]: Una ADVERTENCIA DE INCENDIO en [UBICACIÓN] está vigente hasta [HORA]. Evacue a su familia y mascotas ahora mismo, sin demora. La visibilidad en la zona se reducirá y las carreteras podrían quedar bloqueadas. Si no se marcha ahora, podría quedar atrapado, lesionado o incluso morir. ABANDONE las zonas cercanas a [UBICACIÓN]. Prepárese para una visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en la zona y siga sus instrucciones. [URL]"
+            ],
+            "boil_water_notice": [
+                "[AGENCIA DE ENVÍO]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [UBICACIÓN], vigente hasta [HORA]. El agua de su comunidad puede enfermarle. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su casa con agua del grifo o filtrada hasta que la hierva. Hierva el agua completamente durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua sin hervir. Si usa fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que sus mascotas no beban agua sin hervir. [URL]"
+            ],
+            "911_outage": [
+                "[AGENCIA DE ENVÍO]: Hay una ALERTA DE INTERRUPCIÓN DEL SERVICIO 9-1-1 vigente para [UBICACIÓN]. Por favor, contacte a la policía, bomberos, servicios médicos u otros servicios de emergencia directamente a sus números de teléfono locales en caso de emergencia. Si llama al 9-1-1, es posible que no reciba ayuda. [URL]"
+            ]
+        },
+        "arabic": {
+            "flood": [
+                "[الجهة المُرسِلة]: حالة طوارئ بسبب فيضان مفاجئ سارية في [الموقع] حتى [الوقت]. هذا وضع خطير للغاية ويُهدد الحياة. لا تحاول السفر إلا إذا كنتَ فارّاً من منطقة مُعرّضة للفيضانات أو تحت أمر إخلاء. [رابط]"
+            ],
+            "extreme_wind": [
+                "[الجهة المُرسِلة]: تحذير من رياح شديدة ساري المفعول في [الموقع] بسبب خطر مُباشر من رياح تُهدد الحياة حتى [الوقت]. احتمِ الآن في غرفة داخلية بمبنى مُتين، بعيدًا عن النوافذ. احمِ رأسك من الأجسام المُتطايرة. لا تخرج إذا هدأت الرياح! ستعود الرياح مُجددًا إلى طبيعتها بسرعة. [الرابط]"
+            ],
+            "fire": [
+                "[الجهة المُرسِلة]: تحذير من حريق في [الموقع] ساري المفعول حتى [الوقت]. أخلِ عائلتك وحيواناتك الأليفة الآن، ولا تتأخر. ستنخفض الرؤية في المنطقة وقد تُغلق الطرق. إذا لم تغادر الآن، فقد تُحاصر أو تُصاب أو تُقتل. غادر المناطق القريبة من [الموقع]. توقع انخفاض الرؤية، ودخانًا كثيفًا، وصعوبة في التنفس. توخَّ الحذر أثناء القيادة. انتبه لأفراد السلامة العامة العاملين في المنطقة واتبع تعليماتهم. [الرابط]"
+            ],
+            "boil_water_notice": [
+                "[الجهة المُرسِلة]: صدر تنبيه بغلي الماء في [الموقع]، ويسري حتى [الوقت]. قد تُسبب المياه في منطقتك أمراضًا. استخدم المياه المعبأة إن وُجدت. لا تشرب ماء الصنبور أو الماء المُفلتر، أو تطبخ به، أو تنظف أسنانك به، أو تنظف منزلك به حتى تغليه. اغلي الماء غليانًا كاملًا لمدة ثلاث دقائق. اترك الماء يبرد قبل الاستخدام. لا تستخدم الثلج المُحضّر من ماء غير مُغلى. إذا كنت تستخدم حليبًا صناعيًا لإطعام طفلك، فاستخدم حليبًا صناعيًا جاهزًا للاستخدام. تأكد من عدم شرب الحيوانات الأليفة للماء غير المُغلى. [رابط]"
+            ],
+            "911_outage": [
+                "[الجهة المُرسِلة]: تنبيه انقطاع خدمة 911 ساري المفعول في [الموقع]. يُرجى الاتصال بالشرطة، أو الإطفاء، أو الخدمات الطبية، أو خدمات الطوارئ الأخرى مباشرةً على أرقام هواتفهم المحلية في حالة الطوارئ. قد لا تحصل على المساعدة إذا اتصلت برقم 911. [الرابط]"
+            ]
+        },
+        "mandarin": {
+            "flood": [
+                "[发送机构]：[地点] 发生山洪紧急情况，有效期至 [时间]。此情况极其危险，危及生命。除非您逃离可能发生洪水的区域或已收到疏散命令，否则请勿出行。[URL]"
+            ],
+            "extreme_wind": [
+                "[发送机构]：[地点] 已发布极端强风警告，[时间] 前可能出现危及生命的强风。请立即前往坚固建筑物的室内躲避，远离窗户。保护头部免受飞物伤害。风力减弱后，请勿外出！强风很快就会再次变得危险。[网址]"
+            ],
+            "fire": [
+                "[发送机构]：[LOCATION] 的火灾警报有效期至 [TIME]。请立即疏散您的家人和宠物，切勿拖延。该区域能见度将降低，道路可能会被堵塞。如果您不立即撤离，可能会被困、受伤甚至死亡。请离开 [LOCATION] 附近的区域。预计能见度将降低，烟雾将很浓，并可能导致呼吸困难。驾驶时请小心。注意在该地区工作的公共安全人员，并听从他们的指示。[URL]"
+            ],
+            "boil_water_notice": [
+                "[发送机构]：[地点] 已发布煮沸水警报，有效期至 [时间]。您所在社区的水可能会使您生病。如有瓶装水，请使用。请勿饮用、烹饪、刷牙或清洁自来水或过滤水，直至水煮沸。将水煮沸三分钟。待水冷却后再使用。请勿使用未煮沸的水制成的冰块。如果您使用配方奶粉喂养孩子，请使用即食配方奶粉。确保宠物不要饮用未煮沸的水。[网址]"
+            ],
+            "911_outage": [
+                "[发送机构]：[地点] 已发布 9-1-1 停电警报。如遇紧急情况，请直接拨打当地警察、消防、医疗或其他紧急服务部门的电话号码。拨打 9-1-1 可能无法获得帮助。[URL]"
+            ]
+        },
+        "vietnamese": {
+            "flood": [
+                "[CƠ QUAN GỬI]: TÌNH TRẠNG KHẨN CẤP LŨ LỤT CẦN CÓ HIỆU ... CHO ĐỊA ĐIỂM] cho đến [THỜI GIAN]. Đây là tình huống cực kỳ nguy hiểm và đe dọa đến tính mạng. Không cố gắng di chuyển trừ khi bạn đang chạy trốn khỏi khu vực có thể bị ngập lụt hoặc đang có lệnh di tản. [URL]"
+            ],
+            "extreme_wind": [
+                "[CƠ QUAN GỬI]: CẢNH BÁO GIÓ CỰC ĐỘ có hiệu lực tại [ĐỊA ĐIỂM] về nguy cơ gió đe dọa tính mạng ngay lập tức cho đến [THỜI GIAN]. Hãy tìm nơi trú ẩn NGAY BÂY GIỜ trong một căn phòng bên trong của một tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu của bạn khỏi các vật thể bay. KHÔNG ra ngoài nếu gió lặng! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]"
+            ],
+            "fire": [
+                "[CƠ QUAN GỬI]: CẢNH BÁO CHÁY ở [ĐỊA ĐIỂM] có hiệu lực cho đến [THỜI GIAN]. Hãy sơ tán gia đình và vật nuôi của bạn ngay bây giờ, đừng chậm trễ. Tầm nhìn trong khu vực sẽ bị hạn chế và đường có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI khu vực gần [ĐỊA ĐIỂM]. Dự kiến tầm nhìn sẽ bị hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Hãy chú ý đến nhân viên an toàn công cộng đang hoạt động trong khu vực và làm theo hướng dẫn của họ. [URL]"
+            ],
+            "boil_water_notice": [
+                "[CƠ QUAN GỬI]: CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [ĐỊA ĐIỂM] và có hiệu lực cho đến [THỜI GIAN]. Nước trong cộng đồng của bạn có thể khiến bạn bị bệnh. Sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hoặc nước lọc cho đến khi bạn đun sôi nước. Đun sôi nước hoàn toàn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn sử dụng sữa công thức để cho con bạn ăn, hãy sử dụng sữa công thức pha sẵn. Đảm bảo vật nuôi không uống nước chưa đun sôi. [URL]"
+            ],
+            "911_outage": [
+                "[CƠ QUAN GỬI]: CẢNH BÁO CẮT ĐIỆN 9-1-1 đang có hiệu lực đối với [VỊ TRÍ]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác theo số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]"
+            ]
+        },
+        "haitian_creole": {
+            "flood": [
+                "[AJANS KI VOYE LAJAN]: Gen yon IJANS INONDASYON SIBILATÈ an vigè pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ki trè danjere e ki ka menase lavi. Pa eseye vwayaje sof si w ap sove yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]"
+            ],
+            "extreme_wind": [
+                "[AJANS KI VOYE A]: Yon AVÈTISMAN VAN EKSTRÈM an vigè pou [LOKALITE] poutèt danje imedya van ki ka menase lavi jiska [TIME]. Rete KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole. PA soti deyò si van an kalme! Van an ap vin danjere ankò byen vit. [URL]"
+            ],
+            "fire": [
+                "[AJANS KI VOYE AVÈTISMAN]: Yon AVÈTISMAN DIFE nan [LOKALITE] an vigè jiska [TIME]. Evakye fanmi w ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap redwi epi wout yo ka bloke. Si ou pa kite kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki toupre [LOKALITE]. Atann vizibilite redwi, lafimen lou ak difikilte pou respire. Fè atansyon lè w ap kondui. Veye pèsonèl sekirite piblik k ap opere nan zòn nan epi swiv enstriksyon yo. [URL]"
+            ],
+            "boil_water_notice": [
+                "[AJANS KI VOYE A]: Yo bay yon ALÈT POU BOUYI DLO pou [LOKALITE] epi li an vigè jiska [TIME]. Dlo nan kominote w la ka fè w malad. Sèvi ak dlo nan boutèy si w genyen. Pa bwè, pa kwit manje, pa bwose dan w, oswa pa netwaye kay ou ak dlo tiyo oswa dlo filtre jiskaske ou bouyi l. Pote dlo a bouyi byen fon pandan TWA MINIT. Kite dlo a refwadi anvan w itilize li. Pa sèvi ak glas ki fèt ak dlo ki pa bouyi. Si w itilize fòmil pou bay pitit ou manje, sèvi ak fòmil ki pare pou itilize. Asire w ke bèt kay yo pa bwè dlo ki pa bouyi. [URL]"
+            ],
+            "911_outage": [
+                "[AJANS KI VOYE A]: Gen yon ALÈT PANNE 9-1-1 an vigè pou [KOTE]. Tanpri kontakte lapolis, ponpye, sèvis medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]"
+            ]
+        }
+    }
+}
