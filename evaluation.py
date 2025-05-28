@@ -7,6 +7,7 @@ from evaluate import load
 import pandas as pd
 import argparse
 import json
+from tqdm import tqdm
 
 
 
@@ -21,6 +22,13 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
     results = []
 
+    # Count total number of iterations for progress bar
+    total = 0
+    for key, values in reference_data.items():
+        for disaster, gold_standard in values.items():
+            relevant_prompts = prediction_data["chatgpt"][key][disaster]
+            total += len(relevant_prompts)
+
     """
     we want to collect fine-tuned results that tell us:
     1) if prompt A better than prompt B
@@ -31,47 +39,48 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     so let's evaluate on a per-prompt level. We can then take the average to broaden the evaluation to larger categories like disaster, language
     iterate over every language - {disaster: reference_text} pair
     """
-    for key, values in reference_data.items():
+    with tqdm(total=total, desc="Evaluating prompts") as pbar:
+        for key, values in reference_data.items():
 
-        # iterate over each disaster and reference text
-        for disaster, gold_standard in values.items():
+            # iterate over each disaster and reference text
+            for disaster, gold_standard in values.items():
 
-            # there should be another loop here over each language service. ChatGPT is here for an example
-            # pull the prompts relevant to this language - service - disaster pairing
-            relevant_prompts = prediction_data["chatgpt"][key][disaster]
+                # there should be another loop here over each language service. ChatGPT is here for an example
+                # pull the prompts relevant to this language - service - disaster pairing
+                relevant_prompts = prediction_data["chatgpt"][key][disaster]
 
-            # iterate over the individual prompts and the collected predictions
-            for prompt, predictions in relevant_prompts.items():
-                total_predictions = len(predictions)
+                # iterate over the individual prompts and the collected predictions
+                for prompt, predictions in relevant_prompts.items():
+                    total_predictions = len(predictions)
 
-                # we only have one gold standard. Make it equal in length to the predictions
-                duplicated_gold_standards = [gold_standard] * total_predictions
+                    # we only have one gold standard. Make it equal in length to the predictions
+                    duplicated_gold_standards = [gold_standard] * total_predictions
 
-                # FKGL, DCRS, CLI should only be calculated for the generated English templates, not the translated ones
-                # textstat only supports a very small amount of non-English languages https://pypi.org/project/textstat/
-                try:
-                    id = f"{key}:chatgpt:{disaster}:{prompt}"
-                    result = {
-                        "SERVICE": "chatgpt",
-                        "LANGUAGE": key,
-                        "DISASTER": disaster,
-                        "PROMPT": prompt,
-                        "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
-                        "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
-                        "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
-                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards)["score"],
-                        "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
-                        "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
-                        "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
-                        "METEOR": meteor.compute(predictions=predictions, references=duplicated_gold_standards)["meteor"],
-                        #"FKGL": textstat.flesch_kincaid_grade(predictions),
-                        #"DCRS": textstat.dale_chall_readability_score(predictions),
-                        #"CLI": textstat.coleman_liau_index(predictions)
-                    }
-                    results.append(result)
-                except Exception as e:
-                    print(f"[Error on line {id}] {e}")
-                    continue
+                    # FKGL, DCRS, CLI should only be calculated for the generated English templates, not the translated ones
+                    # textstat only supports a very small amount of non-English languages https://pypi.org/project/textstat/
+                    try:
+                        id = f"{key}:chatgpt:{disaster}:{prompt}"
+                        result = {
+                            "SERVICE": "chatgpt",
+                            "LANGUAGE": key,
+                            "DISASTER": disaster,
+                            "PROMPT": prompt,
+                            "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
+                            "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
+                            "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
+                            "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards)["score"],
+                            "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
+                            "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
+                            "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
+                            "METEOR": meteor.compute(predictions=predictions, references=duplicated_gold_standards)["meteor"],
+                            #"FKGL": textstat.flesch_kincaid_grade(predictions),
+                            #"DCRS": textstat.dale_chall_readability_score(predictions),
+                            #"CLI": textstat.coleman_liau_index(predictions)
+                        }
+                        results.append(result)
+                    except Exception as e:
+                        print(f"[Error on line {id}] {e}")
+                        continue
     
     df = pd.DataFrame(results)
 
