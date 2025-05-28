@@ -81,6 +81,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                     except Exception as e:
                         print(f"[Error on line {id}] {e}")
                         continue
+                    pbar.update(total_predictions)
     
     df = pd.DataFrame(results)
 
