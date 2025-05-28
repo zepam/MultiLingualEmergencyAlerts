@@ -2602,7 +2602,7 @@
                 "prompt_cross_lingual_alignment.txt": [
                     "It is important to boil your water before drinking or cooking due to potential contamination. Boil water for at least one minute and let it cool before use. This notice is in effect from [TIME] in [LOCATION]. For updates, visit [URL]. Stay safe and follow these precautions until further notice.",
                     "紧急通知：  \n[LOCATION] 地区的居民请注意，由于水质问题，请在 [TIME] 前将自来水煮沸至少1分钟后使用，以确保安全。请勿直接饮用未经煮沸的自来水，避免用于刷牙或做饭。相关部门正在处理问题，最新进展请访问 [URL] 查询。感谢您的配合与理解！  \n\n（本通知限100字以内）",
-                    "紧急通知：[LOCATION] 的居民请注意，自来水供应暂时无法直接饮用。请在 [TIME] 之前将水煮沸至少1分钟后再使用，或使用瓶装水。此通知即时生效，直至另行通知。更多详情请访问 [URL]。请互相转告，确保用水安全。",
+                    "紧急通知：[LOCATION] 的居民请注意，自来水供应暂时无法直接饮用。请在 [TIME] 之前将水煮沸至少1分钟后再使用，或使用瓶装水。此通知即时生效，直至另行通知。更多详情请访问 [URL]。请互相转告，确保用水安全。"
                 ],
                 "prompt_chain_of_translation.txt": [
                     "**English Template:**  \n\"Due to water contamination, a boil water notice is in effect for [LOCATION] as of [TIME]. Residents must boil water for at least one minute before drinking, cooking, or brushing teeth until further notice. For updates, visit [URL].\"\n\n**Mandarin Translation:**  \n\"因水质污染，自[TIME]起，[LOCATION]地区实施煮沸水通知。居民在饮用水、烹饪或刷牙前必须将水煮沸至少一分钟，直至另行通知。最新信息请访问[URL]。\"",
@@ -2636,7 +2636,7 @@
                     "紧急通知：[TIME]起，[LOCATION]地区出现911紧急电话系统故障。在此期间，如需紧急援助，请直接拨打当地警察局或消防局的非紧急电话。更多信息请访问[URL]。请互相转告，注意安全。  \n\n（注：[TIME]、[LOCATION]、[URL]为需自定义字段。）",
                     "**紧急通知**  \n\n请注意，[TIME] 在 [LOCATION] 地区发生 911 紧急服务暂时中断。在此期间，如需紧急援助，请直接联系当地警察局或消防部门。更多详情请访问 [URL]。请保持冷静，并相互转告此信息。  \n\n**Urgent Notice**  \n\nPlease be advised that 911 emergency services are temporarily unavailable in [LOCATION] as of [TIME]. For immediate assistance, contact your local police or fire department directly. Visit [URL] for updates. Stay calm and share this information.  \n\n**紧急警报**  \n\n[TIME] 起，[LOCATION] 区域的 911 服务暂时无法使用。如有紧急情况，请直接联系当地警方或消防局。了解更多信息，请访问 [URL]。请保持镇静并互相通知。",
                     "紧急通知：911服务目前出现中断。请在此期间使用其他紧急联系方式。  \n[时间]： [TIME]  \n[地点]： [LOCATION]  \n更多信息请访问：[URL]",
-                    "紧急通知：911服务目前中断。请使用其他紧急联系方式。时间：[TIME] 地点：[LOCATION] 更多信息：[URL]",
+                    "紧急通知：911服务目前中断。请使用其他紧急联系方式。时间：[TIME] 地点：[LOCATION] 更多信息：[URL]"
                 ],
                 "prompt_chain_of_translation.txt": [
                     "紧急通知：911服务目前中断。请使用备用紧急联系方式。时间：[TIME]。地点：[LOCATION]。更多信息请访问：[URL]。请保持冷静并互相帮助。  \n\nEmergency notice: 911 services are currently down. Please use alternative emergency contact methods. Time: [TIME]. Location: [LOCATION]. For more information, visit: [URL]. Stay calm and assist each other.",
