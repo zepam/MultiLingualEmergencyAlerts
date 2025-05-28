@@ -51,10 +51,10 @@
             "911_outage": "[SENDING AGENCY]：[LOCATION] 發佈了 9-1-1 故障警報 ，當前生效中。如果發生緊急情況，請直接撥打當地電話號碼聯絡警察、消防、醫療或其他緊急服務部門。如果撥打 9-1-1，您可能得不到幫助。[URL]"
         },
         "english": {
-            "flood": "",
-            "extreme_wind": "",
-            "fire": "",
-            "boil_water_notice": "",
-            "911_outage": ""
+            "UAP_landed": "",
+            "meteor_strike": "",
+            "freeway_closure": "",
+            "new_disease_called_SARD-26": "",
+            "police_activity_near_mall": ""
         }
     }
