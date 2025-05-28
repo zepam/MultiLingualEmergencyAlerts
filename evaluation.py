@@ -10,14 +10,7 @@ import json
 
 
 
-def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None, summaC=None):
-    # Read text files
-    # with open(generated_path, "r", encoding="utf-8") as f:
-    #     preds = [line.strip() for line in f]
-    # with open(reference_path, "r", encoding="utf-8") as f:
-    #     refs = [line.strip() for line in f]
-
-
+def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None):
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
 
@@ -57,10 +50,12 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 # FKGL, DCRS, CLI should only be calculated for the generated English templates, not the translated ones
                 # textstat only supports a very small amount of non-English languages https://pypi.org/project/textstat/
                 try:
-                    # this ID format isn't particularly nice for a CSV? Any other ideas?
                     id = f"{key}:chatgpt:{disaster}:{prompt}"
                     result = {
-                        "ID": id,
+                        "SERVICE": "chatgpt",
+                        "LANGUAGE": key,
+                        "DISASTER": disaster,
+                        "PROMPT": prompt,
                         "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
                         "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
                         "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
@@ -76,37 +71,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                     results.append(result)
                 except Exception as e:
                     print(f"[Error on line {id}] {e}")
-                    #continue
-
-        
-    """
-    preds = [item["generated_text"] for item in data]
-    refs = [item["reference_text"] for item in data]
-    assert len(preds) == len(refs), "Mismatched number of lines in generated and reference files"
-
-    results = []
-
-    for i, (pred, ref) in enumerate(zip(preds, refs)):
-        try:
-            result = {
-                "ID": i,
-                "ROUGE-1": rouge.compute(predictions=[pred], references=[ref])["rouge1"],
-                "ROUGE-2": rouge.compute(predictions=[pred], references=[ref])["rouge2"],
-                "ROUGE-L": rouge.compute(predictions=[pred], references=[ref])["rougeL"],
-                "BLEU": bleu.compute(predictions=[pred], references=[ref])["score"],
-                "BERTScore_P": bertscore.compute(predictions=[pred], references=[ref], lang="en")["precision"][0],
-                "BERTScore_R": bertscore.compute(predictions=[pred], references=[ref], lang="en")["recall"][0],
-                "BERTScore_F1": bertscore.compute(predictions=[pred], references=[ref], lang="en")["f1"][0],
-                "METEOR": meteor.compute(predictions=[pred], references=[ref])["meteor"],
-                "FKGL": textstat.flesch_kincaid_grade(pred),
-                "DCRS": textstat.dale_chall_readability_score(pred),
-                "CLI": textstat.coleman_liau_index(pred)
-            }
-            results.append(result)
-        except Exception as e:
-            print(f"[Error on line {i}] {e}")
-            continue
-    """
+                    continue
     
     df = pd.DataFrame(results)
 
@@ -115,8 +80,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         print(f"Results saved to: {output_csv}")
 
     return df
-
-
 
 def main():
     parser = argparse.ArgumentParser(description="Evaluate generated texts against reference texts")
