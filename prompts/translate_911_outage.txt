@@ -1,0 +1,3 @@
+Translate this emergency alert to {LANGUAGE}. Don't respond with anything outside of the translation. For the variables in square brackets, leave those in English.
+
+[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]
