@@ -1,6 +1,6 @@
-Write a short emergency alert, no more than 100 words, about {DISASTER} in {LANGUAGE}. Include a field for [TIME], [LOCATION], and a [URL] for more information so it can be customized. The alert doesn’t need a header, just a message body.
+Write a short emergency alert, no more than 100 words, about {DISASTER} in {LANGUAGE}. Include fields for [TIME], [LOCATION], and a [URL] for more information so it can be customized; these fields should be in English. The alert doesn’t need a header, just a message body.
 
-Only return the text of the alert. Do not include any other response to the prompt.
+Only return the text of the alert in {LANGUAGE}. Do not include any other response to the prompt.
 
 For example, here’s how the English template might look for a tornado: 
 
