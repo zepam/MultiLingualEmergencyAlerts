@@ -51,10 +51,10 @@
             "911_outage": "[SENDING AGENCY]：[LOCATION] 發佈了 9-1-1 故障警報 ，當前生效中。如果發生緊急情況，請直接撥打當地電話號碼聯絡警察、消防、醫療或其他緊急服務部門。如果撥打 9-1-1，您可能得不到幫助。[URL]"
         },
         "english": {
-            "UAP_landed": "",
-            "meteor_strike": "",
-            "freeway_closure": "",
-            "new_disease_called_SARD-26": "",
-            "police_activity_near_mall": ""
+            "UAP_landed": "[SENDING AGENCY]: An unidentified aerial phenomena was found in [LOCATION]. An advisory is in effect until [TIME]. This is a potentially life-threatening situation. Stay out of the area. Check media. [URL]",
+            "meteor_strike": "[SENDING AGENCY]: A METEOR will land in [LOCATION] at approximately [TIME]. This is a life-threatening situation. Immediately shelter underground or in a sturdy building, or evacuate the area immediately with your family and pets. Fires, downed power lines, and debris in immediate area likely. Check media. [URL]",
+            "freeway_closure": "[SENDING AGENCY]: [FREEWAY NAME] in [LOCATION] will be closed at [TIME], leading to road closures and traffic delays. Find alternative routes. Check media. [URL]",
+            "new_disease_called_SARD-26": "[SENDING AGENCY]: A contagious infection called SARD-26 has been identified in [LOCATION]. Exposure may cause rashes on the arms and may be life threatening. Always wear a mask when around people who are not members of your family and avoid crowded public locations. Check media. [URL]",
+            "police_activity_near_mall": "[SENDING AGENCY]: Law enforcement activity present in [LOCATION]. Road closures and traffic delays possible. Stay out of the area until directed otherwise by local officials. Check media. [URL]"
         }
     }
