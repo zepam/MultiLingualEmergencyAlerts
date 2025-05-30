@@ -1,35 +1,23 @@
     {
         "spanish": {
             "flood": "[SENDING AGENCY]: UNA EMERGENCIA POR INUNDACION REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y potencialmente mortal. No intente trasladarse a menos que esté huyendo de una zona que pueda inundarse o con orden de evacuación. [URL]",
-
             "extreme_wind": "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMADAMENTE FUERTES está en efecto para [LOCATION] hasta [TIME] por peligro inmediato de fuertes vientos con riesgo de muerte. Resguárdese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de los escombros. ¡NO salga aunque el viento se calme! Los vientos pronto volverán a ser peligrosos. [URL]",
-
             "fire": "[SENDING AGENCY] Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, sin demoras. La visibilidad del área disminuirá y los caminos pueden bloquearse. Si no sale ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las áreas cercanas a [LOCATION]. Prepárese para una reducción de la visibilidad, denso humo y dificultad para respirar. Maneje con cuidado. Preste atención al personal de seguridad pública en el área y siga sus instrucciones. [URL]",
-
             "boil_water_notice": "[SENDING AGENCY]: ¡ALERTA! HIERVA EL AGUA en [LOCATION] hasta [TIME]. El agua en su comunidad puede enfermarle. Use agua embotellada si está disponible. No beba agua del grifo, aunque esté filtrada; no la use para cocinar o lavarse los dientes ni para limpiar su hogar. Hierva el agua por TRES MINUTOS por lo menos. Enfríe el agua antes de usarla. No use hielo preparado con agua sin hervir. Si usa leche preparada para su bebé, use la que viene lista (no la que requiere agua). Asegúrese de que sus mascotas no beban agua sin hervir. [URL]",
-
             "911_outage": "[SENDING AGENCY]: UNA ALERTA POR INTERRUPCIÓN DE LOS SERVICIOS 9-1-1 está en efecto en [LOCATION]. En caso de emergencia, comuníquese directamente con la policía, los bomberos, los servicios médicos u otros servicios de emergencia, llamando a sus números locales. Si llama al 9-1-1, es posible que no reciba ayuda. [URL]"
         },
         "haitian_creole": {
             "flood": "[SENDING AGENCY]: YON IJANS INONDASYON RAPID an vigè pou zòn sa a [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon trè danjere e ki menase lavi. Pa eseye vwayaje sof si w ap sove kite yon zòn ki ka sibi inondasyon oswa ou anba yon lòd evakyasyon. [URL]",
-
             "extreme_wind": "Yon avètisman ekstrèm pou van an efè pou [LOCATION] pou [TIME]. Van ekstrèm sa yo menase lavi e yo se yon danje imedya. Chèche abri KOUNYEYA nan yon chanm anndan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont bagay k ap vole. Pa sòti deyò menm si van an ta kalme. Byen vit van an ap pran fòs ankò. Plis detay disponib la [URL]",
-
             "fire": "[SENDING AGENCY]: Yon AVÈTISMAN POU DIFE nan zòn [LOCATION] ki ap rete an vigè jiska [TIME]. Evakye fanmi w ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan pral redwi epi wout yo ka vin bloke. Si ou pa kite kounye a, ou ka bloke, blese, oswa mouri. Atann ou a vizibilite ki diminye, gwo lafimen, ak difikilte pou respire. Fè atansyon lè w ap kondwi. Siveye pèsonèl sekirite piblik k ap travay nan zòn nan epi swiv enstriksyon yo. [URL]",
-
             "boil_water_notice": "[SENDING AGENCY]: Yon KONSÈY POU BOUYI DLO te lanse pou [LOCATION] ki ap rete an vigè jiska [TIME]. Dlo nan kominote w la ka fè w malad. Sèvi ak dlo nan boutèy si sa disponib. Pa bwè, kwit manje, bwose dan ou, oswa netwaye kay ou ak dlo tiyo oswa dlo filtre pa anvan ou bouyi li. Fè dlo a bouyi woule an plen PANDAN TWA MINIT. Si w itilize fòmil pou bay pitit ou manje, sèvi ak fòmil ki pare pou itilize. Asire w ke bèt kay pa bwè dlo ki pa te bouyi. Tcheke medya lokal yo. [URL]",
-
             "911_outage": "SENDING AGENCY]: Yon AVÈTISMAN ENTÈRIPSYON 9-1-1 nan zòn sa a [LOCATION]. Tanpri kontakte lapolis, ponpye, medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo nan ka ijans. Si w rele 9-1-1, ou ka pa jwenn èd. [URL]"
         },
         "vietnamese": {
             "flood": "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT có hiệu lực tại [LOCATION] cho đến [TIME]. Đây là tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không nên di chuyển trừ khi bạn đang muốn thoát ra khỏi vùng mà có thể bị ngập lụt hoặc có lệnh di tản. [URL]",
-
             "extreme_wind": "SENDING AGENCY]: CẢNH BÁO GIÓ CỰC MẠNH có hiệu lực tại [LOCATION] vì nguy cơ gió mạnh có thể gây nguy hiểm đến tính mạng cho đến [TIME]. Hãy ẩn ngay trong một căn phòng của tòa nhà kiên cố và xa cửa sổ. Hãy bảo vệ đầu của bạn tránh những vật thể bay. KHÔNG ra khỏi nhà nếu trời lặng gió! Gió sẽ nhanh chóng nguy hiếm trở lại. [URL]",
-
             "fire": "[SENDING AGENCY] CẢNH BÁO HỎA HOẠN có hiệu lực tại [LOCATION] cho đến [TIME]. Di tản ngay gia đình và thú nuôi của bạn. Không chần chờ. Tầm nhìn trong khu vực sẽ giảm và đường có thể bị tắc nghẽn. Nếu không đi ngay, bạn sẽ bị mắc kẹt, bị thương tích hoặc chết. RỜI KHỎI các khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc, khó thở. Cẩn thận khi lái xe. Quan sát hoạt động của viên chức an toàn công cộng và làm theo hướng dẫn. [URL]",
-
             "boil_water_notice": "[SENDING AGENCY]: CẢNH BÁO NƯỚC SÔI được ban hành cho [LOCATION] có hiệu lực cho đến [TIME]. Nước trong khu vực có thể gây bệnh. Không uống, nấu ăn, đánh răng hoặc lau nhà bằng nước từ vòi hoặc nước lọc trừ khi được đun sôi. Đun sôi nước trong BA PHÚT. Để nước nguội trước khi dùng. Không làm nước đá bằng nước chưa đun sôi. Nếu phải pha sữa cho con, bạn nên dùng sữa có công thức pha sẵn. Đảm bảo thú nuôi không uống nước khi chưa đun sôi. [URL]",
-
             "911_outage": "[SENDING AGENCY]: CẢNH BÁO SẬP NGUỒN 9-1-1 có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp số điện thoại địa phương với cảnh sát, cứu hỏa, y tế, hoặc các dịch vụ cấp cứu khác trong trường hợp khẩn cấp. Nếu gọi số 9-1-1 có thể bạn không được trợ giúp. [URL]"
         },
         "arabic": {
@@ -41,13 +29,9 @@
         },
         "mandarin": {
             "flood": "[SENDING AGENCY]：當前[LOCATION] 處於山洪緊急狀態，該狀態將持續至[TIME]。這是一種極度危險且危及生命的情況。請勿嘗試外出，除非您要逃離可能發生洪水的地區或接到疏散令的地區。[URL]",
-
             "extreme_wind": "[SENDING AGENCY]：当前就[LOCATION]危及生命的强风紧迫危险情况发布了强风警报，持续生效至[TIME]。请立即躲到坚固建筑物的室内房间里，远离窗户。保护头部免受飞扬物体的伤害。不要在强风平静时外出！风力很快就会再次变得危险。[URL]",
-
             "fire": "[SENDING AGENCY] 當前[LOCATION] 發佈了火災預警，該預警將持續至[TIME]。立即疏散您的家人和寵物，切勿拖延。該地區的能見度將會降低，道路可能會被堵塞。如果現在不離開，您可能會被困住、受傷或死亡。離開[LOCATION] 附近的地區。預計會出現能見度降低、濃煙和呼吸困難。 開車時務必小心。留意在該地區工作的公共安全人員並遵循他們的指示。[URL]",
-
             "boil_water_notice": "[SENDING AGENCY]：當前[LOCATION] 發佈了沸水消毒提醒，有效期限至[TIME]。您所在社區的水可能致病。如果有的話，請使用瓶裝水。在煮沸之前，請勿飲用自來水或過濾水，或將這些水用於煮飯、刷牙或清潔房屋。讓水充分沸騰三分鐘。使用前讓水冷卻。請勿使用未煮沸的水製成的冰。如果您使用配方奶餵養孩子，請使用即食型配方奶。確保不要讓寵物喝未煮沸的水。[URL]",
-
             "911_outage": "[SENDING AGENCY]：[LOCATION] 發佈了 9-1-1 故障警報 ，當前生效中。如果發生緊急情況，請直接撥打當地電話號碼聯絡警察、消防、醫療或其他緊急服務部門。如果撥打 9-1-1，您可能得不到幫助。[URL]"
         },
         "english": {
