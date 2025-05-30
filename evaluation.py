@@ -84,6 +84,32 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
+                        elif isinstance(relevant_prompts, list):
+                            # If relevant_prompts is a list, we assume it's a single prediction
+                            predictions = relevant_prompts
+                            if predictions:
+                                duplicated_gold_standards = [gold_standard] * len(predictions)
+                                try:
+                                    id_response = f"{key}:{service}:{disaster}"
+                                    result = {
+                                        "SERVICE": service,
+                                        "LANGUAGE": key,
+                                        "DISASTER": disaster,
+                                        "PROMPT": "N/A",  # No specific prompt in this case
+                                        "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
+                                        "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
+                                        "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
+                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards)["score"],
+                                        "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
+                                        "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
+                                        "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
+                                        "METEOR": meteor.compute(predictions=predictions, references=duplicated_gold_standards)["meteor"],
+                                    }
+                                    results.append(result)
+                                except Exception as e:
+                                    print(f"[Error on line {id_response}] {e}")
+                                    continue
+                                pbar.update(1)
     
     df = pd.DataFrame(results)
 
