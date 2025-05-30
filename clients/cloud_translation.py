@@ -16,12 +16,12 @@ class GoogleCloudTranslationClient(Client):
 
         return result["translatedText"]
 
-    # See https://g.co/cloud/translate/v2/translate-reference#supported_languages
+    # See https://cloud.google.com/translate/docs/languages
     def translation_map(self):
         return {
             "Spanish": "es",
             "Arabic": "ar",
             "Haitian Creole": "ht",
             "Vietnamese": "vi",
-            "Mandarin": "zh"
+            "Mandarin": "zh-CN"
         }
