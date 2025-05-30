@@ -2,7 +2,6 @@
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-import textstat
 from evaluate import load
 import pandas as pd
 import argparse
@@ -62,7 +61,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 total_predictions = len(predictions)
                                 duplicated_gold_standards = [gold_standard] * total_predictions
                                 try:
-                                    id = f"{key}:{service}:{disaster}:{prompt}"
+                                    id_response = f"{key}:{service}:{disaster}:{prompt}"
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": key,
@@ -82,7 +81,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     }
                                     results.append(result)
                                 except Exception as e:
-                                    print(f"[Error on line {id}] {e}")
+                                    print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
     
