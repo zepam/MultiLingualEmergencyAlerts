@@ -7,7 +7,7 @@ import pandas as pd
 import argparse
 import json
 from tqdm import tqdm
-from sacrebleu.tokenizers import tokenizer_zh, tokenizer_13a
+#from sacrebleu.tokenizers import tokenizer_zh, tokenizer_13a
 
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None):
@@ -49,9 +49,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         for service in prediction_data:
             for language, values in reference_data.items():
                 if language == "mandarin":
-                    selected_tokenizer = tokenizer_zh
+                    selected_tokenizer = "zh"
                 else:
-                    selected_tokenizer = tokenizer_13a
+                    selected_tokenizer = "13a"
                 for disaster, gold_standard in values.items():
                     if (
                         service in prediction_data
@@ -86,6 +86,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     }
                                     results.append(result)
                                 except Exception as e:
+                                    breakpoint()
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
