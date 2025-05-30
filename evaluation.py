@@ -7,6 +7,7 @@ import pandas as pd
 import argparse
 import json
 from tqdm import tqdm
+from sacrebleu.tokenizers import tokenizer_zh, tokenizer_13a
 
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None):
@@ -23,14 +24,14 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     # Count total number of iterations for progress bar
     total = 0
     for service in prediction_data:
-        for key, values in reference_data.items():
+        for language, values in reference_data.items():
             for disaster, gold_standard in values.items():
                 if (
                     service in prediction_data
-                    and key in prediction_data[service]
-                    and disaster in prediction_data[service][key]
+                    and language in prediction_data[service]
+                    and disaster in prediction_data[service][language]
                 ):
-                    relevant_prompts = prediction_data[service][key][disaster]
+                    relevant_prompts = prediction_data[service][language][disaster]
                     if isinstance(relevant_prompts, dict):
                         total += len(relevant_prompts)
 
@@ -46,14 +47,18 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     """
     with tqdm(total=total, desc="Evaluating prompts") as pbar:
         for service in prediction_data:
-            for key, values in reference_data.items():
+            for language, values in reference_data.items():
+                if language == "mandarin":
+                    selected_tokenizer = tokenizer_zh
+                else:
+                    selected_tokenizer = tokenizer_13a
                 for disaster, gold_standard in values.items():
                     if (
                         service in prediction_data
-                        and key in prediction_data[service]
-                        and disaster in prediction_data[service][key]
+                        and language in prediction_data[service]
+                        and disaster in prediction_data[service][language]
                     ):
-                        relevant_prompts = prediction_data[service][key][disaster]
+                        relevant_prompts = prediction_data[service][language][disaster]
                         if isinstance(relevant_prompts, dict):
                             for prompt, predictions in relevant_prompts.items():
                                 if not predictions:
@@ -61,16 +66,16 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 total_predictions = len(predictions)
                                 duplicated_gold_standards = [gold_standard] * total_predictions
                                 try:
-                                    id_response = f"{key}:{service}:{disaster}:{prompt}"
+                                    id_response = f"{language}:{service}:{disaster}:{prompt}"
                                     result = {
                                         "SERVICE": service,
-                                        "LANGUAGE": key,
+                                        "LANGUAGE": language,
                                         "DISASTER": disaster,
                                         "PROMPT": prompt,
                                         "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
                                         "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
                                         "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards)["score"],
+                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=selected_tokenizer)["score"],
                                         "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
                                         "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
                                         "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
@@ -90,16 +95,16 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             if predictions:
                                 duplicated_gold_standards = [gold_standard] * len(predictions)
                                 try:
-                                    id_response = f"{key}:{service}:{disaster}"
+                                    id_response = f"{language}:{service}:{disaster}"
                                     result = {
                                         "SERVICE": service,
-                                        "LANGUAGE": key,
+                                        "LANGUAGE": language,
                                         "DISASTER": disaster,
                                         "PROMPT": "N/A",  # No specific prompt in this case
                                         "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
                                         "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
                                         "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards)["score"],
+                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=selected_tokenizer)["score"],
                                         "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
                                         "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
                                         "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
@@ -150,6 +155,6 @@ if __name__ == "__main__":
 
 
     """
-    python evaluation.py output_file.json test_reference_text.txt --output_csv results.csv
+    python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
 
     """
