@@ -47,7 +47,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     with tqdm(total=total, desc="Evaluating prompts") as pbar:
         for service in prediction_data:
             for language, values in reference_data.items():
-                if language == "mandarin":
+                if language == "chinese_traditional":
                     selected_tokenizer = "zh"
                 else:
                     selected_tokenizer = "13a"
