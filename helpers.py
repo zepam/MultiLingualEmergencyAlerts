@@ -222,7 +222,7 @@ def generate_output_schema():
                     "translate_911_outage.txt": []
                 }
             },
-            "mandarin": {
+            "chinese_traditional": {
                 "flood": {
                     "prompt_simple.txt": [],
                     "prompt_persona.txt": [],
@@ -409,7 +409,7 @@ def generate_output_schema():
                     "translate_911_outage.txt": []
                 }
             },
-            "mandarin": {
+            "chinese_traditional": {
                 "flood": {
                     "prompt_simple.txt": [],
                     "prompt_persona.txt": [],
@@ -638,7 +638,7 @@ def generate_output_schema():
                     "translate_911_outage.txt": []
                 }
             },
-            "mandarin": {
+            "chinese_traditional": {
                 "flood": {
                     "prompt_simple.txt": [],
                     "prompt_persona.txt": [],
@@ -738,7 +738,7 @@ def generate_output_schema():
                 "boil_water_notice": [],
                 "911_outage": []
             },
-            "mandarin": {
+            "chinese_traditional": {
                 "flood": [],
                 "extreme_wind": [],
                 "fire": [],

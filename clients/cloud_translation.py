@@ -23,5 +23,5 @@ class GoogleCloudTranslationClient(Client):
             "Arabic": "ar",
             "Haitian Creole": "ht",
             "Vietnamese": "vi",
-            "Mandarin": "zh-CN"
+            "Mandarin": "zh-TW"
         }
