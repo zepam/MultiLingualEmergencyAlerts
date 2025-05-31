@@ -21,7 +21,7 @@ ENGLISH_PROMPT_FILE = "prompts/prompt_new_disaster.txt"
 LANGUAGES = [
   "Spanish",
   "Arabic",
-  "Mandarin",
+  "Chinese (Traditional)",
   "Vietnamese",
   "Haitian Creole"
 ]
@@ -79,7 +79,7 @@ def parse_args():
 
 # While total_responses hasn't yet been reached, keep querying service_name for the language - prompt - disaster combo
 def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
-    language_name = language.replace(" ", "_").lower()
+    language_name = language.replace(" ", "_").replace("(", "").replace(")", "").lower()
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
     prompt_name = prompt.replace("prompts/", "")
 
