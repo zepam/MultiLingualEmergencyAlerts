@@ -9,7 +9,7 @@ import json
 from tqdm import tqdm
 
 
-def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None):
+def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
 
@@ -51,7 +51,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                     selected_tokenizer = "zh"
                 else:
                     selected_tokenizer = "13a"
-                for disaster, gold_standard in values.items():
+                for disaster, gold_standards in values.items():
                     if (
                         service in prediction_data
                         and language in prediction_data[service]
@@ -63,9 +63,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 if not predictions:
                                     continue
                                 total_predictions = len(predictions)
-                                duplicated_gold_standards = [gold_standard] * total_predictions
+                                duplicated_gold_standards = [gold_standards["references"][0]] * total_predictions
                                 try:
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
+                                    breakpoint()
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -78,10 +79,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
                                         "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
                                         "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
-                                        "METEOR": meteor.compute(predictions=predictions, references=duplicated_gold_standards)["meteor"],
-                                        #"FKGL": textstat.flesch_kincaid_grade(predictions),
-                                        #"DCRS": textstat.dale_chall_readability_score(predictions),
-                                        #"CLI": textstat.coleman_liau_index(predictions)
+                                        "COMET": comet.compute(predictions=predictions, references=gold_standards["references"], sources=gold_standards["sources"])["comet"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -107,7 +105,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
                                         "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
                                         "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
-                                        "METEOR": meteor.compute(predictions=predictions, references=duplicated_gold_standards)["meteor"],
+                                        "COMET": comet.compute(predictions=predictions, references=gold_standards["references"], sources=gold_standards["sources"])["comet"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -134,7 +132,7 @@ def main():
     rouge = load("rouge")
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
-    meteor = load("meteor")
+    comet = load("comet")
 
     df = evaluate_generated_texts(
         args.generated_path,
@@ -143,7 +141,7 @@ def main():
         rouge,
         bleu,
         bertscore,
-        meteor
+        comet
     )
 
     # Print the DataFrame

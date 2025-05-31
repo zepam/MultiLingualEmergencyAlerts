@@ -1,6 +1,15 @@
     {
         "spanish": {
-            "flood": "[SENDING AGENCY]: UNA EMERGENCIA POR INUNDACION REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y potencialmente mortal. No intente trasladarse a menos que esté huyendo de una zona que pueda inundarse o con orden de evacuación. [URL]",
+            "flood": {
+                "sources": [
+                    "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                    "Flooding is occurring right now in [location]. Do not walk or drive through flood waters, as the water may contain dangerous debris, contamination or electrical charges."
+                ],
+                "references": [
+                    "[SENDING AGENCY]: UNA EMERGENCIA POR INUNDACION REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y potencialmente mortal. No intente trasladarse a menos que esté huyendo de una zona que pueda inundarse o con orden de evacuación. [URL]",
+                    "Una inundación está ocurriendo en este momento en [location]. No camine ni maneje por las aguas de las inundaciones, ya que el agua pudiera contener escombros peligrosos, contaminación o descargas eléctricas."
+                ]
+            },
             "extreme_wind": "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMADAMENTE FUERTES está en efecto para [LOCATION] hasta [TIME] por peligro inmediato de fuertes vientos con riesgo de muerte. Resguárdese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de los escombros. ¡NO salga aunque el viento se calme! Los vientos pronto volverán a ser peligrosos. [URL]",
             "fire": "[SENDING AGENCY] Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, sin demoras. La visibilidad del área disminuirá y los caminos pueden bloquearse. Si no sale ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las áreas cercanas a [LOCATION]. Prepárese para una reducción de la visibilidad, denso humo y dificultad para respirar. Maneje con cuidado. Preste atención al personal de seguridad pública en el área y siga sus instrucciones. [URL]",
             "boil_water_notice": "[SENDING AGENCY]: ¡ALERTA! HIERVA EL AGUA en [LOCATION] hasta [TIME]. El agua en su comunidad puede enfermarle. Use agua embotellada si está disponible. No beba agua del grifo, aunque esté filtrada; no la use para cocinar o lavarse los dientes ni para limpiar su hogar. Hierva el agua por TRES MINUTOS por lo menos. Enfríe el agua antes de usarla. No use hielo preparado con agua sin hervir. Si usa leche preparada para su bebé, use la que viene lista (no la que requiere agua). Asegúrese de que sus mascotas no beban agua sin hervir. [URL]",
