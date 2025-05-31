@@ -16,8 +16,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     with open(generated_path, "r", encoding="utf-8") as f:
         prediction_data = json.load(f)
     
-    # insert any preprocessing of prediction_data here
-
     results = []
 
     # Count total number of iterations for progress bar
@@ -63,10 +61,15 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 if not predictions:
                                     continue
                                 total_predictions = len(predictions)
-                                duplicated_gold_standards = [gold_standards["references"][0]] * total_predictions
+                                duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
+
                                 try:
+                                    if language == "english":
+                                        comet_score = "N/A"
+                                    else:
+                                        comet_score = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
-                                    breakpoint()
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -79,7 +82,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
                                         "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
                                         "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=gold_standards["references"], sources=gold_standards["sources"])["comet"]
+                                        "COMET": comet_score
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -90,8 +93,15 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             # If relevant_prompts is a list, we assume it's a single prediction
                             predictions = relevant_prompts
                             if predictions:
-                                duplicated_gold_standards = [gold_standard] * len(predictions)
+                                total_predictions = len(predictions)
+                                duplicated_gold_standards = [gold_standards["reference"]] * len(predictions)
+
                                 try:
+                                    if language == "english":
+                                        comet_score = "N/A"
+                                    else:
+                                        comet_score = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                
                                     id_response = f"{language}:{service}:{disaster}"
                                     result = {
                                         "SERVICE": service,
@@ -105,7 +115,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
                                         "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
                                         "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=gold_standards["references"], sources=gold_standards["sources"])["comet"]
+                                        "COMET": comet_score
                                     }
                                     results.append(result)
                                 except Exception as e:

@@ -8,6 +8,7 @@ python-dotenv
 
 # evaluation
 evaluate
-unbabel-comet
-bertscore
+unbabel-comet==2.0.1
+bert_score
 sacrebleu
+rouge_score
