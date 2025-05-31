@@ -7,7 +7,6 @@ import pandas as pd
 import argparse
 import json
 from tqdm import tqdm
-#from sacrebleu.tokenizers import tokenizer_zh, tokenizer_13a
 
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, meteor=None):
@@ -86,7 +85,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     }
                                     results.append(result)
                                 except Exception as e:
-                                    breakpoint()
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
