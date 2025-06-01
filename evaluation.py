@@ -7,6 +7,7 @@ import pandas as pd
 import argparse
 import json
 from tqdm import tqdm
+import time
 
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
@@ -132,6 +133,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     return df
 
 def main():
+    start_time = time.time()
     parser = argparse.ArgumentParser(description="Evaluate generated texts against reference texts")
     parser.add_argument("generated_path", help="Path generated text file")
     parser.add_argument("reference_path", help="Path reference text file")
@@ -156,6 +158,10 @@ def main():
 
     # Print the DataFrame
     print(df)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Evaluation completed in {elapsed_time:.2f} seconds.")
 
 if __name__ == "__main__":
     main()
