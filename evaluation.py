@@ -153,7 +153,7 @@ def main():
     rouge = load("rouge")
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
-    comet = None#load("comet")
+    comet = load("comet")
 
     df = evaluate_generated_texts(
         args.generated_path,
