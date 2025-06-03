@@ -8,6 +8,7 @@ import argparse
 import json
 from tqdm import tqdm
 import time
+import re
 
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
@@ -90,18 +91,26 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
+                        # google translate
                         elif isinstance(relevant_prompts, list):
                             # If relevant_prompts is a list, we assume it's a single prediction
                             predictions = relevant_prompts
                             if predictions:
+
+                                # google translate tranlates everything directly, even our standard variables. Let's parse out everything within square brackets
+                                # to not penalize for that
+                                formatted_predictions = []
+                                for prediction in predictions:
+                                    formatted_predictions.append(re.sub(r'\[.*?\]', '', prediction))
+
                                 total_predictions = len(predictions)
-                                duplicated_gold_standards = [gold_standards["reference"]] * len(predictions)
+                                duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * len(predictions)
 
                                 try:
                                     if language == "english":
                                         comet_score = "N/A"
                                     else:
-                                        comet_score = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                        comet_score = comet.compute(predictions=formatted_predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
                                 
                                     id_response = f"{language}:{service}:{disaster}"
                                     result = {
@@ -109,13 +118,13 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "LANGUAGE": language,
                                         "DISASTER": disaster,
                                         "PROMPT": "N/A",  # No specific prompt in this case
-                                        "ROUGE-1": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge1"],
-                                        "ROUGE-2": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rouge2"],
-                                        "ROUGE-L": rouge.compute(predictions=predictions, references=duplicated_gold_standards)["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=selected_tokenizer)["score"],
-                                        "BERTScore_P": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
-                                        "BERTScore_R": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
-                                        "BERTScore_F1": bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
+                                        "ROUGE-1": rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards)["rouge1"],
+                                        "ROUGE-2": rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards)["rouge2"],
+                                        "ROUGE-L": rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards)["rougeL"],
+                                        "BLEU": bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=selected_tokenizer)["score"],
+                                        "BERTScore_P": bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang="en")["precision"][0],
+                                        "BERTScore_R": bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang="en")["recall"][0],
+                                        "BERTScore_F1": bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang="en")["f1"][0],
                                         "COMET": comet_score
                                     }
                                     results.append(result)
