@@ -1,3 +1,28 @@
+"""
+evaluation.py
+
+This script evaluates generated text outputs against reference texts using a variety of metrics,
+including ROUGE, BLEU, BERTScore, and COMET. It supports multilingual evaluation and can output
+results to a CSV file for further analysis.
+
+Usage:
+    python evaluation.py <generated_file.json> <reference_file.json> --output_csv <results.csv>
+
+Arguments:
+    generated_file.json   Path to the JSON file containing generated texts.
+    reference_file.json   Path to the JSON file containing reference (gold standard) texts.
+    --output_csv          (Optional) Path to save the evaluation results as a CSV file.
+
+Dependencies: evaluate, pandas, tqdm, argparse, json, re, time
+
+Example:
+    python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
+
+Functions:
+    - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
+    - main: Parses arguments, loads metrics, runs evaluation, and prints/saves results.
+"""
+
 # have this at the top to supress warnings from the imports
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
