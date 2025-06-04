@@ -19,7 +19,7 @@ ENGLISH_PROMPT_FILE = "prompts/prompt_new_disaster.txt"
 
 # languages to evaluate
 LANGUAGES = [
-  #"Spanish",
+  "Spanish",
   "Arabic",
   "Chinese (Traditional)",
   "Vietnamese",
@@ -85,7 +85,6 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
 
     if service_name == "google_translate":
         existing_response_list = output_json[service_name][language_name][disaster_name]
-        breakpoint()
     else:
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
