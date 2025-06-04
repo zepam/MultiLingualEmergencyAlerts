@@ -1,6 +1,8 @@
 import json
 import logging
 import argparse
+import arabic_reshaper
+from bidi.algorithm import get_display
 
 from dotenv import load_dotenv
 from helpers import generate_output_schema, chat_with_service
@@ -94,6 +96,8 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         if output is None:
             skip_bool = True
         else:
+            if language_name == "arabic":
+                output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
             existing_response_list.append(output)
     
     return skip_bool

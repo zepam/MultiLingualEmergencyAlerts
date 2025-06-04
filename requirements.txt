@@ -3,6 +3,10 @@ google-genai
 google-cloud-translate==2.0.1
 openai
 
+# arabic handling
+arabic_reshaper
+python-bidi
+
 # general usage
 python-dotenv
 
