@@ -68,23 +68,23 @@
         "arabic": {
             "flood": {
                 "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
-                "reference": "یسري التحذیر من حالة طوارئ الفیضانات المفاجئة ل :[SENDING AGENCY] ھذا وضع خطیر للغایة ویھدد الحیاة. لا تحاول السفر إلا .[TIME] حتى [LOCATION] [URL] . إذا كنت تفر من منطقة قد تكون معرضة للفیضانات أو بموجب أمر إخلا"
+                "reference": "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺐﺟﻮﻤﺑ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺔﺿﺮﻌﻣ ﻥﻮﻜﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺮﻔﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ـﻟ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ ﻦﻣ ﺮﻳﺬﺤﺘﻟﺍ ﻱﺮﺴﻳ :[SENDING AGENCY]"
             },
             "extreme_wind": {
                 "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
-                "reference": "بسبب الخطر [LOCATION] یسري التحذیر من الریاح الشدید ة على :[SENDING AGENCY] احتمِ الآن في غرفة داخلیة لمبنى قوي، .[TIME] المباشر للریاح التي تھدد الحیةا حتى بعیدًا عن النوافذ. احمِ رأسك من الأشیاء المتطایر ة . لا تخرج في وقت سكون الریاح! [URL] . ستصبح الریاح خطرة مرة أخرى بسرع"
+                "reference": "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﻥﻮﻜﺳ ﺖﻗﻭ ﻲﻓ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻱﻮﻗ ﻰﻨﺒﻤﻟ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﻲﺘﻟﺍ ﺡﺎﻳﺮﻠﻟ ﺮﺷﺎﺒﻤﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻰﻠﻋ ﺓﺪﻳﺪﺸﻟﺍ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺮﻳﺬﺤﺘﻟﺍ ﻱﺮﺴﻳ :[SENDING AGENCY]"
             },
              "fire": {
                 "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
-                "reference":  "حتى [LOCATION] في [SENDING AGENCY] یسري التحذیر من الحریق الصادر عن  قم بإخلاء عائلتك وحیواناتك الألیفة الآن، ولا تتأخر في القیا م بذلك. سیقل مجال .[TIME] الرؤیة في ھذه المنطقة، ویمكن أن تصبح الطرق مغلقة. إا ذ مل تغادر الآن، فقد  توقع انخفاض .[LOCATION] محاصرًا أو مصاباً أو مقتولاً . غادر المناطق القریبة من الرؤیة والدخان الكثیف وصعوبة التنفس. كن حذرًا عند القیادة. انتبھ إلى موظفي السلامة [URL] . العامة العاملین في المنطقة واتبع تعلیما "
-             },
+                "reference": "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﻲﻔﻇﻮﻣ ﻰﻟﺇ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺪﻨﻋ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﺔﺑﻮﻌﺻﻭ ﻒﻴﺜﻜﻟﺍ ﻥﺎﺧﺪﻟﺍﻭ ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﻻﻮﺘﻘﻣ ﻭﺃ ﺎﺑﺎﺼﻣ ﻭﺃ ﺍﺮﺻﺎﺤﻣ ﻥﻮﻜﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺔﻘﻠﻐﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﻥﺃ ﻦﻜﻤﻳﻭ ،ﺔﻘﻄﻨﻤﻟﺍ ﻩﺬﻫ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻝﺎﺠﻣ ﻞﻘﻴﺳ .ﻚﻟﺬﺑ ﻡﺎﻴﻘﻟﺍ ﻲﻓ ﺮﺧﺄﺘﺗ ﻻﻭ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ [SENDING AGENCY] ﻦﻋ ﺭﺩﺎﺼﻟﺍ ﻖﻳﺮﺤﻟﺍ ﻦﻣ ﺮﻳﺬﺤﺘﻟﺍ ﻱﺮﺴﻳ"
+            },
             "boil_water_notice": {
                 "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
-                "reference": ".[TIME] حتى [LOCATION] یسري تنبیھ غلي الماء الصادر ل :[SENDING AGENCY] یمكن أن تصیبك المیاه في مجتمعك المحلي بالمرض. استخدم المیاه المعبأة في زجاجات إذا كانت متوفرة. لا تشرب أو تطبخ أو تغسل أسنانك بالفرشاة أو تنظف منزلك بمیاه الصنبور أو الماء المصفى حتى تغلیھ. قم بغلي الماء تمامًا لمدة ثلاث دقائق. اترك الماء یبرد قبل الاستخدام. لا تستخدم الثلج المصنوع من الماء الذي لم یتم غلیھ. إذا كنت تستخدم تركیبة لإطعام طفلك، فاستخدم تركیبة جاھزة للاستخدام. تأكد من عدم شرب الحیوانات [ URL] . الألیفة للماء الذي لم یتم غل"
+                "reference": "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻠﻟ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﺏﺮﺷ ﻡﺪﻋ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺓﺰﻫﺎﺟ ﺔﺒﻴﻛﺮﺗ ﻡﺪﺨﺘﺳﺎﻓ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﺔﺒﻴﻛﺮﺗ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﻙﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﺎﻣﺎﻤﺗ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﻪﻴﻠﻐﺗ ﻰﺘﺣ ﻰﻔﺼﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻤﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﺓﺎﺷﺮﻔﻟﺎﺑ ﻚﻧﺎﻨﺳﺃ ﻞﺴﻐﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺕﺎﺟﺎﺟﺯ ﻲﻓ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺎﺑ ﻲﻠﺤﻤﻟﺍ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﻚﺒﻴﺼﺗ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ [LOCATION] ـﻟ ﺭﺩﺎﺼﻟﺍ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻪﻴﺒﻨﺗ ﻱﺮﺴﻳ :[SENDING AGENCY]"
             },
             "911_outage": {
                 "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
-                "reference": "[LOCATION] 9) في -1- یسري تنبیھ انقطاع خدمات الطوارئ ( 1 :[SENDING AGENCY] یرُجى الاتصال بالشرطة أو الإطفاء أو الخدمات الطبیة أو غیرھا من .[TIME] حتى خدمات الطوارئ مباشرة على أرقام ھواتفھم المحلیة في حالات الطوارئ. إذا اتصلت URL] . 9، فقد لا تحصل على المساعدة -1- بالرقم 1"
+                "reference": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،9-1-1 ﻢﻗﺮﻟﺎﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺕﻻﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻦﻣ ﺎﻫﺮﻴﻏ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ (9-1-1) ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ ﻪﻴﺒﻨﺗ ﻱﺮﺴﻳ :[SENDING AGENCY]"
             }
         },
         "chinese_traditional": {
