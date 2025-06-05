@@ -134,11 +134,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
                                 try:
-                                    if language == "english":
-                                        comet_score = "N/A"
-                                    else:
-                                        comet_score = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
@@ -154,7 +149,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet_score
+                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -176,12 +171,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 total_predictions = len(predictions)
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * len(predictions)
 
-                                try:
-                                    if language == "english":
-                                        comet_score = "N/A"
-                                    else:
-                                        comet_score = comet.compute(predictions=formatted_predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                        
+                                try:        
                                     id_response = f"{language}:{service}:{disaster}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
@@ -197,7 +187,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet_score
+                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
