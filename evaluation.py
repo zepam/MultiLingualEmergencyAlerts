@@ -29,7 +29,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
-from sacrebleu.tokenizers.tokenizer_13a import Tokenizer13a
+from sacrebleu.tokenizers.tokenizer_intl import TokenizerV14International
 from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
 
 import pandas as pd
@@ -45,10 +45,10 @@ class EvaluationTokenizer:
         match language:
             case "chinese_traditional":
                 tokenizer = TokenizerZh()
-            case "arabic":
+            case "arabic", "vietnamese":
                 tokenizer = Flores101Tokenizer()
-            case _:
-                tokenizer = Tokenizer13a()
+            case _: # spanish, haitian creole
+                tokenizer = TokenizerV14International()
         return tokenizer
 
     def __init__(self, language):
@@ -98,10 +98,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
             for language, values in reference_data.items():
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
-                elif language == "arabic":
+                elif language == "arabic" or language == "vietnamese":
                     tokenizer_string = "spm"
-                else:
-                    tokenizer_string = "13a"
+                else: # spanish, haitian creole
+                    tokenizer_string = "intl"
 
                 evaluation_tokenizer = tokenizer_lambda(language)
 

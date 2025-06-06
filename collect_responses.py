@@ -129,8 +129,7 @@ if __name__ == "__main__":
     skip_google_translate = args.skip_google_translate
     total_responses = args.total_responses
 
-    if not args.skip_multilingual:
-        collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses)
+    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses)
 
     with open(args.output_file, 'w', encoding='utf-8') as f:
         json.dump(output_json, f, ensure_ascii=False, indent=4)
