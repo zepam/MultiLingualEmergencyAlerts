@@ -98,10 +98,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
             for language, values in reference_data.items():
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
-                elif language == "arabic":
+                elif language == "arabic" or language == "vietnamese":
                     tokenizer_string = "spm"
-                else:
-                    tokenizer_string = "13a"
+                else: # spanish, haitian creole
+                    tokenizer_string = "intl"
 
                 evaluation_tokenizer = tokenizer_lambda(language)
 
