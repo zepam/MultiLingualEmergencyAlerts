@@ -1,3 +1,8 @@
+"""
+Miscellaneous methods mostly used to interface between the primary logic in `collect_responses`
+and the actual Clients themselves.
+"""
+
 import os
 from clients.gemini import GeminiClient
 from clients.deepseek import DeepSeekClient
@@ -34,6 +39,18 @@ def chat_google_translate(language, disaster, prompt, logger):
     google_translate_client = GoogleCloudTranslationClient(logger=logger)
     return google_translate_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
 
+"""
+hand-crafted dictionary to set up a JSON output schema for the first time. It's organized by:
+    service
+        language
+            disaster
+                prompts: []
+
+or if there are no associated prompts, such as for Google Translate
+    service
+        language
+            disaster: []
+"""
 def generate_output_schema():
     return {
         "chatgpt": {

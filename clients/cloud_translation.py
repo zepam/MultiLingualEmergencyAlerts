@@ -1,7 +1,7 @@
 from google.cloud import translate_v2 as translate
 from clients.client import Client
 
-# Client to interact with the Google Cloud Translation API
+# Client to interact with the Google Cloud Translation API (Basic)
 class GoogleCloudTranslationClient(Client):
     def __init__(self, logger, key="unused"):
         super().__init__(key, logger)

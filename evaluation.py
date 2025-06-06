@@ -13,7 +13,7 @@ Arguments:
     reference_file.json   Path to the JSON file containing reference (gold standard) texts.
     --output_csv          (Optional) Path to save the evaluation results as a CSV file.
 
-Dependencies: evaluate, pandas, tqdm, argparse, json, re, time
+Dependencies: evaluate, pandas, tqdm, argparse, json, re, time, sacrebleu
 
 Example:
     python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
@@ -21,6 +21,7 @@ Example:
 Functions:
     - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
     - main: Parses arguments, loads metrics, runs evaluation, and prints/saves results.
+    - tokenizer_lambda: defines a lambda that can return and call a tokenizer for a given text
 """
 
 # have this at the top to supress warnings from the imports
@@ -56,7 +57,8 @@ class EvaluationTokenizer:
     
     def tokenize(self, text):
         return self.tokenizer_function(text)
-    
+
+# used for ROUGE
 def tokenizer_lambda(language):
     return lambda x: EvaluationTokenizer(language).tokenize(x)
 
@@ -96,6 +98,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     with tqdm(total=total, desc="Evaluating prompts") as pbar:
         for service in prediction_data:
             for language, values in reference_data.items():
+                # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
                 elif language == "arabic" or language == "vietnamese":
@@ -105,6 +108,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
                 evaluation_tokenizer = tokenizer_lambda(language)
 
+                # bertscore takes a language code indicating the language being passed in
                 language_code = None
                 match language:
                     case "chinese_traditional":
@@ -118,7 +122,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                     case "spanish":
                         language_code = "es"
 
-
                 for disaster, gold_standards in values.items():
                     if (
                         service in prediction_data
@@ -126,11 +129,15 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                         and disaster in prediction_data[service][language]
                     ):
                         relevant_prompts = prediction_data[service][language][disaster]
+                        
+                        # chatgpt, deepseek, gemini
                         if isinstance(relevant_prompts, dict):
                             for prompt, predictions in relevant_prompts.items():
                                 if not predictions:
                                     continue
                                 total_predictions = len(predictions)
+
+                                # we have 5 predictions and one gold standard. Just make an array of the same gold standard 5 times
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
                                 try:
@@ -162,13 +169,13 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             predictions = relevant_prompts
                             if predictions:
 
-                                # google translate tranlates everything directly, even our standard variables. Let's parse out everything within square brackets
-                                # to not penalize for that
+                                # google translate tranlates everything directly, even our standard variables. Let's parse out everything within square brackets to not penalize for that
                                 formatted_predictions = []
                                 for prediction in predictions:
                                     formatted_predictions.append(re.sub(r'\[.*?\]', '', prediction))
 
                                 total_predictions = len(predictions)
+                                # apply the same treatment to the gold standards
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * len(predictions)
 
                                 try:        
@@ -236,9 +243,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-    """
-    python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
-
-    """

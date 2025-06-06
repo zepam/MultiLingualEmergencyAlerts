@@ -1,3 +1,22 @@
+"""
+collect_responses.py
+
+This script iterates over API endpoints to Google Translate, Deepseek, ChatGPT, and Gemini in order to
+request generation of multilingual emergency alerts.
+
+Usage:
+    python collect_responses.py
+
+Example:
+    python collect_responses.py --preserve_output=True --output_file="test.json" --skip_google_translate=True
+
+Functions:
+    - parse_args: Parses arguments passed into the script
+    - loop_responses: For a given language - disaster - prompt pairing, query all the APIs
+    - collect_multilingual_responses: loop over every language, disaster, and prompt to call loop_responses
+    - main: Does the thing. Outputs data to a JSON file
+"""
+
 import json
 import logging
 import argparse
@@ -63,17 +82,23 @@ def parse_args():
   
     return parser.parse_args()
 
-# While total_responses hasn't yet been reached, keep querying service_name for the language - prompt - disaster combo
 def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
     language_name = language.replace(" ", "_").replace("(", "").replace(")", "").lower()
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
     prompt_name = prompt.replace("prompts/", "")
 
+    # google doesn't require a prompt to function
     if service_name == "google_translate":
         existing_response_list = output_json[service_name][language_name][disaster_name]
     else:
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
+    """
+    While
+        1) total_responses hasn't yet been reached
+        2) the service should be run (not forcibly skipped by commandline argument or not skipped by a sequence of invalid API calls)
+    keep querying service_name for the language - prompt - disaster combo
+    """
     while not skip_bool and (len(existing_response_list) < total_responses):
         logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: {service_name}")
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
@@ -81,6 +106,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
             skip_bool = True
         else:
             if language_name == "arabic":
+                # make sure Arabic output is not broken and is left to right
                 output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
             existing_response_list.append(output)
     
