@@ -40,6 +40,8 @@ from tqdm import tqdm
 import time
 import re
 
+BATCH_SIZE = 100  # Set batch size to 1 to mostly avoid memory issues
+
 class EvaluationTokenizer:
     def set_tokenizer_function(self, language):
         tokenizer = None
@@ -62,14 +64,39 @@ class EvaluationTokenizer:
 def tokenizer_lambda(language):
     return lambda x: EvaluationTokenizer(language).tokenize(x)
 
-def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
+def evaluate_generated_texts(
+    generated_path,
+    reference_path,
+    output_csv=None,
+    rouge=None,
+    bleu=None,
+    bertscore=None,
+    comet=None,
+    use_bertscore=True,
+    use_comet=True
+):
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
 
     with open(generated_path, "r", encoding="utf-8") as f:
         prediction_data = json.load(f)
     
+    # Write results to disk incrementally to avoid memory issues
+    import csv
+    import os
     results = []
+    temp_csv_path = None
+    if output_csv:
+        temp_csv_path = output_csv + ".tmp"
+        # Write header if file does not exist
+        if not os.path.exists(temp_csv_path):
+            with open(temp_csv_path, "w", encoding="utf-8", newline="") as f:
+                writer = csv.writer(f)
+                writer.writerow([
+                    "SERVICE", "LANGUAGE", "DISASTER", "PROMPT",
+                    "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU",
+                    "BERTScore_P", "BERTScore_R", "BERTScore_F1", "COMET"
+                ])
 
     # Count total number of iterations for progress bar
     total = 0
@@ -102,7 +129,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
                 elif language == "arabic" or language == "vietnamese":
-                    tokenizer_string = "spm"
+                    tokenizer_string = "flores101"
                 else: # spanish, haitian creole
                     tokenizer_string = "intl"
 
@@ -142,27 +169,67 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
                                 try:
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
-                                    rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": prompt,
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                    }
-                                    results.append(result)
+                                    # Batch process predictions in chunks of 100
+                                    batch_size = BATCH_SIZE
+                                    for batch_start in range(0, len(predictions), batch_size):
+                                        batch_end = min(batch_start + batch_size, len(predictions))
+                                        batch_predictions = predictions[batch_start:batch_end]
+                                        batch_references = duplicated_gold_standards[batch_start:batch_end]
+                                        batch_sources = [gold_standards["source"]] * len(batch_predictions)
+                                        # Compute metrics for the batch
+                                        rouge_result = rouge.compute(predictions=batch_predictions, references=batch_references, tokenizer=evaluation_tokenizer)
+                                        import gc; gc.collect()
+                                        bertscore_result = None
+                                        comet_result = None
+                                        if use_bertscore:
+                                            bertscore_result = bertscore.compute(predictions=batch_predictions, references=batch_references, lang=language_code)
+                                            gc.collect()
+                                        bleu_result = bleu.compute(predictions=batch_predictions, references=batch_references, tokenize=tokenizer_string)
+                                        gc.collect()
+                                        if use_comet:
+                                            comet_result = comet.compute(predictions=batch_predictions, references=batch_references, sources=batch_sources)
+                                            gc.collect()
+                                        for i in range(len(batch_predictions)):
+                                            result = {
+                                                "SERVICE": service,
+                                                "LANGUAGE": language,
+                                                "DISASTER": disaster,
+                                                "PROMPT": prompt,
+                                                "ROUGE-1": rouge_result["rouge1"][i] if isinstance(rouge_result["rouge1"], list) else rouge_result["rouge1"],
+                                                "ROUGE-2": rouge_result["rouge2"][i] if isinstance(rouge_result["rouge2"], list) else rouge_result["rouge2"],
+                                                "ROUGE-L": rouge_result["rougeL"][i] if isinstance(rouge_result["rougeL"], list) else rouge_result["rougeL"],
+                                                "BLEU": bleu_result["score"][i] if isinstance(bleu_result["score"], list) else bleu_result["score"],
+                                            }
+                                            if use_bertscore and bertscore_result is not None:
+                                                result["BERTScore_P"] = bertscore_result["precision"][i]
+                                                result["BERTScore_R"] = bertscore_result["recall"][i]
+                                                result["BERTScore_F1"] = bertscore_result["f1"][i]
+                                            else:
+                                                result["BERTScore_P"] = None
+                                                result["BERTScore_R"] = None
+                                                result["BERTScore_F1"] = None
+                                            if use_comet and comet_result is not None:
+                                                result["COMET"] = comet_result["mean_score"][i] if isinstance(comet_result["mean_score"], list) else comet_result["mean_score"]
+                                            else:
+                                                result["COMET"] = None
+                                            if output_csv:
+                                                # Write result immediately to disk
+                                                with open(temp_csv_path, "a", encoding="utf-8", newline="") as f:
+                                                    writer = csv.writer(f)
+                                                    writer.writerow([
+                                                        result["SERVICE"], result["LANGUAGE"], result["DISASTER"], result["PROMPT"],
+                                                        result["ROUGE-1"], result["ROUGE-2"], result["ROUGE-L"], result["BLEU"],
+                                                        result["BERTScore_P"], result["BERTScore_R"], result["BERTScore_F1"], result["COMET"]
+                                                    ])
+                                            else:
+                                                results.append(result)
+                                            pbar.update(1)
+                                        # Explicitly free memory after each batch
+                                        del rouge_result, bertscore_result, bleu_result, comet_result, batch_predictions, batch_references, batch_sources
+                                        gc.collect()
                                 except Exception as e:
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
-                                pbar.update(1)
                         # google translate
                         elif isinstance(relevant_prompts, list):
                             # If relevant_prompts is a list, we assume it's a single prediction
@@ -180,33 +247,77 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
                                 try:        
                                     id_response = f"{language}:{service}:{disaster}"
-                                    rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": "N/A",  # No specific prompt in this case
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                    }
-                                    results.append(result)
+                                    # Batch process predictions in chunks of 100
+                                    batch_size = BATCH_SIZE
+                                    for batch_start in range(0, len(predictions), batch_size):
+                                        batch_end = min(batch_start + batch_size, len(predictions))
+                                        batch_predictions = predictions[batch_start:batch_end]
+                                        batch_references = duplicated_gold_standards[batch_start:batch_end]
+                                        batch_sources = [gold_standards["source"]] * len(batch_predictions)
+                                        # Compute metrics for the batch
+                                        rouge_result = rouge.compute(predictions=batch_predictions, references=batch_references, tokenizer=evaluation_tokenizer)
+                                        import gc; gc.collect()
+                                        bertscore_result = None
+                                        comet_result = None
+                                        if use_bertscore:
+                                            bertscore_result = bertscore.compute(predictions=batch_predictions, references=batch_references, lang=language_code)
+                                            gc.collect()
+                                        bleu_result = bleu.compute(predictions=batch_predictions, references=batch_references, tokenize=tokenizer_string)
+                                        gc.collect()
+                                        if use_comet:
+                                            comet_result = comet.compute(predictions=batch_predictions, references=batch_references, sources=batch_sources)
+                                            gc.collect()
+                                        for i in range(len(batch_predictions)):
+                                            result = {
+                                                "SERVICE": service,
+                                                "LANGUAGE": language,
+                                                "DISASTER": disaster,
+                                                "PROMPT": "N/A",  # No specific prompt in this case
+                                                "ROUGE-1": rouge_result["rouge1"][i] if isinstance(rouge_result["rouge1"], list) else rouge_result["rouge1"],
+                                                "ROUGE-2": rouge_result["rouge2"][i] if isinstance(rouge_result["rouge2"], list) else rouge_result["rouge2"],
+                                                "ROUGE-L": rouge_result["rougeL"][i] if isinstance(rouge_result["rougeL"], list) else rouge_result["rougeL"],
+                                                "BLEU": bleu_result["score"][i] if isinstance(bleu_result["score"], list) else bleu_result["score"],
+                                            }
+                                            if use_bertscore and bertscore_result is not None:
+                                                result["BERTScore_P"] = bertscore_result["precision"][i]
+                                                result["BERTScore_R"] = bertscore_result["recall"][i]
+                                                result["BERTScore_F1"] = bertscore_result["f1"][i]
+                                            else:
+                                                result["BERTScore_P"] = None
+                                                result["BERTScore_R"] = None
+                                                result["BERTScore_F1"] = None
+                                            if use_comet and comet_result is not None:
+                                                result["COMET"] = comet_result["mean_score"][i] if isinstance(comet_result["mean_score"], list) else comet_result["mean_score"]
+                                            else:
+                                                result["COMET"] = None
+                                            if output_csv:
+                                                # Write result immediately to disk
+                                                with open(temp_csv_path, "a", encoding="utf-8", newline="") as f:
+                                                    writer = csv.writer(f)
+                                                    writer.writerow([
+                                                        result["SERVICE"], result["LANGUAGE"], result["DISASTER"], result["PROMPT"],
+                                                        result["ROUGE-1"], result["ROUGE-2"], result["ROUGE-L"], result["BLEU"],
+                                                        result["BERTScore_P"], result["BERTScore_R"], result["BERTScore_F1"], result["COMET"]
+                                                    ])
+                                            else:
+                                                results.append(result)
+                                            pbar.update(1)
+                                        # Explicitly free memory after each batch
+                                        del rouge_result, bertscore_result, bleu_result, comet_result, batch_predictions, batch_references, batch_sources
+                                        gc.collect()
                                 except Exception as e:
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
-                                pbar.update(1)
     
-    df = pd.DataFrame(results)
-
     if output_csv:
-        df.to_csv(output_csv, index=False)
+        # If results were written incrementally, read them back in for return
+        df = pd.read_csv(temp_csv_path)
+        # Move temp file to final output
+        import shutil
+        shutil.move(temp_csv_path, output_csv)
         print(f"Results saved to: {output_csv}")
+    else:
+        df = pd.DataFrame(results)
 
     return df
 
@@ -216,13 +327,21 @@ def main():
     parser.add_argument("generated_path", help="Path generated text file")
     parser.add_argument("reference_path", help="Path reference text file")
     parser.add_argument("--output_csv", help="Path to output CSV file", default=None)
+    parser.add_argument("--no_bertscore", action="store_true", help="Disable BERTScore metric")
+    parser.add_argument("--no_comet", action="store_true", help="Disable COMET metric")
     args = parser.parse_args()
 
     # Load metrics
     rouge = load("rouge")
     bleu = load("sacrebleu")
-    bertscore = load("bertscore")
-    comet = load("comet")
+    bertscore = None
+    comet = None
+    use_bertscore = not args.no_bertscore
+    use_comet = not args.no_comet
+    if use_bertscore:
+        bertscore = load("bertscore")
+    if use_comet:
+        comet = load("comet")
 
     df = evaluate_generated_texts(
         args.generated_path,
@@ -231,7 +350,9 @@ def main():
         rouge,
         bleu,
         bertscore,
-        comet
+        comet,
+        use_bertscore=use_bertscore,
+        use_comet=use_comet
     )
 
     # Print the DataFrame
