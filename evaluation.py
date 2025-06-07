@@ -46,10 +46,8 @@ class EvaluationTokenizer:
         match language:
             case "chinese_traditional":
                 tokenizer = TokenizerZh()
-            case "arabic", "vietnamese":
+            case _:
                 tokenizer = Flores101Tokenizer()
-            case _: # spanish, haitian creole
-                tokenizer = TokenizerV14International()
         return tokenizer
 
     def __init__(self, language):
@@ -101,10 +99,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
-                elif language == "arabic" or language == "vietnamese":
-                    tokenizer_string = "spm"
-                else: # spanish, haitian creole
-                    tokenizer_string = "intl"
+                else:
+                    tokenizer_string = "flores101"
 
                 evaluation_tokenizer = tokenizer_lambda(language)
 
