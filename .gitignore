@@ -192,3 +192,4 @@ results_before.csv
 results.csv.tmp
 results.csv
 results_new.csv
+evaluation_batch.py
