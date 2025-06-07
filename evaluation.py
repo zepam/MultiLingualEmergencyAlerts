@@ -30,7 +30,6 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
-from sacrebleu.tokenizers.tokenizer_intl import TokenizerV14International
 from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
 
 import pandas as pd
