@@ -101,10 +101,12 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
-                elif language == "arabic" or language == "vietnamese":
-                    tokenizer_string = "spm"
-                else: # spanish, haitian creole
-                    tokenizer_string = "intl"
+                else:
+                    tokenizer_string = "flores101"
+                # elif language == "arabic" or language == "vietnamese":
+                #     tokenizer_string = "spm"
+                # else: # spanish, haitian creole
+                #     tokenizer_string = "intl"
 
                 evaluation_tokenizer = tokenizer_lambda(language)
 
@@ -144,20 +146,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": prompt,
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                    }
+                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                    result = display_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result)
                                     results.append(result)
                                 except Exception as e:
                                     print(f"[Error on line {id_response}] {e}")
@@ -182,20 +173,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     id_response = f"{language}:{service}:{disaster}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": "N/A",  # No specific prompt in this case
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                    }
+                                    result = display_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result)
                                     results.append(result)
                                 except Exception as e:
                                     print(f"[Error on line {id_response}] {e}")
@@ -209,6 +187,22 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         print(f"Results saved to: {output_csv}")
 
     return df
+
+def display_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
+    return {
+    "SERVICE": service,
+    "LANGUAGE": language,
+    "DISASTER": disaster,
+    "PROMPT": prompt,
+    "ROUGE-1": rouge_result["rouge1"],
+    "ROUGE-2": rouge_result["rouge2"],
+    "ROUGE-L": rouge_result["rougeL"],
+    "BLEU": bleu_result["score"],
+    "BERTScore_P": bertscore_result["precision"][0],
+    "BERTScore_R": bertscore_result["recall"][0],
+    "BERTScore_F1": bertscore_result["f1"][0],
+    "COMET": comet_result["mean_score"]
+    }
 
 def main():
     start_time = time.time()
