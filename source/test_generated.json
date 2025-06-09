@@ -1,0 +1,11 @@
+{
+  "chatgpt": {
+    "spanish": {
+      "flood": {
+        "prompt1": [
+          "Hay una inundación en su área. Por favor evacúe inmediatamente."
+        ]
+      }
+    }
+  }
+}
