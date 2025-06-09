@@ -25,8 +25,8 @@ Functions:
 """
 
 # have this at the top to supress warnings from the imports
-import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
+# import warnings
+# warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
@@ -104,18 +104,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 evaluation_tokenizer = tokenizer_lambda(language)
 
                 # bertscore takes a language code indicating the language being passed in
-                language_code = None
-                match language:
-                    case "chinese_traditional":
-                        language_code = "zh"
-                    case "arabic":
-                        language_code = "ar"
-                    case "vietnamese":
-                        language_code = "vi"
-                    case "haitian_creole":
-                        language_code = "ht"
-                    case "spanish":
-                        language_code = "es"
+                #language_code = None
+                language_code = get_language_code(language)
 
                 for disaster, gold_standards in values.items():
                     if (
@@ -139,6 +129,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
+                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -147,11 +139,11 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "ROUGE-1": rouge_result["rouge1"],
                                         "ROUGE-2": rouge_result["rouge2"],
                                         "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
+                                        "BLEU": bleu_result["score"],
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                        "COMET": comet_result["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -163,7 +155,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             # If relevant_prompts is a list, we assume it's a single prediction
                             predictions = relevant_prompts
                             if predictions:
-
                                 # google translate tranlates everything directly, even our standard variables. Let's parse out everything within square brackets to not penalize for that
                                 formatted_predictions = []
                                 for prediction in predictions:
@@ -177,6 +168,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     id_response = f"{language}:{service}:{disaster}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
+                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -185,11 +178,11 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "ROUGE-1": rouge_result["rouge1"],
                                         "ROUGE-2": rouge_result["rouge2"],
                                         "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
+                                        "BLEU": bleu_result["score"],
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                        "COMET": comet_result["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -204,6 +197,20 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         print(f"Results saved to: {output_csv}")
 
     return df
+
+def get_language_code(language):
+    match language:
+        case "chinese_traditional":
+            language_code = "zh"
+        case "arabic":
+            language_code = "ar"
+        case "vietnamese":
+            language_code = "vi"
+        case "haitian_creole":
+            language_code = "ht"
+        case "spanish":
+            language_code = "es"
+    return language_code
 
 def main():
     start_time = time.time()
