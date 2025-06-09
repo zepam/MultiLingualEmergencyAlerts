@@ -24,7 +24,7 @@ import arabic_reshaper
 from bidi.algorithm import get_display
 
 from dotenv import load_dotenv
-from helpers import generate_output_schema, chat_with_service
+from source.helpers import generate_output_schema, chat_with_service
 
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
 ITERATIVE_PROMPT_FILES = [

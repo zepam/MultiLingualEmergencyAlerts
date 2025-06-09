@@ -1,6 +1,5 @@
 # project files
 cb_2022_us_county_20m.zip
-data/*
 output.log
 UniEval/
 
@@ -193,3 +192,27 @@ results.csv.tmp
 results.csv
 results_new.csv
 evaluation_batch.py
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.cpg
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.dbf
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.prj
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.shp
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.shp.ea.iso.xml
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.shp.iso.xml
+data/cb_2022_us_county_20m/cb_2022_us_county_20m.shx
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.cpg
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.dbf
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.prj
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.sbn
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.sbx
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.shp
+data/NRI_Shapefile_CensusTracts/NRI_Shapefile_CensusTracts.shx
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.cpg
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.dbf
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.prj
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.sbn
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.sbx
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.shp
+data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.shx
+data/lang_by_county.csv
+data/NRI_Table_Counties_Washington.csv
+.gitignore
