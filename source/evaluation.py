@@ -114,6 +114,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                         and disaster in prediction_data[service][language]
                     ):
                         relevant_prompts = prediction_data[service][language][disaster]
+                        print(f"Evaluating {service} for {language} on {disaster} with {len(relevant_prompts)} prompts")
                         
                         # chatgpt, deepseek, gemini
                         if isinstance(relevant_prompts, dict):
