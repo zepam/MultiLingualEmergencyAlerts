@@ -38,6 +38,9 @@ import json
 from tqdm import tqdm
 import time
 import re
+import csv, psutil, os, logging
+import multiprocessing as mp
+
 
 class EvaluationTokenizer:
     def set_tokenizer_function(self, language):
@@ -56,8 +59,8 @@ class EvaluationTokenizer:
         return self.tokenizer_function(text)
 
 # used for ROUGE
-def tokenizer_lambda(language):
-    return lambda x: EvaluationTokenizer(language).tokenize(x)
+def tokenizer_code(language):
+    return EvaluationTokenizer(language)
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
     with open(reference_path, "r", encoding="utf-8") as f:
@@ -67,6 +70,17 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         prediction_data = json.load(f)
     
     results = []
+    csv_file = None
+    csv_writer = None
+    csv_fieldnames = [
+        "SERVICE", "LANGUAGE", "DISASTER", "PROMPT",
+        "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU",
+        "BERTScore_P", "BERTScore_R", "BERTScore_F1"
+    ]
+    if output_csv:
+        csv_file = open(output_csv, "w", newline='', encoding="utf-8")
+        csv_writer = csv.DictWriter(csv_file, fieldnames=csv_fieldnames)
+        csv_writer.writeheader()
 
     # Count total number of iterations for progress bar
     total = 0
@@ -93,29 +107,20 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     iterate over every language - {disaster: reference_text} pair
     """
     with tqdm(total=total, desc="Evaluating prompts") as pbar:
+        pool = mp.get_context("spawn").Pool(1)
         for service in prediction_data:
             for language, values in reference_data.items():
                 # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
-                if language == "chinese_traditional":
-                    tokenizer_string = "zh"
-                else:
-                    tokenizer_string = "flores101"
+                # if language == "chinese_traditional":
+                #     tokenizer_string = "zh"
+                # else:
+                #     tokenizer_string = "flores101"
+                tokenizer_string = "zh" if language == "chinese_traditional" else "flores101"
 
-                evaluation_tokenizer = tokenizer_lambda(language)
+                evaluation_tokenizer = tokenizer_code(language)
 
                 # bertscore takes a language code indicating the language being passed in
-                language_code = None
-                match language:
-                    case "chinese_traditional":
-                        language_code = "zh"
-                    case "arabic":
-                        language_code = "ar"
-                    case "vietnamese":
-                        language_code = "vi"
-                    case "haitian_creole":
-                        language_code = "ht"
-                    case "spanish":
-                        language_code = "es"
+                language_code = extract_language_code(language)
 
                 for disaster, gold_standards in values.items():
                     if (
@@ -135,29 +140,25 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 # we have 5 predictions and one gold standard. Just make an array of the same gold standard 5 times
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
-                                try:
-                                    id_response = f"{language}:{service}:{disaster}:{prompt}"
-                                    rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": prompt,
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                    }
+                                id_response = f"{language}:{service}:{disaster}:{prompt}"
+                                process = psutil.Process(os.getpid())
+                                memory_usage = f"Memory usage: {process.memory_info().rss / 1e6:.2f} MB"
+                                logging.info(memory_usage)
+                                logging.info(f"Evaluating {id_response} with {total_predictions} predictions"   )
+
+                                args = (
+                                    predictions, duplicated_gold_standards, evaluation_tokenizer, language_code, tokenizer_string,
+                                    service, language, disaster, prompt
+                                )
+                                result = pool.apply(compute_metrics_worker, (args,))
+                                if csv_writer:
+                                    csv_writer.writerow(result)
+                                else:
                                     results.append(result)
-                                except Exception as e:
-                                    print(f"[Error on line {id_response}] {e}")
-                                    continue
                                 pbar.update(1)
+
+                                #results.append(result)
+                                #pbar.update(1)
                         # google translate
                         elif isinstance(relevant_prompts, list):
                             # If relevant_prompts is a list, we assume it's a single prediction
@@ -173,28 +174,21 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 # apply the same treatment to the gold standards
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * len(predictions)
 
-                                try:        
-                                    id_response = f"{language}:{service}:{disaster}"
-                                    rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": "N/A",  # No specific prompt in this case
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
-                                    }
+                                id_response = f"{language}:{service}:{disaster}:{prompt}"
+                                process = psutil.Process(os.getpid())
+                                memory_usage = f"Memory usage: {process.memory_info().rss / 1e6:.2f} MB"
+                                logging.info(memory_usage)
+                                logging.info(f"Evaluating {id_response} with {total_predictions} predictions"   )
+
+                                args = (
+                                    predictions, duplicated_gold_standards, evaluation_tokenizer, language_code, tokenizer_string,
+                                    service, language, disaster, 'N/A'  # No prompt for Google Translate
+                                )
+                                result = pool.apply(compute_metrics_worker, (args,))
+                                if csv_writer:
+                                    csv_writer.writerow(result)
+                                else:
                                     results.append(result)
-                                except Exception as e:
-                                    print(f"[Error on line {id_response}] {e}")
-                                    continue
                                 pbar.update(1)
     
     df = pd.DataFrame(results)
@@ -204,6 +198,64 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         print(f"Results saved to: {output_csv}")
 
     return df
+
+def compute_metrics_worker(args):
+    predictions, duplicated_gold_standards, evaluation_tokenizer, language_code, tokenizer_string, service, language, disaster, prompt = args
+    from evaluate import load
+    try:
+        rouge = load("rouge")
+        bleu = load("sacrebleu")
+        bertscore = load("bertscore")
+        rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer.tokenize)
+        bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
+        bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+        result = {
+            "SERVICE": service,
+            "LANGUAGE": language,
+            "DISASTER": disaster,
+            "PROMPT": prompt,
+            "ROUGE-1": rouge_result["rouge1"],
+            "ROUGE-2": rouge_result["rouge2"],
+            "ROUGE-L": rouge_result["rougeL"],
+            "BLEU": bleu_result["score"],
+            "BERTScore_P": bertscore_result["precision"][0],
+            "BERTScore_R": bertscore_result["recall"][0],
+            "BERTScore_F1": bertscore_result["f1"][0]
+        }
+        return result
+    except Exception as e:
+        return {"error": str(e), "SERVICE": service, "LANGUAGE": language, "DISASTER": disaster, "PROMPT": prompt}
+
+
+def print_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
+    return {
+        "SERVICE": service,
+        "LANGUAGE": language,
+        "DISASTER": disaster,
+        "PROMPT": prompt,
+        "ROUGE-1": rouge_result["rouge1"],
+        "ROUGE-2": rouge_result["rouge2"],
+        "ROUGE-L": rouge_result["rougeL"],
+        "BLEU": bleu_result["score"],
+        "BERTScore_P": bertscore_result["precision"][0],
+        "BERTScore_R": bertscore_result["recall"][0],
+        "BERTScore_F1": bertscore_result["f1"][0],
+        "COMET": comet_result["mean_score"]
+    }
+
+def extract_language_code(language):
+    match language:
+        case "chinese_traditional":
+            language_code = "zh"
+        case "arabic":
+            language_code = "ar"
+        case "vietnamese":
+            language_code = "vi"
+        case "haitian_creole":
+            language_code = "ht"
+        case "spanish":
+            language_code = "es"
+    return language_code
 
 def main():
     start_time = time.time()
