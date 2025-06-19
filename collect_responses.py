@@ -8,7 +8,7 @@ Usage:
     python collect_responses.py
 
 Example:
-    python collect_responses.py --preserve_output=True --output_file="test.json" --skip_google_translate=True
+    python collect_responses.py --preserve_output=True --skip_chatgpt=True --skip_google_translate=True --skip_gemini=True
 
 Functions:
     - parse_args: Parses arguments passed into the script
