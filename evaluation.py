@@ -16,7 +16,7 @@ Arguments:
 Dependencies: evaluate, pandas, tqdm, argparse, json, re, time, sacrebleu
 
 Example:
-    python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
+    python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results.csv
 
 Functions:
     - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
