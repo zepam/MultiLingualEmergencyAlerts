@@ -61,6 +61,7 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
+# TODO: --skip commands aren't parsing correctly, they are always True if there is any value passed
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output_file", type=str, default="./output_file.json",
