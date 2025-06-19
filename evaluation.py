@@ -16,7 +16,7 @@ Arguments:
 Dependencies: evaluate, pandas, tqdm, argparse, json, re, time, sacrebleu
 
 Example:
-    python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
+    python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results.csv
 
 Functions:
     - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
@@ -101,7 +101,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 else:
                     tokenizer_string = "flores101"
 
-                evaluation_tokenizer = tokenizer_lambda(language)
+                #evaluation_tokenizer = tokenizer_lambda(language)
+                evaluation_tokenizer = (lambda tok: (lambda x: tok.tokenize(x)))(EvaluationTokenizer(language))
 
                 # bertscore takes a language code indicating the language being passed in
                 language_code = None
@@ -139,6 +140,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
+                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -147,11 +150,11 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "ROUGE-1": rouge_result["rouge1"],
                                         "ROUGE-2": rouge_result["rouge2"],
                                         "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
+                                        "BLEU": bleu_result["score"],
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                        "COMET": comet_result["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -177,6 +180,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     id_response = f"{language}:{service}:{disaster}"
                                     rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
+                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -185,11 +190,11 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "ROUGE-1": rouge_result["rouge1"],
                                         "ROUGE-2": rouge_result["rouge2"],
                                         "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)["score"],
+                                        "BLEU": bleu_result["score"],
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)["mean_score"]
+                                        "COMET": comet_result["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
