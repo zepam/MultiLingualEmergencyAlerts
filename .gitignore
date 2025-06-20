@@ -216,3 +216,6 @@ data/NRI_Shapefile_Counties/NRI_Shapefile_Counties.shx
 data/lang_by_county.csv
 data/NRI_Table_Counties_Washington.csv
 .gitignore
+compare_results.py
+results_42_method.csv
+results_42_no_method.csv
