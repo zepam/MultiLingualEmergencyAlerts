@@ -1721,14 +1721,27 @@
                     "**¡ALERTA DE INCENDIO!**  Se reporta un incendio en la zona. Permanezca en un lugar seguro, alejado del humo y las llamas. Llame al 911 o a emergencias local inmediatamente. Siga las instrucciones de las autoridades. ¡Manténgase calmado y evacúe si es necesario! **¡PELIGRO!**",
                     "\"¡ALERTA DE INCENDIO! Hay un incendio en la zona. Evacúa inmediatamente y llama al 911. No uses ascensores. Mantén la calma y sigue las indicaciones de las autoridades. ¡Tu seguridad es lo más importante!\""
                 ],
-                "prompt_persona.txt": [],
+                "prompt_persona.txt": [
+                    "\"ALERTA: Incendio activo cerca de [LOCATION]. Evacúe el área inmediatamente. Tiempo reportado: [TIME]. No use ascensores. Siga instrucciones locales. Más info: [URL]. Manténgase seguro.\"",
+                    "**Alerta de incendio: Se ha reportado un incendio cerca de [LOCATION]. Evacúe el área inmediatamente si está cerca. Hora del reporte: [TIME]. Para más información, visite [URL]. Manténgase seguro y siga las instrucciones de las autoridades.**",
+                    "**ALERTA:** Incendio reportado en [LOCATION]. Hora: [TIME]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. Para más información, visite [URL]. Manténgase a salvo.",
+                    "\"ALERTA: Incendio activo cerca de [LOCATION]. Hora reportada: [TIME]. Manténgase alejado del área y siga las instrucciones de autoridades. Más información en [URL]. #Seguridad\"",
+                    "Alerta de emergencia: Incendio reportado cerca de [LOCATION]. Hora del informe: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL]. #Seguridad"
+                ],
                 "prompt_one_shot.txt": [
                     "¡ALERTA DE INCENDIO! Se reportó un incendio en [LOCATION]. Evacúe el área de inmediato si está cerca. Permanezca en interiores y cierre ventanas si no puede evacuar. Siga las instrucciones de las autoridades. Más información en [URL]. Vigilancia hasta [TIME].",
                     "¡ALERTA DE INCENDIO! Se reporta un incendio en [LOCATION]. Se recomienda evacuar el área de inmediato y seguir las instrucciones de las autoridades. Manténgase informado a través de medios oficiales. Más detalles disponibles en [URL]. Hora del aviso: [TIME].",
                     "ALERTA DE INCENDIO: Se ha reportado un incendio en [LOCATION]. Se recomienda evacuar el área inmediatamente y seguir las instrucciones de las autoridades. El peligro estará activo hasta [TIME]. Evite el humo y manténgase informado en [URL].",
-                    "**Alerta de incendio en [LOCATION]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. El fuego representa un peligro grave. Manténgase informado a través de [URL] para actualizaciones hasta [TIME].**"
+                    "**Alerta de incendio en [LOCATION]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. El fuego representa un peligro grave. Manténgase informado a través de [URL] para actualizaciones hasta [TIME].**",
+                    "¡ALERTA DE INCENDIO en [LOCATION] hasta [TIME]! Hay un incendio activo en la zona. Evacúe inmediatamente si está cerca o siga las instrucciones de las autoridades. Cierre ventanas y puertas para evitar el ingreso de humo. Manténgase informado en [URL]. ¡Esta es una situación peligrosa!"
                 ],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    "\"¡Alerta de incendio! Se reportó un fuego cerca de [LOCATION] a las [TIME]. Manténganse alejados del área y sigan las instrucciones de las autoridades. Para más información, visite [URL]. ¡Seguridad primero!\"",
+                    "\"¡Alerta de incendio! Reporte de fuego activo a las [TIME] en [LOCATION]. Evacúe el área de inmediato y siga las indicaciones de emergencia. Para más información, visite [URL]. ¡Manténgase a salvo!\"",
+                    "\"¡Alerta de incendio! Hora: [TIME]. Ubicación: [LOCATION]. Manténgase alejado del área y siga las instrucciones de emergencia. Más información en [URL]. ¡Seguridad primero!\"",
+                    "¡Alerta de incendio! Reporte de fuego activo cerca de [LOCATION]. Hora del reporte: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL]. ¡Seguridad primero!",
+                    "\"Alerta de incendio: Reporte de fuego activo cerca de [LOCATION]. Hora del reporte: [TIME]. Evacúe el área y siga instrucciones de autoridades. Para más información visite [URL]. Manténgase seguro.\""
+                ],
                 "prompt_chain_of_translation.txt": [
                     "\"Alerta: Incendio reportado cerca de [LOCATION] a las [TIME]. Evacúe el área si está cerca. Siga las instrucciones de las autoridades. Más información en [URL]. Manténgase seguro.\"",
                     "**Alerta de incendio:** Se reporta un incendio cerca de [LOCATION] a las [TIME]. Se recomienda evitar el área y seguir las indicaciones de las autoridades. Para más información, visite [URL]. Manténgase atento a las actualizaciones.",
@@ -1752,10 +1765,34 @@
                     "**ALERTA IMPORTANTE:** Se emitió un aviso de hervir el agua. No beba ni use el agua del grifo sin hervirla primero. Hierva el agua durante al menos un minuto antes de consumirla, cocinar o cepillarse los dientes. Este aviso se debe a posibles contaminantes en el suministro de agua. Siga las instrucciones de las autoridades locales hasta nuevo aviso. Manténgase informado a través de fuentes oficiales.",
                     "**¡AVISO IMPORTANTE!**  Se emite un **aviso de hervir el agua** para [nombre del área afectada]. Por precaución, hierva el agua durante al menos **1 minuto** antes de consumirla, cocinar, lavar alimentos o cepillarse los dientes. Evite usar agua sin hervir para beber.  Este aviso estará vigente hasta nuevo aviso. Las autoridades trabajan para resolver la situación. Para más información, contacte a [número de contacto/website oficial].  ¡Manténgase seguro!  **Actualización:** [Fecha y hora de emisión]."
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    "\"AVISO DE EMERGENCIA: [TIME] en [LOCATION], se emite una orden de hervir el agua antes de consumirla debido a contaminación. Hierva el agua por 1 minuto antes de usarla para beber, cocinar o lavar alimentos. Más información en [URL]. Manténgase seguro.\"",
+                    "\"ALERTA: AVISO DE HERVIR EL AGUA en [LOCATION]. El agua debe hervirse antes de consumirla hasta nuevo aviso. Vigente desde [TIME]. Más información en [URL]. Manténgase seguro.\"",
+                    "\"AVISO URGENTE: Hierva el agua antes de consumirla debido a posible contaminación. Vigente desde [TIME] en [LOCATION]. Para más información visite [URL]. No beba agua sin hervirla. Comparta este mensaje.\"",
+                    "¡AVISO DE EMERGENCIA! Hierva el agua antes de consumirla debido a posible contaminación en [LOCATION]. Vigente a partir de [TIME]. Para más información, visite [URL]. ¡Manténgase seguro!",
+                    "\"AVISO DE EMERGENCIA: Se emitió un aviso para hervir el agua en [LOCATION] a partir de las [TIME]. Hierva el agua durante al menos un minuto antes de usar. Para más información, visite [URL]. Manténgase seguro.\""
+                ],
+                "prompt_one_shot.txt": [
+                    "ALERTA: Se emitió un aviso de hervirus el agua en [LOCATION] hasta [TIME]. Hierven el agua por al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Evite consumir agua sin hervir. Para más información visite [URL].",
+                    "¡AVISO IMPORTANTE! Se emite una orden de hervir el agua para [LOCATION] hasta [TIME]. No beba el agua sin hervirla primero por al menos 1 minuto. Esto incluye agua para cocinar, lavar frutas/verduras y cepillarse los dientes. Para más detalles, visite [URL]. Manténgase seguro.",
+                    "AVISO IMPORTANTE: Se emitió una orden de hervir el agua en [LOCATION] hasta [TIME]. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o lavar. Evite consumir agua sin hervir para prevenir enfermedades. Para más detalles, visite [URL].",
+                    "**ALERTA:** Se emite un aviso de hervir el agua para [LOCATION] hasta [TIME]. Evite consumir agua del grifo sin hervirla primero. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o lavar alimentos. Siga las instrucciones de las autoridades locales. Más información en [URL].",
+                    "**ALERTA:** Se emite un aviso de hervir agua para [LOCATION] hasta [TIME]. No beba agua sin hervirla primero. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Para más información, visite [URL]."
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "\"Alerta: Se emite un aviso para hervir el agua en [LOCATION] a partir de [TIME]. No beba el agua sin hervirla primero. Para más información, visite [URL]. Manténgase seguro.\"",
+                    "\"AVISO DE HERVIDA DE AGUA: Se reporta contaminación en el agua. Hervir el agua por al menos 1 minuto antes de usar. Vigente desde [TIME] en [LOCATION]. Más info: [URL]. Manténgase seguro.\"",
+                    "\"AVISO DE HERVIR AGUA: Por seguridad, hierva el agua antes de usarla para beber, cocinar o lavar. Válido desde [TIME] en [LOCATION]. Más info: [URL]. Siga las indicaciones hasta nuevo aviso.\"",
+                    "**¡Alerta importante!** Se emitió un aviso para hervir el agua en [LOCATION] a partir de [TIME]. Hierva el agua por al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Más información en [URL]. ¡Manténgase seguro!",
+                    "**¡Alerta importante!** Se emitió un aviso de hervir el agua en [LOCATION] a partir de [TIME]. Beba solo agua hervida o embotellada hasta nuevo aviso. Evite usar agua del grifo sin hervir. Más info: [URL]."
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "**Alerta:** Se emitió un aviso para hervir el agua en [LOCATION] a partir de [TIME]. Hierva el agua por al menos 1 minuto antes de usarla para beber, cocinar o lavar alimentos. Evite consumir agua del grifo sin hervir. Para más información, visite [URL].",
+                    "🚨 AVISO DE HERVIR AGUA: Se emitió una orden de hervir agua para [LOCATION]. Hierva todo el agua para beber, cocinar o lavar alimentos durante al menos 1 minuto hasta nuevo aviso. Vigente desde [TIME]. Más información: [URL]. Tome precauciones.",
+                    "\"AVISO DE AGUA PARA HERVIR: Se ha emitido una orden de hervir el agua en [LOCATION] hasta nuevo aviso. Herva el agua durante al menos 1 minuto antes de consumirla. Vigente a partir de [TIME]. Más información en [URL]. Manténgase seguro.\"",
+                    "**Alerta:** Se emitió un aviso de hervir agua en [LOCATION]. Hierva el agua durante al menos 1 minuto antes de beber, cocinar o lavar alimentos hasta nuevo aviso. Vigente desde [TIME]. Más información: [URL]. Tome precauciones.",
+                    "**Alerta importante:** [TIME]. Se emitió un aviso de hervir agua en [LOCATION]. Hierva todo el agua para beber, cocinar o cepillarse los dientes durante al menos 1 minuto. Evite consumir agua del grifo sin hervir. Más información en [URL]."
+                ],
                 "translate_boil_water_notice.txt": [
                     "] [SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, lave sus dientes o limpie su hogar con agua del grifo o filtrada a menos que la hierva. Hierva el agua a ebullición completa durante TRES MINUTOS. Deje enfriar el agua antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, utilice fórmula lista para consumir. Asegúrese de que sus mascotas no beban agua que no haya sido hervida. [URL]",
                     "[AGENCIA EMISORA]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] que estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, lave sus dientes o limpie su hogar con agua del grifo o agua filtrada sin hervirla primero. Hierva el agua a ebullición completa durante TRES MINUTOS. Deje enfriar el agua antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, utilice fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
@@ -1773,9 +1810,26 @@
                     "**Alerta de Emergencia:**  Se reporta una interrupción en el servicio de 911 en algunas áreas. Si necesita ayuda de emergencia, comuníquese con el número local de policía, bomberos o servicios médicos directamente. Repita: NO llame al 911 en este momento. Actualizaremos cuando el servicio se restablezca. Manténganse seguros.  **Autoridades Locales**"
                 ],
                 "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [
+                    "¡ALERTA! El servicio de 911 no está disponible en [LOCATION] hasta [TIME]. En caso de emergencia, llame directamente al número alternativo de la policía o servicios de emergencia locales. Evite hacer llamadas de prueba. Para más información, visite [URL].",
+                    "Alerta: Actualmente hay una interrupción en el servicio 911 en [LOCATION]. Hasta [TIME], llame al número de emergencia alternativo proporcionado por su localidad. Si es una emergencia médica o de seguridad, diríjase al hospital o estación de policía más cercana. Para más información, visite [URL].",
+                    "¡ALERTA! El servicio de 911 está fuera de servicio en [LOCATION] hasta aproximadamente [TIME]. En caso de emergencia, comuníquese con la línea local de emergencias o diríjase a la estación más cercana. Para más información, visite [URL]. ¡Actúe con precaución!",
+                    "¡ALERTA! Hay una interrupción en el servicio de 911 en [LOCATION]. Hasta [TIME], no se podrán realizar llamadas al número de emergencia. En caso de emergencia, diríjase al servicio más cercano o busque ayuda alternativa. Manténgase informado en [URL]. ¡Compártalo!",
+                    "¡AVISO DE EMERGENCIA! Hay una interrupción en el servicio 911 en [LOCATION] hasta [TIME]. Durante este tiempo, llame directamente al número de emergencia local o visite [URL] para más información. Por su seguridad, tenga un plan alternativo para pedir ayuda en caso de emergencia. [URL]"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "\"Alerta: Hay una interrupción en el servicio 911 en [LOCATION] hasta aproximadamente [TIME]. Llame al número local de emergencia si necesita ayuda. Para más información, visite [URL]. Manténgase seguro y comparta esta información.\"",
+                    "\"[LOCATION]: Se reporta una interrupción en el servicio de llamadas al 911. Para emergencias, diríjase a la comisaría más cercana o use [URL] para más información. [TIME].\"",
+                    "\"¡ALERTA! Hay una interrupción en el servicio 911 en [LOCATION]. Hora del reporte: [TIME]. Llame al número local de emergencias si necesita ayuda. Para más información, visite [URL]. Manténganse seguros y tomen precauciones.\"",
+                    "\"¡Alerta de emergencia! El servicio 911 no está disponible en [LOCATION] desde [TIME]. Llame al número local de policía o bomberos. Para más información, visite [URL]. Manténganse seguros y compartan este mensaje.\""
+                ],
+                "prompt_chain_of_translation.txt": [
+                    "⚠️ **Alerta:** Se reporta una interrupción en el servicio de 911 en [LOCATION]. Si necesita ayuda de emergencia, llame al número local de policía o bomberos directamente. Actualización a las [TIME]. Para más información, visite [URL]. Manténgase informado y tome precauciones.",
+                    "⚠️ AVISO DE EMERGENCIA: Hay una interrupción en el servicio 911 en [LOCATION]. Hasta [TIME], llame al número directo de la policía o bomberos. Para más información, visite [URL]. No llame al 911 hasta que se restablezca el servicio. Comparta este mensaje. ⚠️",
+                    "¡ALERTA! Hay una interrupción en el servicio de 911 en [LOCATION]. Si necesita asistencia de emergencia, llame al número local de policía o bomberos. Actualización a las [TIME]. Más información en [URL]. ¡Por favor comparta este mensaje!",
+                    "**Alerta:** Actualmente hay una interrupción en el servicio 911 en [LOCATION]. Si tiene una emergencia, comuníquese directamente con la policía o bomberos locales. Se espera que el servicio se restablezca para [TIME]. Para más información, visite [URL]. No llame al 911 a menos que sea absolutamente necesario.",
+                    "**Alerta de emergencia:** Actualmente hay una interrupción en el servicio 911 en [LOCATION]. Si necesita ayuda urgente, llame al número directo de la policía local. Se espera que el servicio se restablezca para [TIME]. Para más información, visite [URL]. No llame al 911 a menos que sea absolutamente necesario."
+                ],
                 "translate_911_outage.txt": [
                     "» [AGENCIA EMISORA]: Se ha emitido una ALERTA DE FALLA DEL 9-1-1 para [LOCALIZACIÓN]. En caso de emergencia, contacte directamente a la policía, bomberos, servicios médicos u otros servicios de emergencia utilizando su número telefónico local. Si marca el 9-1-1, es posible que no reciba ayuda. [URL]",
                     "> [AGENCIA EMISORA]: Se emite una ALERTA DE FALLA DEL 9-1-1 para [LOCATION]. En caso de emergencia, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia utilizando su número local. Si marca el 9-1-1, es posible que no reciba ayuda. [URL]",
