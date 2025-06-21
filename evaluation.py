@@ -102,15 +102,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         for service in prediction_data:
             for language, values in reference_data.items():
                 # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
-                if language == "chinese_traditional":
-                    tokenizer_string = "zh"
-                else:
-                    tokenizer_string = "flores101"
+                tokenizer_string = "zh" if language == "chinese_traditional" else "flores101"
 
-                #evaluation_tokenizer = tokenizer_lambda(language)
                 evaluation_tokenizer = (lambda tok: (lambda x: tok.tokenize(x)))(EvaluationTokenizer(language))
-                # tokenizer_object = EvaluationTokenizer(language)
-                # evaluation_tokenizer = tokenizer_object.tokenize
 
                 # bertscore takes a language code indicating the language being passed in
                 language_code = get_language_code(language) if language else None
@@ -149,21 +143,23 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             predictions = relevant_prompts
                             if predictions:
 
+                                # testing shows that formatting the predictions isn't necessary
                                 # google translate tranlates everything directly, even our standard variables. Let's parse out everything within square brackets to not penalize for that
                                 formatted_predictions = []
                                 for prediction in predictions:
                                     formatted_predictions.append(re.sub(r'\[.*?\]', '', prediction))
-                                #predictions = formatted_predictions
+                                predictions = formatted_predictions
 
                                 total_predictions = len(predictions)
                                 # apply the same treatment to the gold standards
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * len(predictions)
+                                gold_standards  = duplicated_gold_standards
 
                                 try:        
                                     id_response, result = calculate_metrics(
                                         rouge, bleu, bertscore, service, language, disaster,
                                         tokenizer_string, evaluation_tokenizer, language_code,
-                                        'N/A', predictions, duplicated_gold_standards)
+                                        'N/A', predictions, gold_standards)
                                     results.append(result)
                                 except Exception as e:
                                     print(f"[Error on line {id_response}] {e}")
