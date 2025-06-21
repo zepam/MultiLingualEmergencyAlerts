@@ -219,3 +219,4 @@ data/NRI_Table_Counties_Washington.csv
 compare_results.py
 results_42_method.csv
 results_42_no_method.csv
+results_formatted_predictions.csv
