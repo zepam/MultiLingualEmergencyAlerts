@@ -32,7 +32,6 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 from evaluate import load  # noqa: E402
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer  # noqa: E402
 from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh  # noqa: E402
-from rouge_score import rouge_scorer  # noqa: E402
 
 import pandas as pd  # noqa: E402
 import argparse  # noqa: E402
@@ -71,18 +70,23 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     results = []
 
     # Count total number of iterations for progress bar
+    # Count total number of evaluations we'll perform based on the prediction data
     total = 0
     for service in prediction_data:
-        for language, values in reference_data.items():
-            for disaster, gold_standard in values.items():
-                if (
-                    service in prediction_data
-                    and language in prediction_data[service]
-                    and disaster in prediction_data[service][language]
-                ):
-                    relevant_prompts = prediction_data[service][language][disaster]
-                    if isinstance(relevant_prompts, dict):
-                        total += len(relevant_prompts)
+        for language in prediction_data[service]:
+            for disaster in prediction_data[service][language]:
+                relevant_prompts = prediction_data[service][language][disaster]
+                if isinstance(relevant_prompts, dict):
+                    # For services like chatgpt, deepseek, gemini that use prompts
+                    for prompt, predictions in relevant_prompts.items():
+                        # Only count if predictions exist and are not empty
+                        if predictions and any(pred.strip() != "" for pred in predictions):
+                            total += 1
+                elif isinstance(relevant_prompts, list) and relevant_prompts:
+                    # For services like google translate that don't use prompts
+                    # Only count if any prediction is not empty
+                    if any(pred.strip() != "" for pred in relevant_prompts):
+                        total += 1
 
     """
     we want to collect fine-tuned results that tell us:
@@ -149,6 +153,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 formatted_predictions = []
                                 for prediction in predictions:
                                     formatted_predictions.append(re.sub(r'\[.*?\]', '', prediction))
+                                #predictions = formatted_predictions
 
                                 total_predictions = len(predictions)
                                 # apply the same treatment to the gold standards
@@ -208,6 +213,8 @@ def get_language_code(language):
             language_code = "ht"
         case "spanish":
             language_code = "es"
+        case _:
+            language_code = "en"  # default to English if no match found
     return language_code
 
 def main():
