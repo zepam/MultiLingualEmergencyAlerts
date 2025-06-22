@@ -1809,7 +1809,13 @@
                     "**¡ALERTA DE EMERGENCIA!**  Se ha reportado una interrupción en el sistema de llamadas al 911 en esta área. Si necesita ayuda de emergencia, contacte a los servicios locales directamente a través de números alternativos. Manténgase calmado y comparta esta información.  Números alternativos: [Inserte número de policía local/bomberos/emergencias].  Actualizaremos cuando el servicio se restablezca. ¡Por su seguridad, difunda este mensaje!  **¡Tome precauciones!**",
                     "**Alerta de Emergencia:**  Se reporta una interrupción en el servicio de 911 en algunas áreas. Si necesita ayuda de emergencia, comuníquese con el número local de policía, bomberos o servicios médicos directamente. Repita: NO llame al 911 en este momento. Actualizaremos cuando el servicio se restablezca. Manténganse seguros.  **Autoridades Locales**"
                 ],
-                "prompt_persona.txt": [],
+                "prompt_persona.txt": [
+                    "\"Alerta: Hay una interrupción en el servicio 911 en [LOCATION]. Hasta [TIME], no se pueden hacer llamadas al 911. En caso de emergencia, llame al número local de policía o bomberos. Más información en [URL]. Manténganse seguros.\"",
+                    "\"ALERTA: Hay una interrupción en el servicio 911 en [LOCATION]. Hora del informe: [TIME]. Llame al número directo de la policía o bomberos si tiene una emergencia. Para más información visite [URL]. Manténgase informado y tome precauciones.\"",
+                    "\"¡ALERTA! Hay una interrupción en el servicio 911 en [LOCATION]. No se pueden realizar llamadas al 911 en este momento. En caso de emergencia, diríjase a la estación de policía o incendios más cercana. Actualización: [TIME]. Más información en [URL]. Comparta este mensaje.\"",
+                    "**ALERTA:** Hay una interrupción en el servicio 911 en [LOCATION]. Hora del reporte: [TIME]. Si tiene una emergencia, llame al número local de policía o bomberos directamente. Para más información, visite [URL]. Manténgase seguro.",
+                    "\"ALERTA: Hay una interrupción en el servicio 911 en [LOCATION]. Si necesita ayuda de emergencia, llame al número local de policía o bomberos directamente hasta nuevo aviso. Hora del informe: [TIME]. Para más información visite [URL]. Manténgase seguro.\""
+                ],
                 "prompt_one_shot.txt": [
                     "¡ALERTA! El servicio de 911 no está disponible en [LOCATION] hasta [TIME]. En caso de emergencia, llame directamente al número alternativo de la policía o servicios de emergencia locales. Evite hacer llamadas de prueba. Para más información, visite [URL].",
                     "Alerta: Actualmente hay una interrupción en el servicio 911 en [LOCATION]. Hasta [TIME], llame al número de emergencia alternativo proporcionado por su localidad. Si es una emergencia médica o de seguridad, diríjase al hospital o estación de policía más cercana. Para más información, visite [URL].",
@@ -1821,7 +1827,8 @@
                     "\"Alerta: Hay una interrupción en el servicio 911 en [LOCATION] hasta aproximadamente [TIME]. Llame al número local de emergencia si necesita ayuda. Para más información, visite [URL]. Manténgase seguro y comparta esta información.\"",
                     "\"[LOCATION]: Se reporta una interrupción en el servicio de llamadas al 911. Para emergencias, diríjase a la comisaría más cercana o use [URL] para más información. [TIME].\"",
                     "\"¡ALERTA! Hay una interrupción en el servicio 911 en [LOCATION]. Hora del reporte: [TIME]. Llame al número local de emergencias si necesita ayuda. Para más información, visite [URL]. Manténganse seguros y tomen precauciones.\"",
-                    "\"¡Alerta de emergencia! El servicio 911 no está disponible en [LOCATION] desde [TIME]. Llame al número local de policía o bomberos. Para más información, visite [URL]. Manténganse seguros y compartan este mensaje.\""
+                    "\"¡Alerta de emergencia! El servicio 911 no está disponible en [LOCATION] desde [TIME]. Llame al número local de policía o bomberos. Para más información, visite [URL]. Manténganse seguros y compartan este mensaje.\"",
+                    "\"Alerta: Hay una interrupción en el servicio 911 en [LOCATION]. Si necesita ayuda de emergencia, llame al número alternativo proporcionado por las autoridades locales. Actualizado a las [TIME]. Para más información, visite [URL]. Por favor, comparta este mensaje.\""
                 ],
                 "prompt_chain_of_translation.txt": [
                     "⚠️ **Alerta:** Se reporta una interrupción en el servicio de 911 en [LOCATION]. Si necesita ayuda de emergencia, llame al número local de policía o bomberos directamente. Actualización a las [TIME]. Para más información, visite [URL]. Manténgase informado y tome precauciones.",
@@ -1950,10 +1957,34 @@
                     "**!ﻥﺎﻀﻴﻓ ﻦﻣ ﺮﻳﺬﺤﺗ :ﻞﺟﺎﻋ ﺭﺍﺬﻧﺇ**.ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﻚﺘﻣﻼﺳ ﻰﻠﻋ ﻆﻓﺎﺣ .ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ [ﻲﻠﺤﻤﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺭ ﻞﺧﺩﺃ] ﻢﻗﺮﻟﺍ ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻞﺼﺗﺍ .ﺔﻗﺭﺎﻐﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻭﺃ ﺭﻮﺴﺠﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .ﺔﻨﻣﺁﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﻢﻬﻟﺯﺎﻨﻣ ﺀﻼﺧﺈﺑ ﺓﺭﺮﻀﺘﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﻥﺎﻜﺴﻟﺍ ﻊﻴﻤﺟ ﺢﺼﻨﻳ ،ﺮﻴﻄﺧ ﻞﻜﺸﺑ ﻩﺎﻴﻤﻟﺍ ﺏﻮﺴﻨﻣ ﻉﺎﻔﺗﺭﻻ ﺍﺮﻈﻧ",
                     "⚠️ ﺗﻨﺒﻴﻪ ﻋﺎﺟﻞ: ﺗﺤﺬﻳﺮ ﻣﻦ ﻓﻴﻀﺎﻧﺎﺕ!  ﻧﻨﻮﻩ ﺑﺄﻥ ﺍﻟﻤﻨﻄﻘﺔ ﻣﻌﺮﺿﺔ ﻟﻔﻴﻀﺎﻧﺎﺕ ﺷﺪﻳﺪﺓ ﺑﺴﺒﺐ ﺍﻷﻣﻄﺎﺭ ﺍﻟﻐﺰﻳﺮﺓ. ﻳﺮﺟﻰ ﺍﺗﺨﺎﺫ ﺍﻻﺣﺘﻴﺎﻃﺎﺕ ﺍﻟﻼﺯﻣﺔ، ﻭﺍﻟﺒﻘﺎﺀ ﻓﻲ ﺃﻣﺎﻛﻦ ﻣﺮﺗﻔﻌﺔ، ﻭﺗﺠﻨﺐ ﺍﻟﻘﻴﺎﺩﺓ ﻓﻲ ﺍﻟﻤﻨﺎﻃﻖ ﺍﻟﻤﺘﻀﺮﺭﺓ.  ﻟﻼﻣﺘﺜﺎﻝ ﻟﻠﺘﻌﻠﻴﻤﺎﺕ ﺍﻷﻣﻨﻴﺔ، ﻳﺮﺟﻰ ﻣﺘﺎﺑﻌﺔ ﺍﻟﺘﺤﺪﻳﺜﺎﺕ ﻣﻦ ﺍﻟﺠﻬﺎﺕ ﺍﻟﻤﺨﺘﺼﺔ.  ⚠️ ﻟﻠﻄﻮﺍﺭﺉ، ﺍﺗﺼﻞ ﺑـ [ﺭﻗﻢ ﺍﻟﺪﻓﺎﻉ ﺍﻟﻤﺪﻧﻲ ﺃﻭ ﺍﻟﻄﻮﺍﺭﺉ ﺍﻟﻤﺤﻠﻲ].  ﺣﺎﻓﻈﻮﺍ ﻋﻠﻰ ﺳﻼﻣﺘﻜﻢ!"
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺮﺜﻛﺃ ﻞﻴﺻﺎﻔﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﺀﺎﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺍﻮﻃ ﺮﻳﺬﺤﺗ!",
+                    ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻥﺎﻀﻴﻔﻟﺍ ﻩﺎﻴﻣ ﻲﻓ ﺮﻴﺴﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﻲﻓ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    ".[URL] ﺭﺯ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    "\".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﺮﻴﺴﻟﺍ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\""
+                ],
+                "prompt_one_shot.txt": [
+                    ".[URL] ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺔﻛﺮﺤﺘﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ 상황 ﻩﺬﻫ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    "[URL] ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻳﺭﻮﻔﻟﺍ ﺔﻳﺎﻗﻮﻟﺍ ﺕﺍﺀﺍﺮﺟﺇ ﺬﺨﺗﺍ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﺮﻴﺴﻟﺍ ﺐﻨﺠﺗ .ﻦﻣﺁﻭ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻲﻓ ﻖﺑﺍ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺔﻟﺎﺣ ﻩﺬﻫ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺩﻮﺟﻮﺑ ﻪﻴﺒﻨﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    ".[URL] ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳ ﻊﺿﻭ ﺍﺬﻫ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﻲﺸﻤﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻞﻘﺘﻧﺍ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    "[URL] :ﻂﺑﺍﺮﻟﺍ ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻞﻘﺘﻧﺍ ،ﺮﻄﺨﻠﻟ ﺔﺿﺮﻌﻣ ﺔﻘﻄﻨﻣ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﻦﻣﺁﻭ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻲﻓ ﻖﺑﺍ .ﺔﻋﺮﺴﺑ ﻉﺎﻔﺗﺭﻻﺍ ﻲﻓ ﺓﺬﺧﺁ ﻩﺎﻴﻤﻟﺍ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    "[URL] :ﻲﻟﺎﺘﻟﺍ ﻂﺑﺍﺮﻟﺍ ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺭﻮﺒﻋ ﻝﻭﺎﺤﺗ ﻻﻭ ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺪﻳﺪﺷ ﺮﻄﺧ ﺪﺟﻮﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .ﺕﺍﺩﺎﺷﺭﻹﺍﻭ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ [URL] ﺍﻮﻌﺑﺎﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻝﻮﻠﺤﺑ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    "!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻲﻓ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    ".[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[TIME] :ﻊﻗﻮﺘﻤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻣﻼﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻳﺭﻮﻓ ﺕﺍﺀﺍﺮﺟﺇ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    ".[URL] ﺍﻭﺭﻭﺯ ،ﺕﺍﺩﺎﺷﺭﻹﺍﻭ ﻞﻴﺻﺎﻔﺘﻠﻟ .ﺔﻀﻔﺨﻨﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻲﻓ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    ".[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﻴﻓﺎﺿﻹﺍ ﺕﺎﻣﻮﻠﻌﻤﻟﺍﻭ ﻞﻴﺻﺎﻔﺘﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻱﺭﺎﺠﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺔﻳﺍﺪﺑ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺓﺮﺛﺄﺘﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﻱﺭﺎﺠﻣ ﻦﻣ ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻦﻛﺎﻣﺃ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﻥﺎﻜﺴﻟﺍ ﺢﺼﻨﻳ .[TIME] ﻲﻓ ﻪﻨﻋ ﻍﻼﺑﻹﺍ ﻢﺗ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﺋﺭﺎﻄﻟﺍ ﺕﺎﺑﺎﺠﺘﺳﻻﺍﻭ ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﻖﻃﺎﻨﻣ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﺏﻮﺴﻨﻣ ﻉﺎﻔﺗﺭﺍ ﻲﻓ ﺐﺒﺴﺘﻳ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ",
+                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻣﻼﺴﻠﻟ ﺔﻳﺭﻮﻓ ﺕﺍﺀﺍﺮﺟﺇ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺮﻳﺬﺤﺗ ️⚠",
+                    ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺍﺩﺎﺷﺭﺇ ﻉﺎﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺓﺮﻴﻄﺧ ﺕﺎﻧﺎﻀﻴﻓ :ﺮﻳﺬﺤﺗ",
+                    ".ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﺙﺪﺤﻟﺍ ﺖﻗﻭ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺎﻴﻟﺎﺣ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ ️⚠"
+                ],
                 "translate_flood.txt": [
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﻷ ﺎﻌﺿﺎﺧ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺍﺪﻳﺪﻬﺗ ﻞﻜﺸﻳﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ FLASH FLOOD EMERGENCY ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ ﻥﻼﻋﺇ ﻢﺗ :[SENDING AGENCY ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﻥﺎﻀﻴﻔﻠﻟ ﺔﺿﺮﻌﻣ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﻦﻣ ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ :[AGENCY]",
@@ -1970,10 +2001,31 @@
                     "**ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ**.ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﺍﻮﻌﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﺍﻮﺧﻮﺗ .ﺡﺎﻳﺮﻟﺍ ﻞﻌﻔﺑ ﺮﻴﻄﺗ ﺪﻗ ﻲﺘﻟﺍ ﺔﻴﺟﺭﺎﺨﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻴﻣﺄﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﺩﻮﺟﻮﺑ ﻩﻮﻨﻧ",
                     ".ﺔﺟﺎﺤﻟﺍ ﺖﻋﺩ ﺍﺫﺇ ﺉﺭﺍﻮﻄﻟﺎﺑ ﺍﻮﻠﺼﺗﺍ .ﻡﺎﺴﺟﻷﺍ ﺮﻳﺎﻄﺗ ﻭﺃ ﻁﻮﻘﺴﻟﺍ ﻦﻣ ﺍﻭﺭﺬﺣﺍ .ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ،ﺔﺿﺎﻔﻀﻔﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .ﺔﻳﻮﻗ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ"
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    "\".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﻴﻨﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\"",
+                    "[URL] :ﺮﺜﻛﺃ ﻞﻴﺻﺎﻔﺗ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ .ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                ],
+                "prompt_one_shot.txt": [
+                    "[URL] :ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍﻭ ﺭﺎﺠﺷﻷﺍ ﻦﻣ ﺱﺮﺘﺣﺍ .ﺍﺭﻮﻓ ﻯﻭﺄﻣ ﻦﻋ ﺚﺤﺑﺍ ،ﺓﺭﺎﻴﺴﻟﺍ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﺏﺍﻮﺑﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍﻭ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺍﺮﻄﺧ ﻞﻜﺸﺗﻭ ﺔﻌﺳﺍﻭ ﺭﺍﺮﺿﺃ ﻲﻓ ﺐﺒﺴﺘﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺓﺮﻴﻄﺧ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    "[URL] .ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ ﺭﺎﺒﺧﻷﺍ ﺭﺩﺎﺼﻣ ﻦﻣ ﻖﻘﺤﺗ .ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻢﺘﺣﺍﻭ ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺓﺪﻳﺪﺷ ﺔﻴﺗﺎﻋ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    ".[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺏﺍﻮﺑﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﺉﺭﺍﻮﻄﻟﺍ ﺕﻻﺎﺣ ﻲﻓ ﻻﺇ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺡﺎﻳﺮﻟﺍ ﺎﻬﻠﻤﺤﺗ ﺪﻗ ﻲﺘﻟﺍ ﺔﻴﺟﺭﺎﺨﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﻝﺰﻨﻤﻟﺍ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺔﻔﻴﻨﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    "[URL] :ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻦﻣﺁ ﻰﻨﺒﻤﺑ ﻡﺰﺘﻟﺍ ،ﻝﺰﻨﻤﻟﺍ ﺝﺭﺎﺧ ﺪﺟﺍﻮﺘﻟﺍ ﺔﻟﺎﺣ ﻲﻓ .ﺔﻓﻮﺸﻜﻤﻟﺍ ﻦﻛﺎﻣﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﺎﻬﻘﻴﻠﺤﺘﻟ ﺎﺒﺴﺤﺗ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺓﺮﻴﻄﺧﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻲﻓ ﻢﺘﺣﺍﻭ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺍﺮﻄﺧ ﻞﻜﺸﺗ ﺡﺎﻳﺮﻟﺍ ﻩﺬﻫ .ﺡﺎﻳﺮﻠﻟ ﺔﺿﺮﻌﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺓﺮﻴﻄﺧ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    "ﺲﻘﻃ_ﺮﻳﺬﺤﺗ# .[URL] ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺫﺎﺨﺗﺍﻭ ﺔﺣﻮﺘﻔﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺮﻳﺬﺤﺗ ️⚠",
+                    ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ ﻰﻠﻋ ﺹﺮﺣﺍﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺮﻴﻄﺧﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ ️⚠",
+                    ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    "\"ﻻﻭﺃ_ﺔﻣﻼﺴﻟﺍ# .[URL] ﺍﻭﺭﻭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﻒﺻﺍﻮﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\"",
+                    ".[URL] ﻂﺑﺍﺮﻟﺍ ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻝﺯﺎﻨﻤﻟﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﻡﺪﻌﺑ ﺢﺼﻨﻳ .[TIME] ﻝﻼﺧ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                ],
+                "prompt_chain_of_translation.txt": [
+                    ".[URL] ﺭﺯ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗ ﻰﻠﻋ ﺹﺮﺣﺍﻭ ﻱﺭﻭﺮﻀﻟﺍ ﺮﻴﻏ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﻒﺻﺍﻮﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﺭﺬﺣﺍﻭ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    ".ﺕﺎﺜﻳﺪﺤﺘﻠﻟ [URL] ﻊﺑﺎﺗ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﺭﺬﺣﺍﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ ️⚠",
+                    ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    "[URL] :ﺪﻳﺰﻤﻠﻟ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﻡﺎﺴﺟﻷﺍﻭ ﺭﺎﺠﺷﻷﺍ ﻦﻣ ﺭﺬﺤﻟﺍﻭ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :[ﺮﻳﺬﺤﺗ]"
+                ],
                 "translate_extreme_wind.txt": [
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺎﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺭﻮﻔﻟﺍ ﻰﻠﻋ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻟﺍ ﺮﻄﺧ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[AGENCY NAME]",
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻲﻤﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺡﺎﻳﺮﻟ ﺮﺷﺎﺒﻤﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺍﺪﺟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[JS:1] [SENDING AGENCY]",
