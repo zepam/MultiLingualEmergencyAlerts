@@ -61,21 +61,7 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
-def string_to_bool(value):
-    """
-    Convert a string representation of truth to True or False.
-    Accepts: 'yes', 'true', 'no', 'false' (case insensitive).
-    """
-    if isinstance(value, bool):
-        return value
-    value_str = str(value).strip().lower()
-    if value_str in {'yes', 'true'}:
-        return True
-    elif value_str in {'no', 'false'}:
-        return False
-    else:
-        raise ValueError(f"Invalid boolean value: {value}")
-
+# TODO: --skip commands aren't parsing correctly, they are always True if there is any value passed
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output_file", type=str, default="./output_file.json",
@@ -83,16 +69,16 @@ def parse_args():
     parser.add_argument("--total_responses", type=int, default=5,
                         help="The number of responses to collect per service")
     
-    parser.add_argument("--preserve_output", type=string_to_bool, default=False,
+    parser.add_argument("--preserve_output", type=bool, default=False,
                         help="If a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits")
     
-    parser.add_argument("--skip_gemini", type=string_to_bool, default=False,
+    parser.add_argument("--skip_gemini", type=bool, default=False,
                         help="Forcibly skip any calls to Gemini")
-    parser.add_argument("--skip_chatgpt", type=string_to_bool, default=False,
+    parser.add_argument("--skip_chatgpt", type=bool, default=False,
                     help="Forcibly skip any calls to ChatGPT")
-    parser.add_argument("--skip_deepseek", type=string_to_bool, default=False,
+    parser.add_argument("--skip_deepseek", type=bool, default=False,
                     help="Forcibly skip any calls to DeepSeek")
-    parser.add_argument("--skip_google_translate", type=string_to_bool, default=False,
+    parser.add_argument("--skip_google_translate", type=bool, default=False,
                     help="Forcibly skip any calls to Google Translate")
   
     return parser.parse_args()
