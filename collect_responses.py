@@ -103,6 +103,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     while not skip_bool and (len(existing_response_list) < total_responses):
         logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: {service_name}")
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
+        #TODO append a datetime object to the output JSON for each response
         if output is None:
             skip_bool = True
         else:
@@ -142,8 +143,10 @@ if __name__ == "__main__":
         try:
             with open(args.output_file, "r", encoding="utf-8") as file:
                 output_json = json.load(file)
+            logger.info(f"Preserved existing output from {args.output_file}")
         except FileNotFoundError:
-            print(f"Error: File not found: {args.output_file}")
+            logger.info(f"Output file {args.output_file} not found, generating new schema")
+            output_json = generate_output_schema()
     else:
         output_json = generate_output_schema()
 
