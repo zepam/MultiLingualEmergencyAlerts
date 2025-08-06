@@ -26,6 +26,8 @@ from bidi.algorithm import get_display
 from dotenv import load_dotenv
 from helpers import generate_output_schema, chat_with_service
 
+from datetime import date
+
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
 ITERATIVE_PROMPT_FILES = [
   "prompts/prompt_simple.txt",
@@ -94,23 +96,41 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     else:
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
+    # Check if we already have a response for today
+    today = date.today().isoformat()
+    today_response_exists = False
+    
+    for response in existing_response_list:
+        if isinstance(response, dict) and response.get('date') == today:
+            today_response_exists = True
+            break
+    
     """
-    While
-        1) total_responses hasn't yet been reached
-        2) the service should be run (not forcibly skipped by commandline argument or not skipped by a sequence of invalid API calls)
-    keep querying service_name for the language - prompt - disaster combo
+    Only get a new response if:
+    1) We don't have one for today yet
+    2) the service should be run (not forcibly skipped by commandline argument)
     """
-    while not skip_bool and (len(existing_response_list) < total_responses):
+    if not skip_bool and not today_response_exists:
         logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: {service_name}")
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
-        #TODO append a datetime object to the output JSON for each response
+        
         if output is None:
             skip_bool = True
         else:
             if language_name == "arabic":
                 # make sure Arabic output is not broken and is left to right
                 output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
+                
+            # Store response with today's date
+            response_with_date = {
+                "text": output,
+                "date": today
+            }
+            #TODO use this to add date to response
+            # existing_response_list.append(response_with_date)
             existing_response_list.append(output)
+    elif today_response_exists:
+        logger.info(f"Skipping {language_name}: {disaster_name}: {prompt_name}: {service_name} - already have response for today")
     
     return skip_bool
 
