@@ -22,6 +22,7 @@ import logging
 import argparse
 import arabic_reshaper
 from bidi.algorithm import get_display
+import datetime
 
 from dotenv import load_dotenv
 from helpers import generate_output_schema, chat_with_service
