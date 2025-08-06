@@ -1631,42 +1631,66 @@
                     "**Alerta de Inundación:**  ¡Atención! Se ha detectado una inundación en su área. Busque refugio en terreno elevado de inmediato. Evite caminar o conducir por zonas inundadas. Siga las indicaciones de las autoridades locales. Manténgase informado a través de emisoras oficiales. ¡Su seguridad es primero!",
                     "**¡ALERTA DE INUNDACIÓN!**  Se reportan inundaciones en la zona. Busque refugio en un lugar alto de inmediato. Evite áreas bajas y ríos. Siga las instrucciones de las autoridades. Manténgase informado a través de canales oficiales. ¡Priorice su seguridad!  **#Emergencia #Inundación**",
                     "**¡ALERTA DE INUNDACIÓN!**  Se reportan inundaciones severas en la zona. Busque refugio en áreas altas de inmediato. Evite cruzar calles o zonas inundadas. Manténgase informado por medios oficiales y siga las instrucciones de las autoridades. ¡Su seguridad es primero!  **ACTÚE RÁPIDO. NO ESPERE.**",
-                    "**¡ALERTA DE INUNDACIÓN!**  Se reportan inundaciones graves en la zona. Busca refugio en un lugar alto y seguro de inmediato. Evita caminar o conducir por aguas en movimiento. Sigue las indicaciones de las autoridades locales.  **¡Mantente informado y actúa con precaución!**"
+                    "**¡ALERTA DE INUNDACIÓN!**  Se reportan inundaciones graves en la zona. Busca refugio en un lugar alto y seguro de inmediato. Evita caminar o conducir por aguas en movimiento. Sigue las indicaciones de las autoridades locales.  **¡Mantente informado y actúa con precaución!**",
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe esperan inundaciones graves en la zona debido a lluvias intensas. Busque refugio en un lugar elevado de inmediato. Evite cruzar calles inundadas y manténgase alejado de ríos y arroyos. Siga las instrucciones de las autoridades. ¡Su seguridad es lo primero!  \n\n**Actualizaciones oficiales:** [Enlace o número de emergencia local].  \n\n¡ACTÚE CON PRECAUCIÓN!",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_persona.txt": [
                     "\"ALERTA DE INUNDACIÓN: Se esperan inundaciones severas en [LOCATION] a partir de [TIME]. Evacue o busque terreno elevado de inmediato. Manténgase alejado de áreas inundadas. Más información en [URL]. #Seguridad\"",
                     "**¡ALERTA DE INUNDACIÓN!**  \nSe esperan inundaciones graves en [LOCATION]. Evacue inmediatamente si está en zonas bajas. Busque terreno más alto. Peligro inminente hasta [TIME]. Manténgase informado en [URL]. No ignore esta advertencia. ¡Su seguridad es primero!",
                     "ALERTA: Inundación en [LOCATION]. Evacue inmediatamente si está en zonas bajas. Nivel de agua peligroso. Hora del aviso: [TIME]. Más información en [URL]. Manténgase a salvo. No cruce áreas inundadas.",
                     "Alerta de emergencia: Inundación en [LOCATION]. Se esperan inundaciones severas a partir de [TIME]. Evacúe a zonas altas de inmediato. Manténgase alejado de ríos y áreas bajas. Para más información, visite [URL]. No ignore esta alerta. #Seguridad",
-                    "\"ALERTA: Inundación severa en [LOCATION]. Evacúe inmediatamente si está en áreas bajas. Peligro de crecidas rápidas. [TIME]. Manténgase alejado de arroyos y ríos. Más info: [URL]. #AlertaFCC\""
+                    "\"ALERTA: Inundación severa en [LOCATION]. Evacúe inmediatamente si está en áreas bajas. Peligro de crecidas rápidas. [TIME]. Manténgase alejado de arroyos y ríos. Más info: [URL]. #AlertaFCC\"",
+                    {
+                        "text": "\"ALERTA: Inundación severa en [LOCATION]. Evacúe inmediatamente si está en zonas bajas. Nivel del agua aumenta rápidamente. [TIME]. Manténgase alejado de ríos y áreas inundadas. Busque terreno alto. Más info: [URL]. No ignore esta alerta.\"",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     "**¡ALERTA DE INUNDACIÓN!** Se esperan inundaciones graves en [LOCATION]. Evite áreas bajas y cauces de ríos. Busque terreno elevado de inmediato. La situación es peligrosa para la vida. Siga las instrucciones de las autoridades locales. Más información en [URL]. Actualizado: [TIME].",
                     "¡ALERTA DE INUNDACIÓN para [LOCATION] hasta [TIME]! Hay inundaciones severas en el área, lo que representa un peligro para la vida. Evacue inmediatamente a terreno más alto si está en zonas bajas. No intente caminar ni conducir a través de aguas en movimiento. Siga las instrucciones de las autoridades locales. Para más información, visite [URL].",
                     "¡ALERTA DE INUNDACIÓN! Se espera una inundación grave en [LOCATION] hasta [TIME]. El agua está subiendo rápidamente. Evacúe inmediatamente si está en zonas bajas o cerca de ríos. No conduzca por carreteras inundadas. Busque terreno más alto y siga las instrucciones de las autoridades. Para más información, visite [URL]. ¡Esta es una situación peligrosa!",
                     "¡ALERTA DE INUNDACIÓN! Se ha reportado una inundación en [LOCATION]. Se esperan condiciones peligrosas hasta [TIME]. Evite áreas bajas y no intente cruzar aguas en movimiento. Busque terreno más alto de inmediato. Manténgase informado en [URL]. ¡Actúe con precaución!",
-                    "¡ALERTA DE INUNDACIÓN! Peligro de inundación en [LOCATION]. Busque terreno alto de inmediato. Evite áreas bajas y no intente cruzar agua corriente. La situación es peligrosa. Vigile los medios locales para actualizaciones. Esta alerta es válida hasta [TIME]. Más información: [URL]"
+                    "¡ALERTA DE INUNDACIÓN! Peligro de inundación en [LOCATION]. Busque terreno alto de inmediato. Evite áreas bajas y no intente cruzar agua corriente. La situación es peligrosa. Vigile los medios locales para actualizaciones. Esta alerta es válida hasta [TIME]. Más información: [URL]",
+                    {
+                        "text": "Alerta de INUNDACIÓN en [LOCATION] hasta [TIME]. Inundaciones repentinas en el área. Esta es una situación peligrosa. Evacue a terrenos más altos de inmediato. No intente caminar o conducir a través de aguas en movimiento. Manténgase alejado de ríos y arroyos. Consulte los medios locales. [URL]",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "\"[TIME]: Alerta de inundación en [LOCATION]. Evacúe inmediatamente si está en zonas bajas. Evite vías inundadas. Más info en [URL]. Manténgase seguro.\"",
                     "¡Alerta de inundación! Se esperan fuertes lluvias en [LOCATION] hasta las [TIME]. Evita zonas bajas y busca refugio en áreas elevadas. Más información en [URL]. Mantente seguro y sigue las indicaciones oficiales.",
                     "¡Alerta de inundación! Se esperan fuertes lluvias en [LOCATION] hasta [TIME]. Evite zonas bajas y ríos. Manténgase informado en [URL]. ¡Seguridad primero!",
                     "¡ALERTA DE INUNDACIÓN! Se esperan fuertes lluvias en [LOCATION] hasta [TIME]. Evite zonas bajas y ríos. Manténgase informado en [URL]. ¡Su seguridad es importante!",
-                    "¡Alerta de inundación! Se esperan fuertes lluvias en [LOCATION] hasta las [TIME]. Evite áreas bajas y ríos. Manténgase informado en [URL]. ¡Seguridad primero!"
+                    "¡Alerta de inundación! Se esperan fuertes lluvias en [LOCATION] hasta las [TIME]. Evite áreas bajas y ríos. Manténgase informado en [URL]. ¡Seguridad primero!",
+                    {
+                        "text": "**¡Alerta de inundación!** Se esperan fuertes lluvias en [LOCATION] hasta [TIME]. Evite zonas bajas y ríos. Manténgase informado en [URL]. Tome precauciones y siga las indicaciones locales. #Seguridad",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     "¡ALERTA DE INUNDACIÓN! Se reportan inundaciones en [LOCATION]. Evacúe inmediatamente si está en zonas bajas. Evite cruzar aguas en movimiento. Busque terreno elevado. Última actualización: [TIME]. Para más información, visite [URL]. Manténgase a salvo.",
                     "\"¡ALERTA DE INUNDACIÓN! Se reportan inundaciones en [LOCATION]. Evite las zonas bajas y busque terreno elevado de inmediato. Actualizado a las [TIME]. Para más información visite [URL]. Manténgase seguro y siga las indicaciones de las autoridades.\"",
                     "¡ALERTA DE INUNDACIÓN! Se reportan inundaciones en [LOCATION]. Evacue inmediatamente si está en zonas bajas. Evite cruzar calles inundadas. Manténgase informado en [URL]. Última actualización: [TIME]. ¡Actúe con precaución!",
                     "\"Alerta de inundación: [TIME] en [LOCATION]. Evacúe áreas bajas de inmediato. Evite caminar o conducir por agua estancada. Busque terreno elevado. Más información en [URL]. Manténgase seguro.\"",
-                    "**Alerta de inundación:** Se reportan inundaciones en [LOCATION]. Evite áreas bajas y siga las instrucciones de autoridades. Hora del reporte: [TIME]. Más información en [URL]. Manténgase seguro."
+                    "**Alerta de inundación:** Se reportan inundaciones en [LOCATION]. Evite áreas bajas y siga las instrucciones de autoridades. Hora del reporte: [TIME]. Más información en [URL]. Manténgase seguro.",
+                    {
+                        "text": "**Alerta de inundación:** Se ha reportado una inundación en [LOCATION]. Evacúe inmediatamente si está en zonas bajas. Evite cruzar aguas en movimiento. Más información en [URL]. Actualizado a las [TIME].",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "translate_flood.txt": [
                     "[AGENCIA EMISORA]: Se ha declarado una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
                     "[AGENCIA EMISORA]: Se ha declarado una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intentes viajar a menos que estés huyendo de un área que pueda inundarse o estés bajo una orden de evacuación. [URL]",
                     "[AGENCIA EMISORA]: Se ha emitido una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta las [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
                     "[AGENCIA EMISORA]: Se ha emitido una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
-                    "[AGENCIA EMISORA]: Hay una EMERGENCIA POR INUNDACIÓN REPENTINA en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]"
+                    "[AGENCIA EMISORA]: Hay una EMERGENCIA POR INUNDACIÓN REPENTINA en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: Se ha emitido una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta las [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
+                        "date": "2025-08-06"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -1675,42 +1699,66 @@
                     "**ALERTA DE VIENTOS EXTREMOS:** Se pronostican vientos peligrosos con ráfagas superiores a [XX] km/h en [área afectada]. Evite actividades al aire libre, asegure objetos sueltos y manténgase alejado de árboles y estructuras débiles. Siga las indicaciones de las autoridades. #SeguridadPrimero",
                     "&quot;[ALERTA] Vientos extremos en la zona. Manténgase en interiores, alejado de ventanas y objetos que puedan volar. Evite viajar. Siga las indicaciones de las autoridades locales.&quot;",
                     "**ALERTA DE VIENTOS EXTREMOS:** Se pronostican vientos peligrosamente fuertes en su área. Manténgase alejado de ventanas y evite actividades al aire libre. Objetos sueltos pueden volar y causar lesiones. Asegure pertenencias y busque refugio en un lugar seguro. Siga las indicaciones de las autoridades locales. ¡Manténgase a salvo!",
-                    "**Alerta de Vientos Extremos:**  Se pronostican vientos peligrosamente fuertes con ráfagas superiores a 80 km/h en las próximas horas. Permanezca en interiores, asegure objetos sueltos y evite viajar. Manténgase informado y siga las indicaciones de las autoridades. ¡Su seguridad es primordial!"
+                    "**Alerta de Vientos Extremos:**  Se pronostican vientos peligrosamente fuertes con ráfagas superiores a 80 km/h en las próximas horas. Permanezca en interiores, asegure objetos sueltos y evite viajar. Manténgase informado y siga las indicaciones de las autoridades. ¡Su seguridad es primordial!",
+                    {
+                        "text": "**¡Alerta Meteorológica!**  \n\nVientos extremos esperados en las próximas horas. Se pronostican ráfagas de hasta [X] km/h que pueden causar daños, caída de árboles y cortes de energía. Evite salir si no es necesario, asegure objetos sueltos y manténgase alejado de ventanas.  \n\nActualizaremos información. ¡Manténgase a salvo!  \n\n🔴 #AlertaClimática",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_persona.txt": [
                     "\"ALERTA: Vientos extremos esperados en [LOCATION] hasta [TIME]. Manténgase en interiores, asegure objetos sueltos y evite viajar. Más información en [URL]. #Seguridad\"",
                     "\"¡ALERTA DE EMERGENCIA! Vientos extremos en [LOCATION]. Esperados hasta [TIME]. Manténgase en interiores, asegure objetos sueltos y evite viajar. Más información en [URL]. #SeguridadClimática\"",
                     "**¡ALERTA DE VIENTOS EXTREMOS!** Se esperan vientos peligrosos en [LOCATION] hasta las [TIME]. Manténgase en interiores, alejado de ventanas. Evite áreas con árboles o postes. Más información en [URL]. #Seguridad",
                     "¡ALERTA DE EMERGENCIA! Vientos extremos esperados en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Más info: [URL]. #AlertaFCC",
-                    "\"¡ALERTA DE EMERGENCIA! Vientos extremos afectarán [LOCATION] hasta [TIME]. Permanezca en interiores, alejado de ventanas. Evite áreas con árboles o cables eléctricos. Más información en [URL]. #SeguridadPrimero\""
+                    "\"¡ALERTA DE EMERGENCIA! Vientos extremos afectarán [LOCATION] hasta [TIME]. Permanezca en interiores, alejado de ventanas. Evite áreas con árboles o cables eléctricos. Más información en [URL]. #SeguridadPrimero\"",
+                    {
+                        "text": "\"ALERTA: Vientos extremos hasta [TIME] en [LOCATION]. Manténgase en interiores, alejado de ventanas. Evite áreas con árboles o postes eléctricos. Más información en [URL]. #Seguridad\"",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     "¡Alerta de vientos extremos en [LOCATION] hasta [TIME]! Los vientos peligrosos pueden causar daños y volar objetos. Permanezca en interiores, lejos de ventanas. Evite áreas exteriores y asegure objetos sueltos. Si está en ruta, maneje con precaución y esté atento a escombros. Más información: [URL]",
                     "¡ALERTA DE VIENTOS EXTREMOS en [LOCATION] hasta [TIME]! Vientos peligrosos pueden causar daños y volar objetos sueltos. Permanezca en un lugar seguro, lejos de ventanas. Evite áreas con árboles o estructuras frágiles. Asegure objetos al aire libre. Revise medios locales para actualizaciones. [URL]",
                     "¡ vientos extremos están afectando [LOCATION] hasta [TIME]. Estos vientos pueden causar daños estructurales, volar objetos peligrosos y derribar árboles y líneas eléctricas. Permanezca en interior, lejos de ventanas, y evite viajar. Proteja a los más vulnerables. Monitoree los medios locales. [URL]",
                     "⚠️ ALERTA: Vientos extremos afectarán [LOCATION] hasta [TIME]. Riesgo de daños estructurales, caída de árboles y objetos voladores. Permanezca en interiores, lejos de ventanas. Evite caminar o conducir durante el evento. Si está al aire libre, busque refugio inmediatamente en un lugar seguro. Manténgase informado: [URL]",
-                    "¡Alerta de vientos extremos! Se pronostican ráfagas peligrosas en [LOCATION] hasta [TIME]. Los vientos pueden causar daños, derribar árboles y líneas eléctricas. Permanezca en interiores, alejado de ventanas. Asegure objetos sueltos y evite viajar. Si está en un vehículo, maneje con precaución. Más información: [URL]"
+                    "¡Alerta de vientos extremos! Se pronostican ráfagas peligrosas en [LOCATION] hasta [TIME]. Los vientos pueden causar daños, derribar árboles y líneas eléctricas. Permanezca en interiores, alejado de ventanas. Asegure objetos sueltos y evite viajar. Si está en un vehículo, maneje con precaución. Más información: [URL]",
+                    {
+                        "text": "¡Alerta de vientos extremos en [LOCATION] hasta [TIME]! Los vientos peligrosos pueden causar daños y son una amenaza para la vida. Busque refugio inmediatamente en un interior lejos de ventanas. Evite áreas exteriores y proteja objetos sueltos. Revise los medios locales para actualizaciones. [URL]",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas [TIME] en [LOCATION]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.\"",
                     "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas [TIME] en [LOCATION]. Manténganse en interiores y eviten áreas abiertas. Más información en [URL]. ¡Manténganse seguros!\"",
                     "\"Aviso de emergencia: Vientos extremos esperados en [LOCATION] hasta [TIME]. Evite áreas abiertas y asegure objetos sueltos. Más información: [URL]. Manténgase a salvo.\"",
                     "¡Alerta de vientos extremos! Se esperan ráfagas peligrosas [TIME] en [LOCATION]. Evite actividades al aire libre y asegure objetos sueltos. Más detalles en [URL]. Manténgase a salvo.",
-                    "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.\""
+                    "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.\"",
+                    {
+                        "text": "¡Alerta de vientos extremos! Esperados hasta [TIME] en [LOCATION]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     "Alerta de vientos extremos hasta [TIME] en [LOCATION]. Evite actividades al aire libre y asegure objetos sueltos. Riesgo de daños y cortes de energía. Manténgase informado en [URL]. #AlertaClimática",
                     "¡ALERTA! Vientos extremos esperados en [LOCATION] hasta las [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Riesgo de caída de árboles y ramas. Más info: [URL]. Manténgase a salvo.",
                     "**ALERTA:** Vientos extremos esperados en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Posibles cortes de energía y daños. Manténgase informado en [URL]. #SeguridadClimática",
                     "**¡ALERTA DE VIENTOS EXTREMOS!** Se esperan vientos peligrosos en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.",
-                    "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta [TIME]. Evite áreas abiertas y manténgase alejado de árboles y estructuras frágiles. Más información en [URL]. #Seguridad\""
+                    "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta [TIME]. Evite áreas abiertas y manténgase alejado de árboles y estructuras frágiles. Más información en [URL]. #Seguridad\"",
+                    {
+                        "text": "**Alerta:** Vientos extremos esperados en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "translate_extreme_wind.txt": [
                     "[AGENCIA EMISORA]: Se emite una ADVERTENCIA DE VIENTO EXTREMO para [LOCATION] por el peligro inminente de vientos que ponen en riesgo la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga al exterior si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
                     "[AGENCIA EMISORA]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
                     "[AGENCIA EMISORA]: Una ADVERTENCIA DE VIENTO EXTREMO está en vigor para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga al exterior si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
                     "[AGENCIA EMISORA]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta las [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos que puedan volar. ¡NO salga si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
-                    "[AGENCIA EMISORA]: Se emite una ADVERTENCIA DE VIENTO EXTREMO para [LOCATION] debido al peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]"
+                    "[AGENCIA EMISORA]: Se emite una ADVERTENCIA DE VIENTO EXTREMO para [LOCATION] debido al peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
+                    {
+                        "text": "[AGENCIA EMISORA]: Se emite una ADVERTENCIA DE VIENTOS EXTREMOS para [LOCATION] por el peligro inminente de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
+                        "date": "2025-08-06"
+                    }
                 ]
             },
             "fire": {
@@ -1719,42 +1767,66 @@
                     "\"¡ALERTA DE INCENDIO! Hay un incendio en la zona. Evacúa inmediatamente y llama al 911 o a emergencias locales. No uses elevadores. Mantén la calma y sigue las indicaciones de las autoridades. ¡Tu seguridad es lo más importante!\"",
                     "\"¡ALERTA DE INCENDIO! Se ha detectado un incendio en la zona. Evacúa inmediatamente y llama al 911. No uses ascensores. Mantén la calma y sigue las indicaciones de las autoridades. ¡Tu seguridad es lo más importante!\"",
                     "**¡ALERTA DE INCENDIO!**  Se reporta un incendio en la zona. Permanezca en un lugar seguro, alejado del humo y las llamas. Llame al 911 o a emergencias local inmediatamente. Siga las instrucciones de las autoridades. ¡Manténgase calmado y evacúe si es necesario! **¡PELIGRO!**",
-                    "\"¡ALERTA DE INCENDIO! Hay un incendio en la zona. Evacúa inmediatamente y llama al 911. No uses ascensores. Mantén la calma y sigue las indicaciones de las autoridades. ¡Tu seguridad es lo más importante!\""
+                    "\"¡ALERTA DE INCENDIO! Hay un incendio en la zona. Evacúa inmediatamente y llama al 911. No uses ascensores. Mantén la calma y sigue las indicaciones de las autoridades. ¡Tu seguridad es lo más importante!\"",
+                    {
+                        "text": "¡ALERTA DE INCENDIO! Hay un incendio en la zona. Evacúe inmediatamente y llame al 911. Manténgase alejado del área y siga las instrucciones de las autoridades. ¡Su seguridad es lo más importante!",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_persona.txt": [
                     "\"ALERTA: Incendio activo cerca de [LOCATION]. Evacúe el área inmediatamente. Tiempo reportado: [TIME]. No use ascensores. Siga instrucciones locales. Más info: [URL]. Manténgase seguro.\"",
                     "**Alerta de incendio: Se ha reportado un incendio cerca de [LOCATION]. Evacúe el área inmediatamente si está cerca. Hora del reporte: [TIME]. Para más información, visite [URL]. Manténgase seguro y siga las instrucciones de las autoridades.**",
                     "**ALERTA:** Incendio reportado en [LOCATION]. Hora: [TIME]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. Para más información, visite [URL]. Manténgase a salvo.",
                     "\"ALERTA: Incendio activo cerca de [LOCATION]. Hora reportada: [TIME]. Manténgase alejado del área y siga las instrucciones de autoridades. Más información en [URL]. #Seguridad\"",
-                    "Alerta de emergencia: Incendio reportado cerca de [LOCATION]. Hora del informe: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL]. #Seguridad"
+                    "Alerta de emergencia: Incendio reportado cerca de [LOCATION]. Hora del informe: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL]. #Seguridad",
+                    {
+                        "text": "\"¡ALERTA DE EMERGENCIA! Incendio activo cerca de [LOCATION]. Hora del reporte: [TIME]. Evacúe el área de inmediato y siga las instrucciones de las autoridades. Más información en [URL]. Manténgase seguro.\"",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     "¡ALERTA DE INCENDIO! Se reportó un incendio en [LOCATION]. Evacúe el área de inmediato si está cerca. Permanezca en interiores y cierre ventanas si no puede evacuar. Siga las instrucciones de las autoridades. Más información en [URL]. Vigilancia hasta [TIME].",
                     "¡ALERTA DE INCENDIO! Se reporta un incendio en [LOCATION]. Se recomienda evacuar el área de inmediato y seguir las instrucciones de las autoridades. Manténgase informado a través de medios oficiales. Más detalles disponibles en [URL]. Hora del aviso: [TIME].",
                     "ALERTA DE INCENDIO: Se ha reportado un incendio en [LOCATION]. Se recomienda evacuar el área inmediatamente y seguir las instrucciones de las autoridades. El peligro estará activo hasta [TIME]. Evite el humo y manténgase informado en [URL].",
                     "**Alerta de incendio en [LOCATION]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. El fuego representa un peligro grave. Manténgase informado a través de [URL] para actualizaciones hasta [TIME].**",
-                    "¡ALERTA DE INCENDIO en [LOCATION] hasta [TIME]! Hay un incendio activo en la zona. Evacúe inmediatamente si está cerca o siga las instrucciones de las autoridades. Cierre ventanas y puertas para evitar el ingreso de humo. Manténgase informado en [URL]. ¡Esta es una situación peligrosa!"
+                    "¡ALERTA DE INCENDIO en [LOCATION] hasta [TIME]! Hay un incendio activo en la zona. Evacúe inmediatamente si está cerca o siga las instrucciones de las autoridades. Cierre ventanas y puertas para evitar el ingreso de humo. Manténgase informado en [URL]. ¡Esta es una situación peligrosa!",
+                    {
+                        "text": "¡ALERTA DE INCENDIO! Se reporta un incendio activo en [LOCATION]. Evacúe el área inmediatamente si está cerca. Siga las instrucciones de las autoridades. Más información estará disponible en [URL]. La situación se actualizará antes de [TIME]. Manténgase seguro y busque refugio alejado del fuego. [URL]",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "\"¡Alerta de incendio! Se reportó un fuego cerca de [LOCATION] a las [TIME]. Manténganse alejados del área y sigan las instrucciones de las autoridades. Para más información, visite [URL]. ¡Seguridad primero!\"",
                     "\"¡Alerta de incendio! Reporte de fuego activo a las [TIME] en [LOCATION]. Evacúe el área de inmediato y siga las indicaciones de emergencia. Para más información, visite [URL]. ¡Manténgase a salvo!\"",
                     "\"¡Alerta de incendio! Hora: [TIME]. Ubicación: [LOCATION]. Manténgase alejado del área y siga las instrucciones de emergencia. Más información en [URL]. ¡Seguridad primero!\"",
                     "¡Alerta de incendio! Reporte de fuego activo cerca de [LOCATION]. Hora del reporte: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL]. ¡Seguridad primero!",
-                    "\"Alerta de incendio: Reporte de fuego activo cerca de [LOCATION]. Hora del reporte: [TIME]. Evacúe el área y siga instrucciones de autoridades. Para más información visite [URL]. Manténgase seguro.\""
+                    "\"Alerta de incendio: Reporte de fuego activo cerca de [LOCATION]. Hora del reporte: [TIME]. Evacúe el área y siga instrucciones de autoridades. Para más información visite [URL]. Manténgase seguro.\"",
+                    {
+                        "text": "\"Alerta de incendio: Se reporta un fuego activo en [LOCATION] a las [TIME]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. Para más información, visite [URL]. Manténgase seguro.\"",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     "\"Alerta: Incendio reportado cerca de [LOCATION] a las [TIME]. Evacúe el área si está cerca. Siga las instrucciones de las autoridades. Más información en [URL]. Manténgase seguro.\"",
                     "**Alerta de incendio:** Se reporta un incendio cerca de [LOCATION] a las [TIME]. Se recomienda evitar el área y seguir las indicaciones de las autoridades. Para más información, visite [URL]. Manténgase atento a las actualizaciones.",
                     "**Alerta de incendio:** Se reporta un incendio en [LOCATION]. Hora del reporte: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL].",
                     "¡Alerta de emergencia! Se ha reportado un incendio cerca de [LOCATION] a las [TIME]. Evacúe el área inmediatamente y siga las instrucciones de las autoridades. Para más información, visite [URL]. ¡Manténgase a salvo!",
-                    "\"Alerta de incendio activo. Hora: [TIME]. Ubicación: [LOCATION]. Evacúe el área y siga las instrucciones de autoridades. Más información en [URL]. Manténgase a salvo.\""
+                    "\"Alerta de incendio activo. Hora: [TIME]. Ubicación: [LOCATION]. Evacúe el área y siga las instrucciones de autoridades. Más información en [URL]. Manténgase a salvo.\"",
+                    {
+                        "text": "¡ALERTA DE INCENDIO! Se reporta un incendio en [LOCATION] a las [TIME]. Evacúe el área y siga las indicaciones de las autoridades. Para más información, visite [URL]. Manténgase seguro.",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "translate_fire.txt": [
                     "[AGENCIA EMISORA]: Una ALERTA DE INCENDIO en [LOCATION] está en vigencia hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no sale ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública operando en el área y siga sus instrucciones. [URL]",
                     "[AGENCIA EMISORA]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga precaución al conducir. Esté atento al personal de seguridad pública operando en el área y siga sus instrucciones. [URL]",
                     "[AGENCIA EMISORA]: Hay una ALERTA DE INCENDIO en [LOCATION] vigente hasta [TIME]. Evacue a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no sale ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública operando en el área y siga sus instrucciones. [URL]",
                     "[AGENCIA EMISORA]: Hay una ADVERTENCIA DE INCENDIO en [LOCATION] vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no sale ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública operando en la zona y siga sus instrucciones. [URL]",
-                    "[AGENCIA EMISORA]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no sale ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga precaución al conducir. Esté atento al personal de seguridad pública operando en el área y siga sus instrucciones. [URL]"
+                    "[AGENCIA EMISORA]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no sale ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga precaución al conducir. Esté atento al personal de seguridad pública operando en el área y siga sus instrucciones. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no sale ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en el área y siga sus instrucciones. [URL]",
+                        "date": "2025-08-06"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -1763,35 +1835,55 @@
                     "**¡AVISO URGENTE!**  Se emitió una orden de hervir el agua. Por su seguridad, hierva toda el agua para beber, cocinar o cepillarse los dientes durante al menos 1 minuto antes de usarla. Esto incluye agua embotellada no sellada. Evite usar hielo hecho con agua sin hervir. La orden estará vigente hasta nuevo aviso.  Para más información, contacte a [Agencia Local] al [número de teléfono] o visite [sitio web].  **¡Manténgase seguro y siga estas instrucciones!**",
                     "**¡ALERTA IMPORTANTE!**  Se emitió una orden de hervir el agua para [nombre del área afectada]. Por su seguridad, hierva el agua por al menos 1 minuto antes de consumirla, cocinar o lavar alimentos. Evite beber agua sin hervir. La medida será levantada una vez que se confirme la seguridad del agua.  Para más información, visite [sitio web/autoridad de contacto].  **¡Manténgase seguro y siga estas indicaciones!**",
                     "**ALERTA IMPORTANTE:** Se emitió un aviso de hervir el agua. No beba ni use el agua del grifo sin hervirla primero. Hierva el agua durante al menos un minuto antes de consumirla, cocinar o cepillarse los dientes. Este aviso se debe a posibles contaminantes en el suministro de agua. Siga las instrucciones de las autoridades locales hasta nuevo aviso. Manténgase informado a través de fuentes oficiales.",
-                    "**¡AVISO IMPORTANTE!**  Se emite un **aviso de hervir el agua** para [nombre del área afectada]. Por precaución, hierva el agua durante al menos **1 minuto** antes de consumirla, cocinar, lavar alimentos o cepillarse los dientes. Evite usar agua sin hervir para beber.  Este aviso estará vigente hasta nuevo aviso. Las autoridades trabajan para resolver la situación. Para más información, contacte a [número de contacto/website oficial].  ¡Manténgase seguro!  **Actualización:** [Fecha y hora de emisión]."
+                    "**¡AVISO IMPORTANTE!**  Se emite un **aviso de hervir el agua** para [nombre del área afectada]. Por precaución, hierva el agua durante al menos **1 minuto** antes de consumirla, cocinar, lavar alimentos o cepillarse los dientes. Evite usar agua sin hervir para beber.  Este aviso estará vigente hasta nuevo aviso. Las autoridades trabajan para resolver la situación. Para más información, contacte a [número de contacto/website oficial].  ¡Manténgase seguro!  **Actualización:** [Fecha y hora de emisión].",
+                    {
+                        "text": "**ALERTA IMPORTANTE: AVISO DE HERVIR EL AGUA**  \n\nSe ha emitido un aviso de hervir el agua para [área afectada]. Como precaución, hierva toda el agua para beber, cocinar y preparar alimentos durante al menos 1 minuto antes de usarla. Este aviso se debe a [razón, ej.: contaminación posible o falla en el sistema].  \n\nEvite consumir agua sin hervir, hielo hecho con agua no tratada o bebidas preparadas sin hervir. El agua hervida o embotellada es segura.  \n\nManténgase informado a través de [fuente oficial] para actualizaciones.  \n\n¡Su seguridad es nuestra prioridad!  \n\n[Entidad o autoridad emisora]  \n[Fecha y hora]",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_persona.txt": [
                     "\"AVISO DE EMERGENCIA: [TIME] en [LOCATION], se emite una orden de hervir el agua antes de consumirla debido a contaminación. Hierva el agua por 1 minuto antes de usarla para beber, cocinar o lavar alimentos. Más información en [URL]. Manténgase seguro.\"",
                     "\"ALERTA: AVISO DE HERVIR EL AGUA en [LOCATION]. El agua debe hervirse antes de consumirla hasta nuevo aviso. Vigente desde [TIME]. Más información en [URL]. Manténgase seguro.\"",
                     "\"AVISO URGENTE: Hierva el agua antes de consumirla debido a posible contaminación. Vigente desde [TIME] en [LOCATION]. Para más información visite [URL]. No beba agua sin hervirla. Comparta este mensaje.\"",
                     "¡AVISO DE EMERGENCIA! Hierva el agua antes de consumirla debido a posible contaminación en [LOCATION]. Vigente a partir de [TIME]. Para más información, visite [URL]. ¡Manténgase seguro!",
-                    "\"AVISO DE EMERGENCIA: Se emitió un aviso para hervir el agua en [LOCATION] a partir de las [TIME]. Hierva el agua durante al menos un minuto antes de usar. Para más información, visite [URL]. Manténgase seguro.\""
+                    "\"AVISO DE EMERGENCIA: Se emitió un aviso para hervir el agua en [LOCATION] a partir de las [TIME]. Hierva el agua durante al menos un minuto antes de usar. Para más información, visite [URL]. Manténgase seguro.\"",
+                    {
+                        "text": "\"Alerta: Se emite un aviso de hervir agua en [LOCATION]. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Vigente a partir de [TIME]. Más información en [URL]. Seguridad pública.\"",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     "ALERTA: Se emitió un aviso de hervirus el agua en [LOCATION] hasta [TIME]. Hierven el agua por al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Evite consumir agua sin hervir. Para más información visite [URL].",
                     "¡AVISO IMPORTANTE! Se emite una orden de hervir el agua para [LOCATION] hasta [TIME]. No beba el agua sin hervirla primero por al menos 1 minuto. Esto incluye agua para cocinar, lavar frutas/verduras y cepillarse los dientes. Para más detalles, visite [URL]. Manténgase seguro.",
                     "AVISO IMPORTANTE: Se emitió una orden de hervir el agua en [LOCATION] hasta [TIME]. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o lavar. Evite consumir agua sin hervir para prevenir enfermedades. Para más detalles, visite [URL].",
                     "**ALERTA:** Se emite un aviso de hervir el agua para [LOCATION] hasta [TIME]. Evite consumir agua del grifo sin hervirla primero. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o lavar alimentos. Siga las instrucciones de las autoridades locales. Más información en [URL].",
-                    "**ALERTA:** Se emite un aviso de hervir agua para [LOCATION] hasta [TIME]. No beba agua sin hervirla primero. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Para más información, visite [URL]."
+                    "**ALERTA:** Se emite un aviso de hervir agua para [LOCATION] hasta [TIME]. No beba agua sin hervirla primero. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Para más información, visite [URL].",
+                    {
+                        "text": "AVISO IMPORTANTE: Se emitió una orden de hervir el agua para [LOCATION] hasta [TIME]. Hierva el agua durante al menos 1 minuto antes de consumirla o use agua embotellada. Esto incluye agua para beber, cocinar y lavar alimentos. Para más detalles, visite [URL].",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "\"Alerta: Se emite un aviso para hervir el agua en [LOCATION] a partir de [TIME]. No beba el agua sin hervirla primero. Para más información, visite [URL]. Manténgase seguro.\"",
                     "\"AVISO DE HERVIDA DE AGUA: Se reporta contaminación en el agua. Hervir el agua por al menos 1 minuto antes de usar. Vigente desde [TIME] en [LOCATION]. Más info: [URL]. Manténgase seguro.\"",
                     "\"AVISO DE HERVIR AGUA: Por seguridad, hierva el agua antes de usarla para beber, cocinar o lavar. Válido desde [TIME] en [LOCATION]. Más info: [URL]. Siga las indicaciones hasta nuevo aviso.\"",
                     "**¡Alerta importante!** Se emitió un aviso para hervir el agua en [LOCATION] a partir de [TIME]. Hierva el agua por al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Más información en [URL]. ¡Manténgase seguro!",
-                    "**¡Alerta importante!** Se emitió un aviso de hervir el agua en [LOCATION] a partir de [TIME]. Beba solo agua hervida o embotellada hasta nuevo aviso. Evite usar agua del grifo sin hervir. Más info: [URL]."
+                    "**¡Alerta importante!** Se emitió un aviso de hervir el agua en [LOCATION] a partir de [TIME]. Beba solo agua hervida o embotellada hasta nuevo aviso. Evite usar agua del grifo sin hervir. Más info: [URL].",
+                    {
+                        "text": "**Alerta:** Se emitió un aviso de hervir el agua en [LOCATION] a partir de [TIME]. No beba el agua sin hervirla primero. Para más información, visite [URL]. Manténgase seguro.",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     "**Alerta:** Se emitió un aviso para hervir el agua en [LOCATION] a partir de [TIME]. Hierva el agua por al menos 1 minuto antes de usarla para beber, cocinar o lavar alimentos. Evite consumir agua del grifo sin hervir. Para más información, visite [URL].",
                     "🚨 AVISO DE HERVIR AGUA: Se emitió una orden de hervir agua para [LOCATION]. Hierva todo el agua para beber, cocinar o lavar alimentos durante al menos 1 minuto hasta nuevo aviso. Vigente desde [TIME]. Más información: [URL]. Tome precauciones.",
                     "\"AVISO DE AGUA PARA HERVIR: Se ha emitido una orden de hervir el agua en [LOCATION] hasta nuevo aviso. Herva el agua durante al menos 1 minuto antes de consumirla. Vigente a partir de [TIME]. Más información en [URL]. Manténgase seguro.\"",
                     "**Alerta:** Se emitió un aviso de hervir agua en [LOCATION]. Hierva el agua durante al menos 1 minuto antes de beber, cocinar o lavar alimentos hasta nuevo aviso. Vigente desde [TIME]. Más información: [URL]. Tome precauciones.",
-                    "**Alerta importante:** [TIME]. Se emitió un aviso de hervir agua en [LOCATION]. Hierva todo el agua para beber, cocinar o cepillarse los dientes durante al menos 1 minuto. Evite consumir agua del grifo sin hervir. Más información en [URL]."
+                    "**Alerta importante:** [TIME]. Se emitió un aviso de hervir agua en [LOCATION]. Hierva todo el agua para beber, cocinar o cepillarse los dientes durante al menos 1 minuto. Evite consumir agua del grifo sin hervir. Más información en [URL].",
+                    {
+                        "text": "\"AVISO URGENTE: Se emitió una orden de hervir el agua en [LOCATION] a partir de [TIME]. Hierva todo el agua para beber, cocinar o lavar alimentos durante al menos 1 minuto. Más información en [URL]. Manténgase seguro.\"",
+                        "date": "2025-08-06"
+                    }
                 ],
                 "translate_boil_water_notice.txt": [
                     "] [SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, lave sus dientes o limpie su hogar con agua del grifo o filtrada a menos que la hierva. Hierva el agua a ebullición completa durante TRES MINUTOS. Deje enfriar el agua antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, utilice fórmula lista para consumir. Asegúrese de que sus mascotas no beban agua que no haya sido hervida. [URL]",
