@@ -131,6 +131,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             for prompt, predictions in relevant_prompts.items():
                                 if not predictions:
                                     continue
+                                # Extract the "text" field from each prediction dict
+                                predictions_text = [pred["text"] if isinstance(pred, dict) and "text" in pred else pred for pred in predictions]
                                 total_predictions = len(predictions)
 
                                 # we have 5 predictions and one gold standard. Just make an array of the same gold standard 5 times
@@ -138,10 +140,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
                                 try:
                                     id_response = f"{language}:{service}:{disaster}:{prompt}"
-                                    rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                    rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
+                                    bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
+                                    bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
+#                                    comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -154,7 +156,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet_result["mean_score"]
+                                        "COMET": 0
+#                                        "COMET": comet_result["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -166,22 +169,24 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                             # If relevant_prompts is a list, we assume it's a single prediction
                             predictions = relevant_prompts
                             if predictions:
+                                # Extract the "text" field from each prediction dict
+                                predictions_text = [pred["text"] if isinstance(pred, dict) and "text" in pred else pred for pred in predictions]
 
                                 # google translate tranlates everything directly, even our standard variables. Let's parse out everything within square brackets to not penalize for that
                                 formatted_predictions = []
-                                for prediction in predictions:
+                                for prediction in predictions_text:
                                     formatted_predictions.append(re.sub(r'\[.*?\]', '', prediction))
 
-                                total_predictions = len(predictions)
+                                total_predictions = len(formatted_predictions)
                                 # apply the same treatment to the gold standards
-                                duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * len(predictions)
+                                duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * total_predictions
 
                                 try:        
                                     id_response = f"{language}:{service}:{disaster}"
-                                    rouge_result = rouge.compute(predictions=predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions, references=duplicated_gold_standards, lang=language_code)
-                                    bleu_result = bleu.compute(predictions=predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                    comet_result = comet.compute(predictions=predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                    rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
+                                    bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
+                                    bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+#                                    comet_result = comet.compute(predictions=formatted_predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                     result = {
                                         "SERVICE": service,
                                         "LANGUAGE": language,
@@ -194,7 +199,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                         "BERTScore_P": bertscore_result["precision"][0],
                                         "BERTScore_R": bertscore_result["recall"][0],
                                         "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": comet_result["mean_score"]
+                                        "COMET": 0
+#                                        "COMET": comet_result["mean_score"]
                                     }
                                     results.append(result)
                                 except Exception as e:
@@ -222,7 +228,7 @@ def main():
     rouge = load("rouge")
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
-    comet = load("comet")
+#    comet = load("comet")
 
     df = evaluate_generated_texts(
         args.generated_path,
@@ -230,8 +236,8 @@ def main():
         args.output_csv,
         rouge,
         bleu,
-        bertscore,
-        comet
+        bertscore
+    #    comet
     )
 
     # Print the DataFrame
