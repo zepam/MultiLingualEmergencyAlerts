@@ -26,11 +26,7 @@ Functions:
 
 # have this at the top to supress warnings from the imports
 import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
-
-from evaluate import load
-from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
-from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
+#warnings.simplefilter(action='ignore', category=FutureWarning)
 
 import pandas as pd
 import argparse
@@ -38,6 +34,44 @@ import json
 from tqdm import tqdm
 import time
 import re
+import logging
+import os
+
+from evaluate import load
+from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
+from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
+
+# Optional: psutil for more accurate memory logging
+try:
+    import psutil
+    _HAS_PSUTIL = True
+except ImportError:
+    _HAS_PSUTIL = False
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    filename="evaluation.log",
+    filemode="w"
+)
+logger = logging.getLogger(__name__)
+
+def log_memory_usage(note=""):
+    """Log the current memory usage of the process."""
+    if _HAS_PSUTIL:
+        process = psutil.Process(os.getpid())
+        mem = process.memory_info().rss / 1024 ** 2  # in MB
+        logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem:.2f} MB")
+    else:
+        # Fallback: use resource module (less accurate, Unix only)
+        try:
+            import resource
+            mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+            logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem} KB (resource module)")
+        except ImportError:
+            logger.info("psutil not installed and resource module unavailable; cannot log memory usage.")
+
 
 class EvaluationTokenizer:
     def set_tokenizer_function(self, language):
@@ -60,9 +94,11 @@ def tokenizer_lambda(language):
     return lambda x: EvaluationTokenizer(language).tokenize(x)
 
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
+    logger.info(f"Loading reference data from {reference_path}")
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
 
+    logger.info(f"Loading prediction data from {generated_path}")
     with open(generated_path, "r", encoding="utf-8") as f:
         prediction_data = json.load(f)
     
@@ -81,6 +117,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                     relevant_prompts = prediction_data[service][language][disaster]
                     if isinstance(relevant_prompts, dict):
                         total += len(relevant_prompts)
+    logger.info(f"Total number of prompt evaluations: {total}")
 
     """
     we want to collect fine-tuned results that tell us:
@@ -130,6 +167,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                         if isinstance(relevant_prompts, dict):
                             for prompt, predictions in relevant_prompts.items():
                                 if not predictions:
+                                    logger.warning(f"No predictions for {language}:{service}:{disaster}:{prompt}")
                                     continue
                                 # Extract the "text" field from each prediction dict
                                 predictions_text = [pred["text"] if isinstance(pred, dict) and "text" in pred else pred for pred in predictions]
@@ -139,7 +177,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
                                 try:
-                                    id_response = f"{language}:{service}:{disaster}:{prompt}"
+                                    id_response = f"{service}:{language}:{disaster}:{prompt}"
+                                    logger.info(f"Evaluating {id_response} with {total_predictions} predictions")
                                     rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                     bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
@@ -161,9 +200,14 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     }
                                     results.append(result)
                                 except Exception as e:
+                                    logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
+                                # Log memory usage every 10 prompts
+                                if pbar.n % 10 == 0:
+                                    log_memory_usage(f"After {pbar.n} prompts")
+
                         # google translate
                         elif isinstance(relevant_prompts, list):
                             # If relevant_prompts is a list, we assume it's a single prediction
@@ -182,7 +226,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * total_predictions
 
                                 try:        
-                                    id_response = f"{language}:{service}:{disaster}"
+                                    id_response = f"{service}:{language}:{disaster}"
+                                    logger.info(f"Evaluating {id_response} with {total_predictions} predictions (Google Translate style)")
                                     rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                     bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                     bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
@@ -204,15 +249,23 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     }
                                     results.append(result)
                                 except Exception as e:
+                                    logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
                                     print(f"[Error on line {id_response}] {e}")
                                     continue
                                 pbar.update(1)
+                                # Log memory usage every 10 prompts
+                                if pbar.n % 10 == 0:
+                                    log_memory_usage(f"After {pbar.n} prompts")
+
     
     df = pd.DataFrame(results)
 
     if output_csv:
         df.to_csv(output_csv, index=False)
+        logger.info(f"Results saved to: {output_csv}")
         print(f"Results saved to: {output_csv}")
+    # Log memory usage at the end
+    log_memory_usage("At end of evaluation")
 
     return df
 
@@ -224,7 +277,16 @@ def main():
     parser.add_argument("--output_csv", help="Path to output CSV file", default=None)
     args = parser.parse_args()
 
+    logger.info("Starting evaluation script")
+    logger.info(f"Generated file: {args.generated_path}")
+    logger.info(f"Reference file: {args.reference_path}")
+    logger.info(f"Output CSV: {args.output_csv}")
+
+    # Log memory usage at the start
+    log_memory_usage("At start of script")
+
     # Load metrics
+    logger.info("Loading metrics: rouge, sacrebleu, bertscore")
     rouge = load("rouge")
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
@@ -241,10 +303,12 @@ def main():
     )
 
     # Print the DataFrame
+    logger.info("Evaluation complete. Printing DataFrame.")
     print(df)
 
     end_time = time.time()
     elapsed_time = end_time - start_time
+    logger.info(f"Evaluation completed in {elapsed_time:.2f} seconds.")
     print(f"Evaluation completed in {elapsed_time:.2f} seconds.")
 
 if __name__ == "__main__":
