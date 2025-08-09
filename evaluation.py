@@ -26,7 +26,7 @@ Functions:
 
 # have this at the top to supress warnings from the imports
 import warnings
-#warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 import pandas as pd
 import argparse
@@ -93,7 +93,7 @@ class EvaluationTokenizer:
 def tokenizer_lambda(language):
     return lambda x: EvaluationTokenizer(language).tokenize(x)
 
-def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None):
+def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None, only_service=None):
     logger.info(f"Loading reference data from {reference_path}")
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
@@ -107,6 +107,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     # Count total number of iterations for progress bar
     total = 0
     for service in prediction_data:
+        if only_service and service != only_service:
+            continue
         for language, values in reference_data.items():
             for disaster, gold_standard in values.items():
                 if (
@@ -131,6 +133,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     """
     with tqdm(total=total, desc="Evaluating prompts") as pbar:
         for service in prediction_data:
+            if only_service and service != only_service:
+                continue
             for language, values in reference_data.items():
                 # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
                 if language == "chinese_traditional":
@@ -256,6 +260,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 # Log memory usage every 10 prompts
                                 if pbar.n % 10 == 0:
                                     log_memory_usage(f"After {pbar.n} prompts")
+
     
     df = pd.DataFrame(results)
 
@@ -274,6 +279,7 @@ def main():
     parser.add_argument("generated_path", help="Path generated text file")
     parser.add_argument("reference_path", help="Path reference text file")
     parser.add_argument("--output_csv", help="Path to output CSV file", default=None)
+    parser.add_argument("--service", help="Only evaluate this service (chatgpt, deepseek, gemini, google_translate)")
     args = parser.parse_args()
 
     logger.info("Starting evaluation script")
@@ -297,13 +303,13 @@ def main():
         args.output_csv,
         rouge,
         bleu,
-        bertscore
+        bertscore,
     #    comet
+        only_service=args.service
     )
 
     # Print the DataFrame
-    logger.info("Evaluation complete. Printing DataFrame.")
-    print(df)
+    logger.info("Evaluation complete.")
 
     end_time = time.time()
     elapsed_time = end_time - start_time
