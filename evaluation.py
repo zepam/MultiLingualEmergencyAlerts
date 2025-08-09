@@ -36,7 +36,6 @@ import time
 import re
 import logging
 import os
-import gc
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
@@ -133,11 +132,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     with tqdm(total=total, desc="Evaluating prompts") as pbar:
         for service in prediction_data:
             for language, values in reference_data.items():
-                # Reload metric objects per language to avoid memory bloat/caching
-                rouge = load("rouge")
-                bleu = load("sacrebleu")
-                bertscore = load("bertscore")
-
                 # Bleu doesn't take a tokenizer directly but rather a string matching a tokenizer
                 if language == "chinese_traditional":
                     tokenizer_string = "zh"
@@ -262,19 +256,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 # Log memory usage every 10 prompts
                                 if pbar.n % 10 == 0:
                                     log_memory_usage(f"After {pbar.n} prompts")
-            # After finishing all disasters for a language, save results so far and clear the list
-            if output_csv and results:
-                df_partial = pd.DataFrame(results)
-                # If file exists, append without header; else, write header
-                write_header = not os.path.exists(output_csv)
-                df_partial.to_csv(output_csv, mode='a', header=write_header, index=False)
-                logger.info(f"Partial results saved to: {output_csv} after language {language}")
-                results.clear()
-                # Explicitly delete DataFrame and collect garbage
-                del df_partial
-                del rouge, bleu, bertscore
-                gc.collect()
-            
     
     df = pd.DataFrame(results)
 
