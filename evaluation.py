@@ -24,10 +24,11 @@ Functions:
     - tokenizer_lambda: defines a lambda that can return and call a tokenizer for a given text
 """
 
-# have this at the top to supress warnings from the imports
+# have this at the top to supress warnings from the imports because it's annoying
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+# ruff: noqa: E402
 import pandas as pd
 import argparse
 import json
@@ -93,6 +94,57 @@ class EvaluationTokenizer:
 def tokenizer_lambda(language):
     return lambda x: EvaluationTokenizer(language).tokenize(x)
 
+
+# def get_results_recursively(data):
+#     """
+#     Recursively finds all lists of strings in a nested data structure.
+#     """
+#     results = []
+    
+#     if isinstance(data, dict):
+#         for key, value in data.items():
+#             results.extend(get_results_count(value))
+#     elif isinstance(data, list):
+#         # Base case: Found a list of results (strings)
+#         if all(isinstance(item, str) for item in data):
+#             results.extend(data)
+#         else:
+#             # Continue recursion if the list contains other data structures
+#             for item in data:
+#                 results.extend(get_results_count(item))
+                
+#     return results
+
+def get_results_count(generated_path, service_name=None):
+    """
+    Collects results for a specific service or all services.
+    - If service_name is provided, returns a list of results for that service.
+    - If service_name is None, returns a dictionary of all results, grouped by service.
+    """
+    # If data is a path, load it
+    if isinstance(generated_path, str):
+        with open(generated_path, 'r') as f:
+            json_data = json.load(f)
+    else:
+        json_data = generated_path
+
+    if service_name:
+        # Case 1: Get results for a single service
+        if service_name in json_data:
+            return get_results_count(json_data[service_name])
+        else:
+            print(f"Service '{service_name}' not found.")
+            return 0
+    elif isinstance(json_data, dict):
+        total = 0
+        for v in json_data.values():
+            total += get_results_count(v)
+        return total
+    elif isinstance(json_data, list):
+        return 1 if len(json_data) > 0 else 0
+    else:
+        return 0
+
 def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None, only_service=None):
     logger.info(f"Loading reference data from {reference_path}")
     with open(reference_path, "r", encoding="utf-8") as f:
@@ -104,22 +156,11 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     
     results = []
 
-    # Count total number of iterations for progress bar
-    total = 0
-    for service in prediction_data:
-        if only_service and service != only_service:
-            continue
-        for language, values in reference_data.items():
-            for disaster, gold_standard in values.items():
-                if (
-                    service in prediction_data
-                    and language in prediction_data[service]
-                    and disaster in prediction_data[service][language]
-                ):
-                    relevant_prompts = prediction_data[service][language][disaster]
-                    if isinstance(relevant_prompts, dict):
-                        total += len(relevant_prompts)
-    logger.info(f"Total number of prompt evaluations: {total}")
+    # count iterations for progress bar
+    if only_service:
+        total = get_results_count(generated_path, service_name=only_service)
+    else:
+        total = get_results_count(generated_path)
 
     """
     we want to collect fine-tuned results that tell us:
@@ -279,7 +320,7 @@ def main():
     parser.add_argument("generated_path", help="Path generated text file")
     parser.add_argument("reference_path", help="Path reference text file")
     parser.add_argument("--output_csv", help="Path to output CSV file", default=None)
-    parser.add_argument("--service", help="Only evaluate this service (chatgpt, deepseek, gemini, google_translate)")
+    parser.add_argument("--service_name", help="Only evaluate this service (chatgpt, deepseek, gemini, google_translate)")
     args = parser.parse_args()
 
     logger.info("Starting evaluation script")
@@ -305,7 +346,7 @@ def main():
         bleu,
         bertscore,
     #    comet
-        only_service=args.service
+        only_service=args.service_name
     )
 
     # Print the DataFrame
