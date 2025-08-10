@@ -94,27 +94,6 @@ class EvaluationTokenizer:
 def tokenizer_lambda(language):
     return lambda x: EvaluationTokenizer(language).tokenize(x)
 
-
-# def get_results_recursively(data):
-#     """
-#     Recursively finds all lists of strings in a nested data structure.
-#     """
-#     results = []
-    
-#     if isinstance(data, dict):
-#         for key, value in data.items():
-#             results.extend(get_results_count(value))
-#     elif isinstance(data, list):
-#         # Base case: Found a list of results (strings)
-#         if all(isinstance(item, str) for item in data):
-#             results.extend(data)
-#         else:
-#             # Continue recursion if the list contains other data structures
-#             for item in data:
-#                 results.extend(get_results_count(item))
-                
-#     return results
-
 def get_results_count(generated_path, service_name=None):
     """
     Collects results for a specific service or all services.
