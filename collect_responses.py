@@ -8,13 +8,20 @@ Usage:
     python collect_responses.py
 
 Example:
-    python collect_responses.py --preserve_output=True --skip_chatgpt=True --skip_google_translate=True --skip_gemini=True
+    python collect_responses.py --preserve_output=True --skip_chatgpt --skip_google_translate --skip_gemini
 
 Functions:
     - parse_args: Parses arguments passed into the script
     - loop_responses: For a given language - disaster - prompt pairing, query all the APIs
     - collect_multilingual_responses: loop over every language, disaster, and prompt to call loop_responses
     - main: Does the thing. Outputs data to a JSON file
+
+Flags:
+    - --preserve_output: If a matching output file exists, read in the existing data and append to it.
+    - --skip_gemini: Forcibly skip any calls to Gemini
+    - --skip_chatgpt: Forcibly skip any calls to ChatGPT
+    - --skip_deepseek: Forcibly skip any calls to DeepSeek
+    - --skip_google_translate: Forcibly skip any calls to Google Translate
 """
 
 import json
@@ -71,16 +78,16 @@ def parse_args():
     parser.add_argument("--total_responses", type=int, default=5,
                         help="The number of responses to collect per service")
     
-    parser.add_argument("--preserve_output", type=bool, default=False,
+    parser.add_argument("--preserve_output", action='store_true',
                         help="If a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits")
     
-    parser.add_argument("--skip_gemini", type=bool, default=False,
+    parser.add_argument("--skip_gemini", action="store_true", default=False,
                         help="Forcibly skip any calls to Gemini")
-    parser.add_argument("--skip_chatgpt", type=bool, default=False,
-                    help="Forcibly skip any calls to ChatGPT")
-    parser.add_argument("--skip_deepseek", type=bool, default=False,
+    parser.add_argument("--skip_chatgpt", action='store_true',
+                        help="Forcibly skip any calls to ChatGPT")
+    parser.add_argument("--skip_deepseek", action='store_true', default=False,
                     help="Forcibly skip any calls to DeepSeek")
-    parser.add_argument("--skip_google_translate", type=bool, default=False,
+    parser.add_argument("--skip_google_translate", action='store_true', default=False,
                     help="Forcibly skip any calls to Google Translate")
   
     return parser.parse_args()
@@ -127,8 +134,8 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
                 "date": today
             }
             #TODO use this to add date to response
-            # existing_response_list.append(response_with_date)
-            existing_response_list.append(output)
+            existing_response_list.append(response_with_date)
+            #existing_response_list.append(output)
     elif today_response_exists:
         logger.info(f"Skipping {language_name}: {disaster_name}: {prompt_name}: {service_name} - already have response for today")
     
