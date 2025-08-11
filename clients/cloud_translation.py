@@ -1,4 +1,4 @@
-from google.cloud import translate_v2 as translate
+from google.cloud import translate
 from clients.client import Client
 
 # Client to interact with the Google Cloud Translation API (Basic)
@@ -13,12 +13,19 @@ class GoogleCloudTranslationClient(Client):
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
         prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language,
                                     sending_agency=sending_agency, location=location, time=time, url=url)
-        translate_client = translate.Client(project=self.project_id)
+        translate_client = translate.TranslationServiceClient()
 
         language_code = self.translation_map()[language]
-        result = translate_client.translate(prompt, target_language=language_code)
 
-        return result["translatedText"]
+        parent = f"projects/{self.project_id}"
+
+        result = translate_client.translate_text(
+            parent = parent,
+            contents = [prompt],
+            target_language_code=language_code
+        )
+
+        return result.translations[0].translated_text
 
     # See https://cloud.google.com/translate/docs/languages
     def translation_map(self):

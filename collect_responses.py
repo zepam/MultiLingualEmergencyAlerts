@@ -92,6 +92,15 @@ def parse_args():
   
     return parser.parse_args()
 
+def save_output_json(output_json, output_file, logger):
+    """Save the current state of the output JSON to file"""
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(output_json, f, ensure_ascii=False, indent=4)
+        logger.info(f"Progress saved to {output_file}")
+    except Exception as e:
+        logger.error(f"Failed to save progress: {e}")
+
 def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
     language_name = language.replace(" ", "_").replace("(", "").replace(")", "").lower()
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
@@ -120,6 +129,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     if not skip_bool and not today_response_exists:
         logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: {service_name}")
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
+        logger.info(f"Results {output}")
         
         if output is None:
             skip_bool = True
@@ -141,13 +151,19 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     
     return skip_bool
 
-def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses):
+def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, output_filename):
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
             for prompt in ITERATIVE_PROMPT_FILES:
                 skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
+                if not skip_gemini:  # If we successfully made an API call
+                    save_output_json(output_json, output_filename, logger)
                 skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
+                if not skip_chatgpt:  # If we successfully made an API call
+                    save_output_json(output_json, output_filename, logger)
                 skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
+                if not skip_deepseek:  # If we successfully made an API call
+                    save_output_json(output_json, output_filename, logger)
 
             # Google Translate needs to take an original template and translate directly
             disaster_name = disaster.replace("a ", "").replace(" ", "_")
@@ -186,7 +202,7 @@ if __name__ == "__main__":
     skip_google_translate = args.skip_google_translate
     total_responses = args.total_responses
 
-    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses)
+    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, args.output_file)
 
     with open(args.output_file, 'w', encoding='utf-8') as f:
         json.dump(output_json, f, ensure_ascii=False, indent=4)
