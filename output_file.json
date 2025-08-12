@@ -1635,6 +1635,10 @@
                     {
                         "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe esperan inundaciones graves en la zona debido a lluvias intensas. Busque refugio en un lugar elevado de inmediato. Evite cruzar calles inundadas y manténgase alejado de ríos y arroyos. Siga las instrucciones de las autoridades. ¡Su seguridad es lo primero!  \n\n**Actualizaciones oficiales:** [Enlace o número de emergencia local].  \n\n¡ACTÚE CON PRECAUCIÓN!",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe informa de crecidas repentinas en la zona. Evacúe inmediatamente a un lugar seguro en terreno alto. Evite cruzar calles inundadas y alejese de ríos y arroyos. Siga las instrucciones de las autoridades locales. Manténgase informado a través de medios oficiales. ¡Su vida es primero!  \n\n**¡ACTÚE AHORA!**",
+                        "date": "2025-08-11"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -1646,6 +1650,10 @@
                     {
                         "text": "\"ALERTA: Inundación severa en [LOCATION]. Evacúe inmediatamente si está en zonas bajas. Nivel del agua aumenta rápidamente. [TIME]. Manténgase alejado de ríos y áreas inundadas. Busque terreno alto. Más info: [URL]. No ignore esta alerta.\"",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!**  \n[TIME]: Se esperan inundaciones severas en [LOCATION]. Evacue a un lugar seguro de inmediato. Evite áreas bajas y caminos inundados. Para más información, visite [URL]. ¡Manténgase a salvo!",
+                        "date": "2025-08-11"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -1657,6 +1665,10 @@
                     {
                         "text": "Alerta de INUNDACIÓN en [LOCATION] hasta [TIME]. Inundaciones repentinas en el área. Esta es una situación peligrosa. Evacue a terrenos más altos de inmediato. No intente caminar o conducir a través de aguas en movimiento. Manténgase alejado de ríos y arroyos. Consulte los medios locales. [URL]",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "¡ALERTA DE INUNDACIÓN! Se espera inundación severa en [LOCATION] hasta [TIME]. Evacue inmediatamente a zonas altas. Evite caminar o conducir por aguas en movimiento. Esta es una situación peligrosa que pone en riesgo su vida. Manténgase informado en [URL].",
+                        "date": "2025-08-11"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -1668,6 +1680,10 @@
                     {
                         "text": "**¡Alerta de inundación!** Se esperan fuertes lluvias en [LOCATION] hasta [TIME]. Evite zonas bajas y ríos. Manténgase informado en [URL]. Tome precauciones y siga las indicaciones locales. #Seguridad",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "**¡Alerta de inundación!** Se esperan inundaciones graves en [LOCATION] a partir de [TIME]. Evacúe si está en zonas bajas. Manténgase alejado de ríos y quebradas. Para más información, visite [URL]. ¡Actúe con precaución!",
+                        "date": "2025-08-11"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -1679,6 +1695,10 @@
                     {
                         "text": "**Alerta de inundación:** Se ha reportado una inundación en [LOCATION]. Evacúe inmediatamente si está en zonas bajas. Evite cruzar aguas en movimiento. Más información en [URL]. Actualizado a las [TIME].",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!** Se reportan inundaciones en [LOCATION]. Evite áreas bajas y cercanas a ríos. Manténgase informado y siga las indicaciones de autoridades. Más detalles en [URL]. Última actualización: [TIME]. ¡Manténgase a salvo!",
+                        "date": "2025-08-11"
                     }
                 ],
                 "translate_flood.txt": [
@@ -1690,6 +1710,10 @@
                     {
                         "text": "[SENDING AGENCY]: Se ha emitido una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta las [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "[AGENCIA EMISORA]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
+                        "date": "2025-08-11"
                     }
                 ]
             },
@@ -1703,6 +1727,10 @@
                     {
                         "text": "**¡Alerta Meteorológica!**  \n\nVientos extremos esperados en las próximas horas. Se pronostican ráfagas de hasta [X] km/h que pueden causar daños, caída de árboles y cortes de energía. Evite salir si no es necesario, asegure objetos sueltos y manténgase alejado de ventanas.  \n\nActualizaremos información. ¡Manténgase a salvo!  \n\n🔴 #AlertaClimática",
                         "date": "2025-08-06"
+                    },
+                    {
+                        "text": "**¡ALERTA DE VIENTOS EXTREMOS!**  \n\nSe pronostican vientos peligrosamente fuertes en su área, con ráfagas superiores a [X] km/h. Evite salir al exterior si no es necesario. Asegure objetos sueltos y manténgase alejado de árboles y estructuras inestables. ⚠️🌬️  \n\n#AlertaMeteorológica",
+                        "date": "2025-08-11"
                     }
                 ],
                 "prompt_persona.txt": [
