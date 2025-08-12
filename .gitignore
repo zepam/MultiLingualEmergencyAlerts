@@ -199,3 +199,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+results_chatgpt.csv
