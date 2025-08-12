@@ -36,5 +36,7 @@ class GoogleCloudTranslationClient(Client):
             "Arabic": "ar",
             "Haitian Creole": "ht",
             "Vietnamese": "vi",
-            "Mandarin": "zh-TW"
+            # zh-CN was chosed based on the needs of the population of Seattle
+            "Chinese (Traditional)": "zh-TW",
+            "Chinese (Simplified)": "zh-CN"
         }

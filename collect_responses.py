@@ -8,7 +8,7 @@ Usage:
     python collect_responses.py
 
 Example:
-    python collect_responses.py --preserve_output=True --skip_chatgpt --skip_google_translate --skip_gemini
+    python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini
 
 Functions:
     - parse_args: Parses arguments passed into the script
@@ -102,6 +102,9 @@ def save_output_json(output_json, output_file, logger):
         logger.error(f"Failed to save progress: {e}")
 
 def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
+    if skip_bool:
+        return skip_bool
+    
     language_name = language.replace(" ", "_").replace("(", "").replace(")", "").lower()
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
     prompt_name = prompt.replace("prompts/", "")
@@ -126,49 +129,63 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     1) We don't have one for today yet
     2) the service should be run (not forcibly skipped by commandline argument)
     """
-    if not skip_bool and not today_response_exists:
-        logger.info(f"Running {language_name}: {disaster_name}: {prompt_name}: {service_name}")
+    if not today_response_exists:
+        logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
+
+        #try:
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
-        logger.info(f"Results {output}")
         
         if output is None:
-            skip_bool = True
-        else:
-            if language_name == "arabic":
-                # make sure Arabic output is not broken and is left to right
-                output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
-                
-            # Store response with today's date
-            response_with_date = {
-                "text": output,
-                "date": today
-            }
-            #TODO use this to add date to response
-            existing_response_list.append(response_with_date)
-            #existing_response_list.append(output)
-    elif today_response_exists:
-        logger.info(f"Skipping {language_name}: {disaster_name}: {prompt_name}: {service_name} - already have response for today")
+            logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
+            return True  # Skip this service going forward
+        
+        if language_name == "arabic":
+            # make sure Arabic output is not broken and is left to right
+            output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
+            
+        # Store response with today's date
+        response_with_date = {
+            "text": output,
+            "date": today
+        }
+        existing_response_list.append(response_with_date)
+        return skip_bool  # Keep current skip status
+            
+        # except Exception as e:
+        #     logger.error(f"Error with {service_name} for {language_name}:{disaster_name}:{prompt_name}: {e}")
+        #     return True  # Skip this service going forward
+        
+    else:
+        logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for today")
     
     return skip_bool
 
+
+#TODO: skip the service if it cannot connect
 def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, output_filename):
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
             for prompt in ITERATIVE_PROMPT_FILES:
-                skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
-                if not skip_gemini:  # If we successfully made an API call
-                    save_output_json(output_json, output_filename, logger)
-                skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
-                if not skip_chatgpt:  # If we successfully made an API call
-                    save_output_json(output_json, output_filename, logger)
-                skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
-                if not skip_deepseek:  # If we successfully made an API call
-                    save_output_json(output_json, output_filename, logger)
+                if not skip_gemini:  # yes, this looks redundant, but we want to skip Gemini even checking (logging) if the flag is set
+                    skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
+                    if not skip_gemini:  # If we successfully made an API call
+                        save_output_json(output_json, output_filename, logger)
+                if not skip_chatgpt:
+                    skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
+                    if not skip_chatgpt:  # If we successfully made an API call
+                        save_output_json(output_json, output_filename, logger)
+                if not skip_deepseek:
+                    skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
+                    if not skip_deepseek:  # If we successfully made an API call
+                        save_output_json(output_json, output_filename, logger)
 
             # Google Translate needs to take an original template and translate directly
             disaster_name = disaster.replace("a ", "").replace(" ", "_")
             prompt = f"prompts/{disaster_name}.txt"
-            skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, total_responses)
+            if not skip_google_translate:
+                skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, total_responses)
+                if not skip_google_translate:
+                    save_output_json(output_json, output_filename, logger)
 
             # Direct translations also need a short description and the original template
             prompt = f"prompts/translate_{disaster_name}.txt"

@@ -12,15 +12,17 @@ Arguments:
     generated_file.json   Path to the JSON file containing generated texts.
     reference_file.json   Path to the JSON file containing reference (gold standard) texts.
     --output_csv          (Optional) Path to save the evaluation results as a CSV file.
+    --service_name        (Optional) Evaluate only this one service - deepseek, google_translate, chatgpt, gemini
 
 Dependencies: evaluate, pandas, tqdm, argparse, json, re, time, sacrebleu
 
 Example:
     python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results.csv
+    python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results_google_translate.csv --service_name google_translate
 
 Functions:
-    - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
     - main: Parses arguments, loads metrics, runs evaluation, and prints/saves results.
+    - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
     - tokenizer_lambda: defines a lambda that can return and call a tokenizer for a given text
 """
 
@@ -111,14 +113,14 @@ def get_results_count(generated_path, service_name=None):
         # Case 1: Get results for a single service
         if service_name in json_data:
             return get_results_count(json_data[service_name])
-        else:
-            print(f"Service '{service_name}' not found.")
-            return 0
+        print(f"Service '{service_name}' not found.") # only get here when if statement is false
+        return 0
     elif isinstance(json_data, dict):
-        total = 0
-        for v in json_data.values():
-            total += get_results_count(v)
-        return total
+        # total = 0
+        # for v in json_data.values():
+        #     total += get_results_count(v)
+        # return total
+        return sum(get_results_count(v) for v in json_data.values())
     elif isinstance(json_data, list):
         return 1 if len(json_data) > 0 else 0
     else:
