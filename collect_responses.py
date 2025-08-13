@@ -96,7 +96,7 @@ def save_output_json(output_json, output_file, logger):
     """Save the current state of the output JSON to file"""
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(output_json, f, ensure_ascii=False, indent=4)
+            json.dump(output_json, f, ensure_ascii=False, indent=4, default=str)
         logger.info(f"Progress saved to {output_file}")
     except Exception as e:
         logger.error(f"Failed to save progress: {e}")
@@ -115,12 +115,13 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     else:
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
-    # Check if we already have a response for today
-    today = date.today().isoformat()
+    # Check if we already have a response for this month
+    today = date.today()
     today_response_exists = False
+    current_month = f"{today.year}-{today.month:02d}"
     
     for response in existing_response_list:
-        if isinstance(response, dict) and response.get('date') == today:
+        if isinstance(response, dict) and response.get('date', '').startswith(current_month):
             today_response_exists = True
             break
     
@@ -146,7 +147,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         # Store response with today's date
         response_with_date = {
             "text": output,
-            "date": today
+            "date": date.today().isoformat()
         }
         existing_response_list.append(response_with_date)
         return skip_bool  # Keep current skip status
@@ -156,7 +157,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         #     return True  # Skip this service going forward
         
     else:
-        logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for today")
+        logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for this month")
     
     return skip_bool
 
