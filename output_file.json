@@ -7,18 +7,46 @@
                     "ALERTA DE EMERGENCIA: Inundaciones severas en su área. Evacúe inmediatamente si se encuentra en una zona de riesgo. Diríjase a terrenos más altos y evite cruzar carreteras o áreas inundadas. Siga las instrucciones de las autoridades locales. Manténgase seguro.",
                     "⚠️ ALERTA DE INUNDACIÓN ⚠️  Una inundación está afectando esta área. Manténgase alejado de zonas bajas, ríos y arroyos. Evacúe si las autoridades lo solicitan. Busque refugio en lugares altos y seguros. No intente cruzar calles inundadas. Manténgase informado a través de fuentes oficiales.",
                     "⚠️ ALERTA DE EMERGENCIA: INUNDACIÓN ⚠️  Se informa de una inundación en su área. Evite zonas bajas y busque refugio en áreas elevadas de inmediato. No intente cruzar calles inundadas. Siga las instrucciones de las autoridades locales y manténgase actualizado. Para emergencias, llame al 911.",
-                    "ALERTA DE EMERGENCIA: Fuertes inundaciones están afectando la zona. Evite áreas bajas y cercanas a ríos o arroyos. Si se encuentra en peligro, busque refugio en lugares altos de inmediato. No intente cruzar calles inundadas. Manténgase informado a través de fuentes oficiales."
+                    "ALERTA DE EMERGENCIA: Fuertes inundaciones están afectando la zona. Evite áreas bajas y cercanas a ríos o arroyos. Si se encuentra en peligro, busque refugio en lugares altos de inmediato. No intente cruzar calles inundadas. Manténgase informado a través de fuentes oficiales.",
+                    {
+                        "text": "⚠️ ALERTA DE EMERGENCIA: Se reporta inundación en la zona. Diríjase inmediatamente a un lugar alto y seguro. Evite cruzar áreas inundadas. Siga las instrucciones de las autoridades locales. Manténgase informado por radio y medios oficiales.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Inundación grave a las [TIME] en [LOCATION]. Evite el área y busque terreno elevado inmediatamente. Siga las instrucciones de las autoridades locales. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[AGENCIA]: EMERGENCIA POR INUNDACIÓN en [LOCATION] hasta [TIME]. Riesgo alto de inundaciones severas. Evite áreas bajas y cruce de ríos o arroyos. Busque terreno elevado de inmediato y siga instrucciones oficiales. Más información: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Alerta de inundación en [LOCATION] a las [TIME]. Evite áreas bajas y busque refugio seguro de inmediato. Siga las instrucciones de las autoridades locales. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Alerta de inundación en [LOCATION] desde [TIME]. Evite la zona y busque terreno elevado. Manténgase informado y siga las instrucciones de las autoridades. Más detalles en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[SENDING AGENCY]: UNA EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
                     "[SENDING AGENCY]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de una zona que pueda inundarse o esté bajo una orden de evacuación. [URL]",
                     "[SENDING AGENCY]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está vigente para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y potencialmente mortal. No intente viajar a menos que esté evacuando un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
                     "[SENDING AGENCY]: UNA EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y potencialmente mortal. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
-                    "[SENDING AGENCY]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o se encuentre bajo una orden de evacuación. [URL]"
+                    "[SENDING AGENCY]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está en efecto para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o se encuentre bajo una orden de evacuación. [URL]",
+                    {
+                        "text": "[AGENCIA REMITENTE]: Una EMERGENCIA POR INUNDACIÓN REPENTINA está en vigor para [LOCATION] hasta [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intente viajar a menos que esté huyendo de un área que pueda inundarse o esté bajo una orden de evacuación. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -27,18 +55,46 @@
                     "⚠️ ALERTA DE EMERGENCIA ⚠️  Vientos extremos están afectando la zona. Manténgase en lugares seguros, lejos de ventanas y objetos que puedan ser desplazados por el viento. Evite salir al exterior si no es absolutamente necesario. Manténgase informado a través de los canales oficiales.",
                     "⚠️ ALERTA DE EMERGENCIA: Fuertes vientos en la zona. Permanezca en un lugar seguro, lejos de ventanas y estructuras frágiles. Evite salir a la calle. Manténgase informado a través de fuentes oficiales. ⚠️",
                     "⚠️ ALERTA DE EMERGENCIA ⚠️  Vientos extremos reportados en la zona. Permanezca en un lugar seguro y lejos de ventanas. Evite salir al exterior hasta nuevo aviso. Manténgase informado a través de fuentes oficiales. 🚨",
-                    "⚠️ ALERTA DE EMERGENCIA: Fuertes vientos extremos en la zona. Permanezca en un lugar seguro y evite salir al exterior. Manténgase alejado de ventanas y objetos sueltos que puedan convertirse en proyectiles. Siga las indicaciones de las autoridades locales. ⚠️"
+                    "⚠️ ALERTA DE EMERGENCIA: Fuertes vientos extremos en la zona. Permanezca en un lugar seguro y evite salir al exterior. Manténgase alejado de ventanas y objetos sueltos que puedan convertirse en proyectiles. Siga las indicaciones de las autoridades locales. ⚠️",
+                    {
+                        "text": "ALERTA DE EMERGENCIA: Vientos extremos en su área. Permanezca en interiores, asegure objetos sueltos y evite desplazamientos innecesarios. Siga las indicaciones de las autoridades locales. Manténgase a salvo.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Vientos extremos en [LOCATION] a partir de [TIME]. Permanezca en interiores y asegure objetos sueltos. Evite viajar si no es esencial. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[AGENCIA EMISORA]: ALERTA por vientos extremos en [LOCATION] hasta [TIME]. Vientos peligrosos pueden causar daños y objetos voladores. Refúgiese de inmediato en el interior de un edificio sólido, lejos de ventanas. Evite estar al aire libre. Más información: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Vientos extremos previstos a las [TIME] en [LOCATION]. Manténgase en interiores y asegure objetos sueltos. Evite salir a menos que sea esencial. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Vientos extremos esperados a las [TIME] en [LOCATION]. Manténgase bajo techo y lejos de ventanas. Evite viajar si es posible. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] debido al peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos que puedan volar. ¡NO salga si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
                     "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] debido al peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio sólido, lejos de las ventanas. Proteja su cabeza de objetos que puedan volar. ¡NO salga afuera si el viento calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
                     "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTO EXTREMO está en efecto para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
                     "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos que puedan volar. ¡NO salga si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
-                    "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] debido a un peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento disminuye! Los vientos volverán a ser peligrosos rápidamente. [URL]"
+                    "[SENDING AGENCY]: Una ADVERTENCIA DE VIENTOS EXTREMOS está en efecto para [LOCATION] debido a un peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga afuera si el viento disminuye! Los vientos volverán a ser peligrosos rápidamente. [URL]",
+                    {
+                        "text": "[AGENCIA REMITENTE]: Una ADVERTENCIA DE VIENTO EXTREMO está en efecto para [LOCATION] por el peligro inmediato de vientos que amenazan la vida hasta [TIME]. Refúgiese AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Proteja su cabeza de objetos voladores. ¡NO salga al exterior si el viento se calma! Los vientos volverán a ser peligrosos rápidamente. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "fire": {
@@ -47,18 +103,46 @@
                     "ALERTA DE EMERGENCIA: Incendio activo en [ubicación]. Evacúe de inmediato y siga las instrucciones de las autoridades. Mantenga la calma y busque un lugar seguro. Para más información, llame al [número de emergencia].",
                     "¡Emergencia! 🔥 Se ha reportado un incendio. Manténgase en calma y evacúe el área inmediatamente. Siga las instrucciones de las autoridades y no regrese hasta que sea seguro hacerlo. Llame al 911 si necesita ayuda.",
                     "🚨 EMERGENCIA: Se ha reportado un incendio en [ubicación]. Evacúe inmediatamente y busque un lugar seguro. Siga las instrucciones de las autoridades locales. No regrese hasta que se indique. Manténgase alerta y apoye a los demás. 🚨",
-                    "🔥 ATENCIÓN: Incendio activo en [ubicación]. Evacúe inmediatamente y diríjase a un lugar seguro. Siga instrucciones de las autoridades. No regrese hasta nuevo aviso. 🧯"
+                    "🔥 ATENCIÓN: Incendio activo en [ubicación]. Evacúe inmediatamente y diríjase a un lugar seguro. Siga instrucciones de las autoridades. No regrese hasta nuevo aviso. 🧯",
+                    {
+                        "text": "🚨 **ALERTA DE EMERGENCIA** 🚨  \nSe ha detectado un incendio en la zona. Mantenga la calma y evacúe inmediatamente siguiendo las rutas de escape indicadas. No utilice ascensores. Diríjase a un lugar seguro y siga las instrucciones de las autoridades.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Incendio activo detectado a las [TIME] en [LOCATION]. Evite la zona y siga instrucciones de las autoridades. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[AGENCIA EMISORA]: EMERGENCIA POR INCENDIO en [LOCATION] hasta [TIME]. Fuego activo en la zona. Riesgo extremo para la vida. Evacúe de inmediato siguiendo las instrucciones de las autoridades. Evite el área y manténgase informado. Más detalles en [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Incendio reportado a las [TIME] en [LOCATION]. Manténgase alejado del área y siga las indicaciones de las autoridades. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Incendio reportado a las [TIME] en [LOCATION]. Evite la zona y siga las indicaciones de las autoridades. Para más información, visite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_fire.txt": [
                     "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área será reducida y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, lesionado o muerto. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo pesado y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en el área y siga sus instrucciones. [URL]",
                     "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, lesionado o morir. SALGA de las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública trabajando en el área y siga sus instrucciones. [URL]",
                     "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no se marcha ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en el área y siga sus instrucciones. [URL]",
                     "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden quedar bloqueadas. Si no se va ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, mucho humo y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opera en el área y siga sus instrucciones. [URL]",
-                    "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública trabajando en el área y siga sus instrucciones. [URL]"
+                    "[SENDING AGENCY]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden bloquearse. Si no se va ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública trabajando en el área y siga sus instrucciones. [URL]",
+                    {
+                        "text": "[AGENCIA EMISORA]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está en efecto hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden quedar bloqueadas. Si no se va ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opere en el área y siga sus instrucciones. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -67,18 +151,46 @@
                     "Aviso de Emergencia: Se ha emitido un aviso de hervir el agua. Por favor, hierva toda el agua destinada para consumo humano (beber, cocinar, cepillarse los dientes) durante al menos 1 minuto antes de usarla. Este aviso está en efecto hasta nuevo aviso. Para más información, contacte a las autoridades locales.",
                     "Atención: Se ha emitido un aviso de hervir el agua para su área. Por favor, hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o higiene personal. Este aviso está vigente hasta nuevo aviso.",
                     "Aviso de Emergencia: Se emite un aviso de hervir el agua. No consuma agua del grifo sin hervirla primero durante al menos 1 minuto. Esto es necesario para garantizar su seguridad. Use agua hervida o embotellada para beber, cocinar y cepillarse los dientes. Manténgase atento a futuros avisos.",
-                    "ATENCIÓN: Aviso de hervir agua. No consuma agua del grifo sin hervirla previamente. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Este aviso está vigente hasta nuevo aviso."
+                    "ATENCIÓN: Aviso de hervir agua. No consuma agua del grifo sin hervirla previamente. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Este aviso está vigente hasta nuevo aviso.",
+                    {
+                        "text": "AVISO DE EMERGENCIA: Se ha emitido un aviso de hervir el agua para su área debido a posible contaminación. Hierva toda el agua para beber, cocinar, lavar alimentos y cepillarse los dientes durante al menos 1 minuto. Use agua hervida o embotellada hasta nuevo aviso.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Aviso de hervir el agua emitido a las [TIME] para [LOCATION]. Hierva el agua durante al menos 1 minuto antes de beber, cocinar o cepillarse los dientes. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Aviso de emergencia: Aviso de hervir el agua en [LOCATION] hasta [TIME]. Hiérvala antes de beber, cocinar o lavar alimentos para evitar enfermedades. No la consuma sin hervir. Siga las actualizaciones en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Aviso: Desde [TIME], en [LOCATION], hierva toda el agua antes de usarla para beber, cocinar o cepillarse los dientes debido a posible contaminación. Siga las indicaciones de salud pública. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Boil Water Notice: Starting [TIME], all residents in [LOCATION] must boil water before drinking or cooking until further notice. Visit [URL] for updates.",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_boil_water_notice.txt": [
                     "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua del grifo o agua filtrada hasta que la hierva. Lleve el agua a hervor completo durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no se haya hervido. Si utiliza fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no se haya hervido. [URL]",
                     "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua de su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua del grifo o agua filtrada hasta que la haya hervido. Lleve el agua a ebullición completa durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si utiliza fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
                     "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua de grifo o agua filtrada sin hervirla primero. Lleve el agua a hervor completo durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su niño, utilice fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
                     "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR AGUA para [LOCATION] y está en efecto hasta [TIME]. El agua en su comunidad puede enfermarle. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua del grifo ni agua filtrada hasta que la hierva. Lleve el agua a un punto de ebullición completo durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
-                    "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua de grifo o agua filtrada hasta que la haya hervido. Lleve el agua a hervir completamente durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]"
+                    "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se cepille los dientes ni limpie su hogar con agua de grifo o agua filtrada hasta que la haya hervido. Lleve el agua a hervir completamente durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LOCATION] y estará en vigor hasta [TIME]. El agua en su comunidad puede enfermarle. Use agua embotellada si está disponible. No beba, cocine, cepille sus dientes ni limpie su hogar con agua del grifo o agua filtrada hasta que la haya hervido. Hierva el agua hasta que alcance un hervor continuo durante TRES MINUTOS. Deje enfriar el agua antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, use fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "911_outage": {
@@ -87,18 +199,46 @@
                     "⚠️ Emergencia: Actualmente hay una interrupción en el servicio de llamadas al 911. Si necesita asistencia inmediata, comuníquese al [número alternativo/local] o utilice [detalles específicos de contacto alternativo]. Manténgase informado y seguro.",
                     "⚠️ Emergencia: Actualmente hay una interrupción en el servicio de 911. Si necesitas ayuda urgente, por favor llama al [número alternativo] o comunícate con [nombre de la agencia/localización]. Por favor comparte esta información.",
                     "⚠️ Emergencia: Actualmente hay una interrupción del servicio 911. Si necesita asistencia inmediata, por favor llame al [número alternativo] o comuníquese con [nombre de la agencia/localidad]. Manténgase seguro y comparta esta información. ⚠️",
-                    "ALERTA DE EMERGENCIA: El servicio 911 está temporalmente fuera de servicio. Para emergencias, comuníquese al [número alternativo] o al [número adicional]. Use mensajes de texto solo si no puede llamar. Manténgase atento a futuras actualizaciones."
+                    "ALERTA DE EMERGENCIA: El servicio 911 está temporalmente fuera de servicio. Para emergencias, comuníquese al [número alternativo] o al [número adicional]. Use mensajes de texto solo si no puede llamar. Manténgase atento a futuras actualizaciones.",
+                    {
+                        "text": "ALERTA DE EMERGENCIA: Actualmente hay una interrupción del servicio 911 en esta área. Si necesita asistencia de emergencia, llame al número alternativo [número] o comuníquese con el departamento de policía o bomberos local.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Emergencia: El servicio 911 no funciona desde [TIME] en [LOCATION]. Para asistencia, llame al número local de policía o bomberos. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Emergencia: Hay una interrupción del servicio 911 en [LOCATION] desde [TIME]. Si necesita ayuda, llame al número local de emergencias o al departamento de policía/bomberos de su zona. Manténgase informado y siga las instrucciones de las autoridades. Más información: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Emergencia en [LOCATION] desde [TIME]: servicio 911 no disponible. Use el número local de emergencias o medios alternativos para pedir ayuda. Más información: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "En [LOCATION] hay una interrupción del servicio 911 desde [TIME]. Si necesita ayuda de emergencia, use el número alternativo o comuníquese directamente con la policía o bomberos. Más información en [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_911_outage.txt": [
                     "[SENDING AGENCY]: Una ALERTA DE INTERRUPCIÓN DEL SERVICIO 9-1-1 está vigente para [LOCATION]. Por favor, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia a través de sus números telefónicos locales en caso de emergencia. Si llama al 9-1-1, es posible que no reciba ayuda. [URL]",
                     "[SENDING AGENCY]: Una ALERTA DE INTERRUPCIÓN DEL 9-1-1 está vigente para [LOCATION]. Por favor, contacte directamente a los servicios de policía, bomberos, médicos u otros servicios de emergencia en sus números telefónicos locales en caso de emergencia. Si marca 9-1-1, es posible que no reciba ayuda. [URL]",
                     "[SENDING AGENCY]: Una alerta de interrupción de 9-1-1 está en efecto para [LOCATION]. Por favor, comuníquese directamente con los servicios de policía, bomberos, médicos u otros servicios de emergencia a través de sus números telefónicos locales en caso de emergencia. Si marca 9-1-1, es posible que no reciba ayuda. [URL]",
                     "[SENDING AGENCY]: Una ALERTA DE INTERRUPCIÓN DE 9-1-1 está en efecto para [LOCATION]. Por favor, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia en sus números locales en caso de emergencia. Si marca 9-1-1, es posible que no reciba ayuda. [URL]",
-                    "[SENDING AGENCY]: Una alerta de interrupción del servicio 9-1-1 está en efecto para [LOCATION]. Por favor, contacte a la policía, bomberos, servicios médicos u otros servicios de emergencia directamente en sus números locales en caso de emergencia. Si marca 9-1-1, es posible que no reciba ayuda. [URL]"
+                    "[SENDING AGENCY]: Una alerta de interrupción del servicio 9-1-1 está en efecto para [LOCATION]. Por favor, contacte a la policía, bomberos, servicios médicos u otros servicios de emergencia directamente en sus números locales en caso de emergencia. Si marca 9-1-1, es posible que no reciba ayuda. [URL]",
+                    {
+                        "text": "[AGENCIA EMISORA]: Una ALERTA DE FALLA DEL 9-1-1 está en efecto para [LOCATION]. Por favor, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia a sus números de teléfono locales en caso de emergencia. Si llama al 9-1-1, es posible que no reciba ayuda. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         },
@@ -313,18 +453,46 @@
                     "!ﻢﻜﺘﻣﻼﺳ ﻰﻠﻋ ﺍﻮﻈﻓﺎﺣ .ﺔﻨﻣﺁ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻪﺠﺗﺍﻭ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍ .ﻩﺎﻴﻤﻟﺍ ﺭﺩﺎﺼﻣ ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺍﺭﻮﻓ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﻥﺎﻀﻴﻓ ﺪﺟﻮﻳ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".ﻚﺘﻠﺋﺎﻋﻭ ﻚﺴﻔﻧ ﺔﻳﺎﻤﺤﻟ ﺔﻣﺯﻼﻟﺍ ﺕﺍﺀﺍﺮﺟﻹﺍ ﺬﺨﺗﺍﻭ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻊﺑﺎﺗ .ﻩﺎﻴﻤﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﺀﺎﻘﺒﻟﺍﻭ ﺔﻌﻔﺗﺮﻣ ﺔﻘﻄﻨﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻝﺎﻘﺘﻧﻻﺍ ﻰﺟﺮﻳ .ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﺮﻴﺒﻛ ﻥﺎﻀﻴﻓ ﻦﻋ ﻍﻼﺑﻹﺍ ﻢﺗ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".ﺎﻨﺘﻳﻮﻟﻭﺃ ﻚﺘﻣﻼﺳ .ﺔﻴﻤﺳﺮﻟﺍ ﻞﺋﺎﺳﺮﻟﺍ ﻝﻼﺧ ﻦﻣ ﻉﻼﻃﺍ ﻰﻠﻋ ﺀﺎﻘﺒﻟﺍﻭ ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﺕﺍﺭﺎﺴﻤﻟﺍ ﺐﻨﺠﺗ .ﺔﻨﻣﺁﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﻝﺯﺎﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﺡﺎﺘﺠﻳ ﺪﻳﺪﺷ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
-                    "!ﻻﻭﺃ ﺔﻣﻼﺴﻟﺍ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺔﻣﻼﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗﻭ ﺲﻘﻄﻟﺍ ﺕﺎﺜﻳﺪﺤﺗ ﺍﻮﻌﺑﺎﺗ .ﺔﻌﻔﺗﺮﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻲﻓ ﻦﻣﺁ ﻯﻭﺄﻣ ﻦﻋ ﺚﺤﺒﻟﺍﻭ ،ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗﻭ ،ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻥﺎﻜﺴﻟﺍ ﻊﻴﻤﺟ ﻦﻣ ﺐﻠﻄﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﺡﺎﺘﺠﺗ ﺓﺪﻳﺪﺷ ﺕﺎﻧﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ"
+                    "!ﻻﻭﺃ ﺔﻣﻼﺴﻟﺍ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺔﻣﻼﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗﻭ ﺲﻘﻄﻟﺍ ﺕﺎﺜﻳﺪﺤﺗ ﺍﻮﻌﺑﺎﺗ .ﺔﻌﻔﺗﺮﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻲﻓ ﻦﻣﺁ ﻯﻭﺄﻣ ﻦﻋ ﺚﺤﺒﻟﺍﻭ ،ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗﻭ ،ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻥﺎﻜﺴﻟﺍ ﻊﻴﻤﺟ ﻦﻣ ﺐﻠﻄﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﺡﺎﺘﺠﺗ ﺓﺪﻳﺪﺷ ﺕﺎﻧﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": ".ﻢﻜﺘﻣﻼﺳ ﻰﻠﻋ ﺎﻇﺎﻔﺣ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﻤﻴﻠﻌﺘﻟﺍ ﺍﻮﻌﺑﺎﺗ .ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻨﻣﺁﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻝﺎﻘﺘﻧﻻﺍ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﺌﺟﺎﻔﻣ ﺕﺎﻧﺎﻀﻴﻓ ﺪﺟﻮﺗ !ﻩﺎﺒﺘﻧﻻﺍ ﻰﺟﺮﻳ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻝﺎﻘﺘﻧﻻﺍ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍ .ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺭﻮﺒﻋ ﻭﺃ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ،ﻦﻣﺁﻭ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻞﻘﺘﻧﺍ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺡﺍﻭﺭﻷﺍ ﻰﻠﻋ ﺪﻳﺪﺷ ﺮﻄﺧ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﻦﻣ ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﺜﻳﺪﺤﺘﻟﺍﻭ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻝﺎﻘﺘﻧﻻﺍ ﻰﺟﺮﻳ .[TIME] ﺪﻨﻋ [LOCATION] ﻲﻓ ﺪﻳﺪﺷ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗﻭ ﺍﺭﻮﻓ ﺔﻌﻔﺗﺮﻣ ﻦﻛﺎﻣﺃ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍ ﻰﺟﺮﻳ .[TIME] ﻲﻓ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺮﻔﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﻩﺎﻴﻤﻟﺎﺑ ﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺮﻔﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﻞﻘﻨﺘﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺮﻔﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗﻭ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
-                    "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺍﺪﻳﺪﻬﺗ ﻞﻜﺸﺗﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]"
+                    "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺍﺪﻳﺪﻬﺗ ﻞﻜﺸﺗﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
+                    {
+                        "text": "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﻥﺎﻀﻴﻔﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﺭﺩﺎﻐﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳﻭ ﺓﺭﻮﻄﺨﻟﺍ ﺪﻳﺪﺷ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ SENDING AGENCY ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -333,12 +501,31 @@
                     "!ﺎﻨﻣﺁﻭ ﺍﺭﺬﺣ ﻦﻛ .ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ ﺔﻴﻤﺳﺮﻟﺍ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻊﺑﺎﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻟﺍ ﺕﻻﺎﺣ ﻲﻓ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗﻭ ،ﺕﺎﻜﻠﺘﻤﻤﻟﺍ ﻦﻴﻣﺄﺗ ،ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﺀﺎﻘﺒﻟﺍ ﻰﺟﺮﻳ .ﻚﺘﻘﻄﻨﻣ ﺏﺮﻀﺗ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".ﺎﻨﺘﻳﻮﻟﻭﺃ ﻢﻜﺘﻣﻼﺳ .ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍ .ﻥﺍﺮﻴﻄﻠﻟ ﺔﻠﺑﺎﻘﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻭﺃ ﺭﺎﺠﺷﻷﺍ ﻭﺃ ﺬﻓﺍﻮﻨﻟﺍ ﺏﺮﻗ ﺀﺎﻘﺒﻟﺍ ﺐﻨﺠﺗ ،ﺔﻨﻣﺁ ﻝﺯﺎﻨﻣ ﻲﻓ ﺀﺎﻘﺒﻟﺍ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﺏﺮﻀﺗ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".ﺭﺬﺤﻟﺍﻭ ﺔﻄﻴﺤﻟﺍ ﺍﻭﺬﺨﺗﺍﻭ ﺔﻴﻤﺳﺮﻟﺍ ﺕﺎﻬﺠﻟﺍ ﻦﻣ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺍﻮﻌﺑﺎﺗ .ﺮﻳﺎﻄﺘﻠﻟ ﺔﻠﺑﺎﻘﻟﺍ ﺀﺎﻴﺷﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﺏﺮﻀﺗ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
-                    ".ﻥﺎﻣﺄﺑ ﺀﺎﻘﺒﻠﻟ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻊﺑﺎﺗ .ﺮﻳﺎﻄﺘﻠﻟ ﺔﻠﺑﺎﻘﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﺭﺎﺠﺷﻷﺍ ﺖﺤﺗ ﻭﺃ ﺔﺣﻮﺘﻔﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﺭﺬﺤﻟﺍ ﻡﺍﺰﺘﻟﺍ ﻰﺟﺮﻳ .ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ"
+                    ".ﻥﺎﻣﺄﺑ ﺀﺎﻘﺒﻠﻟ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻊﺑﺎﺗ .ﺮﻳﺎﻄﺘﻠﻟ ﺔﻠﺑﺎﻘﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﺭﺎﺠﺷﻷﺍ ﺖﺤﺗ ﻭﺃ ﺔﺣﻮﺘﻔﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﺭﺬﺤﻟﺍ ﻡﺍﺰﺘﻟﺍ ﻰﺟﺮﻳ .ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": ".ﺝﺭﺎﺨﻟﺍ ﻲﻓ ﺮﻳﺎﻄﺘﻠﻟ ﺔﻠﺑﺎﻘﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ ،ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍ ﻰﺟﺮﻳ .ﺔﻣﺩﺎﻘﻟﺍ ﺕﺎﻋﺎﺴﻟﺍ ﻝﻼﺧ ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[URL] ﻊﺟﺍﺭ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﻤﻴﻠﻌﺘﻟﺍ ﻊﺒﺗﺍ .ﺝﺭﺎﺨﻟﺎﺑ ﺪﺟﺍﻮﺘﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑﻭ ﻦﻴﺘﻣ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﻖﺑﺍ .ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺮﻄﺧﻭ ﺔﻤﻴﺴﺟ ﺭﺍﺮﺿﺃ ﻲﻓ ﺐﺒﺴﺘﺗ ﺪﻗ .[TIME] ﻰﺘﺣ [LOCATION] ﺔﻘﻄﻨﻣ ﺏﺮﻀﺗ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﺣﻮﺘﻔﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺎﺑ ﺢﺼﻨﻳ .[TIME] ﺪﻨﻋ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍ ﻦﻴﻣﺄﺗﻭ ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻦﻴﺘﻣ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻠﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺸﻟﺍ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
                     "[URL] .ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ ﺎﻣ ﻥﺎﻋﺮﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻱﻮﻗ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﻲﺘﻟﺍ ﺡﺎﻳﺮﻠﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
@@ -2606,7 +2793,11 @@
                     "\"ALERTA: Hay una interrupción en el servicio 911 en [LOCATION]. Hora del informe: [TIME]. Llame al número directo de la policía o bomberos si tiene una emergencia. Para más información visite [URL]. Manténgase informado y tome precauciones.\"",
                     "\"¡ALERTA! Hay una interrupción en el servicio 911 en [LOCATION]. No se pueden realizar llamadas al 911 en este momento. En caso de emergencia, diríjase a la estación de policía o incendios más cercana. Actualización: [TIME]. Más información en [URL]. Comparta este mensaje.\"",
                     "**ALERTA:** Hay una interrupción en el servicio 911 en [LOCATION]. Hora del reporte: [TIME]. Si tiene una emergencia, llame al número local de policía o bomberos directamente. Para más información, visite [URL]. Manténgase seguro.",
-                    "\"ALERTA: Hay una interrupción en el servicio 911 en [LOCATION]. Si necesita ayuda de emergencia, llame al número local de policía o bomberos directamente hasta nuevo aviso. Hora del informe: [TIME]. Para más información visite [URL]. Manténgase seguro.\""
+                    "\"ALERTA: Hay una interrupción en el servicio 911 en [LOCATION]. Si necesita ayuda de emergencia, llame al número local de policía o bomberos directamente hasta nuevo aviso. Hora del informe: [TIME]. Para más información visite [URL]. Manténgase seguro.\"",
+                    {
+                        "text": "**Alerta:** Hay una interrupción en el servicio 911 en [LOCATION]. Hora del informe: [TIME]. Si tiene una emergencia, llame al número local de policía o bomberos directamente. Para más información, visite [URL]. Manténgase seguro.",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     "¡ALERTA! El servicio de 911 no está disponible en [LOCATION] hasta [TIME]. En caso de emergencia, llame directamente al número alternativo de la policía o servicios de emergencia locales. Evite hacer llamadas de prueba. Para más información, visite [URL].",
@@ -2646,7 +2837,11 @@
                     "> [AGENCIA EMISORA]: Se emite una ALERTA DE FALLA DEL 9-1-1 para [LOCATION]. En caso de emergencia, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia utilizando su número local. Si marca el 9-1-1, es posible que no reciba ayuda. [URL]",
                     "[AGENCIA EMISORA]: Una ALERTA POR FALLA EN EL 9-1-1 está en efecto para [LOCATION]. Por favor, comuníquese con la policía, bomberos, servicios médicos u otros servicios de emergencia directamente a sus números de teléfono locales en caso de emergencia. Si marca el 9-1-1, puede que no reciba ayuda. [URL]",
                     "[AGENCIA EMISORA]: Está en vigor una ALERTA DE FALLA DEL 9-1-1 para [LOCATION]. En caso de emergencia, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia a través de sus números locales de teléfono. Si marca al 9-1-1, es posible que no reciba ayuda. [URL]",
-                    "[AGENCIA EMISORA]: Hay una ALERTA POR FALLA DEL 9-1-1 en efecto para [LOCATION]. Por favor, comuníquese con la policía, bomberos, servicios médicos u otros servicios de emergencia directamente a sus números de teléfono locales en caso de emergencia. Si marca al 9-1-1, es posible que no reciba ayuda. [URL]"
+                    "[AGENCIA EMISORA]: Hay una ALERTA POR FALLA DEL 9-1-1 en efecto para [LOCATION]. Por favor, comuníquese con la policía, bomberos, servicios médicos u otros servicios de emergencia directamente a sus números de teléfono locales en caso de emergencia. Si marca al 9-1-1, es posible que no reciba ayuda. [URL]",
+                    {
+                        "text": "[AGENCIA EMISORA]: Hay una ALERTA DE FALLA DEL 9-1-1 en efecto para [LOCATION]. Por favor, comuníquese con la policía, bomberos, servicios médicos u otros servicios de emergencia directamente a sus números de teléfono locales en caso de emergencia. Si marca el 9-1-1, es posible que no reciba ayuda. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         },
@@ -2759,42 +2954,66 @@
                     "  [ﻥﺎﻀﻴﻓ ﺮﻳﺬﺤﺗ]\"  .ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻴﻠﺤﻤﻟﺍ ﺔﻋﺍﺫﻹﺍ ﺮﺒﻋ ﻉﻼﻃﺍ ﻰﻠﻋ ﻖﺑﺍ .ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻭﺃ ﺭﻮﺴﺠﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻦﻛﺎﻣﺃ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﻦﻣ ﺭﺬﺤﺗ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ\"[ﻦﻳﺮﺧﻵﺍ ﻊﻣ ﺔﻟﺎﺳﺮﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﺀﺎﺟﺮﻟﺍ]",
                     ".ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍ .ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻉﺭﺍﻮﺸﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗ .ﺔﻨﻣﺁﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﻝﺯﺎﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ ،ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﺏﻮﺴﻨﻣ ﻉﺎﻔﺗﺭﻻ ﺍﺮﻈﻧ",
                     "**!ﻥﺎﻀﻴﻓ ﻦﻣ ﺮﻳﺬﺤﺗ :ﻞﺟﺎﻋ ﺭﺍﺬﻧﺇ**.ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﻚﺘﻣﻼﺳ ﻰﻠﻋ ﻆﻓﺎﺣ .ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ [ﻲﻠﺤﻤﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺭ ﻞﺧﺩﺃ] ﻢﻗﺮﻟﺍ ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻞﺼﺗﺍ .ﺔﻗﺭﺎﻐﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻭﺃ ﺭﻮﺴﺠﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .ﺔﻨﻣﺁﻭ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﻢﻬﻟﺯﺎﻨﻣ ﺀﻼﺧﺈﺑ ﺓﺭﺮﻀﺘﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﻥﺎﻜﺴﻟﺍ ﻊﻴﻤﺟ ﺢﺼﻨﻳ ،ﺮﻴﻄﺧ ﻞﻜﺸﺑ ﻩﺎﻴﻤﻟﺍ ﺏﻮﺴﻨﻣ ﻉﺎﻔﺗﺭﻻ ﺍﺮﻈﻧ",
-                    "⚠️ ﺗﻨﺒﻴﻪ ﻋﺎﺟﻞ: ﺗﺤﺬﻳﺮ ﻣﻦ ﻓﻴﻀﺎﻧﺎﺕ!  ﻧﻨﻮﻩ ﺑﺄﻥ ﺍﻟﻤﻨﻄﻘﺔ ﻣﻌﺮﺿﺔ ﻟﻔﻴﻀﺎﻧﺎﺕ ﺷﺪﻳﺪﺓ ﺑﺴﺒﺐ ﺍﻷﻣﻄﺎﺭ ﺍﻟﻐﺰﻳﺮﺓ. ﻳﺮﺟﻰ ﺍﺗﺨﺎﺫ ﺍﻻﺣﺘﻴﺎﻃﺎﺕ ﺍﻟﻼﺯﻣﺔ، ﻭﺍﻟﺒﻘﺎﺀ ﻓﻲ ﺃﻣﺎﻛﻦ ﻣﺮﺗﻔﻌﺔ، ﻭﺗﺠﻨﺐ ﺍﻟﻘﻴﺎﺩﺓ ﻓﻲ ﺍﻟﻤﻨﺎﻃﻖ ﺍﻟﻤﺘﻀﺮﺭﺓ.  ﻟﻼﻣﺘﺜﺎﻝ ﻟﻠﺘﻌﻠﻴﻤﺎﺕ ﺍﻷﻣﻨﻴﺔ، ﻳﺮﺟﻰ ﻣﺘﺎﺑﻌﺔ ﺍﻟﺘﺤﺪﻳﺜﺎﺕ ﻣﻦ ﺍﻟﺠﻬﺎﺕ ﺍﻟﻤﺨﺘﺼﺔ.  ⚠️ ﻟﻠﻄﻮﺍﺭﺉ، ﺍﺗﺼﻞ ﺑـ [ﺭﻗﻢ ﺍﻟﺪﻓﺎﻉ ﺍﻟﻤﺪﻧﻲ ﺃﻭ ﺍﻟﻄﻮﺍﺭﺉ ﺍﻟﻤﺤﻠﻲ].  ﺣﺎﻓﻈﻮﺍ ﻋﻠﻰ ﺳﻼﻣﺘﻜﻢ!"
+                    "⚠️ ﺗﻨﺒﻴﻪ ﻋﺎﺟﻞ: ﺗﺤﺬﻳﺮ ﻣﻦ ﻓﻴﻀﺎﻧﺎﺕ!  ﻧﻨﻮﻩ ﺑﺄﻥ ﺍﻟﻤﻨﻄﻘﺔ ﻣﻌﺮﺿﺔ ﻟﻔﻴﻀﺎﻧﺎﺕ ﺷﺪﻳﺪﺓ ﺑﺴﺒﺐ ﺍﻷﻣﻄﺎﺭ ﺍﻟﻐﺰﻳﺮﺓ. ﻳﺮﺟﻰ ﺍﺗﺨﺎﺫ ﺍﻻﺣﺘﻴﺎﻃﺎﺕ ﺍﻟﻼﺯﻣﺔ، ﻭﺍﻟﺒﻘﺎﺀ ﻓﻲ ﺃﻣﺎﻛﻦ ﻣﺮﺗﻔﻌﺔ، ﻭﺗﺠﻨﺐ ﺍﻟﻘﻴﺎﺩﺓ ﻓﻲ ﺍﻟﻤﻨﺎﻃﻖ ﺍﻟﻤﺘﻀﺮﺭﺓ.  ﻟﻼﻣﺘﺜﺎﻝ ﻟﻠﺘﻌﻠﻴﻤﺎﺕ ﺍﻷﻣﻨﻴﺔ، ﻳﺮﺟﻰ ﻣﺘﺎﺑﻌﺔ ﺍﻟﺘﺤﺪﻳﺜﺎﺕ ﻣﻦ ﺍﻟﺠﻬﺎﺕ ﺍﻟﻤﺨﺘﺼﺔ.  ⚠️ ﻟﻠﻄﻮﺍﺭﺉ، ﺍﺗﺼﻞ ﺑـ [ﺭﻗﻢ ﺍﻟﺪﻓﺎﻉ ﺍﻟﻤﺪﻧﻲ ﺃﻭ ﺍﻟﻄﻮﺍﺭﺉ ﺍﻟﻤﺤﻠﻲ].  ﺣﺎﻓﻈﻮﺍ ﻋﻠﻰ ﺳﻼﻣﺘﻜﻢ!",
+                    {
+                        "text": "  **ﺕﺎﻧﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ**\n  ️⚠ ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﻦﻣ ﻪﻴﺒﻨﺗ ️⚠\n  .ﺔﻨﻣﺁﻭ ﺔﻌﻔﺗﺮﻣ ﻦﻛﺎﻣﺃ ﻲﻓ ﺍﻮﻘﺑﺍ .٩١١ ﻢﻗﺮﻟﺎﺑ ﺍﻮﻠﺼﺗﺍ ،ﺉﺭﺍﻮﻄﻟﺍ ﺕﻻﺎﺣ ﻲﻓ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺍﻮﺒﻨﺠﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﻝﺯﺎﻨﻤﻟﺍ ﺓﺭﺩﺎﻐﻣ ﻡﺪﻌﺑ ﻦﻴﻨﻃﺍﻮﻤﻟﺍ ﻊﻴﻤﺟ ﺢﺼﻨﻳ .ﺓﺮﻳﺰﻏ ﺭﺎﻄﻣﺃ ﻝﻮﻄﻫ ﻰﻟﺇ due ﺓﺪﻳﺪﺷ ﺕﺎﻧﺎﻀﻴﻔﻟ ﺔﻘﻄﻨﻤﻟﺍ ﺽﺮﻌﺘﺗ\n**.ﻪﻴﺒﻨﺘﻠﻟ ﺔﻟﺎﺳﺮﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﺀﺎﺟﺮﻟﺍ**",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_persona.txt": [
                     ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺮﺜﻛﺃ ﻞﻴﺻﺎﻔﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﺀﺎﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺍﻮﻃ ﺮﻳﺬﺤﺗ!",
                     ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻥﺎﻀﻴﻔﻟﺍ ﻩﺎﻴﻣ ﻲﻓ ﺮﻴﺴﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﻲﻓ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﺭﺯ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
-                    "\".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﺮﻴﺴﻟﺍ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\""
+                    "\".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﺮﻴﺴﻟﺍ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\"",
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .[TIME] :ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻣﻼﺴﻟﺍ ﺕﺍﺀﺍﺮﺟﺇ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺓﺮﻴﻄﺧ ﺕﺎﻧﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     ".[URL] ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺔﻛﺮﺤﺘﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ 상황 ﻩﺬﻫ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     "[URL] ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻳﺭﻮﻔﻟﺍ ﺔﻳﺎﻗﻮﻟﺍ ﺕﺍﺀﺍﺮﺟﺇ ﺬﺨﺗﺍ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﺮﻴﺴﻟﺍ ﺐﻨﺠﺗ .ﻦﻣﺁﻭ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻲﻓ ﻖﺑﺍ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺔﻟﺎﺣ ﻩﺬﻫ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺩﻮﺟﻮﺑ ﻪﻴﺒﻨﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳ ﻊﺿﻭ ﺍﺬﻫ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﻲﺸﻤﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻞﻘﺘﻧﺍ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     "[URL] :ﻂﺑﺍﺮﻟﺍ ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻰﻟﺇ ﺍﺭﻮﻓ ﻞﻘﺘﻧﺍ ،ﺮﻄﺨﻠﻟ ﺔﺿﺮﻌﻣ ﺔﻘﻄﻨﻣ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﻦﻣﺁﻭ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻲﻓ ﻖﺑﺍ .ﺔﻋﺮﺴﺑ ﻉﺎﻔﺗﺭﻻﺍ ﻲﻓ ﺓﺬﺧﺁ ﻩﺎﻴﻤﻟﺍ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
-                    "[URL] :ﻲﻟﺎﺘﻟﺍ ﻂﺑﺍﺮﻟﺍ ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺭﻮﺒﻋ ﻝﻭﺎﺤﺗ ﻻﻭ ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺪﻳﺪﺷ ﺮﻄﺧ ﺪﺟﻮﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                    "[URL] :ﻲﻟﺎﺘﻟﺍ ﻂﺑﺍﺮﻟﺍ ﺮﺒﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺭﻮﺒﻋ ﻝﻭﺎﺤﺗ ﻻﻭ ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺪﻳﺪﺷ ﺮﻄﺧ ﺪﺟﻮﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ ﺔﻴﻠﺤﻤﻟﺍ ﻡﻼﻋﻹﺍ ﻞﺋﺎﺳﻭ ﻊﺑﺎﺗ .ﺎﻴﻠﻌﻟﺍ ﻖﺑﺍﻮﻄﻟﺍ ﻲﻓ ﻦﻣﺁ ﻯﻭﺄﻣ ﻦﻋ ﺚﺤﺑﺍ ،ﺾﻔﺨﻨﻣ ﻥﺎﻜﻣ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﺍﺭﻮﻓ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍﻭ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺗ .ﺓﺎﻴﺤﻠﻟ ﺩﺪﻬﻣﻭ ﻊﻳﺮﺳ ﻞﻜﺸﺑ ﻩﺎﻴﻤﻟﺍ ﺏﻮﺴﻨﻣ ﻉﺎﻔﺗﺭﺍ ﺮﻄﺧ ﺪﺟﻮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .ﺕﺍﺩﺎﺷﺭﻹﺍﻭ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ [URL] ﺍﻮﻌﺑﺎﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻝﻮﻠﺤﺑ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     "!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻲﻓ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[TIME] :ﻊﻗﻮﺘﻤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻣﻼﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻳﺭﻮﻓ ﺕﺍﺀﺍﺮﺟﺇ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﺍﻭﺭﻭﺯ ،ﺕﺍﺩﺎﺷﺭﻹﺍﻭ ﻞﻴﺻﺎﻔﺘﻠﻟ .ﺔﻀﻔﺨﻨﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻲﻓ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
-                    ".[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﻴﻓﺎﺿﻹﺍ ﺕﺎﻣﻮﻠﻌﻤﻟﺍﻭ ﻞﻴﺻﺎﻔﺘﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻱﺭﺎﺠﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺔﻳﺍﺪﺑ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                    ".[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﻴﻓﺎﺿﻹﺍ ﺕﺎﻣﻮﻠﻌﻤﻟﺍﻭ ﻞﻴﺻﺎﻔﺘﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻱﺭﺎﺠﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺔﻳﺍﺪﺑ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻩﺎﻴﻤﻟﺍ ﻱﺭﺎﺠﻣ ﻦﻣ ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻲﻓ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺓﺮﺛﺄﺘﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﻱﺭﺎﺠﻣ ﻦﻣ ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻦﻛﺎﻣﺃ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﻥﺎﻜﺴﻟﺍ ﺢﺼﻨﻳ .[TIME] ﻲﻓ ﻪﻨﻋ ﻍﻼﺑﻹﺍ ﻢﺗ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﺋﺭﺎﻄﻟﺍ ﺕﺎﺑﺎﺠﺘﺳﻻﺍﻭ ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﻖﻃﺎﻨﻣ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﺏﻮﺴﻨﻣ ﻉﺎﻔﺗﺭﺍ ﻲﻓ ﺐﺒﺴﺘﻳ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ",
                     "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻣﻼﺴﻠﻟ ﺔﻳﺭﻮﻓ ﺕﺍﺀﺍﺮﺟﺇ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺮﻳﺬﺤﺗ ️⚠",
                     ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺍﺩﺎﺷﺭﺇ ﻉﺎﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺓﺮﻴﻄﺧ ﺕﺎﻧﺎﻀﻴﻓ :ﺮﻳﺬﺤﺗ",
-                    ".ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﺙﺪﺤﻟﺍ ﺖﻗﻭ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺎﻴﻟﺎﺣ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ ️⚠"
+                    ".ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﺙﺪﺤﻟﺍ ﺖﻗﻭ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺎﻴﻟﺎﺣ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ ️⚠",
+                    {
+                        "text": ".ﺔﻴﻤﺳﺮﻟﺍ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻊﺑﺎﺗﻭ ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺔﺜﻳﺪﺤﻟﺍ ﺕﺎﻣﻮﻠﻌﻤﻟﺍﻭ ﻞﻴﺻﺎﻔﺘﻠﻟ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .[TIME] ﻲﻓ ﻪﻨﻋ ﻍﻼﺑﻹﺍ ﻢﺗ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "translate_flood.txt": [
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﻷ ﺎﻌﺿﺎﺧ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺍﺪﻳﺪﻬﺗ ﻞﻜﺸﻳﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ FLASH FLOOD EMERGENCY ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ ﻥﻼﻋﺇ ﻢﺗ :[SENDING AGENCY ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﻥﺎﻀﻴﻔﻠﻟ ﺔﺿﺮﻌﻣ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﻦﻣ ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ :[AGENCY]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﻷ ﺎﻌﺿﺎﺧ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻮﻟﺍ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﺔﻳﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ ﻢﺳﺇ]",
                     "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺩﺪﻬﻣﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻊﻳﺮﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ",
-                    "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺩﺪﻬﻣﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[SENDING AGENCY]"
+                    "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺩﺪﻬﻣﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻳﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[SENDING AGENCY]",
+                    {
+                        "text": "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﺍﺫﺇ ﻭﺃ ﻩﺎﻴﻤﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﺮﻔﺴﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳﻭ ﺔﻳﺎﻐﻠﻟ ﺮﻴﻄﺧ ﻊﺿﻭ ﺍﺬﻫ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺊﺟﺎﻔﻣ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ ﻥﺇ :[SENDING AGENCY]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -2803,7 +3022,11 @@
                     "  !ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ ️⚠  .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗﻭ ،ﻚﻳﺮﺤﺘﻠﻟ ﺔﻠﺑﺎﻘﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗﻭ ،ﻡﺎﻜﺣﺈﺑ ﺏﺍﻮﺑﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻕﻼﻏﺈﺑ ﺢﺼﻨﻳ .ﺔﻣﺩﺎﻘﻟﺍ ﺕﺎﻋﺎﺴﻟﺍ ﻝﻼﺧ ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﺓﺪﻳﺪﺷ ﻒﺻﺍﻮﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ ﺏﻮﺒﻫ ﻊﻗﻮﺘﻳ  .ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻊﺑﺎﺗﻭ ﻦﻣﺁ ﻥﺎﻜﻣ ﻲﻓ ﻖﺑﺍ ️⚠ﺲﻘﻃ_ﺮﻳﺬﺤﺗ#",
                     "  **ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ**.ﺔﻔﺻﺎﻌﻟﺍ ﺭﺎﺴﺤﻧﺍ ﻰﺘﺣ ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺍﻮﻘﺑﺍ .ﺮﻳﺎﻄﺘﻤﻟﺍ ﻁﻮﻘﺴﻟﺍ ﻦﻣ ﺍﻭﺭﺬﺣﺍﻭ ﺔﻴﻗﺍﻭ ﺲﺑﻼﻣ ﺍﻭﺪﺗﺭﺍ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﻲﻧﺎﺒﻤﻟﺍ ﻭﺃ ﺭﺎﺠﺷﻷﺍ ﺏﺮﻗ ﺪﺟﺍﻮﺘﻟﺍ ﺐﻨﺠﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﻡﺪﻌﺑ ﺢﺼﻨﻳ .ﻒﺻﺍﻮﻌﺑ ﺔﺑﻮﺤﺼﻣ ﺔﻴﻟﺎﻋ ﺕﺎﻋﺮﺳ ﻰﻟﺇ ﻞﺼﺗ ﺪﻗ ﺓﺪﻳﺪﺷ ﺎﺣﺎﻳﺭ ﺔﻘﻄﻨﻤﻟﺍ ﺪﻬﺸﺗ :ﺔﻳﻮﺠﻟﺍ ﺩﺎﺻﺭﻷﺍ ﻦﻣ ﻪﻴﺒﻨﺗ ️🌪",
                     "**ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ**.ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﺍﻮﻌﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﺍﻮﺧﻮﺗ .ﺡﺎﻳﺮﻟﺍ ﻞﻌﻔﺑ ﺮﻴﻄﺗ ﺪﻗ ﻲﺘﻟﺍ ﺔﻴﺟﺭﺎﺨﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻴﻣﺄﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﺩﻮﺟﻮﺑ ﻩﻮﻨﻧ",
-                    ".ﺔﺟﺎﺤﻟﺍ ﺖﻋﺩ ﺍﺫﺇ ﺉﺭﺍﻮﻄﻟﺎﺑ ﺍﻮﻠﺼﺗﺍ .ﻡﺎﺴﺟﻷﺍ ﺮﻳﺎﻄﺗ ﻭﺃ ﻁﻮﻘﺴﻟﺍ ﻦﻣ ﺍﻭﺭﺬﺣﺍ .ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ،ﺔﺿﺎﻔﻀﻔﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .ﺔﻳﻮﻗ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ"
+                    ".ﺔﺟﺎﺤﻟﺍ ﺖﻋﺩ ﺍﺫﺇ ﺉﺭﺍﻮﻄﻟﺎﺑ ﺍﻮﻠﺼﺗﺍ .ﻡﺎﺴﺟﻷﺍ ﺮﻳﺎﻄﺗ ﻭﺃ ﻁﻮﻘﺴﻟﺍ ﻦﻣ ﺍﻭﺭﺬﺣﺍ .ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ،ﺔﺿﺎﻔﻀﻔﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .ﺔﻳﻮﻗ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ",
+                    {
+                        "text": "  **:ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ**\n\n  .ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﺍﻮﻌﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﺍﻮﺧﻮﺗ .ﺔﻴﺋﺎﺑﺮﻬﻜﻟﺍ ﻙﻼﺳﻷﺍﻭ ﺭﺎﺠﺷﻷﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ،ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗﻭ ،ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .ﺔﻴﺑﺍﺮﺗ ﻒﺻﺍﻮﻌﺑ ﺔﺑﻮﺤﺼﻣ ﺔﻋﺎﺳ/ﻢﻛ [ﺔﻋﺮﺴﻟﺍ ﻞﺧﺩﺃ] ﻰﻟﺇ ﺎﻬﺘﻋﺮﺳ ﻞﺼﺗ ﺔﻳﻮﻗ ﺡﺎﻳﺭ ﺏﻮﺒﻫ ﻊﻗﻮﺘﻳ ! ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ\n\n**.ﻊﻴﻤﺠﻟﺍ ﺔﻣﻼﺳ ﻥﺎﻤﻀﻟ ﺔﻟﺎﺳﺮﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﺀﺎﺟﺮﻟﺍ**",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_persona.txt": [
                     "\".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﻴﻨﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\"",
@@ -2817,7 +3040,11 @@
                     "[URL] .ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ ﺭﺎﺒﺧﻷﺍ ﺭﺩﺎﺼﻣ ﻦﻣ ﻖﻘﺤﺗ .ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻢﺘﺣﺍﻭ ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺓﺪﻳﺪﺷ ﺔﻴﺗﺎﻋ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺏﺍﻮﺑﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﺉﺭﺍﻮﻄﻟﺍ ﺕﻻﺎﺣ ﻲﻓ ﻻﺇ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺡﺎﻳﺮﻟﺍ ﺎﻬﻠﻤﺤﺗ ﺪﻗ ﻲﺘﻟﺍ ﺔﻴﺟﺭﺎﺨﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﻝﺰﻨﻤﻟﺍ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺔﻔﻴﻨﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     "[URL] :ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻦﻣﺁ ﻰﻨﺒﻤﺑ ﻡﺰﺘﻟﺍ ،ﻝﺰﻨﻤﻟﺍ ﺝﺭﺎﺧ ﺪﺟﺍﻮﺘﻟﺍ ﺔﻟﺎﺣ ﻲﻓ .ﺔﻓﻮﺸﻜﻤﻟﺍ ﻦﻛﺎﻣﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﺎﻬﻘﻴﻠﺤﺘﻟ ﺎﺒﺴﺤﺗ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺓﺮﻴﻄﺧﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
-                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻲﻓ ﻢﺘﺣﺍﻭ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺍﺮﻄﺧ ﻞﻜﺸﺗ ﺡﺎﻳﺮﻟﺍ ﻩﺬﻫ .ﺡﺎﻳﺮﻠﻟ ﺔﺿﺮﻌﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺓﺮﻴﻄﺧ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻲﻓ ﻢﺘﺣﺍﻭ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﺕﺎﻜﻠﺘﻤﻤﻟﺍﻭ ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺍﺮﻄﺧ ﻞﻜﺸﺗ ﺡﺎﻳﺮﻟﺍ ﻩﺬﻫ .ﺡﺎﻳﺮﻠﻟ ﺔﺿﺮﻌﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻲﻓ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻰﻠﻋ ﺮﺛﺆﺗ ﺓﺮﻴﻄﺧ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": "[URL] .ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ ﺔﻴﻠﺤﻤﻟﺍ ﻡﻼﻋﻹﺍ ﻞﺋﺎﺳﻭ ﻦﻣ ﻖﻘﺤﺗ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻦﻣﺁ ﻥﺎﻜﻣ ﻲﻓ ﻢﺘﺣﺍﻭ ﺔﺿﺎﻔﻀﻔﻟﺍ ﺀﺎﻴﺷﻷﺍ ﺖﻴﺒﺜﺗ ﻦﻣ ﺪﻛﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﺏﺮﻀﺗ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺭﺍﺬﻧﺇ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     "ﺲﻘﻃ_ﺮﻳﺬﺤﺗ# .[URL] ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺫﺎﺨﺗﺍﻭ ﺔﺣﻮﺘﻔﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺮﻳﺬﺤﺗ ️⚠",
@@ -2831,7 +3058,11 @@
                     "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﺭﺬﺣﺍﻭ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     ".ﺕﺎﺜﻳﺪﺤﺘﻠﻟ [URL] ﻊﺑﺎﺗ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﺭﺬﺣﺍﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ ️⚠",
                     ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
-                    "[URL] :ﺪﻳﺰﻤﻠﻟ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﻡﺎﺴﺟﻷﺍﻭ ﺭﺎﺠﺷﻷﺍ ﻦﻣ ﺭﺬﺤﻟﺍﻭ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :[ﺮﻳﺬﺤﺗ]"
+                    "[URL] :ﺪﻳﺰﻤﻠﻟ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﻡﺎﺴﺟﻷﺍﻭ ﺭﺎﺠﺷﻷﺍ ﻦﻣ ﺭﺬﺤﻟﺍﻭ ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :[ﺮﻳﺬﺤﺗ]",
+                    {
+                        "text": "\".ﺭﺬﺤﻟﺍ ﻰﺧﻮﺗ .[URL] ﻰﻠﻋ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﺪﻘﻔﺗﻭ ﺔﺿﺎﻔﻀﻔﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺮﻳﺬﺤﺗ\"",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "translate_extreme_wind.txt": [
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺎﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺭﻮﻔﻟﺍ ﻰﻠﻋ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻟﺍ ﺮﻄﺧ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[AGENCY NAME]",
