@@ -255,16 +255,40 @@
                         "date": "2025-08-13"
                     }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Avètisman ijans a [TIME]: Gen inondasyon grav nan [LOCATION]. Chèche kote ki pi wo imedyatman. Pa travèse dlo k ap koule. Plis enfòmasyon sou [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "ALÈ IJANS: Gen gwo inondasyon k'ap frape [LOCATION] jiska [TIME]. Menas pou lavi ou. Chèche yon kote anwo e sekirite imedyatman. Pa travèse dlo kap koule. Swiv nouvèl lokal pou plis detay. Enfòmasyon sou: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Gen gwo inondasyon nan [LOCATION] depi [TIME]. Chèche kote ki an sekirite imedyatman. Evite travèse dlo ki ap koule. Pou plis enfòmasyon ak mizajou, vizite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Avètisman Dlo: Nan [TIME], gen yon inondasyon ki afekte zòn [LOCATION]. Chèche kote ki pi wo touswit epi evite wout ki anba dlo. Pou plis enfòmasyon, vizite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[SENDING AGENCY]: Yon ijans inondasyon flash ap fèt pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere ak menasan lavi. Pa tante vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]",
                     "[SENDING AGENCY]: YON IJANS INONDASYON FLASH ap an vigè pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ki ekstrèmman danjere epi ki menase lavi. Pa eseye vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]",
                     "[SENDING AGENCY]: Yon IJANS INONDASYON ENSTA NTAN ap an efè pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere ki menase lavi. Pa eseye vwayaje sòf si w ap kite yon zòn ki ka inonde oswa si w sou yon lòd evakyasyon. [URL]",
                     "[SENDING AGENCY]: Yon IJANS INONDASYON SÈWÈ an efè pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere ki ka menase lavi. Pa eseye vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]",
-                    "[SENDING AGENCY]: YON IJANS INONDASYON FLASH ap an aplikasyon pou [LOCATION] jiskaske [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere ak menasan pou lavi. Pa eseye vwayaje sof si ou ap kite yon zòn ki ka inonde oswa ou anba yon lòd evakyasyon. [URL]"
+                    "[SENDING AGENCY]: YON IJANS INONDASYON FLASH ap an aplikasyon pou [LOCATION] jiskaske [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere ak menasan pou lavi. Pa eseye vwayaje sof si ou ap kite yon zòn ki ka inonde oswa ou anba yon lòd evakyasyon. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: YON IJANS INONDASYON SOUDEN ap fèt pou [LOCATION] jiska [TIME]. Sa a se yon sitiyasyon ekstrèmman danjere e ki menase lavi. Pa eseye vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd pou evakye. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -273,18 +297,46 @@
                     "**ALÈ IJANS:** Gen van ekstrèm ki ap soufle nan zòn ou an. Rete andedan kay ou, evite deplase si li pa nesesè, epi rete lwen fenèt yo. Kenbe telefòn ou chaje pou resevwa enfòmasyon. Rete vijilan!",
                     "Voye atansyon! Gen van ekstrèm k ap soufle nan zòn nan. Rete an sekirite, pa rete deyò si pa nesesè. Chèche abri ki solid epi evite espas ki gen anpil risk. Tanpri pran prekosyon!",
                     "ATANSYON! Van ekstrèm ap soufle nan zòn ou an. Retire oswa sekirize objè ki ka vole. Rete lwen pye bwa ak estrikti ki pa solid. Chèche abri an sekirite imedyatman. Swiv enstriksyon otorite lokal yo. Rete vijilan epi pwoteje tèt ou ak fanmi ou!",
-                    "**ALÈ IJANS:** Gen gwo van ekstrèm nan zòn ou an. Rete andedan kay. Evite kout van ak zòn ki pa sekirize. Pwoteje tèt ou ak fanmi w. Suiv enskripsyon otorite yo pou plis enfòmasyon."
+                    "**ALÈ IJANS:** Gen gwo van ekstrèm nan zòn ou an. Rete andedan kay. Evite kout van ak zòn ki pa sekirize. Pwoteje tèt ou ak fanmi w. Suiv enskripsyon otorite yo pou plis enfòmasyon.",
+                    {
+                        "text": "ALÈ IJANS: Van ekstrèm ap frape zòn nan. Tanpri chèche abri ki an sekirite imedyatman, rete lwen fenèt ak pyebwa. Swiv tout enstriksyon otorite lokal yo.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Alèt ijans: Van ekstrèm ap frape nan [LOCATION] depi [TIME]. Chèche abri ki an sekirite imedyatman. Rete lwen fenèt yo ak objè ki ka vole. Plis enfòmasyon sou [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Avètisman van ekstrèm pou [LOCATION] jiska [TIME]. Van fò ka lakòz domaj grav. Rete andedan yon bilding solid, lwen fenèt. Evite deplase deyò. Si ou deyò oswa nan machin, chèche abri solid touswit. Plis enfòmasyon: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Nan [TIME], van ekstrèm ap frape zòn [LOCATION]. Rete andedan, evite kondwi, epi pwoteje tout bagay ki ka vole. Pou plis enfòmasyon, vizite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Alèt ijans: Van ekstrèm ap frape nan [LOCATION] nan [TIME]. Tanpèt sa ka lakòz danje grav. Chèche abri imedyatman epi swiv enstriksyon otorite yo. Plis enfòmasyon: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[SENDING AGENCY]: Gen yon AVÈTISMAN VAN EKSTRÈM ki an efè pou [LOCATION] pou danje imedya van ki menase lavi jouk [TIME]. Pran kouvèti KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè kap vole. PA ale deyò si van an kalme! Van yo ap vin danjere ankò vit. [URL]",
                     "[SENDING AGENCY]: Yon AVÈTISMAN GRENN VANT EKSTRÈM ap an vigè pou [LOCATION] akòz danje imedyat van menasan lavi jiska [TIME]. Pran pwoteksyon KOUNYE A nan yon chanm entèn nan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole. Pa ALE DEYÒ si van an diminye! Van yo ap vin fè danje rapidman ankò. [URL]",
                     "[SENDING AGENCY]: Gen yon AVÈTISMAN VAN EKSTRÈM ki an efè pou [LOCATION] akòz danje iminan van ki menase lavi jiskaske [TIME]. Pran kouvèti KOUNYE A nan yon chanm enteryè andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole. Pa ALE DEYÒ menm si van an kalme! Van yo ap vin danjere ankò byen vit. [URL]",
                     "[SENDING AGENCY]: Yon AVÈTISMAN SOUF VAN EKSTREM an efè pou [LOCATION] pou danje imedya avèk van ki ka riske lavi jiska [TIME]. Pran kouvè kounye a nan yon chanm enteryè nan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole. PA soti deyò si van an kalme! Van yo ap vit retounen tounen danjere. [URL]",
-                    "[SENDING AGENCY]: Yon AVÈTISMAN VAN EKSTRÈM valab pou [LOCATION] pou danje imedyat van ki menase lavi jiska [TIME]. Pran refij KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè ki ka vole. Pa AL DEYÒ si van an bese! Van yo ap byen vit tounen danjere ankò. [URL]"
+                    "[SENDING AGENCY]: Yon AVÈTISMAN VAN EKSTRÈM valab pou [LOCATION] pou danje imedyat van ki menase lavi jiska [TIME]. Pran refij KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè ki ka vole. Pa AL DEYÒ si van an bese! Van yo ap byen vit tounen danjere ankò. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: Gen yon AVÈTISMAN VAN EKSTRÈM k ap an vigè pou [LOCATION] akòz danje imedya van ki ka touye moun jiska [TIME]. Chèche kouvèti KOUNYE A nan yon chanm andedan nan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole. PA soti deyò si van an vin kalm! Van yo pral tounen danjere byen vit ankò. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "fire": {
@@ -293,18 +345,46 @@
                     "🚨 URJANS! Gen yon dife nan zòn nan. Tanpri evakye imedyatman epi ale nan yon kote ki an sekirite. Si ou bezwen èd, rele sèvis ijans yo. Rete vijilan!",
                     "**Alèt Ijans:** Gen yon dife nan zòn nan! Tanpri kite zòn nan imedyatman epi swiv wout sekirite yo. Si ou bezwen èd, rele sèvis ijans nan nimewo ki apwopriye. Rete an sekirite!",
                     "Gen yon dife! Tanpri kite zòn nan imedyatman pou sekirite w. Rele 114 pou asistans ijans.",
-                    "Gen yon dife! Tanpri evakye zòn nan imedyatman epi chèche sekirite. Kontakte otorite yo pou èd."
+                    "Gen yon dife! Tanpri evakye zòn nan imedyatman epi chèche sekirite. Kontakte otorite yo pou èd.",
+                    {
+                        "text": "ALÈ: Gen dife k ap boule nan zòn ou! Tanpri sòti touswit epi suiv direksyon otorite yo. Pa retounen jiskaske yo di li an sekirite.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Gen yon dife serye nan [LOCATION] depi [TIME]. Si ou nan zòn nan, kite imedyatman epi evite lafimen an. Swiv enstriksyon otorite yo. Plis enfòmasyon: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "ALÈ IJANS: Gen yon dife k ap gaye nan zòn [LOCATION]. Menm jan ou resevwa mesaj sa a a [TIME], otorite yo mande pou tout moun kite zòn nan imedyatman epi chèche sekirite. Pa ret tann. Swiv enstriksyon sekirite lokal yo. Plis enfòmasyon: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Gen yon dife ki te rapòte a [TIME] nan [LOCATION]. Tanpri evakye imedyatman epi rete lwen zòn nan. Swiv enstriksyon sèvis ijans yo. Plis enfòmasyon sou [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Ijans dife nan [LOCATION] a nan [TIME]. Tanpri evakye zòn nan imedyatman epi suiv enstriksyon sekirite. Pou plis enfòmasyon, vizite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_fire.txt": [
                     "[AGANS KI VOYE]: Yon AVI DIFÉ nan [LOCATION] ap rete an efè jiska [TIME]. Evakye fanmi ou ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap diminye e wout yo ka vin bloke. Si ou pa kite kounye a, ou ka rete bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou ak vizibilite ki redwi, anpil lafimen, ak difikilte pou respire. Fè atansyon lè wap kondwi. Surveye pou pèsonèl sekirite piblik ki ap opere nan zòn nan epi swiv enstriksyon yo. [URL]",
                     "[SENDING AGENCY]: Yon AVÈTISMAN DIFÉ nan [LOCATION] ap fèt jiska [TIME]. Evakye fanmi w ak bèt kay yo kounye a, pa pran reta. Vizibilite nan zòn nan ap redwi epi wout yo ka vin bloke. Si ou pa kite kounye a, ou ka rete bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann vizibilite redwi, gwo lafimen, ak difikilte pou respire. Fè atansyon pandan wap kondwi. Suiv enstriksyon pèsonèl sekirite piblik yo ki nan zòn nan. [URL]",
                     "[SENDING AGENCY]: Yon AVÈTISMAN DIFE nan [LOCATION] an efè jiska [TIME]. Evakye fanmi w ak bèt kay kounye a, pa fè reta. Vizibilite nan zòn nan ap redwi epi wout yo ka bloke. Si ou pa kite kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Tann pou vizibilite ki redwi, lafimen lou, ak difikilte pou respire. Fè atansyon lè w ap kondwi. Swiv enstriksyon pèsonèl sekirite piblik k ap opere nan zòn nan. [URL]",
                     "[SENDING AGENCY]: GEN AVÈTISMAN POU DIFÈ nan [LOCATION] ki ap an vigè jiska [TIME]. Evakye fanmi ou ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap redwi epi wout yo ka bloke. Si ou pa kite kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou vizibilite redwi, gwo lafimen, ak difikilte pou respire. Fè atansyon lè w ap kondwi. Swiv enstriksyon pèsonèl sekirite piblik k ap travay nan zòn nan. [URL]",
-                    "[SENDING AGENCY]: Yon AVÈTISMAN DIFÈ nan [LOCATION] an efè jiska [TIME]. Evakye fanmi ou ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap redwi e wout yo ka bloke. Si ou pa ale kounye a, ou ta ka rete bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou pou vizibilite redwi, anpil lafimen, ak difikilte pou respire. Fè atansyon pandan wap kondwi. Obsève pèsonèl sekirite piblik yo k ap opere nan zòn nan epi swiv enstriksyon yo. [URL]"
+                    "[SENDING AGENCY]: Yon AVÈTISMAN DIFÈ nan [LOCATION] an efè jiska [TIME]. Evakye fanmi ou ak bèt kay ou kounye a, pa pran reta. Vizibilite nan zòn nan ap redwi e wout yo ka bloke. Si ou pa ale kounye a, ou ta ka rete bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou pou vizibilite redwi, anpil lafimen, ak difikilte pou respire. Fè atansyon pandan wap kondwi. Obsève pèsonèl sekirite piblik yo k ap opere nan zòn nan epi swiv enstriksyon yo. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: GEN AVÈTISMAN DIFE nan [LOCATION] ki an vigè jiska [TIME]. Evakye fanmi w ak bèt kay ou kounye a, pa ret tann. Vizibilite nan zòn nan ap diminye e wout yo ka vin bloke. Si ou pa kite kounye a, ou ka jwenn tèt ou nan pyèj, blese, oswa pèdi lavi w. KITE zòn ki toupre [LOCATION]. Atann w ak vizibilite ki ba, anpil lafimen, ak difikilte pou respire. Fè atansyon lè w ap kondwi. Pran prekosyon ak pèsonèl sekirite piblik k ap travay nan zòn nan epi swiv enstriksyon yo. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -313,18 +393,46 @@
                     "Atansyon! Gen yon avètisman sou dlo bouyi nan zòn ou an. Tanpri bouyi tout dlo w ap itilize pou bwè, kwit manje, lave men, ak bwose dan. Dlo dwe bouyi pou omwen 1 minit epi kite l refredi anvan w itilize. Pran mezi pou pwoteje sante ou.",
                     "ATANSYON! Yon avi bouyi dlo ap aktiv. Tout dlo pou bwè, fè manje, oswa bwose dan dwe bouyi pou omwen 1 minit anvan itilize. Pa bwè dlo kran. Nou ap travay pou rezoud pwoblèm nan vit. Mèsi pou konpreyansyon w.",
                     "ATANSYON: Yon avètisman bouyi dlo an vigè! Pa bwè dlo a san ou pa bouyi li avan. Bouyi dlo a pou omwen 1 minit pou elimine mikwòb ki ka lakòz maladi. Sèvi ak dlo bouyi oswa dlo an boutèy pou bwè, prepare manje, lave fwi ak legim, bwose dan, ak fè ti bebe bwè. Rete vijilan pou mizajou!",
-                    "Atansyon! Gen yon avi pou bouyi dlo nan zòn ou an. Tanpri bouyi tout dlo pou bwè, kwit manje, ak lave jiskaske yo fè w konnen ke dlo a an sekirite ankò. Dlo pa trete ka lakòz maladi. Proteje sante ou!"
+                    "Atansyon! Gen yon avi pou bouyi dlo nan zòn ou an. Tanpri bouyi tout dlo pou bwè, kwit manje, ak lave jiskaske yo fè w konnen ke dlo a an sekirite ankò. Dlo pa trete ka lakòz maladi. Proteje sante ou!",
+                    {
+                        "text": "**ALÈ IJANS: AVÈTISMAN POU BOUYI DLO**  \nOtorite lokal yo ap avèti tout rezidan yo pou bouyi tout dlo pou bwè, kwit manje, lave fwi ak legim jiskaske yo notifye nou ankò. Dlo ki sòti nan tiyo a ka gen mikwòb ki ka fè moun malad. Bouyi dlo a pandan omwen 1 minit anvan ou sèvi avè l. Pa sèvi ak dlo san bouyi pou bwè oswa pou kwit manje. Rete tann lòt mizajou ofisyèl.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Avètisman ijans: Depi [TIME], nan [LOCATION], dlo pa an sekirite pou bwè san bouyi. Tanpri bouyi dlo pou omwen 1 minit anvan w sèvi avè l. Gade detay sou [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Avi ijans: Yon nòt pou bouyi dlo an efè pou [LOCATION] depi [TIME]. Bouyi tout dlo pou bwè oswa pou kwit manje pou omwen 1 minit anvan ou itilize li. Sa a pou pwoteje kont mikwòb ki ka fè ou malad. Plis enfòmasyon: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Alèt: Depi [TIME], nan zòn [LOCATION], dlo a pa sifi pou bwè san bouyi. Tanpri bouyi dlo pandan omwen 1 minit anvan ou bwè oswa itilize. Pou plis enfòmasyon, vizite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Avètisman dlo: Depi [TIME], nan [LOCATION], bouyi tout dlo pou bwè oswa kwit manje jiskaske yo retire avi a. Dlo ki pa bouyi ka pote mikwòb danjere. Plis enfòmasyon sou [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_boil_water_notice.txt": [
                     "[SENDING AGENCY]: YON ALÈT BOUYI DLO soti pou [LOCATION] epi li ap rete an efè jiskaske [TIME]. Dlo nan kominote w ka fè w malad. Sèvi ak dlo nan boutèy si li disponib. Pa bwè, kwit manje, bwose dan w, oswa netwaye kay ou ak dlo tiyo oswa dlo filtre si li pa bouyi. Mennen dlo a bouyi nèt nan yon gwo bouyi pou TWA MINIT. Kite dlo a refwadi anvan w itilize li. Pa itilize glas ki fèt ak dlo ki pa te bouyi. Si w itilize fomil pou bay pitit ou manje, sèvi ak fomil ki pare pou itilize. Asire w bèt kay ou yo pa bwè dlo ki pa te bouyi. [URL]",
                     "[ENSTITISYON KAP VOYE MESAJ]: Yo bay yon ALÈ KONSÈNAN DLO KI MANDE BOUYI pou [LOCATION], epi l ap rete an efè jiska [TIME]. Dlo nan kominote w ka fè w malad. Sèvi ak dlo nan boutèy si li disponib. Pa bwè, pa kwit manje, pa bwose dan ou oswa pa netwaye kay ou ak dlo tiyo oswa dlo ki filtre jiskaske ou bouyi li. Bouyi dlo a pandan TRO MINIT. Kite dlo a refwadi anvan ou sèvi ak li. Pa itilize glas ki fèt ak dlo ki pa bouyi. Si w ap itilize fòmil pou nouri pitit ou, sèvi ak fòmil ki deja prepare pou itilize. Asire w ke bèt kay ou pa bwè dlo ki pa bouyi. [URL]",
                     "[SENDING AGENCY]: Yo bay yon AVI POU BOUYI DLO pou [LOCATION] e l ap rete an efè jiskaske [TIME]. Dlo nan kominote ou a kapab fè ou malad. Sèvi ak dlo nan boutèy si li disponib. Pa bwè, pa kwit manje, pa bwose dan w, ni netwaye kay ou avèk dlo tiyo oswa dlo filtre jiskaske ou bouyi li. Fè dlo a bouyi avèk gwo aksyon pou TWA MINIT. Kite dlo a refwadi anvan ou sèvi avè l. Pa sèvi ak glas ki fèt ak dlo ki pa bouyi. Si ou sèvi ak fòmil pou bay tibebe ou manje, itilize fòmil ki deja prepare pou itilize. Asire w ke bèt kay yo pa bwè dlo ki pa bouyi. [URL]",
                     "[SENDING AGENCY]: Yon ALÈ SIYEN POU BOUYI DLO te bay pou [LOCATION] e li ap rete valid jouk [TIME]. Dlo nan kominote ou ka fè ou malad. Sèvi ak dlo nan boutèy si ou gen li disponib. Pa bwè, pa kwit manje, pa bwose dan ou, ni netwaye kay ou ak dlo tiyo oswa dlo filtre jiskaske ou bouyi li. Fè dlo a bouyi nèt pandan TWA MINIT. Kite dlo a refwadi anvan ou sèvi ak li. Pa itilize glas ki fèt ak dlo ki pa te bouyi. Si w itilize lèt fòmil pou bay tibebe ou manje, sèvi ak lèt fòmil ki pare pou itilize. Asire bèt kay ou pa bwè dlo ki pa te bouyi. [URL]",
-                    "[SENDING AGENCY]: Yon ALÈT POU BOUYI DLO te bay pou [LOCATION] epi l ap rete an efè jiska [TIME]. Dlo nan kominote w ka fè w malad. Itilize dlo nan boutèy si w gen li. Pa bwè, kwit, bwose dan w, oswa fè netwayaj lakay w ak dlo tiyo oswa dlo filtre san w pa bouyi li. Fè dlo a bouyi jouk li rive nan yon gwo bouyi pou TWA MINIT. Kite dlo a refwadi anvan ou itilize li. Pa itilize glas ki fèt ak dlo ki pa te bouyi. Si w itilize lèt pou prepare manje tibebe w, sèvi ak lèt ki deja pare pou itilize. Asire w ke bèt kay ou yo pa bwè dlo ki pa te bouyi. [URL]"
+                    "[SENDING AGENCY]: Yon ALÈT POU BOUYI DLO te bay pou [LOCATION] epi l ap rete an efè jiska [TIME]. Dlo nan kominote w ka fè w malad. Itilize dlo nan boutèy si w gen li. Pa bwè, kwit, bwose dan w, oswa fè netwayaj lakay w ak dlo tiyo oswa dlo filtre san w pa bouyi li. Fè dlo a bouyi jouk li rive nan yon gwo bouyi pou TWA MINIT. Kite dlo a refwadi anvan ou itilize li. Pa itilize glas ki fèt ak dlo ki pa te bouyi. Si w itilize lèt pou prepare manje tibebe w, sèvi ak lèt ki deja pare pou itilize. Asire w ke bèt kay ou yo pa bwè dlo ki pa te bouyi. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: YON AVÈTISMAN POU BOUYI DLO te pibliye pou [LOCATION] epi li ap rete an vigè jiska [TIME]. Dlo nan kominote ou ka fè ou malad. Sèvi ak dlo nan boutèy si li disponib. Pa bwè, pa kwit manje, pa bwose dan ou, ni pa netwaye kay ou ak dlo tiyo oswa dlo filtre jiskaske ou fin bouyi li. Fè dlo a bouyi nèt pou TWA MINIT. Kite dlo a refwadi anvan ou sèvi avè l. Pa sèvi ak glas ki fèt ak dlo ki pa bouyi. Si ou sèvi ak fòmil pou nouri pitit ou, sèvi ak fòmil ki pare pou itilize. Asire w bèt kay yo pa bwè dlo ki pa fin bouyi. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "911_outage": {
@@ -333,18 +441,46 @@
                     "Nou ap enfòme w ke gen yon pwoblèm avèk sèvis 911 nan zòn ou an. Si ou gen yon ijans, tanpri rele [nimewo alternatif] oswa kontakte otorite lokal yo pou asistans imedyat.",
                     "Tanpri sonje: Gen yon pwoblèm ak sèvis 911 nan zòn nan. Si ou gen yon ijan, tanpri rele [nimewo altènatif] oswa kontakte otorite lokal yo dirèkteman pou asistans.",
                     "Alo! Gen yon pwoblèm ak sèvis 911 nan zòn ou. Si ou gen yon ijans, tanpri rele [nimewo altènatif], oswa kontakte sèvis ijans lokal pou asistans.",
-                    "ATANSYON! Gen yon pann nan sistèm 911 nan zòn ou an. Si w gen ijans, tanpri rele nimewo altènatif oswa kontakte lapolis lokal dirèkteman. Rete vijilan epi pase enfòmasyon sa a bay lòt moun."
+                    "ATANSYON! Gen yon pann nan sistèm 911 nan zòn ou an. Si w gen ijans, tanpri rele nimewo altènatif oswa kontakte lapolis lokal dirèkteman. Rete vijilan epi pase enfòmasyon sa a bay lòt moun.",
+                    {
+                        "text": "ALÈJANS: Gen yon pwoblèm ak sèvis 911 nan zòn ou a. Si ou gen yon ijans, tanpri rele nimewo sèvis ijans lokal oswa nimewo lapolis/dife dirèkteman: [mete nimewo altènatif isit la]. Pa itilize 911 jiskaske yo fin rezoud pwoblèm nan.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Nan [TIME], gen yon pwoblèm 911 nan [LOCATION]. Si ou bezwen èd ijans, rele nimewo lokal sèvis ijans yo. Plis enfòmasyon sou [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Gen yon pann sèvis 911 nan [LOCATION] depi [TIME]. Si w gen ijans, rele lopital oswa polis lokal dirèkteman. Pa itilize 911 jiskaske sèvis la retabli. Pou plis enfòmasyon, vizite [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Atansyon: Depi [TIME], sèvis 911 pa mache nan [LOCATION]. Si w gen ijans, sèvi ak nimewo lokal altènatif oswa vizite [URL] pou plis enfòmasyon.",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Alèt ijans: Depi [TIME], sèvis 911 pa mache nan [LOCATION]. Si ou bezwen èd ijans, sèvi ak liy altènatif yo oswa ale dirèkteman nan estasyon lapolis oswa ponpye ki pi pre w. Plis enfòmasyon: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_911_outage.txt": [
                     "[SENDING AGENCY]: Yon ALÈ PANIK 9-1-1 ap valide pou [LOCATION]. Tanpri kontakte polis, ponpye, medikal, oswa lòt sèvis ijans dirèkteman sou nimewo lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]",
                     "[SENDING AGENCY]: Yon alèt pwoblèm 9-1-1 an vigè pou [LOCATION]. Tanpri kontakte lapolis, ponpye, sèvis medikal, oswa lòt sèvis ijans yo dirèkteman sou nimewo lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]",
                     "[SENDING AGENCY]: Yon ALÈ PANN 9-1-1 ap pote konsekans pou [LOCATION]. Tanpri kontakte lapolis, sèvis ponpye, medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]",
                     "[SENDING AGENCY]: Yon alèt kòlti 9-1-1 an vigè pou [LOCATION]. Tanpri kontakte polis, dife, medikal, oswa lòt sèvis ijans dirèkteman nan nimewo lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa resevwa èd. [URL]",
-                    "[SENDING AGENCY]: Yon ALÈT PANNE 9-1-1 an efè pou [LOCATION]. Tanpri kontakte lapolis, ponpye, medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo an ka ijans. Si w rele 9-1-1, ou ka pa jwenn sekou. [URL]"
+                    "[SENDING AGENCY]: Yon ALÈT PANNE 9-1-1 an efè pou [LOCATION]. Tanpri kontakte lapolis, ponpye, medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo an ka ijans. Si w rele 9-1-1, ou ka pa jwenn sekou. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: Gen yon ALÈT PANNE 9-1-1 k ap fèt pou [LOCATION]. Tanpri kontakte lapolis, ponpye, sèvis medikal, oswa lòt sèvis ijans dirèkteman nan nimewo lokal yo nan ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         },
@@ -3600,9 +3736,24 @@
                         "date": "2025-08-13"
                     }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": ".ﺔﻣﻮﻠﻌﻤﻟﺍ ﻩﺬﻫ ﻙﺭﺎﺷﻭ ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺉﺭﺍﻮﻄﻠﻟ ﻲﻠﺤﻤﻟﺍ ﻢﻗﺮﻟﺎﺑ ﻞﺼﺗﺍ ،[TIME] ﻰﺘﺣ .[LOCATION] ﻲﻓ 911 ﺔﻣﺪﺨﻟ ﺉﺭﺎﻃ ﻉﺎﻄﻘﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﺉﺭﺍﻮﻄﻟﺍ ﺕﻻﺎﺣ ﻲﻓ ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻰﻟﺇ ﻪﺟﻮﺘﻟﺍ ﻭﺃ ﺔﻠﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻡﺎﻗﺭﺃ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ 911 ﺉﺭﺍﻮﻄﻟﺍ ﺔﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﺉﺭﺍﻮﻄﻟﺍ ﺕﻻﺎﺣ ﻲﻓ ﻑﺎﻌﺳﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻠﻟ ﻲﻠﺤﻤﻟﺍ ﻢﻗﺮﻟﺎﺑ ﻝﺎﺼﺗﻻﺎﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﺎﻴﻟﺎﺣ 911 ﻡﺎﻈﻧ ﻞﻄﻌﺗ **:ﺉﺭﺍﻮﻃ ﻪﻴﺒﻨﺗ**",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "prompt_chain_of_translation.txt": [
                     {
                         "text": ".ﺔﺋﺭﺎﻃ ﺔﻟﺎﺣ ﻙﺎﻨﻫ ﺖﻧﺎﻛ ﺍﺫﺇ ﻦﻣﺁ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍﻭ ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ [TIME] [LOCATION] .ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻰﻟﺇ ﻪﺟﻮﺘﻟﺍ ﻭﺃ ﻞﻳﺪﺑ ﻢﻗﺭ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .911 ﺉﺭﺍﻮﻄﻟﺍ ﺔﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ ️⚠",
@@ -3614,7 +3765,11 @@
                     "[ﻂﺑﺍﺮﻟﺍ] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﻟﺎﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﺎﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻦﻣ ﺎﻫﺮﻴﻏ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺍ ﺕﺎﻣﺪﺨﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺉﺭﺍﻮﻄﻟﺍ ﻡﺎﻈﻧ ﻲﻓ ﻞﻄﻋ ﺙﺪﺤﺑ ﻪﻴﺒﻨﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[ﻂﺑﺍﺭ] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﻉﺎﻄﻘﻧﺍ ﻪﻴﺒﻨﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]ﺔﺑﺍ",
                     "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﺃ ﺉﺭﺍﻮﻃ ﺕﺎﻣﺪﺧ ﻱﺃ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻣﺪﺨﻟﺍ ﻉﺎﻄﻘﻧﺍ ﻦﻣ ﺮﻳﺬﺤﺗ 1-1-9 ﺓﺮﻔﻃ",
-                    "[ﻂﺑﺍﺮﻟﺍ] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﺭﺍﺬﻧﺇ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]"
+                    "[ﻂﺑﺍﺮﻟﺍ] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﺭﺍﺬﻧﺇ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
+                    {
+                        "text": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻦﻣ ﺎﻫﺮﻴﻏ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺍ ﺕﺎﻣﺪﺨﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﻡﺎﻈﻧ ﺭﺎﻴﻬﻧﺎﺑ ﻪﻴﺒﻨﺗ :[SENDING AGENCY ﺔﻬﺟ ﻝﺎﺳﺭﺇ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         },
@@ -3625,18 +3780,46 @@
                     "當然可以。以下是您請求的內容：「緊急通知：洪水警報！由於持續暴雨，本地區可能發生嚴重洪水。請立即撤離至安全地點，避免靠近河流及低窪地區。關閉電源，攜帶重要物品，遵循官方指示。保持冷靜，確保家人安全。更多資訊請留意當地媒體。切勿輕忽此警報！」",
                     "以下是您要求的中文（繁體）洪水緊急警報文本：「緊急通知：洪水警報！由於持續暴雨，本地區即將發生嚴重洪水。請立即撤離至安全區域，避免靠近低窪地區及河岸。關閉家中電源，攜帶必要物品及證件。隨時關注官方最新消息，切勿冒險涉水。生命安全至上，請迅速行動！」",
                     "**緊急通知：洪水警報**  由於連續暴雨，本地區可能發生嚴重洪水。請立即採取以下措施：  1. 遠離低窪地區及河流沿岸。  2. 避免外出，確保自身安全。  3. 準備應急物資（如食物、飲用水、藥品）。  4. 關注官方發布的最新消息。  請保持冷靜，互相幫助，確保家人安全！  **發布單位：災害應變中心**",
-                    "【緊急洪水警報】  根據氣象部門監測，您所在地區即將發生嚴重洪水，水位迅速上升，請立即採取避險措施：  1. 迅速撤離低窪地區，前往高地避難。  2. 關閉電源及瓦斯，避免觸電或火災。  3. 勿涉水行走或駕駛，以防被急流沖走。  4. 隨時關注官方最新通知，遵循政府指示。  請保持冷靜，確保自身安全！緊急求助請撥打119或110。  （防汛指揮部發佈）"
+                    "【緊急洪水警報】  根據氣象部門監測，您所在地區即將發生嚴重洪水，水位迅速上升，請立即採取避險措施：  1. 迅速撤離低窪地區，前往高地避難。  2. 關閉電源及瓦斯，避免觸電或火災。  3. 勿涉水行走或駕駛，以防被急流沖走。  4. 隨時關注官方最新通知，遵循政府指示。  請保持冷靜，確保自身安全！緊急求助請撥打119或110。  （防汛指揮部發佈）",
+                    {
+                        "text": "【緊急通告】洪水警報  \n\n根據氣象部門監測，受持續強降雨影響，本地區河流水位急速上漲，預計未來幾小時可能引發嚴重洪水。請立即採取以下措施：  \n\n1. 迅速撤離低窪及危險區域，前往政府指定避難所。  \n2. 避免靠近河道、排水溝或積水區域，以防意外。  \n3. 切斷家中電源與瓦斯，防止漏電或火災。  \n4. 攜帶必要物資（證件、藥物、飲用水等）。  \n\n緊急救援電話：119 / 110。請勿慌張，遵循官方指引，確保安全！  \n\n（持續關注最新天氣及政府公告）",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "緊急警報：洪水預警！[LOCATION]地區於[TIME]發生嚴重洪水，請立即撤離至安全地點。避免靠近河流或低窪地區。更多資訊請參考[URL]。保持警惕，注意安全。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION] 地區發布洪水緊急警報，直至 [TIME]。該地區發生嚴重洪水，情況危險。請立即移至高地或安全地點，避免靠近河流或低窪地區。若需撤離，請遵從當地官員指示。更多資訊請查閱 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "緊急洪水警報：[TIME]在[LOCATION]發生嚴重水災，請民眾立即前往高處避難，避免接近河岸及低窪地區。隨時留意官方更新，並遵循當地政府指示。更多詳細資訊請參考：[URL]。保持安全，切勿冒險！",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[LOCATION] 發生嚴重水災，請居民立即撤離至安全地點。災害發生時間為 [TIME]，請避免前往淹水區域。更多資訊請參考 [URL]。保持警惕，注意安全。",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[發送機構]： [LOCATION] 目前正處於[時間]前有效的突發洪水緊急狀態。這是一個極其危險且危及生命的情況。除非您正在逃離可能被洪水淹沒的地區或收到疏散命令，否則請勿嘗試出行。[URL]",
                     "[發送機構]：針對[LOCATION]的暴雨洪水緊急警報現正生效，直至[TIME]。這是一個極度危險且危及生命的情況。除非您正撤離可能淹水的地區或收到疏散命令，否則請勿嘗試外出。[URL]",
                     "[發送機構]: [LOCATION] 目前處於暴洪緊急狀態，持續至 [TIME]。這是一個極度危險且危及生命的情況。除非您正在撤離可能受洪災影響的地區或收到疏散命令，否則請勿嘗試外出。[URL]",
                     "[發送機構]： [LOCATION] 目前正處於[時間]前有效的突發洪水緊急狀態。這是一個極其危險且危及生命的情況。除非您正在逃離可能被洪水淹沒的地區或收到疏散命令，否則請勿嘗試出行。[URL]",
-                    "[發送機構]: 針對[LOCATION]的突發洪水緊急狀態已生效，直至[TIME]。這是一個極度危險且危及生命的情況。除非您正在逃離可能被洪水淹沒的地區或收到疏散命令，否則請勿嘗試出行。[URL]  (Note: The placeholders [LOCATION], [TIME], and [URL] remain in English as per the instruction.)"
+                    "[發送機構]: 針對[LOCATION]的突發洪水緊急狀態已生效，直至[TIME]。這是一個極度危險且危及生命的情況。除非您正在逃離可能被洪水淹沒的地區或收到疏散命令，否則請勿嘗試出行。[URL]  (Note: The placeholders [LOCATION], [TIME], and [URL] remain in English as per the instruction.)",
+                    {
+                        "text": "[發送機構]：緊急突發洪水警報現正對[LOCATION]生效，直至[TIME]。這是一個極度危險且威脅生命的情況。除非您正在撤離可能受洪水侵襲的地區或收到疏散命令，否則請勿嘗試出行。[URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -3645,12 +3828,21 @@
                     "極端強風警報：預計將出現極端強風，風速可能達到每小時XX公里以上。請立即採取防護措施，避免外出，遠離樹木、電線桿及可能倒塌的物體。固定好室外物品，確保門窗緊閉。如遇緊急情況，請撥打求救電話XXX。",
                     "以下是您要求的中文（繁體）極端強風警報文本：【極端強風警報】氣象部門發布最高級別強風預警，預計未來3小時內將出現：☑ 持續風速達12級以上☑ 陣風可能突破15級☑ 伴隨雷暴及冰雹緊急防護措施：1. 立即停止戶外作業2. 加固門窗/棚架/廣告牌3. 避免靠近臨時建築物4. 車輛停放在安全區域5. 切斷高空物品電源（本警報由自動系統發送，請勿回復）",
                     "【極端風速警告】  緊急警報：預計未來數小時內將出現極端強風，風速可能超過每小時100公里。請立即採取防護措施，避免外出，遠離窗戶及易倒塌物件。固定室外物品，確保安全。如遇緊急情況，請撥打119求助。注意安全，保持警戒！  （氣象局發布）",
-                    "【極端強風警報】  緊急通知：預計未來幾小時內將出現極端強風，風速可能超過 **___公里/小時**，並伴隨暴雨或雷電。請立即採取以下措施：  1. 避免外出，遠離樹木、廣告看板及高空墜物風險區域。  2. 固定門窗，加固懸掛物品，防止強風吹落。  3. 若正在戶外，請立即尋找穩固建築物避難，切勿逗留空曠處。  風勢可能造成停電或交通中斷，請保持手機暢通，並關注最新天氣預報。安全第一！  （發佈單位：________）"
+                    "【極端強風警報】  緊急通知：預計未來幾小時內將出現極端強風，風速可能超過 **___公里/小時**，並伴隨暴雨或雷電。請立即採取以下措施：  1. 避免外出，遠離樹木、廣告看板及高空墜物風險區域。  2. 固定門窗，加固懸掛物品，防止強風吹落。  3. 若正在戶外，請立即尋找穩固建築物避難，切勿逗留空曠處。  風勢可能造成停電或交通中斷，請保持手機暢通，並關注最新天氣預報。安全第一！  （發佈單位：________）",
+                    {
+                        "text": "【極端強風警報】  \n\n緊急通知：極端強風即將來襲，預計風速將達每小時100公里以上，可能造成嚴重破壞。請立即采取以下措施：  \n\n1. 避免外出，留在室內安全區域。  \n2. 固定或移除陽台、窗戶外易墜落物品。  \n3. 遠離樹木、電線杆及廣告看板，以免被砸傷。  \n4. 檢查門窗是否緊閉，必要時加固。  \n\n若遇緊急狀況，請撥打119求助。保持警惕，確保安全！  \n\n（氣象局發布）",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_persona.txt": [],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[LOCATION] 將於 [TIME] 出現極端強風，風速可能達危險等級。請遠離高空墜物風險區域，固定室外物品，並避免外出。更多資訊請參考 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[發送機構]：針對[LOCATION]發佈極端強風警告，現正生效，直至[TIME]，可能出現危及生命的強風。立即躲進堅固建築物的內部房間，遠離窗戶。保護頭部以防飛散物傷害。即使風勢暫時減弱，也切勿外出！風力將迅速再次轉為危險。[URL]",
                     "[發送機構]：針對[LOCATION]發布極端強風警告，立即生效至[TIME]，有危及生命的強風危險。立即躲入堅固建築物的內部房間，遠離窗戶。保護頭部以防飛濺物。若風勢暫時減弱，切勿外出！強風將迅速再度來襲。[URL]",
