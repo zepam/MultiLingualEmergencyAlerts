@@ -93,7 +93,19 @@ def parse_args():
     return parser.parse_args()
 
 def save_output_json(output_json, output_file, logger):
-    """Save the current state of the output JSON to file"""
+    
+    """Saves the output JSON data to a specified file.
+
+    This function writes the current state of the output JSON to disk and logs the result. If saving fails, an error is logged.
+
+    Args:
+        output_json (dict): The output data to be saved.
+        output_file (str): The filename where the JSON will be stored.
+        logger (logging.Logger): Logger for logging progress and errors.
+
+    Returns:
+        None
+    """
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(output_json, f, ensure_ascii=False, indent=4, default=str)
@@ -102,6 +114,25 @@ def save_output_json(output_json, output_file, logger):
         logger.error(f"Failed to save progress: {e}")
 
 def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
+    """Queries a language model or translation service for a multilingual emergency alert response.
+
+    This function checks if a response for the current month already exists, and if not,
+    requests a new response from the specified service.
+    The response is then appended to the output JSON with the current date.
+
+    Args:
+        skip_bool (bool): Whether to skip querying the service.
+        service_name (str): The name of the service to query.
+        language (str): The target language for the alert.
+        disaster (str): The disaster scenario for the alert.
+        prompt (str): The prompt file to use for generation.
+        logger (logging.Logger): Logger for logging progress and errors.
+        output_json (dict): The output data structure to store responses.
+        total_responses (int): The number of responses to collect per service.
+
+    Returns:
+        bool: The updated skip status for the service.
+    """
     if skip_bool:
         return skip_bool
     
