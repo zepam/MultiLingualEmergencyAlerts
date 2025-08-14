@@ -70,7 +70,6 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
-# TODO: --skip commands aren't parsing correctly, they are always True if there is any value passed
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output_file", type=str, default="./output_file.json",
@@ -181,7 +180,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
             "date": date.today().isoformat()
         }
         existing_response_list.append(response_with_date)
-        return skip_bool  # Keep current skip status
+        return False  # Return false if a new response was added
             
         # except Exception as e:
         #     logger.error(f"Error with {service_name} for {language_name}:{disaster_name}:{prompt_name}: {e}")
@@ -190,7 +189,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     else:
         logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for this month")
     
-    return skip_bool
+    return True # return true (skipped) if a response already exists
 
 
 #TODO: skip the service if it cannot connect
