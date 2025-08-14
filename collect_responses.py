@@ -199,24 +199,24 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
         for disaster in STANDARD_DISASTERS:
             for prompt in ITERATIVE_PROMPT_FILES:
                 if not skip_gemini:  # yes, this looks redundant, but we want to skip Gemini even checking (logging) if the flag is set
-                    skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
-                    if not skip_gemini:  # If we successfully made an API call
+                    new_skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, total_responses)
+                    if not new_skip_gemini:  # If we successfully made an API call
                         save_output_json(output_json, output_filename, logger)
                 if not skip_chatgpt:
-                    skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
-                    if not skip_chatgpt:  # If we successfully made an API call
+                    new_skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, total_responses)
+                    if not new_skip_chatgpt:  # If we successfully made an API call
                         save_output_json(output_json, output_filename, logger)
                 if not skip_deepseek:
-                    skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
-                    if not skip_deepseek:  # If we successfully made an API call
+                    new_skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, total_responses)
+                    if not new_skip_deepseek:  # If we successfully made an API call
                         save_output_json(output_json, output_filename, logger)
 
             # Google Translate needs to take an original template and translate directly
             disaster_name = disaster.replace("a ", "").replace(" ", "_")
             prompt = f"prompts/{disaster_name}.txt"
             if not skip_google_translate:
-                skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, total_responses)
-                if not skip_google_translate:
+                new_skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, total_responses)
+                if not new_skip_google_translate:
                     save_output_json(output_json, output_filename, logger)
 
             # Direct translations also need a short description and the original template
