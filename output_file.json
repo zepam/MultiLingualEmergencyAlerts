@@ -249,7 +249,11 @@
                     "**ALÈ IJANS:** Gwo inondasyon ap afekte zòn nan! Evakye imedyatman si w ap viv nan zòn ki ba oswa ki toupre rivyè. Chèche yon kote ki pi wo pou rete an sekirite. Swiv enstriksyon otorite lokal yo epi rete vijilan.",
                     "Atansyon! Gen gwo inondasyon nan zòn nan. Evite deplase nan zòn ki gen dlo, chèche kote ki an sekirite epi rete vijilan pou enfòmasyon ak enstriksyon otorite yo. Si ou an danje, rele sèvis ijans imedyatman.",
                     "**ALÈ IJANS**  Inondasyon grav ap frape zòn nan. Tanpri deplase imedyatman nan zòn ki pi wo. Evite travèse dlo ki plen. Swiv enfòmasyon ki soti nan otorite yo epi rete an sekirite.",
-                    "Atansyon! Enondasyon grav ap fèt nan zòn ou a. Tanpri deplase ale nan yon kote ki pi wo imedyatman. Pa pran risk. Swiv enstriksyon otorite lokal yo pou sekirite w."
+                    "Atansyon! Enondasyon grav ap fèt nan zòn ou a. Tanpri deplase ale nan yon kote ki pi wo imedyatman. Pa pran risk. Swiv enstriksyon otorite lokal yo pou sekirite w.",
+                    {
+                        "text": "ALÈ IJANS: Gen gwo inondasyon nan zòn nan! Tanpri deplase imedyatman nan yon kote ki pi wo. Pa travèse dlo k ap koule. Swiv enstriksyon otorite yo epi rete an sekirite.",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_persona.txt": [],
                 "prompt_one_shot.txt": [],
@@ -351,18 +355,46 @@
                     "Cảnh báo khẩn cấp: Một trận lụt lớn đang diễn ra trong khu vực của bạn. Hãy di chuyển đến khu vực cao và an toàn ngay lập tức. Tránh các con đường ngập nước và tuân thủ chỉ đạo từ chính quyền địa phương. Hãy giữ bình tĩnh và chỉ mang theo những vật dụng cần thiết.",
                     "CẢNH BÁO KHẨN CẤP: Lũ lụt nghiêm trọng đang diễn ra tại khu vực của bạn. Di chuyển ngay đến vùng cao hơn và tránh xa các con sông, suối, và khu vực trũng thấp. Tuân theo hướng dẫn của chính quyền địa phương và cập nhật thông tin từ các nguồn tin cậy. Hãy bảo đảm an toàn cho bạn và gia đình.",
                     "CẢNH BÁO KHẨN CẤP: Lũ lụt nghiêm trọng đang xảy ra tại khu vực của bạn. Vui lòng di chuyển đến nơi an toàn ngay lập tức. Tránh các khu vực ngập nước và theo dõi thông tin từ chính quyền địa phương. Trong trường hợp khẩn cấp, gọi số cứu hộ.",
-                    "CẢNH BÁO KHẨN CẤP: Lũ lụt nghiêm trọng đang xảy ra trong khu vực của bạn. Vui lòng di chuyển đến nơi cao hơn ngay lập tức và làm theo hướng dẫn của cơ quan chức năng. Tránh các khu vực ngập nước và giữ an toàn. Liên lạc số khẩn cấp nếu cần hỗ trợ."
+                    "CẢNH BÁO KHẨN CẤP: Lũ lụt nghiêm trọng đang xảy ra trong khu vực của bạn. Vui lòng di chuyển đến nơi cao hơn ngay lập tức và làm theo hướng dẫn của cơ quan chức năng. Tránh các khu vực ngập nước và giữ an toàn. Liên lạc số khẩn cấp nếu cần hỗ trợ.",
+                    {
+                        "text": "CẢNH BÁO KHẨN CẤP: Lũ lụt nghiêm trọng đang xảy ra tại khu vực của bạn. Mực nước đang dâng nhanh. Vui lòng di chuyển ngay đến khu vực cao ráo và an toàn. Tránh đi qua vùng ngập nước. Theo dõi thông tin từ chính quyền địa phương để được hướng dẫn thêm.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp lúc [TIME]: Lũ lụt nghiêm trọng đang xảy ra tại [LOCATION]. Hãy di chuyển đến nơi cao ráo và tránh khu vực nguy hiểm. Xem thông tin chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Lũ lụt đang diễn ra tại [LOCATION] cho đến [TIME]. Nước dâng nhanh, nguy hiểm đến tính mạng. Tránh đi lại, tìm nơi cao ráo an toàn ngay. Theo dõi thông tin cập nhật tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Lũ lụt nghiêm trọng xảy ra lúc [TIME] tại [LOCATION]. Người dân cần di chuyển đến nơi an toàn ngay lập tức và tuân theo hướng dẫn của chính quyền. Xem thông tin chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Lũ lụt nghiêm trọng xảy ra vào lúc [TIME] tại [LOCATION]. Người dân được khuyến cáo di chuyển đến nơi an toàn và tránh các khu vực ngập nước. Xem thêm thông tin và cập nhật tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT đang có hiệu lực tại [LOCATION] cho đến [TIME]. Đây là một tình huống cực kỳ nguy hiểm và đe dọa đến tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có nguy cơ bị lũ hoặc đang tuân theo lệnh sơ tán. [URL]",
                     "[SENDING AGENCY]: Tình trạng KHẨN CẤP LŨ QUÉT đang có hiệu lực tại [LOCATION] cho đến [TIME]. Đây là một tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có thể bị ngập lụt hoặc đang theo lệnh sơ tán. [URL]",
                     "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP DO LŨ QUÉT đang được áp dụng cho [LOCATION] đến [TIME]. Đây là tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không cố gắng đi lại trừ khi bạn đang rời khỏi khu vực có thể ngập lụt hoặc đang theo lệnh sơ tán. [URL]",
                     "[SENDING AGENCY]: TÌNH HUỐNG KHẨN CẤP LŨ QUÉT đang có hiệu lực tại [LOCATION] cho đến [TIME]. Đây là một tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có thể bị lũ lụt hoặc đang thực hiện lệnh sơ tán. [URL]",
-                    "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT đang có hiệu lực tại [LOCATION] đến [TIME]. Đây là một tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có thể bị ngập lụt hoặc theo lệnh sơ tán. [URL]"
+                    "[SENDING AGENCY]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT đang có hiệu lực tại [LOCATION] đến [TIME]. Đây là một tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có thể bị ngập lụt hoặc theo lệnh sơ tán. [URL]",
+                    {
+                        "text": "[CƠ QUAN GỬI]: TÌNH TRẠNG KHẨN CẤP LŨ QUÉT đang có hiệu lực cho [LOCATION] cho đến [TIME]. Đây là tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không cố gắng di chuyển trừ khi bạn đang rời khỏi khu vực có thể bị ngập lụt hoặc đang có lệnh sơ tán. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -371,18 +403,46 @@
                     "Cảnh báo khẩn cấp: Gió mạnh cực độ đang diễn ra, có nguy cơ gây thiệt hại nghiêm trọng. Tránh ra ngoài nếu không thực sự cần thiết. Đảm bảo cửa, cửa sổ được đóng chặt và các vật dụng ngoài trời được cố định. Theo dõi thông tin từ cơ quan chức năng để cập nhật tình hình.",
                     "Cảnh báo khẩn cấp: Gió mạnh đang diễn ra tại khu vực của bạn. Tránh ra ngoài nếu không cần thiết. Đảm bảo an toàn cho bản thân và gia đình. Kiểm tra cửa sổ, cửa ra vào, và tránh các khu vực dễ bị ảnh hưởng bởi cây đổ hoặc đồ vật bay. Thực hiện theo hướng dẫn từ cơ quan chức năng.",
                     "Cảnh báo khẩn cấp: Gió cực mạnh đang diễn ra, có thể gây nguy hiểm cho tính mạng và tài sản. Hãy ở trong nhà, tránh xa cửa sổ, và không ra ngoài trừ khi thật cần thiết. Kiểm tra các vật thể dễ bị thổi bay và đảm bảo chúng được cố định an toàn. Theo dõi cập nhật từ chính quyền địa phương để biết thêm thông tin. ",
-                    "Cảnh báo khẩn cấp: Gió mạnh cực độ đang diễn ra! Hãy ở trong nhà hoặc tìm nơi trú ẩn an toàn ngay lập tức. Tránh di chuyển ngoài trời và cẩn thận với các vật thể có thể bay hoặc rơi. Nghe và làm theo hướng dẫn từ chính quyền địa phương."
+                    "Cảnh báo khẩn cấp: Gió mạnh cực độ đang diễn ra! Hãy ở trong nhà hoặc tìm nơi trú ẩn an toàn ngay lập tức. Tránh di chuyển ngoài trời và cẩn thận với các vật thể có thể bay hoặc rơi. Nghe và làm theo hướng dẫn từ chính quyền địa phương.",
+                    {
+                        "text": "CẢNH BÁO KHẨN: Gió mạnh cực đoan đang diễn ra, có thể gây nguy hiểm cho người và tài sản. Hãy ở trong nhà, tránh ra ngoài và giữ khoảng cách an toàn với cây cối, cột điện, và vật dễ rơi. Cập nhật thông tin từ cơ quan chức năng để đảm bảo an toàn.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[CẢNH BÁO KHẨN] Gió cực mạnh dự kiến tại [LOCATION] vào [TIME]. Ở yên trong nhà, tránh cửa sổ và đồ vật lỏng lẻo. Nguy cơ gãy đổ cây và mất điện. Xem thêm tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[CƠ QUAN GỬI]: CẢNH BÁO GIÓ CỰC MẠNH tại [LOCATION] đến [TIME]. Gió mạnh nguy hiểm đe dọa tính mạng. Ở trong nhà kiên cố, tránh cửa sổ. Nếu đang ở ngoài trời hoặc trong xe, tìm nơi trú ẩn an toàn ngay. Nghe hướng dẫn từ cơ quan chức năng. [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Cảnh báo: Gió mạnh cực đoan dự kiến lúc [TIME] tại [LOCATION]. Nguy hiểm cho việc di chuyển và công trình. Tránh ra ngoài, cố định vật dễ bay. Chi tiết: [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Gió cực mạnh dự kiến vào [TIME] tại [LOCATION]. Nguy hiểm cho việc di chuyển và công trình. Hạn chế ra ngoài và bảo đảm an toàn. Xem chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[SENDING AGENCY]: Cảnh báo Gió Cực Đoạn đang có hiệu lực tại [LOCATION] do nguy hiểm ngay lập tức của gió đe dọa mạng sống cho đến [TIME]. Hãy trú ẩn NGAY BÂY GIỜ trong một phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu của bạn khỏi các vật thể bay. Tuyệt ĐỐI không ra ngoài nếu gió lặng! Gió sẽ trở lại nguy hiểm nhanh chóng. [URL]",
                     "[SENDING AGENCY]: Cảnh báo Gió Cực Độ đang có hiệu lực tại [LOCATION] do nguy cơ gió nguy hiểm đe dọa tính mạng, kéo dài đến [TIME]. Hãy trú ẩn NGAY trong một phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu khỏi các vật thể bay. KHÔNG ra ngoài nếu gió tạm thời lắng dịu! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]",
                     "[SENDING AGENCY]: Cảnh báo Gió Cực Mạnh đang có hiệu lực tại [LOCATION] do nguy hiểm ngay lập tức từ gió đe dọa tính mạng đến [TIME]. Hãy trú ẩn NGAY BÂY GIỜ trong một phòng bên trong của một tòa nhà chắc chắn, tránh xa cửa sổ. Bảo vệ đầu của bạn khỏi các vật thể bay. Không được ra ngoài nếu gió tạm lắng xuống! Gió sẽ nhanh chóng trở lại mức độ nguy hiểm. [URL]",
                     "[SENDING AGENCY]: Cảnh báo GIÓ DỮ DỘI đang có hiệu lực tại [LOCATION] do nguy hiểm ngay lập tức từ gió đe dọa tính mạng đến [TIME]. Hãy trú ẩn NGAY BÂY GIỜ trong một căn phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu bạn tránh khỏi các vật bay. Đừng RA NGOÀI nếu gió lặng! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]",
-                    "[SENDING AGENCY]: Cảnh báo gió mạnh cực đoan đang có hiệu lực tại [LOCATION] do nguy cơ gió đe dọa tính mạng ngay lập tức đến [TIME]. Hãy trú ẩn NGAY BÂY GIỜ trong một phòng bên trong của một tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu khỏi các vật bay. KHÔNG ra ngoài nếu gió lặng! Gió sẽ nhanh chóng trở nên nguy hiểm một lần nữa. [URL]"
+                    "[SENDING AGENCY]: Cảnh báo gió mạnh cực đoan đang có hiệu lực tại [LOCATION] do nguy cơ gió đe dọa tính mạng ngay lập tức đến [TIME]. Hãy trú ẩn NGAY BÂY GIỜ trong một phòng bên trong của một tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu khỏi các vật bay. KHÔNG ra ngoài nếu gió lặng! Gió sẽ nhanh chóng trở nên nguy hiểm một lần nữa. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: CẢNH BÁO GIÓ CỰC ĐOAN đang có hiệu lực tại [LOCATION] do nguy hiểm tức thời từ gió đe dọa tính mạng cho đến [TIME]. Hãy trú ẩn NGAY trong một phòng bên trong của một tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu của bạn khỏi các vật thể bay. KHÔNG ra ngoài nếu gió lặng! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "fire": {
@@ -391,18 +451,46 @@
                     "Khẩn cấp: Có vụ cháy xảy ra! Vui lòng sơ tán ngay lập tức và tránh xa khu vực nguy hiểm. Liên hệ số khẩn cấp để được hỗ trợ nếu cần.",
                     "Cảnh báo khẩn cấp: Có hỏa hoạn tại khu vực của bạn! Hãy ngay lập tức sơ tán đến nơi an toàn. Tránh gần khu vực cháy và thông báo cho lực lượng cứu hỏa qua số 114. Hãy giữ bình tĩnh và giúp đỡ những người xung quanh nếu có thể.",
                     "Khẩn cấp: Có hỏa hoạn xảy ra. Vui lòng di tản ngay lập tức và tránh khu vực nguy hiểm. Hãy gọi số cứu hỏa 114 để được hỗ trợ.",
-                    "Khẩn cấp! Có hỏa hoạn xảy ra tại khu vực của bạn. Vui lòng sơ tán ngay lập tức đến vị trí an toàn. Tuân thủ hướng dẫn của cơ quan chức năng. Thận trọng và giữ an toàn!"
+                    "Khẩn cấp! Có hỏa hoạn xảy ra tại khu vực của bạn. Vui lòng sơ tán ngay lập tức đến vị trí an toàn. Tuân thủ hướng dẫn của cơ quan chức năng. Thận trọng và giữ an toàn!",
+                    {
+                        "text": "CẢNH BÁO KHẨN: Có cháy lớn tại khu vực gần bạn. Hãy sơ tán ngay lập tức đến nơi an toàn, tránh xa khói và lửa. Làm theo hướng dẫn của lực lượng cứu hỏa và cơ quan chức năng.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp lúc [TIME]: Cháy lớn tại [LOCATION]. Tránh khu vực, tuân theo hướng dẫn của cơ quan chức năng. Xem chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[CƠ QUAN GỬI]: CẢNH BÁO CHÁY tại [LOCATION] cho đến [TIME]. Cháy lớn đang xảy ra, đe dọa tính mạng và tài sản. Tránh khu vực này, sơ tán ngay nếu được yêu cầu. Tuân thủ hướng dẫn của cơ quan chức năng. Xem thông tin cập nhật tại [URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Cháy xảy ra lúc [TIME] tại [LOCATION]. Vui lòng sơ tán ngay và tránh khu vực nguy hiểm. Theo dõi hướng dẫn từ cơ quan chức năng. Thông tin chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Có cháy xảy ra lúc [TIME] tại [LOCATION]. Mọi người hãy tránh xa khu vực, làm theo hướng dẫn của cơ quan chức năng và tìm nơi an toàn. Xem thông tin chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_fire.txt": [
                     "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng của bạn ngay bây giờ, đừng chần chừ. Tầm nhìn trong khu vực sẽ bị giảm và đường có thể bị chặn. Nếu bạn không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc thiệt mạng. RỜI khỏi khu vực gần [LOCATION]. Dự kiến tầm nhìn bị giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Lưu ý các nhân viên an toàn công cộng hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Sơ tán gia đình và vật nuôi của bạn ngay, không được trì hoãn. Tầm nhìn trong khu vực sẽ bị giảm và đường sá có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương hoặc thiệt mạng. RỜI KHỎI khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Chú ý đến nhân viên an toàn công cộng đang hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO CHÁY ở [LOCATION] có hiệu lực đến [TIME]. Sơ tán gia đình và thú cưng của bạn ngay bây giờ, không được trì hoãn. Tầm nhìn trong khu vực sẽ bị giảm và các con đường có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI các khu vực gần [LOCATION]. Dự báo tầm nhìn bị giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Chú ý đến nhân viên an toàn công cộng hoạt động trong khu vực và làm theo hướng dẫn của họ. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Di tản gia đình và thú cưng của bạn ngay, đừng trì hoãn. Tầm nhìn trong khu vực sẽ bị giảm và đường có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương, hoặc thiệt mạng. RỜI KHỎI các khu vực gần [LOCATION]. Chuẩn bị đối mặt với tầm nhìn hạn chế, khói dày đặc, và khó thở. Thận trọng khi lái xe. Hãy chú ý đến lực lượng an toàn công cộng đang làm nhiệm vụ trong khu vực và tuân thủ hướng dẫn của họ. [URL]",
-                    "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng của bạn ngay, đừng trì hoãn. Tầm nhìn trong khu vực sẽ bị giảm và đường có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Hãy chú ý đến nhân viên an toàn công cộng đang hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]"
+                    "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng của bạn ngay, đừng trì hoãn. Tầm nhìn trong khu vực sẽ bị giảm và đường có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Hãy chú ý đến nhân viên an toàn công cộng đang hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực cho đến [TIME]. Hãy sơ tán gia đình và thú nuôi của bạn ngay, đừng chần chừ. Tầm nhìn trong khu vực sẽ bị giảm và các con đường có thể bị chặn. Nếu bạn không rời đi ngay bây giờ, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI các khu vực gần [LOCATION]. Hãy chuẩn bị cho tầm nhìn bị giảm, khói dày đặc và khó thở. Cẩn thận khi lái xe. Chú ý đến nhân viên an toàn công cộng đang làm việc trong khu vực và tuân theo hướng dẫn của họ. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -411,18 +499,46 @@
                     "Thông báo khẩn cấp: Vui lòng đun sôi nước trước khi sử dụng. Nước máy hiện không an toàn để uống, nấu ăn hoặc vệ sinh. Đun sôi nước ít nhất 1 phút trước khi sử dụng. Vui lòng tuân thủ thông báo cho đến khi có cập nhật mới.",
                     "Thông báo khẩn cấp:  Hiện đang có lệnh đun sôi nước tại khu vực của bạn. Nước máy có thể bị ô nhiễm và không an toàn để sử dụng trực tiếp. Vui lòng đun nước sôi ít nhất 1 phút trước khi dùng để uống, nấu ăn hoặc vệ sinh. Xin hãy lan truyền thông báo này đến mọi người xung quanh.",
                     "Thông báo khẩn cấp: Do nguy cơ ô nhiễm nguồn nước, xin vui lòng đun sôi nước trước khi sử dụng để uống, nấu ăn, rửa thực phẩm, hoặc làm nước đá. Vui lòng tiếp tục áp dụng biện pháp này cho đến khi có thông báo tiếp theo từ cơ quan chức năng.",
-                    "Thông báo khẩn:  Hiện có lệnh cảnh báo đun sôi nước tại khu vực của bạn. Xin vui lòng đun sôi nước ít nhất 1 phút trước khi sử dụng để uống, nấu ăn hoặc đánh răng. Không sử dụng nước chưa được đun sôi. Chúng tôi đang làm việc để giải quyết vấn đề này và sẽ thông báo khi nước trở lại an toàn. Cảm ơn sự hợp tác của bạn."
+                    "Thông báo khẩn:  Hiện có lệnh cảnh báo đun sôi nước tại khu vực của bạn. Xin vui lòng đun sôi nước ít nhất 1 phút trước khi sử dụng để uống, nấu ăn hoặc đánh răng. Không sử dụng nước chưa được đun sôi. Chúng tôi đang làm việc để giải quyết vấn đề này và sẽ thông báo khi nước trở lại an toàn. Cảm ơn sự hợp tác của bạn.",
+                    {
+                        "text": "THÔNG BÁO KHẨN: Toàn bộ cư dân được yêu cầu đun sôi nước trước khi sử dụng cho ăn uống, nấu ăn hoặc đánh răng do phát hiện nhiễm khuẩn trong nguồn nước. Đun sôi nước ít nhất 1 phút và để nguội trước khi dùng. Thông báo có hiệu lực cho đến khi có thông tin mới.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Thông báo khẩn lúc [TIME] cho khu vực [LOCATION]: Nước máy có thể bị ô nhiễm. Vui lòng đun sôi nước ít nhất 1 phút trước khi uống hoặc nấu ăn. Xem chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[CƠ QUAN GỬI]: Thông báo khẩn! Lệnh đun sôi nước có hiệu lực tại [LOCATION] cho đến [TIME] do phát hiện nguy cơ ô nhiễm nguồn nước. Vui lòng đun sôi nước ít nhất 1 phút trước khi sử dụng để uống hoặc nấu ăn. Theo dõi thông tin cập nhật tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Thông báo khẩn: Do sự cố nước, cư dân tại [LOCATION] cần đun sôi nước trước khi sử dụng cho ăn uống hoặc nấu ăn kể từ [TIME] cho đến khi có thông báo mới. Vui lòng xem chi tiết và hướng dẫn tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Cảnh báo lúc [TIME]: Thông báo đun sôi nước tại [LOCATION]. Hãy đun sôi toàn bộ nước uống và nấu ăn trong ít nhất 1 phút trước khi sử dụng để đảm bảo an toàn. Xem chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_boil_water_notice.txt": [
                     "[SENDING AGENCY]: Cảnh báo NƯỚC SÔI đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng, hoặc dọn dẹp nhà cửa bằng nước máy hoặc nước đã lọc trừ khi nước đã được đun sôi. Đun nước đến sôi hoàn toàn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn dùng sữa công thức để nuôi con, hãy sử dụng sữa công thức pha sẵn. Đảm bảo thú cưng không uống nước chưa được đun sôi. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO NƯỚC SÔI đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có sẵn. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hoặc nước đã lọc mà chưa đun sôi. Đun sôi nước cho đến khi sôi mạnh trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn sử dụng sữa công thức để nuôi con, hãy sử dụng sữa công thức sẵn sàng sử dụng. Đảm bảo thú cưng không uống nước chưa được đun sôi. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực cho đến [TIME]. Nước trong cộng đồng của bạn có thể khiến bạn bị bệnh. Hãy sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng, hoặc vệ sinh nhà cửa bằng nước máy hoặc nước lọc cho đến khi đun sôi. Đun sôi nước đến khi sôi lăn tăn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn sử dụng sữa bột để nuôi trẻ, hãy sử dụng sữa bột pha sẵn. Đảm bảo thú cưng không uống nước chưa được đun sôi. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO NƯỚC CẦN ĐUN SÔI đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể khiến bạn bị bệnh. Sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng, hoặc dọn dẹp nhà cửa bằng nước máy hoặc nước đã lọc cho đến khi bạn đã đun sôi nước. Đun nước đến khi sôi mạnh trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn sử dụng sữa công thức để cho trẻ ăn, hãy dùng sữa công thức có thể sử dụng ngay. Đảm bảo rằng vật nuôi không uống nước chưa được đun sôi. [URL]",
-                    "[SENDING AGENCY]: Một cảnh báo nước đun sôi đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể gây bệnh. Sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng, hoặc vệ sinh nhà cửa bằng nước máy hoặc nước đã lọc cho đến khi nước được đun sôi. Đun nước đến sôi hoàn toàn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn dùng sữa công thức để nuôi con, hãy sử dụng sữa công thức sẵn sàng sử dụng. Đảm bảo thú nuôi không uống nước chưa được đun sôi. [URL]"
+                    "[SENDING AGENCY]: Một cảnh báo nước đun sôi đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể gây bệnh. Sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng, hoặc vệ sinh nhà cửa bằng nước máy hoặc nước đã lọc cho đến khi nước được đun sôi. Đun nước đến sôi hoàn toàn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu bạn dùng sữa công thức để nuôi con, hãy sử dụng sữa công thức sẵn sàng sử dụng. Đảm bảo thú nuôi không uống nước chưa được đun sôi. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: CẢNH BÁO NƯỚC PHẢI ĐUN SÔI đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong cộng đồng của bạn có thể khiến bạn bị ốm. Hãy sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hay nước đã lọc cho đến khi bạn đã đun sôi chúng. Đun sôi nước đến khi sôi sùng sục trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá được làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức để cho trẻ uống, hãy dùng loại sẵn sàng uống. Đảm bảo vật nuôi không uống nước chưa đun sôi. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "911_outage": {
@@ -431,18 +547,46 @@
                     "Cảnh báo khẩn cấp: Dịch vụ gọi 911 hiện đang gặp sự cố. Nếu bạn cần hỗ trợ khẩn cấp, vui lòng gọi đến số điện thoại cứu trợ thay thế: [số điện thoại thay thế] hoặc liên hệ chính quyền địa phương gần nhất.",
                     "CẢNH BÁO KHẨN CẤP: Hệ thống 911 hiện đang gặp sự cố và không thể truy cập. Trong trường hợp khẩn cấp, vui lòng liên hệ [số điện thoại thay thế] hoặc [địa chỉ liên lạc khẩn cấp khác]. Hãy chia sẻ thông tin này để mọi người được biết.",
                     "Thông báo Khẩn cấp: Dịch vụ 911 hiện đang gặp sự cố tại khu vực của bạn. Nếu cần hỗ trợ khẩn cấp, vui lòng gọi số [nhập số thay thế tại địa phương] hoặc liên hệ với cơ quan chức năng gần nhất.",
-                    "Thông báo khẩn cấp: Hiện đang xảy ra sự cố khiến dịch vụ 911 không khả dụng. Nếu cần hỗ trợ khẩn cấp, vui lòng gọi các số điện thoại địa phương thay thế hoặc liên hệ trực tiếp với cơ quan chức năng gần nhất."
+                    "Thông báo khẩn cấp: Hiện đang xảy ra sự cố khiến dịch vụ 911 không khả dụng. Nếu cần hỗ trợ khẩn cấp, vui lòng gọi các số điện thoại địa phương thay thế hoặc liên hệ trực tiếp với cơ quan chức năng gần nhất.",
+                    {
+                        "text": "CẢNH BÁO KHẨN: Hiện đang xảy ra sự cố gián đoạn dịch vụ 911. Nếu cần hỗ trợ khẩn cấp, vui lòng gọi số [số điện thoại thay thế] hoặc liên hệ với cơ quan công an, cứu hỏa, hoặc y tế địa phương gần nhất.",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Cảnh báo khẩn: Sự cố gián đoạn dịch vụ 911 tại [LOCATION] lúc [TIME]. Quý vị không thể gọi 911 trong thời gian này. Vui lòng dùng số khẩn cấp địa phương. Xem chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Cảnh báo: Hiện đang xảy ra sự cố gián đoạn dịch vụ 911 tại [LOCATION] từ [TIME]. Không thể gọi số khẩn cấp 911 vào lúc này. Vui lòng gọi số khẩn cấp thay thế do địa phương cung cấp. Xem thông tin chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Dịch vụ 911 hiện không hoạt động tại [LOCATION] từ [TIME]. Nếu cần hỗ trợ khẩn cấp, vui lòng gọi số điện thoại thay thế của địa phương. Xem thêm thông tin tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Sự cố mất dịch vụ 911 tại [LOCATION] từ [TIME]. Vui lòng gọi số khẩn cấp địa phương để được trợ giúp cho đến khi dịch vụ được khôi phục. Thông tin chi tiết tại [URL].",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_911_outage.txt": [
                     "[SENDING AGENCY]: Cảnh báo MẤT DỊCH VỤ 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO MẤT DỊCH VỤ 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]",
                     "[SENDING AGENCY]: Cảnh báo MẤT DỊCH VỤ 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên lạc trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO LỖI 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với các dịch vụ khẩn cấp như cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]",
-                    "[SENDING AGENCY]: CẢNH BÁO SỰ CỐ 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với các dịch vụ khẩn cấp như cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]"
+                    "[SENDING AGENCY]: CẢNH BÁO SỰ CỐ 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với các dịch vụ khẩn cấp như cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: Cảnh báo sự cố 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể sẽ không nhận được trợ giúp. [URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         },
@@ -507,7 +651,12 @@
                         "date": "2025-08-13"
                     }
                 ],
-                "prompt_persona.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻱﺭﻭﺮﻀﻟﺍ ﺮﻴﻏ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻘﻠﻐﻤﻟﺍ ﻦﻛﺎﻣﻷﺍ ﻲﻓ ﺀﺎﻘﺒﻟﺍ ﻰﺟﺮﻳ .[TIME] ﺪﻨﻋ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "prompt_one_shot.txt": [
                     {
                         "text": "[URL] ﻊﺟﺍﺭ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﻤﻴﻠﻌﺘﻟﺍ ﻊﺒﺗﺍ .ﺝﺭﺎﺨﻟﺎﺑ ﺪﺟﺍﻮﺘﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑﻭ ﻦﻴﺘﻣ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﻖﺑﺍ .ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺮﻄﺧﻭ ﺔﻤﻴﺴﺟ ﺭﺍﺮﺿﺃ ﻲﻓ ﺐﺒﺴﺘﺗ ﺪﻗ .[TIME] ﻰﺘﺣ [LOCATION] ﺔﻘﻄﻨﻣ ﺏﺮﻀﺗ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
@@ -531,7 +680,11 @@
                     "[URL] .ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ ﺎﻣ ﻥﺎﻋﺮﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻱﻮﻗ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﻲﺘﻟﺍ ﺡﺎﻳﺮﻠﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻱﻮﻗ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺡﺎﻳﺮﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺍﺪﺟ ﺓﺪﻳﺪﺸﻟﺍ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺭﺎﺨﻟﺍ ﻰﻟﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﺔﻳﺎﻤﺤﺑ ﻢﻗ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑﻭ ﻱﻮﻗ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﻲﺘﻟﺍ ﺡﺎﻳﺮﻟﺍ ﺮﻄﺧ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺪﻳﺪﺷ ﺮﻳﺬﺤﺗ ﺪﺟﻮﻳ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
-                    "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻱﻮﻗ ﻰﻨﺒﻣ ﻲﻓ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻠﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻠﻟ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻳﺎﻐﻠﻟ ﺔﻔﻴﻨﻌﻟﺍ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]"
+                    "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻱﻮﻗ ﻰﻨﺒﻣ ﻲﻓ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻠﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻠﻟ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻳﺎﻐﻠﻟ ﺔﻔﻴﻨﻌﻟﺍ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    {
+                        "text": "[URL] .ﺔﻋﺮﺴﺑ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﻟ ﺡﺎﻳﺮﻟﺍ ﺩﻮﻌﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺭﺎﺨﻟﺍ ﻰﻟﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻣ ﻞﺧﺍﺩ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣ ﺡﺎﻳﺮﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺔﻳﺎﻐﻠﻟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[ENDING AGENCYﺱ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "fire": {
@@ -540,18 +693,46 @@
                     "️⚠ .ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻞﺼﺗﺍﻭ ﻚﺘﻣﻼﺳ ﻰﻠﻋ ﺹﺮﺣﺍ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺍﺭﻮﻓ ﺀﻼﺧﻹﺍ ﻰﺟﺮﻳ .ﻚﻨﻣ ﺏﺮﻘﻟﺎﺑ ﻖﻳﺮﺣ ﻙﺎﻨﻫ :ﻞﺟﺎﻋ ️⚠",
                     "!ﻻﻭﺃ ﺔﻣﻼﺴﻟﺍ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺭﺩﺎﻏ ،ﻊﻗﻮﻤﻟﺍ ﻦﻣ ﺏﺮﻘﻟﺎﺑ ﺖﻨﻛ ﺍﺫﺇ !ﻖﻳﺮﺣ ﻉﻻﺪﻧﺍ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ 🔥",
                     "️⚠ .ﺭﻮﻔﻟﺍ ﻰﻠﻋ ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺎﺑ ﻞﺼﺗﺍ ،ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺔﻣﻼﺴﻟﺍ ﺮﻴﺑﺍﺪﺗ ﻊﻴﻤﺟ ﺫﺎﺨﺗﺍﻭ ﻖﻳﺮﺤﻟﺍ ﻊﻗﻮﻣ ﻦﻋ ﺍﺭﻮﻓ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ !ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻖﻳﺮﺣ ﻉﻻﺪﻧﺍ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ ️⚠",
-                    ".ﺭﻮﻔﻟﺍ ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻞﺼﺗﺍ ،ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﻊﻴﻤﺟ ﺫﺎﺨﺗﺍﻭ ﺍﺭﻮﻓ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻖﻳﺮﺣ ﺪﺟﻮﻳ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                    ".ﺭﻮﻔﻟﺍ ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻞﺼﺗﺍ ،ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﻊﻴﻤﺟ ﺫﺎﺨﺗﺍﻭ ﺍﺭﻮﻓ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻖﻳﺮﺣ ﺪﺟﻮﻳ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": ".ﻚﻟﻮﺣ ﻦﻣ ﺔﻣﻼﺳﻭ ﻚﺘﻣﻼﺳ ﻰﻠﻋ ﺹﺮﺣﺍﻭ ﻖﻳﺮﺤﻟﺍ ﻊﻗﻮﻣ ﻦﻋ ﺪﻌﺘﺑﺍ .ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺍﺭﻮﻓ ﺀﻼﺧﻹﺍ ﻰﺟﺮﻳ !ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻞﻌﺘﺸﻣ ﻖﻳﺮﺣ :ﺉﺭﺎﻃ 🚨",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .[TIME] ﻲﻓ [LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ ﻉﻻﺪﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[URL] :ﺭﺯ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻥﺎﺧﺪﻟﺍ ﻕﺎﺸﻨﺘﺳﺍ ﺐﻨﺠﺗﻭ ﺏﺍﻮﺑﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻖﻠﻏﺃ ،ﺎﺒﻳﺮﻗ ﺖﻨﻛ ﺍﺫﺇ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .[TIME] ﻰﺘﺣ [LOCATION] ﺔﻘﻄﻨﻣ ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ :[SENDING AGENCY] ﻦﻣ ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[URL] :ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺉﺭﺍﻮﻄﻟﺍ ﻕﺮﻓ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻰﺟﺮﻳ .[TIME] ﺪﻨﻋ [LOCATION] ﻲﻓ ﻊﻟﺪﻧﺍ ﻖﻳﺮﺣ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻡﺎﻤﺗ ﻲﻓ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻉﻻﺪﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_fire.txt": [
                     "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻥﻮﻠﻤﻌﻳ ﻦﻳﺬﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﻝﺎﺟﺮﻟ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ،ﻒﻴﺜﻛ ﻥﺎﺧﺩ ،ﺓﺩﻭﺪﺤﻣ ﺔﻳﺅﺭ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﺕﻮﻤﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻹﺍ ﻭﺃ ﺭﺎﺼﺤﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﻕﺮﻄﻟﺍ ﺮﻈﺣ ﻢﺘﻳ ﺪﻗﻭ ﺓﺩﻭﺪﺤﻣ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻥﻮﻜﺘﺳ .ﻞﺟﺆﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺤﺑ ﺭﺍﺬﻧﺇ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﺩﺍﺮﻓﺃ ﺐﻗﺍﺭ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﺔﺑﻮﻌﺻﻭ ،ﻒﻴﺜﻜﻟﺍ ﻥﺎﺧﺪﻟﺍﻭ ،ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﺓﺎﻓﻮﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻹﺍ ﻭﺃ ﺭﺎﺼﺤﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺓﺩﻭﺪﺴﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﺾﻔﺨﻨﺘﺳ .ﻞﺟﺆﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻟﺎﻛﻭ ﻝﺎﺳﺭﺇ]",
                     "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻞﻤﻌﺗ ﻲﺘﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﻕﺮﻔﻟ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ،ﻒﻴﺜﻛ ﻥﺎﺧﺩ ،ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﻻﻮﺘﻘﻣ ﻭﺃ ﺎﺑﺎﺼﻣ ﻭﺃ ﺍﺮﺻﺎﺤﻣ ﻥﻮﻜﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﻕﺮﻄﻟﺍ ﺐﺠﺣ ﻢﺘﻳ ﺪﻗﻭ ﺔﻀﻔﺨﻨﻣ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻥﻮﻜﺘﺳ .ﺮﺧﺄﺘﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺟﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺘﻟ ﻞﺜﺘﻣﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﺩﺍﺮﻓﺃ ﺐﻗﺍﺭ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ،ﻒﻴﺜﻛ ﻥﺎﺧﺩ ،ﺔﻀﻔﺨﻨﻣ ﺔﻳﺅﺭ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﺎﺘﻴﻣ ﻭﺃ ﺎﺑﺎﺼﻣ ﻭﺃ ﺍﺮﺻﺎﺤﻣ ﻚﺴﻔﻧ ﺪﺠﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺔﻘﻠﻐﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﻥﺃ ﻦﻜﻤﻳﻭ ﺔﻀﻔﺨﻨﻣ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻥﻮﻜﺘﺳ .ﻞﺟﺆﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺟﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
-                    "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﺩﺍﺮﻓﺃ ﺐﻗﺍﺭ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ،ﺎﻔﻴﺜﻛ ﺎﻧﺎﺧﺩﻭ ،ﺔﻳﺅﺮﻟﺍ ﻲﻓ ﺎﺿﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﺕﻮﻤﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻺﻟ ﺽﺮﻌﺘﺗ ﻭﺃ ﺮﺻﺎﺤﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺔﻘﻠﻐﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻞﻘﺘﺳ .ﺮﺧﺄﺘﺗ ﻻﻭ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺟﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]"
+                    "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﺩﺍﺮﻓﺃ ﺐﻗﺍﺭ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ،ﺎﻔﻴﺜﻛ ﺎﻧﺎﺧﺩﻭ ،ﺔﻳﺅﺮﻟﺍ ﻲﻓ ﺎﺿﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﺕﻮﻤﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻺﻟ ﺽﺮﻌﺘﺗ ﻭﺃ ﺮﺻﺎﺤﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺔﻘﻠﻐﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻞﻘﺘﺳ .ﺮﺧﺄﺘﺗ ﻻﻭ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺟﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    {
+                        "text": "[ URL ] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﺩﺍﺮﻓﺃ ﺩﻮﺟﻭ ﺐﻗﺍﺭ .ﺓﺩﺎﻴﻘﻟﺍ ﺪﻨﻋ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ،ﺎﻔﻴﺜﻛ ﺎﻧﺎﺧﺩﻭ ،ﺔﻳﺅﺮﻟﺍ ﻯﻮﺘﺴﻣ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[ LOCATION ] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﻻﻮﺘﻘﻣ ﻭﺃ ﺎﺑﺎﺼﻣ ﻭﺃ ﺍﺮﺻﺎﺤﻣ ﻚﺴﻔﻧ ﺪﺠﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺔﻘﻠﻐﻣ ﺢﺒﺼﺗ ﺪﻗ ﻕﺮﻄﻟﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺓﺩﻭﺪﺤﻤﻟﺍ ﺔﻳﺅﺮﻟﺍ ﻥﻮﻜﺘﺳ .ﻞﺟﺆﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺝﺮﺧﺃ .[ TIME ] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [ LOCATION ] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ SENDING AGENCY ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -560,18 +741,46 @@
                     ".ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻣ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻊﺑﺎﺗ .ﻚﺘﻣﻼﺳ ﻥﺎﻤﻀﻟ ﻱﺭﻭﺮﺿ ﺀﺍﺮﺟﻹﺍ ﺍﺬﻫ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻲﻬﻄﻟﺍﻭ ﺏﺮﺸﻟﺍ ﻩﺎﻴﻣ ﻊﻴﻤﺟ ﻲﻠﻏ ﻰﺟﺮﻳ .ﻚﺘﻘﻄﻨﻣ ﻲﻓ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ ﺭﺍﺪﺻﺇ ﻢﺗ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
                     "!ﻻﻭﺃ ﺔﻣﻼﺴﻟﺍ .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﺏﺮﺸﻟﺍﻭ ﻒﻴﻈﻨﺘﻟﺍﻭ ﻲﻬﻄﻠﻟ ﺄﺒﻌﻤﻟﺍ ﻭﺃ ﻲﻠﻐﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻡﺪﺨﺘﺳﺍﻭ ،ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻻﻭﺃ ﻪﻴﻠﻏ ﻥﻭﺩ ﺭﻮﺒﻨﺼﻟﺍ ﻦﻣ ﺀﺎﻤﻟﺍ ﺏﺮﺸﺗ ﻻ .ﻢﻜﺘﻘﻄﻨﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ ﺭﺍﺪﺻﺇ ﻢﺗ ﻪﻧﺃ ﻢﻠﻌﻟﺍ ﻰﺟﺮﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
                     ".ﻢﻜﻧﻭﺎﻌﺘﻟ ﺍﺮﻜﺷ .ﺔﻴﺤﺻ ﺽﺍﺮﻏﺃ ﻱﻷ ﻩﺎﻴﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﻭﺃ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏ ﻊﻴﻤﺠﻟﺍ ﻦﻣ ﺐﻠﻄﻳ .ﻩﺎﻴﻤﻟﺍ ﺭﺪﺼﻣ ﺙﻮﻠﺗ ﻝﺎﻤﺘﺣﻻ ﺍﺮﻈﻧ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ ﺭﺍﺪﺻﺇ ﻢﺗ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ",
-                    ".ﺮﻳﺬﺤﺘﻟﺍ ﺀﺎﻬﺘﻧﺍ ﺪﻨﻋ ﻢﻜﻣﻼﻋﺇ ﻢﺘﻴﺳ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﻪﻛﺮﺗﻭ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻪﻴﻠﻏ ﻰﺟﺮﻳ .ﻞﻤﺘﺤﻣ ﺙﻮﻠﺗ ﺐﺒﺴﺑ ﻙﻼﻬﺘﺳﻼﻟ ﺎﻨﻣﺁ ﻲﻟﺎﺤﻟﺍ ﺀﺎﻤﻟﺍ ﺮﺒﺘﻌﻳ ﻻ .ﻡﺎﻌﻄﻟﺍ ﻞﺴﻏ ﻭﺃ ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻠﻟ ﺎﻬﻣﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏ ﻥﺎﻜﺴﻟﺍ ﻊﻴﻤﺟ ﻦﻣ ﺐﻠﻄﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ"
+                    ".ﺮﻳﺬﺤﺘﻟﺍ ﺀﺎﻬﺘﻧﺍ ﺪﻨﻋ ﻢﻜﻣﻼﻋﺇ ﻢﺘﻴﺳ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﻪﻛﺮﺗﻭ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻪﻴﻠﻏ ﻰﺟﺮﻳ .ﻞﻤﺘﺤﻣ ﺙﻮﻠﺗ ﺐﺒﺴﺑ ﻙﻼﻬﺘﺳﻼﻟ ﺎﻨﻣﺁ ﻲﻟﺎﺤﻟﺍ ﺀﺎﻤﻟﺍ ﺮﺒﺘﻌﻳ ﻻ .ﻡﺎﻌﻄﻟﺍ ﻞﺴﻏ ﻭﺃ ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻠﻟ ﺎﻬﻣﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏ ﻥﺎﻜﺴﻟﺍ ﻊﻴﻤﺟ ﻦﻣ ﺐﻠﻄﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                    {
+                        "text": ".ﻩﺎﻴﻤﻟﺍ ﺔﻜﺒﺷ ﻲﻓ ﻞﻤﺘﺤﻣ ﺙﻮﻠﺗ ﺐﺒﺴﺑ ،ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﻝﺎﻤﻌﺘﺳﻻﺍ ﻞﺒﻗ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﻦﻋ ﻞﻘﺗ ﻻ ﺓﺪﻤﻟ ﻲﻟﺰﻨﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﻻﺍﻭ ﺏﺮﺸﻟﺍ ﻩﺎﻴﻣ ﻊﻴﻤﺟ ﻲﻠﻏ ﻰﺟﺮﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ ﺭﺍﺪﺻﺇ ﻢﺗ [TIME] ﻲﻓ :ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[URL] :ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺬﺨﺗﺍ .ﺎﻬﺘﻣﻼﺳ ﻥﺎﻤﻀﻟ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻲﻬﻄﻟﺍﻭ ﺏﺮﺸﻟﺍ ﻩﺎﻴﻣ ﻊﻴﻤﺟ ﻲﻠﻏ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻱﺭﺎﺳ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ :ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﻂﻘﻓ ﺄﺒﻌﻤﻟﺍ ﻭﺃ ﻲﻠﻐﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﻞﻤﺘﺤﻣ ﺙﻮﻠﺗ ﺐﺒﺴﺑ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﺐﺠﻳ ،[LOCATION] ﻲﻓ [TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ :ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ ﺭﺪﺻ :ﺮﻳﺬﺤﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_boil_water_notice.txt": [
                     "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺓﺰﻫﺎﺠﻟﺍ ﺔﺒﻴﻛﺮﺘﻟﺍ ﻡﺪﺨﺘﺳﺎﻓ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﺔﻴﺋﺍﺬﻏ ﺔﺒﻴﻛﺮﺗ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﻉﺩ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﺮﻤﺘﺴﻣ ﻞﻣﺎﻛ ﻥﺎﻴﻠﻏ ﺔﻟﺎﺣ ﻲﻓ ﻥﻮﻜﻴﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﺎﻬﻴﻠﻐﺑ ﻡﻮﻘﺗ ﻰﺘﺣ ﻚﻟﺰﻨﻣ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻠﻟ ﺓﺮﺘﻠﻔﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻦﻣ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺽﺍﺮﻣﻷﺍ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﺐﺒﺴﺗ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [LOCATION]ـﻟ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ENDING AGENCYﺱ]",
                     "[URL] .ﺎﻬﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻲﺘﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺳﺎﻓ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﺎﻬﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻩﺎﻴﻣ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﺗ ﻩﺎﻴﻤﻟﺍ ﻉﺩ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻞﻣﺎﻜﻟﺍ ﻥﺎﻴﻠﻐﻟﺍ ﻰﺘﺣ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﺎﻬﻴﻠﻐﺑ ﻡﻮﻘﺗ ﻰﺘﺣ ﺓﺮﺘﻠﻔﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻣ ﻡﺍﺪﺨﺘﺳﺎﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ،ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ،ﺦﺒﻄﺗ ﻭﺃ ،ﺏﺮﺸﺗ ﻻ .ﺕﺪﺟﻭ ﻥﺇ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺎﻀﻳﺮﻣ ﺺﺨﺸﻟﺍ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﻞﻌﺠﺗ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [LOCATION] ـﻟ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﺮﻳﺬﺤﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺍ]",
                     "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻣ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺳﺎﻓ ،ﻚﻠﻔﻃ ﺔﻳﺬﻐﺘﻟ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻣ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﻙﺮﺗﺍ .ﻞﻣﺎﻜﻟﺍ ﻥﺎﻴﻠﻐﻟﺍ ﻰﻟﺇ ﻞﺼﻳ ﻰﺘﺣ ﺔﻠﻣﺎﻛ ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏﺍ .ﻪﻴﻠﻐﺗ ﻰﺘﺣ ﻰﻔﺼﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﺀﺎﻤﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺎﺣﺎﺘﻣ ﻥﺎﻛ ﺍﺫﺇ ﺄﺒﻌﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺍ ﻚﻟ ﺐﺒﺴﻳ ﺪﻗ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﺀﺎﻤﻟﺍ .[TIME] ﻰﺘﺣ ﺎﻳﺭﺎﺳ ﻞﻈﻴﺳﻭ [LOCATION] ـﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻬﺠﻟﺍ ﻝﺎﺳﺭﺇ]",
                     "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺓﺰﻫﺎﺠﻟﺍ ﺔﺒﻴﻛﺮﺘﻟﺍ ﻡﺪﺨﺘﺳﺍ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﺀﺍﺬﻏ ﺔﺒﻴﻛﺮﺗ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﻉﺩ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻞﻣﺎﻜﻟﺍ ﻥﺎﻴﻠﻐﻟﺍ ﺔﺟﺭﺩ ﻰﻟﺇ ﻞﺼﻳ ﻰﺘﺣ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﺎﻬﻴﻠﻏ ﺪﻌﺑ ﻻﺇ ﺔﺤﺷﺮﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺎﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺍ ﻚﻟ ﺐﺒﺴﺗ ﺪﻗ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [LOCATION] ـﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﺔﻴﻟﺎﺳﺭﺇ]",
-                    "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻣ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺳﺍ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻤﺑ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻴﻟ ﺀﺎﻤﻟﺍ ﻙﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻼﻣﺎﻛ ﺎﻧﺎﻴﻠﻏ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﻪﻴﻠﻐﺑ ﻡﻮﻘﺗ ﻰﺘﺣ ﺢﺷﺮﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻦﻣ ﺀﺎﻤﻟﺎﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﻰﺿﺮﻣ ﺱﺎﻨﻟﺍ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﺀﺎﻤﻟﺍ ﻞﻌﺠﻳ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [LOCATION]ـﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻬﺠﻟﺍ ﻝﺎﺳﺭﺇ]"
+                    "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻣ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺳﺍ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻤﺑ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻴﻟ ﺀﺎﻤﻟﺍ ﻙﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻼﻣﺎﻛ ﺎﻧﺎﻴﻠﻏ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﻪﻴﻠﻐﺑ ﻡﻮﻘﺗ ﻰﺘﺣ ﺢﺷﺮﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻦﻣ ﺀﺎﻤﻟﺎﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﻰﺿﺮﻣ ﺱﺎﻨﻟﺍ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﺀﺎﻤﻟﺍ ﻞﻌﺠﻳ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [LOCATION]ـﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻬﺠﻟﺍ ﻝﺎﺳﺭﺇ]",
+                    {
+                        "text": "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻣ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺍﻭﺪﻛﺄﺗ .ﻝﺎﻤﻌﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺎﻓ ،ﻢﻜﻟﺎﻔﻃﺃ ﻡﺎﻌﻃﻹ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻥﻮﻣﺪﺨﺘﺴﺗ ﻢﺘﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﺀﺎﻣ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﺍﻮﻣﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﺍﻮﻛﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻼﻣﺎﻛ ﺎﻧﺎﻴﻠﻏ ﺀﺎﻤﻟﺍ ﺍﻮﻠﻏﺍ .ﺎﻬﻴﻠﻏ ﻞﺒﻗ ﺓﺮﺘﻠﻔﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻤﺑ ﻢﻜﻟﺯﺎﻨﻣ ﺍﻮﻔﻈﻨﺗ ﻭﺃ ﻢﻜﻧﺎﻨﺳﺃ ﺍﻮﻠﺴﻐﺗ ﻭﺃ ﺍﻮﻬﻄﺗ ﻭﺃ ﺍﻮﺑﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺎﺑ ﻢﻜﺘﺑﺎﺻﺇ ﻲﻓ ﻢﻜﻌﻤﺘﺠﻣ ﻲﻓ ﺀﺎﻤﻟﺍ ﺐﺒﺴﺘﻳ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ ﺎﻳﺭﺎﺳ ﻞﻈﻴﺳﻭ [LOCATION] ﺔﻘﻄﻨﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ SENDING AGENCY ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "911_outage": {
@@ -580,18 +789,46 @@
                     ".ﺎﻫﺮﻓﻮﺗ ﻝﺎﺣ ﺕﺍﺪﺠﺘﺴﻤﻟﺎﺑ ﻢﻜﻴﻓﺍﻮﻨﺳ .ﺓﺮﺷﺎﺒﻣ ﺔﻴﻠﺤﻤﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻊﻣ ﻞﺻﺍﻮﺘﻟﺍ ﻭﺃ [ﻞﻳﺪﺑ ﻢﻗﺭ] ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺔﺋﺭﺎﻃ ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ :911 ﺉﺭﺍﻮﻄﻟﺍ ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ",
                     ".ﻢﻜﻤﻬﻔﺗ ﺮﻜﺸﻧﻭ ﺝﺎﻋﺯﻹﺍ ﻦﻋ ﺭﺬﺘﻌﻧ .ﺓﺮﺷﺎﺒﻣ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻊﻣ ﻞﺻﺍﻮﺘﻟﺍ ﻭﺃ [ﻞﻳﺪﺑ ﻢﻗﺭ] ـﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ .ﺎﻴﻟﺎﺣ 911 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ :ﻞﺟﺎﻋ",
                     ".ﺓﺮﺷﺎﺒﻣ ﺀﺎﻔﻃﺇ/ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻊﻣ ﻞﺻﺍﻮﺘﻟﺍ ﻭﺃ [ﻞﻳﺪﺒﻟﺍ ﻢﻗﺮﻟﺍ ﻞﺧﺩﺃ] ﻞﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺔﺋﺭﺎﻃ ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺎﻴﻟﺎﺣ 911ـﺑ ﻝﺎﺼﺗﻻﺍ ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ :ﺉﺭﺎــﻃ ﻪﻴــﺒﻨﺗ",
-                    ".ﺓﺮﺷﺎﺒﻣ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻊﻣ ﻞﺻﺍﻮﺘﻟﺍ ﻭﺃ ﻞﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺔﺋﺭﺎﻃ ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺎﻴﻟﺎﺣ 911 ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ"
+                    ".ﺓﺮﺷﺎﺒﻣ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻊﻣ ﻞﺻﺍﻮﺘﻟﺍ ﻭﺃ ﻞﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺔﺋﺭﺎﻃ ﺓﺪﻋﺎﺴﻣ ﻰﻟﺇ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺎﻴﻟﺎﺣ 911 ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ",
+                    {
+                        "text": ".ﺀﺎﻔﻃﺇ ﻭﺃ ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻰﻟﺇ ﻪﺟﻮﺘﻟﺍ ﻭﺃ [ﻢﻗﺮﻟﺍ ﻞﺧﺩﺃ]  ﻞﻳﺪﺒﻟﺍ ﻢﻗﺮﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ .ﺎﻴﻟﺎﺣ 911 ـﺑ ﻝﺎﺼﺗﻻﺍ ﺔﻣﺪﺧ ﻲﻓ ﻞﻄﻋ ﺪﺟﻮﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻣﺪﺨﻟﺍ ﺓﺩﺎﻌﺘﺳﺍ ﻰﺘﺣ ﺔﻴﻠﺤﻤﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻡﺎﻗﺭﺃ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ [TIME] ﺬﻨﻣ ﺎﻴﻟﺎﺣ 911 ﻢﻗﺮﺑ ﻝﺎﺼﺗﻻﺍ ﺔﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[URL] :ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺀﺎﻔﻃﺇ ﻭﺃ ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﻷ ﻪﺟﻮﺗ ﻭﺃ ﻲﻠﺤﻤﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺮﺑ ﻞﺼﺗﺍ ،ﺓﺪﻋﺎﺴﻤﻠﻟ ﺔﺟﺎﺤﺑ ﺖﻨﻛ ﺍﺫﺇ .ﺎﻴﻟﺎﺣ 911 ﺮﺒﻋ ﺉﺭﺍﻮﻃ ﺕﺎﻤﻟﺎﻜﻣ ﺀﺍﺮﺟﺇ ﻦﻜﻤﻳ ﻻ .[TIME] ﺬﻨﻣ [LOCATION] ﻲﻓ 911 ﺔﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﺔﻠﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻡﺎﻗﺭﺃ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﺬﻨﻣ [LOCATION] ﻲﻓ 911 ﺉﺭﺍﻮﻄﻟﺍ ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": ".[TIME] :ﺭﺍﺪﺻﻹﺍ ﺖﻗﻭ .[URL] ﻰﻠﻋ ﺓﺮﻓﻮﺘﻣ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ .ﺉﺭﺍﻮﻄﻠﻟ ﺺﺼﺨﻤﻟﺍ ﻲﻠﺤﻤﻟﺍ ﻢﻗﺮﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ ،ﺉﺭﺍﻮﻄﻟﺍ ﻝﺎﺣ ﻲﻓ .[LOCATION] ﻲﻓ 911 ﺔﻣﺪﺧ ﻲﻓ ﻞﻄﻋ ﺪﺟﻮﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_911_outage.txt": [
                     "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻝﻮﺼﺤﻟﺍ ﻦﻣ ﻦﻜﻤﺘﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﻝﺎﺼﺗﻻﺎﺑ ﺖﻤﻗ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﺎﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﺮﺒﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﺭﺍﺬﻧﺇ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﺮﺒﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺬﻴﻔﻨﺘﻟﺍ ﺪﻴﻗ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
                     "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻝﻮﺼﺤﻟﺍ ﻦﻣ ﻦﻜﻤﺘﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﻝﺎﺼﺗﻻﺎﺑ ﺖﻤﻗ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﻢﻬﺑ ﺔﺻﺎﺨﻟﺍ ﺔﻴﻠﺤﻤﻟﺍ ﻒﺗﺎﻬﻟﺍ ﻡﺎﻗﺭﺃ ﺮﺒﻋ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺍ ﻊﻣ ﺓﺮﺷﺎﺒﻣ ﻞﺻﺍﻮﺘﻟﺍ ﺀﺎﺟﺮﻟﺍ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﺭﺍﺬﻧﺇ ﺪﺟﻮﻳ :[SENDING AGENCY]",
                     "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﻝﺎﺼﺗﻻﺎﺑ ﺖﻤﻗ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﺮﺒﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﺃ ﺉﺭﺍﻮﻃ ﺕﺎﻣﺪﺧ ﻱﺃ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻃﺮﺸﻟﺍ ﻊﻣ ﻞﺻﺍﻮﺘﻟﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
-                    "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﻝﺎﺼﺗﻻﺎﺑ ﺖﻤﻗ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﺮﺒﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ ﺪﺟﻮﻳ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]"
+                    "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ـﺑ ﻝﺎﺼﺗﻻﺎﺑ ﺖﻤﻗ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﺮﺒﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ ﺪﺟﻮﻳ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
+                    {
+                        "text": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻝﻮﺼﺤﻟﺍ ﻦﻣ ﻦﻜﻤﺘﺗ ﻻ ﺪﻗ ،1-1-9 ﻰﻠﻋ ﻝﺎﺼﺗﻻﺎﺑ ﺖﻤﻗ ﺍﺫﺇ .ﺉﺭﺎﻃ ﺙﻭﺪﺣ ﻝﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﺃ ﺔﺋﺭﺎﻃ ﺕﺎﻣﺪﺧ ﻱﺃ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ :[ﻝﺎﺳﺭﻹﺍ ﺓﺭﺍﺩﺇ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         },
@@ -602,18 +839,46 @@
                     "緊急通知：  當地發生洪水，請立即尋找安全的高地避難。避免進入低窪地區或試圖穿越積水道路。保持警覺並密切關注官方發布的更新資訊。如需援助，請聯絡當地應急服務。請確保您的安全並幫助其他需要幫助的人員。",
                     "緊急通知：  洪水警報！由于持續暴雨，該地區出現嚴重洪水。請立即前往地勢較高的地方避難，並避免進入低窪地區。保持警惕，關注最新的官方消息。如有需要緊急幫助，請撥打當地緊急電話。請保護自身安全！",
                     "緊急通知：當前地區正遭受洪水威脅，請立即尋找安全的高地避難。避免接近河流和低窪地區，並密切關注官方資訊更新。若情況危急，請撥打緊急聯絡電話尋求協助。請保持冷靜並確保家人安全。",
-                    "緊急通知：洪水警報！受影響地區請立即疏散至安全地點。避免靠近河流、低窪地區及易受洪水影響的地方。請保持警覺，並遵從當地政府指示。"
+                    "緊急通知：洪水警報！受影響地區請立即疏散至安全地點。避免靠近河流、低窪地區及易受洪水影響的地方。請保持警覺，並遵從當地政府指示。",
+                    {
+                        "text": "緊急警報：當地發生嚴重洪水，請立即前往高處避難，遠離河流與低窪地區。切勿嘗試涉水或駕車通過積水路段。請持續關注官方公告並確保您的安全。",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] [LOCATION] 發生嚴重洪水，請立刻移至高地避難，避免進入積水區域。遵從當地政府指示，確保安全。更多資訊請見 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[發送單位]：洪水緊急警報，影響[LOCATION]至[TIME]。請立即前往高處或堅固建築內避難，避免涉水行走或駕駛。保持關注官方訊息並遵從指示。更多資訊：[URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "於[TIME]，[LOCATION]發生嚴重洪水，請立即前往高處避難並遠離河川低窪地區。遵從當地政府指示，保持警覺。如需更多資訊，請訪問[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME] Flash Flood Warning for [LOCATION]. Seek higher ground immediately and avoid flooded areas. Check [URL] for updates.",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[SENDING AGENCY]：對[LOCATION]的暴洪緊急警報生效至[TIME]。這是一個極其危險且威脅生命的情況。除非您正在逃離可能發生洪水的地區或遵從撤離命令，否則請勿嘗試出行。[URL]",
                     "[發布機構]：[LOCATION] 的山洪緊急情況持續至 [TIME]。這是極其危險且威脅生命的情況。除非您正在撤離可能發生洪水的地區或收到疏散命令，否則請勿嘗試旅行。[URL]",
                     "[發送機構]：對於[LOCATION]的緊急暴洪警報有效直到[TIME]。這是一個極其危險且威脅生命的情況。除非您正在撤離可能會淹水的區域或接到撤離命令，否則請勿嘗試旅行。[URL]",
                     "[SENDING AGENCY]：對 [LOCATION] 的閃電洪水緊急情況已生效，持續至 [TIME]。這是一個極度危險且威脅生命的情況。除非您正在逃離可能發生洪水的地區或正在執行疏散命令，否則請勿嘗試旅行。[URL]",
-                    "[SENDING AGENCY]：針對 [LOCATION] 發布的突發洪水緊急情況將持續至 [TIME]。這是一個極度危險且威脅生命的情況。除非正在逃離可能發生洪水的區域或已接到撤離命令，否則請勿嘗試出行。 [URL]"
+                    "[SENDING AGENCY]：針對 [LOCATION] 發布的突發洪水緊急情況將持續至 [TIME]。這是一個極度危險且威脅生命的情況。除非正在逃離可能發生洪水的區域或已接到撤離命令，否則請勿嘗試出行。 [URL]",
+                    {
+                        "text": "[SENDING AGENCY]：針對[LOCATION]已發布山洪緊急警報，直至[TIME]。這是一個極度危險且威脅生命的情況。除非您正從可能發生洪水的地區撤離或已接到疏散命令，否則請勿嘗試出行。[URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -622,18 +887,46 @@
                     "緊急通知：預計極端強風將影響本地區，請務必關閉窗戶並加固戶外物品。如非必要，避免外出。請留意最新氣象資訊，確保安全！",
                     "緊急通知：極端強風警報！目前有危險的強風影響本地區，請立即尋找安全場所並避免靠近窗戶或外出。如需幫助，請聯絡相關當局。請保持警惕並遵守安全指示。",
                     "緊急通知：  極端強風警報！請確保您的安全，避免外出，遠離窗戶及可能被風吹落的物體。如有需要，尋找安全的避難場所。請隨時關注最新通知並保持警覺。",
-                    "緊急警報：極端大風！請立即採取安全措施，避免外出。確保門窗緊閉，遠離易受風影響的區域。保持警覺並關注最新天氣報告。"
+                    "緊急警報：極端大風！請立即採取安全措施，避免外出。確保門窗緊閉，遠離易受風影響的區域。保持警覺並關注最新天氣報告。",
+                    {
+                        "text": "【緊急警報】當地正遭受極端強風影響，請立即尋找室內安全地點，遠離窗戶與鬆動物體。避免外出，注意飛散物造成的危險，並持續關注官方最新訊息。",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "於[TIME]，[LOCATION]將出現極端強風，可能造成危險與財產損失。請立即尋找安全避難處，避免外出並加固鬆動物品。更多資訊請見[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]地區已發布極端強風警報，至[TIME]止。強風可造成嚴重危害，請立即前往堅固建築物內避難，遠離窗戶與鬆動物體。戶外、車內或臨時建築者請尋找最近的安全避難所並保護自身安全。詳情請見[URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "於[TIME]，[LOCATION]將出現極端強風，可能造成樹木倒塌與交通中斷，請避免外出並加強門窗安全。詳情請見[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "在 [TIME]，[LOCATION] 將出現極端強風，可能造成危險或破壞。請立即尋找避風場所並遠離窗戶及鬆動物品。更多資訊請見 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[SENDING AGENCY]：極端強風警告現正生效，適用於 [LOCATION]，由於有立即威脅生命的危險強風，直到 [TIME]。現在立即到堅固建築物內部的房間躲避，遠離窗戶。保護好頭部免受飛行物傷害。如果風勢減弱，切勿外出！強風會迅速再次變得危險。[URL]",
                     "[SENDING AGENCY]：針對[LOCATION]發佈極端強風警告，直至[TIME]，目前存在危及生命的強風威脅。立即前往堅固建築物內部房間避難，遠離窗戶。保護頭部免受飛散物品的傷害。如果風力減弱，請不要外出！風勢將迅速再次變得危險。[URL]",
                     "[SENDING AGENCY]：一項極端風警告正在對 [LOCATION] 生效，危及生命的危險性強風將持續至 [TIME]。立即前往堅固建築物的內部房間躲避，遠離窗戶。保護好頭部以防飛散物傷害。當風勢減弱時切勿外出！風勢會迅速再次變得危險。[URL]",
                     "[SENDING AGENCY]：極端大風警告現正生效，適用於[LOCATION]，危及生命的危險性大風將持續至[TIME]。立即在堅固建築物內的房間尋求掩護，遠離窗戶。保護您的頭部，防止飛散物體傷害。即使風速減弱，也請勿外出！風速會迅速再度變得危險。[URL]",
-                    "[SENDING AGENCY]：極端強風警告現已生效，範圍包括 [LOCATION]，直到 [TIME]，存在立即危及生命的強風危險。立即前往堅固建築物內部房間避難，遠離窗戶。保護頭部，以免被飛行物擊中。即使風勢減弱也不要外出！風速將很快再次變得危險。[URL]"
+                    "[SENDING AGENCY]：極端強風警告現已生效，範圍包括 [LOCATION]，直到 [TIME]，存在立即危及生命的強風危險。立即前往堅固建築物內部房間避難，遠離窗戶。保護頭部，以免被飛行物擊中。即使風勢減弱也不要外出！風速將很快再次變得危險。[URL]",
+                    {
+                        "text": "[SENDING AGENCY]：針對 [LOCATION] 發佈極端強風警告，因有立即威脅生命的強風，警告有效至 [TIME]。請立即躲入堅固建築物內部房間，遠離窗戶。保護頭部以防飛散物擊中。即使風勢暫時減弱，也請勿外出！強風將迅速再次變得危險。[URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "fire": {
@@ -642,18 +935,46 @@
                     "緊急通知：發生火災！請立即疏散至安全地點，遠離起火區域。如需要協助，請聯絡相關部門。保持冷靜，注意安全！",
                     "緊急通知：發生火災！請立即撤離至安全地點，並保持冷靜。遠離火源並遵從救援人員指示。如需協助，請撥打119。",
                     "緊急通知：🔥 火災警告！請立即疏散至安全地點！避開火源並切勿使用電梯。若有需要，請撥打緊急服務電話協助。請保持冷靜，注意安全！",
-                    "緊急通知：發現火災！請迅速撤離至安全地點，遠離火源。如需協助，請撥打119報警。請保持冷靜並遵從指示。"
+                    "緊急通知：發現火災！請迅速撤離至安全地點，遠離火源。如需協助，請撥打119報警。請保持冷靜並遵從指示。",
+                    {
+                        "text": "緊急警報：當地發生火災，請立即遠離危險區域並遵循疏散指示。避免吸入煙霧，並保持關注官方訊息以獲取最新安全指引。",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME]，[LOCATION] 發生大型火災，請民眾立即遠離並遵循當地緊急指示。更多資訊請查看 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "當局警報：位於[LOCATION]的火災持續中，請於[TIME]前立即撤離至安全地點。避免進入煙霧區域並遠離火源。聽從緊急人員指示，保障自身安全。更多資訊：[URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "於[TIME]，[LOCATION]發生火災，請立即遠離現場，避免吸入濃煙，並遵循緊急人員指示。更多資訊請參閱[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "緊急通知：[TIME] 在 [LOCATION] 發生火災，請立即遠離該區域並遵循當地緊急指示。更多資訊請訪問 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_fire.txt": [
                     "[發送機構]：在[LOCATION]的火警警告有效至[TIME]。立即撤離您的家人和寵物，不要拖延。該地區的能見度會降低，並且道路可能會被封鎖。如果您現在不離開，可能會被困受傷甚至喪命。立即離開靠近[LOCATION]的地區。預計會有能見度降低、濃煙以及呼吸困難的情況。駕駛時要小心。注意在該地區工作的公共安全人員，並遵循他們的指示。[URL]",
                     "[發送機構]：在[LOCATION]發出火災警告，直至[TIME]。立即疏散你的家人和寵物，切勿拖延。該地區能見度將降低，道路可能被阻塞。如果您現在不離開，可能會被困、受傷或喪生。離開靠近[LOCATION]的地區。預料能見度下降、濃煙以及呼吸困難。駕駛時請小心。注意在該地區執勤的公共安全人員並遵循他們的指示。[URL]",
                     "[發送機構]：在[LOCATION]的火災警告將持續到[TIME]。立即疏散您的家人和寵物，不要延誤。當地的能見度會下降，道路可能會被封鎖。如果您現在不撤離，可能會被困、受傷或喪命。請離開[LOCATION]附近地區。預計會出現能見度下降、濃煙滾滾及呼吸困難的情況。駕駛時請小心。請注意在區域內執勤的公共安全人員，並遵守他們的指示。[URL]",
                     "[發送機構]：在[LOCATION]的火災警告有效直到[TIME]。立即疏散您的家人和寵物，不要拖延。該區域的能見度將降低，且道路可能會被封鎖。如果您現在不撤離，可能會被困、受傷或喪命。離開[LOCATION]附近的區域。預計能見度降低、濃煙以及呼吸困難。駕駛時請小心。注意在該區域工作的公共安全人員，並遵循他們的指示。[URL]",
-                    "[發送機構]：在[LOCATION]的火災警告有效直到[TIME]。立即帶領您的家人和寵物撤離，請勿拖延。該地區的能見度將會降低，道路可能會被阻塞。如果您現在不離開，可能會被困、受傷或喪命。立即離開[LOCATION]附近的地區。預計會有能見度減低、濃煙和呼吸困難的情況。駕駛時請注意安全。請注意在該地區行動中的公共安全人員，並遵循他們的指示。[URL]"
+                    "[發送機構]：在[LOCATION]的火災警告有效直到[TIME]。立即帶領您的家人和寵物撤離，請勿拖延。該地區的能見度將會降低，道路可能會被阻塞。如果您現在不離開，可能會被困、受傷或喪命。立即離開[LOCATION]附近的地區。預計會有能見度減低、濃煙和呼吸困難的情況。駕駛時請注意安全。請注意在該地區行動中的公共安全人員，並遵循他們的指示。[URL]",
+                    {
+                        "text": "[SENDING AGENCY]：在[LOCATION]發佈火災警告，生效至[TIME]。立即撤離您的家人和寵物，不要拖延。該地區能見度將降低，道路可能會被封鎖。如果您現在不離開，可能會被困、受傷或喪命。離開[LOCATION]附近地區。預期能見度降低、煙霧濃重以及呼吸困難。駕車時請小心。注意在該地區執勤的公共安全人員，並遵守其指示。[URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -662,18 +983,46 @@
                     "緊急通知：當地已發佈煮沸飲用水通知。請將所有飲用水煮沸至少1分鐘後再使用，包括喝水、烹飪和清潔食物。未煮沸的水可能含有有害細菌，請務必遵循此指引以確保安全。",
                     "緊急通知：當局已發佈煮沸飲水公告。請將所有供食用、飲用及烹飪的水煮沸至少一分鐘後才能使用，以避免可能的污染與健康風險。此公告將持續生效，直至另行通知為止。請保持警覺並互相通知他人。",
                     "緊急通知：因水質問題，現發布燒水令。請將所有飲用水煮沸至少1分鐘後再使用，以確保安全。避免直接飲用自來水或使用未煮沸的水進行食物準備。如有疑問，請聯繫當地供水部門。",
-                    "緊急通知：因水質安全問題，現已發布煮水通知。請將所有飲用水煮沸至少1分鐘後再使用，涵蓋飲用、烹飪及清潔等用途。切勿直接飲用生水，直到通知解除為止。如需更多資訊，請聯絡當地相關部門。"
+                    "緊急通知：因水質安全問題，現已發布煮水通知。請將所有飲用水煮沸至少1分鐘後再使用，涵蓋飲用、烹飪及清潔等用途。切勿直接飲用生水，直到通知解除為止。如需更多資訊，請聯絡當地相關部門。",
+                    {
+                        "text": "【緊急通知】由於水源受污染，即日起實施煮沸用水通知。請在飲用、烹飪、刷牙或清洗食物前，將自來水煮沸至少1分鐘，以確保安全。另請注意，煮沸後的水應存放於乾淨容器中。此通知將持續至另行公告為止。",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] 在 [LOCATION] 發佈煮沸用水通知。請將所有飲用與烹飪用水至少煮沸一分鐘，以確保安全。更多資訊請訪問 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION] 發出煮沸用水通知，直至 [TIME]。請將所有飲用、烹飪及清洗用水煮沸至少1分鐘後再使用，以防水源可能受污染。更多資訊請參閱 [URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "自[TIME]起，[LOCATION]發布煮沸用水通知，請將自來水煮沸至少1分鐘後再飲用或烹調，以防範可能的健康風險。更多資訊請見：[URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "自[TIME]起，[LOCATION]發佈煮沸用水通知。請在飲用、烹飪或刷牙前將水煮沸至少1分鐘。更多資訊請訪問：[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_boil_water_notice.txt": [
                     "[SENDING AGENCY]：已針對 [LOCATION] 發佈煮沸飲水警報，並生效至 [TIME]。您所在社區的水可能會使您生病。若有瓶裝水，請使用瓶裝水。在煮沸前，請勿飲用、自來水或過濾水，也勿用其烹飪、刷牙或清潔家居。將水煮至完全滾沸三分鐘，然後冷卻使用。請勿使用未煮沸的水製冰。若您使用配方奶餵養孩子，請使用即用型配方奶。請確保寵物不喝未煮沸的水。[URL]",
                     "[SENDING AGENCY]：一項煮沸飲水警報已針對 [LOCATION] 發佈，並將持續至 [TIME] 生效。您所在地區的水可能會使您生病。若有瓶裝水，請使用瓶裝水。請勿飲用、用於烹飪、刷牙或清潔家居的自來水或過濾水，除非已經煮沸。將水完全煮沸並保持沸騰三分鐘。使用前讓水冷卻。請勿使用未經煮沸的水製成的冰塊。若使用配方奶餵養您的幼兒，請使用即用型配方奶。確保寵物不飲用未經煮沸的水。[URL]",
                     "[發送機構]：已對[LOCATION]發布煮水警告，有效期至[TIME]。您所在社區的水可能會讓您生病。如果有瓶裝水，請使用瓶裝水。未經煮沸的水或過濾水，不可飲用、不可用於烹飪、刷牙或清潔家居。請將水煮至完全滾沸三分鐘，然後冷卻後使用。不可使用用未煮沸的水製成的冰。如果您用配方奶粉餵養孩子，請使用即用型奶粉。確保寵物不喝未煮沸的水。[URL]",
                     "[SENDING AGENCY]：已對 [LOCATION] 發佈煮沸水警報，並將持續至 [TIME]。您所在社區的水可能會讓您生病。如有瓶裝水，請使用瓶裝水。在煮沸之前，請勿飲用、自來水、過濾水煮食、刷牙或清潔您的住家。將水加熱至完全沸騰並滾煮三分鐘，煮沸後請將水冷卻後使用。請勿使用未經煮沸的水製成的冰。如果您使用配方奶餵養孩子，請使用即用型配方奶。請確保寵物不飲用未經煮沸的水。[URL]",
-                    "[發送機構]：針對 [LOCATION] 發佈了煮沸水警報，該警報將持續至 [TIME]。您社區的水可能會讓您生病。如有瓶裝水，請使用瓶裝水。在煮沸水之前，請勿飲用、自來水或濾水烹飪、刷牙或清潔家居。將水煮至完全沸騰達三分鐘。請待水冷卻後再使用。請勿使用未經煮沸的水製成的冰塊。若您使用配方奶餵養孩子，請使用即用型配方奶。確保寵物不飲用未煮沸的水。[URL]"
+                    "[發送機構]：針對 [LOCATION] 發佈了煮沸水警報，該警報將持續至 [TIME]。您社區的水可能會讓您生病。如有瓶裝水，請使用瓶裝水。在煮沸水之前，請勿飲用、自來水或濾水烹飪、刷牙或清潔家居。將水煮至完全沸騰達三分鐘。請待水冷卻後再使用。請勿使用未經煮沸的水製成的冰塊。若您使用配方奶餵養孩子，請使用即用型配方奶。確保寵物不飲用未煮沸的水。[URL]",
+                    {
+                        "text": "[SENDING AGENCY]：已對 [LOCATION] 發佈煮沸水警報，並將持續至 [TIME]。您所在社區的水可能會讓您生病。如有瓶裝水，請使用瓶裝水。請勿飲用、自來水或過濾水煮食、刷牙或清潔家中，除非已先將其煮沸。將水加熱至完全翻滾沸騰三分鐘。使用前讓水冷卻。請勿使用未經煮沸的水製成的冰塊。如果您為孩子準備配方奶，請使用即用型配方奶。確保寵物不喝未經煮沸的水。[URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "911_outage": {
@@ -682,18 +1031,46 @@
                     "緊急通知：目前911服務發生故障。如需緊急協助，請撥打本地警方或消防部門的直線電話。我們正在努力解決問題，謝謝您的理解與配合。",
                     "緊急通知：目前911服務系統故障，如需緊急協助，請撥打當地警察、消防或救護部門的直線電話。請保持冷靜，並通知其他人此訊息。",
                     "緊急通知：目前 911 報警系統故障，無法使用。若有緊急情況，請改撥打當地政府提供的備用緊急聯絡電話或直接前往最近的警局尋求協助。請隨時留意最新信息，並保持安全。",
-                    "緊急通知：目前911服務暫時中斷。如需緊急協助，請致電（輸入備用電話號碼）或聯繫當地執法和緊急服務部門。請大家保持冷靜並轉告此訊息。"
+                    "緊急通知：目前911服務暫時中斷。如需緊急協助，請致電（輸入備用電話號碼）或聯繫當地執法和緊急服務部門。請大家保持冷靜並轉告此訊息。",
+                    {
+                        "text": "緊急通知：目前911緊急電話服務暫時中斷。如需緊急協助，請撥打當地警察局或消防局的直線電話，或使用其他可用的通訊方式。請保持冷靜並協助傳達此消息給身邊的人。",
+                        "date": "2025-08-13"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME]起，[LOCATION]地區911緊急服務中斷，請改撥當地警方或消防部門直線電話。更多資訊請見[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION] 發生 911 緊急電話中斷，暫時無法撥通，直至 [TIME]。如需協助，請使用當地非緊急聯絡電話或前往最近的警察局、消防局。請關注最新消息並查閱 [URL] 取得更多資訊。",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "注意：自[TIME]起，[LOCATION]地區的911電話服務發生中斷。如需緊急協助，請撥打當地警察或消防局的直線電話。更多資訊請參閱：[URL]",
+                        "date": "2025-08-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "自[TIME]起，[LOCATION]地區的911緊急通話服務中斷。請改撥當地警局或消防局電話以獲取協助。更多資訊請見[URL]。",
+                        "date": "2025-08-13"
+                    }
+                ],
                 "translate_911_outage.txt": [
                     "[SENDING AGENCY]：針對[LOCATION]的9-1-1故障警報現正生效。如遇緊急情況，請直接聯絡當地的警察、消防、醫療或其他緊急服務的電話號碼。如撥打9-1-1，可能無法獲得協助。[URL]",
                     "[SENDING AGENCY]：針對[LOCATION]的 9-1-1 故障警報已生效。如遇緊急情況，請直接撥打當地警察、消防、醫療或其他緊急服務電話號碼。若您撥打 9-1-1，可能無法獲得協助。[URL]",
                     "[SENDING AGENCY]: 現正針對[LOCATION]發出9-1-1故障警報。如遇緊急情況，請直接撥打當地警察、消防、醫療或其他緊急服務的電話號碼。若撥打9-1-1，您可能無法獲得協助。[URL]",
                     "[SENDING AGENCY]：目前 [LOCATION] 正在實施 9-1-1 故障警報。如遇緊急情況，請直接撥打當地警察、消防、醫療或其他緊急服務的電話號碼聯繫。若撥打 9-1-1，可能無法獲得協助。[URL]",
-                    "[發送機構]：針對[LOCATION]發出9-1-1故障警報。如遇緊急情況，請直接撥打當地警方、消防、醫療或其他緊急服務的電話號碼。如撥打9-1-1，可能無法獲得協助。[URL]"
+                    "[發送機構]：針對[LOCATION]發出9-1-1故障警報。如遇緊急情況，請直接撥打當地警方、消防、醫療或其他緊急服務的電話號碼。如撥打9-1-1，可能無法獲得協助。[URL]",
+                    {
+                        "text": "[SENDING AGENCY]：針對[LOCATION]已發出 9-1-1 中斷警報。緊急情況下，請直接撥打當地警方、消防、醫療或其他緊急服務的電話號碼聯絡。如撥打 9-1-1，您可能無法獲得協助。[URL]",
+                        "date": "2025-08-13"
+                    }
                 ]
             }
         }
@@ -3033,7 +3410,11 @@
                     "[URL] :ﺮﺜﻛﺃ ﻞﻴﺻﺎﻔﺗ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ .ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﺘﺑﺎﺜﻟﺍ ﺮﻴﻏ ﺀﺎﻴﺷﻷﺍ ﺪﻌﺑﺃﻭ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺮﻴﻄﺧﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".[URL] ﺍﻭﺭﻭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍ .ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍﻭ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
-                    ".[URL] ﺍﻭﺭﻭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗﻭ ﻝﺯﺎﻨﻤﻟﺍ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻡﺪﻌﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﻴﻨﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺍﻮﻃ ﺮﻳﺬﺤﺗ"
+                    ".[URL] ﺍﻭﺭﻭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗﻭ ﻝﺯﺎﻨﻤﻟﺍ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻡﺪﻌﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﻴﻨﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺍﻮﻃ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ .ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_one_shot.txt": [
                     "[URL] :ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍﻭ ﺭﺎﺠﺷﻷﺍ ﻦﻣ ﺱﺮﺘﺣﺍ .ﺍﺭﻮﻓ ﻯﻭﺄﻣ ﻦﻋ ﺚﺤﺑﺍ ،ﺓﺭﺎﻴﺴﻟﺍ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﺏﺍﻮﺑﻷﺍﻭ ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﻖﺑﺍﻭ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .ﺓﺎﻴﺤﻟﺍ ﻰﻠﻋ ﺍﺮﻄﺧ ﻞﻜﺸﺗﻭ ﺔﻌﺳﺍﻭ ﺭﺍﺮﺿﺃ ﻲﻓ ﺐﺒﺴﺘﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺓﺮﻴﻄﺧ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
@@ -3051,7 +3432,11 @@
                     ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺀﺎﻴﺷﻷﺍ ﻦﻴﻣﺄﺗ ﻰﻠﻋ ﺹﺮﺣﺍﻭ ،ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺮﻴﻄﺧﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ ️⚠",
                     ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻞﺧﺍﺪﻟﺍ ﻲﻓ ﺀﺎﻘﺒﻟﺍﻭ ﻞﻘﻨﺘﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
                     "\"ﻻﻭﺃ_ﺔﻣﻼﺴﻟﺍ# .[URL] ﺍﻭﺭﻭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﻒﺻﺍﻮﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\"",
-                    ".[URL] ﻂﺑﺍﺮﻟﺍ ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻝﺯﺎﻨﻤﻟﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﻡﺪﻌﺑ ﺢﺼﻨﻳ .[TIME] ﻝﻼﺧ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ"
+                    ".[URL] ﻂﺑﺍﺮﻟﺍ ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻝﺯﺎﻨﻤﻟﺍ ﻦﻴﻣﺄﺗﻭ ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﻡﺪﻌﺑ ﺢﺼﻨﻳ .[TIME] ﻝﻼﺧ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺔﻔﺻﺎﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
+                    {
+                        "text": "️⚠ [URL] :ﺪﻳﺰﻤﻠﻟ .ﺔﺋﺮﺘﻬﻤﻟﺍ ﻲﻧﺎﺒﻤﻟﺍﻭ ﺭﺎﺠﺷﻷﺍ ﺏﺮﻗ ﺪﺟﺍﻮﺘﻟﺍ ﺐﻨﺠﺗﻭ ﺔﺿﺎﻔﻀﻔﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻴﻣﺄﺗ .ﻯﻮﺼﻘﻟﺍ ﺓﺭﻭﺮﻀﻠﻟ ﻻﺇ ﺝﻭﺮﺨﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻒﺻﺍﻮﻋﻭ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ ️⚠",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     ".[URL] ﺭﺯ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﺟﺭﺎﺨﻟﺍ ﺽﺍﺮﻏﻷﺍ ﻦﻴﻣﺄﺗ ﻰﻠﻋ ﺹﺮﺣﺍﻭ ﻱﺭﻭﺮﻀﻟﺍ ﺮﻴﻏ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﻒﺻﺍﻮﻋﻭ ﺔﻳﻮﻗ ﺡﺎﻳﺭ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
@@ -3069,7 +3454,11 @@
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻲﻤﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺡﺎﻳﺮﻟ ﺮﺷﺎﺒﻤﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺍﺪﺟ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[JS:1] [SENDING AGENCY]",
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ ﺚﻴﺣ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﺍﺭﻮﻓ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻟﺍ ﺮﻄﺧ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[SENDING AGENCY]",
                     "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺎﻬﻧﻷ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻱﻮﻗ ﻰﻨﺒﻤﻟ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﺍﺭﻮﻓ ﻢﺘﺣﺍ .[TIME] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣ ﺡﺎﻳﺭ ﺮﻄﺧ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺍﺪﺟ ﺔﻔﻴﺼﻋ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ AGENCY]",
-                    "[ﻂﺑﺍﺭ] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺎﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﺍﺭﻮﻓ ﻢﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣ ﺡﺎﻳﺭ ﺮﻄﺧ ﺐﺒﺴﺑ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﺔﻔﺻﺎﻋ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]"
+                    "[ﻂﺑﺍﺭ] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺎﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﺍﺭﻮﻓ ﻢﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣ ﺡﺎﻳﺭ ﺮﻄﺧ ﺐﺒﺴﺑ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﺔﻔﺻﺎﻋ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
+                    {
+                        "text": "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺎﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺭﺎﺨﻟﺍ ﻰﻟﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﺊﺒﺘﺧﺍ .[TIME] ﻰﺘﺣ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳ ﺮﺷﺎﺒﻣ ﺮﻄﺧ ﺐﺒﺴﺑ [LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ EXTREME WIND WARNING ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
+                        "date": "2025-08-13"
+                    }
                 ]
             },
             "fire": {
@@ -3078,7 +3467,11 @@
                     "\"🔥🚨 .ﻻﻭﺃ ﺔﻣﻼﺴﻟﺍ ﻰﻠﻋ ﺹﺮﺤﻟﺍ .ﺪﻋﺎﺼﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﺍﻮﺒﻨﺠﺗﻭ ﻦﻴﺋﺩﺎﻫ ﺍﻮﻘﺑﺍ .٩٩٨ ﻢﻗﺮﻟﺍ ﻰﻠﻋ ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺎﺑ ﻝﺎﺼﺗﻻﺍﻭ ﺍﺭﻮﻓ ﻰﻨﺒﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ :ﺮﻳﺬﺤﺗ\"",
                     "\".ﻦﻴﻟﻭﺆﺴﻤﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺎﺋﺩﺎﻫ ﻖﺑﺍ .ﺔﻨﻣﻵﺍ ﻊﻤﺠﺘﻟﺍ ﺔﻄﻘﻧ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺪﻋﺎﺼﻤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .998 ﻢﻗﺮﻟﺍ ﻰﻠﻋ ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺎﺑ ﻝﺎﺼﺗﻻﺍﻭ ﺍﺭﻮﻓ ﻥﺎﻜﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ !ﻰﻨﺒﻤﻟﺍ ﻲﻓ ﻖﻳﺮﺣ :ﺮﻳﺬﺤﺗ\"",
                     ".998 ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﺍﻮﻠﺼﺗﺍ .ﺪﻋﺎﺼﻤﻟﺍ ﺍﻮﻣﺪﺨﺘﺴﺗ ﻻ .ﺓﺩﺪﺤﻤﻟﺍ ﻊﻤﺠﺘﻟﺍ ﻁﺎﻘﻧ ﻰﻟﺇ ﺍﻮﻬﺠﺗﺍ .ﻖﻳﺮﺣ ﺏﻮﺸﻧ ﺐﺒﺴﺑ ﺍﺭﻮﻓ ﻰﻨﺒﻤﻟﺍ ﺀﻼﺧﺇ ﻊﻴﻤﺠﻟﺍ ﻦﻣ ﻮﺟﺮﻧ",
-                    ".998 ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﺀﺎﺟﺮﻟﺍ .ﺔﻠﺟﺎﻌﻟﺍ ﺓﺪﻋﺎﺴﻤﻟﺍ ﻥﻮﺒﻠﻄﻳ ﻥﺎﻜﺴﻟﺍ .ﺚﻟﺎﺜﻟﺍ ﻖﺑﺎﻄﻟﺍ ﻲﻓ ﻊﻟﺪﻧﺍ ﻖﻳﺮﺤﻟﺍ .ﻲﻨﻜﺳ ﻰﻨﺒﻣ ﻖﻳﺮﺣ ﻲﻓ ﺎﻬﺗﺪﻟﺍﻭ ﻦﻋ ﺚﺤﺒﺗ ،ﺕﺍﻮﻨﺳ 5 ﺮﻤﻌﻟﺍ ﻦﻣ ﻎﻠﺒﺗ ﺓﺮﻴﻐﺻ ﺔﻠﻔﻃ"
+                    ".998 ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﺀﺎﺟﺮﻟﺍ .ﺔﻠﺟﺎﻌﻟﺍ ﺓﺪﻋﺎﺴﻤﻟﺍ ﻥﻮﺒﻠﻄﻳ ﻥﺎﻜﺴﻟﺍ .ﺚﻟﺎﺜﻟﺍ ﻖﺑﺎﻄﻟﺍ ﻲﻓ ﻊﻟﺪﻧﺍ ﻖﻳﺮﺤﻟﺍ .ﻲﻨﻜﺳ ﻰﻨﺒﻣ ﻖﻳﺮﺣ ﻲﻓ ﺎﻬﺗﺪﻟﺍﻭ ﻦﻋ ﺚﺤﺒﺗ ،ﺕﺍﻮﻨﺳ 5 ﺮﻤﻌﻟﺍ ﻦﻣ ﻎﻠﺒﺗ ﺓﺮﻴﻐﺻ ﺔﻠﻔﻃ",
+                    {
+                        "text": "  **ﻖﻳﺮﺣ :ﺉﺭﺍﻮﻃ ﺭﺍﺬﻧﺇ**\n  **!ﺍﺭﻮﻓ ﻰﻨﺒﻤﻟﺍ ﺀﻼﺧﺇ ﺀﺎﺟﺮﻟﺍ**\n  **.ﺉﺭﺍﻮﻃ ﺝﺮﺨﻣ ﺏﺮﻗﺃ ﻰﻟﺇ ﺍﻮﻬﺠﺗﺍ**\n  **.ﺪﻋﺎﺼﻤﻟﺍ ﺍﻮﻣﺪﺨﺘﺴﺗ ﻻ**\n  **.ﺍﺭﻮﻓ ٩٩٨ ﻢﻗﺭ ﻰﻠﻋ ﺀﺎﻔﻃﻹﺎﺑ ﺍﻮﻠﺼﺗﺍ**\n  **.ﺕﺎﻤﻴﻠﻌﺘﻟﺍ ﻉﺎﺒﺗﺍﻭ ﺀﻭﺪﻬﻟﺍ ﻰﻠﻋ ﻅﺎﻔﺤﻟﺍ**\n**.ﻦﻜﻣﺃ ﺍﺫﺇ ﻦﻳﺮﺧﻵﺍ ﺪﻋﺎﺳﻭ ﺍﺭﺬﺣ ﻦﻛ**",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_persona.txt": [
                     ".ﻢﻜﺘﻣﻼﺳ ﻰﻠﻋ ﺍﻮﻈﻓﺎﺣﻭ ﻥﺎﻜﻤﻟﺍ ﻦﻋ ﺍﻭﺪﻌﺘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺔﺜﻳﺪﺣ ﺕﺎﻣﻮﻠﻌﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻨﻣﺁ ﻦﻛﺎﻣﺃ ﻰﻟﺇ ﻪﺟﻮﺘﻟﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﻥﺎﻜﺴﻟﺍ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ [ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ]",
@@ -3092,21 +3485,33 @@
                     "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻥﺎﻜﻤﻟﺍ ﻦﻣ ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗ .ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍﻭ ﺀﺎﻔﻃﻹﺍ ﻝﺎﺟﺭ ﺕﺎﻤﻴﻠﻌﺘﻟ ﻊﻤﺘﺳﺍ .ﺔﻘﻄﻨﻤﻟﺍ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍ ﻭﺃ ﻖﻳﺮﺤﻟﺍ ﻂﻴﺤﻣ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ :ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ",
                     ".[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ ﺔﻴﻤﺳﺮﻟﺍ ﺕﺍﺩﺎﺷﺭﻹﺍ ﺔﻌﺑﺎﺘﻣ ﻰﺟﺮﻳ .[URL] ﻂﺑﺍﺮﻟﺍ ﺮﺒﻋ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﺚﻳﺪﺤﺗ ﻢﺘﻴﺳ .ﻥﺎﺧﺪﻟﺍ ﻕﺎﺸﻨﺘﺳﺍ ﺐﻨﺠﺗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﻥﺎﻜﺴﻟﺍ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ ﺙﺪﺣ",
                     "[TIME] .ﻚﺘﻣﻼﺳ ﻰﻠﻋ ﻆﻓﺎﺣﻭ ﺍﺭﺬﺣ ﻦﻛ .[URL] ﻲﻟﺎﺘﻟﺍ ﻂﺑﺍﺮﻟﺍ ﻰﻠﻋ ﺔﺣﺎﺘﻣ ﻒﻗﻮﻤﻟﺍ ﺕﺎﺜﻳﺪﺤﺗ .ﺀﺎﻔﻃﻹﺍ ﻕﺮﻓ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺪﻋﺎﺼﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﺐﻨﺠﺗ .ﻖﻳﺮﺤﻟﺍ ﻥﺎﻜﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
-                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻥﺎﻜﻤﻟﺍ ﻦﻣ ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗﻭ ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻰﻟﺇ ﻊﻤﺘﺳﺍ .ﻖﻳﺮﺤﻟﺍ ﻥﺎﻜﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ"
+                    "[URL] :ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﻥﺎﻜﻤﻟﺍ ﻦﻣ ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗﻭ ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻰﻟﺇ ﻊﻤﺘﺳﺍ .ﻖﻳﺮﺤﻟﺍ ﻥﺎﻜﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
+                    {
+                        "text": ".[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻥﺎﺧﺪﻟﺍ ﻕﺎﺸﻨﺘﺳﺍ ﺐﻨﺠﺗﻭ ﻦﻣﺁ ﻥﺎﻜﻣ ﻰﻟﺇ ﻪﺠﺗﺍ ،ﺐﻳﺮﻗ ﻥﺎﻜﻣ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﻖﻳﺮﺤﻟﺍ ﻥﺎﻜﻣ ﻦﻋ ﺩﺎﻌﺘﺑﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     ".ﺔﻘﻄﻨﻤﻟﺍ ﺍﻮﺒﻨﺠﺗﻭ ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺮﺜﻛﺃ ﺕﺎﻣﻮﻠﻌﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[LOCATION] :ﻊﻗﻮﻤﻟﺍ .[TIME] :ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ !ﺮﻴﻄﺧ ﻖﻳﺮﺣ",
                     "ﻻﻭﺃ_ﻚﺘﻣﻼﺳ# .[URL] :ﻂﺑﺍﺮﻟﺍ ﺭﺯ ،ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ :ﺮﻳﺬﺤﺗ ️⚠",
                     ".ﺔﻘﻄﻨﻤﻟﺍ ﺍﻮﺒﻨﺠﺗﻭ ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] :ﻲﻟﺎﺘﻟﺍ ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻤﻴﻠﻌﺘﻟﺍﻭ ﺔﻴﻠﻴﺼﻔﺘﻟﺍ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ ![LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
                     ".ﻢﻜﺘﻣﻼﺳ ﻰﻠﻋ ﺍﻮﻈﻓﺎﺣ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
-                    ".ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﻲﺧﻮﺗ ﺀﺎﺟﺮﻟﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟﺍ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ ![LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ"
+                    ".ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﻲﺧﻮﺗ ﺀﺎﺟﺮﻟﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟﺍ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ ![LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
+                    {
+                        "text": "**!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] :ﺎﻨﻫ ﻂﻐﺿﺍ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[LOCATION] :ﻊﻗﻮﻤﻟﺍ .[TIME] :ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ !ﺮﻴﻄﺧ ﻖﻳﺮﺣ**",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "prompt_chain_of_translation.txt": [
                     ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻄﻴﺤﻤﻟﺍ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ :ﺉﺭﺍﻮﻃ ﺮﻳﺬﺤﺗ",
                     ".[TIME] :ﺮﻳﺮﻘﺘﻟﺍ ﺖﻗﻭ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺘﺑ ﻡﺍﺰﺘﻟﻻﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺘﺑ ﻥﺎﻜﺴﻟﺍ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ :ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ",
                     ".ﺔﻣﻼﺴﻟﺍ ﻰﻠﻋ ﺍﻮﻈﻓﺎﺣ .[TIME] :ﺚﻳﺪﺤﺗ ﺮﺧﺁ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .ﺀﺎﻔﻃﻹﺍ ﻕﺮﻓ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ ️⚠",
                     ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[TIME] :ﺮﻴﺧﻷﺍ ﺚﻳﺪﺤﺘﻟﺍ .ﺍﺭﻮﻓ ﺉﺭﺍﻮﻄﻟﺎﺑ ﻝﺎﺼﺗﻻﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ",
-                    ".ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﻲﺧﻮﺗ ﺀﺎﺟﺮﻟﺍ .[URL] ﻊﺑﺎﺗ ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ ️⚠"
+                    ".ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺭﺬﺤﻟﺍ ﻲﺧﻮﺗ ﺀﺎﺟﺮﻟﺍ .[URL] ﻊﺑﺎﺗ ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ ️⚠",
+                    {
+                        "text": ".ﻲﻧﺪﻤﻟﺍ ﻉﺎﻓﺪﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺫﺎﺨﺗﺎﺑ ﺢﺼﻨﻧ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﻴﻓﺎﺿﺇ ﺕﺎﻣﻮﻠﻌﻣﻭ ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﺮﻳﺮﻘﺘﻟﺍ ﺖﻗﻭ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
+                        "date": "2025-08-13"
+                    }
                 ],
                 "translate_fire.txt": [
                     "\"[ﻂﺑﺍﺮﻟﺍ] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻠﻣﺎﻌﻟﺍ ﻡﺎﻌﻟﺍ ﻦﻣﻷﺍ ﻕﺮﻓ ﺩﻮﺟﻮﻟ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ﻒﻴﺜﻛ ﻥﺎﺧﺩ ،ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[ﻊﻗﻮﻤﻟﺍ] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﻞﺘﻘﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻹﺍ ﻭﺃ ﺯﺎﺠﺘﺣﻼﻟ ﺽﺮﻌﺘﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺓﺩﻭﺪﺴﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻞﻘﺘﺳ .ﺮﺧﺄﺘﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]\"",
