@@ -114,7 +114,7 @@ def save_output_json(output_json, output_file, logger):
     except Exception as e:
         logger.error(f"Failed to save progress: {e}")
 
-def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
+def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path, logger, output_json, total_responses):
     """Queries a language model or translation service for a multilingual emergency alert response.
 
     This function checks if a response for the current month already exists, and if not,
@@ -126,7 +126,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         service_name (str): The name of the service to query.
         language (str): The target language for the alert.
         disaster (str): The disaster scenario for the alert.
-        prompt (str): The prompt file to use for generation.
+        prompt_file_path (str): The prompt file to use for generation.
         logger (logging.Logger): Logger for logging progress and errors.
         output_json (dict): The output data structure to store responses.
         total_responses (int): The number of responses to collect per service.
@@ -139,7 +139,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     
     language_name = language.replace(" ", "_").replace("(", "").replace(")", "").lower()
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
-    prompt_name = prompt.replace("prompts/", "")
+    prompt_name = prompt_file_path.replace("prompts/", "")
 
     # google doesn't require a prompt to function
     if service_name in ["google_translate", "deepL"]:
@@ -173,7 +173,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
 
         #try:
-        output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
+        output = chat_with_service(service_name, language=language, disaster=disaster, prompt_file_path=prompt_file_path, logger=logger)
         
         if output is None:
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
