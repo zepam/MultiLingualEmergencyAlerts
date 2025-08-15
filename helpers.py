@@ -8,6 +8,7 @@ from clients.gemini import GeminiClient
 from clients.deepseek import DeepSeekClient
 from clients.chatgpt import ChatGPTClient
 from clients.cloud_translation import GoogleCloudTranslationClient
+from clients.deepl import DeepLClient
 
 def chat_with_service(service_name, language, disaster, prompt, logger):
     match service_name:
@@ -19,6 +20,8 @@ def chat_with_service(service_name, language, disaster, prompt, logger):
             return chat_deepseek(language, disaster, prompt, logger)
         case "google_translate":
             return chat_google_translate(language, disaster, prompt, logger)
+        case "deepL":
+            return chat_deepL(language, disaster, prompt, logger)
 
 def chat_gemini(language, disaster, prompt, logger):
     gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"), logger=logger)
@@ -39,6 +42,11 @@ def chat_google_translate(language, disaster, prompt, logger):
     google_translate_client = GoogleCloudTranslationClient(logger=logger)
     return google_translate_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
 
+def chat_deepL(language, disaster, prompt, logger):
+    deepL_client = DeepLClient(key=os.getenv("DEEPL_API_KEY"),
+                                logger=logger)
+    return deepL_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
+
 """
 hand-crafted dictionary to set up a JSON output schema for the first time. It's organized by:
     service
@@ -51,6 +59,8 @@ or if there are no associated prompts, such as for Google Translate
         language
             disaster: []
 """
+
+#TODO make this generic to automatically add a new language schema
 def generate_output_schema():
     return {
         "chatgpt": {

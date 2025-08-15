@@ -8,7 +8,7 @@ Usage:
     python collect_responses.py
 
 Example:
-    python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini
+    python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini --skip_google_translate --skip_deepL
 
 Functions:
     - parse_args: Parses arguments passed into the script
