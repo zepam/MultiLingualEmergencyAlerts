@@ -8,36 +8,53 @@ from clients.gemini import GeminiClient
 from clients.deepseek import DeepSeekClient
 from clients.chatgpt import ChatGPTClient
 from clients.cloud_translation import GoogleCloudTranslationClient
+from clients.deepl import DeepLClient
 
-def chat_with_service(service_name, language, disaster, prompt, logger):
+def chat_with_service(service_name, language, disaster, prompt_file_path, logger):
     match service_name:
         case "gemini":
-            return chat_gemini(language, disaster, prompt, logger)
+            return chat_gemini(language, disaster, prompt_file_path, logger)
         case "chatgpt":
-            return chat_chatgpt(language, disaster, prompt, logger)
+            return chat_chatgpt(language, disaster, prompt_file_path, logger)
         case "deepseek":
-            return chat_deepseek(language, disaster, prompt, logger)
+            return chat_deepseek(language, disaster, prompt_file_path, logger)
         case "google_translate":
-            return chat_google_translate(language, disaster, prompt, logger)
+            return chat_google_translate(language, disaster, prompt_file_path, logger)
+        case "deepL":
+            return chat_deepL(language, disaster, prompt_file_path, logger)
 
-def chat_gemini(language, disaster, prompt, logger):
+def chat_gemini(language, disaster, prompt_file_path, logger):
     gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"), logger=logger)
-    return gemini_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
+    return gemini_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
 
-def chat_deepseek(language, disaster, prompt, logger):
+def chat_deepseek(language, disaster, prompt_file_path, logger):
     deepseek_client = DeepSeekClient(key=os.getenv("OPENROUTER_API_KEY"), logger=logger)
-    return deepseek_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
+    return deepseek_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
 
-def chat_chatgpt(language, disaster, prompt, logger):
+def chat_chatgpt(language, disaster, prompt_file_path, logger):
     chatgpt_client = ChatGPTClient(key=os.getenv("AZURE_OPENAI_API_KEY"),
                                    base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
                                    deployment_name=os.getenv("AZURE_DEPLOYMENT_NAME"),
                                    logger=logger)
-    return chatgpt_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
+    return chatgpt_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
 
-def chat_google_translate(language, disaster, prompt, logger):
+def chat_google_translate(language, disaster, prompt_file_path, logger):
     google_translate_client = GoogleCloudTranslationClient(logger=logger)
-    return google_translate_client.safe_chat(prompt_file=prompt, language=language, disaster=disaster)
+    return google_translate_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
+
+
+def chat_deepL(language, disaster, prompt_file_path, logger):
+    #extract the text from the prompt file
+    with open(prompt_file_path, "r", encoding="utf-8") as file:
+                prompt_file_content = file.read()
+
+    deepL_client = DeepLClient(key=os.getenv("DEEPL_API_KEY"), logger=logger)
+
+    # Directly call the 'translate' method, which now has tenacity built-in
+    return deepL_client.translate(
+            text=prompt_file_content, # DeepL expects actual text content
+            target_language=language
+    )
 
 """
 hand-crafted dictionary to set up a JSON output schema for the first time. It's organized by:
@@ -51,6 +68,8 @@ or if there are no associated prompts, such as for Google Translate
         language
             disaster: []
 """
+
+#TODO make this generic to automatically add a new language schema
 def generate_output_schema():
     return {
         "chatgpt": {

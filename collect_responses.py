@@ -8,7 +8,7 @@ Usage:
     python collect_responses.py
 
 Example:
-    python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini
+    python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini --skip_google_translate --skip_deepL
 
 Functions:
     - parse_args: Parses arguments passed into the script
@@ -88,6 +88,8 @@ def parse_args():
                     help="Forcibly skip any calls to DeepSeek")
     parser.add_argument("--skip_google_translate", action='store_true', default=False,
                     help="Forcibly skip any calls to Google Translate")
+    parser.add_argument("--skip_deepL", action='store_true', default=False,
+                help="Forcibly skip any calls to DeepL Translator")
   
     return parser.parse_args()
 
@@ -112,7 +114,7 @@ def save_output_json(output_json, output_file, logger):
     except Exception as e:
         logger.error(f"Failed to save progress: {e}")
 
-def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, output_json, total_responses):
+def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path, logger, output_json, total_responses):
     """Queries a language model or translation service for a multilingual emergency alert response.
 
     This function checks if a response for the current month already exists, and if not,
@@ -124,7 +126,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         service_name (str): The name of the service to query.
         language (str): The target language for the alert.
         disaster (str): The disaster scenario for the alert.
-        prompt (str): The prompt file to use for generation.
+        prompt_file_path (str): The prompt file to use for generation.
         logger (logging.Logger): Logger for logging progress and errors.
         output_json (dict): The output data structure to store responses.
         total_responses (int): The number of responses to collect per service.
@@ -137,23 +139,30 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
     
     language_name = language.replace(" ", "_").replace("(", "").replace(")", "").lower()
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
-    prompt_name = prompt.replace("prompts/", "")
+    prompt_name = prompt_file_path.replace("prompts/", "")
 
     # google doesn't require a prompt to function
-    if service_name == "google_translate":
+    if service_name in ["google_translate", "deepL"]:
         existing_response_list = output_json[service_name][language_name][disaster_name]
     else:
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
-    # Check if we already have a response for this month
+    # Check if we already have a response for this week
     today = date.today()
     today_response_exists = False
-    current_month = f"{today.year}-{today.month:02d}"
+    #current_month = f"{today.year}-{today.month:02d}"
     
     for response in existing_response_list:
-        if isinstance(response, dict) and response.get('date', '').startswith(current_month):
-            today_response_exists = True
-            break
+        response_date = response.get('date', '') if isinstance(response, dict) else ''
+        if response_date:
+            response_date_obj = date.fromisoformat(response_date)
+            # Check if the response is from the current week
+            # (same year and same ISO week number)
+            if (response_date_obj.year == today.year and 
+                response_date_obj.isocalendar()[1] == today.isocalendar()[1]):
+                today_response_exists = True
+                break
+
     
     """
     Only get a new response if:
@@ -164,7 +173,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
 
         #try:
-        output = chat_with_service(service_name, language=language, disaster=disaster, prompt=prompt, logger=logger)
+        output = chat_with_service(service_name, language=language, disaster=disaster, prompt_file_path=prompt_file_path, logger=logger)
         
         if output is None:
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
@@ -187,7 +196,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt, logger, 
         #     return True  # Skip this service going forward
         
     else:
-        logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for this month")
+        logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for this week")
     
     return True # return true (skipped) if a response already exists
 
@@ -216,6 +225,10 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
             if not skip_google_translate:
                 new_skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, total_responses)
                 if not new_skip_google_translate:
+                    save_output_json(output_json, output_filename, logger)
+            if not skip_deepL:
+                new_skip_deepL = loop_responses(skip_deepL, "deepL", language, disaster, prompt, logger, output_json, total_responses)
+                if not new_skip_deepL:
                     save_output_json(output_json, output_filename, logger)
 
             # Direct translations also need a short description and the original template
@@ -248,6 +261,7 @@ if __name__ == "__main__":
     skip_chatgpt = args.skip_chatgpt
     skip_deepseek = args.skip_deepseek
     skip_google_translate = args.skip_google_translate
+    skip_deepL = args.skip_deepL
     total_responses = args.total_responses
 
     collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, args.output_file)

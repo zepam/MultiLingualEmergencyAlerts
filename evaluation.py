@@ -116,10 +116,6 @@ def get_results_count(generated_path, service_name=None):
         print(f"Service '{service_name}' not found.") # only get here when if statement is false
         return 0
     elif isinstance(json_data, dict):
-        # total = 0
-        # for v in json_data.values():
-        #     total += get_results_count(v)
-        # return total
         return sum(get_results_count(v) for v in json_data.values())
     elif isinstance(json_data, list):
         return 1 if len(json_data) > 0 else 0
@@ -168,18 +164,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 evaluation_tokenizer = (lambda tok: (lambda x: tok.tokenize(x)))(EvaluationTokenizer(language))
 
                 # bertscore takes a language code indicating the language being passed in
-                language_code = None
-                match language:
-                    case "chinese_traditional":
-                        language_code = "zh"
-                    case "arabic":
-                        language_code = "ar"
-                    case "vietnamese":
-                        language_code = "vi"
-                    case "haitian_creole":
-                        language_code = "ht"
-                    case "spanish":
-                        language_code = "es"
+                language_code = find_language_code(language)
 
                 for disaster, gold_standards in values.items():
                     if (
@@ -195,7 +180,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 if not predictions:
                                     logger.warning(f"No predictions for {language}:{service}:{disaster}:{prompt}")
                                     continue
-                                # Extract the "text" field from each prediction dict
+                                # Extract the "text" field from each prediction dict, if exists. Otherwise take entire response.
                                 predictions_text = [pred["text"] if isinstance(pred, dict) and "text" in pred else pred for pred in predictions]
                                 total_predictions = len(predictions)
 
@@ -209,22 +194,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                     bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
 #                                    comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": prompt,
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu_result["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": 0
-#                                        "COMET": comet_result["mean_score"]
-                                    }
+                                    result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result)
                                     results.append(result)
+                                    
                                 except Exception as e:
                                     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
                                     print(f"[Error on line {id_response}] {e}")
@@ -258,21 +230,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                     bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
 #                                    comet_result = comet.compute(predictions=formatted_predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                    result = {
-                                        "SERVICE": service,
-                                        "LANGUAGE": language,
-                                        "DISASTER": disaster,
-                                        "PROMPT": "N/A",  # No specific prompt in this case
-                                        "ROUGE-1": rouge_result["rouge1"],
-                                        "ROUGE-2": rouge_result["rouge2"],
-                                        "ROUGE-L": rouge_result["rougeL"],
-                                        "BLEU": bleu_result["score"],
-                                        "BERTScore_P": bertscore_result["precision"][0],
-                                        "BERTScore_R": bertscore_result["recall"][0],
-                                        "BERTScore_F1": bertscore_result["f1"][0],
-                                        "COMET": 0
-#                                        "COMET": comet_result["mean_score"]
-                                    }
+                                    result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result)
                                     results.append(result)
                                 except Exception as e:
                                     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
@@ -294,6 +252,39 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     log_memory_usage("At end of evaluation")
 
     return df
+
+def find_language_code(language):
+    language_code = None
+    match language:
+        case "chinese_traditional":
+            language_code = "zh"
+        case "arabic":
+            language_code = "ar"
+        case "vietnamese":
+            language_code = "vi"
+        case "haitian_creole":
+            language_code = "ht"
+        case "spanish":
+            language_code = "es"
+    return language_code
+
+def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result):
+    return {
+        "SERVICE": service,
+        "LANGUAGE": language,
+        "DISASTER": disaster,
+        "PROMPT": prompt, 
+        "ROUGE-1": rouge_result["rouge1"],
+        "ROUGE-2": rouge_result["rouge2"],
+        "ROUGE-L": rouge_result["rougeL"],
+        "BLEU": bleu_result["score"],
+        "BERTScore_P": bertscore_result["precision"][0],
+        "BERTScore_R": bertscore_result["recall"][0],
+        "BERTScore_F1": bertscore_result["f1"][0],
+        "COMET": 0
+        #"COMET": comet_result["mean_score"]
+    }
+
 
 def main():
     start_time = time.time()
