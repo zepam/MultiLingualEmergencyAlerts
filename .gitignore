@@ -244,3 +244,12 @@ plots/results_google_translate_PROMPT.png
 plots/results_google_translate_ROUGE-1.png
 plots/results_google_translate_ROUGE-2.png
 plots/results_google_translate_ROUGE-L.png
+plots/all_results_BERTScore_F1_by_service.png
+plots/all_results_BERTScore_P_by_service.png
+plots/all_results_BERTScore_R_by_service.png
+plots/all_results_BLEU_by_service.png
+plots/all_results_COMET_by_service.png
+plots/all_results_ROUGE-1_by_service.png
+plots/all_results_ROUGE-2_by_service.png
+plots/all_results_ROUGE-L_by_service.png
+plots/all_results_SERVICE_FROM_FILENAME_by_service.png
