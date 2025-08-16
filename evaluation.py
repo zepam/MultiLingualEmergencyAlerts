@@ -20,10 +20,6 @@ Example:
     python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results.csv
     python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results_google_translate.csv --service_name google_translate
 
-Functions:
-    - main: Parses arguments, loads metrics, runs evaluation, and prints/saves results.
-    - evaluate_generated_texts: Evaluates generated texts against references using multiple metrics.
-    - tokenizer_lambda: defines a lambda that can return and call a tokenizer for a given text
 """
 
 # have this at the top to supress warnings from the imports because it's annoying

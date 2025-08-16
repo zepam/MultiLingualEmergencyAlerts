@@ -82,5 +82,4 @@ class DeepLClient(Client):
             "Vietnamese": "vi",
             "Chinese (Traditional)": "zh", # DeepL uses 'zh' for both Simplified and Traditional, often defaulting to Simplified
             "Chinese (Simplified)": "zh",
-            # Add more languages as needed
         }

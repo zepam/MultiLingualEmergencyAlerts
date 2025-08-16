@@ -17,11 +17,12 @@ Functions:
     - main: Does the thing. Outputs data to a JSON file
 
 Flags:
-    - --preserve_output: If a matching output file exists, read in the existing data and append to it.
-    - --skip_gemini: Forcibly skip any calls to Gemini
-    - --skip_chatgpt: Forcibly skip any calls to ChatGPT
-    - --skip_deepseek: Forcibly skip any calls to DeepSeek
-    - --skip_google_translate: Forcibly skip any calls to Google Translate
+    --preserve_output: If a matching output file exists, read in the existing data and append to it.
+    --skip_gemini: Forcibly skip any calls to Gemini
+    --skip_chatgpt: Forcibly skip any calls to ChatGPT
+    --skip_deepseek: Forcibly skip any calls to DeepSeek
+    --skip_google_translate: Forcibly skip any calls to Google Translate
+    --skip_deepL: Forcibly skip any calls to DeepL Translator
 """
 
 import json

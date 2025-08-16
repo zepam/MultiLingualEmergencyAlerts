@@ -1,48 +1,68 @@
-import glob
 import pandas as pd
 import matplotlib.pyplot as plt
+import glob
 import os
 
-def plot_results_from_csvs(results_pattern="results_*.csv", output_dir="plots"):
-    """
-    Reads all CSV files matching the given pattern and generates bar plots for each metric in each file.
+def main():
+    # Directory where your result files are stored
+    directory = "./"   # change to your path if needed
 
-    Args:
-        results_pattern (str): Glob pattern for results CSV files.
-        output_dir (str): Directory to save the generated plots.
+    # Get all files that start with 'results'
+    files = glob.glob(os.path.join(directory, "results*.csv"))
 
-    Returns:
-        None
-    """
-    os.makedirs(output_dir, exist_ok=True)
-    csv_files = glob.glob(results_pattern)
-    print(f"Looking for files with pattern: {results_pattern}")
-    print(f"Found files: {csv_files}")
-    if not csv_files:
-        print("No results CSV files found.")
+    if not files:
+        print("No results files found.")
         return
 
-    for csv_file in csv_files:
-        df = pd.read_csv(csv_file)
-        # Assume the first column is a label (e.g., system, language, etc.)
-        label_col = df.columns[0]
-        metrics = df.columns[1:]
+    # Combine all CSVs into a single DataFrame (assume first row is header)
+    all_dfs = []
+    for file in files:
+        print(f"Reading {file}...")
+        df = pd.read_csv(file)
+        # Extract service name from filename (e.g., results_deepseek.csv -> deepseek)
+        base = os.path.basename(file)
+        if base.startswith("results_") and base.endswith(".csv"):
+            service = base[len("results_"):-len(".csv")]
+        else:
+            service = base
+        df["SERVICE_FROM_FILENAME"] = service
+        all_dfs.append(df)
 
-        for metric in metrics:
-            plt.figure(figsize=(10, 6))
-            plt.bar(df[label_col], df[metric], color='skyblue')
-            plt.xlabel(label_col)
-            plt.ylabel(metric)
-            plt.title(f"{metric} - {os.path.basename(csv_file)}")
-            plt.xticks(rotation=45, ha='right')
-            plt.tight_layout()
-            plot_filename = os.path.join(
-                output_dir,
-                f"{os.path.splitext(os.path.basename(csv_file))[0]}_{metric}.png"
-            )
-            plt.savefig(plot_filename)
-            plt.close()
-            print(f"Saved plot: {plot_filename}")
+    combined_df = pd.concat(all_dfs, ignore_index=True)
+    print("Combined DataFrame shape:", combined_df.shape)
+    print(combined_df.head())
+
+    # Save the combined table as a CSV
+    combined_df.to_csv("all_results_combined.csv", index=False)
+    print("✅ Combined table written to all_results_combined.csv!")
+
+    # Automatically determine metric columns: all columns except the first few (metadata)
+    metadata_cols = {"SERVICE", "LANGUAGE", "DISASTER", "PROMPT"}
+    metric_cols = [col for col in combined_df.columns if col not in metadata_cols]
+    if not metric_cols:
+        print("No metric columns found (all columns are metadata).")
+        return
+    
+    # Ensure the plots directory exists
+    plots_dir = "plots"
+    os.makedirs(plots_dir, exist_ok=True)
+
+    for metric_col in metric_cols:
+        plt.figure(figsize=(12,7))
+        # Dynamically use all non-metric columns as label parts
+        label_cols = [col for col in combined_df.columns if col not in metric_cols]
+        labels = combined_df[label_cols].astype(str).agg(" | ".join, axis=1)
+        plt.bar(labels, combined_df[metric_col], color='skyblue')
+        plt.xticks(rotation=45, ha="right")
+        plt.ylabel(metric_col)
+        plt.title(f"Comparison of {metric_col} by {' | '.join(label_cols)} (All Results)")
+        plt.tight_layout()
+
+        # Save plot instead of just showing it
+        outname = os.path.join(plots_dir, f"all_results_{metric_col}_by_service.png")
+        plt.savefig(outname, dpi=300)
+        plt.close()
+        print(f"✅ Plot saved to {outname}")
 
 if __name__ == "__main__":
-    plot_results_from_csvs()
+    main()
