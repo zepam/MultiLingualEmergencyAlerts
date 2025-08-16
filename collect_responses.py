@@ -35,6 +35,8 @@ from helpers import generate_output_schema, chat_with_service
 
 from datetime import date
 
+logging.getLogger("deepl").setLevel(logging.WARNING)
+
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
 ITERATIVE_PROMPT_FILES = [
   "prompts/prompt_simple.txt",
@@ -175,7 +177,9 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
         #try:
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt_file_path=prompt_file_path, logger=logger)
         
-        if output is None:
+
+
+        if not output.strip():      # the deepl client returns an empty string if it fails, need to exclude it
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
             return True  # Skip this service going forward
         

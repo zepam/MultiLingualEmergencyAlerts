@@ -9,7 +9,7 @@ class DeepLClient(Client):
 
         super().__init__(key, logger)
         self.client = deepl.Translator(auth_key=self.key)   # deepL library selects the Free or Pro API endpoint based on key
-        self.logger.info("DeepLClient initialized.")
+        #self.logger.info("DeepLClient initialized.")
 
         # Fetch and store supported target languages during initialization
         self.supported_target_languages_ids = set()
@@ -21,10 +21,10 @@ class DeepLClient(Client):
         except Exception as e:
             self.logger.error(f"Failed to fetch supported DeepL target languages: {e}.")
 
-    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=60, max=180), stop=tenacity.stop_after_attempt(3))
+    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=3, max=180), stop=tenacity.stop_after_attempt(3))
     def translate(self, text: str, target_language: str, source_language: str = None) -> str:
 
-        if not text:
+        if not text.strip():
             self.logger.warning("Text was empty.")
             return ""
 
@@ -39,11 +39,13 @@ class DeepLClient(Client):
             # Validate if the mapped language code is a valid DeepL target language
             if target_lang_code not in self.supported_target_languages_ids:
                 self.logger.warning(f"DeepL does not support target language: '{target_language}' (resolved code: '{target_lang_code}'). Skipping translation.")
-                raise ValueError(f"Target language '{target_lang_code}' not supported by DeepL.")
+                return ""
+                #raise ValueError(f"Target language '{target_lang_code}' not supported by DeepL.")
 
         except KeyError as e:
             self.logger.error(f"Language mapping error: {e}. Check if the language name is correct.")
-            raise ValueError(f"Unsupported language name provided: {e}")
+            #raise ValueError(f"Unsupported language name provided: {e}")
+            return ""
         
         # translate things
         try:
@@ -58,10 +60,11 @@ class DeepLClient(Client):
             return translated_content
         except deepl.DeepLException as e:
             self.logger.error(f"DeepL translation failed '{target_language}': {e}")
-            raise # Re-raise the exception after logging
+            #raise # Re-raise the exception after logging
+            return ""
         except Exception as e:
             self.logger.error(f"An unexpected error occurred during DeepL translation: {e}")
-            raise
+            return ""
     # See https://support.deepl.com/hc/en-us/articles/360019925219-DeepL-Translator-languages
     def translation_map(self) -> dict[str, str]:
         """
