@@ -4301,5 +4301,142 @@
                 }
             ]
         }
+    },
+    "deepL": {
+        "spanish": {
+            "flood": [
+                {
+                    "text": "[AGENCIA REMITENTE]: Se ha declarado una EMERGENCIA POR INUNDACIÓN RÁPIDA en [LUGAR] hasta [HORA]. Se trata de una situación extremadamente peligrosa y potencialmente mortal. No intente viajar a menos que esté huyendo de una zona que pueda inundarse o esté bajo una orden de evacuación. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[AGENCIA REMITENTE]: Hay un AVISO DE VIENTO EXTREMO en [LUGAR] por el peligro inmediato de vientos que amenazan la vida hasta [HORA]. Cúbrase AHORA en una habitación interior de un edificio resistente, lejos de las ventanas. Protéjase la cabeza de objetos voladores. NO salga si el viento se calma. Los vientos volverán a ser peligrosos rápidamente. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[AGENCIA REMITENTE]: Una ADVERTENCIA DE INCENDIO en [LUGAR] está en efecto hasta [HORA]. Evacue a su familia y mascotas ahora, no se demore. La visibilidad en la zona se reducirá y las carreteras pueden quedar bloqueadas. Si no se marcha ahora, podría quedar atrapado, resultar herido o morir. ABANDONE las zonas cercanas a [LUGAR]. Prevea visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública que opere en la zona y siga sus instrucciones. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[AGENCIA REMITENTE]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [LUGAR] y estará vigente hasta [HORA]. El agua de su comunidad puede enfermarle. Utilice agua embotellada si está disponible. No beba, cocine, se lave los dientes ni limpie su casa con agua del grifo o filtrada hasta que la hierva. Lleve el agua a ebullición durante TRES MINUTOS. Deje que el agua se enfríe antes de utilizarla. No utilice hielo hecho con agua que no haya hervido. Si utiliza leche de fórmula para alimentar a su hijo, utilice leche de fórmula lista para usar. Asegúrese de que los animales domésticos no beben agua sin hervir. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[AGENCIA REMITENTE]: Se ha activado una ALERTA DE DESCANSO 9-1-1 para [UBICACIÓN]. En caso de emergencia, póngase en contacto con la policía, los bomberos, los servicios médicos u otros servicios de emergencia directamente en sus números de teléfono locales. Si marca el 9-1-1, es posible que no reciba ayuda. [URL]",
+                    "date": "2025-08-15"
+                }
+            ]
+        },
+        "arabic": {
+            "flood": [
+                {
+                    "text": "[URL] .ﺀﻼﺧﺇ ﺮﻣﺃ ﺖﺤﺗ ﺖﻨﻛ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺎﻫﺮﻤﻐﺗ ﺪﻗ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﻞﻘﻨﺘﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣﻭ ﺔﻳﺎﻐﻠﻟ ﺓﺮﻴﻄﺧ ﺔﻟﺎﺣ ﻩﺬﻫ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﺔﻳﺭﺎﺳ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[URL] .ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺡﺎﻳﺮﻟﺍ ﺢﺒﺼﺘﺳ ﺎﻣ ﻥﺎﻋﺮﺳ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻣ ﻲﻓ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻤﻟﺍ ﺡﺎﻳﺮﻠﻟ ﺮﺷﺎﺒﻤﻟﺍ ﺮﻄﺨﻠﻟ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺪﻳﺪﺸﻟﺍ ﺡﺎﻳﺮﻟﺍ ﻦﻣ ﺪﻳﺪﺷ ﺮﻳﺬﺤﺗ ﺪﺟﻮﻳ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﻲﻔﻇﻮﻣ ﺐﻗﺍﺭ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﺔﺑﻮﻌﺻﻭ ﻒﻴﺜﻜﻟﺍ ﻥﺎﺧﺪﻟﺍﻭ ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[ﻊﻗﻮﻤﻟﺍ] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﻞﺘﻘﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻹﺍ ﻭﺃ ﺭﺎﺼﺤﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺓﺩﻭﺪﺴﻣ ﻕﺮﻄﻟﺍ ﺢﺒﺼﺗ ﻥﺃ ﻦﻜﻤﻳﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﺾﻔﺨﻨﺘﺳ .ﺮﺧﺄﺘﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[URL] .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﻱﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻲﻣﺪﺨﺘﺳﺍ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻦﻴﻣﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻪﻴﻠﻏ ﻢﺘﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻲﻣﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﻉﺩ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻞﻣﺎﻜﻟﺍ ﻥﺎﻴﻠﻐﻟﺍ ﻰﺘﺣ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻢﻗ .ﺎﻬﻴﻠﻐﺗ ﻰﺘﺣ ﺓﺮﺘﻠﻔﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻤﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻞﺴﻐﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺓﺮﻓﻮﺘﻣ ﺖﻧﺎﻛ ﺍﺫﺇ ﺕﺎﺟﺎﺟﺯ ﻲﻓ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺎﺑ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﻚﺒﻴﺼﺗ ﺪﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﻥﺎﻴﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-1-9 ﻢﻗﺮﻟﺍ ﺖﺒﻠﻃ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﻲﺋﺎﺑﺮﻬﻜﻟﺍ ﺭﺎﻴﺘﻟﺍ ﻉﺎﻄﻘﻧﺍ ﺭﺍﺬﻧﺇ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                    "date": "2025-08-15"
+                }
+            ]
+        },
+        "chinese_traditional": {
+            "flood": [
+                {
+                    "text": "[发送机构]：在[时间]之前，[地点]将发生 \"闪电 \"紧急情况。这种情况极其危险，危及生命。除非您正在逃离可能被洪水淹没的地区或正在接受疏散命令，否则不要试图出行。[URL］",
+                    "date": "2025-08-15"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[发送机构]：在[时间]之前，[地点]有狂风威胁生命的紧急危险，特大狂风警报生效。立即躲入坚固建筑物的室内，远离窗户。保护好头部，避免受到飞行物的伤害。如果风平浪静，请勿外出！风很快会再次变得危险。[URL］",
+                    "date": "2025-08-15"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[发送机构]：地点]的火灾警告有效期至[时间]。立即疏散您的家人和宠物，不要拖延。该地区的能见度将降低，道路可能被封锁。如果您现在不离开，您可能会被困、受伤或死亡。离开 [地点] 附近地区。预计能见度会降低，烟雾弥漫，呼吸困难。小心驾驶。注意在该地区活动的公共安全人员，并听从他们的指示。[URL］",
+                    "date": "2025-08-15"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[发送机构]：已向[地点]发布烧水警报，有效期至[时间]。您所在社区的水可能会让您生病。如果有瓶装水，请使用瓶装水。在将自来水或过滤水烧开之前，请勿饮用、烹饪、刷牙或清洁家居。将水完全煮沸三分钟。使用前让水冷却。不要使用未经煮沸的水制冰。如果您用配方奶粉喂养孩子，请使用即开即用的配方奶粉。确保宠物不喝未经煮沸的水。[URL］",
+                    "date": "2025-08-15"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[发送机构]：9-1-1 停电警报在[地点]生效。如遇紧急情况，请直接拨打当地的报警电话、消防电话、医疗电话或其他紧急服务电话。如果您拨打 9-1-1，可能无法获得帮助。[URL］",
+                    "date": "2025-08-15"
+                }
+            ]
+        },
+        "vietnamese": {
+            "flood": [
+                {
+                    "text": "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO LŨ QUẬT KHẨN CẤP đang có hiệu lực tại [ĐỊA ĐIỂM] cho đến [THỜI GIAN]. Đây là tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không nên di chuyển trừ khi bạn đang thoát khỏi khu vực có nguy cơ ngập lụt hoặc đang tuân thủ lệnh sơ tán. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO GIÓ MẠNH ĐẶC BIỆT đang có hiệu lực tại [VỊ TRÍ] do nguy cơ đe dọa tính mạng từ gió mạnh cho đến [THỜI GIAN]. Hãy tìm nơi trú ẩn NGAY LẬP TỨC trong một phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Bảo vệ đầu khỏi các vật thể bay. KHÔNG RA NGOÀI nếu gió dịu đi! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO CHÁY tại [VỊ TRÍ] đang có hiệu lực cho đến [THỜI GIAN]. Hãy di tản gia đình và vật nuôi ngay lập tức, không chậm trễ. Tầm nhìn trong khu vực sẽ bị hạn chế và đường sá có thể bị tắc nghẽn. Nếu bạn không rời đi ngay lập tức, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. Rời khỏi các khu vực gần [ĐỊA ĐIỂM]. Dự kiến tầm nhìn sẽ bị hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Chú ý đến nhân viên cứu hộ đang hoạt động trong khu vực và tuân thủ hướng dẫn của họ. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO NƯỚC SÔI đã được phát đi cho [ĐỊA ĐIỂM] và có hiệu lực cho đến [THỜI GIAN]. Nước trong khu vực của bạn có thể gây bệnh. Sử dụng nước đóng chai nếu có sẵn. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hoặc nước lọc cho đến khi bạn đun sôi nước. Đun sôi nước cho đến khi sôi mạnh trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn sử dụng sữa bột để cho trẻ ăn, hãy sử dụng sữa bột đã pha sẵn. Đảm bảo vật nuôi không uống nước chưa đun sôi. [URL]",
+                    "date": "2025-08-15"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[CƠ QUAN PHÁT HÀNH]: Cảnh báo sự cố hệ thống 9-1-1 đang có hiệu lực tại [VỊ TRÍ]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]",
+                    "date": "2025-08-15"
+                }
+            ]
+        },
+        "haitian_creole": {
+            "flood": [],
+            "extreme_wind": [],
+            "fire": [],
+            "boil_water_notice": [],
+            "911_outage": []
+        }
     }
 }
