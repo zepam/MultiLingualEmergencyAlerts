@@ -23,6 +23,7 @@ compare_results.py
 results_gemini.csv
 results_deepseek.csv
 results_google_translate.csv
+plots/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

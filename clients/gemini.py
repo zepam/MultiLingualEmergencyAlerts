@@ -1,5 +1,6 @@
 import google.generativeai as genai
 from clients.client import Client
+from clients.translation_map import TRANSLATION_MAP
 
 # Client to interact with the Gemini API
 # Free tier: 10 requests per minute

@@ -1,5 +1,6 @@
 from openai import AzureOpenAI
 from clients.client import Client
+from clients.translation_map import TRANSLATION_MAP
 
 # Client to interact with the ChatGPT API via Azure
 class ChatGPTClient(Client):

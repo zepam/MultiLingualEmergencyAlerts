@@ -1,6 +1,7 @@
 from openai import OpenAI
 from clients.client import Client
 import httpx
+from clients.translation_map import TRANSLATION_MAP
 
 # Client to interact with the DeepSeek API via OpenRouter
 # 50 free requests per day
