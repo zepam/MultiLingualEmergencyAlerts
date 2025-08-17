@@ -4,9 +4,6 @@ collect_responses.py
 This script iterates over API endpoints to Google Translate, Deepseek, ChatGPT, and Gemini in order to
 request generation of multilingual emergency alerts.
 
-Usage:
-    python collect_responses.py
-
 Example:
     python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini --skip_google_translate --skip_deepL
 
@@ -30,11 +27,12 @@ import logging
 import argparse
 import arabic_reshaper
 from bidi.algorithm import get_display
+from datetime import date
 
 from dotenv import load_dotenv
-from helpers import generate_output_schema, chat_with_service
+from source.helpers import generate_output_schema, chat_with_service
 
-from datetime import date
+
 
 logging.getLogger("deepl").setLevel(logging.WARNING)
 
@@ -115,7 +113,7 @@ def save_output_json(output_json, output_file, logger):
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(output_json, f, ensure_ascii=False, indent=4, default=str)
-        logger.info(f"Progress saved to {output_file}")
+            #logger.info(f"Progress saved to {output_file}")
     except Exception as e:
         logger.error(f"Failed to save progress: {e}")
 
@@ -152,31 +150,33 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     # else:
     #     existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
+    logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name}")
+
     if service_name not in output_json:
         output_json[service_name] = {}
         save_output_json(output_json, output_filename, logger)
-        logger.info(f"Adding service {service_name} to output JSON")
+        logger.info(f"Adding {service_name} to output JSON")
     if language_name not in output_json[service_name]:
         output_json[service_name][language_name] = {}
         save_output_json(output_json, output_filename, logger)
-        logger.info(f"Adding language {language_name} to service {service_name} in output JSON")
+        logger.info(f"Adding {service_name} - {language_name} in output JSON")
     if disaster_name not in output_json[service_name][language_name]:
         if service_name in ["google_translate", "deepL"]:
             output_json[service_name][language_name][disaster_name] = []
             save_output_json(output_json, output_filename, logger)
-            logger.info(f"Adding disaster {disaster_name} to service {service_name} in output JSON")
+            logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON")
         else:
             output_json[service_name][language_name][disaster_name] = {}
-            logger.info(f"Adding disaster {disaster_name} to service {service_name} in output JSON with prompts")
+            logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON with prompts")
             save_output_json(output_json, output_filename, logger)
     if service_name in ["google_translate", "deepL"]:
         existing_response_list = output_json[service_name][language_name][disaster_name]
-        logger.info(f"Checking {service_name} for {language_name}:{disaster_name} - {len(existing_response_list)} existing responses")
+        #logger.info(f"Checking {service_name} for {language_name}:{disaster_name} - {len(existing_response_list)} existing responses")
     else:
         if prompt_name not in output_json[service_name][language_name][disaster_name]:
             output_json[service_name][language_name][disaster_name][prompt_name] = []
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
-    logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name} - {len(existing_response_list)} existing responses")
+    #logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name} - {len(existing_response_list)} existing responses")
 
 
     # Check if we already have a response for this week
@@ -209,7 +209,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
         
 
 
-        if not output.strip():      # the deepl client returns an empty string if it fails, need to exclude it
+        if not output:      # the deepl client returns an empty string if it fails, need to exclude it
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
             return True  # Skip this service going forward
         
@@ -232,7 +232,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     else:
         logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for this week")
     
-    return True # return true (skipped) if a response already exists
+    return False # return true (skipped) if a response already exists
 
 
 #TODO: skip the service if it cannot connect
@@ -277,16 +277,23 @@ if __name__ == "__main__":
     args = parse_args()
 
     output_json = None
-    if args.preserve_output:
-        try:
-            with open(args.output_file, "r", encoding="utf-8") as file:
-                output_json = json.load(file)
-            logger.info(f"Preserved existing output from {args.output_file}")
-        except FileNotFoundError:
-            logger.info(f"Output file {args.output_file} not found, generating new schema")
-            output_json = generate_output_schema()
-    else:
-        output_json = generate_output_schema()
+    # if args.preserve_output:
+    #     try:
+    #         with open(args.output_file, "r", encoding="utf-8") as file:
+    #             output_json = json.load(file)
+    #         logger.info(f"Preserved existing output from {args.output_file}")
+    #     except FileNotFoundError:
+    #         logger.info(f"Output file {args.output_file} not found, generating new schema")
+    #         output_json = generate_output_schema()
+    # else:
+    #     output_json = generate_output_schema()
+    try:
+        with open(args.output_file, "r", encoding="utf-8") as file:
+            output_json = json.load(file)
+        logger.info(f"Preserved existing output from {args.output_file}")
+    except FileNotFoundError:
+        logger.error(f"Output file {args.output_file} not found. Please create the file or specify the correct path.")
+        exit(1)
 
     if output_json is None:
         exit()
@@ -297,6 +304,8 @@ if __name__ == "__main__":
     skip_google_translate = args.skip_google_translate
     skip_deepL = args.skip_deepL
     total_responses = args.total_responses
+
+    logging.info(f"**************************************************")
 
     collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, args.output_file)
 

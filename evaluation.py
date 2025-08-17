@@ -39,6 +39,7 @@ import os
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
 from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
+from clients.translation_map import TRANSLATION_MAP
 
 # Optional: psutil for more accurate memory logging
 try:
@@ -52,7 +53,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     filename="evaluation.log",
-    filemode="w"
+    filemode="a"
 )
 logger = logging.getLogger(__name__)
 
@@ -160,7 +161,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 evaluation_tokenizer = (lambda tok: (lambda x: tok.tokenize(x)))(EvaluationTokenizer(language))
 
                 # bertscore takes a language code indicating the language being passed in
-                language_code = find_language_code(language)
+                # language_code = find_language_code(language)
+                language_code = TRANSLATION_MAP.get(language, language)
 
                 for disaster, gold_standards in values.items():
                     if (
@@ -183,20 +185,20 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 # we have 5 predictions and one gold standard. Just make an array of the same gold standard 5 times
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
-                                try:
-                                    id_response = f"{service}:{language}:{disaster}:{prompt}"
-                                    logger.info(f"Evaluating {id_response} with {total_predictions} predictions")
-                                    rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
-                                    bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                # try:
+                                id_response = f"{service}:{language}:{disaster}:{prompt}"
+                                logger.info(f"Evaluating {id_response} with {total_predictions} predictions")
+                                rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
+                                bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
+                                bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
 #                                    comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                    result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result)
-                                    results.append(result)
+                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result)
+                                results.append(result)
                                     
-                                except Exception as e:
-                                    logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
-                                    print(f"[Error on line {id_response}] {e}")
-                                    continue
+                                # except Exception as e:
+                                #     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
+                                #     print(f"[Error on line {id_response}] {e}")
+                                #     continue
                                 pbar.update(1)
                                 # Log memory usage every 10 prompts
                                 if pbar.n % 10 == 0:
@@ -219,19 +221,19 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 # apply the same treatment to the gold standards
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * total_predictions
 
-                                try:        
-                                    id_response = f"{service}:{language}:{disaster}"
-                                    logger.info(f"Evaluating {id_response} with {total_predictions} predictions (Google Translate style)")
-                                    rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
-                                    bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
-                                    bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
+                                # try:        
+                                id_response = f"{service}:{language}:{disaster}"
+                                logger.info(f"Evaluating {id_response} with {total_predictions} predictions (Google Translate style)")
+                                rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
+                                bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
+                                bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
 #                                    comet_result = comet.compute(predictions=formatted_predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                    result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result)
-                                    results.append(result)
-                                except Exception as e:
-                                    logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
-                                    print(f"[Error on line {id_response}] {e}")
-                                    continue
+                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result)
+                                results.append(result)
+                                # except Exception as e:
+                                #     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
+                                #     print(f"[Error on line {id_response}] {e}")
+                                #     continue
                                 pbar.update(1)
                                 # Log memory usage every 10 prompts
                                 if pbar.n % 10 == 0:
@@ -249,20 +251,20 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
     return df
 
-def find_language_code(language):
-    language_code = None
-    match language:
-        case "chinese_traditional":
-            language_code = "zh"
-        case "arabic":
-            language_code = "ar"
-        case "vietnamese":
-            language_code = "vi"
-        case "haitian_creole":
-            language_code = "ht"
-        case "spanish":
-            language_code = "es"
-    return language_code
+# def find_language_code(language):
+#     language_code = None
+#     match language:
+#         case "chinese_traditional":
+#             language_code = "zh"
+#         case "arabic":
+#             language_code = "ar"
+#         case "vietnamese":
+#             language_code = "vi"
+#         case "haitian_creole":
+#             language_code = "ht"
+#         case "spanish":
+#             language_code = "es"
+#     return language_code
 
 def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result):
     return {
@@ -306,10 +308,16 @@ def main():
     bertscore = load("bertscore")
 #    comet = load("comet")
 
+     
+    # If output_csv is specified, put it in the results folder
+    output_path = None
+    if args.output_csv:
+        output_path = os.path.join("results/", os.path.basename(args.output_csv))
+    
     df = evaluate_generated_texts(
         args.generated_path,
         args.reference_path,
-        args.output_csv,
+        output_path,
         rouge,
         bleu,
         bertscore,
