@@ -108,5 +108,49 @@
                 "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
                 "reference": "[SENDING AGENCY]：[LOCATION] 發佈了 9-1-1 故障警報 ，當前生效中。如果發生緊急情況，請直接撥打當地電話號碼聯絡警察、消防、醫療或其他緊急服務部門。如果撥打 9-1-1，您可能得不到幫助。[URL]"
             }
+        },
+        "russian": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY]: В [LOCATION] объявлено ЭКСТРЕННОЕ ПРЕДУПРЕЖДЕНИЕ о ВНЕЗАПНОМ НАВОДНЕНИИ (действует до [TIME]). Это явление крайне опасно для жизни. Не совершайте поездок, если вы не эвакуируетесь из района, который может подвергнуться затоплению, самостоятельно или по приказу об эвакуации. [URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY]: В [LOCATION] объявлено ПРЕДУПРЕЖДЕНИЕ о ШТОРМОВОМ ПРИЛИВЕ и существует риск опасного для жизни подтопления до [TIME]. Это предупреждение разослано за 36 часов до начала чрезвычайной ситуации. Примите меры по защите своей жизни и собственности. Если в вашем районе действует приказ об эвакуации, следуйте ему, чтобы не утонуть или не оказаться вне досягаемости экстренных служб. [URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[SENDING AGENCY] предупреждает о ПРИРОДНОМ ПОЖАРЕ в зоне [LOCATION] (предупреждение действует до [TIME]). Немедленно эвакуируйтесь со своей семьей и домашними животными. Ожидается ухудшение видимости и пробки на дорогах. Если вы не покинете эту зону, вы рискуете быть изолированными, получить травму или погибнуть. ПОКИНЬТЕ территорию рядом с [LOCATION]. Возможны ухудшение видимости, сильная задымленность и проблемы с дыханием. Соблюдайте осторожность при вождении транспортного средства. Найдите сотрудников экстренных служб в зоне, где вы находитесь, и следуйте их указаниям. [URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY]: В [LOCATION] необходимо ОБЯЗАТЕЛЬНО КИПЯТИТЬ ВОДУ (предупреждение действует до [TIME]). Вода в вашем районе может вызвать проблемы со здоровьем. По возможности используйте бутилированную воду. Не используйте воду из крана или фильтра для питья, готовки, чистки зубов или уборки до того, как прокипятите ее. Кипятите воду в течение ТРЕХ МИНУТ. Дайте воде остыть перед применением. Не используйте лед из некипяченой воды. Если вы кормите грудного ребенка смесью, используйте готовые смеси. Не давайте домашним животным пить некипяченую воду. [URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY]: В [LOCATION] НЕДОСТУПЕН НОМЕР 9-1-1. При возникновении чрезвычайной ситуации вызывайте полицию, пожарных, скорую помощь или другие экстренные службы по местным телефонным номерам. Если вы наберете 9-1-1, помощь может не прибыть. [URL]"
+            }
+        },
+        "ukrainian": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
         }
     }
