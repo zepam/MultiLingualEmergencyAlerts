@@ -30,7 +30,7 @@ from bidi.algorithm import get_display
 from datetime import date
 
 from dotenv import load_dotenv
-from source.helpers import generate_output_schema, chat_with_service
+from source.helpers import chat_with_service
 
 logging.getLogger("deepl").setLevel(logging.WARNING)
 
@@ -150,23 +150,27 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
 
     logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name}")
 
+    # update json schema if needed
     if service_name not in output_json:
         output_json[service_name] = {}
-        save_output_json(output_json, output_filename, logger)
+        #save_output_json(output_json, output_filename, logger)
         logger.info(f"Adding {service_name} to output JSON")
+
     if language_name not in output_json[service_name]:
         output_json[service_name][language_name] = {}
-        save_output_json(output_json, output_filename, logger)
+        #save_output_json(output_json, output_filename, logger)
         logger.info(f"Adding {service_name} - {language_name} in output JSON")
+
     if disaster_name not in output_json[service_name][language_name]:
         if service_name in ["google_translate", "deepL"]:
             output_json[service_name][language_name][disaster_name] = []
-            save_output_json(output_json, output_filename, logger)
+            #save_output_json(output_json, output_filename, logger)
             logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON")
         else:
             output_json[service_name][language_name][disaster_name] = {}
             logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON with prompts")
-            save_output_json(output_json, output_filename, logger)
+            #save_output_json(output_json, output_filename, logger)
+
     if service_name in ["google_translate", "deepL"]:
         existing_response_list = output_json[service_name][language_name][disaster_name]
         #logger.info(f"Checking {service_name} for {language_name}:{disaster_name} - {len(existing_response_list)} existing responses")
@@ -176,11 +180,12 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
     #logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name} - {len(existing_response_list)} existing responses")
 
+    # save all that work
+    save_output_json(output_json, output_filename, logger)
 
     # Check if we already have a response for this week
     today = date.today()
-    today_response_exists = False
-    #current_month = f"{today.year}-{today.month:02d}"
+    timely_response_exists = False
     
     # check if there is already a response for this week (same year and same ISO week number)
     for response in existing_response_list:
@@ -192,7 +197,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
             response_date_obj = date.fromisoformat(response_date)
             if (response_date_obj.year == today.year and 
                 response_date_obj.isocalendar()[1] == today.isocalendar()[1]):
-                today_response_exists = True
+                timely_response_exists = True
                 break
 
     
@@ -201,7 +206,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     1) We don't have one for this week yet
     2) the service should be run (not forcibly skipped by commandline argument)
     """
-    if not today_response_exists:
+    if not timely_response_exists:
         #logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
 
         #try:
@@ -275,16 +280,7 @@ if __name__ == "__main__":
     args = parse_args()
 
     output_json = None
-    # if args.preserve_output:
-    #     try:
-    #         with open(args.output_file, "r", encoding="utf-8") as file:
-    #             output_json = json.load(file)
-    #         logger.info(f"Preserved existing output from {args.output_file}")
-    #     except FileNotFoundError:
-    #         logger.info(f"Output file {args.output_file} not found, generating new schema")
-    #         output_json = generate_output_schema()
-    # else:
-    #     output_json = generate_output_schema()
+
     try:
         with open(args.output_file, "r", encoding="utf-8") as file:
             output_json = json.load(file)
