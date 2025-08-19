@@ -32,8 +32,6 @@ from datetime import date
 from dotenv import load_dotenv
 from source.helpers import generate_output_schema, chat_with_service
 
-
-
 logging.getLogger("deepl").setLevel(logging.WARNING)
 
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
@@ -184,12 +182,14 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     today_response_exists = False
     #current_month = f"{today.year}-{today.month:02d}"
     
+    # check if there is already a response for this week (same year and same ISO week number)
     for response in existing_response_list:
-        response_date = response.get('date', '') if isinstance(response, dict) else ''
+        if isinstance(response, dict):
+            response_date = response.get('date', '')
+        else:
+            response_date = ''
         if response_date:
             response_date_obj = date.fromisoformat(response_date)
-            # Check if the response is from the current week
-            # (same year and same ISO week number)
             if (response_date_obj.year == today.year and 
                 response_date_obj.isocalendar()[1] == today.isocalendar()[1]):
                 today_response_exists = True
@@ -198,16 +198,14 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     
     """
     Only get a new response if:
-    1) We don't have one for today yet
+    1) We don't have one for this week yet
     2) the service should be run (not forcibly skipped by commandline argument)
     """
     if not today_response_exists:
-        logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
+        #logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
 
         #try:
         output = chat_with_service(service_name, language=language, disaster=disaster, prompt_file_path=prompt_file_path, logger=logger)
-        
-
 
         if not output:      # the deepl client returns an empty string if it fails, need to exclude it
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
@@ -305,7 +303,7 @@ if __name__ == "__main__":
     skip_deepL = args.skip_deepL
     total_responses = args.total_responses
 
-    logging.info(f"**************************************************")
+    logging.info("**************************************************")
 
     collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, args.output_file)
 

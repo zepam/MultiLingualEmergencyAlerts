@@ -13,24 +13,47 @@ class DeepSeekClient(Client):
         self.model = "deepseek/deepseek-chat-v3-0324:free"
 
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
-        prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language, sending_agency=sending_agency,
-                                    location=location, time=time, url=url)
-        client = OpenAI(base_url=self.base_url, api_key=self.key, http_client=httpx.Client(headers={
+        # Get language code from translation map or use language as is if not found
+        language_code = TRANSLATION_MAP.get(language, language)
+        
+        prompt = self.gather_prompt(
+            prompt_file=prompt_file,
+            disaster=disaster,
+            language=language_code,
+            sending_agency=sending_agency,
+            location=location,
+            time=time,
+            url=url
+        )
+        
+        client = OpenAI(
+            base_url=self.base_url,
+            api_key=self.key,
+            http_client=httpx.Client(
+                headers={
                     "HTTP-Referer": "http://localhost",
                     "User-Agent": "OpenAI-Python"
-    }))
+                }
+            )
+        )
 
-        completion = client.chat.completions.create(model=self.model,
-                                                    extra_body={},
-                                                    messages=[
-                                                        {
-                                                            "role": "user",
-                                                            "content": prompt
-                                                        }
-                                                    ],
-                                                    temperature=self.temperature,
-                                                    max_tokens=self.max_tokens,
-                                                    top_p=self.top_p)
+        try:
+            completion = client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                top_p=self.top_p,
+                extra_body={}
+            )
+        except Exception as e:
+            self.logger.error(f"DeepSeek API request failed: {e}")
+            return None
+
+        # Guard against None or unexpected shape
+        if not completion or not hasattr(completion, "choices") or len(completion.choices) == 0:
+            self.logger.error(f"DeepSeek returned invalid response: {completion}")
+            return None
 
         return completion.choices[0].message.content
 
