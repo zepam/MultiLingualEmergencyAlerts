@@ -32,7 +32,7 @@ from datetime import date
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
 
-logging.getLogger("deepl").setLevel(logging.WARNING)
+logging.getLogger("deepL").setLevel(logging.WARNING)
 
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
 ITERATIVE_PROMPT_FILES = [
@@ -142,48 +142,56 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     disaster_name = disaster.replace("a ", "").replace(" ", "_")
     prompt_name = prompt_file_path.replace("prompts/", "")
 
-    # google doesn't require a prompt to function
-    # if service_name in ["google_translate", "deepL"]:
-    #     existing_response_list = output_json[service_name][language_name][disaster_name]
-    # else:
-    #     existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
-
-    #logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name}")
-
     # update json schema if needed
-    if service_name not in output_json:
-        output_json[service_name] = {}
-        #save_output_json(output_json, output_filename, logger)
-        logger.info(f"Adding {service_name} to output JSON")
-
-    if language_name not in output_json[service_name]:
-        output_json[service_name][language_name] = {}
-        #save_output_json(output_json, output_filename, logger)
-        logger.info(f"Adding {service_name} - {language_name} in output JSON")
-
-    if disaster_name not in output_json[service_name][language_name]:
-        if service_name in ["google_translate", "deepL"]:
-            output_json[service_name][language_name][disaster_name] = []
-            #save_output_json(output_json, output_filename, logger)
-            logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON")
-        else:
-            output_json[service_name][language_name][disaster_name] = {}
-            logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON with prompts")
-            #save_output_json(output_json, output_filename, logger)
+    prepare_response_schema(service_name, logger, output_json, language_name, disaster_name)
 
     if service_name in ["google_translate", "deepL"]:
         existing_response_list = output_json[service_name][language_name][disaster_name]
-        #logger.info(f"Checking {service_name} for {language_name}:{disaster_name} - {len(existing_response_list)} existing responses")
     else:
         if prompt_name not in output_json[service_name][language_name][disaster_name]:
             output_json[service_name][language_name][disaster_name][prompt_name] = []
         existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
-    #logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name} - {len(existing_response_list)} existing responses")
 
     # save all that work
     save_output_json(output_json, output_filename, logger)
 
     # Check if we already have a response for this week
+    timely_response_exists = check_for_weeks_response(existing_response_list)
+    
+    """
+    Only get a new response if:
+    1) We don't have one for this week yet
+    2) the service should be run (not forcibly skipped by commandline argument)
+    """
+    if not timely_response_exists:
+        #logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
+
+        #try:
+        output = chat_with_service(service_name, language=language, disaster=disaster, prompt_file_path=prompt_file_path, logger=logger)
+
+        # TODO You must also ensure that chat_with_service is updated to return None (not an empty string) on failure, and only return an empty string if that is a valid response. If chat_with_service is in another file, update its error handling accordingly.
+        if not output:      # the deepL client returns an empty string if it fails, need to exclude it
+            logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
+            return True  # Skip this service going forward
+        
+        if language_name == "arabic":
+            # make sure Arabic output is not broken and is left to right
+            output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
+            
+        # Store response with today's date
+        response_with_date = {
+            "text": output,
+            "date": date.today().isoformat()
+        }
+        existing_response_list.append(response_with_date)
+        return False  # Return false if a new response was added
+        
+    else:
+        logger.info(f"Skipping {service_name} : {language_name} : {disaster_name} : {prompt_name}  - already have response for this week")
+    
+    return False 
+
+def check_for_weeks_response(existing_response_list):
     today = date.today()
     timely_response_exists = False
     
@@ -199,47 +207,28 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
                 response_date_obj.isocalendar()[1] == today.isocalendar()[1]):
                 timely_response_exists = True
                 break
+    return timely_response_exists
 
-    
-    """
-    Only get a new response if:
-    1) We don't have one for this week yet
-    2) the service should be run (not forcibly skipped by commandline argument)
-    """
-    if not timely_response_exists:
-        #logger.info(f"Running {service_name}: {language_name}: {disaster_name}: {prompt_name}")
+def prepare_response_schema(service_name, logger, output_json, language_name, disaster_name):
+    if service_name not in output_json:
+        output_json[service_name] = {}
+        logger.info(f"Adding {service_name} to output JSON")
 
-        #try:
-        output = chat_with_service(service_name, language=language, disaster=disaster, prompt_file_path=prompt_file_path, logger=logger)
+    if language_name not in output_json[service_name]:
+        output_json[service_name][language_name] = {}
+        logger.info(f"Adding {service_name} - {language_name} in output JSON")
 
-        if not output:      # the deepl client returns an empty string if it fails, need to exclude it
-            logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
-            return True  # Skip this service going forward
-        
-        if language_name == "arabic":
-            # make sure Arabic output is not broken and is left to right
-            output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
-            
-        # Store response with today's date
-        response_with_date = {
-            "text": output,
-            "date": date.today().isoformat()
-        }
-        existing_response_list.append(response_with_date)
-        return False  # Return false if a new response was added
-            
-        # except Exception as e:
-        #     logger.error(f"Error with {service_name} for {language_name}:{disaster_name}:{prompt_name}: {e}")
-        #     return True  # Skip this service going forward
-        
-    else:
-        logger.info(f"Skipping {service_name} : {language_name} : {disaster_name} : {prompt_name}  - already have response for this week")
-    
-    return False # return true (skipped) if a response already exists
+    if disaster_name not in output_json[service_name][language_name]:
+        if service_name in ["google_translate", "deepL"]:
+            output_json[service_name][language_name][disaster_name] = []
+            logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON")
+        else:
+            output_json[service_name][language_name][disaster_name] = {}
+            logger.info(f"Adding {service_name} - {language_name} - {disaster_name} in output JSON with prompts")# return true (skipped) if a response already exists
 
 
 #TODO: skip the service if it cannot connect
-def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, output_filename):
+def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, skip_deepL, total_responses, output_filename):
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
             for prompt in ITERATIVE_PROMPT_FILES:
@@ -300,8 +289,12 @@ if __name__ == "__main__":
     total_responses = args.total_responses
 
     logger.info("**************************************************")
+    logger.info("**************************************************")
 
-    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, args.output_file)
+    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, skip_deepL, total_responses, args.output_file)
 
-    with open(args.output_file, 'w', encoding='utf-8') as f:
-        json.dump(output_json, f, ensure_ascii=False, indent=4)
+    # with open(args.output_file, 'w', encoding='utf-8') as f:
+    #     json.dump(output_json, f, ensure_ascii=False, indent=4)
+
+    # just in case there is anything left
+    save_output_json(output_json, args.output_file, logger)
