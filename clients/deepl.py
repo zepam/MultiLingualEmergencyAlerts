@@ -17,7 +17,7 @@ class DeepLClient(Client):
             # get_target_languages() returns a list of deepl.Language objects
             for lang in self.client.get_target_languages():
                 self.supported_target_languages_ids.add(lang.code)
-            #self.logger.info(f"DeepL supports {len(self.supported_target_languages_ids)} target languages.")
+                # self.logger.info(f"Added supported target language: {lang.code} ({lang.name})")
         except Exception as e:
             self.logger.error(f"Failed to fetch supported DeepL target languages: {e}.")
 
@@ -30,15 +30,13 @@ class DeepLClient(Client):
 
         # Map language names to DeepL language codes
         try:
-            target_language_code = TRANSLATION_MAP.get(target_language, target_language)
-            if source_language:
-                source_lang_code = TRANSLATION_MAP.get(source_language, source_language)
-            else:
-                source_lang_code = None
+            target_language_code = TRANSLATION_MAP[target_language].upper()     # deepl likes upper case codes
+            source_lang_code = TRANSLATION_MAP[source_language] if source_language else None
 
             # Validate if the mapped language code is a valid DeepL target language
             if target_language_code not in self.supported_target_languages_ids:
                 self.logger.warning(f"DeepL does not support target language: '{target_language}' (resolved code: '{target_language_code}'). Skipping translation.")
+                self.logger.info(f"DeepL supports {len(self.supported_target_languages_ids)} target languages.")
                 return ""
                 #raise ValueError(f"Target language '{target_lang_code}' not supported by DeepL.")
 
@@ -65,21 +63,3 @@ class DeepLClient(Client):
         except Exception as e:
             self.logger.error(f"An unexpected error occurred during DeepL translation: {e}")
             return ""
-    # See https://support.deepl.com/hc/en-us/articles/360019925219-DeepL-Translator-languages
-    # def translation_map(self) -> dict[str, str]:
-    #     """
-    #     Provides a mapping from common language names to DeepL-compatible language codes.
-    #     Refer to DeepL API documentation for the most up-to-date list of supported codes.
-
-    #     Returns:
-    #         dict: A dictionary mapping language names (keys) to DeepL codes (values).
-    #     """
-    #     return {
-    #         "English": "en-US", 
-    #         "Spanish": "es",
-    #         "Arabic": "ar",
-    #         "Haitian Creole": "ht", 
-    #         "Vietnamese": "vi",
-    #         "Chinese (Traditional)": "zh", # DeepL uses 'zh' for both Simplified and Traditional, often defaulting to Simplified
-    #         "Chinese (Simplified)": "zh",
-    #     }

@@ -21,11 +21,6 @@ class GoogleCloudTranslationClient(Client):
         # Map language names to language codes
         target_language_code = TRANSLATION_MAP.get(language, language)
 
-        # Validate if the mapped language code is a valid DeepL target language
-        # if target_language_code not in self.supported_target_languages_ids:
-        #     self.logger.warning(f"Service does not support target language: '{language}' (resolved code: '{target_language_code}'). Skipping translation.")
-        #     return ""
-
         parent = f"projects/{self.project_id}"
 
         result = translate_client.translate_text(
@@ -35,15 +30,3 @@ class GoogleCloudTranslationClient(Client):
         )
 
         return result.translations[0].translated_text
-
-    # See https://cloud.google.com/translate/docs/languages
-    # def translation_map(self):
-    #     return {
-    #         "Spanish": "es",
-    #         "Arabic": "ar",
-    #         "Haitian Creole": "ht",
-    #         "Vietnamese": "vi",
-    #         # zh-CN was chosed based on the needs of the population of Seattle
-    #         "Chinese (Traditional)": "zh-TW",
-    #         "Chinese (Simplified)": "zh-CN"
-    #     }

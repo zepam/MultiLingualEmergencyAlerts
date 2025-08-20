@@ -148,7 +148,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
     # else:
     #     existing_response_list = output_json[service_name][language_name][disaster_name][prompt_name]
 
-    logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name}")
+    #logger.info(f"Checking {service_name} for {language_name}:{disaster_name}:{prompt_name}")
 
     # update json schema if needed
     if service_name not in output_json:
@@ -233,7 +233,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
         #     return True  # Skip this service going forward
         
     else:
-        logger.info(f"Skipping {service_name} : {language_name}: {disaster_name}: {prompt_name}  - already have response for this week")
+        logger.info(f"Skipping {service_name} : {language_name} : {disaster_name} : {prompt_name}  - already have response for this week")
     
     return False # return true (skipped) if a response already exists
 
@@ -299,7 +299,7 @@ if __name__ == "__main__":
     skip_deepL = args.skip_deepL
     total_responses = args.total_responses
 
-    logging.info("**************************************************")
+    logger.info("**************************************************")
 
     collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, total_responses, args.output_file)
 
