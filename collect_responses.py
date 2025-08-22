@@ -31,6 +31,7 @@ from datetime import date
 
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
+from clients.translation_map import TRANSLATION_MAP
 
 logging.getLogger("deepL").setLevel(logging.WARNING)
 
@@ -44,15 +45,8 @@ ITERATIVE_PROMPT_FILES = [
 ]
 
 # languages to evaluate
-LANGUAGES = [
-  "Spanish",
-  "Arabic",
-  "Chinese (Traditional)",
-  "Vietnamese",
-  "Haitian Creole",
-  "Russian",
-  "Ukrainian"
-]
+# Extract languages from the TRANSLATION_MAP keys
+LANGUAGES = [lang for lang in TRANSLATION_MAP.keys() if lang != "English"]
 
 STANDARD_DISASTERS = [
   "a flood",
@@ -68,7 +62,8 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(
     level=logging.INFO,
     filename="output.log",
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    filemode='w'        # the file gets so long, it will reset each time
 )
 
 def parse_args():
@@ -229,33 +224,38 @@ def prepare_response_schema(service_name, logger, output_json, language_name, di
 
 #TODO: skip the service if it cannot connect
 def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, skip_deepL, total_responses, output_filename):
+    services_iterative = [
+        ("gemini", skip_gemini),
+        ("chatgpt", skip_chatgpt),
+        ("deepseek", skip_deepseek)]
+    services_direct = [
+        ("google_translate", skip_google_translate),
+        ("deepL", skip_deepL)]
+    
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
+            # Iterative services (loop through multiple prompts)
             for prompt in ITERATIVE_PROMPT_FILES:
-                if not skip_gemini:  # yes, this looks redundant, but we want to skip Gemini even checking (logging) if the flag is set
-                    new_skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-                    if not new_skip_gemini:  # If we successfully made an API call
-                        save_output_json(output_json, output_filename, logger)
-                if not skip_chatgpt:
-                    new_skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-                    if not new_skip_chatgpt:  # If we successfully made an API call
-                        save_output_json(output_json, output_filename, logger)
-                if not skip_deepseek:
-                    new_skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-                    if not new_skip_deepseek:  # If we successfully made an API call
-                        save_output_json(output_json, output_filename, logger)
+                for service_name, skip_flag in services_iterative:
+                    if not skip_flag:
+                        new_skip = loop_responses(
+                            skip_flag, service_name, language, disaster, prompt,
+                            logger, output_json, output_filename, total_responses
+                        )
+                        if not new_skip:  # successful API call
+                            save_output_json(output_json, output_filename, logger)
 
-            # Google Translate needs to take an original template and translate directly
+            # Direct translation services (one prompt per disaster)
             disaster_name = disaster.replace("a ", "").replace(" ", "_")
             prompt = f"prompts/{disaster_name}.txt"
-            if not skip_google_translate:
-                new_skip_google_translate = loop_responses(skip_google_translate, "google_translate", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-                if not new_skip_google_translate:
-                    save_output_json(output_json, output_filename, logger)
-            if not skip_deepL:
-                new_skip_deepL = loop_responses(skip_deepL, "deepL", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-                if not new_skip_deepL:
-                    save_output_json(output_json, output_filename, logger)
+            for service_name, skip_flag in services_direct:
+                if not skip_flag:
+                    new_skip = loop_responses(
+                        skip_flag, service_name, language, disaster, prompt,
+                        logger, output_json, output_filename, total_responses
+                    )
+                    if not new_skip:
+                        save_output_json(output_json, output_filename, logger)
 
             # Direct translations also need a short description and the original template
             prompt = f"prompts/translate_{disaster_name}.txt"
@@ -290,6 +290,7 @@ if __name__ == "__main__":
 
     logger.info("**************************************************")
     logger.info("**************************************************")
+    logger.info(f"Languages from translation map: {LANGUAGES}")
 
     collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, skip_deepL, total_responses, args.output_file)
 
