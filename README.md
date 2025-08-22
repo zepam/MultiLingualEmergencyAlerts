@@ -1,85 +1,87 @@
-# Evaluate coverage of FCC Multi-Lingual Emergency Alerts
+# Multilingual Emergency Alerts
+A toolkit for generating, collecting, and evaluating multilingual emergency alert messages using a variety of large language models (LLMs) and translation APIs.
+
+
+## Features
+
+- **Automated Response Collection:** Query multiple LLMs and translation services (ChatGPT, Gemini, DeepSeek, Google Translate, DeepL) for emergency alert translations in many languages.
+- **Prompt Engineering:** Test and compare different prompt strategies for each service and scenario.
+- **Evaluation Suite:** Evaluate generated outputs using metrics such as ROUGE, BLEU, BERTScore, and COMET.
+- **Result Aggregation:** Combine and visualize results from multiple runs and services.
+- **Extensible:** Easily add new languages, services, or evaluation metrics.
+
+---
+
+## Directory Structure
+
+```python
+MultiLingualEmergencyAlerts/
+
+├── clients/ # Service-specific client code and shared translation map
+├── data/ # Gold standard/reference data for evaluation
+├── prompts/ # Prompt templates for LLMs
+├── results/ # Output CSVs and combined results
+├── source/ # Utility scripts (e.g., combine_all_results.py)
+├── output_file.json # Main output file for collected responses
+├── collect_responses.py # Main script to collect responses from all services
+├── evaluation.py # Script to evaluate outputs against references
+├── plot_results.py # Script to visualize results
+├── run_all_evaluations.sh # Shell script to run all evaluations and combine results
+├── requirements.txt # Python dependencies
+└── README.md # This file
+```
+
+---
 
 ## Setup
 
-Install all the libraries in requirements.txt: `pip install -r requirements.txt`.
+1. **Clone the repository:**
+   ```bash
+   git clone <repo-url>
+   cd MultiLingualEmergencyAlerts
+2. **Install dependencies:**
 
-Then you'll need to configure several environmental variables for API access inside a file called `.env`.
+* Create and activate a Python environment (e.g., with conda or venv).
+* Install required packages:
+    ```python
+    pip install -r requirements.txt
+    ```
+* Set up API keys. See the README in clients for more info.
 
-```
-GEMINI_API_KEY=""
-AZURE_OPENAI_API_KEY=""
-AZURE_OPENAI_ENDPOINT=""
-AZURE_DEPLOYMENT_NAME=""
-OPENROUTER_API_KEY=""
-```
 
-### Google
+## Usage
+1. **Collect Multilingual Responses**  
+    Run the main collection script to query all services for all languages, disasters, and prompts:
+    ```python
+    python collect_responses.py
+    ```
+    * You can skip specific services with flags like --skip_SERVICENAME
+  
+2. **Evaluate Results**
+   Run the main evaluation script:
+    ```python
+    ./run_all_evaluations.sh
+    ```
 
-Gemini and Google Translate are accessed via Google. 
+    This will evaluate the generated outputs against gold standards. This script evaluates all of the services individually as `results/results_SERVICENAME.csv` then combines results into `results/all_results_combined.csv`
 
-1) Enable the Cloud Translation API in your project
-1) Download the gcloud CLI (https://cloud.google.com/sdk/docs/install)
-2) Run `gcloud init`
-3) Run `gcloud auth application-default login` to set up your credentials. This will save a credentials file in a set location based on your OS (https://cloud.google.com/translate/docs/authentication#user-credentials-adc)
-4) (If needed; gcloud init will generally handle this for you) Get your project ID and set a billing quota (https://cloud.google.com/docs/authentication/troubleshoot-adc#user-creds-client-based); make sure your user has an IAM role for "service usage" (https://cloud.google.com/docs/authentication/troubleshoot-adc)
+## Logging
+`output.log` is the log file for collect_resposes.py. This will reset with every run.
 
-### Microsoft Azure
+`evaluation.log` is the file for evaluations. This will append with every run.
 
-ChatGPT is accessed via Azure.
+## Extensions
 
-1) Go to the Azure AI Foundry (https://ai.azure.com) and deploy an instance of GPT-4o; I did "global standard" as the deployment option as it seemed to be the only one I could with my quota and chose version "2024-12-01-preview". Whichever name you choose for this deployment needs to go in `AZURE_DEPLOYMENT_NAME`
-2) Once it deploys, you should see your endpoint and API key. These are your `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`.
+The file `clients/translation_map.py `contains all of the language names and their corresponding language codes for evaluation.
 
-### OpenRouter
+The file `data/evaluation_gold_standards.json` contains all of the gold standards for each language and each prompt.
 
-DeepSeek is accessed via OpenRouter.
+To add a new language for evaluation:
+* add the language name and language code to the translation map.
+* add the gold standard results the json 
 
-Sign up to OpenRouter and create an API key: https://openrouter.ai/settings/keys
 
-## Running the Script
 
-`collect_responses.py` supports several arguments:
 
-- `--output_file`: specify the file to write to. It will be a JSON object of the responses.
 
-- `--total_responses`: the number of responses to collect per service. The script will loop until all are collected or it can't collect anymore (API errors, rate limiting, etc.)
 
-- `--preserve_output`: if a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits
-
-You can also choose to skip calling certain API endpoints with the following bools:
-
-- `--skip_gemini`
-
-- `--skip_chatgpt`
-
-- `--skip_deepseek`
-
-- `--skip_google_translate`
-
-You can `tail -f output.log` to keep an eye on how things are running.
-
-## Known Rate Limits
-OpenRouter allows 50 free requests per day.
-
-Gemini rate limits to 10 requests per minute.
-
-The `collect_responses.py` script will automatically stop bugging a given endpoint if 3 consecutive requests fail.
-
-## Evaluation
-```
-python evaluation.py output_file.json evaluation_gold_standards.json --output_csv results.csv
-```
-
-- `output_file.json` is the JSON file of requested translations generated by `collect_responses.py`
-- `evaluation_gold_standards.json` is a handmade JSON file of the gold translation for each prompt
-- the `--output_csv` argument controls where to output the data to
-
-## Prompts
-All prompts can be found in `/prompts`. {LANGUAGE} and {DISASTER} variables are replaced during run-time before sending the prompt to the service.
-
-## Images
-Contains charts of our demographic analysis for language needs in Washington state.
-
-## Clients
-These are objects used to interact with the various service APIs. Each client inherits from a base Client object.
