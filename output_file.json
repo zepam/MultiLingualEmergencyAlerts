@@ -2433,6 +2433,368 @@
                     }
                 ]
             }
+        },
+        "chinese_simplified": {
+            "flood": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：受连续强降雨影响，本地区发生严重洪水，水位持续上涨。请居民立即前往最近的安全避难所，避免靠近河道和低洼地区，确保人身安全。如需帮助，请拨打应急电话 110 或 119。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "在[TIME]，[LOCATION]发生洪水，可能存在危险。请远离受影响区域，并遵循当地官员的指示。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[发送机构]：洪水紧急警报——[LOCATION] 正处于洪水威胁中，预计持续至 [TIME]。请立即前往高处或安全地点，切勿涉水通过被淹道路。保持关注官方信息与媒体更新。详情：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME]，[LOCATION]发生严重洪水，请立即前往高处避险，避免通过积水区域。关注官方信息，确保安全。更多详情请查看：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME]，[LOCATION]发生严重洪水，存在生命和财产危险。请立即前往高地或安全区域，避免涉水。关注官方信息，遵循当地应急指令。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：针对[LOCATION]发布的山洪紧急警报将持续至[TIME]。这是一个极其危险并威胁生命的情况。除非您正从可能发生洪水的地区撤离或已接到疏散命令，否则不要试图出行。[URL]",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：目前正发生极端大风天气，风速强劲，可能造成树木倒塌、建筑受损及飞散物伤人。请立即停止户外活动，远离窗户和不稳固建筑物，确保门窗紧闭，保管好易被吹走的物品，注意自身安全，及时关注官方最新预警信息。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME]，在[LOCATION]预计出现极端大风天气，可能造成危险。请远离易倒物体，确保安全，并关注官方更新。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[发送机构]：针对[LOCATION]的极端大风警报有效至[TIME]。当地阵风可达危险级别，可能造成严重破坏和人身伤害。请立即进入坚固建筑内，远离窗户，避免外出。获取最新信息：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME]，[LOCATION]将出现极端大风，可能造成建筑物损坏和交通中断，请尽快寻找安全避风场所并远离高空坠物。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "紧急警报：[TIME]，[LOCATION]将出现极端大风，可能造成建筑损坏和停电。请立即寻找避风安全地点，远离窗户和易倒物体。更多信息请访问[URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：针对[LOCATION]已发布极端大风警告，有立即威胁生命的强风，警告有效至[TIME]。请立即在坚固建筑物的内部房间内躲避，远离窗户。保护好头部以防飞来物。即使风势减弱，也不要外出！强风会很快再次变得危险。[URL]",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：附近发生火灾，请立即撤离至安全区域。远离火源，避免吸入烟雾，并遵循应急人员指示。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[时间]，[地点]发生火灾，请立即远离该区域并遵从应急指示。详情请访问[URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[发送机构]：火灾警报——[LOCATION] 正在发生严重火灾，预计持续至 [TIME]。该区域浓烟滚滚，火势蔓延迅速，威胁生命安全。请立即撤离至安全地点，远离火源并避免吸入烟雾。关注最新通报与疏散信息：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[LOCATION] 于 [TIME] 发生火灾，请迅速远离现场并听从应急人员指示。附近居民请关闭门窗，避免吸入烟雾。更多信息请访问 [URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME]，[LOCATION]发生重大火灾，请立即远离该区域并遵从当地紧急指挥。关注安全，避免靠近事故现场。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：对[LOCATION]发布的火灾警告有效至[TIME]。立即疏散您的家人和宠物，不要拖延。该地区的能见度将会降低，道路可能被封闭。如果您现在不离开，可能会被困、受伤或丧命。离开[LOCATION]附近的区域。预计会出现能见度降低、浓烟和呼吸困难的情况。驾驶时务必小心。注意在该地区工作的公共安全人员，并遵守他们的指示。[URL]",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：由于发现供水系统可能受到污染，请从即日起立即煮沸自来水并持续至少1分钟后再饮用、烹饪或刷牙。此措施将持续到另行通知为止。请关注官方更新，确保您的用水安全。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "请注意：[TIME]，由于水质问题，[LOCATION] 发布煮沸用水通知。请在饮用、烹饪或清洗食物前将自来水煮沸至少1分钟。详情请访问 [URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "因供水污染，[LOCATION]已发布煮沸用水通知，直至[TIME]。居民需将饮用水与烹饪用水煮沸至少1分钟后使用，以防健康风险。详情请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "因供水受污染，请于[TIME]起在[LOCATION]将自来水煮沸至少1分钟后再饮用或烹饪。请避免直接饮用生水，以防健康风险。更多信息请访问[URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "紧急通知：[TIME]，[LOCATION]发布煮沸用水通告。请将饮用水煮沸至少1分钟后再使用，以防健康风险。详情请访问[URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：已对[LOCATION]发布煮沸饮用水警报，该警报将持续至[TIME]。您所在社区的水可能会让您生病。如有条件，请使用瓶装水。请勿直接饮用、自来水或过滤水烹饪、刷牙或清洁家居，除非事先煮沸。将水煮至完全沸腾并滚沸三分钟。使用前请让水冷却。不要使用未经煮沸的水制成的冰块。如需为婴儿冲调配方奶，请使用即用型配方奶。请确保宠物不饮用未经煮沸的水。[URL]",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：目前本地区 911 报警电话服务中断。如需紧急帮助，请拨打本地警察局或消防部门的非紧急号码：XXX-XXX-XXXX。请在确保安全的情况下通知身边的人。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "警报：[TIME]，[LOCATION]地区911紧急呼叫系统出现故障。请改用本地非紧急号码联系紧急服务。详情请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]的911紧急呼叫服务自[TIME]起中断。请勿拨打911。如遇紧急情况，请使用备用紧急号码或前往最近的警察局/消防站求助。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "注意：[TIME] 起，[LOCATION] 地区的 911 紧急呼叫系统暂时中断。请改拨本地警察局或消防部门电话，或使用其他应急方式联系救援。详情请访问 [URL]。",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "警告：[TIME]起，[LOCATION]地区911服务中断。如需紧急帮助，请使用本地紧急号码或前往最近的警察局/消防站。更多信息请访问：[URL]",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：针对[LOCATION]的9-1-1中断警报已生效。紧急情况下，请直接拨打当地警方、消防、医疗或其他紧急服务的本地电话号码联系相关部门。如果您拨打9-1-1，可能无法获得帮助。[URL]",
+                        "date": "2025-08-22"
+                    }
+                ]
+            }
+        },
+        "korean": {
+            "flood": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "⚠️ [긴급 재난 문자] ⚠️  \n현재 홍수 경보가 발령되었습니다. 인근 하천과 저지대 침수 위험이 높으니 즉시 안전한 고지대로 대피하시기 바랍니다. 차량 이동을 자제하고, 방송 및 안내를 확인하십시오.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME] 기준 [LOCATION]에 홍수 경보가 발령되었습니다. 안전한 곳으로 즉시 대피하시고, 지역 당국의 안내를 따르십시오. 자세한 정보는 [URL]을 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME], [LOCATION]에 홍수가 발생했습니다. 안전한 지역으로 즉시 대피하시고, 주변 상황에 주의하세요. 추가 정보는 [URL]을 확인하시기 바랍니다.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] 현재 [LOCATION] 지역에 심각한 홍수가 발생했습니다. 즉시 고지대로 대피하시기 바랍니다. 자세한 정보는 [URL]을(를) 확인하십시오.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION]에 대해 [TIME]까지 홍수 비상 사태가 발효 중입니다. 이는 매우 위험하며 생명을 위협하는 상황입니다. 홍수가 발생할 수 있는 지역에서 대피하거나 대피 명령을 받은 경우가 아니라면 이동을 시도하지 마십시오. [URL]",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "⚠️ 긴급 재난 문자 ⚠️  \n현재 지역에 매우 강한 바람이 불고 있습니다. 외출을 자제하고, 창문과 문을 단단히 잠그십시오. 낙하물과 파손물에 주의하시기 바랍니다. 필요 시 안전한 장소로 이동하십시오.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME], extreme wind warning in [LOCATION]. Seek shelter indoors immediately and avoid outdoor activity. Stay updated: [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]에 초강풍 경보가 [TIME]까지 발효 중입니다. 강풍으로 인해 외출은 삼가고, 실내에 머무르며 창문과 문을 단단히 잠그십시오. 외부 물건이 날아다닐 수 있으니 주의하십시오. 추가 정보는 [URL]에서 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME], [LOCATION]에 매우 강한 바람이 예상됩니다. 외출을 자제하고 느슨한 물건을 고정하세요. 안전한 장소로 이동하시기 바랍니다. 자세한 정보: [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] 현재, [LOCATION] 지역에 매우 강한 바람이 불고 있습니다. 외부 활동을 자제하고 안전한 곳으로 대피하세요. 추가 정보: [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: 생명을 위협하는 강풍의 즉각적인 위험으로 인해 [LOCATION]에 극심한 강풍 경보가 [TIME]까지 발효 중입니다. 지금 즉시 튼튼한 건물의 내부 방으로 대피하고 창문에서 멀리 떨어지십시오. 날아다니는 물체로부터 머리를 보호하십시오. 바람이 잠잠해진다고 해서 절대 밖으로 나가지 마십시오! 곧 다시 위험한 강풍이 불 것입니다. [URL]",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "긴급 알림: 현재 ○○지역에서 대형 화재가 발생하였습니다. 인근 주민들은 즉시 대피하시고, 안전한 장소로 이동하십시오. 화재 현장 주변 접근을 삼가시고, 최신 안내를 확인하시기 바랍니다.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME] [LOCATION]에서 화재가 발생했습니다. 즉시 안전한 장소로 대피하시고, 현장 접근을 삼가주세요. 자세한 내용은 [URL]을 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]에서 화재 발생, [TIME]까지 계속될 수 있습니다. 인근 주민들은 즉시 대피하고 안전한 장소로 이동하십시오. 연기와 불길을 피하고 비상 지시에 따르세요. 추가 정보: [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME], [LOCATION]에서 화재가 발생했습니다. 인근 주민은 즉시 대피하고 안전 지침을 따르십시오. 추가 정보는 [URL]에서 확인하시기 바랍니다.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] [LOCATION]에서 화재 발생. 즉시 대피하고 안전한 곳으로 이동하십시오. 추가 정보는 [URL]에서 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_fire.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "긴급 알림: 현재 수돗물에 오염 가능성이 있어 끓여서 사용하시기 바랍니다. 모든 식수, 음식 조리, 양치용 물은 반드시 최소 1분 이상 끓인 후 사용해주세요. 추가 안내가 있을 때까지 이 지침을 따라주시기 바랍니다.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME], [LOCATION] 지역에 끓인 물 사용 권고가 발령되었습니다. 수돗물은 반드시 끓인 뒤 사용하시기 바랍니다. 추가 정보: [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]에 대해 [TIME]까지 끓는 물 사용 공지가 발효 중입니다. 수돗물을 마시거나 요리에 사용하기 전에 최소 1분간 끓이십시오. 가능한 한 병에 든 물을 사용하세요. 추가 정보는 [URL]을 확인하십시오.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME], [LOCATION] 지역에 급수 오염 가능성이 있어 식수 사용 전 반드시 끓이시기 바랍니다. 끓인 물을 식수·요리에만 사용하세요. 자세한 내용은 [URL]에서 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME], [LOCATION] 지역에 끓여 마시는 물 주의보가 발령되었습니다. 수돗물을 사용 전 반드시 1분 이상 끓이십시오. 자세한 정보는 [URL]을(를) 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "현재 911 신고 서비스에 장애가 발생하였습니다. 긴급 상황 시 112 또는 지역 경찰서·소방서로 직접 연락하시기 바랍니다.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME] 현재 [LOCATION] 지역에서 911 서비스 장애가 발생했습니다. 긴급 상황 시 [URL]을(를) 방문하여 대체 연락 방법을 확인하시기 바랍니다.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION] 지역에서 911 전화 서비스가 [TIME]까지 장애로 중단되었습니다. 긴급 상황 시 인근 경찰서나 소방서로 직접 연락하거나 대체 긴급 번호를 사용하십시오. 최신 정보는 [URL]에서 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME] 기준으로 [LOCATION] 지역에서 911 전화 서비스가 중단되었습니다. 긴급 상황 시 대체 긴급 번호를 사용하십시오. 자세한 정보는 [URL]을 확인하세요.",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] 기준으로 [LOCATION] 지역에서 911 전화 서비스가 중단되었습니다. 긴급 상황 시 대체 번호를 사용하시기 바랍니다. 자세한 정보는 [URL]을 확인하십시오.",
+                        "date": "2025-08-23"
+                    }
+                ]
+            }
         }
     },
     "gemini": {
@@ -5369,6 +5731,390 @@
                     }
                 ]
             }
+        },
+        "chinese_simplified": {
+            "flood": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "洪水！快逃！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[LOCATION]地区发生严重洪涝灾害！请[TIME]前转移至安全地带。更多信息请访问：[URL]  紧急避险！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "洪水警报！[LOCATION] 地区发生严重洪水，持续至[TIME]。请立即前往安全地带避险，生命安全第一！更多信息：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[时间] [地点] 发生严重洪涝灾害！请立即转移至安全地带！更多信息请访问：[URL]  生命安全第一！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[LOCATION]地区发生严重洪涝灾害！请[TIME]前迅速转移至安全地带。更多信息请访问：[URL]  注意安全！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] 现已发布山洪暴发紧急警报，持续至[TIME]。情况极其危险，危及生命。除非您要逃离可能被洪水淹没的地区或已接到疏散命令，否则请勿尝试出行。[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "狂风警报！注意安全！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME]，[LOCATION]地区出现极强阵风！请注意安全，远离危险区域。更多信息请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]地区现发布大风红色预警！[TIME]前风力将达到极强！请立即采取防范措施，远离危险区域！更多信息请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME]时，[LOCATION]地区将出现极强阵风，风力达[风力等级]级以上！请注意安全，远离危险区域。更多信息请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[LOCATION]地区将出现极强阵风，请注意安全！  [TIME]发布。  详情请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]:  [LOCATION] 已发布极端大风警报，目前存在危及生命的强风风险，持续至[TIME]。请立即前往坚固建筑物的内部房间避险，远离窗户。保护头部免受飞来物袭击。风力减弱时也请勿外出！风力将很快再次增强。[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "失火！快报警！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "火灾警报！[TIME]，[LOCATION]发生火灾。请注意安全，并远离该区域。更多信息请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "紧急火情！[LOCATION]发生火灾，请注意安全，[TIME]前远离火灾区域。更多信息请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "紧急火情！[时间] [地点] 发生火灾，请迅速撤离至安全区域。更多信息请访问：[URL]  注意安全！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[时间] [地点] 发生火灾！请立即撤离危险区域。更多信息请访问：[网址]  注意安全！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]： [LOCATION] 火灾警报现已生效，持续至 [TIME]。请立即疏散您的家人和宠物，不要延误。该区域能见度将降低，道路可能被封锁。如果您现在不离开，您可能会被困、受伤或丧生。请远离 [LOCATION] 区域。预计能见度降低，浓烟弥漫，呼吸困难。驾驶时请小心。注意该区域正在作业的公共安全人员并服从他们的指示。[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：自来水沸腾后再饮用，避免饮用未煮沸的自来水。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[LOCATION]地区发布紧急沸水通知！[TIME]起，请勿直接饮用自来水。更多信息请访问：[URL]  请务必煮沸后饮用。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]地区发布紧急沸水通知，[TIME]前请勿饮用自来水。  详情请见：[URL]  \n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "紧急通知！[LOCATION]地区自[TIME]起发布饮用水沸腾通知。水质可能受到污染，请务必将饮用水煮沸后饮用。更多信息请访问：[URL]  请转发！\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[LOCATION]地区发布紧急沸水通知！[TIME]起，请勿直接饮用自来水。 [URL]了解更多信息，确保您的安全。  请煮沸后饮用。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]发布了针对[LOCATION]的紧急沸水警报，有效期至[TIME]。社区水源可能导致疾病。如有瓶装水，请使用瓶装水。在将水煮沸之前，请勿饮用、烹煮、刷牙或用自来水或过滤水清洁家居。将水煮沸并持续沸腾三分钟。使用前让水冷却。请勿使用未煮沸的水制成的冰块。如果您使用配方奶粉喂养孩子，请使用即冲即饮配方奶粉。确保宠物不喝未煮沸的水。[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "紧急通知：911系统故障，请拨打备用号码[备用号码]求助。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "紧急警报！911系统[LOCATION]地区于[TIME]出现故障。请致电替代号码或访问[URL]了解更多信息。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "紧急通知！911服务[LOCATION]地区于[TIME]暂时中断。请访问[URL]了解更多信息。  如需紧急援助，请联系当地应急服务部门。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "紧急通知！[TIME]起，[LOCATION]地区911紧急服务中断。详情请访问：[URL]  请勿惊慌，保持冷静，如有紧急情况，请寻求替代帮助方式。\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "紧急警报！[LOCATION]地区911服务中断，[TIME]起失效。  请使用备用号码联系紧急服务。更多信息请访问：[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION]地区9-1-1服务中断警报生效。紧急情况下，请直接拨打当地警局、消防部门、医疗机构或其他紧急服务机构的电话号码。拨打9-1-1可能无法获得帮助。[URL]\n",
+                        "date": "2025-08-22"
+                    }
+                ]
+            }
+        },
+        "korean": {
+            "flood": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "물난리!  지금 당장 안전한 곳으로 대피하세요!\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME]에 [LOCATION]지역에 홍수 발생.  안전한 곳으로 대피하십시오. 자세한 정보는 [URL] 참조.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION]지역에 홍수 발생 ([TIME]까지).  즉시 안전한 곳으로 대피하십시오.  상황 확인: [URL]\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "긴급! [TIME] 현재 [LOCATION] 지역에 심각한 홍수 발생.  즉시 안전한 곳으로 대피하십시오.  자세한 정보는 [URL] 참조.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME] 시 [LOCATION] 지역에 홍수 발생.  즉시 안전한 곳으로 대피하십시오.  상세 정보는 [URL] 에서 확인하세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[발송 기관]: [LOCATION]에 급류 홍수 비상 경보가 [TIME]까지 발효됩니다.  매우 위험하고 생명을 위협하는 상황입니다. 홍수 위험 지역에서 대피하거나 대피 명령을 받은 경우가 아니라면 이동을 시도하지 마십시오. [URL]\n",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "초강력 돌풍 주의!  위험한 상황입니다. 안전한 곳으로 대피하세요!\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME]부터 [LOCATION] 지역에 강풍주의보 발효 중입니다. 안전한 곳으로 대피하고, 외출을 삼가하십시오. 자세한 내용은 [URL]을 참조하세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION] 지역에 강풍주의보 발효 ([TIME]까지).  순간 최대풍속 [풍속]m/s 예상.  외부활동 자제 및 안전 확인 바랍니다.  자세한 내용은 [URL] 참조.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[시간: [TIME]] [위치: [LOCATION]] 극심한 돌풍 경보!  즉시 안전한 곳으로 대피하십시오. 자세한 정보는 [URL] 참조.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[TIME]부터 강풍주의보 발효 중입니다. [LOCATION] 지역에 매우 강한 바람이 예상됩니다. 안전한 곳으로 대피하고, 외출을 자제해주세요.  자세한 정보는 [URL] 참고.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[발송 기관]: [LOCATION]에 즉각적인 생명 위협적인 돌풍의 위험으로 인해 강풍 경보가 [TIME]까지 발효 중입니다. 튼튼한 건물의 내부 방, 창문에서 멀리 떨어진 곳에 지금 즉시 대피하십시오. 날아오는 물체로부터 머리를 보호하십시오. 바람이 잠잠해지더라도 절대 밖으로 나가지 마십시오! 바람이 곧 다시 위험해질 것입니다. [URL]\n",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "불이야!  빨리 도와줘!\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[시간] [장소]에서 화재 발생.  즉시 대피하고 안전을 확인하십시오. 자세한 내용은 [URL]을 참조하세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "화재 발생! [LOCATION] 에서 화재 발생. [TIME] 까지 주의.  즉시 대피하고 안전 확인! 자세한 정보는 [URL] 참조.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "화재 발생! [TIME] 현재 [LOCATION] 에서 화재가 발생했습니다.  자세한 정보는 [URL] 에서 확인하세요.  안전을 위해 대피하십시오!\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "화재 발생!  [TIME]에 [LOCATION]에서 화재가 발생했습니다.  자세한 정보는 [URL]을 참조하십시오.  안전을 위해 대피하십시오.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[발송 기관]: [LOCATION]에 화재 경보가 [TIME]까지 발효됩니다. 가족과 애완동물을 즉시 대피시키고 지체하지 마십시오. 지역 시야가 감소하고 도로가 막힐 수 있습니다. 지금 떠나지 않으면 갇히거나 부상을 입거나 사망할 수 있습니다. [LOCATION] 근처 지역을 떠나십시오. 시야 감소, 짙은 연기, 호흡 곤란을 예상하십시오. 운전할 때 주의하십시오. 지역에서 활동하는 공공 안전 요원을 주시하고 지시에 따르십시오. [URL]\n",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "급수 지역에 대한 단수 및 수돗물 비등 권고가 발령되었습니다.  상수도 공급이 재개될 때까지 수돗물을 끓여서 드십시오.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[TIME]부터 [LOCATION] 지역의 수돗물이 비등 후 사용해야 합니다.  상세 정보는 [URL]을 참조하세요. 안전을 위해 수돗물을 끓여 드세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[LOCATION] 지역에 급수 시스템 문제로 인해 [TIME]까지 단수 및 물 끓여 먹기 권고가 발령되었습니다.  안전을 위해 물을 끓여 드시기 바랍니다.  자세한 내용은 [URL] 에서 확인하세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "긴급! [LOCATION] 지역에서 [TIME]부터 수돗물 비등 권고가 발령되었습니다.  음용 전 반드시 물을 끓여 드십시오.  자세한 정보는 [URL]을 참조하세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[LOCATION] 지역에 급수 중단으로 인한 수돗물 끓여 먹기 권고가 발령되었습니다.  [TIME]부터 효력이 발생합니다.  자세한 정보는 [URL]을 참조하세요. 안전을 위해 수돗물을 끓여 드세요.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] 지역에 대해 [TIME]까지 끓는 물 사용 경고가 발령되었습니다. 지역의 수돗물로 인해 질병에 걸릴 수 있습니다. 가능하면 생수를 사용하십시오. 끓이기 전까지는 수돗물이나 정수기를 사용하여 마시거나, 요리하거나, 양치질하거나, 집을 청소하지 마십시오. 물을 팔팔 끓인 후 3분 동안 끓이십시오. 사용 전에 물을 식히십시오. 끓이지 않은 물로 만든 얼음을 사용하지 마십시오. 분유를 사용하여 아기를 먹이는 경우, 바로 먹일 수 있는 분유를 사용하십시오. 애완동물이 끓이지 않은 물을 마시지 않도록 하십시오. [URL]\n",
+                        "date": "2025-08-23"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "119 신고가 안 됩니다. 응급 상황입니다.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "긴급!  [TIME] 현재 [LOCATION] 지역 911 긴급전화 서비스 장애 발생.  자세한 정보는 [URL] 참조.  다른 경로로 도움 요청 바랍니다.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "긴급! 911 서비스 장애 발생 ([LOCATION], [TIME]까지).  자세한 정보는 [URL] 참조.  긴급 상황 발생 시 112로 연락 바랍니다.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "긴급 알림: 911 서비스 장애 발생 ([TIME] 시각, [LOCATION] 지역).  자세한 정보는 [URL]을 참조하세요.  응급 상황 발생 시 112 또는 지역 경찰서에 연락하십시오.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "긴급!  [LOCATION] 지역 911 서비스 장애 발생 ([TIME]).  복구 작업 진행 중입니다. 자세한 정보는 [URL] 참조.  시민 여러분의 양해 부탁드립니다.\n",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[발송 기관]: [LOCATION] 지역에 9-1-1 통신 두절 경보가 발령되었습니다.  긴급 상황 발생 시에는 해당 지역의 경찰, 소방, 의료 또는 기타 응급 서비스 기관에 직접 연락하십시오. 9-1-1로 전화하면 응답이 없을 수 있습니다. [URL]\n",
+                        "date": "2025-08-23"
+                    }
+                ]
+            }
         }
     },
     "deepseek": {
@@ -5935,8 +6681,18 @@
                     "**Alerte IJANS!**  \n\n📢 *GRAN INONDASYON ANBA W!*  \n\nChè sitwayen, gen yon gwo inondasyon k ap pase nan zòn nou an. Dlo ap monte rapidman e sa ka danjere pou lavi w. Tanpri:  \n\n- Deplase ou nan yon kote ki wo imedyatman.  \n- Evite pase nan dlo ki movèz oswa fon.  \n- Koute radyo lokal pou plis enfòmasyon.  \n- Si w gen bezwen èd, rele nimewo ijans yo: 114 oswa 115.  \n\nPa touye tan, aji kounye a pou pwoteje tèt ou ak fanmi w!  \n\n*Se yon mesaj SOS.*",
                     "**Alerte URGENT:**  \n\nInondasyon grav nan zòn nou an! Dlo ap monte rapidman. Si w nan zòn ki ba, deplase imedyatman nan yon plas ki pi wo. Evite pase nan dlo a paske li kapab danjere. Swiv enfòmasyon ofisyèl yo sou radyo ak telefòn. Reste an sekirite epi ede moun ki vye granmoun ak timoun yo pou yo evakye. Pa panike, men aji vit!  \n\n**N ap kenbe ansanm!** 🇭🇹"
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "EMÈJANS: Inondasyon nan [LOCATION]. Tanpri, deplase ale nan yon zòn ki pi wo imedyatman. Tan an: [TIME]. Pa pase nan dlo yo. Pou plis enfòmasyon, vizite [URL].",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "AVIS: Yon sitiyasyon inondasyon grav nan [LOCATION] jiska [TIME]. Dlo ap monte rapidman. Si w nan zòn nan, deplase imedyatman nan yon kote ki pi wo. Pa eseye travèse dlo k ap koule rapid. Swiv enfòmasyon ofisyèl yo. [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_chain_of_translation.txt": [],
                 "translate_flood.txt": [
@@ -5956,9 +6712,19 @@
                     "\"AVI D IJANS: Van ekstrèm ap soufle nan zòn nou an! Tanpri rete andedan, evite pase anba pyebwa oswa kay ki febl. Ranfòse fenèt ak pòt ou. Si w gen bezwen èd, rele Protection Sivil la nan nimewo 118. Kenbe tèt ou ak enfòmasyon an.\""
                 ],
                 "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Alerte: van ekstrèm nan efè pou [LOCATION] jouk [TIME]. Van yo ka koze domaj grav ak debri vole. Pran abri imedyatman andedan yon bilding solid, evite fenèt yo. Si w deyò, chache yon kote ki an sekirite vit. Koute medya lokal yo pou plis enfòmasyon. [URL]",
+                        "date": "2025-08-23"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Avi yo ekstrèm nan [LOCATION] jodi a nan [TIME]. Van yo ka rive jiska [SPEED] mph, ki ka koze domaj ak wont. Rete andedan si posib, evite wotè yo epi kenbe abiye ou. Pran prekosyon epi swiv enstriksyon otorite lokal yo. Plis enfòmasyon nan [URL].",
+                        "date": "2025-08-23"
+                    }
+                ],
                 "translate_extreme_wind.txt": [
                     "[AGENS KÒMISYON AN]: Yon **AVI VANT EXTREM** an vigè pou [LOCATION] pou danje imen ki menase lavi ak gwo van jiska [TIME]. Mete w al abrite KOUREYMAN nan yon pyès andedan yon bilding solid, lwen fenèt. Pwoteje tèt ou kont bagay ki vole. **PA sòti deyò menm si van an kalme!** Van yo pral redevni danjere byen vit. [URL]",
                     "[AJANS K AP VOYE A]: Yon AVÈTISMAN VAN EKSTRÈM nan efè pou [LOCATION] pou danje imedya ki ka menase lavi a ak van jiskaske [TIME]. Pran kouvèti KONNYEN a nan yon chanm andedan yon bilding solid, lwen fenèt yo. Pwoteje tèt ou kont objè k ap vole. Pa soti deyò si van an kalme! Van yo pral retounen danjere rapidman. [URL]",
@@ -5975,8 +6741,18 @@
                     "\"Atansyon! Gen yon dife ki pete nan zòn nan. Tanpri, evakye imedyatman epi rele numèwo ijans lokal ou yo. Kenbe tèt ou byen ba pou evite lafimen. Pa kase kou w pou anyen, sove tèt ou an premye. Si w ka, ede vwazen w yo. Rete nan yon kote ki an sekirite jiskaske otorite yo di w sa kap fèt.\"",
                     "**Aler! Gen yon ka dife ki pete nan zòn nan. Tanpri, evakye imedyatman epi rele pompiè yo nan nimewo 198. Pa pran okenn risk. Ret byen lwen dife a epi suiv enstriksyon otorite yo. Reste an sekirite!**"
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "**Alerte :** Yon dife ap fèt nan [LOCATION]. Tanpri, evakye zòn nan imedyatman. Tan pou evakyasyon an se [TIME]. Vizite [URL] pou plis enfòmasyon. Rete an sekirite.  \n\n*(Note: This alert is in Haitian Creole (ht) with placeholders in English as requested. The total character count is within the 360-character limit.)*",
+                        "date": "2025-08-23"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "🔥 EMÈJANS: Yon dife ap boule nan [LOCATION] jouk [TIME]. Sitiyasyon an danjere. Si w nan zòn nan, evakye imedyatman epi swiv enstriksyon otorite yo. Pa ret tann. Jwenn plis enfòmasyon sou [URL].",
+                        "date": "2025-08-23"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_chain_of_translation.txt": [],
                 "translate_fire.txt": [
@@ -5996,7 +6772,12 @@
                     "**AVI DLO:**  \n\nFè atansyon! Dlo nan zòn ou a ka kontamine. Pa bwè dlo a san ou pa bouyi li anvan pou omwen 1 minit, oswa itilize dlo an boutey ki apwouve. Tanpri, evite itilize dlo nan pipi, bò kò, oswa pou kwit manje san bouyi. Nou ap travay pou rezoud pwoblèm nan vit posib. Swiv enstriksyon ofisyèl yo pou pwoteje sante w.  \n\n*Mesye, dam, nap mande konpreyansyon w.*"
                 ],
                 "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "⚠ AVIS DLO POU BWI: Yon avis pou bwè dlo bouyi an vigè pou [LOCATION] jiskaske [TIME]. Pa bwè dlo ki pa trete. Itilize dlo boutèy oswa dlo bouyi pou bwè, kwit manje, lave manje, ak netwaye. Konsilte [URL] plis enfòmasyon. Fè atansyon.",
+                        "date": "2025-08-23"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_chain_of_translation.txt": [],
                 "translate_boil_water_notice.txt": [
@@ -6883,6 +7664,154 @@
                     "[CƠ QUAN GỬI]: CẢNH BÁO MẤT KẾT NỐI 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, có thể bạn sẽ không nhận được trợ giúp. [URL]"
                 ]
             }
+        },
+        "chinese_simplified": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            }
+        },
+        "russian": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            }
+        },
+        "ukrainian": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            }
+        },
+        "korean": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            }
         }
     },
     "google_translate": {
@@ -7374,6 +8303,70 @@
                     "date": "2025-08-18"
                 }
             ]
+        },
+        "chinese_simplified": {
+            "flood": [
+                {
+                    "text": "[发送机构]：[地点] 发生山洪紧急情况，有效期至 [时间]。此情况极其危险，危及生命。除非您逃离可能发生洪水的区域或已收到疏散命令，否则请勿出行。[URL]",
+                    "date": "2025-08-22"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[发送机构]：[地点] 已发布极端强风警告，[时间] 前可能出现危及生命的强风。请立即前往坚固建筑物的室内躲避，远离窗户。保护头部免受飞物伤害。风力减弱后，请勿外出！强风很快就会再次变得危险。[网址]",
+                    "date": "2025-08-22"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[发送机构]：[LOCATION] 的火灾警报有效期至 [TIME]。请立即疏散您的家人和宠物，切勿拖延。该区域能见度将降低，道路可能会被堵塞。如果您不立即撤离，可能会被困、受伤甚至死亡。请离开 [LOCATION] 附近的区域。预计能见度将降低，烟雾将很浓，并可能导致呼吸困难。驾驶时请小心。注意在该地区工作的公共安全人员，并听从他们的指示。[URL]",
+                    "date": "2025-08-22"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[发送机构]：[地点] 已发布煮沸水警报，有效期至 [时间]。您所在社区的水可能会使您生病。如有瓶装水，请使用。请勿饮用、烹饪、刷牙或清洁自来水或过滤水，直至水煮沸。将水煮沸三分钟。待水冷却后再使用。请勿使用未煮沸的水制成的冰块。如果您使用配方奶粉喂养孩子，请使用即食配方奶粉。确保宠物不要饮用未煮沸的水。[网址]",
+                    "date": "2025-08-22"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[发送机构]：[地点] 已发布 9-1-1 停电警报。如遇紧急情况，请直接拨打当地警察、消防、医疗或其他紧急服务部门的电话号码。拨打 9-1-1 可能无法获得帮助。[URL]",
+                    "date": "2025-08-22"
+                }
+            ]
+        },
+        "korean": {
+            "flood": [
+                {
+                    "text": "[전송 기관]: [위치]에 [시간]까지 돌발 홍수 비상사태가 발령되었습니다. 이는 매우 위험하고 생명을 위협하는 상황입니다. 홍수 위험이 있는 지역에서 대피하거나 대피 명령이 내려진 경우가 아니면 이동을 시도하지 마십시오. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[발신 기관]: [위치]에 [시간]까지 생명을 위협하는 강풍 경보가 발령되었습니다. 지금 바로 튼튼한 건물의 실내로 대피하고 창문에서 멀리 떨어지십시오. 날아오는 물체로부터 머리를 보호하십시오. 바람이 잠잠해지면 밖으로 나가지 마십시오! 바람이 다시 빠르게 위험해질 것입니다. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[발신 기관]: [위치] 지역에 화재 경보가 [시간]까지 발령되었습니다. 가족과 반려동물을 지금 당장 대피시키십시오. 지체하지 마십시오. 해당 지역의 시야가 좁아지고 도로가 막힐 수 있습니다. 지금 대피하지 않으면 갇히거나 다치거나 사망할 수 있습니다. [위치] 근처 지역을 대피하십시오. 시야가 좁아지고 짙은 연기가 발생하며 호흡 곤란이 예상됩니다. 운전 시 주의하십시오. 해당 지역에서 운행 중인 공공 안전 요원을 확인하고 지시를 따르십시오. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[송신 기관]: [위치]에 끓인 물 주의보가 발령되었으며, [시간]까지 유효합니다. 거주 지역의 물은 질병을 유발할 수 있습니다. 가능하다면 생수를 사용하세요. 수돗물이나 정수된 물은 끓이기 전까지 마시거나, 요리하거나, 양치질하거나, 집안 청소를 하지 마세요. 물을 3분간 끓이세요. 사용하기 전에 물을 식히세요. 끓이지 않은 물로 만든 얼음은 사용하지 마세요. 분유를 사용하여 아이에게 먹이는 경우, 바로 사용할 수 있는 분유를 사용하세요. 애완동물이 끓이지 않은 물을 마시지 않도록 주의하세요. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[발신 기관]: [위치]에 911 정전 경보가 발령되었습니다. 긴급 상황 발생 시 경찰, 소방, 의료 또는 기타 응급 서비스에 해당 지역 전화번호로 직접 연락하십시오. 911에 전화해도 도움을 받지 못할 수 있습니다. [URL]",
+                    "date": "2025-08-23"
+                }
+            ]
         }
     },
     "deepL": {
@@ -7633,6 +8626,70 @@
                 {
                     "text": "[УСТАНОВА-ВІДПРАВНИК]: У [МІСЦЕзнаходження] діє ПОПЕРЕДЖЕННЯ 9-1-1 про перебої в роботі [МІСЦЕзнаходження]. У разі надзвичайної ситуації звертайтеся до поліції, пожежної, медичної або іншої екстреної служби безпосередньо за їхніми місцевими номерами телефонів. Якщо ви наберете 9-1-1, ви можете не отримати допомогу. [URL]",
                     "date": "2025-08-20"
+                }
+            ]
+        },
+        "chinese_simplified": {
+            "flood": [
+                {
+                    "text": "[发送机构]：在[时间]之前，[地点]将发生 \"闪电 \"紧急情况。这种情况极其危险，危及生命。除非您正在逃离可能被洪水淹没的地区或正在接受疏散命令，否则不要试图出行。[URL］",
+                    "date": "2025-08-22"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[发送机构]：在[时间]之前，[地点]有狂风威胁生命的紧急危险，特大狂风警报生效。立即躲入坚固建筑物的室内，远离窗户。保护好头部，避免受到飞行物的伤害。如果风平浪静，请勿外出！风很快会再次变得危险。[URL］",
+                    "date": "2025-08-22"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[发送机构]：地点]的火灾警告有效期至[时间]。立即疏散您的家人和宠物，不要拖延。该地区的能见度将降低，道路可能被封锁。如果您现在不离开，您可能会被困、受伤或死亡。离开 [地点] 附近地区。预计能见度会降低，烟雾弥漫，呼吸困难。小心驾驶。注意在该地区活动的公共安全人员，并听从他们的指示。[URL］",
+                    "date": "2025-08-22"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[发送机构]：已向[地点]发布烧水警报，有效期至[时间]。您所在社区的水可能会让您生病。如果有瓶装水，请使用瓶装水。在将自来水或过滤水烧开之前，请勿饮用、烹饪、刷牙或清洁家居。将水完全煮沸三分钟。使用前让水冷却。不要使用未经煮沸的水制冰。如果您用配方奶粉喂养孩子，请使用即开即用的配方奶粉。确保宠物不喝未经煮沸的水。[URL］",
+                    "date": "2025-08-22"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[发送机构]：9-1-1 停电警报在[地点]生效。如遇紧急情况，请直接拨打当地的报警电话、消防电话、医疗电话或其他紧急服务电话。如果您拨打 9-1-1，可能无法获得帮助。[URL］",
+                    "date": "2025-08-22"
+                }
+            ]
+        },
+        "korean": {
+            "flood": [
+                {
+                    "text": "[발송 기관]: 시간]까지 [위치]에 플래시 홍수 비상사태가 발령되었습니다. 이는 매우 위험하고 생명을 위협하는 상황입니다. 홍수가 발생할 수 있는 지역을 벗어나거나 대피 명령을 받고 있는 경우가 아니라면 여행을 시도하지 마세요. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[발송 기관]: 위치]에 [시간]까지 생명을 위협하는 강풍의 즉각적인 위험으로 인해 [위치]에 극심한 바람 주의보가 발효 중입니다. 창문에서 멀리 떨어진 튼튼한 건물의 실내로 지금 바로 몸을 피하세요. 날아오는 물체로부터 머리를 보호하세요. 바람이 잠잠해지면 밖으로 나가지 마세요! 바람이 다시 위험해질 수 있습니다. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[발송 기관]: 위치]에 [시간]까지 화재 경보가 발령되었습니다. 지체하지 말고 가족과 반려동물을 지금 대피시키세요. 해당 지역의 가시거리가 줄어들고 도로가 차단될 수 있습니다. 지금 대피하지 않으면 갇히거나 부상을 입거나 사망할 수 있습니다. 위치] 인근 지역을 떠나세요. 시야가 좁아지고 연기가 심하며 호흡 곤란이 발생할 수 있습니다. 운전할 때 주의하세요. 해당 지역에서 활동하는 공공 안전 요원을 주시하고 그들의 지시를 따르세요. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[발송 기관]: 위치]에 [시간]까지 끓는 물 경보가 발령되었으며 [시간]까지 유효합니다. 지역사회에 있는 물로 인해 질병에 걸릴 수 있습니다. 가능한 경우 생수를 사용하세요. 끓일 때까지 수돗물이나 정수된 물로 식수, 요리, 양치질, 집안 청소를 하지 마세요. 물을 3분 동안 완전히 끓입니다. 사용하기 전에 물을 식히세요. 끓이지 않은 물로 만든 얼음은 사용하지 마세요. 분유를 사용하여 아이에게 먹이는 경우, 바로 사용할 수 있는 분유를 사용하세요. 반려동물이 끓이지 않은 물을 마시지 않도록 주의하세요. [URL]",
+                    "date": "2025-08-23"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[발신 기관]: 위치]에 9-1-1 긴급 경보가 발령되었습니다. 긴급 상황 발생 시 해당 지역 전화번호로 경찰, 소방, 의료 또는 기타 응급 서비스에 직접 연락하세요. 9-1-1로 전화하면 도움을 받지 못할 수도 있습니다. [URL]",
+                    "date": "2025-08-23"
                 }
             ]
         }
