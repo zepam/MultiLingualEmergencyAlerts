@@ -35,11 +35,16 @@ import time
 import re
 import logging
 import os
+import torch
+from comet import download_model, load_from_checkpoint
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
 from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
 from clients.translation_map import TRANSLATION_MAP
+
+torch.set_float32_matmul_precision('medium')
+torch.cuda.empty_cache()
 
 # Optional: psutil for more accurate memory logging
 try:
@@ -48,13 +53,18 @@ try:
 except ImportError:
     _HAS_PSUTIL = False
 
+# for handler in logging.root.handlers[:]:
+#     logging.root.removeHandler(handler)
+
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     filename="evaluation.log",
-    filemode="a"
+    filemode="a",
+    force=True
 )
+
 logger = logging.getLogger(__name__)
 
 def log_memory_usage(note=""):
@@ -161,7 +171,6 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                 evaluation_tokenizer = (lambda tok: (lambda x: tok.tokenize(x)))(EvaluationTokenizer(language))
 
                 # bertscore takes a language code indicating the language being passed in
-                # language_code = find_language_code(language)
                 language_code = TRANSLATION_MAP.get(language, language)
 
                 for disaster, gold_standards in values.items():
@@ -191,8 +200,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
-#                                    comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result)
+                                #comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
+                                
+                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result)
                                 results.append(result)
                                     
                                 # except Exception as e:
@@ -200,8 +211,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 #     print(f"[Error on line {id_response}] {e}")
                                 #     continue
                                 pbar.update(1)
-                                # Log memory usage every 10 prompts
-                                if pbar.n % 10 == 0:
+                                # Log memory usage every XX prompts
+                                if pbar.n % 5 == 0:
                                     log_memory_usage(f"After {pbar.n} prompts")
 
                         # google translate
@@ -223,21 +234,22 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
                                 # try:        
                                 id_response = f"{service}:{language}:{disaster}"
-                                logger.info(f"Evaluating {id_response} with {total_predictions} predictions (Google Translate style)")
+                                logger.info(f"Evaluating {id_response} with {total_predictions} predictions")
                                 rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
-#                                    comet_result = comet.compute(predictions=formatted_predictions, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result)
+                                comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
+                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
                                 results.append(result)
                                 # except Exception as e:
                                 #     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
                                 #     print(f"[Error on line {id_response}] {e}")
                                 #     continue
                                 pbar.update(1)
-                                # Log memory usage every 10 prompts
-                                if pbar.n % 10 == 0:
+                                # Log memory usage every 5 prompts
+                                if pbar.n % 5 == 0:
                                     log_memory_usage(f"After {pbar.n} prompts")
+                #TODO  save results until now instead of at the end
 
     
     df = pd.DataFrame(results)
@@ -250,6 +262,13 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     log_memory_usage("At end of evaluation")
 
     return df
+
+def calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards):
+    comet_data = [
+        {"src": src, "mt": pred, "ref": ref}
+        for src, pred, ref in zip(gold_standards["source"], predictions_text, duplicated_gold_standards)
+    ]
+    return comet.predict(comet_data, batch_size=1, gpus=1)
 
 # def find_language_code(language):
 #     language_code = None
@@ -266,7 +285,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 #             language_code = "es"
 #     return language_code
 
-def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result):
+def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
     return {
         "SERVICE": service,
         "LANGUAGE": language,
@@ -279,10 +298,23 @@ def gather_results(service, language, disaster, prompt, rouge_result, bertscore_
         "BERTScore_P": bertscore_result["precision"][0],
         "BERTScore_R": bertscore_result["recall"][0],
         "BERTScore_F1": bertscore_result["f1"][0],
-        "COMET": 0
-        #"COMET": comet_result["mean_score"]
+        #"COMET": 0
+       #"COMET": comet_result["mean_score"]
+       "COMET": comet_result.system_score
     }
 
+def load_comet_model(model_name="eamt22-prune-comet-da"):
+    cache_dir = os.path.expanduser("~/.cache/torch/unbabel_comet")
+    model_dir = os.path.join(cache_dir, model_name, "checkpoints")
+    model_path = os.path.join(model_dir, "model.ckpt")
+
+    # Download if missing
+    if not os.path.exists(model_path):
+        print(f"Downloading {model_name}...")
+        model_path = download_model(model_name)
+
+    # Load from checkpoint
+    return load_from_checkpoint(model_path).to("cuda").half()
 
 def main():
     start_time = time.time()
@@ -293,6 +325,13 @@ def main():
     parser.add_argument("--service_name", help="Only evaluate this service (chatgpt, deepseek, gemini, google_translate)")
     args = parser.parse_args()
 
+    logger.info("**************************************************")
+    logger.info("**************************************************")
+    # logger.info(torch.cuda.is_available())
+    # logger.info(torch.cuda.get_device_name(0))
+    # print(torch.cuda.is_available())      # should be True
+    # print(torch.cuda.get_device_name(0))  # your GPU name
+
     logger.info("Starting evaluation script")
     logger.info(f"Generated file: {args.generated_path}")
     logger.info(f"Reference file: {args.reference_path}")
@@ -302,13 +341,17 @@ def main():
     log_memory_usage("At start of script")
 
     # Load metrics
-    logger.info("Loading metrics: rouge, sacrebleu, bertscore")
+    logger.info("Loading metrics")
     rouge = load("rouge")
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
 #    comet = load("comet")
+    comet = load_comet_model("wmt21-comet-qe-mqm")
 
-     
+    # load native comet
+    # model_path = download_model("wmt21-comet-qe-mqm")
+    # comet = load_from_checkpoint(model_path).to("cuda")
+
     # If output_csv is specified, put it in the results folder
     output_path = None
     if args.output_csv:
@@ -321,7 +364,7 @@ def main():
         rouge,
         bleu,
         bertscore,
-    #    comet
+        comet,
         only_service=args.service_name
     )
 
