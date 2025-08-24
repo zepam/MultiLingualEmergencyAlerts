@@ -12,7 +12,7 @@ TRANSLATION_MAP = {
     # "Somali": "so",        # 5000+ person language in WA state 2024
     # "Dari": "prs",          # 5000+ person language in WA state 2024. sometimes also 'fa' for Farsi
     # "Marshallese": "mh",    # 5000+ person language in WA state 2024
-    # "Korean": "ko",         # 5000+ person language in WA state 2024
+    "Korean": "ko",         # 5000+ person language in WA state 2024
     # "Punjabi": "pa",       # 5000+ person language in WA state 2024
     # "Hindi": "hi",         # 5000+ person language in WA state 2024
     # "Telegu": "te",       # 5000+ person language in WA state 2024
