@@ -152,5 +152,71 @@
                 "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
                 "reference": ""
             }
+        },
+        "tagalog": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY]: May bisa ang EMERGENCY NG FLASH FLOOD para sa [LOCATION] hanggang [TIME]. Isa itong sitwasyon na lubhang mapanganib at nagbabanta sa buhay. Huwag subukang maglakbay maliban kung tumatakas ka sa isang lugar na maaaring bumaha o nasa ilalim ng isang utos ng paglikas. [URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY]: May bisa ang BABALA SA MATINDING HANGIN para sa [LOCATION] dahil sa agarang panganib ng mga hanging nagbabanta sa buhay hanggang [TIME]. Magtago NGAYON sa isang panloob na kuwarto ng isang matibay na gusali, malayo sa mga bintana. Protektahan ang iyong ulo mula sa mga lumilipad na bagay. HUWAG lumabas kapag kumalma ang hangin! Mabilis na magiging mapanganib muli ang hangin. [URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[SENDING AGENCY] May bisa ang BABALA SA SUNOG sa [LOCATION] hanggang [TIME]. Ilikas ang iyong pamilya at mga alagang hayop ngayon, huwag mag-antala. Mababawasan ang visibility sa lugar at maaaring maharangan ang mga kalsada. Kung hindi ka aalis ngayon, maaari kang makulong, masugatan, o mamatay. UMALIS sa mga lugar na malapit sa [LOCATION]. Asahan na mabawasan ang visibility, matinding usok, at kahirapan sa paghinga. Mag-ingat sa pagmamaneho. Abangan ang mga public safety personnel na nagtatrabaho sa lugar at sundin ang kanilang mga direksyon. [URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY]: May ibinigay na ALERT SA PAGPAPAKULO NG TUBIG para sa [LOCATION] ay may bisa hanggang [TIME]. Pwede kang magkasakit dahil sa tubig mula sa komunidad mo. Gumamit ng nakaboteng tubig kung mayroon nito. Huwag uminom, magluto, magsepilyo ng iyong ngipin, o linisin ang iyong tahanan gamit ang gripo o sinalang tubig hanggang na pakuluan mo ito. Pakuluan ang tubig sa loob ng TATLONG MINUTO. Palamigin ang tubig bago gamitin. Huwag gumamit ng yelo na gawa sa tubig na hindi pa pinakuluan. Kung gumagamit ka ng formula para painumin sa iyong anak, gumamit ng ready-to-use formula. Siguraduhin na hindi umiinom pinakuluan ang mga alagang hayop ng tubig na hindi pa. [URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY]: May bisa ang ALERT SA PAGKWALA NG 9-1-1 sa [LOCATION] hanggang [TIME]. Pakikontak ang pulisya, bumbero, medikal, o iba pang mga serbisyong pang-emergency nang direkta sa kanilang mga lokal na numero ng telepono kung sakaling magkaroon ng emergency. Kung magda-dial ka sa 9-1-1, maaaring hindi ka makakuha ng tulong. [URL]"
+            }
+        },
+        "hindi": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION] में [TIME] तक एक आक􀄰􀋝क बाढ़ संबंधी आपात 􀄰स्थित प्रभावी है। यह एक अ􀈑िधक खतरनाक और जान को जो􀄰खम में डालने वाली 􀄰स्थित है। आप बाढ़ग्र􀋑 हो सकता है ऐसे इलाके से भाग रहे हों या स्थान को खाली करने के आदेश के अधीन हों, इसके अलावा कोई और यात्रा करने की कोिशश न करें। [URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION] में [TIME] तक जानलेवा हवा के त􀇽ाल खतरे के िलए अ􀈑िधक तेज़ हवा की चेतावनी प्रभावी है। अभी िकसी मज़बूत इमारत के अंदरूनी कमरे में 􀄰खड़िकयों से दूर आश्रय लें। उड़ती हुई चीज़ों से अपने िसर को बचाएं। हवाएं शांत होने पर बाहर न जाएं! हवाएं िफर से तेज़ी से खतरनाक हो जाएंगी। [URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION] में [TIME] तक आग की चेतावनी जारी की गई है। अपने प􀄯रवार और पालतू जानवरों को अभी िकसी और स्थान पर ले जाएं, देर न करें। इलाके में दृ􀊴ता कम होगी और सड़कें अवरुद्ध हो सकती हैं। अगर आप अभी नहीं जाते हैं, तो आप फंस सकते हैं, आपको चोट लग सकती है या आपकी जान जा सकती है। [LOCATION] के आस-पास के इलाके को छोड़ दें। कम दृ􀊴ता, भारी धुएं और साँस लेने में मु􀄰􀊭ल की अपेक्षा करें। वाहन चलाते व􀆅 सावधान रहें। इलाके में कायर्रत सावर्जिनक सुरक्षा किमर्यों को खोजते रहें और उनके िनद􀅑शों का पालन करें। [URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION] में [TIME] तक पानी उबालकर पीने का अलटर् जारी िकया गया है। आपके समुदाय में उपल􀉩 पानी आपको बीमार कर सकता है। उपल􀉩 होने पर बोतलबंद पानी का इ􀋑ेमाल करें। अपने घर में नल के पानी या िफ़􀊐र िकए गए पानी को िबना उबाले न िपएं, उससे खाना न पकाएं, ब्रश न करें या अपना घर साफ़ न करें। पानी को तीन िमनट तक अ􀇅ी तरह से उबालें। उपयोग करने से पहले पानी को ठंडा होने दें। उबाला न गया हो ऐसे पानी से बनी बफर् को इ􀋑ेमाल न करें। अगर आप अपने ब􀇄े को फामूर्ला 􀄰खलाते हैं, तो इसके िलए उपयोग के िलए तैयार फामूर्ल इ􀋑ेमाल करें। सुिनि􀊮त करें िक पालतू जानवर उबाला न गया हो ऐसा पानी न िपएं। स्थानीय मीिडया जाँचें। [URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION] में 9-1-1 सेवा में अवरोध का अलटर् प्रभावी है। आपात 􀄰स्थित होने पर कृपया पुिलस, दमकल, िचिक􀈖ा या अ􀉊 आपात सेवाओं से सीधे उनके स्थानीय फ़ोन नंबर पर संपकर् करें। अगर आप 9-1-1 डायल करें, तो हो सकता है िक आपको मदद न िमले। [URL]"
+            }
+        },
+        "korean": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION]에 [TIME]까지 돌발 홍수 비상경보가 발효 중입니다. 이는 매우 위험하고 생명을 위협하는 상황입니다. 홍수 위험이 있는 지역을 벗어나거나 대피 명령을 받은 경우를 제외하고는 이동하려고 시도하지 마십시오. [URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION]에역에 [TIME]까지 생명을 위협하는 즉각적이며 강력한 바람의 위험으로 인해 강풍 경보가 발효 중입니다. 지금 튼튼한 건물 안에서 창문에서 멀리 떨어진 실내로 대피하십시오. 날아오는 물체로부터 머리를 보호하십시오. 허리케인의 눈이 고요할 때라도 외출을 삼가하십시오! 바람은 금방 다시 위험해질 수 있습니다. [URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[LOCATION]에 [TIME]까지 화재 경보가 발효 중입니다. 지체하지 말고 가족과 반려동물을 지금 대피시키십시오. 해당 지역의 가시거리가 줄어들고 도로가 차단될 수 있습니다. 지금 대피하지 않으면 고립되거나, 상처를 입거나, 사망할 수도 있습니다. [LOCATION] 근처의 지역에서 떠나십시오. 시야가 좁아지고, 연기가 심하며, 호흡 곤란을 겪을 수 있습니다. 운전하는 동안 주의하십시오. 해당 지역에서 활동하는 공공 안전 요원을 주시하고 그들의 지시를 따릅니다. [URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION]에 [TIME]까지 물 끓이기 주의보가 발령되었습니다. 지역사회에 있는 물로 인해 질병에 걸릴 수 있습니다. 가능하면 생수를 드십시오. 끓이지 않은 물은 정수했더라도 마시거나, 요리, 양치질, 집안 청소에 사용하지 마십시오. 물을 3분 동안 완전히 끓입니다. 사용하기 전에 물을 식히십시오. 끓이지 않은 물로 만든 얼음은 사용하지 마십시오. 분유를 아이에게 먹이는 경우, 미리 만들어진 분유를 사용합니다. 반려동물이 끓이지 않은 물을 마시지 않도록 주의합니다. [URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY]: [LOCATION]에 9-1-1 비상 경보가 발효 중입니다. 긴급 상황 발생 시 해당 지역 전화번호로 경찰서, 소방서, 의료 또는 기타 응급 서비스 기관에 직접 연락하십시오. 9-1-1에 전화해도 도움을 받지 못할 수도 있습니다. [URL]"
+            }
         }
     }

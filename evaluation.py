@@ -36,7 +36,7 @@ import re
 import logging
 import os
 import torch
-from comet import download_model, load_from_checkpoint
+#from comet import download_model, load_from_checkpoint
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
@@ -201,9 +201,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
                                 #comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
+                                #comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
                                 
-                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result)
+                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result)
                                 results.append(result)
                                     
                                 # except Exception as e:
@@ -238,8 +238,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
-                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
+                                # comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
+                                #result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
+                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result)
                                 results.append(result)
                                 # except Exception as e:
                                 #     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
@@ -285,7 +286,7 @@ def calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_sta
 #             language_code = "es"
 #     return language_code
 
-def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
+def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result):
     return {
         "SERVICE": service,
         "LANGUAGE": language,
@@ -300,7 +301,7 @@ def gather_results(service, language, disaster, prompt, rouge_result, bertscore_
         "BERTScore_F1": bertscore_result["f1"][0],
         #"COMET": 0
        #"COMET": comet_result["mean_score"]
-       "COMET": comet_result.system_score
+       #"COMET": comet_result.system_score
     }
 
 def load_comet_model(model_name="eamt22-prune-comet-da"):
@@ -346,7 +347,7 @@ def main():
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
 #    comet = load("comet")
-    comet = load_comet_model("wmt21-comet-qe-mqm")
+    #comet = load_comet_model("wmt21-comet-qe-mqm")
 
     # load native comet
     # model_path = download_model("wmt21-comet-qe-mqm")
@@ -364,7 +365,7 @@ def main():
         rouge,
         bleu,
         bertscore,
-        comet,
+        #comet,
         only_service=args.service_name
     )
 

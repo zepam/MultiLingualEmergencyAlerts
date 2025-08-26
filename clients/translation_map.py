@@ -14,9 +14,9 @@ TRANSLATION_MAP = {
     # "Marshallese": "mh",    # 5000+ person language in WA state 2024
     "Korean": "ko",         # 5000+ person language in WA state 2024
     # "Punjabi": "pa",       # 5000+ person language in WA state 2024
-    # "Hindi": "hi",         # 5000+ person language in WA state 2024
+    "Hindi": "hi",         # 5000+ person language in WA state 2024
     # "Telegu": "te",       # 5000+ person language in WA state 2024
-    # "Tagalog": "tl",       # 5000+ person language in WA state 2024
+    "Tagalog": "tl",       # 5000+ person language in WA state 2024
     # "Amharic": "am",       # 5000+ person language in WA state 2024
     # "Chuukese": "chk",     # 5000+ person language in WA state 2024
     # "Cambodian": "km",      # 5000+ person language in WA state 2024
