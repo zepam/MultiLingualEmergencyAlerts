@@ -200,10 +200,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                #comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                 #comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
-                                
-                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result)
+
+                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result)
                                 results.append(result)
                                     
                                 # except Exception as e:
@@ -238,9 +238,9 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                # comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
+                                comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
                                 #result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
-                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result)
+                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
                                 results.append(result)
                                 # except Exception as e:
                                 #     logger.error(f"[Error on line {id_response}] {e}", exc_info=True)
@@ -286,7 +286,7 @@ def calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_sta
 #             language_code = "es"
 #     return language_code
 
-def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result):
+def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
     return {
         "SERVICE": service,
         "LANGUAGE": language,
@@ -300,22 +300,22 @@ def gather_results(service, language, disaster, prompt, rouge_result, bertscore_
         "BERTScore_R": bertscore_result["recall"][0],
         "BERTScore_F1": bertscore_result["f1"][0],
         #"COMET": 0
-       #"COMET": comet_result["mean_score"]
+        "COMET": comet_result["mean_score"]
        #"COMET": comet_result.system_score
     }
 
-def load_comet_model(model_name="eamt22-prune-comet-da"):
-    cache_dir = os.path.expanduser("~/.cache/torch/unbabel_comet")
-    model_dir = os.path.join(cache_dir, model_name, "checkpoints")
-    model_path = os.path.join(model_dir, "model.ckpt")
+# def load_comet_model(model_name="eamt22-prune-comet-da"):
+#     cache_dir = os.path.expanduser("~/.cache/torch/unbabel_comet")
+#     model_dir = os.path.join(cache_dir, model_name, "checkpoints")
+#     model_path = os.path.join(model_dir, "model.ckpt")
 
-    # Download if missing
-    if not os.path.exists(model_path):
-        print(f"Downloading {model_name}...")
-        model_path = download_model(model_name)
+#     # Download if missing
+#     if not os.path.exists(model_path):
+#         print(f"Downloading {model_name}...")
+#         model_path = download_model(model_name)
 
-    # Load from checkpoint
-    return load_from_checkpoint(model_path).to("cuda").half()
+#     # Load from checkpoint
+#     return load_from_checkpoint(model_path).to("cuda").half()
 
 def main():
     start_time = time.time()
@@ -346,7 +346,7 @@ def main():
     rouge = load("rouge")
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
-#    comet = load("comet")
+    comet = load("comet")
     #comet = load_comet_model("wmt21-comet-qe-mqm")
 
     # load native comet
@@ -365,7 +365,7 @@ def main():
         rouge,
         bleu,
         bertscore,
-        #comet,
+        comet,
         only_service=args.service_name
     )
 
