@@ -109,6 +109,28 @@
                 "reference": "[SENDING AGENCY]：[LOCATION] 發佈了 9-1-1 故障警報 ，當前生效中。如果發生緊急情況，請直接撥打當地電話號碼聯絡警察、消防、醫療或其他緊急服務部門。如果撥打 9-1-1，您可能得不到幫助。[URL]"
             }
         },
+        "chinese_simplified": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY]：当前在[LOCATION]发布暴洪紧急状态，持续生效至[TIME]。这是一种极其危险且危及生命的情况。请勿尝试旅行，除非您要逃离可能遭受洪水侵袭或接到疏散令的地区。[URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY]：当前就[LOCATION]危及生命的强风紧迫危险情况发布了强风警报，持续生效至[TIME]。请立即躲到坚固建筑物的室内房间里，远离窗户。保护头部免受飞扬物体的伤害。不要在强风平静时外出！风力很快就会再次变得危险。[URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[SENDING AGENCY] 当前在[LOCATION]发布火灾警报，持续生效至[TIME]。请立即疏散您的家人和宠物，请勿拖延。该地区的能见度将会降低，道路可能会堵塞。如果您现在不离开，您可能会被困、受伤或死亡。请离开[LOCATION]附近的地区。预计能见度会降低、浓烟和呼吸困难。 开车时要小心。请留意在该地区工作的公共安全人员并遵循他们的指示。[URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY]：当前在[LOCATION]发布了沸水消毒警报，持续生效至[TIME]。您所在社区的水可能会导致生病。如果有的话，请使用瓶装水。在煮沸之前，请勿饮用自来水或过滤水，用这些水做饭、刷牙或清洁房屋。请将水充分煮沸三分钟。使用前让水冷却。请勿使用未煮沸的水制成的冰块。如果您使用配方奶粉喂养孩子，请使用即食型配方奶粉。确保宠物不喝未煮沸的水。[URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY]：[LOCATION]发布了 9-1-1 故障警报，当前生效中。如果发生紧急情况，请直接拨打当地电话号码联系警察、消防、医疗或其他紧急服务部门。如果您拨打 9-1-1，则可能无法获得帮助。[URL]"
+            }
+        },
         "russian": {
             "flood": {
                 "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",

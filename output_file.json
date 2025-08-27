@@ -10845,34 +10845,79 @@
                 "prompt_simple.txt": [],
                 "prompt_chain_of_translation.txt": [],
                 "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_persona.txt": []
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "[TIME] से [LOCATION] क्षेत्र के निवासियों को सूचित किया जाता है कि पीने के पानी को उबालकर ही उपयोग करें। यह सावधानी तब तक बरतें जब तक आगे की सूचना न दी जाए। अधिक जानकारी के लिए [URL] पर जाएँ।",
+                        "date": "2025-08-26"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[समय]: [TIME]  \n[स्थान]: [LOCATION]  \nआपात सूचना: उबला हुआ पानी उपयोग करें। पीने, खाना बनाने और बर्फ बनाने के लिए पानी उबालें। अधिक जानकारी के लिए [URL] पर जाएं। सुरक्षित रहें।  \n\n(अंग्रेजी में: [TIME], [LOCATION], [URL])",
+                        "date": "2025-08-26"
+                    }
+                ]
             },
             "911_outage": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    {
+                        "text": "**Emergency Alert: 911 Outage**  \n\n**⚠️ ATTENTION ⚠️**  \nThere is currently a 911 outage in your area. If you have an emergency, call [local non-emergency number] or go to the nearest police/fire station or hospital. Do not hang up and redial 911—it will not connect. Stay calm and share this alert with others. Updates will follow.  \n\n**🚨 Stay informed. Stay safe. 🚨**",
+                        "date": "2025-08-26"
+                    }
+                ],
                 "prompt_chain_of_translation.txt": [],
                 "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "**[TIME]** पर **[LOCATION]** में 911 सेवा अस्थायी रूप से बंद है। आपात स्थिति में स्थानीय अधिकारियों से सीधे संपर्क करें। अधिक जानकारी के लिए **[URL]** पर जाएं। कृपया शांत रहें और सूचना के लिए अद्यतन देखते रहें।",
+                        "date": "2025-08-26"
+                    }
+                ],
                 "prompt_persona.txt": []
             }
         },
         "tagalog": {
             "flood": {
-                "prompt_simple.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_simple.txt": [
+                    {
+                        "text": "**⚠️ EMERGENCY ALERT: FLOOD WARNING ⚠️**  \n\n**BATI DANGER: Grabe nga pagbaha sa inyu nga area! Stay safe kag mag-andam gilayon. Mga tip:**\n\n1. **Layig sa mga suba kag drainage.**  \n2. **Mag-evacuate kon kinahanglan.**  \n3. **Dala Emergency Kit (pagkaon, tubig, flashlight).**  \n\n**Updates sa LGU. Mag-amping kag magbuligay!**  \n\n**- Local Disaster Office**",
+                        "date": "2025-08-26"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "\"Babala: Baha sa [LOCATION] noong [TIME]. Manatili sa ligtas na lugar at sumunod sa mga payo ng awtoridad. Para sa karagdagang impormasyon, bisitahin ang [URL]. Mag-ingat!\"",
+                        "date": "2025-08-26"
+                    }
+                ],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_persona.txt": []
             },
             "extreme_wind": {
                 "prompt_simple.txt": [],
-                "prompt_chain_of_translation.txt": [],
-                "prompt_one_shot.txt": [],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "\"[TIME] - Malakas na hangin ang inaasahan sa [LOCATION]. Mag-ingat sa posibleng pinsala sa mga bagay at istruktura. Iwasan ang paglabas kung hindi kinakailangan. Para sa karagdagang impormasyon, bisitahin ang [URL].\"",
+                        "date": "2025-08-26"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "⚠️ ALYAS NG MALAKAS NA HANGIN sa [LOCATION] hanggang [TIME]. Mapanganib ang kalagayan—manatili sa loob ng bahay, iwasan ang mga puno at mga bagay na maaaring tumama. Mag-ingat sa mga natumbang poste at kable. Para sa karagdagang impormasyon, bisitahin ang [URL].",
+                        "date": "2025-08-26"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_persona.txt": []
             },
             "fire": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    {
+                        "text": "**🔥 EMERGENCY ALERT: FIRE 🔥**  \n\n**Location:** [INSERT LOCATION]  \n**Immediate Action Required:** Evacuate calmly and quickly. Avoid elevators—use stairs. Call 112 for help. Do not re-enter the building until authorities say it's safe. Follow emergency personnel instructions. Stay alert!",
+                        "date": "2025-08-26"
+                    }
+                ],
                 "prompt_chain_of_translation.txt": [],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
