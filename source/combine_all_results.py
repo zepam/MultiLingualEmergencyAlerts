@@ -15,7 +15,7 @@ def combine_results_csvs():
 
     # Find all results_*.csv files in the parent directory
     results_dir = os.path.join(parent_dir, "results")
-    pattern = os.path.join(results_dir, "results_*.csv")
+    pattern = os.path.join(results_dir, "results*.csv")
     files = sorted(glob.glob(pattern))
     if not files:
         print("No results_*.csv files found in results directory.")
