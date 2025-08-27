@@ -238,7 +238,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
+                                comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                #comet_result = calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards)
                                 #result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
                                 result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
                                 results.append(result)
@@ -264,12 +265,12 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
     return df
 
-def calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards):
-    comet_data = [
-        {"src": src, "mt": pred, "ref": ref}
-        for src, pred, ref in zip(gold_standards["source"], predictions_text, duplicated_gold_standards)
-    ]
-    return comet.predict(comet_data, batch_size=1, gpus=1)
+# def calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_standards):
+#     comet_data = [
+#         {"src": src, "mt": pred, "ref": ref}
+#         for src, pred, ref in zip(gold_standards["source"], predictions_text, duplicated_gold_standards)
+#     ]
+#     return comet.predict(comet_data, batch_size=1, gpus=1)
 
 def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
     return {
