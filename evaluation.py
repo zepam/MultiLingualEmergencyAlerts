@@ -271,21 +271,6 @@ def calculate_comet(comet, gold_standards, predictions_text, duplicated_gold_sta
     ]
     return comet.predict(comet_data, batch_size=1, gpus=1)
 
-# def find_language_code(language):
-#     language_code = None
-#     match language:
-#         case "chinese_traditional":
-#             language_code = "zh"
-#         case "arabic":
-#             language_code = "ar"
-#         case "vietnamese":
-#             language_code = "vi"
-#         case "haitian_creole":
-#             language_code = "ht"
-#         case "spanish":
-#             language_code = "es"
-#     return language_code
-
 def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
     return {
         "SERVICE": service,
