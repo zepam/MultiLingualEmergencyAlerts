@@ -10697,7 +10697,12 @@
             },
             "911_outage": {
                 "prompt_simple.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "紧急通知：目前[LOCATION]的911紧急服务在[TIME]出现中断。请使用备用联系方式寻求帮助。更多信息请访问[URL]。保持冷静，注意安全。",
+                        "date": "2025-08-27"
+                    }
+                ],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_persona.txt": []

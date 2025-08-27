@@ -1,5 +1,5 @@
 import tenacity
-from google import genai
+import google.generativeai as genai
 import openai
 
 # Abstract Client parent
