@@ -9202,6 +9202,10 @@
                     {
                         "text": "**¡ALERTA DE VIENTOS EXTREMOS!**  \n\nSe pronostican vientos peligrosos con ráfagas superiores a [X] km/h. Podrían causar caída de árboles, daños estructurales y cortes de energía. Evite salir si no es necesario. Manténgase alejado de ventanas y objetos sueltos. Siga las indicaciones de las autoridades.  \n\n**¡Manténgase a salvo!**",
                         "date": "2025-08-18"
+                    },
+                    {
+                        "text": "¡Alerta de vientos extremos! Se esperan ráfagas peligrosamente fuertes en su área. Permanezca en interiores, alejado de ventanas. Evite caminar o conducir cerca de árboles o estructuras débiles. Cortes de energía pueden ocurrir. Manténgase informado y siga las indicaciones de las autoridades locales. ¡Seguridad primero!",
+                        "date": "2025-08-28"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -9290,6 +9294,10 @@
                     {
                         "text": "⚠️ Alerta de vientos extremos en [LOCATION] hasta las [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Riesgo de caída de árboles y ramas. Manténgase informado: [URL]. #Seguridad #ClimaExtremo",
                         "date": "2025-08-18"
+                    },
+                    {
+                        "text": "⚠️ [LOCATION]: Vientos extremos hasta [TIME]. Manténgase en interiores, asegure objetos sueltos y evite viajar. Más información en [URL]. #AlertaMeteorológica",
+                        "date": "2025-08-28"
                     }
                 ],
                 "translate_extreme_wind.txt": [
@@ -9349,6 +9357,10 @@
                     {
                         "text": "\"ALERTA: Incendio reportado cerca de [LOCATION]. Hora del reporte: [TIME]. Se recomienda evacuar el área y seguir instrucciones de autoridades. Más información en [URL]. Manténgase seguro.\"",
                         "date": "2025-08-18"
+                    },
+                    {
+                        "text": "\"ALERTA: Incendio reportado en [LOCATION] a las [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información visite [URL]. #SeguridadPrimero\"",
+                        "date": "2025-08-28"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -9597,6 +9609,10 @@
                     {
                         "text": "**Alerta:** Hay una interrupción en el servicio 911 en [LOCATION]. Hora del informe: [TIME]. Llame al número de emergencia local alternativo si necesita ayuda. Para más información, visite [URL]. Manténgase alerta y comparta esta información.",
                         "date": "2025-08-18"
+                    },
+                    {
+                        "text": "**Alerta de emergencia:** Se ha reportado una interrupción en el servicio 911 en [LOCATION]. Hora del reporte: [TIME]. Si necesita ayuda, contacte a su departamento de policía local directamente. Para más información, visite [URL]. Manténgase informado y tome precauciones.",
+                        "date": "2025-08-28"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -9825,6 +9841,10 @@
                     {
                         "text": "  **:ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ**\n.ﺔﻳﻮﻟﻭﺃ ﻚﺘﻣﻼﺳ .ﺮﻣﻷﺍ ﻡﺰﻟ ﺍﺫﺇ ﺀﻼﺧﻺﻟ ﺪﻌﺘﺳﺍﻭ ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﺮﺧﺁ ﻦﻣ ﻖﻘﺤﺗ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ،ﺭﻮﺴﺠﻟﺍﻭ ﺔﻀﻔﺨﻨﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗ .ﺔﻣﻼﺴﻟﺍ ﻰﻠﻋ ﻅﺎﻔﺤﻠﻟ ﺔﻳﺭﻮﻓ ﺕﺍﺀﺍﺮﺟﺇ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺓﺪﻳﺪﺷ ﺕﺎﻧﺎﻀﻴﻓ ﻦﻣ ﺮﻳﺬﺤﺗ",
                         "date": "2025-08-18"
+                    },
+                    {
+                        "text": "  EMERGENCY ALERT: FLOOD WARNING****\n\n.Severe flooding is occurring in [specific location, e.g., \"downtown Little Rock\"]. Seek higher ground immediately. Avoid walking or driving through floodwaters. Stay tuned to local news for updates. Call 911 if trapped or in life-threatening danger. Follow evacuation orders if issued",
+                        "date": "2025-08-28"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -10009,6 +10029,10 @@
                     {
                         "text": "  EMERGENCY ALERT: FIRE IN AREA****\n\n  🚨 **ACTIVE FIRE WARNING** 🚨\n  A fire has been reported near [Location]. Evacuate immediately if nearby. Follow local authorities' instructions. Avoid the area to allow emergency response. Call 911 if trapped or in danger. Stay alert for updates.\n\n️⚖ **.⚠️ **Evacuate now! Your safety is at risk",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "  Emergency Alert: Fire in AR****\n\n  🚨 **URGENT: FIRE WARNING** 🚨\n  A fire has been reported in your area. Evacuate immediately if nearby. Follow local authorities' instructions. Avoid the area and stay tuned for updates. Call 911 if trapped or in immediate danger.\n\n🚒️➡🔥 **!**Stay Safe",
+                        "date": "2025-08-28"
                     }
                 ],
                 "prompt_persona.txt": [
