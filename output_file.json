@@ -741,6 +741,10 @@
                     {
                         "text": "ALÈT IJANS: Gen gwo van ekstrèm nan zòn nan. Tanpri rete andedan, fèmen tout pòt ak fenèt, epi evite vwayaje jiskaske otorite yo di li an sekirite. Pran prekosyon!",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "ATANSYON: Gen van ekstrèm ap soufle nan zòn nan. Tanpri chèche yon kote ki an sekirite touswit, lwen fenèt ak pòt. Pa rete deyò. Rete enfòme atravè radyo oswa telefòn pou dènye nouvèl yo.",
+                        "date": "2025-09-04"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -4822,6 +4826,10 @@
                     {
                         "text": "[LOCATION]에 대해 [TIME]까지 끓인 물 사용 공지가 발령되었습니다. 수돗물을 마시거나 요리에 사용하기 전 반드시 최소 1분 이상 끓이십시오. 식수 안전 확보 후 추가 안내가 있을 예정입니다. 자세한 내용은 [URL]을 확인하세요.",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "[LOCATION]에 대해 [TIME]까지 끓인 물 사용 권고가 발효 중입니다. 수돗물을 최소 1분간 끓여 사용하십시오. 날것으로 마시거나 요리에 사용하지 마세요. 추가 정보는 [URL]을 확인하십시오.",
+                        "date": "2025-09-04"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -11795,6 +11803,10 @@
                     {
                         "text": "\"Alerta de inundación: Se ha reportado una inundación en [LOCATION] a las [TIME]. Evite el área y siga las instrucciones de las autoridades locales. Para más información, visite [URL]. Manténgase seguro.\"",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "**Alerta de Inundación**  \n¡Atención! Se reportan inundaciones en [LOCATION]. Evite áreas bajas y busque terreno elevado de inmediato. Actualizado a las [TIME]. Para más detalles, visite [URL]. Manténgase seguro.",
+                        "date": "2025-09-04"
                     }
                 ],
                 "translate_flood.txt": [
@@ -11889,6 +11901,10 @@
                     {
                         "text": "¡ALERTA DE VIENTOS EXTREMOS! Se pronostican vientos peligrosos en [LOCATION] hasta [TIME]. Estos vientos pueden causar daños estructurales, árboles caídos y cortes de energía. Evite estar al aire libre y busque refugio en un lugar seguro. Asegure objetos sueltos y manténgase alejado de ventanas. Para más información, visite [URL].",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "¡Alerta por vientos extremos en [LOCATION] hasta [TIME]! Los vientos peligrosos pueden causar daños estructurales, derribar árboles y generar objetos voladores. Busque refugio en un lugar seguro, lejos de ventanas. Evite áreas exteriores y conduzca con precaución. Manténgase informado: [URL].",
+                        "date": "2025-09-04"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -12006,6 +12022,10 @@
                     {
                         "text": "\"ALERTA: Incendio reportado en [LOCATION] a las [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información visite [URL]. #SeguridadPrimero\"",
                         "date": "2025-08-28"
+                    },
+                    {
+                        "text": "**Alerta de emergencia:** Incendio reportado en [LOCATION] a las [TIME]. Manténgase alejado del área. Siga las instrucciones de las autoridades. Para más información visite [URL].",
+                        "date": "2025-09-04"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -12075,6 +12095,10 @@
                     {
                         "text": "\"Alerta de incendio: Se reporta un incendio cerca de [LOCATION] a las [TIME]. Evacúe el área y siga las indicaciones de las autoridades. Para más información visite [URL]. Manténgase seguro.\"",
                         "date": "2025-08-18"
+                    },
+                    {
+                        "text": "\"¡ALERTA DE INCENDIO! Se reporta un incendio activo en [LOCATION]. Hora del reporte: [TIME]. Manténgase alejado del área y siga las instrucciones de las autoridades. Para más información, visite [URL]. ¡Seguridad primero!\"",
+                        "date": "2025-09-04"
                     }
                 ],
                 "translate_fire.txt": [
@@ -12169,6 +12193,10 @@
                     {
                         "text": "AVISO IMPORTANTE: Se emitió una orden de hervir el agua para [LOCATION] hasta [TIME]. Hierva el agua durante al menos un minuto antes de consumirla o use agua embotellada. Esto incluye agua para beber, cocinar y lavar alimentos. Para más información, visite [URL].  \n\n(305 caracteres)",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "AVISO DE HERVIR AGUA: Se emitió un aviso de hervir agua para [LOCATION] hasta [TIME]. El agua del grifo debe hervirse durante al menos un minuto antes de consumirla o usarla para cocinar. Use agua embotellada como alternativa. Para más detalles, visite [URL].",
+                        "date": "2025-09-04"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
