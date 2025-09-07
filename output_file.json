@@ -4634,6 +4634,10 @@
                     {
                         "text": "⚠️ 긴급 안내: 현재 매우 강한 바람이 불고 있습니다. 외출을 자제하고, 창문과 문을 단단히 잠그세요. 낙하물과 비산물에 주의하시기 바랍니다. 안전한 곳에서 대기하십시오.",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "⚠️ 긴급알림: 현재 강풍주의보가 발효 중입니다. 외출을 자제하시고, 창문과 문을 단단히 잠그세요. 간판, 화분 등 날아갈 수 있는 물건을 안전하게 고정하시기 바랍니다.",
+                        "date": "2025-09-06"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -11707,6 +11711,10 @@
                     {
                         "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe ha detectado una crecida repentina de agua en la zona. Busque refugio en un lugar elevado de inmediato. Evite caminar o conducir por áreas inundadas. Siga las instrucciones de las autoridades locales. Manténgase informado a través de canales oficiales. ¡Su seguridad es primero!  \n\n**Repita este mensaje a quienes lo necesiten.**",
                         "date": "2025-08-25"
+                    },
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe reportan inundaciones en la zona. Busca un lugar elevado de inmediato. Evita caminar o conducir por áreas inundadas. Sigue las instrucciones de las autoridades locales. Mantente informado y preparado para evacuar si es necesario.  \n\n**¡TU SEGURIDAD ES LO PRIMERO!**",
+                        "date": "2025-09-06"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -11830,6 +11838,10 @@
                     {
                         "text": "[AGENCIA EMISORA]: Se emite una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta las [TIME]. Esta es una situación extremadamente peligrosa y que pone en riesgo la vida. No intentes viajar a menos que estés huyendo de un área que pueda inundarse o estés bajo una orden de evacuación. [URL]",
                         "date": "2025-08-31"
+                    },
+                    {
+                        "text": "[AGENCIA EMISORA]: Se emite una EMERGENCIA POR INUNDACIÓN REPENTINA para [LOCATION] hasta las [TIME]. Esta es una situación extremadamente peligrosa y que amenaza la vida. No intentes viajar a menos que estés huyendo de un área que pueda inundarse o estés bajo una orden de evacuación. [URL]",
+                        "date": "2025-09-06"
                     }
                 ]
             },
