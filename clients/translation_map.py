@@ -18,6 +18,21 @@ TRANSLATION_MAP = {
     # "Telegu": "te",       # 5000+ person language in WA state 2024
     "Tagalog": "tl",       # 5000+ person language in WA state 2024
     # "Amharic": "am",       # 5000+ person language in WA state 2024
-    # "Chuukese": "chk",     # 5000+ person language in WA state 2024
+    # ? "Chuukese": "chk",     # 5000+ person language in WA state 2024
     # "Cambodian": "km",      # 5000+ person language in WA state 2024
+    # "Pashto": "ps",         # 5000+ person language in WA state 2024
+    # "Tamil": "ta",         # 5000+ person language in WA state 2024
+    # "Japanese": "ja",      # 5000+ person language in WA state 2024
+    "Portuguese": "pt",    # 5000+ person language in WA state 2024
+    # "Tigrinya": "ti",      # 5000+ person language in WA state 2024
+    # "Urdu": "ur",          # 5000+ person language in WA state 2024
+    "French": "fr",       # 5000+ person language in WA state 2024
+    # "Oromo": "om",          # 5000+ person language in WA state 2024
+    # "Farsi": "fa",          # 5000+ person language in WA state 2024
+    # "Turkish": "tr",       # 5000+ person language in WA state 2024
+    # "Swahili": "sw",       # 5000+ person language in WA state 2024
+    # "Hebrew": "he",        # 5000+ person language in WA state 2024
+    # "Marathi": "mr",      # 5000+ person language in WA state 2024
+    # "Samoan": "sm",       # 5000+ person language in WA state 2024
+    # "Malayalam": "ml",    # 5000+ person language in WA state 2024
 }

@@ -240,5 +240,49 @@
                 "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
                 "reference": "[SENDING AGENCY]: [LOCATION]에 9-1-1 비상 경보가 발효 중입니다. 긴급 상황 발생 시 해당 지역 전화번호로 경찰서, 소방서, 의료 또는 기타 응급 서비스 기관에 직접 연락하십시오. 9-1-1에 전화해도 도움을 받지 못할 수도 있습니다. [URL]"
             }
+        },
+        "french": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY] : un RISQUE D’INONDATION SOUDAINE est en vigueur pour [LOCATION] jusqu'à [TIME]. Il s'agit d'une situation extrêmement dangereuse et potentiellement mortelle. Évitez de vous déplacer à moins que vous ne quittiez une zone inondable ou que vous ne fassiez l'objet d'un ordre d'évacuation. [URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY] : un AVIS DE VENT EXTRÊME est en vigueur pour [LOCATION] en raison du danger immédiat de vents potentiellement mortels jusqu'à [TIME]. Mettez-vous à l'abri dès MAINTENANT dans une pièce intérieure d'un bâtiment robuste, loin des fenêtres. Protégez votre tête des objets volants. Ne sortez PAS à l’extérieur si le vent se calme ! Les vents sont susceptibles de redevenir dangereux rapidement. [URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[SENDING AGENCY] : un AVIS D’INCENDIE pour [LOCATION] est en vigueur jusqu’à [TIME]. Évacuez votre famille et vos animaux de compagnie dès maintenant, sans plus attendre. La visibilité dans la région va diminuer et les routes risquent d'être bloquées. Si vous ne partez pas maintenant, vous risquez d'être bloqué, blessé ou tué. Quittez les zones situées près de [LOCATION]. Attendez-vous à une visibilité réduite, à une forte fumée et à des difficultés respiratoires. Soyez prudent en conduisant. Faites attention au personnel des services de sécurité publique opérant dans la zone et suivez leurs instructions. [URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY] : un AVIS DE FAIRE BOUILLIR L’EAU a été émis pour [LOCATION] et est en vigueur jusqu’à [TIME]. L'eau de votre communauté peut vous rendre malade. Utilisez de l'eau en bouteille si possible. Vous ne devez pas boire, cuisiner, vous brosser les dents et nettoyer votre maison avec de l'eau du robinet ou de l'eau filtrée sans l'avoir faite bouillir. Portez l'eau à ébullition pendant TROIS MINUTES. Laissez l'eau refroidir avant de l'utiliser. N'utilisez pas de glace produite avec de l'eau non bouillie. Si vous utilisez du lait maternisé pour nourrir votre enfant, utilisez du lait maternisé prêt à l'emploi. Veillez à ce que les animaux domestiques ne boivent pas d'eau non bouillie au préalable. [URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY] : un AVIS D’INTERRUPTION DU 9-1-1 est en vigueur pour [LOCATION]. En cas d'urgence, veuillez contacter la police, les pompiers, les services médicaux ou tout autre service d'urgence directement en appelant leur numéro de téléphone local. Si vous composez le 9-1-1, vous risquez de ne pas obtenir d'aide. [URL]"
+            }
+        },
+        "portuguese": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": "[SENDING AGENCY]: Um AVISO DE EMERGÊNCIA DE INUNDAÇÕES REPENTINAS está em vigor para [LOCATION] até [TIME]. Esta é uma situação extremamente perigosa e de risco de vida. Não tente viajar, a menos que esteja deixando uma área que pode inundar ou está sob uma ordem de evacuação. [URL]"
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": "[SENDING AGENCY]: Um AVISO DE VENTOS EXTREMOS está em vigor para [LOCATION] pelo perigo imediato de ventos potencialmente fatais até [TIME]. Proteja-se AGORA em uma sala no interior de um prédio seguro, longe das janelas. Proteja sua cabeça de objetos voadores. NÃO saia do abrigo se o vento acalmar! Os ventos rapidamente se tornarão perigosos novamente. [URL]"
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": "[SENDING AGENCY]: Um AVISO DE INCÊNDIO está em vigor para [LOCATION] até [TIME]. Evacue sua família e animais de estimação agora, não demore. A visibilidade na região estará prejudicada e as estradas podem ficar bloqueadas. Se você não sair agora, você pode ficar preso, ferido ou morto. SAIA das áreas próximas de [LOCATION]. Espere por visibilidade reduzida, fumaça pesada e dificuldade para respirar. Tenha cuidado ao dirigir. Fique atento ao pessoal de segurança pública que atua na região e siga as suas instruções. [URL]"
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": "[SENDING AGENCY]: Um ALERTA PARA A FERVURA DE ÁGUA está em vigor para [LOCATION] até [TIME]. A água na sua região pode deixá-lo doente. Use água engarrafada, se disponível. Não beba, cozinhe, escove os dentes ou limpe a casa com água da torneira ou água filtrada até ser fervido. Deixe a água ferver por TRÊS MINUTOS. Deixe a água esfriar antes de usar. Não use gelo feito com água que não tenha sido fervida. Se você usa fórmula para alimentar seu filho, use fórmula pronta para consumo. Certifique-se de que os animais de estimação não bebam água que não tenha sido fervida. [URL]"
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": "[SENDING AGENCY]: Um ALERTA DE INTERRUPÇÃO DO SERVIÇO 9-1-1 está em vigor para [LOCATION]. Em caso de emergência, entre em contato com a polícia, bombeiros, médicos ou outros serviços de emergência diretamente por meio dos seus números de telefone locais. É possível você não conseguir ajuda ao discar 9-1-1. [URL]"
+            }
         }
     }
