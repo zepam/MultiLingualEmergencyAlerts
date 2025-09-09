@@ -197,8 +197,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                #comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                comet_result = 0
+                                comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                #comet_result = 0
                                 chrf_result = chrf.compute(predictions=predictions_text, references=duplicated_gold_standards, word_order=2, lowercase=True)
                                 result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result)
                                 results.append(result)
