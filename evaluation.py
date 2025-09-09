@@ -126,7 +126,7 @@ def get_results_count(generated_path, service_name=None):
     else:
         return 0
 
-def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None, only_service=None):
+def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None, chrf=None, only_service=None):
     logger.info(f"Loading reference data from {reference_path}")
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
@@ -197,9 +197,10 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 rouge_result = rouge.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenizer=evaluation_tokenizer)
                                 bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
-                                comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-
-                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result)
+                                #comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
+                                comet_result = 0
+                                chrf_result = chrf.compute(predictions=predictions_text, references=duplicated_gold_standards, word_order=2, lowercase=True)
+                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result)
                                 results.append(result)
                                     
                                 pbar.update(1)
@@ -231,7 +232,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 bertscore_result = bertscore.compute(predictions=formatted_predictions, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
                                 comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result)
+                                chrf_result = chrf.compute(predictions=predictions_text, references=duplicated_gold_standards, word_order=2, lowercase=True)
+                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result, chrf_result)
                                 results.append(result)
 
                                 pbar.update(1)
@@ -253,7 +255,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
     return df
 
 
-def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result):
+def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result):
     return {
         "SERVICE": service,
         "LANGUAGE": language,
@@ -266,7 +268,8 @@ def gather_results(service, language, disaster, prompt, rouge_result, bertscore_
         "BERTScore_P": bertscore_result["precision"][0],
         "BERTScore_R": bertscore_result["recall"][0],
         "BERTScore_F1": bertscore_result["f1"][0],
-        "COMET": comet_result["mean_score"]
+        "COMET": comet_result["mean_score"],
+        "CHRF": chrf_result["score"]
     }
 
 
@@ -296,6 +299,7 @@ def main():
     bleu = load("sacrebleu")
     bertscore = load("bertscore")
     comet = load("comet")
+    chrf = load("chrf")
 
     # If output_csv is specified, put it in the results folder
     output_path = None
@@ -310,6 +314,7 @@ def main():
         bleu,
         bertscore,
         comet,
+        chrf,
         only_service=args.service_name
     )
 
