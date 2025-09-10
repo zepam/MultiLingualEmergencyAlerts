@@ -26,6 +26,9 @@ Example:
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
+import logging
+logging.getLogger("pytorch_lightning").setLevel(logging.WARNING)
+
 # ruff: noqa: E402
 import pandas as pd
 import argparse
@@ -33,7 +36,6 @@ import json
 from tqdm import tqdm
 import time
 import re
-import logging
 import os
 import torch
 #from comet import download_model, load_from_checkpoint

@@ -5548,6 +5548,10 @@
                     {
                         "text": "[LOCATION]에 홍수 경보 발령. [TIME]까지 심각한 침수 위험이 있습니다. 즉시 높은 곳으로 대피하고 차량 이동을 피하세요. 안전 확인 및 경로 안내는 [URL]에서 확인하십시오.",
                         "date": "2025-09-02"
+                    },
+                    {
+                        "text": "[LOCATION]에 홍수 경보가 발효 중입니다. [TIME]까지 강한 비와 급격한 수위 상승이 예상됩니다. 저지대와 하천 주변을 피하고, 높은 곳으로 즉시 대피하십시오. 차량 운행을 자제하고 최신 정보는 [URL]에서 확인하세요.",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -15751,6 +15755,10 @@
                     {
                         "text": "🚨 **AVISO DE HERVIR AGUA** 🚨  \nSe emitió un aviso de hervir agua para [LOCATION]. Herva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Vigente a partir de [TIME]. Más información en: [URL]. ¡Manténgase seguro!",
                         "date": "2025-09-02"
+                    },
+                    {
+                        "text": "¡AVISO IMPORTANTE! A partir de [TIME], el agua en [LOCATION] debe hervirse antes de usarla para beber, cocinar o lavar alimentos. Esto es por precaución ante posibles contaminantes. Para más detalles, visite [URL]. Cumpla con esta medida hasta nuevo aviso. ¡Su seguridad es prioridad!",
+                        "date": "2025-09-09"
                     }
                 ],
                 "translate_boil_water_notice.txt": [
@@ -15917,22 +15925,44 @@
                     "⚠️ AVIS URGAN: GRAN INONDASYON!  \n\nTout moun nan zòn ki anba risk inondasyon, tanpri deplase imedyatman nan yon kote ki pi anlè! Dlo ap monte rapidman ak ka danjere. Pa rete nan kay ou si w ap resevwa mesaj sa a.  \n\nPran telefòn ou, dokiman enpòtan, ak sa w kapab pote vit.  \n\nPa janble dlo a paske li ka gen chalè elektrik oswa domaje.  \n\nSi w gen fanmi oswa vwazin ki ka bezwen èd, kontakte yo vit.  \n\nRet tann enfòmasyon ofisyèl pou plis detay.  \n\n**RESPEKTE AVÈTISMAN SA A SE POU PWOTEJE TÈT OU AK FANMI W!**",
                     "\"⚠️ AVIS IJANS! ⚠️  \n\nGen gwo inondasyon k ap pase nan zòn nou an. Dlo ap monte rapid! Pa rete lakay ou si w nan zòn ki ba. Deplase al nan yon plas ki pi wo imedyatman. Kenbe kontak ak fanmi ou epi swiv enstriksyon otorite yo.  \n\nPa janm eseye travèse dlo k ap koule rapid. Si ou wè yon moun an danje, rele pou èd. Reste an sekirite enpi bay nou nouvèl ou.  \n\n🔴 Ret konsène! 🔴\"",
                     "**Alerte IJANS!**  \n\n📢 *GRAN INONDASYON ANBA W!*  \n\nChè sitwayen, gen yon gwo inondasyon k ap pase nan zòn nou an. Dlo ap monte rapidman e sa ka danjere pou lavi w. Tanpri:  \n\n- Deplase ou nan yon kote ki wo imedyatman.  \n- Evite pase nan dlo ki movèz oswa fon.  \n- Koute radyo lokal pou plis enfòmasyon.  \n- Si w gen bezwen èd, rele nimewo ijans yo: 114 oswa 115.  \n\nPa touye tan, aji kounye a pou pwoteje tèt ou ak fanmi w!  \n\n*Se yon mesaj SOS.*",
-                    "**Alerte URGENT:**  \n\nInondasyon grav nan zòn nou an! Dlo ap monte rapidman. Si w nan zòn ki ba, deplase imedyatman nan yon plas ki pi wo. Evite pase nan dlo a paske li kapab danjere. Swiv enfòmasyon ofisyèl yo sou radyo ak telefòn. Reste an sekirite epi ede moun ki vye granmoun ak timoun yo pou yo evakye. Pa panike, men aji vit!  \n\n**N ap kenbe ansanm!** 🇭🇹"
+                    "**Alerte URGENT:**  \n\nInondasyon grav nan zòn nou an! Dlo ap monte rapidman. Si w nan zòn ki ba, deplase imedyatman nan yon plas ki pi wo. Evite pase nan dlo a paske li kapab danjere. Swiv enfòmasyon ofisyèl yo sou radyo ak telefòn. Reste an sekirite epi ede moun ki vye granmoun ak timoun yo pou yo evakye. Pa panike, men aji vit!  \n\n**N ap kenbe ansanm!** 🇭🇹",
+                    {
+                        "text": "**EMERGENCY ALERT: FLOOD WARNING**  \n\nHeavy rainfall has caused severe flooding in [specific area, if known]. Avoid travel and move to higher ground if safe. Stay away from rivers and flooded roads. Monitor local updates. Call [local emergency number] if in immediate danger. Stay safe!",
+                        "date": "2025-09-09"
+                    }
                 ],
                 "prompt_persona.txt": [
                     {
                         "text": "EMÈJANS: Inondasyon nan [LOCATION]. Tanpri, deplase ale nan yon zòn ki pi wo imedyatman. Tan an: [TIME]. Pa pase nan dlo yo. Pou plis enfòmasyon, vizite [URL].",
                         "date": "2025-08-23"
+                    },
+                    {
+                        "text": "EMÈJANS: Inondasyon nan [LOCATION]. Tanpri, evakye imedyatman nan zòn ki afekte a. Siviv dènye enfòmasyon yo sou [URL]. Tan aktyèl: [TIME]. Pa tande dlo a. Rete an sekirite.",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_one_shot.txt": [
                     {
                         "text": "AVIS: Yon sitiyasyon inondasyon grav nan [LOCATION] jiska [TIME]. Dlo ap monte rapidman. Si w nan zòn nan, deplase imedyatman nan yon kote ki pi wo. Pa eseye travèse dlo k ap koule rapid. Swiv enfòmasyon ofisyèl yo. [URL]",
                         "date": "2025-08-23"
+                    },
+                    {
+                        "text": "AVI: Yon Ijans enpòtan pou inondasyon nan [LOCATION] jiska [TIME]. Pegi yo ap monte rapidman. Si w ap viv nan zòn ki ba oswa toupre rivyè, deplase imedyatman nan yon pi wo tè. Evite wout ki kouvri ak dlo. Bay priyorite a sekirite ou. Gade medya pou plis enfòmasyon. [URL]",
+                        "date": "2025-09-09"
                     }
                 ],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "\"Avètisman: Inondasyon grav nan [LOCATION]. Tan pou evakyasyon imedya. Vyolans dlo a ka monte rapid. Tanpri, kite zòn nan pi vit posib epi swiv enfòmasyon ofisyèl yo. Tan aktèl: [TIME]. Plis detay nan [URL]. Pa risk tèt ou!\"",
+                        "date": "2025-09-09"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "⚠️ Avis ijans! Inondasyon ki fèt nan [LOCATION] nan [TIME]. Tanpri, pran prekosyon epi evite zòn ki gen gwo dlo. Gade enfòmasyon plis sou [URL]. Rete an sekirite!",
+                        "date": "2025-09-09"
+                    }
+                ],
                 "translate_flood.txt": [
                     "[SENDING AGENCY]: Yon IJANS LAMÈDOD FLOUD KLÈSH aktive pou [LOCATION] jiske [TIME]. Sa a se yon sitiyasyon ki ekstrèmman danjere ak ki menase lavi. Pa eseye vwayaje sof si w ap kouri sot nan yon zòn ki ka inonde oswa si w ap obeyi yon lòd evakyasyon. [URL]",
                     "[SENDING AGENCY]: Yon IJAN SLAMAT FLOG ap an vigè pou [LOCATION] jouk [TIME]. Sitiyasyon sa a ekstrèmman danjere ak menase lavi. Pa eseye vwayaje deyò sof si w ap chape kite yon zòn ki ka inonde oswa si w ap obeyi yon lòd evakyasyon. [URL]",
@@ -16205,6 +16235,10 @@
                     {
                         "text": ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺀﺎﺑﺮﻬﻜﻟﺍ ﻁﻮﻄﺧﻭ ﺭﺎﺠﺷﻸﻟ ﺔﻠﻤﺘﺤﻣ ﺍﺭﺍﺮﺿﺃ ﻊﻗﻮﺗ .ﻦﻣﺁ ﻥﺎﻜﻣ ﻲﻓ ﻢﺘﺣﺍﻭ ﻱﺭﻭﺮﻀﻟﺍ ﺮﻴﻏ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ **:ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ**",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "ﺉﺭﺍﻮﻄﻟﺍ_ﻪﻴﺒﻨﺗ# .ﻚﺘﻣﻼﺳ ﻰﻠﻋ ﻆﻓﺎﺣ .ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ [URL] ﻦﻣ ﻖﻘﺤﺗﻭ ﻱﺭﻭﺮﻀﻟﺍ ﺮﻴﻏ ﺮﻔﺴﻟﺍ ﺐﻨﺠﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺔﻌﻗﻮﺘﻣ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ !ﻩﺎﺒﺘﻧﺍ ️⚠",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -16289,6 +16323,10 @@
                     {
                         "text": "[ﻂﺑﺍﺭ] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺎﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺭﺎﺨﻟﺍ ﻰﻟﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻢﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣ ﺡﺎﻳﺭ ﺮﻄﺧ ﺐﺒﺴﺑ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺍﺮﻳﺬﺤﺗ ﻥﺇ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "[ﻂﺑﺍﺮﻟﺍ] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﺳ ﺡﺎﻳﺮﻟﺍ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﺍﺫﺇ ﺝﺮﺨﺗ ﻻ .ﺓﺮﺋﺎﻄﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻚﺳﺃﺭ ﻢﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﻥﻵﺍ ﻲﻤﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﺓﺎﻴﺤﻠﻟ ﺓﺩﺪﻬﻣ ﺡﺎﻳﺮﻟ ﻱﺭﻮﻔﻟﺍ ﺮﻄﺨﻟﺍ ﺐﺒﺴﺑ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﺓﺭﻮﻄﺨﻟﺍ ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
+                        "date": "2025-09-09"
                     }
                 ]
             },
@@ -16310,6 +16348,10 @@
                     {
                         "text": "  Emergency Alert: Fire in AR****\n\n  🚨 **URGENT: FIRE WARNING** 🚨\n  A fire has been reported in your area. Evacuate immediately if nearby. Follow local authorities' instructions. Avoid the area and stay tuned for updates. Call 911 if trapped or in immediate danger.\n\n🚒️➡🔥 **!**Stay Safe",
                         "date": "2025-08-28"
+                    },
+                    {
+                        "text": "  EMERGENCY ALERT: FIRE****\n⚠️ **ACTIVE FIRE** in [LOCATION]. Evacuate immediately if nearby. Avoid the area. Follow local authorities' instructions. Call 911 if trapped or in danger. Stay tuned for updates. #FireSafety",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -16325,6 +16367,10 @@
                     {
                         "text": ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍ .ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ **:ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ**",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[TIME] :ﺖﻗﻮﻟﺍ .ﺏﺍﺮﺘﻗﻻﺍ ﺐﻨﺠﺗﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ **:ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ** 🔥",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -16344,6 +16390,10 @@
                     {
                         "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] ﻰﺘﺣ ﺮﻄﺨﻟﺍ ﺮﻤﺘﺴﻴﺳ .ﺮﻄﺨﻟﺍ ﺔﻟﺎﺣ ﻲﻓ 911 ﻢﻗﺮﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ .ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺇﻭ ﺔﻘﻄﻨﻤﻠﻟ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﺐﺸﻧ ﺮﻴﻄﺧ ﻖﻳﺮﺣ",
                         "date": "2025-08-31"
+                    },
+                    {
+                        "text": "[URL] .ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ ﻡﻼﻋﻹﺍ ﻞﺋﺎﺳﻭ ﻦﻣ ﻖﻘﺤﺗ .ﻥﺎﺧﺪﻟﺍ ﻕﺎﺸﻨﺘﺳﺍ ﺐﻨﺠﺗﻭ ﻦﻣﺁ ﺝﺮﺨﻣ ﻦﻋ ﺚﺤﺑﺍ ،ﻥﺎﻜﻤﻟﺍ ﻲﻓ ﺖﻨﻛ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺎﺑ ﻞﺼﺗﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳ ﻊﺿﻭ ﺍﺬﻫ .ﺔﻘﻄﻨﻤﻟﺍ ﻩﺬﻫ ﻲﻓ ﻖﻳﺮﺣ ﺪﺻﺭ ﻢﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻟﺎﻛﻮﻟﺍ]",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -16359,6 +16409,10 @@
                     {
                         "text": "!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺍﻭﺭﻭﺯ ،ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .998 ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺎﺑ ﺍﻮﻠﺼﺗﺍ .ﺪﻋﺎﺼﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﺍﻮﺒﻨﺠﺗ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ ![LOCATION] ﻲﻓ ﺮﻴﺒﻛ ﻖﻳﺮﺣ",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".ﺔﺼﺘﺨﻤﻟﺍ ﺕﺎﻬﺠﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﺍﻮﻌﺒﺗﺍﻭ ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺔﻴﻓﺎﺿﺇ ﺕﺎﻣﻮﻠﻌﻣﻭ ﺕﺎﺜﻳﺪﺤﺗ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .[TIME] :ﻲﻟﺎﺤﻟﺍ ﺖﻗﻮﻟﺍ .ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺇ ﻰﺟﺮﻳ ![LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻖﻳﺮﺣ",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -16374,6 +16428,10 @@
                     {
                         "text": ".ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺍﻭﺭﻭﺯ ،ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﻉﺎﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺘﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ **:ﺭﺍﺬﻧﻹﺍ**",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "  **:Emergency Alert in Arabic**\n\n.[TIME] :ﺖﻗﻮﻟﺍ .ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺫﺎﺨﺗﺍ ﻰﺟﺮﻳ .[URL] ﻰﻠﻋ ﺔﺣﺎﺘﻣ ﻖﻳﺮﺤﻟﺍ ﺕﺎﺜﻳﺪﺤﺗ .ﺔﻘﻄﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[LOCATION] ﻲﻓ ﻂﺸﻧ ﻖﻳﺮﺣ 🚨",
+                        "date": "2025-09-09"
                     }
                 ],
                 "translate_fire.txt": [
@@ -16389,6 +16447,10 @@
                     {
                         "text": "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻠﻣﺎﻌﻟﺍ ﻡﺎﻌﻟﺍ ﻦﻣﻷﺍ ﻕﺮﻔﻟ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ﺎﻔﻴﺜﻛ ﺎﻧﺎﺧﺩﻭ ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻙﺮﺗﺍ .ﻞﺘﻘﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻹﺍ ﻭﺃ ﺭﺎﺼﺤﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﻕﺮﻄﻟﺍ ﻕﻼﻏﺇ ﻢﺘﻳ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻞﻘﺘﺳ .ﺩﺩﺮﺘﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﻞﺧﺃ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ :[AGENCY NAME]",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "[URL] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻡﺎﻌﻟﺍ ﻦﻣﻷﺍ ﺩﺍﺮﻓﺃ ﺩﻮﺟﻮﻟ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺍﺭﺬﺣ ﻦﻛ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ﻒﻴﺜﻛ ﻥﺎﺧﺩ ،ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[LOCATION] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﻦﻋ ﺪﻌﺘﺑﺍ .ﻞﺘﻘﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻹﺍ ،ﺭﺎﺼﺤﻠﻟ ﺽﺮﻌﺘﺗ ﺪﻗ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﻕﺮﻄﻟﺍ ﻖﻠﻏ ﻢﺘﻳ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﻞﻘﺘﺳ .ﺩﺩﺮﺘﺗ ﻻ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ [LOCATION] ﻲﻓ ﻖﻳﺮﺤﺑ ﻪﻴﺒﻨﺗ :[ﺔﻟﺎﻛﻭ ﻝﺎﺳﺭﺇ]",
+                        "date": "2025-09-09"
                     }
                 ]
             },
@@ -16406,6 +16468,10 @@
                     {
                         "text": "  **ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ**\n\n  .ﺔﻠﻜﺸﻤﻟﺍ ﺀﺎﻬﺘﻧﺍ ﺪﻨﻋ ﻢﻜﻣﻼﻋﺇ ﻢﺘﻴﺳ .[ﺔﻘﻄﻨﻤﻟﺍ ﻢﺳﺍ] ﻲﻓ ﻖﻃﺎﻨﻤﻟﺍ ﻊﻴﻤﺟ ﻰﻠﻋ ﺭﺎﻌﺷﻹﺍ ﺍﺬﻫ ﻖﺒﻄﻨﻳ .ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﺦﺒﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻠﻟ ﻪﻣﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ .ﺎﻬﺛﻮﻠﺗ ﻝﺎﻤﺘﺣﺍ ﺐﺒﺴﺑ ﺎﻬﻴﻠﻏ ﻥﻭﺩ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻣ ﻡﺍﺪﺨﺘﺳﺍ ﺮﻈﺤﻳ\n\n  .[ﺔﺼﺘﺨﻤﻟﺍ ﺔﻬﺠﻟﺎﺑ ﺹﺎﺨﻟﺍ ﻒﺗﺎﻬﻟﺍ ﻢﻗﺭ] ـﺑ ﻞﺼﺗﺍ ،ﺭﺎﺴﻔﺘﺳﻼﻟ\n\n**.ﺀﺎﻗﺪﺻﻷﺍﻭ ﻥﺍﺮﻴﺠﻟﺍ ﻊﻣ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﺀﺎﺟﺮﻟﺍ**",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "  **ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﺭﺎﻌﺷﺇ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ**\n\n  .ﺮﺧﺁ ﺭﺎﻌﺷﺇ ﻰﺘﺣ ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ .ﻪﺛﻮﻠﺗ ﻝﺎﻤﺘﺣﺍ ﺐﺒﺴﺑ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﺓﺭﻭﺮﺿ ﻦﻋ ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﻦﻠﻌﺗ\n\n  .ﺔﻠﻜﺸﻤﻟﺍ ﺀﺎﻬﺘﻧﺍ ﺪﻨﻋ ﻢﻜﻣﻼﻋﺇ ﻢﺘﻴﺳ .ﻪﻴﻠﻏ ﻥﻭﺩ ﺓﺮﺷﺎﺒﻣ ﺭﻮﺒﻨﺼﻟﺍ ﻦﻣ ﺀﺎﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﺐﻨﺠﺗ\n\n.ﻢﻜﻧﻭﺎﻌﺗ ﻰﻠﻋ ﻢﻛﺮﻜﺸﻧ .ﻥﺍﺮﻴﺠﻟﺍ ﻊﻣ ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﺀﺎﺟﺮﻟﺍ",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -16416,6 +16482,10 @@
                     {
                         "text": ".ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﻲﻠﻐﻤﻟﺍ ﺀﺎﻤﻟﺎﺑ ﺍﻮﻈﻔﺘﺣﺍ .[URL] ﺭﻭﺰﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻩﺎﻴﻤﻟﺍ ﺓﺩﻮﺟ ﻲﻓ ﺔﺘﻗﺆﻣ ﺔﻠﻜﺸﻣ ﺐﺒﺴﺑ [TIME] ﺔﻋﺎﺴﻟﺍ ﻰﺘﺣ [LOCATION] ﻲﻓ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ **:ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ**",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".[URL] ﺭﺯ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏﺍ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ ﺎﻳﺭﺎﺳ .ﻞﻤﺘﺤﻣ ﺙﻮﻠﺗ ﻑﺎﺸﺘﻛﺍ ﻢﺗ .[LOCATION] ﻲﻓ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺢﺼﻨﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ ️⚠",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -16431,6 +16501,10 @@
                     {
                         "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﻭﺃ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺏﺮﺸﻟﺍ ﻩﺎﻴﻣ ﻲﻠﻏ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺭﺎﻌﺷﺇ ﺭﺍﺪﺻﺇ ﻢﺗ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻠﻟ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﺭﺎﻌﺷﺇ ﺭﺍﺪﺻﺇ ﻢﺗ :ﺮﻳﺬﺤﺗ",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -16442,6 +16516,10 @@
                     {
                         "text": ".ﻢﻜﻧﻭﺎﻌﺗ ﻰﻠﻋ ﻢﻛﺮﻜﺸﻧﻭ ﺝﺎﻋﺯﻹﺍ ﻦﻋ ﺭﺬﺘﻌﻧ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[LOCATION] :ﻊﻗﻮﻤﻟﺍ .[TIME] :ﺖﻗﻮﻟﺍ .ﺔﺘﻗﺆﻣ ﺔﻴﺤﺻ ﺔﻠﻜﺸﻣ ﺐﺒﺴﺑ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﺢﺼﻨﻳ :ﻞﺟﺎﻋ ﻪﻴﺒﻨﺗ ️⚠",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺫﺎﺨﺗﺍ ﺀﺎﺟﺮﻟﺍ .[URL] :ﻂﺑﺍﺮﻟﺍ ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ [LOCATION] :ﻊﻗﻮﻤﻟﺍ [TIME] :ﺖﻗﻮﻟﺍ .ﻞﻤﺘﺤﻣ ﺙﻮﻠﺗ ﺐﺒﺴﺑ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺢﺼﻨﻳ :ﺉﺭﺍﻮﻃ ﻪﻴﺒﻨﺗ 🚨",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -16457,6 +16535,10 @@
                     {
                         "text": ".ﻊﻴﻤﺠﻟﺍ ﺔﻣﻼﺳ ﻥﺎﻤﻀﻟ ﺔﻟﺎﺳﺮﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﺀﺎﺟﺮﻟﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[LOCATION] :ﻊﻗﻮﻤﻟﺍ .[TIME] :ﺖﻗﻮﻟﺍ .ﻪﺗﺩﻮﺟ ﻲﻓ ﺔﻠﻤﺘﺤﻣ ﺔﻠﻜﺸﻣ ﺐﺒﺴﺑ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺢﺼﻨﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ ️⚠",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻣ ﻰﻠﻋ ﻝﻮﺼﺤﻠﻟ .ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻟﺍ ﻭﺃ ﺏﺮﺸﻟﺍ ﻞﺒﻗ ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺔﻘﻴﻗﺩ ﺓﺪﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻏ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﺓﺩﻮﺟ ﻲﻓ ﺔﻠﻜﺸﻣ ﺐﺒﺴﺑ ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﺢﺼﻨﻳ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ",
+                        "date": "2025-09-09"
                     }
                 ],
                 "translate_boil_water_notice.txt": [
@@ -16472,6 +16554,10 @@
                     {
                         "text": "[URL] .ﻲﻠﻐﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻠﻟ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﺏﺮﺷ ﻡﺪﻋ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺳﺎﻓ ،ﻚﻠﻔﻃ ﻡﺎﻌﻃﻹ ﻲﻋﺎﻨﺼﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻲﻠﻐﻳ ﻢﻟ ﻱﺬﻟﺍ ﺀﺎﻤﻟﺍ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻳ ﺀﺎﻤﻟﺍ ﻙﺮﺗﺍ .ﺔﻠﻣﺎﻛ ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﺍﺪﻴﺟ ﻲﻠﻐﻳ ﺀﺎﻤﻟﺍ ﻞﻌﺟﺍ .ﻪﻴﻠﻐﺑ ﻡﻮﻘﺗ ﻰﺘﺣ ﺮﺘﻠﻔﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻤﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺎﺣﺎﺘﻣ ﻥﺎﻛ ﺍﺫﺇ ﺕﺎﺟﺎﺟﺯ ﻲﻓ ﺄﺒﻌﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺎﻀﻳﺮﻣ ﻚﻌﻤﺘﺠﻣ ﻲﻓ ﺀﺎﻤﻟﺍ ﻚﻠﻌﺠﻳ ﻥﺃ ﻦﻜﻤﻳ .[TIME] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ [LOCATION] ﺔﻘﻄﻨﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻟﺎﻛﻭ ﻝﺎﺳﺭﺇ]",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "[URL] .ﻲﻠﻐﻤﻟﺍ ﺮﻴﻏ ﺀﺎﻤﻠﻟ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﺏﺮﺷ ﻡﺪﻋ ﻦﻣ ﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﻡﺪﺨﺘﺳﺎﻓ ،ﻝﺎﻔﻃﻷﺍ ﺐﻴﻠﺣ ﻡﺪﺨﺘﺴﺗ ﺖﻨﻛ ﺍﺫﺇ .ﻲﻠﻐﻤﻟﺍ ﺮﻴﻏ ﺀﺎﻤﻟﺍ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﻡﺪﺨﺘﺴﺗ ﻻ .ﻡﺍﺪﺨﺘﺳﻻﺍ ﻞﺒﻗ ﺩﺮﺒﻴﻟ ﺀﺎﻤﻟﺍ ﻙﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﺔﻠﻣﺎﻜﻟﺍ ﻥﺎﻴﻠﻐﻟﺍ ﺔﺟﺭﺩ ﻰﻟﺇ ﻞﺼﻳ ﻰﺘﺣ ﺀﺎﻤﻟﺍ ﻲﻠﻏﺍ .ﻪﻴﻠﻏ ﺪﻌﺑ ﻻﺇ ﺮﺘﻠﻔﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﺀﺎﻤﺑ ﻚﻟﺰﻨﻣ ﻒﻈﻨﺗ ﻭﺃ ﻚﻧﺎﻨﺳﺃ ﻒﻈﻨﺗ ﻭﺃ ﺦﺒﻄﺗ ﻭﺃ ﺏﺮﺸﺗ ﻻ .ﺎﺣﺎﺘﻣ ﻥﺎﻛ ﺍﺫﺇ ﺕﺎﺟﺎﺟﺯ ﻲﻓ ﺄﺒﻌﻤﻟﺍ ﺀﺎﻤﻟﺍ ﻡﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺎﺑ ﻚﺘﺑﺎﺻﺇ ﻲﻓ ﺭﻮﺒﻨﺼﻟﺍ ﺀﺎﻣ ﺐﺒﺴﺘﻳ ﺪﻗ .[TIME] ﻰﺘﺣ ﺮﻤﺘﺴﻴﺳﻭ [LOCATION] ﺔﻘﻄﻨﻤﻟ ﺀﺎﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
+                        "date": "2025-09-09"
                     }
                 ]
             },
@@ -16489,6 +16575,10 @@
                     {
                         "text": "  Emergency Alert: 911 Outage in Arkansas****\n\n  Urgent: 911 services are currently unavailable in parts of Arkansas due to a system outage. If you have an emergency, contact local law enforcement directly using their non-emergency numbers or go to the nearest fire/police station. Updates will be provided as available. Stay alert and share this info.\n\n  **Non-Emergency Numbers:**\n  - Little Rock PD: (501) 371-4829\n  - Fayetteville PD: (479) 587-3555\n  - State Police: *Insert local number*\n\n.Do not hang up and call back if 911 is busy—use alternate contacts",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "  Emergency Alert: 911 Outage in Arkansas****\n\n  🚨 **ATTENTION ARKANSAS RESIDENTS** 🚨\n  A temporary outage is affecting 911 services in parts of Arkansas. If you have an emergency, call your local police or fire department directly using their non-emergency numbers. Stay updated via local news and officials. Only call 911 if service is restored or instructed. Share this alert to keep others informed. Stay safe!\n\n  **Arkansas Department of Public Safety**\n*[*[Insert local non-emergency numbers if applicable",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -16499,6 +16589,10 @@
                     {
                         "text": ".ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺍﻭﺬﺨﺗﺍﻭ ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺉﺭﺍﻮﻄﻠﻟ ﺮﺧﺁ ﻒﺗﺎﻫ ﻂﺧ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ 911 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ ️⚠",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "🚨 [URL] :ﺪﻳﺰﻤﻠﻟ .ﺉﺭﺍﻮﻄﻠﻟ ﺔﻠﻳﺪﺒﻟﺍ ﻁﻮﻄﺨﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺍ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ 911 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ 🚨",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -16509,6 +16603,10 @@
                     {
                         "text": "**.[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﻷ ﻪﺟﻮﺘﻟﺍ ﻭﺃ ﺡﺎﺘﻤﻟﺍ ﻞﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺭ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ 911 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ :ﺉﺭﺍﻮﻃ ﻪﻴﺒﻨﺗ**",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".ﻚﺘﻣﻼﺴﻟ ﺔﻣﺯﻼﻟﺍ ﺕﺍﺀﺍﺮﺟﻹﺍ ﺬﺨﺗﺍﻭ ﺍﺭﺬﺣ ﻦﻛ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺮﺷﺎﺒﻣ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺍ ﺰﻛﺮﻤﺑ ﻞﺼﺗﺍ ،ﺮﻄﺨﻟﺍ ﺕﻻﺎﺣ ﻲﻓ .ﺉﺭﺍﻮﻄﻟﺎﺑ ﻝﺎﺼﺗﻼﻟ ﺓﺮﻓﻮﺘﻤﻟﺍ ﺔﻠﻳﺪﺒﻟﺍ ﻁﻮﻄﺨﻟﺍ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ 911 ﺉﺭﺍﻮﻄﻟﺍ ﺔﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ ️⚠",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -16519,6 +16617,10 @@
                     {
                         "text": "\".ﻦﻳﺮﺧﻵﺍ ﻊﻣ ﺔﻣﻮﻠﻌﻤﻟﺍ ﻩﺬﻫ ﺍﻮﻛﺭﺎﺷﻭ ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻰﻟﺇ ﻪﺟﻮﺘﻟﺍ ﻭﺃ ﻞﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺭ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺎﻴﻟﺎﺣ 911 ﺔﻣﺪﺧ ﻞﻄﻌﺗ :ﺉﺭﺍﻮﻃ ﻪﻴﺒﻨﺗ\"",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": "\".ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﻥﺎﻤﻀﻟ ﺔﻣﻮﻠﻌﻤﻟﺍ ﻩﺬﻫ ﺔﻛﺭﺎﺸﻣ ﻰﺟﺮﻳ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .[TIME] :ﺖﻗﻮﻟﺍ .ﺔﻃﺮﺷ ﺰﻛﺮﻣ ﺏﺮﻗﺃ ﻰﻟﺇ ﻪﺟﻮﺘﻟﺍ ﻭﺃ ﻞﻳﺪﺒﻟﺍ ﺉﺭﺍﻮﻄﻟﺍ ﻢﻗﺭ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﺎﻴﻟﺎﺣ 911 ﺔﻣﺪﺧ ﻞﻄﻌﺗ :ﺉﺭﺎﻃ ﻪﻴﺒﻨﺗ\"",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -16529,6 +16631,10 @@
                     {
                         "text": "  **:ﻲﺑﺮﻌﻟﺎﺑ**\n.ﻦﻜﻤﻣ ﺖﻗﻭ ﻉﺮﺳﺄﺑ ﺔﻠﻜﺸﻤﻟﺍ ﻞﺣ ﻰﻠﻋ ﻞﻤﻌﻧﻭ ﺝﺎﻋﺯﻺﻟ ﻒﺳﺄﻧ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺉﺭﺍﻮﻄﻟﺎﺑ ﻝﺎﺼﺗﻼﻟ ﻞﻳﺪﺑ ﻒﺗﺎﻫ ﻂﺧ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺎﻴﻟﺎﺣ 911 ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ ﻙﺎﻨﻫ :ﻩﺎﺒﺘﻧﺍ",
                         "date": "2025-08-19"
+                    },
+                    {
+                        "text": ".ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺬﺨﺗﺍﻭ ﺎﻨﻣﺁ ﻖﺑﺍ .[URL] ﺓﺭﺎﻳﺰﺑ ﻞﻀﻔﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺮﺷﺎﺒﻣ ﺔﻴﻠﺤﻤﻟﺍ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻭﺃ ﺔﻠﻳﺪﺒﻟﺍ ﻒﺗﺎﻬﻟﺍ ﻁﻮﻄﺧ ﻡﺍﺪﺨﺘﺳﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ 911 ﺉﺭﺍﻮﻄﻟﺍ ﺔﻣﺪﺧ ﻲﻓ ﻉﺎﻄﻘﻧﺍ ﻊﻗﻭ :[TIME]",
+                        "date": "2025-09-09"
                     }
                 ],
                 "translate_911_outage.txt": [
@@ -16544,6 +16650,10 @@
                     {
                         "text": "[ﻂﺑﺍﺭ] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻗ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﺎﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻦﻣ ﺎﻫﺮﻴﻏ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺍ ﻪﻴﺒﻨﺗ :[ﺔﻟﺎﻛﻮﻟﺍ ﻝﺎﺳﺭﺇ]",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﻢﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺓﺮﺷﺎﺒﻣ ﻯﺮﺧﻷﺍ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[LOCATION] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ 1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ :[ﺔﻠﺳﺮﻤﻟﺍ AGENCY]",
+                        "date": "2025-09-09"
                     }
                 ]
             }
@@ -16563,6 +16673,10 @@
                     {
                         "text": "【紧急通知】洪水预警：受持续强降雨影响，预计未来3小时内，我市部分地区可能发生严重洪涝灾害。请低洼地区居民立即撤离至安全区域，避免靠近河道、积水路段。如遇险情，请拨打119紧急求助。务必听从当地政府指挥，确保人身安全！",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "【紧急洪水预警】  \n尊敬的市民：  \n受强降雨影响，我市部分地区可能发生洪涝灾害。请低洼地区居民立即撤离至安全地带，避免靠近河道、堤坝。注意断电、断气，确保人身安全。切勿冒险涉水或驾车通过积水路段。  \n请密切关注官方通知，保持通讯畅通。紧急救援电话：110、119。  \n（发布单位：XX市应急管理局）",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -16585,6 +16699,10 @@
                     {
                         "text": "緊急洪水警報：[TIME]在[LOCATION]發生嚴重水災，請民眾立即前往高處避難，避免接近河岸及低窪地區。隨時留意官方更新，並遵循當地政府指示。更多詳細資訊請參考：[URL]。保持安全，切勿冒險！",
                         "date": "2025-08-13"
+                    },
+                    {
+                        "text": "紧急洪水警报：请[TIME]在[LOCATION]地区的居民立即撤离至安全区域！洪水水位迅速上升，可能危及生命财产安全。避免靠近河流、低洼地带，听从当地救援指挥。更多详情请访问[URL]。保持警惕，确保安全！",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -16623,6 +16741,10 @@
                     {
                         "text": "【極端強風警報】  \n\n緊急通知：極端強風即將來襲，預計風速將達每小時100公里以上，可能造成嚴重破壞。請立即采取以下措施：  \n\n1. 避免外出，留在室內安全區域。  \n2. 固定或移除陽台、窗戶外易墜落物品。  \n3. 遠離樹木、電線杆及廣告看板，以免被砸傷。  \n4. 檢查門窗是否緊閉，必要時加固。  \n\n若遇緊急狀況，請撥打119求助。保持警惕，確保安全！  \n\n（氣象局發布）",
                         "date": "2025-08-13"
+                    },
+                    {
+                        "text": "紧急天气警报：极端大风预警  \n\n预计未来几小时内，本地将出现极端大风天气，阵风可达**级以上，可能伴随强对流天气。请市民立即做好防范措施：  \n\n1. 避免外出，远离临时搭建物、广告牌及高空悬挂物。  \n2. 固定门窗，妥善安置室外物品，防止坠落。  \n3. 注意用电安全，防范大风引发的火灾隐患。  \n4. 车辆停放在安全区域，避开树木及不稳定结构。  \n\n如遇紧急情况，请拨打急救电话**（如110/119）**。  \n\n**（发布单位名称）**  \n**发布时间**  \n\n请相互转告，确保安全！",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -16705,6 +16827,10 @@
                     {
                         "text": "[時間] [地點] 發生火警，請民眾立即疏散至安全區域，避免靠近火場。消防人員已前往處理，請配合指揮。詳情請參閱 [URL]。保持冷靜，注意安全。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急火警通知：请注意，[TIME]在[LOCATION]发生火灾，请附近居民立即撤离至安全区域，避免使用电梯。拨打119报警并远离事发地点。更多详情请访问[URL]。保持冷静，听从指挥，确保人身安全。",
+                        "date": "2025-09-09"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -16958,7 +17084,12 @@
                     "**THÔNG BÁO KHẨN CẤP:** Hiện tại, hệ thống 911 đang gặp sự cố và có thể không hoạt động. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp đến số điện thoại của cảnh sát địa phương hoặc dịch vụ cứu hộ gần nhất. Xin lỗi vì sự bất tiện này và cảm ơn sự hợp tác của bạn.  \n\n**English Translation (for reference only):**  \n**EMERGENCY ALERT:** The 911 system is currently experiencing an outage and may not be operational. In case of an emergency, please contact your local police or rescue services directly. We apologize for the inconvenience and appreciate your cooperation.",
                     "\"THÔNG BÁO KHẨN CẤP: Hệ thống 911 hiện đang gặp sự cố và có thể không thể tiếp nhận cuộc gọi. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát địa phương hoặc dịch vụ cứu hộ gần nhất. Chúng tôi đang khắc phục sự cố và sẽ thông báo ngay khi hệ thống hoạt động trở lại. Xin lỗi vì sự bất tiện này.\""
                 ],
-                "prompt_persona.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "```vi\n911 OUTAGE: Emergency services unavailable in [LOCATION] until [TIME]. Use alternate phones or seek help in person. Updates at [URL]. Stay alert.\n```",
+                        "date": "2025-09-09"
+                    }
+                ],
                 "prompt_one_shot.txt": [],
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_chain_of_translation.txt": [],
