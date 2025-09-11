@@ -16,3 +16,4 @@ A toolkit for generating, collecting, and evaluating multilingual emergency aler
 
 <img title="BLEU results for Emergency Alert Translations" alt="BLEU results broken down by LANGUAGE vs. SERVICE. The data is filtered on translation category, which keeps prompts and translations. The LANGUAGE (services languages.csv) filter keeps 13 of 13 members. The BLEU filter ranges from 0.10 to 66.79. Google Translate and DeepL show the highest results." src="https://public.tableau.com/app/profile/jen.wilson6361/viz/multilingual_tableau/BLEUforlanguagesandservicesforTranslations?publish=yes">
 
+[![BLEU results for Emergency Alert Translations](https://public.tableau.com/app/profile/jen.wilson6361/viz/multilingual_tableau/BLEUforlanguagesandservicesforTranslations?publish=yes)]
