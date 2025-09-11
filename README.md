@@ -6,7 +6,7 @@ A toolkit for generating, collecting, and evaluating multilingual emergency aler
 
 - **Automated Response Collection:** Query multiple LLMs and translation services (ChatGPT, Gemini, DeepSeek, Google Translate, DeepL) for emergency alert translations in many languages.
 - **Prompt Engineering:** Test and compare different prompt strategies for each service and scenario.
-- **Evaluation Suite:** Evaluate generated outputs using metrics such as ROUGE, BLEU, BERTScore, and COMET.
+- **Evaluation Suite:** Evaluate generated outputs using metrics such as ROUGE, BLEU, BERTScore, ChrF++, and COMET.
 - **Result Aggregation:** Combine and visualize results from multiple runs and services.
 - **Extensible:** Easily add new languages, services, or evaluation metrics.
 
