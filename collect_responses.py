@@ -28,6 +28,7 @@ import argparse
 import arabic_reshaper
 from bidi.algorithm import get_display
 from datetime import date
+from datetime import time
 
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
@@ -268,6 +269,8 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
 
 
 if __name__ == "__main__":
+
+    start_time = time.time()
     load_dotenv()
     args = parse_args()
 
@@ -302,3 +305,6 @@ if __name__ == "__main__":
 
     # just in case there is anything left
     save_output_json(output_json, args.output_file, logger)
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    logger.info(f"Total elapsed time: {elapsed_time:.2f} seconds")
