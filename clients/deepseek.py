@@ -1,4 +1,4 @@
-import time
+import tenacity
 import httpx
 from openai import OpenAI
 from clients.client import Client
@@ -13,6 +13,7 @@ class DeepSeekClient(Client):
         self.base_url = "https://openrouter.ai/api/v1"
         self.model = "deepseek/deepseek-chat-v3-0324:free"
 
+    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=3, max=180), stop=tenacity.stop_after_attempt(3))
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
         # Get language code from translation map or use language as is if not found
         language_code = TRANSLATION_MAP.get(language, language)
@@ -38,41 +39,20 @@ class DeepSeekClient(Client):
             )
         )
 
-        while True:
-            try:
-                completion = client.chat.completions.create(
-                    model=self.model,
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=self.temperature,
-                    max_tokens=self.max_tokens,
-                    top_p=self.top_p,
-                    extra_body={}
-                )
-                break  # success → exit loop
+        try:
+            completion = client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                top_p=self.top_p,
+                extra_body={}
+            )
+        except Exception as e:
+            self.logger.error(f"DeepSeek API request failed: {e}")
+            return None
 
-            except Exception as e:
-                # Look for 429 Too Many Requests
-                err_msg = str(e).lower()
-                if "429" in err_msg or "rate limit" in err_msg:
-                    reset_time = None
-                    if hasattr(e, "response") and e.response is not None:
-                        reset_header = e.response.headers.get("X-RateLimit-Reset")
-                        if reset_header:
-                            reset_time = int(reset_header) / 1000  # ms → seconds
-
-                    if reset_time:
-                        wait_time = max(0, reset_time - time.time())
-                    else:
-                        # fallback if no header present
-                        wait_time = 60  
-
-                    self.logger.warning(f"Rate limit hit. Waiting {wait_time:.1f} seconds before retry...")
-                    time.sleep(wait_time + 1)
-                    continue  # retry loop
-                else:
-                    self.logger.error(f"DeepSeek API request failed: {e}")
-                    return None
-
+        # Guard against None or unexpected shape
         if not completion or not hasattr(completion, "choices") or len(completion.choices) == 0:
             self.logger.error(f"DeepSeek returned invalid response: {completion}")
             return None
