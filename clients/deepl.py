@@ -36,7 +36,7 @@ class DeepLClient(Client):
             # Validate if the mapped language code is a valid DeepL target language
             if target_language_code not in self.supported_target_languages_ids:
                 self.logger.warning(f"DeepL does not support target language: '{target_language}' (resolved code: '{target_language_code}'). Skipping translation.")
-                self.logger.info(f"DeepL supports {len(self.supported_target_languages_ids)} target languages.")
+                #self.logger.info(f"DeepL supports {len(self.supported_target_languages_ids)} target languages.")
                 return ""
                 #raise ValueError(f"Target language '{target_lang_code}' not supported by DeepL.")
 
