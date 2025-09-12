@@ -1,7 +1,6 @@
 # Multilingual Emergency Alerts
 A toolkit for generating, collecting, and evaluating multilingual emergency alert messages using a variety of large language models (LLMs) and translation APIs.
 
-
 ## Features
 
 - **Automated Response Collection:** Query multiple LLMs and translation services (ChatGPT, Gemini, DeepSeek, Google Translate, DeepL) for emergency alert translations in many languages.
