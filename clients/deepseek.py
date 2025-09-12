@@ -1,6 +1,7 @@
+import time
+import httpx
 from openai import OpenAI
 from clients.client import Client
-import httpx
 from clients.translation_map import TRANSLATION_MAP
 
 # Client to interact with the DeepSeek API via OpenRouter
@@ -37,20 +38,41 @@ class DeepSeekClient(Client):
             )
         )
 
-        try:
-            completion = client.chat.completions.create(
-                model=self.model,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=self.temperature,
-                max_tokens=self.max_tokens,
-                top_p=self.top_p,
-                extra_body={}
-            )
-        except Exception as e:
-            self.logger.error(f"DeepSeek API request failed: {e}")
-            return None
+        while True:
+            try:
+                completion = client.chat.completions.create(
+                    model=self.model,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=self.temperature,
+                    max_tokens=self.max_tokens,
+                    top_p=self.top_p,
+                    extra_body={}
+                )
+                break  # success → exit loop
 
-        # Guard against None or unexpected shape
+            except Exception as e:
+                # Look for 429 Too Many Requests
+                err_msg = str(e).lower()
+                if "429" in err_msg or "rate limit" in err_msg:
+                    reset_time = None
+                    if hasattr(e, "response") and e.response is not None:
+                        reset_header = e.response.headers.get("X-RateLimit-Reset")
+                        if reset_header:
+                            reset_time = int(reset_header) / 1000  # ms → seconds
+
+                    if reset_time:
+                        wait_time = max(0, reset_time - time.time())
+                    else:
+                        # fallback if no header present
+                        wait_time = 60  
+
+                    self.logger.warning(f"Rate limit hit. Waiting {wait_time:.1f} seconds before retry...")
+                    time.sleep(wait_time + 1)
+                    continue  # retry loop
+                else:
+                    self.logger.error(f"DeepSeek API request failed: {e}")
+                    return None
+
         if not completion or not hasattr(completion, "choices") or len(completion.choices) == 0:
             self.logger.error(f"DeepSeek returned invalid response: {completion}")
             return None

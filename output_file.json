@@ -16794,6 +16794,10 @@
                     {
                         "text": "緊急警報：洪水預警！[LOCATION]地區於[TIME]發生嚴重洪水，請立即撤離至安全地點。避免靠近河流或低窪地區。更多資訊請參考[URL]。保持警惕，注意安全。",
                         "date": "2025-08-13"
+                    },
+                    {
+                        "text": "紧急警报：洪水预警。[TIME]在[LOCATION]发生洪水，请立即采取行动确保安全。避免接近水域，遵循当地官员的指示。更多信息请访问[URL]。保持警惕，注意安全。",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -16804,6 +16808,10 @@
                     {
                         "text": "【紧急洪水警报】[LOCATION]地区即将发生洪水，警报持续至[TIME]。洪水可能导致严重威胁生命和财产的情况。请立即撤离至高地或安全区域，避免靠近河流和低洼地带。切勿涉水步行或驾车通过积水区域。随时关注最新消息和指示。[URL]",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "[TIME]发布的洪水警报：[LOCATION]正面临严重洪水威胁，请立即前往高处或安全区域避难。避免接近河流、低洼地带和积水区域。洪水可能导致道路中断和电力故障，请勿冒险涉水。更多实时信息请访问：[URL]",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -16824,6 +16832,10 @@
                     {
                         "text": "【紧急洪水警报】[TIME]，[LOCATION]突发洪水，请注意安全！避免前往低洼地区，听从当地部门指挥。更多信息请访问[URL]。",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "紧急洪水警报：[TIME]，[LOCATION]发生洪水，请立即远离低洼地区，听从当地救援指挥。更多详情请访问：[URL]。注意安全！",
+                        "date": "2025-09-11"
                     }
                 ],
                 "translate_flood.txt": [
@@ -16839,6 +16851,10 @@
                     {
                         "text": "[SENDING AGENCY]: 针对 [LOCATION] 的暴洪紧急状态将持续至 [TIME]。这是极其危险且危及生命的情况。除非你正在逃离可能被洪水淹没的区域或收到疏散指令，否则请勿出行。[URL]",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "[SENDING AGENCY]：[LOCATION]发布突发洪水紧急警报，有效期至[TIME]。这是一次极其危险且危及生命的情况。除非您正在从可能被洪水淹没的区域撤离或接到疏散命令，否则请勿尝试出行。[URL]",
+                        "date": "2025-09-11"
                     }
                 ]
             },
@@ -16866,6 +16882,10 @@
                     {
                         "text": "[紧急警报] [TIME]在[LOCATION]将有极端大风天气，风速可能达危险级别。请立即采取防护措施，避免外出，固定户外物品。更多信息请访问[URL]。",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "紧急警报：极端风力预警。[TIME]在[LOCATION]将出现极端大风天气，可能造成安全隐患。请避免外出，固定户外物品，远离树木和电线。更多信息请访问[URL]。务必保持警惕，注意安全。",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -16876,6 +16896,10 @@
                     {
                         "text": "极端大风预警：预计 [LOCATION] 在 [TIME] 前将遭遇极端大风天气，瞬时风力可达10级以上。请立即加固或移除易被吹动的搭建物，停止户外高空作业，避免在广告牌、临时搭建物下逗留。车辆尽量停放在安全区域，行人注意远离树木及电线杆。详情请查阅 [URL]",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "极端大风警报：[LOCATION]地区将持续至[TIME]。风速极高，可能造成树木倒塌、电力中断等危险。请立即躲避至建筑物内部，远离窗户，固定户外物品，避免不必要出行。更多详情请访问：[URL]",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -16886,6 +16910,10 @@
                     {
                         "text": "极端大风警报：预计[TIME]，[LOCATION]将遭遇极端大风天气，阵风可达10级以上。请居民避免外出，加固门窗，远离临时搭建物和高空悬挂物。更多详情请访问[URL]。确保安全，及时关注最新预警信息。",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "极端大风警报：预计[TIME]，[LOCATION]将出现极端大风天气，阵风可达10级以上，可能引发广告牌倒塌、树木折断等危险。请减少外出，远离临时搭建物，注意高空坠物。更多详情请访问[URL]。",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
@@ -16896,6 +16924,10 @@
                     {
                         "text": "[地点] 将于 [时间] 出现极端大风天气，阵风可达破坏性强度。请远离树木、电线及临时搭建物，留在室内确保安全。更多信息请访问 [网址]。",
                         "date": "2025-08-21"
+                    },
+                    {
+                        "text": "极端大风预警：[TIME]在[LOCATION]将出现极端大风天气，瞬时风速可达10级以上，请避免户外活动，加固易倒物品，注意安全。更多详情请访问[URL]。",
+                        "date": "2025-09-11"
                     }
                 ],
                 "translate_extreme_wind.txt": [
@@ -16907,6 +16939,10 @@
                     {
                         "text": "[發送機構]：針對[LOCATION]發布極端風暴警告，生命威脅性強風的立即危險將持續至[TIME]。立即躲避到堅固建築物的內側房間，遠離窗戶。保護頭部以防飛濺物傷害。如果風勢暫時平息，切勿外出！風勢將迅速再度轉為危險。[URL]",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[发送机构]：针对[LOCATION]发布极端强风警告，预计将出现危及生命的强风，直至[TIME]。立即在坚固建筑物的内部房间躲避，远离窗户。保护头部免受飞溅物的伤害。即使风势暂时减弱，也切勿外出！风力将迅速再次变得危险。[URL]",
+                        "date": "2025-09-11"
                     }
                 ]
             },
@@ -16920,6 +16956,10 @@
                     {
                         "text": "【緊急警報】火災通知：  \n火災警報！目前發現火勢，請立即撤離至安全區域。切勿使用電梯，以濕毛巾掩住口鼻，低姿勢迅速逃生。撥打119通報火災地點。保持冷靜，聽從指示。重複：立即撤離！",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "【火灾警报】紧急通知：附近发生火灾，请立即疏散！保持冷静，迅速沿安全通道撤离，勿乘电梯。如无法撤离，请关闭门窗，用湿布堵住缝隙，等待救援。拨打119报警。远离火源，确保自身安全！",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_persona.txt": [
@@ -16932,6 +16972,10 @@
                     {
                         "text": "[LOCATION]發生火災，請立即撤離至安全區域。火勢嚴重，請勿逗留。最新資訊請持續關注官方通報。緊急情況請撥打119。更多詳情請查看：[URL]。更新時間：[TIME]。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[地点]发生火灾紧急情况，持续至[时间]。火势正在蔓延，请立即撤离该区域或采取防护措施。避免靠近火灾现场，关闭门窗以防烟雾进入。请关注媒体获取最新信息。[URL]",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -16948,6 +16992,10 @@
                     {
                         "text": "[TIME]在[LOCATION]發生火災，請附近居民立即撤離至安全區域，避免靠近火場。消防人員已前往處理，詳細資訊請參閱[URL]。保持冷靜，遵從官方指示。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[时间] 在 [地点] 附近发生火灾，请附近居民立即撤离至安全区域，避免靠近。消防人员已赶往现场。更多信息请访问 [URL]。请保持冷静，遵循官方指示。",
+                        "date": "2025-09-11"
                     }
                 ],
                 "translate_fire.txt": [
@@ -17214,7 +17262,12 @@
                         "date": "2025-09-11"
                     }
                 ],
-                "prompt_one_shot.txt": [],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "CẢNH BÁO KHẨN CẤP: Cháy lớn đang xảy ra tại [LOCATION]. Người dân trong khu vực cần sơ tán ngay lập tức. Tránh xa khu vực cháy và tuân theo hướng dẫn của lực lượng chức năng. Thời gian dự kiến kiểm soát đám cháy: [TIME]. Theo dõi thông tin tại [URL] để biết thêm chi tiết.",
+                        "date": "2025-09-11"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [
                     {
                         "text": "\"⚠️ CẢNH BÁO KHẨN CẤP: Đám cháy đang xảy ra vào lúc [TIME] tại [LOCATION]. Vui lòng sơ tán ngay lập tức và tránh xa khu vực. Theo dõi thông tin tại [URL] để biết chi tiết. Giữ bình tĩnh và tuân theo hướng dẫn của cơ quan chức năng.\"",
@@ -17232,7 +17285,11 @@
                     "Dịch: [CƠ QUAN GỬI]: CẢNH BÁO CHÁY tại [ĐỊA ĐIỂM] có hiệu lực đến [THỜI GIAN]. Sơ tán ngay gia đình và thú cưng, không được chậm trễ. Tầm nhìn trong khu vực sẽ giảm và đường có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI các khu vực gần [ĐỊA ĐIỂM]. Dự đoán tầm nhìn hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Theo dõi nhân viên an toàn công cộng hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy di tản gia đình và thú cưng ngay lập tức, không được chậm trễ. Tầm nhìn trong khu vực sẽ giảm và đường có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. HÃY RỜI KHỎI các khu vực gần [LOCATION]. Dự đoán tầm nhìn giảm, khói dày đặc và khó thở. Cẩn thận khi lái xe. Để ý nhân viên an ninh đang hoạt động trong khu vực và làm theo hướng dẫn của họ. [URL]",
                     "[DỊCH VỤ GỬI]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực cho đến [TIME]. Sơ tán gia đình và vật nuôi ngay lập tức, không chần chừ. Tầm nhìn trong khu vực sẽ giảm và đường có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI khu vực gần [LOCATION]. Dự kiến tầm nhìn hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Theo dõi lực lượng an ninh hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]",
-                    "[CƠ QUAN PHÁT LỆNH]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng ngay lập tức, không được chậm trễ. Tầm nhìn trong khu vực sẽ bị hạn chế và đường sá có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. HÃY RỜI KHỎI các khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Để ý nhân viên an ninh công cộng đang làm việc trong khu vực và tuân theo hướng dẫn của họ. [URL]"
+                    "[CƠ QUAN PHÁT LỆNH]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng ngay lập tức, không được chậm trễ. Tầm nhìn trong khu vực sẽ bị hạn chế và đường sá có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. HÃY RỜI KHỎI các khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Để ý nhân viên an ninh công cộng đang làm việc trong khu vực và tuân theo hướng dẫn của họ. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Sơ tán gia đình và thú cưng ngay lập tức, không được chậm trễ. Tầm nhìn trong khu vực sẽ giảm và đường có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Cẩn thận khi lái xe. Theo dõi nhân viên an ninh công cộng hoạt động trong khu vực và làm theo hướng dẫn của họ. [URL]",
+                        "date": "2025-09-11"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -17241,18 +17298,46 @@
                     "**THÔNG BÁO KHẨN CẤP: ĐUN SÔI NƯỚC TRƯỚC KHI SỬ DỤNG**  Kính gửi quý cộng đồng,  Theo thông báo từ cơ quan chức năng, nguồn nước hiện nay có nguy cơ không đảm bảo an toàn. Để đảm bảo sức khỏe, **mọi người cần đun sôi nước trước khi sử dụng** cho các mục đích:  - Uống  - Nấu ăn  - Đánh răng  Thời hạn áp dụng: Cho đến khi có thông báo mới.  Xin cảm ơn sự hợp tác của quý vị. Mọi thắc mắc vui lòng liên hệ đường dây nóng: [Số điện thoại hoặc cơ quan liên hệ].  **LƯU Ý:** Chỉ sử dụng nước đã đun sôi hoặc nước đóng chai an toàn.",
                     "**THÔNG BÁO KHẨN CẤP: ĐUN SÔI NƯỚC TRƯỚC KHI SỬ DỤNG**  Kính gửi cộng đồng,  Theo thông báo từ cơ quan chức năng, nguồn nước hiện nay có thể không đảm bảo an toàn. Để đảm bảo sức khỏe, đề nghị mọi người **đun sôi nước ít nhất 1 phút** trước khi uống, nấu ăn hoặc đánh răng.  Áp dụng ngay lập tức cho đến khi có thông báo mới.  Trân trọng cảm ơn sự hợp tác!",
                     "**THÔNG BÁO KHẨN CẤP: ĐUN SÔI NƯỚC TRƯỚC KHI SỬ DỤNG**  Kính gửi quý cư dân,  Do phát hiện nguồn nước có nguy cơ ô nhiễm, chúng tôi khuyến cáo mọi người **đun sôi nước** trước khi sử dụng để uống, nấu ăn, đánh răng hoặc rửa thực phẩm. Nước cần được đun sôi ít nhất 1 phút và để nguội trước khi dùng.  Thông báo này có hiệu lực ngay lập tức cho đến khi có thông báo mới. Xin lỗi vì sự bất tiện này và cảm ơn sự hợp tác của quý vị.  Mọi thắc mắc vui lòng liên hệ đường dây nóng: [số điện thoại/địa chỉ liên hệ].",
-                    "**THÔNG BÁO KHẨN CẤP: ĐUN SÔI NƯỚC TRƯỚC KHI SỬ DỤNG**  Kính gửi quý cộng đồng,  Theo thông báo từ cơ quan chức năng, nguồn nước hiện tại có thể không đảm bảo an toàn. Để đảm bảo sức khỏe, mọi người vui lòng **đun sôi nước ít nhất 1 phút** trước khi uống, nấu ăn hoặc đánh răng.  Thời gian áp dụng: Từ ngày [dd/mm/yyyy] đến khi có thông báo mới.  Liên hệ ngay cơ quan y tế địa phương nếu có triệu chứng bất thường.  Xin cảm ơn sự hợp tác!  **Ủy ban Nhân dân/Tổ chức cấp nước [tên địa phương/công ty].**"
+                    "**THÔNG BÁO KHẨN CẤP: ĐUN SÔI NƯỚC TRƯỚC KHI SỬ DỤNG**  Kính gửi quý cộng đồng,  Theo thông báo từ cơ quan chức năng, nguồn nước hiện tại có thể không đảm bảo an toàn. Để đảm bảo sức khỏe, mọi người vui lòng **đun sôi nước ít nhất 1 phút** trước khi uống, nấu ăn hoặc đánh răng.  Thời gian áp dụng: Từ ngày [dd/mm/yyyy] đến khi có thông báo mới.  Liên hệ ngay cơ quan y tế địa phương nếu có triệu chứng bất thường.  Xin cảm ơn sự hợp tác!  **Ủy ban Nhân dân/Tổ chức cấp nước [tên địa phương/công ty].**",
+                    {
+                        "text": "\"THÔNG BÁO KHẨN CẤP: CẦN ĐUN SÔI NƯỚC TRƯỚC KHI SỬ DỤNG. Nguồn nước hiện có thể bị ô nhiễm. Để đảm bảo an toàn, vui lòng đun sôi nước ít nhất 1 phút trước khi uống, nấu ăn hoặc đánh răng. Thông báo này có hiệu lực ngay lập tức cho đến khi có thông báo mới. Xin lỗi vì sự bất tiện này.\"",
+                        "date": "2025-09-11"
+                    }
                 ],
-                "prompt_persona.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "EMERGENCY ALERT: BOIL WATER NOTICE. [LOCATION]. Contaminated water detected. Boil water before use until [TIME]. Visit [URL] for details.",
+                        "date": "2025-09-11"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "⚠️ Cảnh báo khẩn cấp: Lệnh đun sôi nước có hiệu lực tại [LOCATION] đến [TIME]. Nước máy có thể không an toàn để uống. Đun sôi nước ít nhất 1 phút trước khi sử dụng. Theo dõi thông tin cập nhật tại [URL]. ⚠️",
+                        "date": "2025-09-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "❗️Thông báo khẩn cấp: Nước máy tại [LOCATION] cần đun sôi trước khi sử dụng từ [TIME]. Tránh uống nước chưa đun sôi để phòng ngừa rủi ro sức khỏe. Chi tiết tại [URL]. Lưu ý: Tuân thủ hướng dẫn an toàn.❗️",
+                        "date": "2025-09-11"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "**BOIL WATER NOTICE: [TIME] tại [LOCATION]. Nước máy có thể không an toàn. Đun sôi nước ít nhất 1 phút trước khi dùng để uống, nấu ăn hoặc đánh răng. Theo dõi thêm tại [URL].**",
+                        "date": "2025-09-11"
+                    }
+                ],
                 "translate_boil_water_notice.txt": [
                     "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực cho đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Nếu có sẵn, hãy sử dụng nước đóng chai. Không uống, nấu ăn, đánh răng hoặc dọn dẹp nhà cửa bằng nước máy hoặc nước đã lọc trừ khi bạn đã đun sôi. Đun sôi nước sôi già trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức cho trẻ, hãy sử dụng sữa công thức pha sẵn. Đảm bảo thú cưng không uống nước chưa đun sôi. [URL]",
                     "[SENDING AGENCY]: CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hoặc nước đã lọc trừ khi bạn đã đun sôi nước. Đun sôi nước toàn phần trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức để nuôi trẻ, hãy sử dụng sữa công thức dạng pha sẵn. Đảm bảo vật nuôi không uống nước chưa đun sôi. [URL]",
                     "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hoặc nước đã lọc trừ khi bạn đã đun sôi. Đun sôi nước ở nhiệt độ sôi mạnh trong BA PHÚT. Để nguội nước trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức cho trẻ, hãy sử dụng loại sữa đã pha sẵn. Đảm bảo vật nuôi không uống nước chưa đun sôi. [URL]",
                     "[CƠ QUAN PHÁT HÀNH]: Một CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực cho đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có sẵn. Không uống, nấu ăn, đánh răng hoặc vệ sinh nhà cửa bằng nước máy hoặc nước đã lọc mà chưa đun sôi. Đun sôi nước với bọt lớn trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức cho trẻ, hãy sử dụng loại sẵn sàng dùng ngay. Đảm bảo thú cưng không uống nước chưa đun sôi. [URL]",
-                    "[SENDING AGENCY]: Một CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có sẵn. Không uống, nấu ăn, đánh răng hoặc dọn dẹp nhà bằng nước máy hoặc nước đã lọc cho đến khi bạn đun sôi. Đun sôi nước trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức cho trẻ, hãy dùng loại sữa đã pha sẵn. Đảm bảo thú cưng không uống nước chưa đun sôi. [URL]"
+                    "[SENDING AGENCY]: Một CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có sẵn. Không uống, nấu ăn, đánh răng hoặc dọn dẹp nhà bằng nước máy hoặc nước đã lọc cho đến khi bạn đun sôi. Đun sôi nước trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức cho trẻ, hãy dùng loại sữa đã pha sẵn. Đảm bảo thú cưng không uống nước chưa đun sôi. [URL]",
+                    {
+                        "text": "[SENDING AGENCY]: MỘT CẢNH BÁO ĐUN SÔI NƯỚC đã được ban hành cho [LOCATION] và có hiệu lực cho đến [TIME]. Nước trong khu vực của bạn có thể gây bệnh. Sử dụng nước đóng chai nếu có sẵn. Không uống, nấu ăn, đánh răng hoặc lau dọn nhà bằng nước máy hoặc nước đã lọc trừ khi bạn đã đun sôi. Đun sôi nước SÔI MẠNH TRONG BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa đun sôi. Nếu bạn dùng sữa công thức cho trẻ, hãy sử dụng loại sẵn sàng dùng ngay. Đảm bảo vật nuôi không uống nước chưa đun sôi. [URL]",
+                        "date": "2025-09-11"
+                    }
                 ]
             },
             "911_outage": {
@@ -17261,7 +17346,11 @@
                     "**THÔNG BÁO KHẨN CẤP:** Hiện tại hệ thống 911 đang gặp sự cố và có thể không thể tiếp nhận cuộc gọi. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát địa phương hoặc dịch vụ cứu hộ gần nhất. Xin lưu ý và chia sẻ thông tin này đến mọi người. Cảm ơn!",
                     "**CẢNH BÁO KHẨN CẤP:** Hệ thống 911 hiện đang gặp sự cố, không thể kết nối. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp đến số điện thoại của cảnh sát hoặc cơ quan ứng phó tại địa phương. Lưu giữ thông tin liên lạc khẩn cấp gần nhất của bạn. Cập nhật sẽ được thông báo khi hệ thống hoạt động trở lại.",
                     "**THÔNG BÁO KHẨN CẤP:** Hiện tại, hệ thống 911 đang gặp sự cố và có thể không hoạt động. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp đến số điện thoại của cảnh sát địa phương hoặc dịch vụ cứu hộ gần nhất. Xin lỗi vì sự bất tiện này và cảm ơn sự hợp tác của bạn.  \n\n**English Translation (for reference only):**  \n**EMERGENCY ALERT:** The 911 system is currently experiencing an outage and may not be operational. In case of an emergency, please contact your local police or rescue services directly. We apologize for the inconvenience and appreciate your cooperation.",
-                    "\"THÔNG BÁO KHẨN CẤP: Hệ thống 911 hiện đang gặp sự cố và có thể không thể tiếp nhận cuộc gọi. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát địa phương hoặc dịch vụ cứu hộ gần nhất. Chúng tôi đang khắc phục sự cố và sẽ thông báo ngay khi hệ thống hoạt động trở lại. Xin lỗi vì sự bất tiện này.\""
+                    "\"THÔNG BÁO KHẨN CẤP: Hệ thống 911 hiện đang gặp sự cố và có thể không thể tiếp nhận cuộc gọi. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát địa phương hoặc dịch vụ cứu hộ gần nhất. Chúng tôi đang khắc phục sự cố và sẽ thông báo ngay khi hệ thống hoạt động trở lại. Xin lỗi vì sự bất tiện này.\"",
+                    {
+                        "text": "```text\nEMERGENCY ALERT: 911 OUTAGE IN VI. 911 SERVICES ARE CURRENTLY UNAVAILABLE. IN CASE OF EMERGENCY, CONTACT LOCAL AUTHORITIES DIRECTLY OR GO TO THE NEAREST POLICE/FIRE STATION. STAY CALM & SHARE THIS INFO. UPDATES TO FOLLOW.  \n```",
+                        "date": "2025-09-11"
+                    }
                 ],
                 "prompt_persona.txt": [
                     {
@@ -17269,15 +17358,34 @@
                         "date": "2025-09-09"
                     }
                 ],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "**[TIME]**: Đang có sự cố mất dịch vụ 911 tại **[LOCATION]**. Nếu cần trợ giúp khẩn cấp, vui lòng liên hệ cảnh sát/ cứu thương địa phương qua số điện thoại khác. Theo dõi **[URL]** để cập nhật thông tin mới nhất. Bảo trọng.",
+                        "date": "2025-09-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "**VI (Vietnamese):**  \n⚠️ CẢNH BÁO KHẨN CẤP: Dịch vụ 911 đang gặp sự cố tại [LOCATION] vào lúc [TIME]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát hoặc dịch vụ cứu hộ địa phương. Theo dõi [URL] để biết thông tin cập nhật. Hãy bình tĩnh và giữ an toàn!",
+                        "date": "2025-09-11"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "**Thông báo khẩn cấp:** Sự cố mất dịch vụ 911 đang xảy ra tại [LOCATION] vào lúc [TIME]. Vui lòng sử dụng số điện thoại khẩn cấp thay thế hoặc đến đồn cảnh sát gần nhất. Theo dõi [URL] để cập nhật thông tin.",
+                        "date": "2025-09-11"
+                    }
+                ],
                 "translate_911_outage.txt": [
                     "[CƠ QUAN PHÁT THÔNG BÁO]: Cảnh báo mất dịch vụ 9-1-1 đang có hiệu lực tại [LOCATION]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]",
                     "[CƠ QUAN PHÁT HÀNH]: Cảnh báo MẤT KẾT NỐI 9-1-1 đang có hiệu lực tại [LOCATION]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]",
                     "[CƠ QUAN PHÁT HÀNH]: Cảnh báo MẤT KẾT NỐI 9-1-1 đang có hiệu lực tại [LOCATION]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]",
                     "[CƠ QUAN PHÁT TIN]: CẢNH BÁO GIÁN ĐOẠN DỊCH VỤ 9-1-1 đang có hiệu lực tại [LOCATION]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ. Nếu quý vị gọi 9-1-1, có thể sẽ không nhận được trợ giúp. [URL]",
-                    "[CƠ QUAN GỬI]: CẢNH BÁO MẤT KẾT NỐI 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, có thể bạn sẽ không nhận được trợ giúp. [URL]"
+                    "[CƠ QUAN GỬI]: CẢNH BÁO MẤT KẾT NỐI 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, có thể bạn sẽ không nhận được trợ giúp. [URL]",
+                    {
+                        "text": "[CƠ QUAN GỬI]: Cảnh báo MẤT KẾT NỐI 9-1-1 đang có hiệu lực tại [LOCATION]. Vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương trong trường hợp khẩn cấp. Nếu bạn gọi 9-1-1, bạn có thể không nhận được trợ giúp. [URL]",
+                        "date": "2025-09-11"
+                    }
                 ]
             }
         },
