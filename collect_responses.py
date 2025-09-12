@@ -26,9 +26,9 @@ import json
 import logging
 import argparse
 import arabic_reshaper
+import time
 from bidi.algorithm import get_display
 from datetime import date
-from datetime import time
 
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
