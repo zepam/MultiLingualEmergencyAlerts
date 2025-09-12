@@ -16109,6 +16109,10 @@
                     {
                         "text": "⚠ AVIS DLO POU BWI: Yon avis pou bwè dlo bouyi an vigè pou [LOCATION] jiskaske [TIME]. Pa bwè dlo ki pa trete. Itilize dlo boutèy oswa dlo bouyi pou bwè, kwit manje, lave manje, ak netwaye. Konsilte [URL] plis enfòmasyon. Fè atansyon.",
                         "date": "2025-08-23"
+                    },
+                    {
+                        "text": "AVÈTISMAN: Yon avi pou bouyi dlo an vigè pou [LOCATION] jiska [TIME]. Dlo nan pipay la ka danjere pou bwè. Tanpri bouyi dlo pou 1 minit anvan ou bwè, itilize pou kwit manje, oswa lave veso. Swiv enstriksyon ofisyèl yo pou pwoteje sante ou. Plis enfòmasyon nan [URL]",
+                        "date": "2025-09-11"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -17198,12 +17202,31 @@
                     "\"🚨 CẢNH BÁO KHẨN CẤP 🚨  Có cháy xảy ra tại [địa điểm]! Xin mọi người sơ tán ngay lập tức và gọi 114 (cứu hỏa) để được hỗ trợ. Di chuyển nhanh nhưng bình tĩnh, không sử dụng thang máy. Bảo vệ bản thân bằng cách dùng khăn ẩm che mũi, miệng. Tránh xa khu vực cháy và đến nơi an toàn!  🔊 Chia sẻ thông tin này để mọi người cùng biết!\"",
                     "\"CẢNH BÁO KHẨN CẤP: CÓ CHÁY! Xin lưu ý, đám cháy đang xảy ra tại khu vực gần bạn. Vui lòng di chuyển đến nơi an toàn ngay lập tức. Gọi 114 (cứu hỏa) hoặc 115 (cấp cứu) nếu cần trợ giúp. Không sử dụng thang máy, tuân theo hướng dẫn của lực lượng cứu hộ. Giữ bình tĩnh và hành động nhanh chóng!\"",
                     "\"CẢNH BÁO KHẨN CẤP: CÓ CHÁY XẢY RA TẠI KHU VỰC [địa điểm]! MỌI NGƯỜI LẬP TỨC SƠ TÁN THEO LỐI THOÁT HIỂM GẦN NHẤT. KHÔNG SỬ DỤNG THANG MÁY. GỌI NGAY 114 (CỨU HỎA) ĐỂ BÁO CÁO. GIỮ BÌNH TĨNH VÀ DI CHUYỂN NHANH CHÓNG!\"",
-                    "\"CẢNH BÁO KHẨN CẤP: Có cháy xảy ra tại khu vực gần bạn! Vui lòng di chuyển ngay đến nơi an toàn và gọi 114 (cứu hỏa) để được trợ giúp. Giữ bình tĩnh, không sử dụng thang máy. Tuân theo hướng dẫn của lực lượng chức năng. Báo động này được gửi để đảm bảo an toàn cho bạn và cộng đồng.\""
+                    "\"CẢNH BÁO KHẨN CẤP: Có cháy xảy ra tại khu vực gần bạn! Vui lòng di chuyển ngay đến nơi an toàn và gọi 114 (cứu hỏa) để được trợ giúp. Giữ bình tĩnh, không sử dụng thang máy. Tuân theo hướng dẫn của lực lượng chức năng. Báo động này được gửi để đảm bảo an toàn cho bạn và cộng đồng.\"",
+                    {
+                        "text": "**CẢNH BÁO KHẨN CẤP: CHÁY LỚN!**  \n\n📢 **Đang xảy ra cháy tại khu vực gần bạn!**  \n📍 Địa điểm: [Nhập địa điểm]  \n🔥 Lửa đang lan nhanh, đề nghị mọi người sơ tán ngay lập tức.  \n🚨 Gọi ngay 114 (Cảnh sát PCCC) hoặc 115 (Cấp cứu) nếu cần trợ giúp.  \n⚠️ Tránh xa khu vực cháy, không sử dụng thang máy.  \n🔇 Tuân theo hướng dẫn của lực lượng chức năng.  \n\n**HÃY BÌNH TĨNH VÀ DI CHUYỂN AN TOÀN!**",
+                        "date": "2025-09-11"
+                    }
                 ],
-                "prompt_persona.txt": [],
+                "prompt_persona.txt": [
+                    {
+                        "text": "[ALERT] Fire reported at [LOCATION] on [TIME]. Evacuate immediately if nearby. Avoid area. Monitor [URL] for updates. Stay safe.",
+                        "date": "2025-09-11"
+                    }
+                ],
                 "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "\"⚠️ CẢNH BÁO KHẨN CẤP: Đám cháy đang xảy ra vào lúc [TIME] tại [LOCATION]. Vui lòng sơ tán ngay lập tức và tránh xa khu vực. Theo dõi thông tin tại [URL] để biết chi tiết. Giữ bình tĩnh và tuân theo hướng dẫn của cơ quan chức năng.\"",
+                        "date": "2025-09-11"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Cảnh báo khẩn cấp: Đám cháy đang xảy ra tại [LOCATION] vào lúc [TIME]. Vui lòng tránh xa khu vực này và làm theo hướng dẫn của cơ quan chức năng. Truy cập [URL] để biết thêm thông tin cập nhật.",
+                        "date": "2025-09-11"
+                    }
+                ],
                 "translate_fire.txt": [
                     "[SENDING AGENCY]: CẢNH BÁO CHÁY tại [LOCATION] có hiệu lực đến [TIME]. Hãy sơ tán gia đình và thú cưng ngay lập tức, không chậm trễ. Tầm nhìn trong khu vực sẽ bị hạn chế và đường có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI các khu vực gần [LOCATION]. Dự kiến tầm nhìn giảm, khói dày đặc và khó thở. Cẩn thận khi lái xe. Để ý nhân viên an toàn công cộng đang làm việc trong khu vực và làm theo hướng dẫn của họ. [URL]",
                     "Dịch: [CƠ QUAN GỬI]: CẢNH BÁO CHÁY tại [ĐỊA ĐIỂM] có hiệu lực đến [THỜI GIAN]. Sơ tán ngay gia đình và thú cưng, không được chậm trễ. Tầm nhìn trong khu vực sẽ giảm và đường có thể bị chặn. Nếu không rời đi ngay, bạn có thể bị mắc kẹt, bị thương hoặc tử vong. RỜI KHỎI các khu vực gần [ĐỊA ĐIỂM]. Dự đoán tầm nhìn hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Theo dõi nhân viên an toàn công cộng hoạt động trong khu vực và tuân theo hướng dẫn của họ. [URL]",
