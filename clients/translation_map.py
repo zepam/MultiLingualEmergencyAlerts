@@ -36,17 +36,15 @@ TRANSLATION_MAP = {
     # "Marathi": "mr",      # 5000+ person language in WA state 2024
     "Samoan": "sm",       # 5000+ person language in WA state 2024
     # "Malayalam": "ml",    # 5000+ person language in WA state 2024
-    # CHECK THE LANGUAGE CODES BELOW
     # "Lao": "lo",          # 5000+ person language in WA state 2024
     # "Romanian": "ro",     # 5000+ person language in WA state 2024
     # "Nepali": "ne",       # 5000+ person language in WA state 2024
     # "Hmong": "hmn",      # 5000+ person language in WA state 2024
     # "Mixteco": "mix",     # 5000+ person language in WA state 2024
-    # "German": "de",       # 5000+ person language in WA state 2024
+    "German": "de",       # 5000+ person language in WA state 2024
     # "Filipino": "fil",    # 5000+ person language in WA state 2024
     # "Burmese": "my",      # 5000+ person language in WA state 2024
     # "Thai": "th",        # 5000+ person language in WA state 2024"
     # "Oromo": "om",          # 5000+ person language in WA state 2024
     # "Karen": "karen",     # 5000+ person language in WA state 2024
-
 }
