@@ -9178,6 +9178,168 @@
                     }
                 ]
             }
+        },
+        "german": {
+            "flood": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "🚨 **Hochwasserwarnung** 🚨  \nAchtung! Aufgrund anhaltender starker Regenfälle besteht akute Überschwemmungsgefahr. Verlassen Sie gefährdete Gebiete sofort und begeben Sie sich in höher gelegenes Terrain. Meiden Sie überflutete Straßen und Keller. Befolgen Sie die Anweisungen der Einsatzkräfte. Bleiben Sie informiert über Radio, Warn-Apps und offizielle Kanäle.  \n**Gefahr für Leib und Leben – handeln Sie umgehend!**",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Achtung! Aufgrund starker Regenfälle besteht akute Hochwassergefahr in [LOCATION] seit [TIME]. Bitte meiden Sie überflutete Gebiete und suchen Sie einen sicheren Ort auf. Bleiben Sie über die aktuelle Lage informiert unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[HERAUSGEBENDE STELLE]: Eine FLUTNOTLAGE gilt für [LOCATION] bis [TIME]. Schwere Überschwemmungen wurden in diesem Gebiet gemeldet. Dies ist eine lebensbedrohliche Situation. Begeben Sie sich sofort an höher gelegene Orte und meiden Sie überflutete Straßen. Wenn Sie sich im Freien oder in einem Fahrzeug befinden, suchen Sie umgehend Schutz in einem sicheren Gebäude. Überprüfen Sie aktuelle Meldungen. [URL]",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Achtung! In [LOCATION] besteht akute Überschwemmungsgefahr ab [TIME]. Bitte suchen Sie sofort höhergelegenes Gelände auf und meiden Sie überflutete Bereiche. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Achtung! Schweres Hochwasser in [LOCATION]. Bitte begeben Sie sich sofort in höher gelegene Gebiete und meiden Sie überflutete Straßen. Bleiben Sie aufmerksam und folgen Sie den Anweisungen der Behörden. Weitere Informationen finden Sie unter [URL]. Zeit der Warnung: [TIME].",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "⚠️ Unwetterwarnung ⚠️  \nAchtung! Extrem starke Winde in Ihrer Region. Bleiben Sie möglichst im Haus, sichern Sie lose Gegenstände im Freien und meiden Sie Wälder sowie Gebiete mit erhöhtem Risiko herabfallender Äste oder Trümmer. Folgen Sie den Anweisungen der Behörden und seien Sie wachsam.",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Warnung: Extrem starker Wind wird voraussichtlich um [TIME] in [LOCATION] auftreten. Bitte vermeiden Sie unnötige Reisen, sichern Sie lose Gegenstände und bleiben Sie nach Möglichkeit in geschlossenen Räumen. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[HERAUSGEBENDE BEHÖRDE]: Es gilt eine EXTREM-WIND-WARNUNG für [LOCATION] bis [TIME]. In diesem Gebiet treten extrem starke Windböen auf. Dies ist eine lebensgefährliche Situation. Suchen Sie sofort Schutz in einem stabilen Gebäude, möglichst in einem innenliegenden Raum fern von Fenstern. Wenn Sie sich im Freien, in einem Fahrzeug oder in einem mobilen Heim befinden, begeben Sie sich unverzüglich in einen sicheren Unterschlupf und schützen Sie sich vor umherfliegenden Trümmern. Verfolgen Sie aktuelle Meldungen. [URL]",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Achtung! Extrem starke Winde werden für [LOCATION] erwartet, beginnend um [TIME]. Bleiben Sie in geschützten Bereichen, sichern Sie lose Gegenstände und vermeiden Sie unnötige Fahrten. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Extreme Windwarnung für [LOCATION] ab [TIME]. Bleiben Sie in geschützten Bereichen, vermeiden Sie das Freie und sichern Sie lose Gegenstände. Weitere Informationen unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "🔥 **NOTFALLMELDUNG** 🔥  \nAchtung! In der Musterstraße 12 brennt ein Wohngebäude. Bitte meiden Sie den Bereich und halten Sie Zufahrtswege für Feuerwehr und Rettungsdienste frei. Fenster und Türen geschlossen halten! Weitere Informationen folgen.",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Achtung: Es gibt derzeit einen Brand um [LOCATION]. Bitte meiden Sie das Gebiet und befolgen Sie die Anweisungen der Einsatzkräfte. Der Vorfall begann um [TIME]. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[HERAUSGEBENDE STELLE]: FEUERWEHRNOTFALL für [LOCATION] seit [TIME]. Ein Großbrand wurde in diesem Gebiet gemeldet. Dies ist eine lebensbedrohliche Situation. Verlassen Sie umgehend das Gebiet oder suchen Sie Schutz in einem sicheren, geschlossenen Gebäude. Halten Sie Fenster und Türen geschlossen und vermeiden Sie Rauchinhalation. Folgen Sie den Anweisungen der Einsatzkräfte vor Ort. Weitere Informationen unter [URL]",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Es gibt einen Brand bei [LOCATION] um [TIME]. Bitte meiden Sie das Gebiet und folgen Sie den Anweisungen der Einsatzkräfte. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Notfallmeldung: Ein Brand wurde um [TIME] in der Nähe von [LOCATION] gemeldet. Bitte meiden Sie das Gebiet und folgen Sie den Anweisungen der Einsatzkräfte. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "***WICHTIGE MITTEILUNG: ABKOCHAUFLAGE***  \nAufgrund einer möglichen Verunreinigung des Trinkwassers muss das Leitungswasser ab sofort vor dem Trinken, Kochen oder Zähneputzen mindestens 3 Minuten sprudelnd abgekocht werden. Verwenden Sie abgekochtes oder abgefülltes Wasser für alle Getränke- und Lebensmittelzubereitungen. Die Abkochauflage bleibt bestehen, bis eine Entwarnung erfolgt. Bitte informieren Sie auch Ihre Nachbarn.",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Ab [TIME] gilt für [LOCATION] eine Abkoch­anordnung. Trinken oder verwenden Sie Leitungswasser nur nach vorherigem Abkochen, um mögliche gesundheitliche Risiken zu vermeiden. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "[HERAUSGEBENDE BEHÖRDE]: Eine Abkochwarnung für Trinkwasser gilt für [LOCATION] bis [TIME]. Leitungswasser muss vor dem Trinken, Kochen, Zähneputzen oder Abwaschen mindestens 1 Minute sprudelnd abgekocht werden, um mögliche Krankheitserreger abzutöten. Nutzen Sie alternativ abgepacktes Wasser. Weitere Informationen unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Achtung: Ab [TIME] gilt für [LOCATION] eine Abkoch­anordnung für Trinkwasser. Bitte kochen Sie Leitungswasser mindestens 3 Minuten lang ab, bevor Sie es zum Trinken, Kochen oder Zähneputzen verwenden. Diese Maßnahme bleibt in Kraft, bis eine Entwarnung erfolgt. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Achtung! Ab [TIME] gilt für [LOCATION] eine Anordnung zum Abkochen von Leitungswasser. Trinken oder verwenden Sie Leitungswasser nur, nachdem es mindestens 1 Minute sprudelnd gekocht wurde. Dies gilt auch für die Zubereitung von Speisen, Getränke und das Zähneputzen. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "NOTFALLMELDUNG: Aufgrund einer landesweiten Störung ist der Notruf 112 derzeit nicht erreichbar. Bitte wenden Sie sich im Notfall direkt an die örtliche Polizei- oder Feuerwehrdienststelle oder nutzen Sie alternative Notfallnummern, falls verfügbar.",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Notruf 911 ist derzeit nicht verfügbar in [LOCATION], Stand [TIME]. Falls Sie dringende Hilfe benötigen, kontaktieren Sie bitte Ihre örtliche Polizei oder Feuerwehr direkt. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Wichtige Meldung: Es liegt eine 911-Störung in [LOCATION] vor. Notrufe sind derzeit nicht erreichbar. Verwenden Sie bei einem Notfall die alternativen Notrufnummern Ihrer Region. Bleiben Sie aufmerksam und informieren Sie sich regelmäßig über aktuelle Entwicklungen. Weitere Informationen finden Sie unter [URL]. Ende der Störung wird voraussichtlich um [TIME] erwartet.",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Achtung: Derzeit besteht eine Störung des 911-Notrufs seit [TIME] in [LOCATION]. Wählen Sie im Notfall bitte die lokale Polizeidienststelle oder Feuerwehr direkt. Weitere Informationen finden Sie unter [URL].",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "In Ihrer Region [LOCATION] ist derzeit ein Ausfall von 911-Notrufdiensten gemeldet. Bitte rufen Sie im Notfall die örtliche Polizei- oder Feuerwehrleitstelle unter deren direkten Telefonnummern an.  \nZeit des Ausfalls: [TIME]  \nWeitere Informationen finden Sie unter: [URL]",
+                        "date": "2025-09-13"
+                    }
+                ]
+            }
         }
     },
     "gemini": {
@@ -18906,6 +19068,198 @@
                     }
                 ]
             }
+        },
+        "german": {
+            "flood": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "Hochwasser! Sofort in Sicherheit bringen!\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Hochwasserwarnung!  Um [TIME] wurde ein Hochwasser in [LOCATION] gemeldet.  Weitere Informationen finden Sie unter [URL].  Suchen Sie im Bedarfsfall Schutz auf höher gelegenem Gelände.\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Hochwasserwarnung!  Flutgefahr in [LOCATION] bis [TIME].  Suchen Sie sofort höher gelegenes Gelände auf. Lebensgefahr! Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Hochwassergefahr!  Die [LOCATION] ist derzeit von schweren Überschwemmungen betroffen.  Evakuieren Sie bitte den betroffenen Bereich umgehend.  Weitere Informationen finden Sie unter [URL].  Die Warnung gilt ab [TIME].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Hochwasserwarnung!  [LOCATION] ist von schweren Überschwemmungen betroffen.  Suchen Sie sofort einen sicheren Ort auf. Weitere Informationen finden Sie unter [URL].  Letzte Aktualisierung: [TIME].  Achten Sie auf Ihre Sicherheit!\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Eine EXTREME HOCHWASSERWARNUNG gilt für [LOCATION] bis [TIME]. Dies ist eine extrem gefährliche und lebensbedrohliche Situation. Versuchen Sie nicht zu reisen, es sei denn, Sie fliehen vor einem Gebiet, das überflutet werden könnte, oder befinden sich unter einer Evakuierungsanordnung. [URL]\n",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "Extreme Windböen! Bleiben Sie drinnen! Gefahr von umstürzenden Bäumen und Gegenständen!\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Extrem starker Wind!  Suchen Sie Schutz vor umherfliegenden Trümmern.  Weitere Informationen finden Sie unter [URL].  Betroffen ist die Region um [LOCATION].  Warnung gültig ab [TIME].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Extrem starker Wind wird für [LOCATION] bis [TIME] erwartet.  Suchen Sie sofort Schutz vor umherfliegenden Gegenständen.  Gefahr für Leib und Leben. Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Extrem starker Wind!  Suchen Sie sofort Schutz!  Die Gefahr von umstürzenden Bäumen und herumfliegenden Gegenständen ist sehr hoch.  Weitere Informationen finden Sie unter [URL].  Betroffen ist die Region [LOCATION].  Warnung gültig bis [TIME].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "EXTREME WINDWARNUNG!  Starker Wind mit Geschwindigkeiten bis zu [TIME] wird in [LOCATION] erwartet.  Suchen Sie Schutz vor umherfliegenden Gegenständen.  Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Eine EXTREME WINDWARNUNG gilt für [LOCATION] wegen unmittelbarer Gefahr lebensbedrohlicher Winde bis [TIME]. Suchen Sie SOFORT Schutz in einem Innenraum eines stabilen Gebäudes, fern von Fenstern. Schützen Sie Ihren Kopf vor herumfliegenden Gegenständen. Gehen Sie NICHT nach draußen, wenn der Wind nachlässt! Der Wind wird schnell wieder gefährlich werden. [URL]\n",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "Brand! Feuerwehr gerufen!\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Brandgefahr in [LOCATION]! Evakuieren Sie das Gebiet sofort.  Weitere Informationen finden Sie unter [URL].  [TIME]\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Brandgefahr in [LOCATION]!  Evakuieren Sie sofort das Gebiet.  Die Feuerwehr ist im Einsatz.  Weitere Informationen finden Sie unter [URL].  Die Warnung gilt bis [TIME].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Brandgefahr! Feuer in [LOCATION]! Evakuieren Sie sofort das Gebiet.  Weitere Informationen finden Sie unter [URL].  Die Feuerwehr ist bereits im Einsatz.  [TIME]\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Brandgefahr!  Feuer in [LOCATION].  Evakuieren Sie den Bereich sofort.  Weitere Informationen finden Sie unter [URL].  [TIME]\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: FEUERWARNUNG in [LOCATION] bis [TIME]. Evakuieren Sie jetzt Ihre Familie und Haustiere, zögern Sie nicht. Die Sichtweite in diesem Gebiet wird reduziert sein und Straßen können blockiert werden. Wenn Sie jetzt nicht gehen, könnten Sie gefangen, verletzt oder getötet werden. VERLASSEN Sie Gebiete in der Nähe von [LOCATION]. Es ist mit eingeschränkter Sicht, starkem Rauch und Atembeschwerden zu rechnen. Seien Sie vorsichtig beim Fahren. Achten Sie auf im Gebiet eingesetztes Sicherheitspersonal und befolgen Sie dessen Anweisungen. [URL]\n",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "Wichtige Durchsage! Wasserkochanweisung in Kraft. Leitungswasser abkochen vor Gebrauch!  Weitere Infos folgen.\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Wichtige Durchsage: Aufgrund [LOCATION] wurde eine Siedeverordnung erlassen.  Bitte kochen Sie Ihr Wasser ab, bevor Sie es trinken oder zum Kochen verwenden.  Die Verordnung gilt ab [TIME]. Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Wichtige Information: Aufgrund einer Störung wurde für [LOCATION] bis [TIME] eine Siedeordnung für Trinkwasser erlassen.  Verwenden Sie zum Trinken, Kochen und Zähneputzen nur abgekochtes Wasser. Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Wichtige Information! Aufgrund einer Wasserverunreinigung besteht ab [TIME] in [LOCATION] eine Siedeverordnung. Trinken Sie kein Leitungswasser, ohne es vorher abzukochen. Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Wichtige Durchsage! Aufgrund [LOCATION] besteht derzeit eine amtliche Anordnung zum Abkochen von Leitungswasser.  Bitte kochen Sie Ihr Leitungswasser mindestens eine Minute lang ab, bevor Sie es trinken oder zum Kochen verwenden.  Weitere Informationen finden Sie unter [URL].  Die Anordnung gilt ab [TIME].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Eine SIEDEWASSERWARNUNG wurde für [LOCATION] herausgegeben und gilt bis [TIME]. Das Wasser in Ihrer Gemeinde kann Sie krank machen. Verwenden Sie nach Möglichkeit Flaschenwasser. Trinken Sie kein Leitungswasser oder gefiltertes Wasser, kochen Sie nicht damit, putzen Sie sich nicht die Zähne damit und reinigen Sie Ihr Haus nicht damit, bevor Sie es abgekocht haben. Kochen Sie das Wasser drei Minuten lang sprudelnd auf. Lassen Sie das Wasser abkühlen, bevor Sie es verwenden. Verwenden Sie kein Eis, das mit nicht abgekochtem Wasser hergestellt wurde. Wenn Sie Ihr Kind mit Säuglingsnahrung ernähren, verwenden Sie gebrauchsfertige Säuglingsnahrung. Stellen Sie sicher, dass Haustiere kein Wasser trinken, das nicht abgekocht wurde. [URL]\n",
+                        "date": "2025-09-13"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple.txt": [
+                    {
+                        "text": "Notruf 112 funktioniert nicht!  Lebensbedrohlicher Notfall!\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "Notfallmeldung: Der Notruf 911 ist derzeit in [LOCATION] ausgefallen ([TIME]).  Weitere Informationen finden Sie unter [URL]. Bitte wenden Sie sich bei dringenden Fällen an die nächstgelegene Polizeidienststelle.\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Notfallmeldung: Der Notruf 112 ist derzeit in [LOCATION] aufgrund eines Systemausfalls nicht erreichbar.  Die Störung besteht seit [TIME].  Bitte nutzen Sie alternative Kontaktwege, falls dringend Hilfe benötigt wird. Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Wichtiger Hinweis: Der Notruf (112) ist derzeit in [LOCATION] aufgrund eines technischen Ausfalls nicht verfügbar.  Bitte nutzen Sie alternative Möglichkeiten, um Hilfe zu erhalten.  Der Ausfall begann um [TIME].  Weitere Informationen finden Sie unter [URL].\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "prompt_persona.txt": [
+                    {
+                        "text": "Notfallmeldung: Der Notruf (112) ist in [LOCATION] derzeit nicht erreichbar.  Bitte versuchen Sie es später erneut oder wenden Sie sich an alternative Notrufstellen.  Weitere Informationen finden Sie unter [URL].  [TIME]\n",
+                        "date": "2025-09-13"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Eine 9-1-1-STÖRUNGSMELDUNG gilt für [LOCATION]. Bitte wenden Sie sich im Notfall direkt an die örtlichen Telefonnummern der Polizei, Feuerwehr, medizinischen Dienste oder anderer Notdienste. Wenn Sie 9-1-1 wählen, erhalten Sie möglicherweise keine Hilfe. [URL]\n",
+                        "date": "2025-09-13"
+                    }
+                ]
+            }
         }
     },
     "deepseek": {
@@ -21990,6 +22344,43 @@
                 "prompt_cross_lingual_alignment.txt": [],
                 "prompt_persona.txt": []
             }
+        },
+        "german": {
+            "flood": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "extreme_wind": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "fire": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "boil_water_notice": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            },
+            "911_outage": {
+                "prompt_simple.txt": [],
+                "prompt_chain_of_translation.txt": [],
+                "prompt_one_shot.txt": [],
+                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_persona.txt": []
+            }
         }
     },
     "google_translate": {
@@ -23613,6 +24004,38 @@
                     "date": "2025-09-12"
                 }
             ]
+        },
+        "german": {
+            "flood": [
+                {
+                    "text": "[AUSSTELLENDE AGENTUR]: Für [ORT] gilt bis [ZEIT] ein STURZFLUTNOT. Dies ist eine extrem gefährliche und lebensbedrohliche Situation. Versuchen Sie nicht zu reisen, es sei denn, Sie fliehen aus einem Gebiet, das überschwemmungsgefährdet ist oder gegen das eine Evakuierungsanordnung verhängt wurde. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[ABSENDENDE AGENTUR]: Für [ORT] gilt eine EXTREME WINDWARNUNG wegen unmittelbarer Gefahr lebensgefährlicher Winde bis [ZEIT]. Suchen Sie SOFORT Schutz in einem Innenraum eines stabilen Gebäudes, fern von Fenstern. Schützen Sie Ihren Kopf vor umherfliegenden Gegenständen. Gehen Sie NICHT nach draußen, wenn der Wind nachlässt! Der Wind wird schnell wieder gefährlich. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[ABSETZENDER AGENTUR]: Eine FEUERWARNUNG in [ORT] gilt bis [ZEIT]. Evakuieren Sie Ihre Familie und Haustiere sofort und zögern Sie nicht. Die Sicht in der Umgebung ist eingeschränkt, und Straßen können gesperrt werden. Wenn Sie den Bereich nicht sofort verlassen, besteht die Gefahr, dass Sie eingeschlossen, verletzt oder getötet werden. VERLASSEN Sie Bereiche in der Nähe von [ORT]. Es kann zu eingeschränkter Sicht, dichter Rauchentwicklung und Atembeschwerden kommen. Seien Sie beim Fahren vorsichtig. Achten Sie auf Sicherheitskräfte und befolgen Sie deren Anweisungen. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[ABSETZENDES AGENTUR]: Für [ORT] wurde eine WASSER-KOCHERWARNUNG herausgegeben, die bis [ZEIT] gültig ist. Wasser in Ihrer Gemeinde kann Sie krank machen. Verwenden Sie, wenn verfügbar, abgefülltes Wasser. Trinken, kochen, putzen oder reinigen Sie Ihr Zuhause nicht mit Leitungswasser oder gefiltertem Wasser, bevor Sie es abgekocht haben. Bringen Sie das Wasser DREI MINUTEN lang zum Kochen. Lassen Sie das Wasser vor Gebrauch abkühlen. Verwenden Sie kein Eis, das mit nicht abgekochtem Wasser hergestellt wurde. Wenn Sie Ihr Kind mit Säuglingsnahrung füttern, verwenden Sie gebrauchsfertige Säuglingsnahrung. Achten Sie darauf, dass Haustiere kein nicht abgekochtes Wasser trinken. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[ABSETZENDES AGENTUR]: Für [ORT] gilt eine 9-1-1-AUSFALLSALARM. Bitte wenden Sie sich im Notfall direkt an Polizei, Feuerwehr, Notarzt oder andere Notdienste unter den lokalen Telefonnummern. Wenn Sie 9-1-1 wählen, erhalten Sie möglicherweise keine Hilfe. [URL]",
+                    "date": "2025-09-13"
+                }
+            ]
         }
     },
     "deepL": {
@@ -24506,6 +24929,38 @@
             "fire": [],
             "boil_water_notice": [],
             "911_outage": []
+        },
+        "german": {
+            "flood": [
+                {
+                    "text": "[ENTSENDENDE STELLE]: Ein FLASH FLOOD EMERGENCY ist für [ORT] bis [ZEIT] in Kraft. Dies ist eine extrem gefährliche und lebensbedrohliche Situation. Versuchen Sie nicht zu reisen, es sei denn, Sie fliehen aus einem Gebiet, das überschwemmt werden könnte oder für das ein Evakuierungsbefehl gilt. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "extreme_wind": [
+                {
+                    "text": "[SENDENDE STELLE]: Für [ORT] gilt eine EXTREME WINDWARNUNG wegen der unmittelbaren Gefahr von lebensbedrohlichen Stürmen bis [ZEIT]. Suchen Sie JETZT Schutz in einem Innenraum eines stabilen Gebäudes, entfernt von Fenstern. Schützen Sie Ihren Kopf vor fliegenden Gegenständen. Gehen Sie NICHT ins Freie, wenn der Wind nachlässt! Die Winde werden schnell wieder gefährlich. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "fire": [
+                {
+                    "text": "[SENDENDE STELLE]: Eine FEUERWARNUNG in [ORT] ist bis [ZEIT] in Kraft. Evakuieren Sie Ihre Familie und Haustiere jetzt, zögern Sie nicht. Die Sicht in dem Gebiet wird eingeschränkt und die Straßen können blockiert werden. Wenn Sie das Gebiet nicht sofort verlassen, könnten Sie eingeschlossen, verletzt oder getötet werden. Verlassen Sie Gebiete in der Nähe von [STANDORT]. Rechnen Sie mit eingeschränkter Sicht, starkem Rauch und Atembeschwerden. Seien Sie beim Fahren vorsichtig. Halten Sie Ausschau nach Sicherheitskräften, die in dem Gebiet tätig sind, und folgen Sie deren Anweisungen. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "boil_water_notice": [
+                {
+                    "text": "[SENDENDE STELLE]: Für [ORT] wurde ein KÜHLWASSERALARM ausgegeben, der bis zum [ZEITPUNKT] in Kraft ist. Das Wasser in Ihrer Gemeinde kann Sie krank machen. Verwenden Sie abgefülltes Wasser, falls verfügbar. Trinken Sie kein Leitungswasser oder gefiltertes Wasser, kochen Sie nicht damit, putzen Sie sich nicht damit die Zähne und reinigen Sie Ihr Haus nicht damit, bevor Sie es nicht abgekocht haben. Bringen Sie das Wasser für DREI MINUTEN zum Kochen. Lassen Sie das Wasser vor dem Gebrauch abkühlen. Verwenden Sie kein Eis, das mit nicht abgekochtem Wasser hergestellt wurde. Wenn Sie Ihr Kind mit Säuglingsnahrung füttern, verwenden Sie nur gebrauchsfertige Säuglingsnahrung. Achten Sie darauf, dass Haustiere kein ungekochtes Wasser trinken. [URL]",
+                    "date": "2025-09-13"
+                }
+            ],
+            "911_outage": [
+                {
+                    "text": "[SENDENDE STELLE]: Ein 9-1-1 OUTAGE ALERT ist für [STANDORT] in Kraft. Bitte wenden Sie sich in Notfällen direkt an die Polizei, die Feuerwehr, den Rettungsdienst oder andere Notdienste unter den jeweiligen Telefonnummern vor Ort. Wenn Sie 9-1-1 wählen, erhalten Sie möglicherweise keine Hilfe. [URL]",
+                    "date": "2025-09-13"
+                }
+            ]
         }
     }
 }
