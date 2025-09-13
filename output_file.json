@@ -7548,7 +7548,12 @@
                         "date": "2025-09-12"
                     }
                 ],
-                "translate_extreme_wind.txt": []
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Eṃool in JERBAL INNEMANE EAN̄ WŌD in kōnaan etal iúon [LOCATION] n̄an kōnnaan menin mour in wōd in nejilok ilo [TIME]. Jouj im etal ILO IOKWŌL eo ilo bōk in bûkjen̄ eo emṃool, jino̧tata jen bōk in window. Bōk eban̄mo̧n̄ ioon ka̧lo̧k kōn aolep menin ejjit. Ejjab etal io̧kwe ilo bōk in window elañe ej minar jino̧tata wōd! Wōd ej kom̧m̧ane ioon men in ejjit ilo ien kein. [URL]",
+                        "date": "2025-09-12"
+                    }
+                ]
             },
             "fire": {
                 "prompt_simple.txt": [
@@ -7578,6 +7583,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "Ewi jorren in mweo im mej ekar bed wōt ioon [LOCATION] ilo [TIME]. Jouj im bed ilo ukok, bwe kwon mour. Etale im maron in melele bar wōt ilo [URL].",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: EJJEJ KE EWAK INNAN IN EJJIT IN [LOCATION] KEJERBAL KWIJIN KEJERBAL ILO [TIME]. KŌŃA JIKIER IJOKWE IM KŌṂAN KŌKKŌŢAN BWE ENEJ RANIN IN, JAB KŌJERBAL IEN. KŌŃA JORREN AN KIJID ILO AELŌŃ EO IM DWUIJ IN EDDRE IM JABDRE. EÑE JETE TOK JIKIER JAB TOK, KWONAJ BŌK KŌJENMAÑ, JORREN, AK MOUR IN KAWAK. JITOK LOK AN KWAAR ITOK JERBAL ILO [LOCATION]. ETAL KŌŃA KWAAR ETAL KIJID, ANE IM MOKTA JET AK KŌJENMAÑ IN KWAAR MŌKTA. EJJAB MELIM JAB BWE KWAR BŌK KAMIJ JERBAL ILO MOTER. EJEJ MOUR IN BŌK KUWAJ ENE IM JIBWE IM JAB BELLE KO AN KŌJERBAL AN KŌJELAAN KO IM JAB BELLE KŌŃAŅŌJ WŌT AN KWAR JIBWE. [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -7612,6 +7623,12 @@
                         "text": "Ilo [TIME], ilo [LOCATION], ejaak in bwe jouj im boil e ien in wōt wōt wōt in mour in bwe emman ñan kejid im jabdewōt. Lukkun etal nan [URL] ñan kajjitōk im melele ko mour.",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: EJJELŌK AN BŌL EO EJ JIBBON ILO MOUR IN BŌL WATER ALERT NON [LOCATION] IM ENE EJ JINO JINO KALIKAR N̄AN [TIME]. EAN INE ILO BWIJ EO AM EKAUJ JAB LON̄, ETKE EDDO. KAB AUROK BBUKUL ENANA EDRAE IN KIN AJRI DRINK BBUKUL, KIN INAAN KO, IM KIN MŪRJIK ŌM BBUKUL. KAJETOK BBUKUL N̄AN DRINK, KIN KŌJINENEKO AM, KIN JIKŌ N̄AN INAAN, IM KIN JINOJINOM ŌM BBUKUL ELŌN̄ MEN INE, AORŌK WOJJİJ N̄AN DRINK. EJJELOK KIN WAAN KE JAB BOIL. EKOJEN KŌJIPIPIJ ILO PRŌKŌL EKKAAN INE EDDO. MAKE EJJELOK KO RŌJIKŌNDRIK ILAN̄ KO EJJELOK BOIL. [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -7621,7 +7638,12 @@
                         "date": "2025-09-12"
                     }
                 ],
-                "prompt_chain_of_translation.txt": [],
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[LOCATION] ej aikuj inekļok kōnono: Ejjeḷọk jino 911 ilo [TIME]. Kir ko rej aikuj kōnono kōkāāl ilo [URL] non melele.",
+                        "date": "2025-09-12"
+                    }
+                ],
                 "prompt_one_shot.txt": [
                     {
                         "text": "Ijo 911 ej jab bok sapor in [LOCATION] jen [TIME]. Kwaar jab boke jonan 911 ilo ien in. Kejbarok kin jonan ko armej ro ie, ej aikuj in kojerbal nomba ko karejir lok. Bar jelet im kio non wia kein kakkure jen armej ro. Melele ko ukok ilo [URL].",
@@ -7637,6 +7659,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "Iien [TIME], ej juon bōkļā in jipañ 911 im ej kōṃṃan menin kōkāāl ilo [LOCATION]. Jouj im kōjparok bwe kwōn jab kōṃṃaneoan 911. Eṃool an jeja im bwe ettōr nan kiki [URL].",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Ej bed ilo aolep an 9-1-1 OUTAGE ALERT nan [LOCATION]. Jouj im kakobaak tok kin police, fire, medical, ak men ko elap an bedbed ilo nomba in local elane ej bedbed. Elane kwoj kui 9-1-1, emaron bwe ren jab jibwe tok kom. [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -7673,6 +7701,12 @@
                         "text": "[LOCATION] ਵਿੱਚ [TIME] ਵੱਡਾ ਬਾੜ ਆ ਗਿਆ ਹੈ। ਲੋਕਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਥਾਵਾਂ 'ਤੇ ਜਾਣ ਦੀ ਅਪੀਲ ਹੈ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ [URL] 'ਤੇ ਜਾਓ।",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ਇੱਕ ਅਚਾਨਕ ਆਈ ਹੜ੍ਹ ਦੀ ਐਮਰਜੈਂਸੀ [LOCATION] ਲਈ [TIME] ਤੱਕ ਪ੍ਰਭਾਵੀ ਹੈ। ਇਹ ਬਹੁਤ ਹੀ ਖ਼ਤਰਨਾਕ ਅਤੇ ਜਾਨ ਲਈ ਖ਼ਤਰਾ ਬਣਾਉਣ ਵਾਲੀ ਸਥਿਤੀ ਹੈ। ਯਾਤਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨਾ ਕਰੋ ਜੇ ਤੱਕ ਤੁਸੀਂ ਕਿਸੇ ਐਸੇ ਖੇਤਰ ਤੋਂ ਨਹੀਂ ਨਿਕਲ ਰਹੇ ਜੋ ਹੜ੍ਹ ਨਾਲ ਡੁੱਬ ਸਕਦਾ ਹੈ ਜਾਂ ਤੁਹਾਨੂੰ ਖਾਲੀ ਕਰਨ ਦਾ ਹੁਕਮ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ। [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -7703,6 +7737,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[TIME] ‘ਤੇ [LOCATION] ‘ਚ ਬਹੁਤ ਤੇਜ਼ ਹਵਾ ਦੀ ਚੇਤਾਵਨੀ। ਘਰ ਅੰਦਰ ਰਹੋ, ਖਿੜਕੀਆਂ ਤੋਂ ਦੂਰ ਰਹੋ, ਤੇ ਬਾਹਰ ਜਾਣ ਤੋਂ ਬਚੋ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ [URL] ‘ਤੇ ਜਾਓ।",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] ਲਈ ਇੱਕ ਅਤਿ ਤੇਜ਼ ਹਵਾ ਦੀ ਚੇਤਾਵਨੀ [TIME] ਤੱਕ ਜਾਰੀ ਹੈ, ਜੀਵਨ ਲਈ ਖਤਰਨਾਕ ਹਵਾਵਾਂ ਦੇ ਤੁਰੰਤ ਖਤਰੇ ਕਰਕੇ। ਤੁਰੰਤ ਕਿਸੇ ਮਜ਼ਬੂਤ ਇਮਾਰਤ ਦੇ ਅੰਦਰਲੇ ਕਮਰੇ ਵਿੱਚ ਜਾਓ, ਖਿੜਕੀਆਂ ਤੋਂ ਦੂਰ ਰਹੋ। ਉਡਦੇ ਵਸਤੂਆਂ ਤੋਂ ਆਪਣੇ ਸਿਰ ਦੀ ਰੱਖਿਆ ਕਰੋ। ਜੇ ਹਵਾ ਹੌਲੀ ਹੋ ਜਾਵੇ ਤਾਂ ਬਾਹਰ ਨਾ ਨਿਕਲੋ! ਹਵਾਵਾਂ ਬਹੁਤ ਜਲਦੀ ਮੁੜ ਖਤਰਨਾਕ ਹੋ ਜਾਣਗੀਆਂ। [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -7737,6 +7777,12 @@
                         "text": "[TIME] ‘ਤੇ [LOCATION] ‘ਚ ਅੱਗ ਲੱਗ ਗਈ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸੁਰੱਖਿਅਤ ਥਾਂ ਤੇ ਜਾਓ ਅਤੇ ਐਮਰਜੈਂਸੀ ਸੇਵਾਵਾਂ ਦੇ ਹੁਕਮਾਂ ਦੀ ਪਾਲਣਾ ਕਰੋ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ [URL] ਤੇ ਜਾਓ।",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] ਵਿੱਚ ਅੱਗ ਬਾਰੇ ਚੇਤਾਵਨੀ [TIME] ਤੱਕ ਲਾਗੂ ਹੈ। ਆਪਣੇ ਪਰਿਵਾਰ ਅਤੇ ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਨੂੰ ਹੁਣੇ ਖਾਲੀ ਕਰੋ, ਦੇਰ ਨਾ ਕਰੋ। ਖੇਤਰ ਵਿੱਚ ਦ੍ਰਿਸ਼ਤਾ ਘੱਟ ਹੋ ਜਾਵੇਗੀ ਅਤੇ ਸੜਕਾਂ ਬੰਦ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਜੇਕਰ ਤੁਸੀਂ ਹੁਣ ਨਾ ਨਿਕਲੇ, ਤਾਂ ਤੁਸੀਂ ਫਸ ਸਕਦੇ ਹੋ, ਜਖਮੀ ਹੋ ਸਕਦੇ ਹੋ, ਜਾਂ ਮਾਰੇ ਜਾ ਸਕਦੇ ਹੋ। [LOCATION] ਦੇ ਨੇੜੇ ਵਾਲੇ ਖੇਤਰਾਂ ਤੋਂ ਨਿਕਲੋ। ਘੱਟ ਦ੍ਰਿਸ਼ਤਾ, ਵੱਧ ਧੂੰਆਂ, ਅਤੇ ਸਾਹ ਲੈਣ ਵਿੱਚ ਮੁਸ਼ਕਲ ਦੀ ਉਮੀਦ ਰੱਖੋ। ਗੱਡੀ ਚਲਾਉਂਦੇ ਸਮੇਂ ਸਾਵਧਾਨ ਰਹੋ। ਖੇਤਰ ਵਿੱਚ ਕੰਮ ਕਰ ਰਹੇ ਜਨਤਕ ਸੁਰੱਖਿਆ ਕਰਮਚਾਰੀਆਂ ਦਾ ਧਿਆਨ ਰੱਖੋ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਹੁਕਮਾਂ ਦੀ ਪਾਲਣਾ ਕਰੋ। [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -7769,6 +7815,12 @@
                         "text": "[TIME] ਤੋਂ [LOCATION] ਖੇਤਰ ਵਿੱਚ ਪਾਣੀ ਨੂੰ ਘੱਟੋ-ਘੱਟ 1 ਮਿੰਟ ਲਈ ਉਬਾਲ ਕੇ ਹੀ ਪੀਓ। ਬਿਨਾ ਉਬਾਲਿਆ ਪਾਣੀ ਨਾ ਵਰਤੋ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ [URL] ਵੇਖੋ।",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] ਲਈ ਇੱਕ ਉਬਾਲਿਆ ਪਾਣੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਇਹ [TIME] ਤੱਕ ਲਾਗੂ ਰਹੇਗੀ। ਤੁਹਾਡੇ ਇਲਾਕੇ ਦਾ ਪਾਣੀ ਤੁਹਾਨੂੰ ਬੀਮਾਰ ਕਰ ਸਕਦਾ ਹੈ। ਜੇ ਬੌਤਲਬੰਦ ਪਾਣੀ ਉਪਲਬਧ ਹੈ ਤਾਂ ਇਸਦੀ ਵਰਤੋਂ ਕਰੋ। ਜਦੋਂ ਤੱਕ ਪਾਣੀ ਉਬਾਲਿਆ ਨਾ ਜਾਵੇ, ਟੈਪ ਪਾਣੀ ਜਾਂ ਫਿਲਟਰ ਕੀਤੇ ਪਾਣੀ ਨਾਲ ਨਾ ਪੀਓ, ਨਾ ਪਕਾਓ, ਨਾ ਦੰਦ ਸਾਫ਼ ਕਰੋ, ਅਤੇ ਨਾ ਹੀ ਘਰ ਸਾਫ਼ ਕਰੋ। ਪਾਣੀ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਉਬਾਲੋ ਤਾਂ ਕਿ ਇਹ ਤਿੰਨ ਮਿੰਟ ਲਈ ਤੀਜ਼ ਉਬਾਲ (full rolling boil) 'ਤੇ ਰਹੇ। ਵਰਤੋਂ ਤੋਂ ਪਹਿਲਾਂ ਪਾਣੀ ਠੰਢਾ ਹੋਣ ਦਿਓ। ਉਹ ਬਰਫ਼ ਨਾ ਵਰਤੋ ਜੋ ਅਣਉਬਾਲੇ ਪਾਣੀ ਨਾਲ ਬਣੀ ਹੋਵੇ। ਜੇ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਨੂੰ ਫਾਰਮੂਲਾ ਦੇਂਦੇ ਹੋ ਤਾਂ ਤਿਆਰ-ਵਰਤੋਂ ਫਾਰਮੂਲਾ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਪਾਲਤੂ ਜਾਨਵਰ ਅਣਉਬਾਲਿਆ ਪਾਣੀ ਨਾ ਪੀਣ। [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -7799,6 +7851,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[LOCATION] ਵਿੱਚ 911 ਸੇਵਾ ਇਸ ਸਮੇਂ ਕੰਮ ਨਹੀਂ ਕਰ ਰਹੀ ਹੈ। ਐਮਰਜੈਂਸੀ ਵਿੱਚ ਸਥਾਨਕ ਪੁਲਿਸ ਜਾਂ ਅੱਗ ਬੁਝਾਊ ਵਿਭਾਗ ਨਾਲ ਸਿੱਧਾ ਸੰਪਰਕ ਕਰੋ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ [URL] ਵੇਖੋ। ਸਮਾਂ: [TIME]।",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ਇੱਕ 9-1-1 ਬੰਦ ਹੋਣ ਦੀ ਚੇਤਾਵਨੀ [LOCATION] ਲਈ ਲਾਗੂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸੰਕਟ ਦੇ ਸਮੇਂ ਪੁਲਿਸ, ਅੱਗ ਬੁਝਾਉਂ ਸੇਵਾ, ਡਾਕਟਰੀ ਜਾਂ ਹੋਰ ਐਮਰਜੈਂਸੀ ਸੇਵਾਵਾਂ ਨਾਲ ਸਿੱਧਾ ਉਨ੍ਹਾਂ ਦੇ ਸਥਾਨਕ ਫ਼ੋਨ ਨੰਬਰਾਂ 'ਤੇ ਸੰਪਰਕ ਕਰੋ। ਜੇ ਤੁਸੀਂ 9-1-1 ਡਾਇਲ ਕਰਦੇ ਹੋ, ਤਾਂ ਸੰਭਵ ਹੈ ਕਿ ਤੁਹਾਨੂੰ ਮਦਦ ਨਾ ਮਿਲੇ। [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -7835,6 +7893,12 @@
                         "text": "[TIME]: [LOCATION]లో భారీ వరద హెచ్చరిక. దయచేసి సురక్షిత ప్రదేశాలకు వెంటనే వెళ్లండి. మరిన్ని సమాచారం కోసం: [URL]",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] ప్రాంతంలో [TIME] వరకు ఫ్లాష్ వరద అత్యవసర పరిస్థితి అమల్లో ఉంది. ఇది అత్యంత ప్రమాదకరమైన మరియు ప్రాణాపాయ పరిస్థితి. ముంపు వచ్చే అవకాశం ఉన్న ప్రదేశం నుండి బయటకు వెళ్తున్నప్పుడు లేదా ఖాళీ చేయమని ఆదేశం ఉన్నప్పుడు తప్ప ప్రయాణానికి ప్రయత్నించవద్దు. [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -7865,6 +7929,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[TIME] కు [LOCATION] లో గాలి వేగం అత్యంత ప్రమాదకర స్థాయిలో ఉంది. దయచేసి తక్షణమే సురక్షిత ప్రదేశంలోకి వెళ్లండి. మరిన్ని వివరాలకు [URL] ను సందర్శించండి.",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ప్రాణాపాయకరమైన గాలుల తక్షణ ప్రమాదం కోసం [LOCATION] కు గాను ఒక తీవ్రమైన గాలి హెచ్చరిక [TIME] వరకు అమల్లో ఉంది. ఇప్పుడు వెంటనే బలమైన భవనంలోని లోపలి గదిలో, కిటికీల నుండి దూరంగా ఆశ్రయం పొందండి. ఎగిరే వస్తువుల నుండి మీ తలను రక్షించుకోండి. గాలి తక్కువైనట్టు అనిపించినా బయటకు వెళ్లవద్దు! గాలులు త్వరగా మళ్లీ ప్రమాదకరంగా మారతాయి. [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -7899,6 +7969,12 @@
                         "text": "[LOCATION] లో అగ్ని ప్రమాదం జరిగింది. దయచేసి ఆ ప్రదేశం దూరంగా ఉండండి మరియు స్థానిక అత్యవసర సేవల సూచనలను పాటించండి. సమయం: [TIME]. మరిన్ని వివరాలకు [URL] చూడండి.",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] లో అగ్ని ప్రమాద హెచ్చరిక [TIME] వరకు అమల్లో ఉంటుంది. మీ కుటుంబ సభ్యులను మరియు పెంపుడు జంతువులను వెంటనే తరలించండి, ఆలస్యం చేయకండి. ప్రాంతంలో కనబడే దూరం తగ్గిపోతుంది మరియు రహదారులు మూసుకుపోయే అవకాశం ఉంది. మీరు ఇప్పుడే వెళ్లకపోతే, మీరు ఇరుక్కుపోయే, గాయపడే లేదా మరణించే ప్రమాదం ఉంది. [LOCATION] సమీపంలోని ప్రాంతాలను విడిచివేయండి. కనబడే దూరం తగ్గిపోవడం, భారీ పొగ మరియు శ్వాసకోశ సమస్యలు ఏర్పడే అవకాశం ఉంటుంది. డ్రైవింగ్‌లో జాగ్రత్త వహించండి. ఆ ప్రాంతంలో పని చేస్తున్న ప్రజా భద్రతా సిబ్బందిని గమనించండి మరియు వారి సూచనలను పాటించండి. [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -7931,6 +8007,12 @@
                         "text": "[LOCATION] లో తాగునీటిని తాగేముందు మరిగించాలి. కాలుష్యం ప్రమాదం ఉంది. వెంటనే నీటి వినియోగానికి ముందు కనీసం 1 నిమిషం మరిగించండి. మరిన్ని వివరాలకు [URL] చూడండి. సమయం: [TIME].",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] ప్రాంతానికి BOIL WATER ALERT జారీ చేయబడింది మరియు ఇది [TIME] వరకు అమల్లో ఉంటుంది. మీ ప్రాంతంలోని నీరు మీకు అనారోగ్యం కలిగించవచ్చు. సాధ్యమైతే బాటిల్డ్ వాటర్ వాడండి. మరిగించని ప taps లోని నీరు లేదా ఫిల్టర్డ్ నీటిని త్రాగకండి, వండకండి, పళ్లను తోముకోకండి లేదా ఇంటిని శుభ్రం చేయకండి. నీటిని పూర్తిగా మరిగే వరకు మూడునిమిషాల పాటు మరిగించండి. వాడే ముందు నీటిని చల్లారనివ్వండి. మరిగించని నీటితో చేసిన మంచును వాడకండి. మీ బిడ్డకు ఫార్ములా ఇస్తే, రెడీ-టు-యూజ్ ఫార్ములా వాడండి. పెంపుడు జంతువులు మరిగించని నీటిని తాగకుండా చూసుకోండి. [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -7961,6 +8043,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[LOCATION] లో ప్రస్తుతం 911 సేవలు అందుబాటులో లేవు. అత్యవసర సహాయం కోసం స్థానిక అత్యవసర నంబర్లను ఉపయోగించండి. ఇంకా సమాచారం కోసం [URL] సందర్శించండి. ఈ సమస్య [TIME] వరకు కొనసాగవచ్చు.",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] కోసం 9-1-1 అవుటేజ్ హెచ్చరిక అమల్లో ఉంది. అత్యవసర పరిస్థితిలో, దయచేసి పోలీసులు, అగ్నిమాపక, వైద్య లేదా ఇతర అత్యవసర సేవలకు వారి స్థానిక ఫోన్ నంబర్లకు నేరుగా సంప్రదించండి. మీరు 9-1-1 కి కాల్ చేస్తే, మీకు సహాయం అందకపోవచ్చు. [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -7997,6 +8085,12 @@
                         "text": "[TIME] ላይ በ[LOCATION] የከፋ ጎርፍ ተጀምሯል። ከአደጋው ለመድነት ወደ ከፍተኛ ቦታ ይቅረቡ። ዝርዝር ለመረዳት [URL] ይጎብኙ።",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: የፈጣን ግልገል ድንገተኛ ጊዜ ማስጠንቀቂያ በ[LOCATION] ላይ እስከ [TIME] ድረስ እየተፈጸመ ነው። ይህ እጅግ አደገኛ እና ሕይወት የሚያደርስበት ሁኔታ ነው። የግልገል አደጋ የሚኖርበት ቦታ ከሆነ ወይም የመውጣት ትዕዛዝ ካለብዎ ብቻ ካልሆነ እባክዎ መጓዝ አይሞክሩ። [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -8027,6 +8121,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "በ[LOCATION] በ[TIME] ጊዜ ከፍተኛ ነፋስ ይጠበቃል። የግንባታና የተንቀሳቃሽ እቃዎችን ከፍተኛ ነፋስ ሊያበላሽታቸው ስለሚችል ይጠንቀቁ። ተጨማሪ መረጃ ለማግኘት [URL] ይጎብኙ።",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[ላከ ያለው ኤጀንሲ]: እስከ [TIME] ድረስ በ[LOCATION] ላይ ለህይወት አስጊ ነፋሳት አስቸኳይ አደጋ ያለው የጽኑ ነፋስ ማስጠንቀቂያ ተፈጥሯል። አሁን ወዲያውኑ በጠንካራ ህንፃ ውስጥ ከመስኮቶች በርቀት በውስጥ ክፍል ውስጥ ተጠምዱ። ጭንቅላትዎን ከበረዶ ግፊቶች ይጠብቁ። ነፋሱ ካሳነሰ አውጭ አትውጡ! ነፋሶቹ በፍጥነት እንደገና አደገኛ ይሆናሉ። [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8061,6 +8161,12 @@
                         "text": "በ[TIME] ላይ በ[LOCATION] የእሳት አደጋ ተነስቷል። ከአካባቢው ወዲያውኑ ይርቁ። የእሳት አደጋ መመሪያዎችን ይከተሉ። ለተጨማሪ መረጃ ይህን ይጎብኙ፦ [URL]",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: የእሳት ማስጠንቀቂያ በ[LOCATION] ላይ እስከ [TIME] ድረስ በእርምጃ ላይ ነው። ቤተሰብዎንና የቤት እንስሳትዎን አሁን አውጡ፤ አታዘግዩ። በአካባቢው የሚታይ እይታ ይቀንሳል እና መንገዶች ሊዘጉ ይችላሉ። አሁን ካልወጣችሁ ሊጠመዱ፣ ሊጎዱ ወይም ሊሞቱ ትችላላችሁ። በ[LOCATION] አቅራቢያ ያሉ ቦታዎችን ተው። የተቀነሰ እይታ፣ ከፍተኛ ጭስ እና የመተንፈስ ችግር ይጠበቃል። ሲነዳ ይጠንቀቁ። በአካባቢው የደህንነት ሰራተኞችን ተጠንቀቁ እና መመሪያቸውን ይከተሉ። [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -8093,6 +8199,12 @@
                         "text": "[TIME] በ [LOCATION] ውስጥ የተለቀ ውሃን በመፍላት ከመጠጣት በፊት ያጠብቁ። ይህ የጤና አደጋን ለመከላከል ነው። ተጨማሪ መረጃ ለማግኘት [URL] ይጎብኙ።",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: በ[LOCATION] ላይ የውሃ ማቀዝቀዣ ማስጠንቀቂያ ተፈጥሯል እና እስከ [TIME] ድረስ ይቆያል። በማህበረሰብዎ ውስጥ ያለው ውሃ ሊያሳጥምዎ ይችላል። ካለ በሰንደቅ ካለው ውሃ ይጠቀሙ። ውሃን ሳያስሞሉ አትጠጡ፣ አትበሉበት፣ አትታጠቡ ወይም ለቤት ጽዳት አትጠቀሙበት። ውሃን ለሶስት ደቂቃ እስኪፈስስ ድረስ አፍስሱ። ከአፍስሱ በኋላ እንዲቀዝቅዝ ያስቀምጡት ከመጠቀም በፊት። አይደለም የታጠቀ ውሃ አልተፈሰሰም ከነበረበት በስተቀር የተሠራ በረዶ አትጠቀሙ። ለልጅዎ መድሀኒት ከተጠጋ ወተት እንዲመገብ ከሆነ ዝግጁ የሆነ የሚጠቀሙበትን ወተት ብቻ ይጠቀሙ። እንስሶች ያልተፈሰሰ ውሃ እንዳይጠጡ ያረጋግጡ። [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -8123,6 +8235,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "በ[TIME] ላይ በ[LOCATION] ውስጥ የ 911 አውታረ መረብ አገልግሎት አልቋል። እባክዎ እስካለፈ ድረስ የአጥቂቅ መገናኛ ሌሎች ቁጥሮችን ይጠቀሙ። በተጨማሪ መረጃ ለማግኘት [URL] ይጎብኙ።",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: የ9-1-1 አገልግሎት እንዳይሰራ ማስጠንቀቂያ በ[LOCATION] ላይ እየተፈጠረ ነው። በአደጋ ጊዜ ከፖሊስ፣ ከእሳትና ሕክምና አገልግሎቶች ወይም ከሌሎች አስቸኳይ አገልግሎቶች ጋር በቀጥታ በአካባቢያቸው ስልክ ቁጥሮች ያነጋግሩ። 9-1-1 ከደወሉ ምናልባት እርዳታ አታገኙም። [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8159,6 +8277,12 @@
                         "text": "មានទឹកជំនន់ធ្ងន់ នៅពេល [TIME] តំបន់ [LOCATION] សូមជៀសវាងទីកន្លែងនោះ និងស្វែងរកកន្លែងសុវត្ថិភាព។ ព័ត៌មានបន្ថែម [URL]",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: មានស្ថានការបន្ទាន់អំពីទឹកជំនន់ភ្លាមៗសម្រាប់ [LOCATION] រហូតដល់ [TIME]។ នេះជាស្ថានការណ៍គ្រោះថ្នាក់ខ្លាំង និងអាចគំរាមកំហែងដល់ជីវិត។ សូមកុំចូលប្រើដំណើរធ្វើដំណើរទេ លុះត្រាតែអ្នកកំពុងរត់គេចចេញពីតំបន់ដែលអាចមានទឹកជំនន់ ឬកំពុងស្ថិតក្រោមការបញ្ជាឱ្យជម្លៀសចេញ។ [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -8189,6 +8313,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "ការព្រមានបន្ទាន់ [TIME]: មានខ្យល់ខ្លាំងខ្លាំងនៅតំបន់ [LOCATION]។ សូមស្វែងរកកន្លែងសុវត្ថិភាព និងជៀសវាងចូលទៅជិតដើមឈើ ឬខ្សែភ្លើង។ ព័ត៌មានបន្ថែម [URL]",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ព្រមានខ្យល់កម្លាំងខ្លាំងខ្លាំងបំផុត កំពុងមានប្រសិទ្ធិភាពសម្រាប់ [LOCATION] ដោយមានគ្រោះថ្នាក់ភ្លាមៗចំពោះជីវិតដោយសារខ្យល់មានកម្លាំងខ្លាំង ដល់ដល់ម៉ោង [TIME]។ សូមចូលទៅនៅក្នុងបន្ទប់ខាងក្នុងនៃអគារមាំមួន ឆ្ងាយពីបង្អួច។ ការពារក្បាលរបស់អ្នកពីវត្ថុហោះ។ កុំចេញទៅខាងក្រៅ បើខ្យល់ស្ងប់ៗ! ខ្យល់នឹងក្លាយជាគ្រោះថ្នាក់វិញយ៉ាងលឿន។ [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8223,6 +8353,12 @@
                         "text": "មានអគ្គីភ័យនៅ [LOCATION] នៅម៉ោង [TIME]។ សូមជៀសវាងតំបន់ ហើយអនុវត្តតាមការណែនាំពីមន្ទីរសង្គ្រោះបន្ទាន់។ ព័ត៌មានបន្ថែម សូមចូលទៅកាន់ [URL]។",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: មាន​ការ​ព្រមាន​អំពី​ភ្លើង​ឆេះ​នៅ [LOCATION] ដល់ [TIME]។ សូម​ជម្លៀស​កូន​ចៅ និង​សត្វ​ចិញ្ចឹម​របស់​អ្នក​ឥឡូវនេះ កុំពន្យារពេល។ ទិដ្ឋភាព​នៅ​តំបន់​នេះ​នឹង​ត្រូវកាត់បន្ថយ និង​ផ្លូវ​អាច​ត្រូវបានរាំងស្ទះ។ ប្រសិនបើ​អ្នក​មិន​ចាកចេញ​ឥឡូវ​នេះ អ្នក​អាចនឹង​ត្រូវ​បាន​រង្គោះ​រំខាន រងរបួស ឬ​ស្លាប់។ ចាកចេញ​ពី​តំបន់​ជិត [LOCATION]។ រំពឹងថា​នឹង​មាន​ទិដ្ឋភាព​កាត់បន្ថយ ផ្សែង​ខ្លាំង និង​ពិបាក​ដកដង្ហើម។ សូម​ប្រុងប្រយ័ត្ន​ពេលបើកបរ។ សូម​កុំភ្លេច​មើល​សមត្ថកិច្ច​សុវត្ថិភាព​សាធារណៈ​ដែល​កំពុង​ធ្វើការ​នៅ​ក្នុង​តំបន់ និង​អនុវត្ត​តាម​សេចក្ដីណែនាំ​របស់​ពួកគេ។ [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -8255,6 +8391,12 @@
                         "text": "ប្រជាពលរដ្ឋនៅ [LOCATION] សូមទាញទឹកពីកន្លែងទឹកប្រើប្រាស់មកទម្លាក់ឱ្យពុះមុនផឹក ឬប្រើប្រាស់។ សូមអនុវត្តរហ័សចាប់ពី [TIME] ដើម្បីការពារសុខភាព។ ព័ត៌មានបន្ថែមសូមចូលមើល [URL]។",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: មានសេចក្តីជូនដំណឹងអំពីការចំអិនទឹកមុនពេលប្រើ សម្រាប់ [LOCATION] ហើយនឹងមានប្រសិទ្ធិភាពរហូតដល់ [TIME]។ ទឹកនៅក្នុងសហគមន៍របស់អ្នកអាចបង្កជំងឺឱ្យអ្នកបាន។ ប្រើទឹកដបប្រសិនបើមាន។ កុំផឹក កុំចំហុយម្ហូប កុំដុសធ្មេញ ឬសម្អាតផ្ទះដោយប្រើទឹកម៉ាស៊ីន ឬទឹកដែលបានចម្រោះ មុនពេលអ្នកបានចំអិនវា។ ចំអិនទឹកឱ្យពុះពេញលំហូររយៈពេលបីនាទី។ ទុកឱ្យទឹកត្រជាក់មុនប្រើ។ កុំប្រើទឹកកកដែលបានប្រើទឹកមិនទាន់បានចំអិន។ ប្រសិនបើអ្នកប្រើម្ហូបទារកជាអាហារ សូមប្រើម្ហូបទារកដែលរួចរាល់សម្រាប់ប្រើ។ ដោយប្រាកដថាសត្វចិញ្ចឹមកុំឲ្យផឹកទឹកដែលមិនទាន់បានចំអិន។ [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -8285,6 +8427,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "ការផ្ដល់សេវា 911 កំពុងផ្អាកនៅ [LOCATION] ចាប់ពី [TIME]។ សូមប្រើលេខទូរស័ព្ទបន្ទាន់ជំនួស ឬទំនាក់ទំនងភ្នាក់ងារការពារសាធារណៈក្នុងតំបន់។ ព័ត៌មានបន្ថែម៖ [URL]",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: មានការជូនដំណឹងអំពីការប៉ះពាល់ប្រព័ន្ធទូរស័ព្ទបន្ទាន់ 9-1-1 សម្រាប់ [LOCATION]។ សូមទាក់ទងកងប៉ុលិស អគ្គិភ័យ សេវាសុខាភិបាល ឬសេវាបន្ទាន់ផ្សេងៗដោយផ្ទាល់តាមលេខទូរស័ព្ទមូលដ្ឋានរបស់ពួកគេ នៅពេលមានបញ្ហាបន្ទាន់។ ប្រសិនបើអ្នកហៅ 9-1-1 អ្នកអាចនឹងមិនទទួលបានជំនួយទេ។ [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8321,6 +8469,12 @@
                         "text": "[TIME]、[LOCATION]で洪水が発生しました。安全な場所へ直ちに避難してください。詳細は[URL]をご確認ください。",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：［LOCATION］に対して［TIME］まで鉄砲水緊急警報が発令されています。これは極めて危険で生命を脅かす状況です。浸水の恐れがある地域から避難する場合や避難命令が出ている場合を除き、移動しようとしないでください。［URL］",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -8351,6 +8505,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[TIME]、[LOCATION]にて非常に強い風が予想されます。屋外活動を避け、安全な建物内に避難してください。最新情報は[URL]をご確認ください。",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]：極度の強風警報が[LOCATION]に発令されています。命に関わる危険な強風が[TIME]まで続く恐れがあります。今すぐ丈夫な建物の内部の部屋に避難し、窓から離れてください。飛来物から頭部を守ってください。風が一時的に弱まっても、絶対に外に出ないでください！風はすぐに再び危険な状態になります。[URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8385,6 +8545,12 @@
                         "text": "[TIME]、[LOCATION]で火災が発生しました。避難指示に従い、安全な場所へ移動してください。詳細は[URL]をご確認ください。",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]： [LOCATION]に対する火災警報が[TIME]まで有効です。家族やペットを今すぐ避難させてください。ためらわないでください。周辺の視界は悪化し、道路が通行不能になるおそれがあります。今すぐ避難しない場合、閉じ込められたり、負傷したり、命を落とす危険があります。[LOCATION]周辺から退避してください。視界不良、濃煙、呼吸困難に注意してください。運転時は十分注意してください。周辺で活動している公共安全要員に注意し、その指示に従ってください。[URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -8415,6 +8581,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[TIME]、[LOCATION]にて飲料水の安全が確認されていません。水は必ず沸騰させてから使用してください。詳細は[URL]をご覧ください。",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]： [LOCATION] に対して「飲料水の煮沸勧告」が発令され、[TIME] まで有効です。地域の水は健康被害を引き起こすおそれがあります。可能であればボトル入りの水を使用してください。水道水や浄水器を通した水は、必ず煮沸してから飲用、料理、歯みがき、または家庭の清掃に使用してください。水は完全に沸騰させ、３分間沸かし続けてください。使用する前に冷ましてください。煮沸していない水で作られた氷は使用しないでください。乳児に粉ミルクを与える場合は、調製済み液体ミルクを使用してください。ペットにも煮沸していない水を与えないようにしてください。 [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8449,12 +8621,23 @@
                         "text": "[TIME]現在、[LOCATION]で911への通話ができません。緊急の場合は地元の緊急番号をご利用ください。詳細は[URL]をご確認ください。",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]： 現在、[LOCATION] において 9-1-1 の不通警報が発令されています。緊急時には、警察、消防、医療、その他の緊急サービスへは、地域の電話番号に直接連絡してください。9-1-1 に電話をかけても、支援を受けられない可能性があります。[URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             }
         },
         "tigrinya": {
             "flood": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    {
+                        "text": "ማሕበረ-ሰብ ሓበሬታ: ብዝናብ ከባቢ ሓደጋ ዝተኸተለ ጎብታ ተፈጢሩ ኣለ። ነዚ ኣካባቢ ፈጣን ተዘዋዕሩ፣ ምስ ኣባላት ሓደጋ መንእሰያት ወይ ኣገልግሎት ስንኩላት ተራኸቡ። ናብ ላዕለዋይ ቦታ ኣካል ሓይሊ ኣምጽእ፣ ሕብረትኻን ቤትኻን ብሓቂ ጥበቃ ዕቲ።",
+                        "date": "2025-09-12"
+                    }
+                ],
                 "prompt_chain_of_translation.txt": [
                     {
                         "text": "ምስ ዚህሩ ባሕሪ ናብ ናይ [LOCATION] ኣብ [TIME] ይመጽእ ኣሎ። ኣብ ዝቅቦም ቦታታት ካብ ምኻኑ ይርሱ ንሓላፍነትኩም ተወሳኺ ኩነታት ተኽታትሩ። ሓበሬታ ንምዝራብ [URL] ተዓዘብ።",
@@ -8476,6 +8659,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "በቀን [TIME] ኣብ [LOCATION] ዝኸደ ምምዕራፍ ዝተነገረ ጎርፍ ኣለ። ንምርመራ ቦታ ውጽኢት ኣውጺኡ ንዝሓሸ ቦታ ምንባር ተዋሂዱ። ተወሳኺ ሓበሬታ ንምክታል ኣብ [URL] ይምረሑ።",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ናይ ፍጥነት ጽልግሊ ምስ እንታይ ዝኾነ ኣብ [LOCATION] ክሳብ [TIME] ይኹን ተጋብአ። እዚ ብጣዕሚ ሓደጋን ብዝሓደገ መከላኸዪ ዘለዎ ኩነታት እዩ። ኣይትኽውን ምብራር ካልእ ዝኣተወካ እቲ ከም ዝሓደገ ኣካባቢ ከምዚ ሓደጋ ወይ ብዝተዋነ ኣስነባሪ ትእዛዝ እንተስርሑ ጥራይ። [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8510,6 +8699,12 @@
                         "text": "ኣብ [LOCATION] ኣንፈት ጽባሕ ኣሎ። ከባቢ ምስ ዝተፋሐደ ኣይቕሬታ ዘይኮነ ነፋሲ ክንደይ ይኸውን። ንምርኣይ ናይ ምስርሕ መሓዛ ተዳለይ፡ [URL]። ግዜ: [TIME]።",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ሓደ ኣጸጋሚ ከፊት ነፋሲ ኣስናኽሽቲ እዩ እቲ [LOCATION] ካብ ሕድሪ ሕይወት ምድላይ ነፋሲ ክንደብ ክንደብ ክሳብ [TIME] ትእዛዝ እዩ ዝርከብ። ኣሕዋትኩም ምስ ኣዳላይ ቤት ኣብ ውሽጢ ኣዳላይ ክፍሊ እትኣቱ። ካብ መስኮት ተርጋገጹ። ኣእምሮኹም ካብ ተፋሂሳ ነገር ክሕቶ አርእስኩም ክትክኒ። እንተ ነፋሲ ምስ ዝዝምዕ ክወጹ ኣይኮነን! ነፋሲ ብፍጥነት ደጊምኩም ክንደብ ክንደብ እዩ ክርከብ። [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "fire": {
@@ -8540,6 +8735,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "ኣብ [LOCATION] ኣብ [TIME] ዝተጀመረ እቶም እቲ እሳት እንተምፍላጥ ኣለዎ በፍጹም ቦታን ንምምዝጋብ ንምኽሪ ተዓቒቡ። ዝተወሰነ መረዳእታ ንምርካብ [URL] ይቕፅሉ።",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: መጠንቀቒ እታ እታት ኣሎ ኣብ [LOCATION] ክንደይ እከይፍ፣ ክሳብ [TIME] ይብጽሕ። ንቤተሰብኻን ንእንስሳት ብምግባር መወጺ በል፣ ኣይተዘገየን። ማዕበል ኣብ ከባቢ ክንከረክር እዩን፣ መጓዓዝ መስመር ክዕጸር ይኽእል። እንተ ሃልዎም ኣይትወጹን፣ ተቐርነን ትጉዱን ካልኣይ ትሞቱን ትኽእሉ ኢኹም። ከባቢ ቀረባ [LOCATION] ተወግዱ። እንታይ ኢኹም ክትርእዩ፡ መትረኽብ ትሕትና ምርኢት፣ ጽቡቕ ጽዋት እታት እና ሳንባ ምጥቃም በዝሒ ክገብር። ብተሓጋጋይ እንተ ኣነብሱ ኣይኮነን ኣይንበሩን። ናብ ከባቢ ኣብ ጉዳይ ጥቕሚ ጥቕሚ ዝተዋህዱ ኣባላት ዘለዎም መምርሒ ክትከተሉ ርእዩ። [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8574,6 +8775,12 @@
                         "text": "ኣብ [LOCATION] ኣብ [TIME] ብዓስተን ውሃ ከምዚ ብህቡ ንሕብሩ፡ በልዑይ ዘይሕጋዊ ከምዝኾነ ምስታይ ከይትህበኩ እቲ ውሃ ክትሓሸ እንተዳለይ እዩ። እዚ ውሃ ክትጠቀሙ ብድሕነት ኣብ ማእከል 3 ደቒቕ ክትሕሸው ኣለኹም። ሓበሬታ ተወሳኺ: [URL]",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ሓጺር ማይ ክትትል ምልክት እትእተወ ኣሎ ናብ [LOCATION] ክፋል ንመላእ ክእለ [TIME] ይግበር።  ማይ ኣብ ማህበራዊ ውሽጣዊኹም ክሕምምኩም ይኽእል እዩ። እንተ ኣሎ ዘለዎ ባትል ማይ ተጠቀሙ። እቲ ማይ ከም ዘብሉ ኣይትሸቱ፣ ኣይትውዕጡ ምግቢ ኣብዚ ኣይትበልዑ፣ ኣይትሳኽሱ ክንፉርኩም ወይ ኣይትኣኽዩ ገዛኹም ብማይ ታፕ ወይ ብተዓሚሙ ማይ ክንዲ ክሳብ ዝታሓዘ ክትትል። ማይ ነዚ ብሙሉእ ምድላው ክልቢ ሶስተ ደቓይቕ ክትዕርፈይ። ማይ ንተጠቀም ቅድሚ ክትትሉ ክልቢ። ካብ ዘለዎ ዘይታሓዘ ክትትል ማይ ዝተሰርሐ ሓርፋይ ኣይትጠቐሙ። እንተ ትምግቡ ህፃናት ብፎርሙላ ምግቢ ብዝሓለፈ ምግቢ ትጠቀሙ። እንስሳትኩም ካብ ዘይታሓዘ ክትትል ማይ እንዳይሸቱ ኣረጋግጡ። [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -8604,6 +8811,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "ኣብ [LOCATION] ዝነበረ ናይ 911 ኣገልግሎት ውጽኢት ኣለ። ኣካል ኣደጋ እንተሃለዎ ብቀጥታ ናብ ኮርት ወይ ፖሊስ ክደውሉ ይፍለጥ። ዝተረዳኣኹም መረዳእታ ኣብ [URL] ምርኣይ ትኽእሉ ኢኹም። [TIME] ዝተሓደሱ መረዳእታ።",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ሓገዝ ኣለዎ ንእቲ ሓበሬታ ኣውታጅ 9-1-1 ናብ [LOCATION] ተፈጢሩ ኣሎ። እቲ ጊዜ ኣፍሊጡ ኣብ አካባቢ ዘለዉ ቁጽሪ ተራ ትልቅ ቤት ሓፍሓፍ ፖሊስ፣ ነዊሕ ነዊሕ እቲ ኣደባባይ ናይ ጽዕነት፣ ጤና፣ ወይ ካልኦት ኣገልግሎት ሕጅ ብቐጥታ ንገብሩ። እኹል ብ 9-1-1 እንተደወልኩም ሓገዝ ኣይትረኽቡን ክኸውን ይኽእል። [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8640,6 +8853,12 @@
                         "text": "سیلاب کی وارننگ: [LOCATION] میں خطرناک سیلاب آ رہا ہے۔ فوری طور پر محفوظ جگہ پر منتقل ہوں۔ مزید معلومات کے لیے [URL] دیکھیں۔ وقت: [TIME]۔",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] کے لیے فلیش فلڈ ایمرجنسی نافذ ہے جو [TIME] تک مؤثر رہے گی۔ یہ ایک نہایت خطرناک اور جان لیوا صورتِ حال ہے۔ سفر کرنے کی کوشش نہ کریں جب تک کہ آپ کسی ایسے علاقے سے نہ نکل رہے ہوں جہاں سیلاب آسکتا ہو یا آپ کو انخلا کا حکم دیا گیا ہو۔ [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -8670,6 +8889,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "سخت آندھی کی وارننگ: [LOCATION] میں [TIME] پر انتہائی تیز ہوائیں متوقع ہیں۔ براہ کرم محفوظ جگہ پر پناہ لیں اور غیر ضروری سفر سے گریز کریں۔ مزید معلومات کے لئے [URL] ملاحظہ کریں۔",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] کے لیے انتہائی شدید ہوا کا انتباہ نافذ ہے جو جان لیوا ہواؤں کے فوری خطرے کے پیش نظر [TIME] تک مؤثر رہے گا۔ فوراً کسی مضبوط عمارت کے اندرونی کمرے میں پناہ لیں، کھڑکیوں سے دور رہیں۔ اپنے سر کو اڑتی ہوئی اشیاء سے بچائیں۔ اگر ہوا رک بھی جائے تو باہر نہ جائیں! ہوائیں بہت جلد دوبارہ خطرناک ہوجائیں گی۔ [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8704,6 +8929,12 @@
                         "text": "[LOCATION] میں آگ لگی ہے۔ براہ کرم فوری محفوظ مقام پر منتقل ہوں۔ مزید معلومات کے لیے [URL] پر جائیں۔ وقت: [TIME]۔",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] میں آگ کی وارننگ [TIME] تک نافذ ہے۔ اپنے خاندان اور پالتو جانوروں کو فوراً نکالیں، دیر نہ کریں۔ علاقے میں نظر کم ہو جائے گی اور سڑکیں بند ہو سکتی ہیں۔ اگر آپ ابھی نہ نکلے تو آپ پھنس سکتے ہیں، زخمی ہو سکتے ہیں یا جان سے ہاتھ دھو سکتے ہیں۔ [LOCATION] کے قریب کے علاقوں کو چھوڑ دیں۔ کم نظر، گھنا دھواں اور سانس لینے میں دشواری کی توقع رکھیں۔ گاڑی چلاتے وقت محتاط رہیں۔ علاقے میں موجود عوامی تحفظ کے عملے پر نظر رکھیں اور ان کی ہدایات پر عمل کریں۔ [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "boil_water_notice": {
@@ -8736,6 +8967,12 @@
                         "text": "[LOCATION] میں پانی ابال کر استعمال کریں۔ آلودگی کے خطرے کے باعث پینے یا پکانے سے پہلے کم از کم ایک منٹ پانی ابالیں۔ مزید معلومات کے لیے [URL] دیکھیں۔ وقت: [TIME]۔",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: پانی ابالنے کا انتباہ جاری کیا گیا ہے برائے [LOCATION] اور یہ [TIME] تک مؤثر رہے گا۔ آپ کی کمیونٹی کا پانی آپ کو بیمار کر سکتا ہے۔ اگر دستیاب ہو تو بوتل بند پانی استعمال کریں۔ جب تک پانی ابال نہ لیں نلکے کا یا فلٹر شدہ پانی نہ پیئیں، نہ کھانے پکانے میں استعمال کریں، نہ دانت صاف کرنے میں اور نہ ہی گھر کی صفائی میں استعمال کریں۔ پانی کو اُبال کر تین منٹ تک ابالے رکھیں۔ استعمال سے پہلے پانی ٹھنڈا ہونے دیں۔ ایسے برف کے ٹکڑے استعمال نہ کریں جو ابالے ہوئے پانی سے نہ بنے ہوں۔ اگر آپ اپنے بچے کو فارمولا دودھ پلاتے ہیں تو تیار شدہ فارمولا استعمال کریں۔ اس بات کو یقینی بنائیں کہ پالتو جانور ایسا پانی نہ پئیں جو ابالا نہ گیا ہو۔ [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "911_outage": {
@@ -8766,6 +9003,12 @@
                 "prompt_persona.txt": [
                     {
                         "text": "[LOCATION] میں 911 سروس [TIME] سے معطل ہے۔ ایمرجنسی میں مقامی ہنگامی نمبر پر کال کریں۔ مزید معلومات کے لیے [URL] ملاحظہ کریں۔",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: ایک 9-1-1 سروس کی بندش کا انتباہ [LOCATION] کے لیے نافذ ہے۔ براہِ کرم ہنگامی صورتِ حال میں پولیس، فائر، میڈیکل یا دیگر ایمرجنسی سروسز سے براہِ راست ان کے مقامی فون نمبروں پر رابطہ کریں۔ اگر آپ 9-1-1 ڈائل کرتے ہیں تو آپ کو مدد نہیں مل سکتی۔ [URL]",
                         "date": "2025-09-12"
                     }
                 ]
@@ -8802,6 +9045,12 @@
                         "text": "Lapataʻiga i le [TIME]: Ua iai se lologa i le [LOCATION]. Siitia vave i nofoaga maualuga ma ‘aua ne’i taumafai e kolosi vai tafe. Mo nisi fa’amatalaga, asiasi i le [URL].",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: O lo’o iai nei se FA’ALAVELAVE MĀLOLU TĀFEGA vave mo [LOCATION] se’ia oo i le [TIME]. O se tulaga mata’utia tele ma e lamatia ai le ola. Aua le taumafai e malaga vagana ua e sosola ese mai se nofoaga e ono lofia i vai pe ua iai se poloa’iga fa’amalūlū. [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "extreme_wind": {
@@ -8812,7 +9061,12 @@
                         "date": "2025-09-12"
                     }
                 ],
-                "prompt_one_shot.txt": [],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "Ua lapataʻia e [SENDING AGENCY] i se MATAGI MALOLOSI i [LOCATION] seʻia oo i le [TIME]. E mataʻutia lenei tulaga. Nofo i totonu o se fale mautu i se potu i totonu. Aloese mai le alu i fafo. Mo nisi fa'amatalaga, asiasia [URL].",
+                        "date": "2025-09-12"
+                    }
+                ],
                 "prompt_cross_lingual_alignment.txt": [
                     {
                         "text": "Matagi malosi tele o lo’o fa’amoemoe i le [LOCATION] i le [TIME]. Ia saogalemu, ‘aua le alu i fafo vagana ua manaʻomia. Siaki fa’amatalaga fou i le [URL].",
@@ -8824,10 +9078,21 @@
                         "text": "Lapataʻiga i matagi malosi i le [LOCATION] i le [TIME]. Ia saʻili se nofoaga saogalemu i totonu o se fale ma ʻaua neʻi alu i fafo seʻi vagana ua saogalemu. Mo nisi faamatalaga, asiasi i le [URL].",
                         "date": "2025-09-12"
                     }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Ua iai nei se LAPATAIGA MATAGĀLĀ MALOLOSI MOA’I mo [LOCATION] ona o le lamatiaga vave o matagi e lamatia ai le ola seʻia oo i le [TIME]. Sā ia te oe loa se nofoaga saogalemu i totonu o se potu i totonu o se fale malosi, mamao ese mai fa’amalama. Puipui lou ulu mai mea e mafai ona felelei mai. AUA ne’i alu i fafo pe a faifai malie le matagi! O le a toe vave ona mata’utia matagi. [URL]",
+                        "date": "2025-09-12"
+                    }
                 ]
             },
             "fire": {
-                "prompt_simple.txt": [],
+                "prompt_simple.txt": [
+                    {
+                        "text": "FAʻAALIGA FAAFUASEʻI: Ua mu se afi tele i le nofoaga. Faamolemole tuua vave le nofoaga ma mulimuli i faatonuga a leoleo ma le aufaigaluega faasao. Aua le toe foi i totonu seʻia maeʻa ona faamaonia e saogalemu.",
+                        "date": "2025-09-12"
+                    }
+                ],
                 "prompt_chain_of_translation.txt": [
                     {
                         "text": "Lapataʻiga fa’afuase’i: Ua lipotia se afi i [LOCATION] i le [TIME]. Fa’amolemole ‘alofia le eria ma mulimuli i fautuaga a le pulega fa’aitulagi. Mo nisi fa’amatalaga, asiasi i le [URL].",
@@ -8840,13 +9105,19 @@
                         "date": "2025-09-12"
                     }
                 ],
-                "prompt_cross_lingual_alignment.txt": [],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "Ua iai se afi mataʻutia i le [LOCATION] i le [TIME]. Faamolemole sosola ese loa ma saili se nofoaga saogalemu. Mo nisi faamatalaga, asiasi i le [URL].",
+                        "date": "2025-09-12"
+                    }
+                ],
                 "prompt_persona.txt": [
                     {
                         "text": "Lapataiga Fa’afuase’i i le [TIME]: Ua mu tele i le [LOCATION]. Fa’amolemole sosola ese vave ma saili se nofoaga saogalemu. Mo nisi fa’amatalaga, asiasi le [URL].",
                         "date": "2025-09-12"
                     }
-                ]
+                ],
+                "translate_fire.txt": []
             },
             "boil_water_notice": {
                 "prompt_simple.txt": [
@@ -20508,6 +20779,10 @@
                     {
                         "text": "緊急警報：火災發生於[LOCATION]，時間為[TIME]。請立即撤離該區域並遵循當地指示。更多資訊請訪問[URL]。保持冷靜，注意安全。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急警报：火灾发生于[LOCATION]。请立即撤离该区域并听从当地官员指示。时间：[TIME]。更多信息请访问[URL]。保持安全，远离危险。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_one_shot.txt": [
@@ -20549,6 +20824,10 @@
                     {
                         "text": "[發送機構]：針對[LOCATION]的火災警告持續生效至[TIME]。立即疏散您的家人和寵物，切勿延誤。該地區能見度將降低，道路可能受阻。若您現在不撤離，可能會受困、受傷或喪命。請遠離[LOCATION]附近區域。預期能見度降低、濃煙瀰漫及呼吸困難。駕駛時請謹慎。注意現場執勤的公共安全人員，並遵從其指示。[URL]",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION]地区现正生效的火灾警报将持续至[TIME]。立即疏散您的家人和宠物，切勿延误。该地区能见度将降低，道路可能被阻断。如果您现在不撤离，可能会被困、受伤或丧生。请远离[LOCATION]附近区域。预计将出现能见度下降、浓烟及呼吸困难等情况。驾驶时请格外小心。注意该地区执勤的公共安全人员，并遵循他们的指示。[URL]",
+                        "date": "2025-09-12"
                     }
                 ]
             },
@@ -20562,30 +20841,50 @@
                     {
                         "text": "**緊急通知：煮沸水警告**  \n\n因發現水質異常，相關區域的自來水可能受到污染。為確保您的健康與安全，請務必將自來水煮沸後再飲用或烹飪。煮沸時間至少需達1分鐘，待冷卻後方可使用。  \n\n此期間請避免直接飲用未經煮沸的自來水，包括刷牙、製作冰塊或清洗生食。恢復正常供水時間將另行通知。  \n\n造成不便，敬請見諒。請廣傳此訊息，提醒身邊親友注意！  \n\n**供水局 謹啟**",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "【紧急通知】  \n\n根据最新检测结果，本市部分区域自来水水质暂时不达标。为确保居民健康，现发布**煮沸用水通知**：即日起，请受影响区域（具体范围见附件）居民务必**将自来水煮沸至少1分钟**后再饮用或用于烹饪。切勿直接饮用生水，刷牙、洗涤餐具等也建议使用煮沸后的水。  \n\n恢复正常供水时间将另行通知。敬请互相转告，感谢您的理解与配合！  \n\n**供水服务热线：XXX-XXXXXXX**  \n\n（附：受影响区域清单）",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_persona.txt": [
                     {
                         "text": "緊急通知：[TIME]在[LOCATION]地區檢測到水質問題。請居民將自來水煮沸至少一分鐘後再飲用、刷牙或準備食物，直至另行通知。更多資訊請訪問[URL]。請立即採取行動以確保安全。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急通知：[TIME]起，[LOCATION]地区居民需将自来水煮沸后使用。饮用水、刷牙及烹饪前请至少煮沸1分钟。详情请访问[URL]。请互相转告，确保安全。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_one_shot.txt": [
                     {
                         "text": "緊急通知：由於水質問題，[LOCATION] 地區發佈煮沸水通知，即刻生效至 [TIME]。請將水煮沸至少一分鐘後再飲用或用於烹飪，以免健康受損。詳情請參閱 [URL]。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急通知：[LOCATION] 地区发布煮沸水通知，生效至[TIME]。请居民将自来水煮沸至少一分钟后再饮用或用于烹饪，以防止潜在健康风险。详情请访问：[URL]。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
                     {
                         "text": "[時間] [TIME]，[地點] [LOCATION] 發布緊急通知：自來水暫不宜直接飲用，請將水煮沸至少一分鐘後使用。此為預防性措施，直至進一步通知。詳情請參閱 [URL]。為確保安全，請互相提醒並遵循指示。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急通知：因水质问题，[TIME]起在[LOCATION]区域实施煮沸用水警告，请居民务必将所有饮用水煮沸至少1分钟后使用。避免直接饮用自来水或用于刷牙等用途。详情请访问[URL]获取最新信息。请互相转告，注意安全。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_chain_of_translation.txt": [
                     {
                         "text": "緊急通知：[TIME]在[LOCATION]發現水質問題，請居民將水煮沸後再飲用或使用，直至另行通知。詳情請參閱：[URL]。為保障健康，請嚴格遵守此建議。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[TIME]起，[LOCATION]发布烧水通知，请将自来水煮沸至少1分钟后再饮用或烹饪。避免使用未煮沸的水刷牙、制冰等。详情请访问：[URL]",
+                        "date": "2025-09-12"
                     }
                 ],
                 "translate_boil_water_notice.txt": [
@@ -20597,6 +20896,10 @@
                     {
                         "text": "[SENDING AGENCY]: [LOCATION] 已發布煮沸水警報，有效期限至 [TIME]。您社區的水源可能導致生病。請盡量使用瓶裝水。在煮沸之前，請勿飲用、烹飪、刷牙或使用自來水或過濾水清潔家居。將水完全煮沸並持續滾沸三分鐘。使用前讓水冷卻。請勿使用未經煮沸的水製成的冰塊。如果您使用配方奶粉餵養孩子，請使用即用型配方奶粉。確保寵物不飲用未經煮沸的水。[URL]",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[SENDING AGENCY]: [LOCATION] 已发布煮沸水警报，有效期至 [TIME]。您所在社区的自来水可能导致疾病。请尽可能使用瓶装水。在将自来水或过滤水煮沸前，请勿饮用、烹饪、刷牙或清洁家居。将水完全煮沸并持续三分钟。待水冷却后再使用。请勿使用未经煮沸的水制成的冰块。如果您使用配方奶粉喂养婴儿，请使用即用型配方奶粉。确保宠物不饮用未经煮沸的水。[URL]  \n\n（注：严格遵循要求未对[URL]、[TIME]等占位符变量进行翻译，保持英文原样）",
+                        "date": "2025-09-12"
                     }
                 ]
             },
@@ -20610,18 +20913,30 @@
                     {
                         "text": "【緊急警報】  \n911緊急服務系統目前發生中斷，暫時無法正常運作。在此期間，如需緊急援助，請直接聯繫當地警察局或消防局的非緊急電話號碼。請將此訊息轉發給親友，並保持冷靜。我們正在全力修復系統，最新進展將另行通知。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急警报：911服务暂时中断。如需紧急援助，请直接联系当地警察局或消防局。恢复正常后将另行通知。请保持冷静，并互相转告。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_persona.txt": [
                     {
                         "text": "緊急警報：目前[TIME]在[LOCATION]地區發生911服務中斷。如有急難，請直接撥打當地警察局或消防局電話。更多資訊請查閱[URL]。請保持冷靜並互相協助。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急警报：911服务目前在[LOCATION]出现故障，无法正常使用。请使用其他紧急联系方式。故障时间：[TIME]。更多信息请访问：[URL]。请相互转告，注意安全。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_one_shot.txt": [
                     {
                         "text": "緊急通知：[LOCATION] 地區的911緊急電話服務目前中斷，預計恢復時間為[TIME]。在此期間，如需緊急協助，請直接前往最近的警察局或消防局。請勿撥打911測試服務。更多資訊請參考：[URL]",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[LOCATION]地区911紧急服务暂时中断，预计恢复时间为[TIME]。在此期间如需紧急援助，请直接前往最近警局或拨打当地报警电话。保持冷静，避免占用其他应急线路。更多详情请访问：[URL]",
+                        "date": "2025-09-12"
                     }
                 ],
                 "prompt_cross_lingual_alignment.txt": [
@@ -20634,6 +20949,10 @@
                     {
                         "text": "緊急警報：目前[TIME]在[LOCATION]區域，911緊急電話服務出現中斷。請民眾改用其他方式聯繫緊急服務，或前往最近的警察局/消防局求助。詳情請參閱：[URL]。請保持冷靜，注意安全。",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "紧急警报：目前[LOCATION]的911服务出现中断，时间[TIME]。请使用其他方式联系紧急服务。更多信息请访问[URL]。请互相转告，注意安全。",
+                        "date": "2025-09-12"
                     }
                 ],
                 "translate_911_outage.txt": [
@@ -20645,6 +20964,10 @@
                     {
                         "text": "[發送機構]：現針對[LOCATION]發佈911服務中斷警報。如有緊急情況，請直接撥打當地警方、消防、醫療或其他緊急服務的電話號碼尋求協助。若撥打911，可能無法獲得幫助。[URL]",
                         "date": "2025-08-16"
+                    },
+                    {
+                        "text": "[发送机构]: [LOCATION] 地区目前生效911紧急服务中断警报。如遇紧急情况，请直接拨打当地警察、消防、医疗或其他紧急服务的电话号码。若您拨打911，可能无法获得援助。[URL]",
+                        "date": "2025-09-12"
                     }
                 ]
             }
@@ -20934,10 +21257,26 @@
         "chinese_simplified": {
             "flood": {
                 "prompt_simple.txt": [],
-                "prompt_chain_of_translation.txt": [],
-                "prompt_one_shot.txt": [],
-                "prompt_cross_lingual_alignment.txt": [],
-                "prompt_persona.txt": []
+                "prompt_chain_of_translation.txt": [
+                    {
+                        "text": "[时间] 在 [地点] 发生洪水，请立即撤离到安全区域。避免接近低洼地区和河流。更多信息请访问 [URL]。保持警惕，注意安全。",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "prompt_one_shot.txt": [
+                    {
+                        "text": "紧急洪水警报：[LOCATION] 地区正面临洪水威胁，警报持续至[TIME]。水位快速上涨，请立即撤离至安全区域，避免靠近河流、低洼地带。如被困，请前往高处等待救援。切勿涉水行走或驾车通过积水路段。更多信息请参阅：[URL]",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "prompt_cross_lingual_alignment.txt": [
+                    {
+                        "text": "紧急洪水警报：[TIME]在[LOCATION]发生洪水，请立即撤离到安全区域，避免靠近河流和低洼地带。随时关注官方通知，确保人身安全。更多详情请访问[URL]。切勿冒险涉水，注意防范次生灾害！",
+                        "date": "2025-09-12"
+                    }
+                ],
+                "prompt_persona.txt": [],
+                "translate_flood.txt": []
             },
             "extreme_wind": {
                 "prompt_simple.txt": [],
