@@ -13,7 +13,7 @@ class DeepSeekClient(Client):
         self.base_url = "https://openrouter.ai/api/v1"
         self.model = "deepseek/deepseek-chat-v3-0324:free"
 
-    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=3, max=180), stop=tenacity.stop_after_attempt(3))
+    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=6, max=180), stop=tenacity.stop_after_attempt(3))
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
         # Get language code from translation map or use language as is if not found
         language_code = TRANSLATION_MAP.get(language, language)
