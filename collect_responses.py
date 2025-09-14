@@ -26,6 +26,7 @@ import json
 import logging
 import argparse
 import arabic_reshaper
+import os
 from bidi.algorithm import get_display
 from datetime import date
 
@@ -35,13 +36,22 @@ from clients.translation_map import TRANSLATION_MAP
 
 logging.getLogger("deepL").setLevel(logging.WARNING)
 
+# # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
+# ITERATIVE_PROMPT_FILES = [
+#   "prompts/prompt_simple.txt",
+#   "prompts/prompt_chain_of_translation.txt",
+#   "prompts/prompt_one_shot.txt",
+#   "prompts/prompt_cross_lingual_alignment.txt",
+#   "prompts/prompt_persona.txt"
+# ]
+
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
+# Dynamically find all prompt files that start with "prompt"
+PROMPT_DIR = "prompts"
 ITERATIVE_PROMPT_FILES = [
-  "prompts/prompt_simple.txt",
-  "prompts/prompt_chain_of_translation.txt",
-  "prompts/prompt_one_shot.txt",
-  "prompts/prompt_cross_lingual_alignment.txt",
-  "prompts/prompt_persona.txt"
+    os.path.join(PROMPT_DIR, filename) 
+    for filename in os.listdir(PROMPT_DIR) 
+    if filename.startswith("prompt") and os.path.isfile(os.path.join(PROMPT_DIR, filename))
 ]
 
 # languages to evaluate
