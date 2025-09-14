@@ -1,3 +1,4 @@
+import tenacity
 from openai import AzureOpenAI
 from clients.client import Client
 from clients.translation_map import TRANSLATION_MAP
@@ -10,6 +11,7 @@ class ChatGPTClient(Client):
         self.azure_model = "2024-12-01-preview"
         self.deployment_name = deployment_name
 
+    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=1, min=6, max=180), stop=tenacity.stop_after_attempt(3))
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
         prompt = self.gather_prompt(prompt_file=prompt_file, disaster=disaster, language=language,
                                     sending_agency=sending_agency, location=location, time=time, url=url)
