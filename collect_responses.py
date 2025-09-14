@@ -28,11 +28,12 @@ import argparse
 import arabic_reshaper
 import os
 from bidi.algorithm import get_display
-from datetime import date, time
+from datetime import date
 
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
 from clients.translation_map import TRANSLATION_MAP
+import time
 
 logging.getLogger("deepL").setLevel(logging.WARNING)
 
@@ -275,24 +276,22 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
 
 
 def main():
-
-    start_time = time.now()
+    start_time = time.time()
 
     load_dotenv()
     args = parse_args()
 
-    output_json = None
+    output_json = {}  # Initialize with empty dict as default
 
-    try:
-        with open(args.output_file, "r", encoding="utf-8") as file:
-            output_json = json.load(file)
-        logger.info(f"Preserved existing output from {args.output_file}")
-    except FileNotFoundError:
-        logger.error(f"Output file {args.output_file} not found. Please create the file or specify the correct path.")
-        exit(1)
-
-    if output_json is None:
-        exit()
+    if args.preserve_output:
+        try:
+            with open(args.output_file, "r", encoding="utf-8") as file:
+                output_json = json.load(file)
+            logger.info(f"Preserved existing output from {args.output_file}")
+        except FileNotFoundError:
+            logger.warning(f"Output file {args.output_file} not found. Creating new output file.")
+        except json.JSONDecodeError:
+            logger.warning(f"Output file {args.output_file} contains invalid JSON. Creating new output file.")
 
     skip_gemini = args.skip_gemini
     skip_chatgpt = args.skip_chatgpt
@@ -305,18 +304,18 @@ def main():
     logger.info("**************************************************")
     logger.info(f"Languages from translation map: {LANGUAGES}")
 
-    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, skip_google_translate, skip_deepL, total_responses, args.output_file)
-
-    # with open(args.output_file, 'w', encoding='utf-8') as f:
-    #     json.dump(output_json, f, ensure_ascii=False, indent=4)
+    collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgpt, skip_deepseek, 
+                                 skip_google_translate, skip_deepL, total_responses, args.output_file)
 
     # just in case there is anything left
     save_output_json(output_json, args.output_file, logger)
 
-    end_time = time.now()
-    elapsed_time = end_time - start_time
-    logger.info(f"Elapsed time: {elapsed_time}")
+    elapsed_time = time.time() - start_time
+    hours, remainder = divmod(elapsed_time, 3600)
+    minutes, seconds = divmod(remainder, 60)
 
+    logger.info(f"Total execution time: {int(hours)}:{int(minutes)}:{int(seconds)}")
+    print(f"Total execution time: {int(hours)}:{int(minutes)}:{int(seconds)}")
 
     #TODO: skip DeepL if the language is not supported
     #TODO: skip a service if it has failed N times in a row
