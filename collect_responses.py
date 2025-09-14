@@ -241,10 +241,7 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
     services_direct = [
         ("google_translate", skip_google_translate),
         ("deepL", skip_deepL)]
-
-    failure_counters = {service_name: 0 for service_name, _ in services_iterative}
-    MAX_FAILURES = 10   
-    
+ 
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
             # Iterative services (loop through multiple prompts)
