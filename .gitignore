@@ -204,3 +204,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+data/source_character_counts.json

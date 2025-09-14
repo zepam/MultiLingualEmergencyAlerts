@@ -28,7 +28,7 @@ import argparse
 import arabic_reshaper
 import os
 from bidi.algorithm import get_display
-from datetime import date
+from datetime import date, time
 
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
@@ -274,7 +274,9 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
             skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, output_filename, total_responses)
 
 
-if __name__ == "__main__":
+def main():
+
+    start_time = time.now()
 
     load_dotenv()
     args = parse_args()
@@ -311,6 +313,13 @@ if __name__ == "__main__":
     # just in case there is anything left
     save_output_json(output_json, args.output_file, logger)
 
+    end_time = time.now()
+    elapsed_time = end_time - start_time
+    logger.info(f"Elapsed time: {elapsed_time}")
+
 
     #TODO: skip DeepL if the language is not supported
     #TODO: skip a service if it has failed N times in a row
+
+if __name__ == "__main__":
+    main()
