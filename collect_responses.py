@@ -55,6 +55,12 @@ ITERATIVE_PROMPT_FILES = [
     if filename.startswith("prompt") and os.path.isfile(os.path.join(PROMPT_DIR, filename))
 ]
 
+RTL_LANGUAGES = {
+    "arabic", "aramaic", "azeri", "divehi", "fula", "hebrew", "kurdish", "nko",
+    "persian", "rohingya", "syriac", "urdu"
+}
+
+
 # languages to evaluate
 # Extract languages from the TRANSLATION_MAP keys
 LANGUAGES = [lang for lang in TRANSLATION_MAP.keys() if lang != "English"]
@@ -180,7 +186,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
             return True  # Skip this service going forward
         
-        if language_name == "arabic":
+        if language_name in RTL_LANGUAGES:
             # make sure Arabic output is not broken and is left to right
             output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
             
