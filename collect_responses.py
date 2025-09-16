@@ -36,18 +36,11 @@ from clients.translation_map import TRANSLATION_MAP
 import time
 
 logging.getLogger("deepL").setLevel(logging.WARNING)
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
-# # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
-# ITERATIVE_PROMPT_FILES = [
-#   "prompts/prompt_simple.txt",
-#   "prompts/prompt_chain_of_translation.txt",
-#   "prompts/prompt_one_shot.txt",
-#   "prompts/prompt_cross_lingual_alignment.txt",
-#   "prompts/prompt_persona.txt"
-# ]
 
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
-# Dynamically find all prompt files that start with "prompt"
+# dynamically find all prompt files that start with "prompt"
 PROMPT_DIR = "prompts"
 ITERATIVE_PROMPT_FILES = [
     os.path.join(PROMPT_DIR, filename) 
@@ -60,8 +53,6 @@ RTL_LANGUAGES = {
     "persian", "rohingya", "syriac", "urdu"
 }
 
-
-# languages to evaluate
 # Extract languages from the TRANSLATION_MAP keys
 LANGUAGES = [lang for lang in TRANSLATION_MAP.keys() if lang != "English"]
 
@@ -196,6 +187,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
             "date": date.today().isoformat()
         }
         existing_response_list.append(response_with_date)
+        logger.info(f"Response added to {service_name} : {language_name} : {disaster_name} : {prompt_name}")
         return False  # Return false if a new response was added
         
     else:
@@ -248,38 +240,69 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
     services_direct = [
         ("google_translate", skip_google_translate),
         ("deepL", skip_deepL)]
+
+    # Track 429 errors for each service
+    error_counts = {service: 0 for service, _ in services_iterative + services_direct}
+    disabled_services = set()
  
     for language in LANGUAGES:
         for disaster in STANDARD_DISASTERS:
             # Iterative services (loop through multiple prompts)
             for prompt in ITERATIVE_PROMPT_FILES:
                 for service_name, skip_flag in services_iterative:
-                    if not skip_flag:
-                        new_skip = loop_responses(
-                            skip_flag, service_name, language, disaster, prompt,
-                            logger, output_json, output_filename, total_responses
-                        )
-                        if not new_skip:  # successful API call
-                            save_output_json(output_json, output_filename, logger)
+                    if skip_flag or service_name in disabled_services:
+                        continue  # Skip this service if it's marked to be skipped or disabled due to errors
+                    new_skip = loop_responses(
+                        skip_flag, service_name, language, disaster, prompt,
+                        logger, output_json, output_filename, total_responses
+                    )
+                    if new_skip:
+                        error_counts[service_name] += 1
+                        if error_counts[service_name] >= 3:  # Disable after 3 consecutive errors
+                            logger.error(f"Disabling {service_name} due to repeated 429 errors.")
+                            disabled_services.add(service_name)
+                    else:  # successful API call
+                        error_counts[service_name] = 0
+                        save_output_json(output_json, output_filename, logger)
 
             # Direct translation services (one prompt per disaster)
             disaster_name = disaster.replace("a ", "").replace(" ", "_")
             prompt = f"prompts/{disaster_name}.txt"
             for service_name, skip_flag in services_direct:
-                if not skip_flag:
-                    new_skip = loop_responses(
-                        skip_flag, service_name, language, disaster, prompt,
-                        logger, output_json, output_filename, total_responses
-                    )
-                    if not new_skip:
-                        save_output_json(output_json, output_filename, logger)
+                if skip_flag or service_name in disabled_services:
+                    continue  # Skip this service if it's marked to be skipped or disabled due to errors
+                new_skip = loop_responses(
+                    skip_flag, service_name, language, disaster, prompt,
+                    logger, output_json, output_filename, total_responses
+                )
+                if new_skip:
+                    error_counts[service_name] += 1
+                    if error_counts[service_name] >= 3:  # Disable after 3 consecutive errors
+                        logger.error(f"Disabling {service_name} due to repeated 429 errors.")
+                        disabled_services.add(service_name)
+                else:
+                    save_output_json(output_json, output_filename, logger)
 
             # Direct translations also need a short description and the original template
             prompt = f"prompts/translate_{disaster_name}.txt"
-            skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-            skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-            skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-
+            # skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, output_filename, total_responses)
+            # skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, output_filename, total_responses)
+            # skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, output_filename, total_responses)
+            for service_name, skip_flag in [("gemini", skip_gemini), ("chatgpt", skip_chatgpt), ("deepseek", skip_deepseek)]:
+                if skip_flag or service_name in disabled_services:
+                    continue  # Skip this service if it's marked to be skipped or disabled due to errors
+                new_skip = loop_responses(
+                    skip_flag, service_name, language, disaster, prompt,
+                    logger, output_json, output_filename, total_responses
+                )
+                if new_skip:
+                    error_counts[service_name] += 1
+                    if error_counts[service_name] >= 3:  # Disable after 3 consecutive errors
+                        logger.error(f"Disabling {service_name} due to repeated 429 errors.")
+                        disabled_services.add(service_name)
+                else:  # successful API call
+                    error_counts[service_name] = 0
+                    save_output_json(output_json, output_filename, logger)
 
 def main():
     start_time = time.time()
