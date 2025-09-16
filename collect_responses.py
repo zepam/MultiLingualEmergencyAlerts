@@ -81,8 +81,8 @@ def parse_args():
     parser.add_argument("--total_responses", type=int, default=5,
                         help="The number of responses to collect per service")
     
-    parser.add_argument("--preserve_output", action='store_true',
-                        help="If a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits")
+    # parser.add_argument("--preserve_output", action='store_true',
+    #                     help="If a matching output file exists, read in the existing data and append to it. Useful when combatting rate limits")
     
     parser.add_argument("--skip_gemini", action="store_true", default=False,
                         help="Forcibly skip any calls to Gemini")
@@ -312,15 +312,14 @@ def main():
 
     output_json = {}  # Initialize with empty dict as default
 
-    if args.preserve_output:
-        try:
-            with open(args.output_file, "r", encoding="utf-8") as file:
-                output_json = json.load(file)
-            logger.info(f"Preserved existing output from {args.output_file}")
-        except FileNotFoundError:
-            logger.warning(f"Output file {args.output_file} not found. Creating new output file.")
-        except json.JSONDecodeError:
-            logger.warning(f"Output file {args.output_file} contains invalid JSON. Creating new output file.")
+    try:
+        with open(args.output_file, "r", encoding="utf-8") as file:
+            output_json = json.load(file)
+        logger.info(f"Preserved existing output from {args.output_file}")
+    except FileNotFoundError:
+        logger.warning(f"Output file {args.output_file} not found. Creating new output file.")
+    except json.JSONDecodeError:
+        logger.warning(f"Output file {args.output_file} contains invalid JSON. Creating new output file.")
 
     skip_gemini = args.skip_gemini
     skip_chatgpt = args.skip_chatgpt
