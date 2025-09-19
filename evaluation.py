@@ -119,7 +119,7 @@ def get_results_count(generated_path, service_name=None):
         # Case 1: Get results for a single service
         if service_name in json_data:
             return get_results_count(json_data[service_name])
-        print(f"Service '{service_name}' not found.") # only get here when if statement is false
+        logger.warning(f"Service '{service_name}' not found.") # only get here when if statement is false
         return 0
     elif isinstance(json_data, dict):
         return sum(get_results_count(v) for v in json_data.values())
