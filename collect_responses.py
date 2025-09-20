@@ -48,6 +48,7 @@ ITERATIVE_PROMPT_FILES = [
     if filename.startswith("prompt") and os.path.isfile(os.path.join(PROMPT_DIR, filename))
 ]
 
+# list of right-to-left languages that need additional processing
 RTL_LANGUAGES = {
     "arabic", "aramaic", "azeri", "divehi", "fula", "hebrew", "kurdish", "nko",
     "persian", "rohingya", "syriac", "urdu"
