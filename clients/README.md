@@ -74,3 +74,6 @@ Contains charts of our demographic analysis for language needs in Washington sta
 
 ## Clients
 These are objects used to interact with the various service APIs. Each client inherits from a base Client object.
+
+## Translation Map
+This contains all the languages that will be used as the target language. Additional languages may be added to the evaluation stream in this file by including the lowercase language name and [language code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
