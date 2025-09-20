@@ -70,7 +70,7 @@ logger = logging.getLogger(__name__)
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="output.log",
+    filename="logs/output.log",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     filemode='w'        # the file gets so long, it will reset each time
 )

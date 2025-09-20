@@ -49,37 +49,37 @@ torch.set_float32_matmul_precision('medium')
 torch.cuda.empty_cache()
 
 # Optional: psutil for more accurate memory logging
-try:
-    import psutil
-    _HAS_PSUTIL = True
-except ImportError:
-    _HAS_PSUTIL = False
+# try:
+#     import psutil
+#     _HAS_PSUTIL = True
+# except ImportError:
+#     _HAS_PSUTIL = False
 
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    filename="evaluation.log",
+    filename="logs/evaluation.log",
     filemode="a",
     force=True
 )
 
 logger = logging.getLogger(__name__)
 
-def log_memory_usage(note=""):
-    """Log the current memory usage of the process."""
-    if _HAS_PSUTIL:
-        process = psutil.Process(os.getpid())
-        mem = process.memory_info().rss / 1024 ** 2  # in MB
-        logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem:.2f} MB")
-    else:
-        # Fallback: use resource module (less accurate, Unix only)
-        try:
-            import resource
-            mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-            logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem} KB (resource module)")
-        except ImportError:
-            logger.info("psutil not installed and resource module unavailable; cannot log memory usage.")
+# def log_memory_usage(note=""):
+#     """Log the current memory usage of the process."""
+#     if _HAS_PSUTIL:
+#         process = psutil.Process(os.getpid())
+#         mem = process.memory_info().rss / 1024 ** 2  # in MB
+#         logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem:.2f} MB")
+#     else:
+#         # Fallback: use resource module (less accurate, Unix only)
+#         try:
+#             import resource
+#             mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+#             logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem} KB (resource module)")
+#         except ImportError:
+#             logger.info("psutil not installed and resource module unavailable; cannot log memory usage.")
 
 
 class EvaluationTokenizer:
@@ -207,8 +207,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                     
                                 pbar.update(1)
                                 # Log memory usage every XX prompts
-                                if pbar.n % 5 == 0:
-                                    log_memory_usage(f"After {pbar.n} prompts")
+                                # if pbar.n % 5 == 0:
+                                #     log_memory_usage(f"After {pbar.n} prompts")
 
                         # google translate
                         elif isinstance(relevant_prompts, list):
@@ -240,8 +240,8 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
 
                                 pbar.update(1)
                                 # Log memory usage every 5 prompts
-                                if pbar.n % 5 == 0:
-                                    log_memory_usage(f"After {pbar.n} prompts")
+                                # if pbar.n % 5 == 0:
+                                #     log_memory_usage(f"After {pbar.n} prompts")
                 #TODO  save results until now instead of at the end
 
     
@@ -252,7 +252,7 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
         logger.info(f"Results saved to: {output_csv}")
         print(f"Results saved to: {output_csv}")
     # Log memory usage at the end
-    log_memory_usage("At end of evaluation")
+    # log_memory_usage("At end of evaluation")
 
     return df
 
@@ -293,7 +293,7 @@ def main():
     logger.info(f"Output CSV: {args.output_csv}")
 
     # Log memory usage at the start
-    log_memory_usage("At start of script")
+    # log_memory_usage("At start of script")
 
     # Load metrics
     logger.info("Loading metrics")
