@@ -328,5 +328,159 @@
                 "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
                 "reference": "[SENDING AGENCY]: Un AVVISO DI INTERRUZIONE del servizio 9-1-1 è in vigore per [LOCATION]. In caso di emergenza, contattare la Polizia, i Vigili del Fuoco, i servizi medici o altri servizi di emergenza direttamente ai numeri di telefono locali. Il 9-1-1 potrebbe non essere disponibile in caso di emergenza. [URL]"
             }
+        },
+        "samoan": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
+        },
+        "marshallese": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
+        },
+        "punjabi": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
+        },
+        "telegu": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
+        },
+        "amharic": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
+        },
+        "cambodian": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
+        },
+        "japanese": {
+            "flood": {
+                "source": "[SENDING AGENCY]: A FLASH FLOOD EMERGENCY is in effect for [LOCATION] until [TIME]. This is an extremely dangerous and life-threatening situation. Do not attempt to travel unless you are fleeing an area that may flood or are under an evacuation order. [URL]",
+                "reference": ""
+            },
+            "extreme_wind": {
+                "source": "[SENDING AGENCY]: An EXTREME WIND WARNING is in effect for [LOCATION] for the immediate danger of life-threatening winds until [TIME]. Take cover NOW in an interior room of a sturdy building, away from windows. Protect your head from flying objects. Do NOT go outside if the wind calms! Winds will quickly become dangerous again. [URL]",
+                "reference": ""
+            },
+            "fire": {
+                "source": "[SENDING AGENCY]: A FIRE WARNING in [LOCATION] is in effect until [TIME]. Evacuate your family and pets now, do not delay. Visibility in area will be reduced and roads can become blocked. If you do not leave now, you could be trapped, injured, or killed. LEAVE areas near [LOCATION]. Expect reduced visibility, heavy smoke, and difficulty breathing. Be careful when driving. Watch for public safety personnel operating in the area and follow their instructions. [URL]",
+                "reference": ""
+            },
+            "boil_water_notice": {
+                "source": "[SENDING AGENCY]: A BOIL WATER ALERT has been issued for [LOCATION] and is in effect until [TIME]. Water in your community can make you sick. Use bottled water if available. Do not drink, cook with, brush your teeth with, or clean your home with tap water or filtered water until you boil it. Bring water to a full rolling boil for THREE MINUTES. Let water cool before use. Do not use ice made with water that has not been boiled. If you use formula to feed your child, use ready-to-use formula. Make sure pets do not drink water that has not been boiled. [URL]",
+                "reference": ""
+            },
+            "911_outage": {
+                "source": "[SENDING AGENCY]: A 9-1-1 OUTAGE ALERT is in effect for [LOCATION]. Please contact police, fire, medical, or other emergency services directly at their local phone numbers in case of emergency. If you dial 9-1-1, you may not get help. [URL]",
+                "reference": ""
+            }
         }
     }
