@@ -48,6 +48,7 @@ ITERATIVE_PROMPT_FILES = [
     if filename.startswith("prompt") and os.path.isfile(os.path.join(PROMPT_DIR, filename))
 ]
 
+# list of right-to-left languages that need additional processing
 RTL_LANGUAGES = {
     "arabic", "aramaic", "azeri", "divehi", "fula", "hebrew", "kurdish", "nko",
     "persian", "rohingya", "syriac", "urdu"
@@ -69,7 +70,7 @@ logger = logging.getLogger(__name__)
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="output.log",
+    filename="logs/output.log",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     filemode='w'        # the file gets so long, it will reset each time
 )
@@ -241,11 +242,14 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
         ("google_translate", skip_google_translate),
         ("deepL", skip_deepL)]
 
-    # Track 429 errors for each service
-    error_counts = {service: 0 for service, _ in services_iterative + services_direct}
-    disabled_services = set()
+
  
     for language in LANGUAGES:
+
+        # Track 429 errors for each service/language pair
+        error_counts = {service: 0 for service, _ in services_iterative + services_direct}
+        disabled_services = set()
+
         for disaster in STANDARD_DISASTERS:
             # Iterative services (loop through multiple prompts)
             for prompt in ITERATIVE_PROMPT_FILES:
@@ -259,7 +263,7 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
                     if new_skip:
                         error_counts[service_name] += 1
                         if error_counts[service_name] >= 3:  # Disable after 3 consecutive errors
-                            logger.error(f"Disabling {service_name} due to repeated 429 errors.")
+                            logger.error(f"Disabling {service_name} for {language} due to repeated 429 errors.")
                             disabled_services.add(service_name)
                     else:  # successful API call
                         error_counts[service_name] = 0
@@ -298,7 +302,7 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
                 if new_skip:
                     error_counts[service_name] += 1
                     if error_counts[service_name] >= 3:  # Disable after 3 consecutive errors
-                        logger.error(f"Disabling {service_name} due to repeated 429 errors.")
+                        logger.error(f"Disabling {service_name} for {language} due to repeated 429 errors.")
                         disabled_services.add(service_name)
                 else:  # successful API call
                     error_counts[service_name] = 0
@@ -342,8 +346,8 @@ def main():
     hours, remainder = divmod(elapsed_time, 3600)
     minutes, seconds = divmod(remainder, 60)
 
-    logger.info(f"Total execution time: {int(hours)}:{int(minutes)}:{int(seconds)}")
-    print(f"Total execution time: {int(hours)}:{int(minutes)}:{int(seconds)}")
+    logger.info(f"Total execution time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
+    print(f"Total execution time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
 
     #TODO: skip DeepL if the language is not supported
     #TODO: skip a service if it has failed N times in a row

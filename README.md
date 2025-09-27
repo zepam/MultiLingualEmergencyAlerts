@@ -14,4 +14,9 @@ A toolkit for generating, collecting, and evaluating multilingual emergency aler
 ## Latest BLEU Results
 ![BLEU results broken down by LANGUAGE vs. SERVICE. The data is filtered on translation category, which keeps prompts and translations. The LANGUAGE (services languages.csv) filter keeps 13 of 13 members. The BLEU filter ranges from 0.10 to 66.79. Google Translate and DeepL show the highest results.](data/bleu.png)
 
+---
+
+## Example translated alerts
+This is [one example of a translated landing page](https://github.com/zepam/emergency-alerts-examples)  developed from the latest FCC recommendations.
+
 
