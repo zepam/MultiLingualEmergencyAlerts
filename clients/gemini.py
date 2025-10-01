@@ -21,25 +21,20 @@ class GeminiClient(Client):
             time=time,
             url=url
         )
-        # # configure the API key
-        # genai.configure(api_key=self.key)
 
-        # Call the model directly
-        # response = genai.GenerativeModel(self.model).generate_content(
-        #     prompt,
-        #     generation_config=genai.types.GenerationConfig(
-        #         temperature=self.temperature,
-        #         max_output_tokens=self.max_tokens,
-        #         top_p=self.top_p
-        #     )
-        # )
+        # disable thinking because it is taking so long, disables the 'thinking' step for models that support it
+        thinking_config = genai.types.ThinkingConfig(
+            thinking_budget=0
+        )
+
         response = self.client.models.generate_content(
             model=self.model,
             contents=prompt,
             config = genai.types.GenerateContentConfig(
                 temperature=self.temperature,
                 max_output_tokens=self.max_tokens,
-                top_p=self.top_p
+                top_p=self.top_p,
+                thinking_config=thinking_config 
             )
         )
         
