@@ -35,8 +35,10 @@ from source.helpers import chat_with_service
 from clients.translation_map import TRANSLATION_MAP
 import time
 
+# set custom logging levels for noisy libraries
 logging.getLogger("deepL").setLevel(logging.WARNING)
 logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("google_genai").setLevel(logging.WARNING)
 
 
 # prompts for multilingual responses to test prompt engineering. They are run for every service - language - disaster
