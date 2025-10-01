@@ -1,25 +1,35 @@
 """
-evaluation.py
+Evaluation script for multilingual emergency alert translations
 
-This script evaluates generated text outputs against reference texts using a variety of metrics,
-including ROUGE, BLEU, BERTScore, and COMET. It supports multilingual evaluation and can output
-results to a CSV file for further analysis.
+This script evaluates machine-generated translations against reference texts using 
+various NLP metrics. It processes JSON files containing translations from different
+services (like ChatGPT, DeepSeek, Gemini, Google Translate) and evaluates them using:
+
+    - ROUGE (1, 2, L): Measures overlap of n-grams between generated and reference texts
+    - BLEU: Measures precision of n-grams in generated text compared to references
+    - BERTScore: Computes token similarity using contextual embeddings
+    - COMET: Neural-based MT evaluation metric
+    - CHRF: Character-level n-gram F-score
+
+The script handles different translation service output formats and supports
+language-specific tokenization. Results are saved to a CSV file for further analysis.
 
 Usage:
-    python evaluation.py <generated_file.json> <reference_file.json> --output_csv <results.csv>
+    python evaluation.py <generated_path> <reference_path> [--output_csv OUTPUT_CSV] [--service_name SERVICE]
 
 Arguments:
-    generated_file.json   Path to the JSON file containing generated texts.
-    reference_file.json   Path to the JSON file containing reference (gold standard) texts.
-    --output_csv          (Optional) Path to save the evaluation results as a CSV file.
-    --service_name        (Optional) Evaluate only this one service - deepseek, google_translate, chatgpt, gemini
+    generated_path    Path to the JSON file containing generated translations
+    reference_path    Path to the JSON file containing reference translations
+    --output_csv      Path to save the evaluation results as CSV (optional)
+    --service_name    Only evaluate translations from this service (optional)
+Returns:
+    DataFrame containing evaluation results for each translation
 
-Dependencies: evaluate, pandas, tqdm, argparse, json, re, time, sacrebleu
+The script produces detailed logs in logs/evaluation.log and can evaluate
+on a per-prompt level to enable analysis by prompt, disaster type, service, or language.
 
-Example:
-    python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results.csv
-    python evaluation.py output_file.json data/evaluation_gold_standards.json --output_csv results_google_translate.csv --service_name google_translate
-
+NOTE: This script requires significant resources. Consider using the run_all_evaluations.sh script. This 
+will run each evaluation sequentially then concatenate the results.
 """
 
 # have this at the top to supress warnings from the imports because it's annoying
@@ -38,7 +48,6 @@ import time
 import re
 import os
 import torch
-#from comet import download_model, load_from_checkpoint
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
@@ -47,13 +56,6 @@ from clients.translation_map import TRANSLATION_MAP
 
 torch.set_float32_matmul_precision('medium')
 torch.cuda.empty_cache()
-
-# Optional: psutil for more accurate memory logging
-# try:
-#     import psutil
-#     _HAS_PSUTIL = True
-# except ImportError:
-#     _HAS_PSUTIL = False
 
 # Set up logging
 logging.basicConfig(
@@ -65,22 +67,6 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
-
-# def log_memory_usage(note=""):
-#     """Log the current memory usage of the process."""
-#     if _HAS_PSUTIL:
-#         process = psutil.Process(os.getpid())
-#         mem = process.memory_info().rss / 1024 ** 2  # in MB
-#         logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem:.2f} MB")
-#     else:
-#         # Fallback: use resource module (less accurate, Unix only)
-#         try:
-#             import resource
-#             mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-#             logger.info(f"MEMORY USAGE{f' ({note})' if note else ''}: {mem} KB (resource module)")
-#         except ImportError:
-#             logger.info("psutil not installed and resource module unavailable; cannot log memory usage.")
-
 
 class EvaluationTokenizer:
     def set_tokenizer_function(self, language):
@@ -128,7 +114,8 @@ def get_results_count(generated_path, service_name=None):
     else:
         return 0
 
-def evaluate_generated_texts(generated_path, reference_path, output_csv=None, rouge=None, bleu=None, bertscore=None, comet=None, chrf=None, only_service=None):
+def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rouge=None,
+                             bleu=None, bertscore=None, comet=None, chrf=None, only_service=None):
     logger.info(f"Loading reference data from {reference_path}")
     with open(reference_path, "r", encoding="utf-8") as f:
         reference_data = json.load(f)
@@ -239,21 +226,12 @@ def evaluate_generated_texts(generated_path, reference_path, output_csv=None, ro
                                 results.append(result)
 
                                 pbar.update(1)
-                                # Log memory usage every 5 prompts
-                                # if pbar.n % 5 == 0:
-                                #     log_memory_usage(f"After {pbar.n} prompts")
-                #TODO  save results until now instead of at the end
-
-    
     df = pd.DataFrame(results)
 
     if output_csv:
         df.to_csv(output_csv, index=False)
         logger.info(f"Results saved to: {output_csv}")
         print(f"Results saved to: {output_csv}")
-    # Log memory usage at the end
-    # log_memory_usage("At end of evaluation")
-
     return df
 
 
@@ -292,9 +270,6 @@ def main():
     logger.info(f"Reference file: {args.reference_path}")
     logger.info(f"Output CSV: {args.output_csv}")
 
-    # Log memory usage at the start
-    # log_memory_usage("At start of script")
-
     # Load metrics
     logger.info("Loading metrics")
     rouge = load("rouge")
@@ -320,9 +295,7 @@ def main():
         only_service=args.service_name
     )
 
-    # Print the DataFrame
     logger.info("Evaluation complete.")
-
     end_time = time.time()
     elapsed_time = end_time - start_time
     logger.info(f"Evaluation completed in {elapsed_time:.2f} seconds.")
