@@ -1,0 +1,1 @@
+09/30/25: switched to gemini-2.5-flash and updated to google-genai library and genai.Client
