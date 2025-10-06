@@ -26,6 +26,7 @@ plots/*
 results_chatgpt.csv
 results/results_deepL.csv
 source/compare_result_lengths.py
+logs/*
 
 
 # Byte-compiled / optimized / DLL files
@@ -204,3 +205,4 @@ cython_debug/
 .pypirc
 
 data/source_character_counts.json
+logs/output.log
