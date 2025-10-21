@@ -32,10 +32,9 @@ NOTE: This script requires significant resources. Consider using the run_all_eva
 will run each evaluation sequentially then concatenate the results.
 """
 
-# have this at the top to supress warnings from the imports because it's annoying
+# have this at the top to supress warnings from the imports because they're annoying
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
-
 import logging
 logging.getLogger("pytorch_lightning").setLevel(logging.WARNING)
 
@@ -47,15 +46,15 @@ from tqdm import tqdm
 import time
 import re
 import os
-import torch
+# import torch
 
 from evaluate import load
 from sacrebleu.tokenizers.tokenizer_spm import Flores101Tokenizer
 from sacrebleu.tokenizers.tokenizer_zh import TokenizerZh
 from clients.translation_map import TRANSLATION_MAP
 
-torch.set_float32_matmul_precision('medium')
-torch.cuda.empty_cache()
+# torch.set_float32_matmul_precision('medium')
+# torch.cuda.empty_cache()
 
 # Set up logging
 logging.basicConfig(
@@ -180,6 +179,11 @@ def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rou
                                 # we have 5 predictions and one gold standard. Just make an array of the same gold standard 5 times
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
+                                # Extract date field if present
+                                dates = [pred.get("date") if isinstance(pred, dict) and "date" in pred else None for pred in predictions]
+                                # If all dates are the same, use that date, else None
+                                date = dates[0] if dates and all(d == dates[0] for d in dates) else None
+
                                 # try:
                                 id_response = f"{service}:{language}:{disaster}:{prompt}"
                                 logger.info(f"Evaluating {id_response} with {total_predictions} predictions")
@@ -187,15 +191,11 @@ def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rou
                                 bertscore_result = bertscore.compute(predictions=predictions_text, references=duplicated_gold_standards, lang=language_code)
                                 bleu_result = bleu.compute(predictions=predictions_text, references=duplicated_gold_standards, tokenize=tokenizer_string)
                                 comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
-                                #comet_result = 0
                                 chrf_result = chrf.compute(predictions=predictions_text, references=duplicated_gold_standards, word_order=2, lowercase=True)
-                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result)
+                                result = gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result, date=date)
                                 results.append(result)
                                     
                                 pbar.update(1)
-                                # Log memory usage every XX prompts
-                                # if pbar.n % 5 == 0:
-                                #     log_memory_usage(f"After {pbar.n} prompts")
 
                         # google translate
                         elif isinstance(relevant_prompts, list):
@@ -214,6 +214,11 @@ def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rou
                                 # apply the same treatment to the gold standards
                                 duplicated_gold_standards = [re.sub(r'\[.*?\]', '', gold_standards["reference"])] * total_predictions
 
+                                # Extract date field if present
+                                dates = [pred.get("date") if isinstance(pred, dict) and "date" in pred else None for pred in predictions]
+                                # If all dates are the same, use that date, else None
+                                date = dates[0] if dates and all(d == dates[0] for d in dates) else None
+
                                 # try:        
                                 id_response = f"{service}:{language}:{disaster}"
                                 logger.info(f"Evaluating {id_response} with {total_predictions} predictions")
@@ -222,7 +227,7 @@ def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rou
                                 bleu_result = bleu.compute(predictions=formatted_predictions, references=duplicated_gold_standards, tokenize=tokenizer_string)
                                 comet_result = comet.compute(predictions=predictions_text, references=duplicated_gold_standards, sources=[gold_standards["source"]] * total_predictions)
                                 chrf_result = chrf.compute(predictions=predictions_text, references=duplicated_gold_standards, word_order=2, lowercase=True)
-                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result, chrf_result)
+                                result = gather_results(service, language, disaster, "N/A", rouge_result, bertscore_result, bleu_result, comet_result, chrf_result, date=date)
                                 results.append(result)
 
                                 pbar.update(1)
@@ -235,7 +240,7 @@ def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rou
     return df
 
 
-def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result):
+def gather_results(service, language, disaster, prompt, rouge_result, bertscore_result, bleu_result, comet_result, chrf_result, date=None):
     return {
         "SERVICE": service,
         "LANGUAGE": language,
@@ -249,7 +254,8 @@ def gather_results(service, language, disaster, prompt, rouge_result, bertscore_
         "BERTScore_R": bertscore_result["recall"][0],
         "BERTScore_F1": bertscore_result["f1"][0],
         "COMET": comet_result["mean_score"],
-        "CHRF": chrf_result["score"]
+        "CHRF": chrf_result["score"],
+        "DATE": date
     }
 
 
