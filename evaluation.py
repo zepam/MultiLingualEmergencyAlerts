@@ -180,7 +180,9 @@ def evaluate_generated_texts(generated_path,reference_path, output_csv=None, rou
                                 duplicated_gold_standards = [gold_standards["reference"]] * total_predictions
 
                                 # Extract date field if present
-                                date = predictions.get("date") if isinstance(predictions, dict) else None
+                                dates = [pred.get("date") if isinstance(pred, dict) and "date" in pred else None for pred in predictions]
+                                # If all dates are the same, use that date, else None
+                                date = dates[0] if dates and all(d == dates[0] for d in dates) else None
 
                                 # try:
                                 id_response = f"{service}:{language}:{disaster}:{prompt}"
