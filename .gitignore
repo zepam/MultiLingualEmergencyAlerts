@@ -17,6 +17,7 @@ data/NRI_Shapefile_CensusTracts/*
 data/NRI_Shapefile_Counties/*
 data/lang_by_county.csv
 data/NRI_Table_Counties_Washington.csv
+data/source_character_counts.json
 results_formatted_predictions.csv
 compare_results.py
 results_gemini.csv
@@ -204,6 +205,3 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-data/source_character_counts.json
-logs/output.log
-logs/output.log
