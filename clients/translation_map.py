@@ -28,10 +28,9 @@ TRANSLATION_MAP = {
     "Tigrinya": "ti",      # 5000+ person language in WA state 2024
     "Urdu": "ur",          # 5000+ person language in WA state 2024
     "French": "fr",       # 5000+ person language in WA state 2024
-    # "Oromo": "om",          # 5000+ person language in WA state 2024
     # "Farsi": "fa",          # 5000+ person language in WA state 2024
-    # "Turkish": "tr",       # 5000+ person language in WA state 2024
-    # "Swahili": "sw",       # 5000+ person language in WA state 2024
+    "Turkish": "tr",       # 5000+ person language in WA state 2024
+    "Swahili": "sw",       # 5000+ person language in WA state 2024
     # "Hebrew": "he",        # 5000+ person language in WA state 2024
     # "Marathi": "mr",      # 5000+ person language in WA state 2024
     "Samoan": "sm",       # 5000+ person language in WA state 2024
@@ -39,12 +38,12 @@ TRANSLATION_MAP = {
     # "Lao": "lo",          # 5000+ person language in WA state 2024
     # "Romanian": "ro",     # 5000+ person language in WA state 2024
     # "Nepali": "ne",       # 5000+ person language in WA state 2024
-    # "Hmong": "hmn",      # 5000+ person language in WA state 2024
+    "Hmong": "hmn",      # 5000+ person language in WA state 2024
     # "Mixteco": "mix",     # 5000+ person language in WA state 2024
     "German": "de",       # 5000+ person language in WA state 2024
     # "Filipino": "fil",    # 5000+ person language in WA state 2024
     # "Burmese": "my",      # 5000+ person language in WA state 2024
     # "Thai": "th",        # 5000+ person language in WA state 2024"
-    # "Oromo": "om",          # 5000+ person language in WA state 2024
+    "Oromo": "om",          # 5000+ person language in WA state 2024
     # "Karen": "karen",     # 5000+ person language in WA state 2024
 }
