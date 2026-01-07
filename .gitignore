@@ -4,12 +4,10 @@ notes.txt
 test_api.py
 test_openrouter.py
 results.csv
-results.csv
 .vscode/launch.json
 evaluation_all_jen.py
 results_before.csv
 results.csv.tmp
-results.csv
 results_new.csv
 evaluation_batch.py
 data/cb_2022_us_county_20m/*
@@ -204,4 +202,3 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-
