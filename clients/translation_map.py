@@ -19,10 +19,10 @@ TRANSLATION_MAP = {
     "Telegu": "te",       # 5000+ person language in WA state 2024
     "Tagalog": "tl",       # 5000+ person language in WA state 2024
     "Amharic": "am",       # 5000+ person language in WA state 2024
-    # ? "Chuukese": "chk",     # 5000+ person language in WA state 2024
+    "Chuukese": "chk",     # 5000+ person language in WA state 2024
     "Cambodian": "km",      # 5000+ person language in WA state 2024
-    # "Pashto": "ps",         # 5000+ person language in WA state 2024
-    # "Tamil": "ta",         # 5000+ person language in WA state 2024
+    "Pashto": "ps",         # 5000+ person language in WA state 2024
+    "Tamil": "ta",         # 5000+ person language in WA state 2024
     "Japanese": "ja",      # 5000+ person language in WA state 2024
     "Portuguese": "pt",    # 5000+ person language in WA state 2024
     "Tigrinya": "ti",      # 5000+ person language in WA state 2024
@@ -31,19 +31,19 @@ TRANSLATION_MAP = {
     # "Farsi": "fa",          # 5000+ person language in WA state 2024
     "Turkish": "tr",       # 5000+ person language in WA state 2024
     "Swahili": "sw",       # 5000+ person language in WA state 2024
-    # "Hebrew": "he",        # 5000+ person language in WA state 2024
+    "Hebrew": "he",        # 5000+ person language in WA state 2024
     # "Marathi": "mr",      # 5000+ person language in WA state 2024
     "Samoan": "sm",       # 5000+ person language in WA state 2024
     # "Malayalam": "ml",    # 5000+ person language in WA state 2024
-    # "Lao": "lo",          # 5000+ person language in WA state 2024
+    "Lao": "lo",          # 5000+ person language in WA state 2024
     # "Romanian": "ro",     # 5000+ person language in WA state 2024
-    # "Nepali": "ne",       # 5000+ person language in WA state 2024
+    "Nepali": "ne",       # 5000+ person language in WA state 2024
     "Hmong": "hmn",      # 5000+ person language in WA state 2024
     # "Mixteco": "mix",     # 5000+ person language in WA state 2024
     "German": "de",       # 5000+ person language in WA state 2024
-    # "Filipino": "fil",    # 5000+ person language in WA state 2024
-    # "Burmese": "my",      # 5000+ person language in WA state 2024
-    # "Thai": "th",        # 5000+ person language in WA state 2024"
+    # "Filipino": "fil",    # 5000+ person language in WA state 2024, use Tagalog instead
+    "Burmese": "my",      # 5000+ person language in WA state 2024
+    "Thai": "th",        # 5000+ person language in WA state 2024"
     "Oromo": "om",          # 5000+ person language in WA state 2024
-    # "Karen": "karen",     # 5000+ person language in WA state 2024
+    "Karen": "karen",     # 5000+ person language in WA state 2024
 }
