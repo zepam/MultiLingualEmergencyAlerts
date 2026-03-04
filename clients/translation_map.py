@@ -45,5 +45,5 @@ TRANSLATION_MAP = {
     "Burmese": "my",      # 5000+ person language in WA state 2024
     "Thai": "th",        # 5000+ person language in WA state 2024"
     "Oromo": "om",          # 5000+ person language in WA state 2024
-    "Karen": "karen",     # 5000+ person language in WA state 2024
+    "Karen": "kar",     # 5000+ person language in WA state 2024 OR MAYBE ksw FOR S’gaw Karen?
 }
