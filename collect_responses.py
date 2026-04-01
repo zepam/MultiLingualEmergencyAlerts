@@ -310,6 +310,14 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
                     error_counts[service_name] = 0
                     save_output_json(output_json, output_filename, logger)
 
+def print_errors():
+    # at the end of processing, write out all CRITICAL,  ERROR, and WARNING messages from logs/output.log to the file logs/errors.log for easier debugging
+    with open("logs/output.log", "r") as infile, open("logs/errors.log", "w") as outfile:
+        for line in infile:
+            if "CRITICAL" in line or "ERROR" in line or "WARNING" in line:
+                outfile.write(line)
+
+
 def main():
     start_time = time.time()
 
@@ -351,8 +359,9 @@ def main():
     logger.info(f"Total execution time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
     print(f"Total execution time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
 
+    print_errors()
+
     #TODO: skip DeepL if the language is not supported
-    #TODO: skip a service if it has failed N times in a row
 
 if __name__ == "__main__":
     main()
