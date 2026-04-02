@@ -1,6 +1,7 @@
 import tenacity
 import google.generativeai as genai
 import openai
+from clients.exceptions import QuotaExhaustedError
 
 # Abstract Client parent
 class Client:
@@ -27,9 +28,24 @@ class Client:
         return prompt_text
     
     # wrap automated-retries around the main chat interface to address errors and rate limits 
-    @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=60, max=180), stop=tenacity.stop_after_attempt(3))
+    # @tenacity.retry(wait=tenacity.wait_exponential(multiplier=0.5, min=60, max=180), stop=tenacity.stop_after_attempt(3))
+    # def safe_chat(self, prompt_file, language, disaster):
+    #     try:
+    #         return self.chat(prompt_file=prompt_file, language=language, disaster=disaster)
+    #     except (openai.RateLimitError, tenacity.RetryError) as e:
+    #         self.logger.info(f"Error: {e.message}")
+
+    @tenacity.retry(
+            reraise=True,
+            wait=tenacity.wait_exponential(multiplier=1, min=5, max=180),
+            stop=tenacity.stop_after_attempt(6),
+            retry=tenacity.retry_if_exception_type((
+                openai.RateLimitError,
+                TimeoutError,
+                ConnectionError,
+            )),
+        )
     def safe_chat(self, prompt_file, language, disaster):
-        try:
-            return self.chat(prompt_file=prompt_file, language=language, disaster=disaster)
-        except (openai.RateLimitError, tenacity.RetryError) as e:
-            self.logger.info(f"Error: {e.message}")
+        # IMPORTANT: don't catch-and-log here unless you re-raise,
+        # otherwise Tenacity thinks it succeeded and won't retry.
+        return self.chat(prompt_file=prompt_file, language=language, disaster=disaster)
