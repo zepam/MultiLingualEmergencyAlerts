@@ -67,6 +67,8 @@ STANDARD_DISASTERS = [
   "a 911 outage",
 ]
 
+
+
 # Configure logging
 logger = logging.getLogger(__name__)
 
@@ -291,9 +293,6 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
 
             # Direct translations also need a short description and the original template
             prompt = f"prompts/translate_{disaster_name}.txt"
-            # skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-            # skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-            # skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, output_filename, total_responses)
             for service_name, skip_flag in [("gemini", skip_gemini), ("chatgpt", skip_chatgpt), ("deepseek", skip_deepseek)]:
                 if skip_flag or service_name in disabled_services:
                     continue  # Skip this service if it's marked to be skipped or disabled due to errors
