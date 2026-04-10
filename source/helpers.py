@@ -11,17 +11,24 @@ from clients.cloud_translation import GoogleCloudTranslationClient
 from clients.deepl import DeepLClient
 
 def chat_with_service(service_name, language, disaster, prompt_file_path, logger):
-    match service_name:
-        case "gemini":
-            return chat_gemini(language, disaster, prompt_file_path, logger)
-        case "chatgpt":
-            return chat_chatgpt(language, disaster, prompt_file_path, logger)
-        case "deepseek":
-            return chat_deepseek(language, disaster, prompt_file_path, logger)
-        case "google_translate":
-            return chat_google_translate(language, disaster, prompt_file_path, logger)
-        case "deepL":
-            return chat_deepL(language, disaster, prompt_file_path, logger)
+    try:
+        match service_name:
+            case "gemini":
+                return chat_gemini(language, disaster, prompt_file_path, logger)
+            case "chatgpt":
+                return chat_chatgpt(language, disaster, prompt_file_path, logger)
+            case "deepseek":
+                return chat_deepseek(language, disaster, prompt_file_path, logger)
+            case "google_translate":
+                return chat_google_translate(language, disaster, prompt_file_path, logger)
+            case "deepL":
+                return chat_deepL(language, disaster, prompt_file_path, logger)
+            case _:
+                logger.error(f"Unknown service requested: {service_name}")
+                return None
+    except Exception as e:
+        logger.exception(f"{service_name} request failed for {language}:{disaster}: {e}")
+        return None
 
 def chat_gemini(language, disaster, prompt_file_path, logger):
     gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"), logger=logger)
