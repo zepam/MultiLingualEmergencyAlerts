@@ -29,7 +29,8 @@ class DeepSeekClient(Client):
         # self.base_url = "https://openrouter.ai/api/v1"
         # self.model = "deepseek/deepseek-chat-v3-0324:free" 
         # updated 01/20/26 to below
-        self.base_url = "https://openrouter.ai/api/v1/chat/completions"
+        # OpenAI SDK appends /chat/completions for chat.create calls.
+        self.base_url = "https://openrouter.ai/api/v1"
         self.model = "deepseek/deepseek-chat-v3-0324"
 
     #@tenacity.retry(wait=tenacity.wait_exponential(multiplier=1, min=6, max=180), stop=tenacity.stop_after_attempt(3))

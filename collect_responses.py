@@ -67,6 +67,8 @@ STANDARD_DISASTERS = [
   "a 911 outage",
 ]
 
+
+
 # Configure logging
 logger = logging.getLogger(__name__)
 
@@ -291,9 +293,6 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
 
             # Direct translations also need a short description and the original template
             prompt = f"prompts/translate_{disaster_name}.txt"
-            # skip_gemini = loop_responses(skip_gemini, "gemini", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-            # skip_chatgpt = loop_responses(skip_chatgpt, "chatgpt", language, disaster, prompt, logger, output_json, output_filename, total_responses)
-            # skip_deepseek = loop_responses(skip_deepseek, "deepseek", language, disaster, prompt, logger, output_json, output_filename, total_responses)
             for service_name, skip_flag in [("gemini", skip_gemini), ("chatgpt", skip_chatgpt), ("deepseek", skip_deepseek)]:
                 if skip_flag or service_name in disabled_services:
                     continue  # Skip this service if it's marked to be skipped or disabled due to errors
@@ -309,6 +308,14 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
                 else:  # successful API call
                     error_counts[service_name] = 0
                     save_output_json(output_json, output_filename, logger)
+
+def print_errors():
+    # at the end of processing, write out all CRITICAL,  ERROR, and WARNING messages from logs/output.log to the file logs/errors.log for easier debugging
+    with open("logs/output.log", "r") as infile, open("logs/errors.log", "w") as outfile:
+        for line in infile:
+            if "CRITICAL" in line or "ERROR" in line or "WARNING" in line:
+                outfile.write(line)
+
 
 def main():
     start_time = time.time()
@@ -351,8 +358,9 @@ def main():
     logger.info(f"Total execution time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
     print(f"Total execution time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
 
+    print_errors()
+
     #TODO: skip DeepL if the language is not supported
-    #TODO: skip a service if it has failed N times in a row
 
 if __name__ == "__main__":
     main()
