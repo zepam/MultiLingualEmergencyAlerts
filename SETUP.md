@@ -55,7 +55,7 @@ MultiLingualEmergencyAlerts/
     ```python
     python collect_responses.py
     ```
-    * You can skip specific services with flags like --skip_SERVICENAME
+    * You can skip specific services with these flags: --skip_google_translate, --skip_chatgpt, --skip_deepL, --skip_gemini, --skip_deepseek
   
 2. **Evaluate Results**
    Run the main evaluation script:
