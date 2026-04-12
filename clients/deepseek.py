@@ -32,6 +32,7 @@ class DeepSeekClient(Client):
         # OpenAI SDK appends /chat/completions for chat.create calls.
         self.base_url = "https://openrouter.ai/api/v1"
         self.model = "deepseek/deepseek-chat-v3-0324"
+        self.max_tokens = max_tokens
 
     #@tenacity.retry(wait=tenacity.wait_exponential(multiplier=1, min=6, max=180), stop=tenacity.stop_after_attempt(3))
     @tenacity.retry(wait=wait_on_rate_limit, stop=tenacity.stop_after_attempt(3))

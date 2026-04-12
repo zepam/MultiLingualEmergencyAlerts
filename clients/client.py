@@ -8,7 +8,8 @@ class Client:
     def __init__(self, key, logger):
         self.key = key
         self.temperature = 1.0
-        self.max_tokens = 2048
+        self.max_tokens = 300
+        #self.max_tokens = 2048      
         self.top_p = 1.0
         self.logger = logger
 
