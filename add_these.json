@@ -1,0 +1,653 @@
+{
+    "deepseek": {
+        "spanish": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe ha detectado una crecida peligrosa en el área. Busque refugio en zonas altas de inmediato. Evite cruzar calles inundadas o ríos. Siga las instrucciones de las autoridades locales. Manténgase informado por medios oficiales. ¡ACTÚE CON PRUDENCIA!  \n\n**¡ESTA ES UNA SITUACIÓN DE EMERGENCIA!** 🚨",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_simple_360.txt": [
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!** Se esperan fuertes lluvias en la zona. Nivel del agua en aumento. Evacúa a zonas altas de inmediato. Mantente alejado de ríos y arroyos. Sigue instrucciones de autoridades. Llama al 112 si necesitas ayuda. ¡Actúa ahora! #Emergencia #Inundación",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_360.txt": [
+                    {
+                        "text": "¡ALERTA DE INUNDACIÓN! [TIME]. Peligro de inundación en [LOCATION]. Evacue a zonas altas de inmediato. Manténgase alejado de ríos y áreas bajas. Para más información visite [URL]. ¡Actúe ahora para proteger su vida!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_360.txt": [
+                    {
+                        "text": "ALERTA: Inundación reportada en [LOCATION]. Evacúa a zonas altas de inmediato. Nivel del agua en aumento. Evita cruzar zonas inundadas. Tiempo de alerta: [TIME]. Mantente informado en [URL]. Sigue instrucciones de autoridades locales.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_nolimit.txt": [
+                    {
+                        "text": "¡ALERTA DE INUNDACIÓN! Se ha reportado una inundación en [LOCATION]. Peligro inminente hasta [TIME]. Busque terreno más alto inmediatamente si se encuentra en zonas bajas o cerca de ríos. Evite caminar o conducir a través de aguas en movimiento. Para más información, visite [URL]. ¡Actúe ahora para proteger su vida!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_nolimit.txt": [
+                    {
+                        "text": "**¡ALERTA DE INUNDACIÓN!**  \n\nSe ha reportado una inundación en [LOCATION]. Evite el área y busque terreno elevado de inmediato. La situación es peligrosa y puede empeorar. Para más información, visite [URL]. Última actualización: [TIME].  \n\nManténgase seguro y siga las instrucciones de las autoridades locales.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_nolimit.txt": [
+                    {
+                        "text": "¡Alerta de emergencia! Se ha reportado una inundación en [LOCATION]. Se recomienda evacuar el área inmediatamente. La situación es peligrosa y el agua puede seguir subiendo. Manténgase alejado de zonas bajas y ríos. Para más información, visite [URL]. La alerta es válida hasta [TIME]. ¡Priorice su seguridad!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_360.txt": [
+                    {
+                        "text": "¡Alerta de inundación en [LOCATION] hasta [TIME]! Aguas peligrosas están provocando daños y poniendo vidas en riesgo. Evite las áreas inundadas. Busque terreno más alto si está en una zona afectada. No intente caminar ni conducir en aguas en movimiento. Siga las instrucciones oficiales. Más información en [URL].",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_nolimit.txt": [
+                    {
+                        "text": "¡Alerta de emergencia! Se ha reportado una inundación en [LOCATION]. Se recomienda evacuar el área de inmediato. La situación se reportó a las [TIME]. Para más información y actualizaciones, visite [URL]. Manténgase seguro y siga las instrucciones de las autoridades locales.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_360.txt": [
+                    {
+                        "text": "¡ALERTA DE INUNDACIÓN! Evacúa inmediatamente el área. Peligro en [LOCATION]. Hora del aviso: [TIME]. Manténte alejado de zonas bajas y sigue instrucciones oficiales. Más info: [URL]. ¡Tu seguridad es primero!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "translate_flood.txt": [
+                    {
+                        "text": "Traduzca esta alerta de emergencia para [LOCATION]. Essa situação se aplicaabogon**Traduz esta mensagem de código** que está em vigor para [LOCATION] até [TIME]. Esta é uma situação extremamente perigosa e que pode colocar vidas em risco. Não tente viajar, a menos que esteja sob ordem de evacue pode inundar ou estão.",
+                        "date": "2026-04-11"
+                    }
+                ]
+            },
+            "extreme_wind": {
+                "prompt_simple_nolimit.txt": [
+                    {
+                        "text": "**¡ALERTA DE VIENTOS EXTREMOS!**  \n\nSe esperan vientos peligrosos con ráfagas superiores a [XX] km/h. Evite actividades al aire libre, asegure objetos sueltos y protéjase en un lugar seguro. Manténgase informado y siga las indicaciones de autoridades. ¡Cuide su vida!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_simple_360.txt": [
+                    {
+                        "text": "**Emergency Alert: Extreme Wind Warning**  \n\nExtreme winds expected in ES. Gusts over 100 km/h possible. Secure loose objects, avoid travel. Stay indoors, away from windows. Power outages likely. Monitor updates. Seek shelter immediately if conditions worsen. Follow local authorities. #ESWindAlert",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_360.txt": [
+                    {
+                        "text": "\"¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta [TIME]. Manténgase en interiores, asegure objetos sueltos y evite áreas con árboles. Para más detalles, visite [URL]. #SeguridadClimática\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_360.txt": [
+                    {
+                        "text": "\"Alerta: Vientos extremos esperados en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Manténgase informado en [URL]. #SeguridadClimática\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_nolimit.txt": [
+                    {
+                        "text": "¡ALERTA DE VIENTOS EXTREMOS! Se pronostican vientos peligrosos en [LOCATION] hasta [TIME]. Estos vientos pueden causar daños estructurales, volar objetos y derribar árboles y líneas eléctricas. Refúgiese en un lugar seguro, lejos de ventanas. Evite conducir y permanezca atento a las actualizaciones. Para más información, visite [URL].",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_nolimit.txt": [
+                    {
+                        "text": "¡ALERTA DE EMERGENCIA! Se pronostican vientos extremos en [LOCATION] a partir de [TIME]. Evite actividades al aire libre y busque refugio. Para más información, visite [URL]. Manténgase seguro.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_nolimit.txt": [
+                    {
+                        "text": "¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta las [TIME]. Evite actividades al aire libre y busque refugio en un lugar seguro. Para más información, visite [URL]. ¡Manténgase a salvo!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_360.txt": [
+                    {
+                        "text": "¡ALERTA DE VIENTOS EXTREMOS! Se pronostican vientos peligrosos en [LOCATION] hasta [TIME]. Estos vientos pueden causar daños estructurales, volar objetos y derribar árboles. Permanezca en interiores, lejos de ventanas. Evite conducir. Si está al aire libre, busque refugio inmediatamente. Manténgase informado en [URL]. ¡Proteja su vida!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_nolimit.txt": [
+                    {
+                        "text": "¡Alerta de emergencia! Se pronostican vientos extremos en [LOCATION] hasta [TIME]. Estos vientos pueden causar daños estructurales, vuelo de objetos peligrosos y cortes de energía. Evite actividades al aire libre y busque refugio en un lugar seguro. Para más información, visite [URL]. ¡Manténgase seguro!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_360.txt": [
+                    {
+                        "text": "¡Alerta de vientos extremos! Se esperan ráfagas peligrosas en [LOCATION] hasta [TIME]. Evite actividades al aire libre y asegure objetos sueltos. Más información en [URL]. Manténgase seguro.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "translate_extreme_wind.txt": [
+                    {
+                        "text": "**Alerta de Emergencia**:  \n\nSe ha emitido un **AVISO DE VIENTOS EXTREMADAMENTE PELIGROSOS** para [LOCATION] debido al peligro inmediato de vientos que amenazan la vida, vigente hasta [TIME]. **REFÚGIATE INMEDIATAMENTE** en una habitación interior de un edificio resistente, lejos de ventanas. Protégete la cabeza de objetos que puedan volar. **¡NO SALGAS** aunque el viento parezca calmarse! Los vientos volverán a ser peligrosos rápidamente. [URL]  \n\n(Note: Kept variables [LOCATION], [TIME], and [URL] in English as instructed.)",
+                        "date": "2026-04-11"
+                    }
+                ]
+            },
+            "fire": {
+                "prompt_simple_nolimit.txt": [
+                    {
+                        "text": "**¡ALERTA DE INCENDIO!**  \n\nSe ha detectado un incendio en la zona. Por seguridad, evacúe inmediatamente y siga las rutas de emergencia. Manténgase alejado del área y llame al 911. No use ascensores. ¡Actúe con calma pero rapidez!  \n\n**Repitiendo:** Evacúe ahora. Llame al 911. Manténgase seguro.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_simple_360.txt": [
+                    {
+                        "text": "¡ALERTA DE INCENDIO! Se ha detectado un incendio en la zona. Evacúa inmediatamente si estás cerca. Llama al 112 y sigue las indicaciones de las autoridades. Mantén la calma y aléjate del área afectada. No uses ascensores. ¡Tu seguridad es lo primero! #Emergencia #Incendio",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_360.txt": [
+                    {
+                        "text": "¡ALERTA DE EMERGENCIA! Incendio reportado en [LOCATION]. Hora: [TIME]. Evacue el área inmediatamente y siga las instrucciones de las autoridades. Para más información visite [URL]. ¡Manténgase a salvo!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_360.txt": [
+                    {
+                        "text": "🚨 Inc spiritual inci tso [TIME] en [LOCATION]. Evacúa el área immediately y manténte seguro. Avoid el humo y sigue instrucciones de autoridades. Más info: [URL]",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_nolimit.txt": [
+                    {
+                        "text": "¡ALERTA DE INCENDIO! Se ha reportado un incendio en [LOCATION]. Actúe con precaución y evacue el área si es necesario. La situación estará activa hasta [TIME]. Para más información y actualizaciones, consulte: [URL]. Manténgase seguro y siga las instrucciones de las autoridades locales.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_nolimit.txt": [
+                    {
+                        "text": "**Alerta de emergencia:** Se reporta un incendio en [LOCATION]. Hora del incidente: [TIME]. Por seguridad, evacue el área inmediatamente y siga las instrucciones de las autoridades. Para más información, visite [URL]. Manténgase alerta y siga las actualizaciones oficiales.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_nolimit.txt": [
+                    {
+                        "text": "¡Alerta de emergencia! Se ha reportado un incendio en [LOCATION] a las [TIME]. Por su seguridad, evacúe el área inmediatamente y siga las instrucciones de las autoridades. Para más información, visite [URL]. Manténgase alerta y a salvo.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_360.txt": [
+                    {
+                        "text": "¡EMERGENCIA DE INCENDIO en [LOCATION]! Un incendio está activo. Busque refugio en un área segura y siga las indicaciones de las autoridades. Se espera contención para [TIME]. Manténgase alejado de la zona afectada y evite inhalar humo. Para más detalles, consulte [URL].  \n\n(La alerta no supera los 360 caracteres y los campos personalizables están en inglés.)",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_nolimit.txt": [
+                    {
+                        "text": "**Alerta de emergencia:** Se ha reportado un incendio en [LOCATION]. Hora del incidente: [TIME]. Para más información, visite [URL]. Manténgase alejado del área y siga las instrucciones de las autoridades.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_360.txt": [
+                    {
+                        "text": "\"¡Alerta de incendio! Se reporta un fuego activo cerca de [LOCATION]. Hora del incidente: [TIME]. Evacúe el área inmediatamente y siga las indicaciones de las autoridades. Para más información, visite [URL]. ¡Manténgase seguro!\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "translate_fire.txt": [
+                    {
+                        "text": "[AGENCIA EMISORA]: Una ADVERTENCIA DE INCENDIO en [LOCATION] está vigente hasta [TIME]. Evacúe a su familia y mascotas ahora, no se demore. La visibilidad en el área se reducirá y las carreteras pueden quedar bloqueadas. Si no sale ahora, podría quedar atrapado, lesionado o morir. ABANDONE las áreas cercanas a [LOCATION]. Espere visibilidad reducida, humo denso y dificultad para respirar. Tenga cuidado al conducir. Esté atento al personal de seguridad pública operando en el área y siga sus instrucciones. [URL]",
+                        "date": "2026-04-11"
+                    }
+                ]
+            },
+            "boil_water_notice": {
+                "prompt_simple_nolimit.txt": [
+                    {
+                        "text": "**¡AVISO URGENTE! ¡NO USAR EL AGUA SIN HERVIR!**  \n\nLas autoridades han emitido una alerta para hervir el agua antes de usarla debido a una posible contaminación. Hervir el agua durante al menos 1 minuto antes de:  \n\n✅ Beber  \n✅ Cocinar  \n✅ Lavar alimentos  \n✅ Cepillarse los dientes  \n\nEvite usar agua del grifo sin hervir. Se proporcionarán actualizaciones cuando sea seguro. ¡Por su seguridad, siga estas instrucciones!  \n\n**🚰 Manténgase informado y comparta este mensaje.**",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_simple_360.txt": [
+                    {
+                        "text": "\"AVISO DE HERVIR EL AGUA: Se emite una alerta por contaminación. Hierva el agua por 1 minuto antes de beber, cocinar o lavar alimentos. Use agua embotellada si es posible. Evite ingerir agua sin hervir. Se informará cuando se levante la orden. Más info: [número/localidad]. ¡COMPARTA ESTE MENSAJE!\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_360.txt": [
+                    {
+                        "text": "\"ALERTA: Se emite un aviso de hervir agua en [LOCATION] a partir de [TIME]. Hierva el agua antes de usarla para beber, cocinar o lavar alimentos. Más información en [URL]. Manténgase seguro.\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_360.txt": [
+                    {
+                        "text": "**Alerta de agua hervida:** Se emitió un aviso para hervir el agua en [LOCATION] a partir de [TIME]. Hierva el agua durante al menos 1 minuto antes de usarla para beber, cocinar o cepillarse los dientes. Evite consumir agua del grifo sin hervir. Más información: [URL].",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_nolimit.txt": [
+                    {
+                        "text": "AVISO IMPORTANTE: Se ha emitido una orden de hervir el agua para [LOCATION] hasta [TIME]. Como precaución, hierva el agua durante al menos un minuto antes de usarla para beber, cocinar o cepillarse los dientes. Esto incluye agua filtrada. Para más información, visite [URL].",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_nolimit.txt": [
+                    {
+                        "text": "¡AVISO DE EMERGENCIA! Se ha emitido una orden para hervir el agua en [LOCATION]. Todos los residentes deben hervir el agua antes de usarla para beber, cocinar o lavar hasta nuevo aviso. Esto es efectivo inmediatamente a partir de [TIME]. Para más información, visite [URL]. ¡Manténganse seguros!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_nolimit.txt": [
+                    {
+                        "text": "**¡AVISO IMPORTANTE!**  \n\nSe ha emitido una orden de hervir el agua para [LOCATION] a partir de [TIME]. Por su seguridad, hierva toda el agua para beber, cocinar o lavar alimentos durante al menos un minuto antes de usarla. Esta medida está en vigencia hasta nuevo aviso.  \n\nPara más detalles, visite [URL] o contacte a las autoridades locales.  \n\n¡Manténgase seguro y siga las recomendaciones!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_360.txt": [
+                    {
+                        "text": "AVISO IMPORTANTE: Se emite una orden de hervir el agua para [LOCATION] hasta [TIME]. El agua debe hervirse por 1 minuto antes de usarse para beber, cocinar o lavar alimentos. Use agua embotellada si es posible. Actualizaciones en симптоматика/padecimientos particularmente anteslo digo? [URL]",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_nolimit.txt": [
+                    {
+                        "text": "\"AVISO DE HERVIR EL AGUA: Se emitió un aviso para hervir el agua debido a posibles contaminantes. Se recomienda hervir el agua antes de beber, cocinar o lavar hasta nuevo aviso. [TIME]. Área afectada: [LOCATION]. Para más información, visite [URL]. Manténganse seguros y sigan las indicaciones de las autoridades locales.\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_360.txt": [
+                    {
+                        "text": "**Alerta de emergencia:** Se emite un aviso para hervir el agua en [LOCATION] a partir de [TIME]. El agua del grifo puede no ser segura para beber, cocinar o lavar alimentos. Hierva el agua durante al menos 1 minuto antes de usarla. Para más información, visite [URL]. Manténgase atento a actualizaciones.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "translate_boil_water_notice.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Se ha emitido una ALERTA DE HERVIR AGUA para [LOCATION] y está vigente hasta [TIME]. El agua en su comunidad puede enfermarlo. Use agua embotellada si está disponible. No beba, cocine, se lave los dientes ni limpie su hogar con agua del grifo o filtrada hasta que la hierva. Hierva el agua a fuego vivo durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No use hielo hecho con agua que no haya sido hervida. Si usa fórmula para alimentar a su hijo, utilice fórmula lista para usar. Asegúrese de que las mascotas no beban agua que no haya sido hervida. [URL]",
+                        "date": "2026-04-11"
+                    }
+                ]
+            },
+            "911_outage": {
+                "prompt_simple_nolimit.txt": [
+                    {
+                        "text": "**¡ALERTA DE EMERGENCIA!**  \n\nSe ha reportado una interrupción en el servicio de llamadas al 911 en esta área. **Si tiene una emergencia, llame al número alternativo: [INSERTAR NÚMERO LOCAL].**  \n\nManténgase calmado y comparta esta información con sus vecinos. Las autoridades están trabajando para resolver el problema.  \n\n**¡NO llame al 911 hasta que se restablezca el servicio!**  \n\nActualizaciones oficiales: [INSERTAR ENLACE O FUENTE].",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_simple_360.txt": [
+                    {
+                        "text": "**¡ALERTA!** El sistema 911 no está funcionando en este momento. En caso de emergencia, llame directamente al número local de policía, bomberos o servicios médicos. Por favor, comparta esta información con sus vecinos. Manténgase tranquilo y actúe con precaución. Actualizaremos cuando se resuelva el problema. **#AlertaEmergencia**",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_360.txt": [
+                    {
+                        "text": "\"ALERTA: Interrupción del servicio 911 en [LOCATION]. Reportado a las [TIME]. Llame al número local de emergencias si necesita ayuda. Para más información visite [URL]. Manténgase informado.\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_360.txt": [
+                    {
+                        "text": "**Alerta:** Se ha reportado una interrupción en el servicio 911 en [LOCATION]. Hora del informe: [TIME]. En caso de emergencia, llame al número local de policía o bomberos. Para más información, visite [URL]. Manténgase informado y tome precauciones.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_nolimit.txt": [
+                    {
+                        "text": "Here’s the customized emergency alert in Spanish:  \n\n**ALERTA DE EMERGENCIA:** Se reporta una FALLA EN EL SERVICIO 911 en [LOCATION]. El servicio puede estar interrumpido hasta [TIME]. En caso de emergencia, contacte a las autoridades locales directamente o siga las instrucciones de respaldo. Para más información, visite [URL]. Tome precauciones y comparta este mensaje.  \n\n(Asegúrese de reemplazar [TIME], [LOCATION] y [URL] con los detalles correspondientes.)",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_nolimit.txt": [
+                    {
+                        "text": "**Alerta de emergencia:** Se ha reportado una interrupción en el servicio 911 en [LOCATION]. Hasta nuevo aviso, las llamadas al 911 pueden no funcionar. En caso de emergencia, contacte a los servicios locales directamente. Hora del reporte: [TIME]. Para más información, visite [URL]. Manténgase informado y tome las precauciones necesarias.",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_nolimit.txt": [
+                    {
+                        "text": "¡ALERTA DE EMERGENCIA! Se reporta una interrupción en el servicio de 911 en [LOCATION]. Este problema comenzó a las [TIME]. Si necesita ayuda, contacte a los números de emergencia alternativos proporcionados en [URL]. Por favor, comparta esta información con sus vecinos y evite llamar al 911 hasta que se restablezca el servicio. Para más detalles, visite [URL]. ¡Manténganse seguros!",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_360.txt": [
+                    {
+                        "text": "\"Se ha reportado una interrupción en el servicio 911 en [LOCATION]. Hasta [TIME], llame al número de emergencia alternativo [INSERT NUMBER IF AVAILABLE] o diríjase a la estación más cercana. Para más información, visite [URL]. Manténgase atento a las actualizaciones oficiales.\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_nolimit.txt": [
+                    {
+                        "text": "**Alerta de emergencia:** Se ha reportado una interrupción en el servicio 911. Si necesita ayuda de emergencia, diríjase a la estación de policía o bomberos más cercana. Más información en: [URL].  \n\n- **Hora:** [TIME]  \n- **Ubicación:** [LOCATION]",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_360.txt": [
+                    {
+                        "text": "\"¡ALERTA! Hay una interrupción en el servicio 911 en [LOCATION]. Reporte emergencias al número local alternativo. Hora del incidente: [TIME]. Para más detalles, visite [URL]. Manténgase informado y comparta esta información.\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "translate_911_outage.txt": [
+                    {
+                        "text": "[SENDING AGENCY]: Se ha emitido una ALERTA DE FALLOS EN EL 9-1-1 para [LOCATION]. Por favor, comuníquese directamente con la policía, bomberos, servicios médicos u otros servicios de emergencia utilizando sus números locales en caso de emergencia. Si marca al 9-1-1, es posible que no reciba ayuda. [URL]",
+                        "date": "2026-04-11"
+                    }
+                ]
+            }
+        },
+        "arabic": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [
+                    {
+                        "text": "  EMERGENCY ALERT: FLOOD WARNING****\n\n  Severe flooding is occurring in [specific area]. Move to higher ground immediately. Avoid walking or driving through floodwaters. Follow local authorities' instructions. Stay tuned for updates.\n\n**.**ACT NOW TO PROTECT YOUR LIFE",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_simple_360.txt": [
+                    {
+                        "text": "[EMERGENCY ALERT: FLOOD WARNING** Heavy rain causing severe flooding in AR. Seek higher ground NOW. Avoid walking/driving through floodwaters. Turn around, don't drown! Check local updates. Stay safe. #ARFlood [360 chars**",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_360.txt": [
+                    {
+                        "text": ".ﺔﻴﻠﺤﻤﻟﺍ ﺕﺎﻄﻠﺴﻟﺍ ﺕﺎﻤﻴﻠﻌﺗ ﺍﻮﻌﺒﺗﺍﻭ ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﻊﺑﺎﺗ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﻩﺎﻴﻤﻟﺎﺑ ﺓﺭﻮﻤﻐﻤﻟﺍ ﻕﺮﻄﻟﺍ ﺐﻨﺠﺗ .ﺔﻌﻔﺗﺮﻣ ﻖﻃﺎﻨﻣ ﻰﻟﺇ ﻱﺭﻮﻔﻟﺍ ﺀﻼﺧﻹﺎﺑ ﺢﺼﻨﻳ .[TIME] ﻦﻣ ﺍﺭﺎﺒﺘﻋﺍ [LOCATION] ﻲﻓ ﺮﻄﺧ ﻥﺎﻀﻴﻓ !ﻩﺎﺒﺘﻧﻻﺍ",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_360.txt": [
+                    {
+                        "text": "[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ، ﻞﻴﺻﺎﻔﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺓﺭﺮﻀﺘﻤﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺐﻨﺠﺗﻭ ﺔﻣﺯﻼﻟﺍ ﺕﺎﻃﺎﻴﺘﺣﻻﺍ ﺫﺎﺨﺗﺍ ﺀﺎﺟﺮﻟﺍ . ﺮﺜﻛﺃ ﺕﺎﻣﻮﻠﻌﻣ ﺔﻈﺣﻼﻤﻟﺍ TIME] ﻲﻓ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ ﺙﺪﺣ :ﻥﺎﻀﻴﻓ ﺮﻳﺬﺤﺗ ️⚠",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_nolimit.txt": [
+                    {
+                        "text": "[URL] .ﺕﺎﺜﻳﺪﺤﺘﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ ﻡﻼﻋﻹﺍ ﻞﺋﺎﺳﻭ ﻊﺑﺎﺗ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﻲﺸﻤﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍﻭ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﻖﻃﺎﻨﻣ ﻦﻋ ﺪﻌﺘﺑﺍ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳ ﻊﺿﻭ ﺍﺬﻫ .ﺔﻘﻄﻨﻤﻟﺍ ﻩﺬﻫ ﻲﻓ ﻥﺎﻀﻴﻓ ﻦﻋ ﻍﻼﺑﻹﺍ ﻢﺗ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_persona_nolimit.txt": [
+                    {
+                        "text": ".[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻘﻓﺪﺘﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﻲﺸﻤﻟﺍ ﻭﺃ ﺓﺩﺎﻴﻘﻟﺍ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻝﻼﺧ [LOCATION] ﻲﻓ ﻊﻗﻮﺘﻣ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ :ﺉﺭﺎﻃ ﺮﻳﺬﺤﺗ",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_cross_lingual_alignment_nolimit.txt": [
+                    {
+                        "text": "  **:ﺭﺍﺬﻧﻹﺍ**\n\n\"!ﻦﻴﻨﻣﺁ ﺍﻮﻘﺑﺍ .[URL] ﺓﺭﺎﻳﺯ ﻰﺟﺮﻳ ،ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ .ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺭﻮﺒﻋ ﺐﻨﺠﺗ .ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻝﺎﻘﺘﻧﻻﺍﻭ ﺍﺭﻮﻓ ﺔﻘﻄﻨﻤﻟﺍ ﺀﻼﺧﺈﺑ ﺢﺼﻨﻳ .[TIME] ﻲﻓ [LOCATION] ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ !ﻞﺟﺎﻋ ﺮﻳﺬﺤﺗ\"",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_one_shot_360.txt": [
+                    {
+                        "text": "[URL] .ﺕﺎﻣﻮﻠﻌﻤﻟﺍ ﻦﻣ ﺪﻳﺰﻤﻟ ﻡﻼﻋﻹﺍ ﻞﺋﺎﺳﻭ ﻦﻣ ﻖﻘﺤﺗ .ﺔﻗﺭﺎﻐﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺮﺒﻋ ﺓﺭﺎﻴﺴﻟﺍ ﺓﺩﺎﻴﻗ ﻭﺃ ﺔﻳﺭﺎﺠﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻲﻓ ﺮﻴﺴﻟﺍ ﺐﻨﺠﺗ .ﺍﺭﻮﻓ ﻊﻔﺗﺮﻣ ﻥﺎﻜﻣ ﻰﻟﺇ ﻞﻘﺘﻧﺍ .ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﻳ ﻊﺿﻭ ﺍﺬﻫ .ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺮﻴﻄﺧ ﻥﺎﻀﻴﻓ ﺪﺟﻮﻳ .[TIME] ﻰﺘﺣ [LOCATION] ﻲﻓ ﻥﺎﻀﻴﻓ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ :[ﻝﺎﺳﺭﻹﺍ ﺔﻟﺎﻛﻭ]",
+                        "date": "2026-04-11"
+                    }
+                ],
+                "prompt_chain_of_translation_nolimit.txt": [],
+                "prompt_cross_lingual_alignment_360.txt": [],
+                "translate_flood.txt": []
+            }
+        },
+        "haitian_creole": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "vietnamese": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "chinese_traditional": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "chinese_simplified": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "italian": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "russian": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "ukrainian": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "somali": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "marshallese": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "korean": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "punjabi": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "hindi": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "telegu": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "tagalog": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "amharic": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "chuukese": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "cambodian": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "pashto": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "tamil": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "japanese": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "portuguese": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "tigrinya": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "urdu": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "french": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "turkish": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "swahili": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "hebrew": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "samoan": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "lao": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "nepali": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "hmong": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "german": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "burmese": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "thai": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "oromo": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        },
+        "karen": {
+            "flood": {
+                "prompt_simple_nolimit.txt": [],
+                "prompt_simple_360.txt": [],
+                "prompt_persona_360.txt": []
+            }
+        }
+    }
+}
