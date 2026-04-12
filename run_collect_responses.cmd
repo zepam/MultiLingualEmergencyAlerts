@@ -5,9 +5,9 @@ getenv = true
 
 initialdir = /home2/jenwils/MultiLingualEmergencyAlerts
 
-output = collect_responses.out
-error = collect_responses.err
-log = collect_responses.log
+output = logs/collect_responses.out
+error = logs/collect_responses.err
+log = logs/collect_responses.log
 
 transfer_executable = false
 request_memory = 2*1024
