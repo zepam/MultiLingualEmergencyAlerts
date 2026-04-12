@@ -16,7 +16,7 @@ Use this document as a change log for:
 
 | Timestamp (UTC) | Provider | Model | Change Type | Before | After | Why | Outcome | Evidence |
 |---|---|---|---|---|---|---|---|---|
-| 2026-04-11 04:30 UTC | Openrouter | deepseek-chat-v3-0324 | max_tokens | 2048 | 300 | Free access capped at 302 | Pending evaluation | commit/PR/link |
+| 2026-04-11 04:30 UTC | Openrouter | deepseek-chat-v3-0324 | max_tokens | 2048 | 300 | Lower max produces more responses before hitting limit | Pending evaluation | commit/PR/link |
 
 
 Recommended `Change Type` values:
