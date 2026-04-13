@@ -286,7 +286,7 @@ def collect_multilingual_responses(logger, output_json, skip_gemini, skip_chatgp
                 if new_skip:
                     error_counts[service_name] += 1
                     if error_counts[service_name] >= 3:  # Disable after 3 consecutive errors
-                        logger.error(f"Disabling {service_name} due to repeated 429 errors.")
+                        logger.error(f"Disabling {service_name} for {language} due to repeated 429 errors.")
                         disabled_services.add(service_name)
                 else:
                     save_output_json(output_json, output_filename, logger)
