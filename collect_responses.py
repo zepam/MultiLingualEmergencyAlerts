@@ -5,7 +5,7 @@ This script iterates over API endpoints to Google Translate, Deepseek, ChatGPT, 
 request generation of multilingual emergency alerts.
 
 Example:
-    python collect_responses.py --skip_chatgpt --skip_deepseek --skip_gemini --skip_google_translate --skip_deepL
+    python collect_responses.py --preserve_output --skip_chatgpt --skip_deepseek --skip_gemini --skip_google_translate --skip_deepL
 
 Functions:
     - parse_args: Parses arguments passed into the script
@@ -14,6 +14,7 @@ Functions:
     - main: Does the thing. Outputs data to a JSON file
 
 Flags:
+    --preserve_output: If a matching output file exists, read in the existing data and append to it.
     --skip_gemini: Forcibly skip any calls to Gemini
     --skip_chatgpt: Forcibly skip any calls to ChatGPT
     --skip_deepseek: Forcibly skip any calls to DeepSeek
@@ -35,7 +36,7 @@ from clients.translation_map import TRANSLATION_MAP
 import time
 
 # set custom logging levels for noisy libraries
-logging.getLogger("deepL").setLevel(logging.WARNING)
+logging.getLogger("deepl").setLevel(logging.WARNING)
 logging.getLogger("httpx").setLevel(logging.WARNING)
 logging.getLogger("google_genai").setLevel(logging.WARNING)
 
