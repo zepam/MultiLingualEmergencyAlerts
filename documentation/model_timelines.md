@@ -17,6 +17,7 @@ Use this document as a change log for:
 | Timestamp (UTC) | Provider | Model | Change Type | Before | After | Why | Outcome | Evidence |
 |---|---|---|---|---|---|---|---|---|
 | 2026-04-11 04:30 UTC | Openrouter | deepseek-chat-v3-0324 | max_tokens | 2048 | 300 | Lower max produces more responses before hitting limit | Purchased credits | ~~commit/PR/link~~ |
+| 2026-04-13 22:14 UTC | Openrouter | deepseek-chat-v3-0324 | max_tokens | 300 | 400 | The runs are <$1 each, raised the token limit because I can afford it |  |  |
 
 
 
