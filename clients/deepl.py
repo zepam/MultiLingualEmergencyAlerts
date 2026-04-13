@@ -41,8 +41,7 @@ class DeepLClient(Client):
                 #raise ValueError(f"Target language '{target_lang_code}' not supported by DeepL.")
 
         except KeyError as e:
-            self.logger.error(f"Language mapping error: {e}. Check if the language name is correct.")
-            #raise ValueError(f"Unsupported language name provided: {e}")
+            self.logger.error(f"Language mapping error: {e}.")
             return ""
         
         # translate things
