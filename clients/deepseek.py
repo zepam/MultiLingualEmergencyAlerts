@@ -24,7 +24,7 @@ def wait_on_rate_limit(retry_state):
     return tenacity.wait_exponential(multiplier=1, min=3, max=60)(retry_state)
 
 class DeepSeekClient(Client):
-    def __init__(self, key, logger, max_tokens=300):
+    def __init__(self, key, logger, max_tokens=400):
         super().__init__(key, logger)
         # self.base_url = "https://openrouter.ai/api/v1"
         # self.model = "deepseek/deepseek-chat-v3-0324:free" 
