@@ -45,13 +45,17 @@ class GeminiClient(Client):
             if getattr(e, "status_code", None) == 429:
                 msg = str(e)
 
-                if "Quota exceeded" in msg:
+                # HARD cap: stop retrying for the rest of the run
+                if "GenerateRequestsPerDayPerProjectPerModel-FreeTier" in msg or "GenerateRequestsPerDay" in msg:
+                    raise QuotaExhaustedError(msg) from e
+
+                if "Quota exceeded" or "GenerateRequestsPerDay" in msg:
                     # hard cap: do not retry
                     raise QuotaExhaustedError(msg) from e
                 
-                # Treat per-day/project caps as non-retryable
-                if "GenerateRequestsPerDay" in msg:
-                    raise QuotaExhaustedError(msg) from e
+                # # Treat per-day/project caps as non-retryable
+                # if "GenerateRequestsPerDay" in msg:
+                #     raise QuotaExhaustedError(msg) from e
 
                 # sleep suggested delay then raise to trigger Tenacity retry
                 if m := re.search(r"Please retry in ([0-9.]+)s", msg):
