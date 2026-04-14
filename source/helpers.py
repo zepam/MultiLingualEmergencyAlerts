@@ -9,6 +9,7 @@ from clients.deepseek import DeepSeekClient
 from clients.chatgpt import ChatGPTClient
 from clients.cloud_translation import GoogleCloudTranslationClient
 from clients.deepl import DeepLClient
+from clients.exceptions import QuotaExhaustedError
 
 def chat_with_service(service_name, language, disaster, prompt_file_path, logger):
     try:
@@ -32,7 +33,12 @@ def chat_with_service(service_name, language, disaster, prompt_file_path, logger
 
 def chat_gemini(language, disaster, prompt_file_path, logger):
     gemini_client = GeminiClient(key=os.getenv("GEMINI_API_KEY"), logger=logger)
-    return gemini_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
+    try:
+        return gemini_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
+    except QuotaExhaustedError as e:        # to deal with quota limits
+        logger.error(f"Gemini quota exhausted; skipping Gemini for remainder of run. {e}")
+        return None
+    #return gemini_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
 
 def chat_deepseek(language, disaster, prompt_file_path, logger):
     deepseek_client = DeepSeekClient(key=os.getenv("OPENROUTER_API_KEY"), logger=logger)

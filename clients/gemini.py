@@ -3,11 +3,16 @@ import re, time
 from google.genai import errors as genai_errors
 from clients.client import Client
 from clients.exceptions import QuotaExhaustedError
-# from clients.translation_map import TRANSLATION_MAP
 
 # Client to interact with the Gemini API
-# Free tier: 10 requests per minute
+# Free tier: 5/min or 20/day
 class GeminiClient(Client):
+
+    # class level variables to track quota exhaustion across all instances
+    # the client re-instantiates with each call, so we need a class-level latch
+    _quota_exhausted = False   # class-wide latch
+    _quota_message = None
+
     def __init__(self, key, logger):
         super().__init__(key, logger)
         self.model = "gemini-2.5-flash"
@@ -15,6 +20,11 @@ class GeminiClient(Client):
         self.client = genai.Client(api_key=self.key)
 
     def chat(self, prompt_file, disaster, language, sending_agency=None, location=None, time=None, url=None):
+        # If we already know quota is exhausted, fail fast (no waiting, no API call)
+        if GeminiClient._quota_exhausted:
+            raise QuotaExhaustedError(GeminiClient._quota_message or "Gemini quota exhausted")
+ 
+        
         prompt = self.gather_prompt(
             prompt_file=prompt_file, 
             disaster=disaster, 
@@ -43,22 +53,22 @@ class GeminiClient(Client):
              
         except genai_errors.ClientError as e:
             if getattr(e, "status_code", None) == 429:
-                msg = str(e)
-
-                # HARD cap: stop retrying for the rest of the run
-                if "GenerateRequestsPerDayPerProjectPerModel-FreeTier" in msg or "GenerateRequestsPerDay" in msg:
-                    raise QuotaExhaustedError(msg) from e
-
-                if "Quota exceeded" or "GenerateRequestsPerDay" in msg:
-                    # hard cap: do not retry
-                    raise QuotaExhaustedError(msg) from e
-                
-                # # Treat per-day/project caps as non-retryable
-                # if "GenerateRequestsPerDay" in msg:
-                #     raise QuotaExhaustedError(msg) from e
-
-                # sleep suggested delay then raise to trigger Tenacity retry
-                if m := re.search(r"Please retry in ([0-9.]+)s", msg):
-                    time.sleep(float(m[1]) + 0.25)
                 raise
+
+            msg = str(e)
+
+            # HARD cap: stop retrying for the rest of the run
+            if (
+                "GenerateRequestsPerDayPerProjectPerModel-FreeTier" in msg or 
+                "GenerateRequestsPerDay" in msg
+            ):
+                GeminiClient._quota_exhausted = True
+                GeminiClient._quota_message = msg
+                raise QuotaExhaustedError(msg) from e
+
+            # Soft cap (per-minute): wait then retry
+            m = re.search(r"Please retry in ([0-9.]+)s", msg)
+            if m:
+                time.sleep(float(m.group(1)) + 0.25)
             raise
+
