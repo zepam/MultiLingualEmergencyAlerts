@@ -1,0 +1,11 @@
+alert,chatgpt,deepL,deepseek,gemini,google_translate,TOTAL
+911_outage,5969,274,966,5393,602,13204
+boil_water_notice,5968,274,988,5394,602,13226
+extreme_wind,6034,274,1010,5410,602,13330
+fire,5945,274,997,5399,602,13217
+flood,6038,274,1069,5415,603,13399
+prompt_chain_of_translation_nolimit.txt,0,0,0,0,0,0
+prompt_cross_lingual_alignment_nolimit.txt,0,0,0,0,0,0
+prompt_one_shot_nolimit.txt,0,0,0,0,0,0
+prompt_persona_nolimit.txt,0,0,0,0,0,0
+prompt_simple_360.txt,0,0,0,0,0,0
