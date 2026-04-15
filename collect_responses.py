@@ -331,8 +331,11 @@ def main():
         logger.info(f"Preserved existing output from {args.output_file}")
     except FileNotFoundError:
         logger.warning(f"Output file {args.output_file} not found. Creating new output file.")
-    except json.JSONDecodeError:
-        logger.warning(f"Output file {args.output_file} contains invalid JSON. Creating new output file.")
+    # except json.JSONDecodeError:
+    #     logger.warning(f"Output file {args.output_file} contains invalid JSON. Creating new output file.")
+    except json.JSONDecodeError as e:
+        logger.error(f"Output file {args.output_file} is invalid JSON: {e}. Aborting to avoid data loss.")
+        raise SystemExit(1)
 
     skip_gemini = args.skip_gemini
     skip_chatgpt = args.skip_chatgpt
