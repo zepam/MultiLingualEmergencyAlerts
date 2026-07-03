@@ -1,18 +1,78 @@
-# packages for API access
-google-genai
-google-cloud-translate==2.0.1
-openai
-
-# arabic handling
-arabic_reshaper
-python-bidi
-
-# general usage
-python-dotenv
-
-# evaluation
-evaluate
-unbabel-comet==2.0.1
-bert_score
-sacrebleu
-rouge_score
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-arm64
+# created-by: conda 26.3.2
+_openmp_mutex=4.5=7_kmp_llvm
+annotated-types=0.7.0=pypi_0
+anyio=4.14.1=pypi_0
+bzip2=1.0.8=h80987f9_6
+ca-certificates=2026.6.17=hbd8a1cb_0
+certifi=2026.6.17=pypi_0
+cffi=2.0.0=pypi_0
+charset-normalizer=3.4.7=pypi_0
+cryptography=49.0.0=pypi_0
+deepl=1.30.0=pypi_0
+distro=1.9.0=pypi_0
+google-api-core=2.31.0=pypi_0
+google-auth=2.55.1=pypi_0
+google-cloud-core=2.6.0=pypi_0
+google-cloud-translate=3.27.0=pypi_0
+google-genai=2.10.0=pypi_0
+googleapis-common-protos=1.75.0=pypi_0
+grpc-google-iam-v1=0.14.4=pypi_0
+grpcio=1.81.1=pypi_0
+grpcio-status=1.81.1=pypi_0
+h11=0.16.0=pypi_0
+httpcore=1.0.9=pypi_0
+httpx=0.28.1=pypi_0
+idna=3.18=pypi_0
+jiter=0.15.0=pypi_0
+libblas=3.11.0=8_h51639a9_openblas
+libcblas=3.11.0=8_hb0561ab_openblas
+libcxx=22.1.2=hf894667_0
+libexpat=2.8.1=h50f4ffc_1
+libffi=3.4.8=h4a3ca97_3
+libgcc=15.2.0=hcbb3090_19
+libgfortran=15.2.0=h07b0088_19
+libgfortran5=15.2.0=hdae7583_19
+liblapack=3.11.0=8_hd9741b5_openblas
+liblzma=5.8.2=h8088a28_0
+libopenblas=0.3.33=openmp_he657e61_0
+libsqlite=3.53.3=h1b79a29_0
+libzlib=1.3.2=hb4cf58c_0
+llvm-openmp=22.1.8=hc7d1edf_0
+ncurses=6.5=hee39554_0
+numpy=2.5.0=py312ha003a3f_0
+openai=2.44.0=pypi_0
+openssl=3.6.3=hd24854e_0
+packaging=26.0=py312hca03da5_0
+pandas=3.0.3=py312h6510ced_0
+pip=26.1.2=pyhc872135_0
+proto-plus=1.28.0=pypi_0
+protobuf=7.35.1=pypi_0
+pyasn1=0.6.3=pypi_0
+pyasn1-modules=0.4.2=pypi_0
+pycparser=3.0=pypi_0
+pydantic=2.13.4=pypi_0
+pydantic-core=2.46.4=pypi_0
+python=3.12.12=hec0b533_0_cpython
+python-dateutil=2.9.0.post0=pyhe01879c_2
+python-dotenv=1.2.2=pypi_0
+python_abi=3.12=8_cp312
+readline=8.3=h0b18652_0
+requests=2.34.2=pypi_0
+setuptools=82.0.1=py312hca03da5_0
+six=1.17.0=pyhe01879c_1
+sniffio=1.3.1=pypi_0
+sqlite=3.53.2=h1cce5ff_0
+tenacity=9.1.4=pypi_0
+tk=8.6.15=hcd8a7d5_0
+tqdm=4.68.3=pypi_0
+typing-extensions=4.15.0=pypi_0
+typing-inspection=0.4.2=pypi_0
+tzdata=2026b=he532380_0
+urllib3=2.7.0=pypi_0
+websockets=16.0=pypi_0
+wheel=0.47.0=py312hca03da5_0
+xz=5.8.2=h8bbcb1d_0
+zlib=1.3.2=hb4cf58c_0

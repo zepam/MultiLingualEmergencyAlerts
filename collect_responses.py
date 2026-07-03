@@ -25,15 +25,21 @@ Flags:
 import json
 import logging
 import argparse
-import arabic_reshaper
 import os
-from bidi.algorithm import get_display
 from datetime import date
 
 from dotenv import load_dotenv
 from source.helpers import chat_with_service
 from clients.translation_map import TRANSLATION_MAP
 import time
+
+try:
+    import arabic_reshaper
+    from bidi.algorithm import get_display
+except ImportError:
+    arabic_reshaper = None
+    get_display = None
+    logging.warning("arabic_reshaper or bidi.algorithm not installed. Arabic text may not display correctly.")
 
 # set custom logging levels for noisy libraries
 logging.getLogger("deepl").setLevel(logging.WARNING)
@@ -182,7 +188,7 @@ def loop_responses(skip_bool, service_name, language, disaster, prompt_file_path
             logger.warning(f"{service_name} returned None for {language_name}:{disaster_name}:{prompt_name}")
             return True  # Skip this service going forward
         
-        if language_name in RTL_LANGUAGES:
+        if language_name in RTL_LANGUAGES and arabic_reshaper and get_display:
             # make sure Arabic output is not broken and is left to right
             output = get_display(arabic_reshaper.reshape(output), base_dir = "R")
             
