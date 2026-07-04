@@ -44,12 +44,24 @@ def chat_deepseek(language, disaster, prompt_file_path, logger):
     deepseek_client = DeepSeekClient(key=os.getenv("OPENROUTER_API_KEY"), logger=logger)
     return deepseek_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
 
+# def chat_chatgpt(language, disaster, prompt_file_path, logger):
+#     chatgpt_client = ChatGPTClient(key=os.getenv("AZURE_OPENAI_API_KEY"),
+#                                    base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
+#                                    deployment_name=os.getenv("AZURE_DEPLOYMENT_NAME"),
+#                                    logger=logger)
+#     return chatgpt_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
+
 def chat_chatgpt(language, disaster, prompt_file_path, logger):
-    chatgpt_client = ChatGPTClient(key=os.getenv("AZURE_OPENAI_API_KEY"),
-                                   base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
-                                   deployment_name=os.getenv("AZURE_DEPLOYMENT_NAME"),
-                                   logger=logger)
-    return chatgpt_client.safe_chat(prompt_file=prompt_file_path, language=language, disaster=disaster)
+    chatgpt_client = ChatGPTClient(
+        key=os.getenv("OPENAI_API_KEY"),
+        logger=logger,
+    )
+
+    return chatgpt_client.safe_chat(
+        prompt_file=prompt_file_path,
+        language=language,
+        disaster=disaster,
+    )
 
 def chat_google_translate(language, disaster, prompt_file_path, logger):
     google_translate_client = GoogleCloudTranslationClient(logger=logger)
