@@ -8,6 +8,7 @@
 | 2026-04-13 22:14 UTC | Openrouter | deepseek-chat-v3-0324 | max_tokens | 300 | 400 | The runs are <$1 each, raised the token limit because I can afford it |  |  |
 | 2026-07-03 18:30:00 UTC | Gemini | gemini 2.5 flash | pricing | free | Paid 1 $250 Billing Account Tier Cap | need paid credits to run | | 
 | 2026-07-03 20:00:00 UTC | OpenAI | gpt-5.4-nano-2026-03-17 | pricing | free | XXX | out of Azure Open AI credits | | 
+| 2026-07-03 23:14:00 UTC | ALL |  | Split Chinese into zh-Hant and zh-Hans | zh for both | more specific outputs | |
 
 
 Recommended `Change Type` values: `model_switch`, `max_tokens`, `temperature`, `prompt_update`, `other`
