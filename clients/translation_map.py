@@ -6,8 +6,8 @@ TRANSLATION_MAP = {
     "Arabic": "ar",
     "Haitian Creole": "ht", 
     "Vietnamese": "vi",
-    "Chinese (Traditional)": "zh", # DeepL uses 'zh' for both Simplified and Traditional, often defaulting to Simplified
-    "Chinese (Simplified)": "zh",
+    "Chinese (Traditional)": "zh-Hant", # DeepL uses 'zh' for both Simplified and Traditional, often defaulting to Simplified
+    "Chinese (Simplified)": "zh-Hans", # DeepL uses 'zh' for both Simplified and Traditional, often defaulting to Simplified
     "Italian": "it",    
     "Russian": "ru",        # 5000+ person language in WA state 2024
     "Ukrainian": "uk",      # 5000+ person language in WA state 2024
