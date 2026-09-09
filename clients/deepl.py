@@ -53,7 +53,7 @@ class DeepLClient(Client):
                 target_lang=target_language_code
             )
             translated_content = result.text
-            self.logger.info(f"Successfully translated {target_language_code}.")
+            # self.logger.info(f"Successfully translated {target_language_code}.")
             return translated_content
         except deepl.DeepLException as e:
             self.logger.error(f"DeepL translation failed '{target_language}': {e}")
