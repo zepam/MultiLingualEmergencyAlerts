@@ -37,15 +37,24 @@ Provide reliable, targeted analysis of a large JSON file while keeping output bo
    - For text searches, search string values recursively but distinguish exact matches from substring matches.
    - For comparisons, align records by stable dimensions such as language, alert type, prompt, and date; report missing counterparts instead of dropping them.
 
-5. Validate the result.
+5. Save the result as JSON.
+   - Save every requested result, not just the displayed sample, under the repository's `data/` folder.
+   - Use a predictable descriptive filename such as `data/<service>_<language>_results.json`; sanitize path components to lowercase letters, numbers, underscores, and hyphens.
+   - Preserve the filtered hierarchy and include the service/client and language keys when the source uses that structure.
+   - Create the `data/` folder if it does not exist, and use UTF-8 with non-ASCII characters preserved.
+   - Do not overwrite an unrelated existing file. If the target exists, ask for a filename or choose a clearly suffixed alternative.
+
+6. Validate the result.
    - Confirm the filtered count against the traversal logic.
+   - Parse the saved JSON and confirm its count matches the extracted result count.
    - Check for malformed JSON, unexpected types, missing required fields, duplicate paths, and invalid dates where relevant.
    - Separate zero matches from parsing or schema errors.
    - If the file is too large for an in-memory parser, say which streaming approach was used and avoid claiming a complete result from a partial sample.
 
-6. Report findings concisely.
+7. Report findings concisely.
    - Start with the file, filters, and number of matches.
    - State the schema path used and any assumptions about aliases such as `service` versus `client`.
+   - Link to or name the saved JSON file in `data/`.
    - Present representative results with paths, dates, and truncated text where useful.
    - List missing languages, services, alert types, or prompts separately from successful matches.
    - Include the exact reproducible command or script logic when the user is likely to repeat the analysis.
@@ -82,11 +91,15 @@ for service, languages in data.items():
 
 When the JSON is too large for `json.load`, use a streaming parser or a command such as `jq` and emit only matching paths and bounded fields. Do not install a dependency without checking the repository's existing environment first.
 
+Save a filtered result with the original nested shape. For example, a ChatGPT/Dari extraction should be written as `data/chatgpt_dari_results.json` with the structure `{ "chatgpt": { "dari": ... } }`, not as a flattened text report.
+
 ## Completion Checklist
 
 - [ ] Input format and root structure were verified.
 - [ ] Language and service/client filters were resolved against actual keys.
 - [ ] Results retain their original JSON paths.
+- [ ] The complete result was saved as UTF-8 JSON under `data/`.
 - [ ] Output is bounded and long text is truncated unless requested.
+- [ ] The saved JSON was reparsed and its count matches the extracted result.
 - [ ] Counts, zero matches, missing fields, and parse errors are distinguished.
 - [ ] The query or traversal is reproducible.
