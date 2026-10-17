@@ -439781,6 +439781,10 @@
                 {
                     "text": "[ORGANISMO EMISOR]: Hay una EMERGENCIA POR INUNDACIONES REPENTINAS en vigor para [UBICACIÓN] hasta las [HORA]. Se trata de una situación extremadamente peligrosa que pone en riesgo la vida. No intentes desplazarte a menos que estés huyendo de una zona que pueda inundarse o que tengas una orden de evacuación. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISMO EMISOR]: Hay una EMERGENCIA POR INUNDACIONES REPENTINAS en vigor para [UBICACIÓN] hasta las [HORA]. Se trata de una situación extremadamente peligrosa que pone en riesgo la vida. No intentes desplazarte a menos que estés huyendo de una zona que pueda inundarse o que tengas una orden de evacuación. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -439911,6 +439915,10 @@
                 {
                     "text": "[ORGANISMO EMISOR]: Está en vigor una ALERTA DE VIENTO EXTREMO para [UBICACIÓN] debido al peligro inmediato de vientos que pueden poner en riesgo la vida hasta las [HORA]. Póngase a cubierto AHORA MISMO en una habitación interior de un edificio resistente, lejos de las ventanas. Protéjase la cabeza de los objetos que puedan salir disparados. ¡NO salga al exterior aunque el viento amaine! Los vientos volverán a ser peligrosos en breve. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISMO EMISOR]: Hay una ALERTA DE VIENTOS EXTREMOS en vigor para [UBICACIÓN] debido al peligro inmediato de vientos que pueden poner en riesgo la vida hasta las [HORA]. Póngase a cubierto AHORA MISMO en una habitación interior de un edificio resistente, lejos de las ventanas. Protéjase la cabeza de los objetos que puedan salir disparados. ¡NO salga al exterior aunque el viento amaine! Los vientos volverán a ser peligrosos en breve. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -440041,6 +440049,10 @@
                 {
                     "text": "[ORGANISMO EMISOR]: Hay una ALERTA DE INCENDIO en [UBICACIÓN] vigente hasta las [HORA]. Evacúa a tu familia y a tus mascotas ahora mismo, no te demores. La visibilidad en la zona se verá reducida y las carreteras pueden quedar bloqueadas. Si no se marcha ahora, podría quedar atrapado, resultar herido o perder la vida. ABANDONE las zonas cercanas a [UBICACIÓN]. Se prevé visibilidad reducida, humo denso y dificultad para respirar. Conduzca con precaución. Preste atención al personal de seguridad pública que opera en la zona y siga sus instrucciones. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISMO EMISOR]: Hay una ALERTA DE INCENDIO en [UBICACIÓN] vigente hasta las [HORA]. Evacúa a tu familia y a tus mascotas ahora mismo, no te demores. La visibilidad en la zona se verá reducida y las carreteras pueden quedar bloqueadas. Si no se marcha ahora, podría quedar atrapado, resultar herido o perder la vida. ABANDONE las zonas cercanas a [UBICACIÓN]. Prepárese para una visibilidad reducida, humo denso y dificultades para respirar. Conduzca con precaución. Esté atento al personal de seguridad pública que opera en la zona y siga sus instrucciones. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -440171,6 +440183,10 @@
                 {
                     "text": "[ORGANISMO EMISOR]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [UBICACIÓN], que estará vigente hasta [HORA]. El agua de tu comunidad puede provocar enfermedades. Utiliza agua embotellada si está disponible. No beba, ni cocine, ni se cepille los dientes, ni limpie su hogar con agua del grifo o agua filtrada hasta que la haya hervido. Deje que el agua hierva a borbotones durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No utilices hielo elaborado con agua que no haya sido hervida. Si utilizas leche de fórmula para alimentar a tu hijo, utiliza leche de fórmula lista para el consumo. Asegúrate de que las mascotas no beban agua que no haya sido hervida. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISMO EMISOR]: Se ha emitido una ALERTA DE HERVIR EL AGUA para [UBICACIÓN], que estará vigente hasta [HORA]. El agua de tu comunidad puede provocar enfermedades. Utiliza agua embotellada si está disponible. No beba, ni cocine, ni se cepille los dientes, ni limpie su hogar con agua del grifo o agua filtrada hasta que la haya hervido. Deje que el agua hierva a borbotones durante TRES MINUTOS. Deje que el agua se enfríe antes de usarla. No utilices hielo elaborado con agua que no haya sido hervida. Si utilizas leche de fórmula para alimentar a tu hijo, utiliza leche de fórmula lista para el consumo. Asegúrate de que las mascotas no beban agua que no haya sido hervida. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -440301,6 +440317,10 @@
                 {
                     "text": "[ORGANISMO EMISOR]: Hay una ALERTA DE INTERRUPCIÓN DEL SERVICIO DEL 9-1-1 en vigor para [UBICACIÓN]. En caso de emergencia, ponte en contacto directamente con la policía, los bomberos, los servicios médicos u otros servicios de emergencia a través de sus números de teléfono locales. Si llamas al 9-1-1, es posible que no recibas ayuda. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISMO EMISOR]: Hay una ALERTA DE INTERRUPCIÓN DEL SERVICIO 9-1-1 en vigor para [UBICACIÓN]. En caso de emergencia, ponte en contacto directamente con la policía, los bomberos, los servicios médicos u otros servicios de emergencia a través de sus números de teléfono locales. Si marcas el 9-1-1, es posible que no recibas ayuda. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -440433,6 +440453,10 @@
                 {
                     "text": "[ﻂﺑﺍﺭ] .ﺀﻼﺧﺇ ﺮﻣﻷ ﺎﻌﺿﺎﺧ ﺖﻨﻛ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺔﺿﺮﻌﻣ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﻞﻘﻨﺘﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺡﺍﻭﺭﻷﺍ ﺩﺪﻬﺗﻭ ﺓﺭﻮﻄﺨﻟﺍ ﺔﻐﻟﺎﺑ ﺔﻟﺎﺣ ﻩﺬﻫ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﺔﺌﺟﺎﻔﻣ ﺕﺎﻧﺎﻀﻴﻓ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ ﻥﻼﻋﺇ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ﻂﺑﺍﺭ] .ﺀﻼﺧﺇ ﺮﻣﻷ ﺎﻌﺿﺎﺧ ﺖﻨﻛ ﻭﺃ ﺕﺎﻧﺎﻀﻴﻔﻠﻟ ﺔﺿﺮﻌﻣ ﺔﻘﻄﻨﻣ ﻦﻣ ﺏﺮﻬﺗ ﺖﻨﻛ ﺍﺫﺇ ﻻﺇ ﻞﻘﻨﺘﻟﺍ ﻝﻭﺎﺤﺗ ﻻ .ﺡﺍﻭﺭﻷﺍ ﺩﺪﻬﺗﻭ ﺓﺭﻮﻄﺨﻟﺍ ﺔﻐﻟﺎﺑ ﺔﻟﺎﺣ ﻩﺬﻫ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﺔﺌﺟﺎﻔﻤﻟﺍ ﺕﺎﻧﺎﻀﻴﻔﻟﺍ ﺐﺒﺴﺑ ﺉﺭﺍﻮﻃ ﺔﻟﺎﺣ ﻥﻼﻋﺇ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -440563,6 +440587,10 @@
                 {
                     "text": "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﻟ ﺡﺎﻳﺮﻟﺍ ﺩﻮﻌﺘﺴﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﻮﻟ ﻰﺘﺣ ﺝﺭﺎﺨﻟﺍ ﻰﻟﺇ ﺍﻮﺟﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻢﻜﺳﻭﺅﺭ ﺍﻮﻤﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﺍﺭﻮﻓ ﺍﻮﻤﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺡﺎﻳﺭ ﻦﻣ ﺮﺷﺎﺒﻣ ﺮﻄﺧ ﺐﺒﺴﺑ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ «ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ» ﺭﺪﺻ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .ﺔﻋﺮﺴﺑ ﻯﺮﺧﺃ ﺓﺮﻣ ﺓﺮﻴﻄﺧ ﺢﺒﺼﺘﻟ ﺡﺎﻳﺮﻟﺍ ﺩﻮﻌﺘﺴﻓ !ﺡﺎﻳﺮﻟﺍ ﺕﺃﺪﻫ ﻮﻟ ﻰﺘﺣ ﺝﺭﺎﺨﻟﺍ ﻰﻟﺇ ﺍﻮﺟﺮﺨﺗ ﻻ .ﺓﺮﻳﺎﻄﺘﻤﻟﺍ ﻡﺎﺴﺟﻷﺍ ﻦﻣ ﻢﻜﺳﻭﺅﺭ ﺍﻮﻤﺣﺍ .ﺬﻓﺍﻮﻨﻟﺍ ﻦﻋ ﺍﺪﻴﻌﺑ ،ﻦﻴﺘﻣ ﻰﻨﺒﻤﺑ ﺔﻴﻠﺧﺍﺩ ﺔﻓﺮﻏ ﻲﻓ ﺍﺭﻮﻓ ﺍﻮﻤﺘﺣﺍ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﺓﺎﻴﺤﻟﺍ ﺩﺪﻬﺗ ﺡﺎﻳﺭ ﻦﻣ ﻱﺭﻮﻓ ﺮﻄﺧ ﺐﺒﺴﺑ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ «ﺓﺪﻳﺪﺷ ﺡﺎﻳﺭ ﻦﻣ ﺮﻳﺬﺤﺗ» ﻙﺎﻨﻫ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -440693,6 +440721,10 @@
                 {
                     "text": "[ﻂﺑﺍﺭ] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﻊﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﻲﻔﻇﻮﻤﻟ ﻪﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺭﺬﺤﻟﺍ ﻰﺧﻮﺗ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ﺎﻔﻴﺜﻛ ﺎﻧﺎﺧﺩﻭ ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﻊﻗﻮﺗ .[ﻊﻗﻮﻤﻟﺍ] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺭﺩﺎﻏ .ﺕﻮﻤﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻺﻟ ﺽﺮﻌﺘﺗ ﻭﺃ ﻖﻠﻌﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺩﺍﺪﺴﻧﻼﻟ ﻕﺮﻄﻟﺍ ﺽﺮﻌﺘﺗ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﺾﻔﺨﻨﺘﺳ .ﺮﺧﺄﺘﺗ ﻻﻭ ،ﺍﺭﻮﻓ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺧﺈﺑ ﻢﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ﻂﺑﺍﺭ] .ﻢﻬﺗﺎﻤﻴﻠﻌﺗ ﺍﻮﻌﺒﺗﺍﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﻦﻴﻠﻣﺎﻌﻟﺍ ﺔﻣﺎﻌﻟﺍ ﺔﻣﻼﺴﻟﺍ ﺩﺍﺮﻓﻷ ﺍﻮﻬﺒﺘﻧﺍ .ﺓﺩﺎﻴﻘﻟﺍ ﺀﺎﻨﺛﺃ ﺭﺬﺤﻟﺍ ﺍﻮﺧﻮﺗ .ﺲﻔﻨﺘﻟﺍ ﻲﻓ ﺔﺑﻮﻌﺻﻭ ﺎﻔﻴﺜﻛ ﺎﻧﺎﺧﺩﻭ ﺔﻳﺅﺮﻟﺍ ﺽﺎﻔﺨﻧﺍ ﺍﻮﻌﻗﻮﺗ .[ﻊﻗﻮﻤﻟﺍ] ﻦﻣ ﺔﺒﻳﺮﻘﻟﺍ ﻖﻃﺎﻨﻤﻟﺍ ﺍﻭﺭﺩﺎﻏ .ﺕﻮﻤﻟﺍ ﻭﺃ ﺔﺑﺎﺻﻺﻟ ﻥﻮﺿﺮﻌﺘﺗ ﻭﺃ ﻥﻮﻘﻠﻌﺗ ﺪﻘﻓ ،ﻥﻵﺍ ﺍﻭﺭﺩﺎﻐﺗ ﻢﻟ ﺍﺫﺇ .ﺩﺍﺪﺴﻧﻼﻟ ﻕﺮﻄﻟﺍ ﺽﺮﻌﺘﺗ ﺪﻗﻭ ﺔﻘﻄﻨﻤﻟﺍ ﻲﻓ ﺔﻳﺅﺮﻟﺍ ﺾﻔﺨﻨﺘﺳ .ﺮﺧﺄﺘﺗ ﻻﻭ ،ﻥﻵﺍ ﺔﻔﻴﻟﻷﺍ ﻚﺗﺎﻧﺍﻮﻴﺣﻭ ﻚﺘﻠﺋﺎﻋ ﺀﻼﺟﺈﺑ ﻢﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ [ﻊﻗﻮﻤﻟﺍ] ﻲﻓ ﻖﻳﺮﺣ ﻦﻣ ﺮﻳﺬﺤﺗ ﻱﺮﺴﻳ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -440823,6 +440855,10 @@
                 {
                     "text": "[URL] .ﻰﻠﻐﺗ ﻢﻟ ﻩﺎﻴﻣ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺍﻭﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺎﻓ ،ﻢﻜﻟﺎﻔﻃﺃ ﻡﺎﻌﻃﻹ ﺰﻫﺎﺠﻟﺍ ﻝﺎﻔﻃﻷﺍ ﺐﻴﻠﺣ ﻥﻮﻣﺪﺨﺘﺴﺗ ﻢﺘﻨﻛ ﺍﺫﺇ .ﻰﻠﻐﺗ ﻢﻟ ﻩﺎﻴﻣ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﺍﻮﻣﺪﺨﺘﺴﺗ ﻻ .ﺎﻬﻣﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ ﺩﺮﺒﺗ ﻩﺎﻴﻤﻟﺍ ﻙﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﺍﺪﻳﺪﺷ ﺎﻧﺎﻴﻠﻏ ﻲﻠﻐﺗ ﻰﺘﺣ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏﺍ .ﺎﻬﻴﻠﻏ ﺪﻌﺑ ﻻﺇ ،ﻝﺰﻨﻤﻟﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻥﺎﻨﺳﻷﺍ ﻞﺴﻏ ﻭﺃ ﻲﻬﻄﻟﺍ ﻲﻓ ﺎﻬﻣﺪﺨﺘﺴﺗ ﻻﻭ ،ﺓﺎﻔﺼﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻣ ﺏﺮﺸﺗ ﻻ .ﺕﺮﻓﻮﺗ ﻥﺇ ﺕﺎﺟﺎﺟﺯ ﻲﻓ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺎﺑ ﺔﺑﺎﺻﻹﺍ ﻲﻓ ﻢﻜﺘﻘﻄﻨﻣ ﻲﻓ ﻩﺎﻴﻤﻟﺍ ﺐﺒﺴﺘﺗ ﺪﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﻪﻟﻮﻌﻔﻣ ﻱﺮﺴﻳﻭ ،[ﻊﻗﻮﻤﻟﺍ] ﺔﻘﻄﻨﻤﻟ «ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏ ﺓﺭﻭﺮﻀﺑ ﻪﻴﺒﻨﺗ» ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .ﻰﻠﻐﺗ ﻢﻟ ﻩﺎﻴﻣ ﺏﺮﺸﺗ ﻻ ﺔﻔﻴﻟﻷﺍ ﺕﺎﻧﺍﻮﻴﺤﻟﺍ ﻥﺃ ﻦﻣ ﺍﻭﺪﻛﺄﺗ .ﻡﺍﺪﺨﺘﺳﻼﻟ ﺰﻫﺎﺠﻟﺍ ﺐﻴﻠﺤﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺎﻓ ،ﻢﻜﻟﺎﻔﻃﺃ ﻡﺎﻌﻃﻹ ﺰﻫﺎﺠﻟﺍ ﻝﺎﻔﻃﻷﺍ ﺐﻴﻠﺣ ﻥﻮﻣﺪﺨﺘﺴﺗ ﻢﺘﻨﻛ ﺍﺫﺇ .ﻰﻠﻐﺗ ﻢﻟ ﻩﺎﻴﻣ ﻦﻣ ﻉﻮﻨﺼﻤﻟﺍ ﺞﻠﺜﻟﺍ ﺍﻮﻣﺪﺨﺘﺴﺗ ﻻ .ﺎﻬﻣﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ ﺩﺮﺒﺗ ﻩﺎﻴﻤﻟﺍ ﻙﺮﺗﺍ .ﻖﺋﺎﻗﺩ ﺙﻼﺛ ﺓﺪﻤﻟ ﻼﻣﺎﻛ ﺎﻧﺎﻴﻠﻏ ﻲﻠﻐﺗ ﻰﺘﺣ ﻩﺎﻴﻤﻟﺍ ﻲﻠﻏﺍ .ﺎﻬﻴﻠﻏ ﺪﻌﺑ ﻻﺇ ،ﻚﻟﺰﻨﻣ ﻒﻴﻈﻨﺗ ﻭﺃ ﻥﺎﻨﺳﻷﺍ ﻒﻴﻈﻨﺗ ﻭﺃ ﻲﻬﻄﻟﺍ ﻲﻓ ﺎﻬﻣﺪﺨﺘﺴﺗ ﻻﻭ ،ﺓﺮﺘﻠﻔﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﻭﺃ ﺭﻮﺒﻨﺼﻟﺍ ﻩﺎﻴﻣ ﺏﺮﺸﺗ ﻻ .ﺕﺮﻓﻮﺗ ﻥﺇ ﺕﺎﺟﺎﺟﺯ ﻲﻓ ﺓﺄﺒﻌﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺍﻮﻣﺪﺨﺘﺳﺍ .ﺽﺮﻤﻟﺎﺑ ﻢﻜﺘﺑﺎﺻﺇ ﻲﻓ ﻢﻜﺘﻘﻄﻨﻣ ﻲﻓ ﺓﺮﻓﻮﺘﻤﻟﺍ ﻩﺎﻴﻤﻟﺍ ﺐﺒﺴﺘﺗ ﺪﻗ .[ﺖﻗﻮﻟﺍ] ﻰﺘﺣ ﻝﻮﻌﻔﻤﻟﺍ ﻱﺭﺎﺳ ﻮﻫﻭ ،[ﻊﻗﻮﻤﻟﺍ] ﺔﻘﻄﻨﻤﻟ «ﻩﺎﻴﻤﻟﺍ ﻲﻠﻐﺑ ﻪﻴﺒﻨﺗ» ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -440953,6 +440989,10 @@
                 {
                     "text": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﺎﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻦﻣ ﺎﻫﺮﻴﻏ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﺓﺮﺷﺎﺒﻣ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﺔﻘﻄﻨﻣ ﻲﻓ «1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ» ﺭﺍﺪﺻﺇ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .ﺓﺪﻋﺎﺴﻤﻟﺍ ﻰﻠﻋ ﻞﺼﺤﺗ ﻻ ﺪﻘﻓ ،1-1-9 ﻢﻗﺮﺑ ﺖﻠﺼﺗﺍ ﺍﺫﺇ .ﺉﺭﺍﻮﻄﻟﺍ ﺔﻟﺎﺣ ﻲﻓ ﺔﻴﻠﺤﻤﻟﺍ ﺎﻬﻔﺗﺍﻮﻫ ﻡﺎﻗﺭﺃ ﻰﻠﻋ ﺉﺭﺍﻮﻄﻟﺍ ﺕﺎﻣﺪﺧ ﻦﻣ ﺎﻫﺮﻴﻏ ﻭﺃ ﺔﻴﺒﻄﻟﺍ ﺕﺎﻣﺪﺨﻟﺍ ﻭﺃ ﺀﺎﻔﻃﻹﺍ ﻭﺃ ﺔﻃﺮﺸﻟﺎﺑ ﺓﺮﺷﺎﺒﻣ ﻝﺎﺼﺗﻻﺍ ﻰﺟﺮﻳ .[ﻊﻗﻮﻤﻟﺍ] ﻲﻓ «1-1-9 ﺔﻣﺪﺧ ﻉﺎﻄﻘﻧﺎﺑ ﻪﻴﺒﻨﺗ» ﻞﻴﻌﻔﺗ ﻢﺗ :[ﺔﻠﺳﺮﻤﻟﺍ ﺔﻬﺠﻟﺍ]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -441081,6 +441121,10 @@
                 {
                     "text": "[發佈單位]：[地點] 目前正處於山洪暴發緊急狀態，該狀態將持續至 [時間]。此情況極度危險且可能危及生命。除非您正在逃離可能發生洪水的區域，或已接獲疏散令，否則請勿嘗試外出。[網址]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[發布單位]：[地點] 目前已發布山洪暴發緊急警報，有效期至 [時間]。此情況極為危險且可能危及生命。除非您正從可能發生洪水的地區撤離，或已接獲疏散令，否則請勿嘗試外出。[網址]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -441207,6 +441251,10 @@
                 {
                     "text": "[發布單位]：[地點] 目前正生效一項「極端強風警告」，因存在危及生命的強風之即時危險，此警告將持續至 [時間]。請立即躲進堅固建築物的內側房間，遠離窗戶。請保護頭部，避免被飛來物體擊中。 即使風勢暫時平息，也切勿外出！風勢將很快再次變得危險。[網址]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[發布單位]：[地點] 目前已發布「極端強風警告」，因存在危及生命的強風之即時危險，此警告將持續至 [時間]。請立即躲進堅固建築物的內側房間，遠離窗戶。注意保護頭部，避免被飛來物擊中。 即使風勢暫時平息，也切勿外出！風勢將迅速再度轉為危險。[網址]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -441333,6 +441381,10 @@
                 {
                     "text": "[發佈單位]：[地點] 現已發布火災警報，有效期至 [時間]。請立即帶家人和寵物撤離，切勿拖延。 該區域能見度將降低，道路可能受阻。若您現在不撤離，可能會被困、受傷甚至喪生。請立即離開 [地點] 附近的區域。預期會出現能見度降低、濃煙瀰漫及呼吸困難的情況。駕駛時請務必小心。請留意在該區域執勤的公共安全人員，並遵從他們的指示。[網址]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[發佈單位]：[地點] 現已發布火災警報，有效期至 [時間]。請立即帶家人和寵物撤離，切勿拖延。 該區域能見度將降低，道路可能受阻。若您現在不撤離，可能會被困、受傷或喪生。請立即離開 [地點] 附近的區域。預期會出現能見度降低、濃煙瀰漫及呼吸困難的情況。駕駛時請務必小心。請留意在該區域執勤的公共安全人員，並遵從其指示。[網址]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -441459,6 +441511,10 @@
                 {
                     "text": "[發布單位]：已針對 [地點] 發布「煮沸用水警報」，此警報有效期至 [時間]。您所在社區的自來水可能導致身體不適。如有瓶裝水，請優先使用。 在將自來水或過濾水煮沸之前，請勿飲用、烹飪、刷牙或用於清潔家居。請將水煮至滾沸狀態並持續沸騰「三分鐘」。使用前請待水冷卻。 請勿使用未經煮沸的水製成的冰塊。若您使用嬰兒配方奶餵養孩子，請選用即飲型配方奶。請確保寵物不會飲用未經煮沸的水。[網址]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[發布單位]：已針對 [地點] 發布「煮沸用水警報」，該警報將持續生效至 [時間]。您所在社區的自來水可能導致身體不適。如有瓶裝水，請優先使用。 在將自來水或過濾水煮沸之前，請勿飲用、烹飪、刷牙或用其清潔家居。請將水煮至滾沸狀態並持續沸騰三分鐘。使用前請待水冷卻。 請勿使用未經煮沸的水製成的冰塊。若您使用嬰兒配方奶粉餵養孩子，請選用即飲型配方奶粉。請確保寵物不會飲用未經煮沸的水。[網址]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -441585,6 +441641,10 @@
                 {
                     "text": "[發送單位]：[地點] 目前已發布 9-1-1 服務中斷警報。 如有緊急情況，請直接撥打當地電話號碼聯繫警方、消防、醫療或其他緊急服務單位。若您撥打 9-1-1，可能無法獲得協助。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[發送單位]：[地點] 目前已發布 9-1-1 服務中斷警報。 如有緊急情況，請直接撥打當地電話號碼聯繫警方、消防、醫療或其他緊急服務單位。若您撥打 9-1-1，可能無法獲得協助。[網址]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -441669,6 +441729,10 @@
                 {
                     "text": "[CƠ QUAN PHÁT HÀNH]: CẢNH BÁO KHẨN CẤP VỀ LŨ QUÁ ĐỘNG đang có hiệu lực tại [ĐỊA ĐIỂM] cho đến [THỜI GIAN]. Đây là tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không nên di chuyển trừ khi bạn đang sơ tán khỏi khu vực có nguy cơ bị ngập lụt hoặc đang nằm trong phạm vi lệnh sơ tán. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[CƠ QUAN PHÁT THÔNG BÁO]: TÌNH TRẠNG KHẨN CẤP DO LŨ QUÁNG đang có hiệu lực tại [ĐỊA ĐIỂM] cho đến [THỜI GIAN]. Đây là tình huống cực kỳ nguy hiểm và đe dọa tính mạng. Không nên di chuyển trừ khi bạn đang sơ tán khỏi khu vực có nguy cơ bị ngập lụt hoặc đang nằm trong phạm vi lệnh sơ tán. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -441751,6 +441815,10 @@
                 {
                     "text": "[CƠ QUAN PHÁT ĐI]: CẢNH BÁO GIÓ MẠNH ĐANG CÓ HIỆU LỰC tại [ĐỊA ĐIỂM] do nguy cơ trực tiếp từ gió có thể đe dọa tính mạng, kéo dài đến [THỜI GIAN]. Hãy tìm nơi trú ẩn NGAY LẬP TỨC trong một căn phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Hãy bảo vệ đầu khỏi các vật thể bay. ĐỪNG ra ngoài ngay cả khi gió đã dịu bớt! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[CƠ QUAN PHÁT ĐI]: CẢNH BÁO GIÓ MẠNH ĐANG CÓ HIỆU LỰC tại [ĐỊA ĐIỂM] do nguy cơ trực tiếp từ những cơn gió đe dọa tính mạng cho đến [THỜI GIAN]. Hãy tìm nơi trú ẩn NGAY LẬP TỨC trong một căn phòng bên trong của tòa nhà kiên cố, tránh xa cửa sổ. Hãy bảo vệ đầu khỏi các vật thể bay. ĐỪNG ra ngoài ngay cả khi gió đã dịu bớt! Gió sẽ nhanh chóng trở nên nguy hiểm trở lại. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -441833,6 +441901,10 @@
                 {
                     "text": "[CƠ QUAN PHÁT ĐI]: CẢNH BÁO CHÁY tại [ĐỊA ĐIỂM] đang có hiệu lực cho đến [THỜI GIAN]. Hãy sơ tán gia đình và vật nuôi ngay lập tức, đừng chần chừ. Tầm nhìn trong khu vực sẽ bị hạn chế và các tuyến đường có thể bị tắc nghẽn. Nếu quý vị không rời khỏi khu vực ngay lập tức, quý vị có thể bị mắc kẹt, bị thương hoặc tử vong. HÃY RỜI KHỎI các khu vực gần [ĐỊA ĐIỂM]. Hãy chuẩn bị tinh thần đối mặt với tầm nhìn hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Hãy chú ý đến nhân viên an toàn công cộng đang làm nhiệm vụ trong khu vực và tuân theo hướng dẫn của họ. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[CƠ QUAN PHÁT ĐI]: CẢNH BÁO CHÁY tại [ĐỊA ĐIỂM] đang có hiệu lực cho đến [THỜI GIAN]. Hãy sơ tán gia đình và vật nuôi ngay lập tức, đừng chần chừ. Tầm nhìn trong khu vực sẽ bị hạn chế và các tuyến đường có thể bị tắc nghẽn. Nếu quý vị không rời khỏi khu vực ngay lập tức, quý vị có thể bị mắc kẹt, bị thương hoặc tử vong. HÃY RỜI KHỎI các khu vực gần [ĐỊA ĐIỂM]. Hãy chuẩn bị tinh thần đối mặt với tầm nhìn hạn chế, khói dày đặc và khó thở. Hãy cẩn thận khi lái xe. Hãy chú ý đến nhân viên an toàn công cộng đang làm nhiệm vụ trong khu vực và tuân theo hướng dẫn của họ. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -441915,6 +441987,10 @@
                 {
                     "text": "[CƠ QUAN PHÁT HÀNH]: Một CẢNH BÁO PHẢI ĐUN SÔI NƯỚC đã được ban hành cho [ĐỊA ĐIỂM] và có hiệu lực đến [THỜI GIAN]. Nước sinh hoạt tại cộng đồng của quý vị có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có thể. Không được uống, nấu ăn, đánh răng hoặc lau chùi nhà cửa bằng nước máy hoặc nước lọc cho đến khi bạn đun sôi nó. Đun sôi nước cho đến khi sôi sùng sục trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu quý vị dùng sữa bột để nuôi con, hãy sử dụng sữa bột pha sẵn. Đảm bảo vật nuôi không uống nước chưa được đun sôi. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[CƠ QUAN PHÁT HÀNH]: Một CẢNH BÁO PHẢI ĐUN SÔI NƯỚC đã được ban hành cho [ĐỊA ĐIỂM] và có hiệu lực đến [THỜI GIAN]. Nước sinh hoạt tại cộng đồng của quý vị có thể gây bệnh. Hãy sử dụng nước đóng chai nếu có sẵn. Không được uống, nấu ăn, đánh răng hoặc lau dọn nhà cửa bằng nước máy hoặc nước lọc cho đến khi bạn đun sôi nước. Đun sôi nước cho đến khi sôi sùng sục trong BA PHÚT. Để nước nguội trước khi sử dụng. Không sử dụng đá làm từ nước chưa được đun sôi. Nếu quý vị dùng sữa công thức để nuôi con, hãy sử dụng sữa công thức đã pha sẵn. Đảm bảo vật nuôi không uống nước chưa được đun sôi. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -441997,6 +442073,10 @@
                 {
                     "text": "[CƠ QUAN PHÁT TIN]: CẢNH BÁO MẤT KẾT NỐI DỊCH VỤ 9-1-1 hiện đang có hiệu lực tại [ĐỊA ĐIỂM]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, dịch vụ y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ. Nếu quý vị gọi số 9-1-1, quý vị có thể không nhận được sự trợ giúp. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[CƠ QUAN PHÁT TIN]: CẢNH BÁO MẤT KẾT NỐI DỊCH VỤ 9-1-1 hiện đang có hiệu lực tại [ĐỊA ĐIỂM]. Trong trường hợp khẩn cấp, vui lòng liên hệ trực tiếp với cảnh sát, cứu hỏa, dịch vụ y tế hoặc các dịch vụ khẩn cấp khác qua số điện thoại địa phương của họ. Nếu bạn gọi 9-1-1, bạn có thể không nhận được sự trợ giúp. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -442045,6 +442125,10 @@
                 {
                     "text": "[AJANS KI VOYE]: Yon ijans inondasyon rapid an vigè pou [KOTE] jiska [LÈ]. Sa a se yon sitiyasyon ekstrèmman danjere ki ka menase lavi. Pa eseye vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AJANS KI VOYE]: Yon ijans inondasyon rapid an vigè pou [KOTE] jiska [LÈ]. Sa a se yon sitiyasyon ekstrèmman danjere ki ka menase lavi. Pa eseye vwayaje sof si w ap kite yon zòn ki ka inonde oswa si w anba yon lòd evakyasyon. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -442091,6 +442175,10 @@
                 {
                     "text": "[AJANS KI SOTI AVÈK LI]: Yon AVÈTISMAN VAN EKSTREM an vigè pou [KOTE] pou danje imedya van ki ka menase lavi jiska [LÈ]. Pran kouvèti KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt. Pwoteje tèt ou kont objè k ap vole. PA soti deyò menm si van an kalme! Van an ap vin danjere ankò rapidman. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AJANS KI SOTI AVÈK LI]: Yon AVÈTISMAN VAN EKSTREM an vigè pou [KOTE] pou danje imedya van ki ka menase lavi jiska [LÈ]. Pran kouvèti KOUNYE A nan yon chanm andedan yon bilding solid, lwen fenèt. Pwoteje tèt ou kont objè k ap vole. PA soti deyò menm si van an kalme! Van an ap vin danjere ankò rapidman. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -442137,6 +442225,10 @@
                 {
                     "text": "[AJANS KI VOYE]: Yon AVÈTISMAN DIZÈN nan [LOCATION] an vigè jiska [TIME]. Evakye fanmi w ak bèt kay ou kounye a, pa pèdi tan. Vizibilite nan zòn nan ap diminye epi wout yo ka bloke. Si w pa pati kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou a vizibilite redwi, gwo lafimen, ak difikilte pou respire. Fè atansyon lè w ap kondui. Veye pèsonèl sekirite piblik k ap travay nan zòn nan epi swiv enstriksyon yo. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AJANS KI VOYE]: Yon AVÈTISMAN DIZÈN nan [LOCATION] an vigè jiska [TIME]. Evakye fanmi w ak bèt kay ou kounye a, pa pèdi tan. Vizibilite nan zòn nan ap diminye epi wout yo ka bloke. Si w pa pati kounye a, ou ka bloke, blese, oswa mouri. KITE zòn ki toupre [LOCATION]. Atann ou a vizibilite redwi, gwo lafimen, ak difikilte pou respire. Fè atansyon lè w ap kondui. Veye pèsonèl sekirite piblik k ap travay nan zòn nan epi swiv enstriksyon yo. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -442183,6 +442275,10 @@
                 {
                     "text": "[AJANS KI POTE NOUVÈL LA]: Yon ALÈT POU BOUYI DLO te pibliye pou [KOTE] e li ap rete an vigè jiska [LÈ]. Dlo nan kominote w la ka rann ou malad. Sèvi ak dlo an boutèy si sa disponib. Pa bwè dlo tiyo a, pa kwit manje avè l, pa bwose dan w avè l, ni pa netwaye kay ou avè l, ni dlo filtre, jiskaske w fin bouyi l. Fè dlo a bouyi byen fò pandan TWA MINIT. Kite dlo a refwadi anvan w itilize l. Pa itilize glas ki fèt ak dlo ki pa bouyi. Si w itilize lèt fòmil pou bay pitit ou manje, itilize lèt fòmil ki tou pare. Asire w bèt kay ou yo pa bwè dlo ki pa bouyi. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AJANS KI POTE NOUVÈL LA]: Yo bay yon ALÈT POU BOUYI DLO pou [KOTE] e l ap an vigè jiska [LÈ]. Dlo nan kominote w la ka rann ou malad. Sèvi ak dlo an boutèy si sa disponib. Pa bwè dlo tiyo a, pa kwit manje avè l, pa bwose dan w avè l, ni pa netwaye kay ou avè l, ni dlo filtre, jiskaske w fin bouyi l. Fè dlo a bouyi byen fò pandan TWA MINIT. Kite dlo a refwadi anvan w itilize l. Pa itilize glas ki fèt ak dlo ki pa bouyi. Si w itilize lèt fòmil pou bay pitit ou manje, itilize lèt fòmil ki tou pare. Asire w bèt kay ou yo pa bwè dlo ki pa bouyi. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -442229,6 +442325,10 @@
                 {
                     "text": "[AJANS KI AP MANDE SÈVIS]: Yon ALÈT PANN SÈVIS 9-1-1 an efè pou [KOTE]. Tanpri kontakte lapolis, ponpye, sèvis medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AJANS KI AP MANDE SÈVIS]: Yon ALÈT PANN SÈVIS 9-1-1 an efè pou [KOTE]. Tanpri kontakte lapolis, ponpye, sèvis medikal, oswa lòt sèvis ijans dirèkteman nan nimewo telefòn lokal yo an ka ijans. Si ou rele 9-1-1, ou ka pa jwenn èd. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -442353,6 +442453,10 @@
                 {
                     "text": "[ОТПРАВИТЕЛЬ]: В [МЕСТО] до [ВРЕМЯ] действует ЧРЕЗВЫЧАЙНАЯ СИТУАЦИЯ, связанная с ВНЕЗАПНЫМ НАВОДНЕНИЕМ. Это чрезвычайно опасная ситуация, угрожающая жизни людей. Не выезжайте, за исключением случаев, когда вы покидаете район, подверженный затоплению, или получили приказ об эвакуации. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОТПРАВИТЕЛЬ]: В [МЕСТО] до [ВРЕМЯ] действует ЧРЕЗВЫЧАЙНАЯ СИТУАЦИЯ, связанная с внезапным наводнением. Это чрезвычайно опасная ситуация, угрожающая жизни. Не выезжайте, за исключением случаев, когда вы покидаете район, подверженный затоплению, или получили приказ об эвакуации. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -442475,6 +442579,10 @@
                 {
                     "text": "[ОТПРАВИТЕЛЬ]: В отношении [МЕСТО] действует ПРЕДУПРЕЖДЕНИЕ О СИЛЬНОМ ВЕТРЕ в связи с непосредственной угрозой жизни из-за сильного ветра до [ВРЕМЯ]. СЕЙЧАС же укройтесь в внутренней комнате прочного здания, подальше от окон. Защитите голову от летящих предметов. НЕ выходите на улицу, даже если ветер утих! Ветер вскоре снова станет опасным. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОТПРАВИТЕЛЬ]: Для [МЕСТО] действует ПРЕДУПРЕЖДЕНИЕ О СИЛЬНОМ ВЕТРЕ в связи с непосредственной угрозой жизни из-за сильного ветра до [ВРЕМЯ]. СЕЙЧАС же укройтесь в внутренней комнате прочного здания, подальше от окон. Защитите голову от летящих предметов. НЕ выходите на улицу, даже если ветер утих! Ветер вскоре снова станет опасным. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -442597,6 +442705,10 @@
                 {
                     "text": "[ОТПРАВИТЕЛЬ]: В [МЕСТО] действует ПРЕДУПРЕЖДЕНИЕ О ПОЖАРЕ до [ВРЕМЯ]. Немедленно эвакуируйте свою семью и домашних животных, не откладывайте. Видимость в этом районе будет ограничена, а дороги могут оказаться заблокированными. Если вы не уйдете сейчас, вы можете оказаться в ловушке, получить травмы или погибнуть. ПОКИНЬТЕ районы, расположенные рядом с [МЕСТО]. Будьте готовы к ограниченной видимости, сильному задымлению и затрудненному дыханию. Будьте осторожны за рулем. Обращайте внимание на сотрудников служб безопасности, работающих в этом районе, и следуйте их указаниям. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОТПРАВИТЕЛЬ]: В [МЕСТО] действует ПРЕДУПРЕЖДЕНИЕ О ПОЖАРЕ до [ВРЕМЯ]. Немедленно эвакуируйте свою семью и домашних животных, не откладывайте. Видимость в этом районе будет ограничена, а дороги могут оказаться заблокированными. Если вы не уйдете сейчас, вы можете оказаться в ловушке, получить травмы или погибнуть. ПОКИНЬТЕ районы вблизи [МЕСТО]. Ожидайте ограниченной видимости, сильного задымления и затрудненного дыхания. Будьте осторожны при вождении. Следите за сотрудниками служб общественной безопасности, работающими в этом районе, и следуйте их инструкциям. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -442719,6 +442831,10 @@
                 {
                     "text": "[ОТПРАВЛЯЮЩАЯ ОРГАНИЗАЦИЯ]: Для [МЕСТНОСТЬ] объявлено ПРЕДУПРЕЖДЕНИЕ О НЕОБХОДИМОСТИ КИПЯТИТЬ ВОДУ, которое действует до [ВРЕМЯ]. Вода в вашем населенном пункте может вызвать недомогание. По возможности пользуйтесь бутилированной водой. Не пейте, не используйте для приготовления пищи, чистки зубов или уборки дома водопроводную или фильтрованную воду, пока не прокипятите её. Доведите воду до бурного кипения и кипятите в течение ТРЕХ МИНУТ. Перед использованием дайте воде остыть. Не используйте лёд, приготовленный из воды, которая не была прокипячена. Если вы кормите ребёнка смесью, используйте готовую к употреблению смесь. Следите за тем, чтобы домашние животные не пили воду, которая не была прокипячена. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОТПРАВЛЯЮЩАЯ ОРГАНИЗАЦИЯ]: Для [МЕСТОНАХОЖДЕНИЕ] объявлено ПРЕДУПРЕЖДЕНИЕ О НЕОБХОДИМОСТИ КИПЯТИТЬ ВОДУ, которое действует до [ВРЕМЯ]. Вода в вашем населенном пункте может вызвать недомогание. По возможности используйте бутилированную воду. Не пейте, не используйте для приготовления пищи, чистки зубов или уборки дома водопроводную или фильтрованную воду, пока её не прокипятите. Доведите воду до бурного кипения и кипятите в течение ТРЕХ МИНУТ. Перед использованием дайте воде остыть. Не используйте лёд, приготовленный из воды, которая не была прокипячена. Если вы кормите ребёнка смесью, используйте готовую к употреблению смесь. Убедитесь, что домашние животные не пьют воду, которая не была прокипячена. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -442841,6 +442957,10 @@
                 {
                     "text": "[ОТПРАВЛЯЮЩАЯ ОРГАНИЗАЦИЯ]: В [МЕСТО] действует ПРЕДУПРЕЖДЕНИЕ О СБОЕ В РАБОТЕ СЛУЖБЫ 9-1-1. В случае чрезвычайной ситуации просим обращаться непосредственно в полицию, пожарную службу, службу скорой помощи или другие аварийно-спасательные службы по их местным телефонным номерам. Если вы позвоните по номеру 9-1-1, вам может не удаться получить помощь. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОТПРАВЛЯЮЩАЯ ОРГАНИЗАЦИЯ]: В [МЕСТО] действует ПРЕДУПРЕЖДЕНИЕ О СБОЕ В РАБОТЕ СЛУЖБЫ 9-1-1. В случае чрезвычайной ситуации просьба обращаться напрямую в полицию, пожарную службу, службу скорой помощи или другие аварийно-спасательные службы по их местным телефонным номерам. Если вы позвоните по номеру 9-1-1, вам может не удаться получить помощь. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -442965,6 +443085,10 @@
                 {
                     "text": "[АГЕНТСТВО, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: У [МІСЦЕ] до [ЧАС] діє НАДЗВИЧАЙНА СИТУАЦІЯ, пов’язана з раптовою повінню. Це надзвичайно небезпечна ситуація, що загрожує життю. Не намагайтеся вирушати в дорогу, якщо ви не евакуюєтеся з району, який може бути затоплений, або якщо на вас не поширюється наказ про евакуацію. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ДЖЕРЕЛО ІНФОРМАЦІЇ]: У [МІСЦЕ] до [ЧАС] діє НАДЗВИЧАЙНА СИТУАЦІЯ, пов’язана з раптовою повінню. Це надзвичайно небезпечна ситуація, що загрожує життю людей. Не намагайтеся вирушати в дорогу, якщо ви не евакуюєтеся з району, який може бути затоплений, або якщо на вас не накладено наказ про евакуацію. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -443087,6 +443211,10 @@
                 {
                     "text": "[АГЕНТСТВО, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: Для [МІСЦЕ] діє ПОПЕРЕДЖЕННЯ ПРО ЕКСТРЕМАЛЬНИЙ ВІТЕР щодо безпосередньої небезпеки, яку становлять вітри, що загрожують життю, до [ЧАС]. НЕЗАБАРОМ сховайтеся у внутрішній кімнаті міцної будівлі, подалі від вікон. Захистіть голову від предметів, що летять. НЕ виходьте на вулицю, навіть якщо вітер стихне! Вітер швидко знову стане небезпечним. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[АГЕНТСТВО, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: Для [МІСЦЕ] діє ПОПЕРЕДЖЕННЯ ПРО ЕКСТРЕМАЛЬНИЙ ВІТЕР у зв’язку з безпосередньою небезпекою, що загрожує життю, яка триватиме до [ЧАС]. НЕЗАБАРОМ сховайтеся у внутрішній кімнаті міцної будівлі, подалі від вікон. Захистіть голову від предметів, що летять. НЕ виходьте на вулицю, навіть якщо вітер стихне! Вітер швидко знову стане небезпечним. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -443209,6 +443337,10 @@
                 {
                     "text": "[ОРГАН, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: У [МІСЦЕ] діє ПОПЕРЕДЖЕННЯ ПРО ПОЖЕЖУ до [ЧАС]. Негайно евакуюйте свою сім’ю та домашніх тварин, не зволікайте. Видимість у цьому районі буде обмеженою, а дороги можуть бути заблоковані. Якщо ви не покинете цю місцевість зараз, ви можете опинитися в пастці, отримати травми або загинути. ПІДАЙТЕСЯ з районів поблизу [МІСЦЕ]. Очікуйте обмеженої видимості, сильного диму та утрудненого дихання. Будьте обережні за кермом. Звертайте увагу на співробітників служб громадської безпеки, які працюють у цьому районі, та дотримуйтесь їхніх вказівок. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОРГАН, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: У [МІСЦЕ] діє ПОПЕРЕДЖЕННЯ ПРО ПОЖЕЖУ до [ЧАС]. Негайно евакуюйте свою сім’ю та домашніх тварин, не зволікайте. Видимість у цьому районі буде обмеженою, а дороги можуть бути заблоковані. Якщо ви не покинете цю місцевість зараз, ви можете опинитися в пастці, отримати травми або загинути. ПОКІНЬТЕ райони поблизу [МІСЦЕ]. Очікуйте обмежену видимість, сильний дим та утруднене дихання. Будьте обережні за кермом. Звертайте увагу на співробітників служб громадської безпеки, які працюють у цьому районі, та дотримуйтесь їхніх вказівок. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -443331,6 +443463,10 @@
                 {
                     "text": "[ОРГАН, ЩО НАДІСЛАВ ПОВІДОМЛЕННЯ]: Для [МІСЦЕ] оголошено ПОПЕРЕДЖЕННЯ ПРО НЕОБХІДНІСТЬ КИП’ЯТИТИ ВОДУ, яке діятиме до [ЧАС]. Вода у вашій громаді може спричинити захворювання. Якщо є можливість, використовуйте бутильовану воду. Не пийте, не використовуйте для приготування їжі, чищення зубів або прибирання будинку водопровідну або фільтровану воду, доки її не прокип’ятите. Доведіть воду до повного кипіння та кип’ятіть протягом ТРЬОХ ХВИЛИН. Перед використанням дайте воді охолонути. Не використовуйте лід, виготовлений з води, яку не кип’ятили. Якщо ви годуєте дитину сумішшю, використовуйте готову до вживання суміш. Переконайтеся, що домашні тварини не п’ють воду, яку не кип’ятили. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОРГАН, ЩО НАДІСЛАВ ПОВІДОМЛЕННЯ]: Для [МІСЦЕ] оголошено ПОПЕРЕДЖЕННЯ ПРО НЕОБХІДНІСТЬ КИП’ЯТИТИ ВОДУ, яке діятиме до [ЧАС]. Вода у вашій громаді може спричинити захворювання. Якщо є можливість, використовуйте воду в пляшках. Не пийте, не готуйте їжу, не чистіть зуби та не прибирайте в домі водопровідною або фільтрованою водою, доки її не прокип’ятите. Доведіть воду до повного кипіння та кип’ятіть протягом ТРЬОХ ХВИЛИН. Перед використанням дайте воді охолонути. Не використовуйте лід, виготовлений з води, що не була прокип’ячена. Якщо ви годуєте дитину сумішшю, використовуйте готову до вживання суміш. Переконайтеся, що домашні тварини не п’ють воду, що не була прокип’ячена. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -443453,6 +443589,10 @@
                 {
                     "text": "[ОРГАН, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: У [МІСЦЕ] діє ПОПЕРЕДЖЕННЯ ПРО ПЕРЕБОЇ У РОБОТІ СЛУЖБИ 9-1-1. У разі надзвичайної ситуації, будь ласка, звертайтеся безпосередньо до поліції, пожежної служби, медичних або інших служб екстреної допомоги за їхніми місцевими номерами телефонів. Якщо ви наберете номер 9-1-1, вам може не вдатися отримати допомогу. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ОРГАН, ЩО НАДСИЛАЄ ПОВІДОМЛЕННЯ]: У [МІСЦЕ] діє ПОПЕРЕДЖЕННЯ ПРО ПЕРЕБОЇ У РОБОТІ СЛУЖБИ 9-1-1. У разі надзвичайної ситуації, будь ласка, звертайтеся безпосередньо до поліції, пожежної служби, медичних або інших служб екстреної допомоги за їхніми місцевими номерами телефонів. Якщо ви наберете номер 9-1-1, вам можуть не надати допомогу. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -443577,6 +443717,10 @@
                 {
                     "text": "[发布机构]：[地点]已发布山洪暴发紧急预警，有效期至[时间]。当前情况极其危险，可能危及生命。除非您正在撤离可能发生洪涝的区域，或已接到疏散令，否则请勿外出。[网址]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[发布机构]：[地点]已发布山洪暴发紧急预警，有效期至[时间]。当前情况极其危险，可能危及生命。除非您正在逃离可能发生洪涝的地区，或已接到疏散令，否则请勿出行。[网址]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -443699,6 +443843,10 @@
                 {
                     "text": "[发布机构]：[地点]现已发布“极端大风预警”，因存在危及生命的强风，该预警有效期至[时间]。请立即躲进坚固建筑物的内侧房间，远离窗户。注意保护头部，防范飞来物。 即使风势减弱，也切勿外出！风势将很快再次变得危险。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[发布机构]：[地点]目前正处于“极端大风预警”状态，存在危及生命的强风风险，该预警将持续至[时间]。请立即躲进坚固建筑物的内侧房间，远离窗户。注意保护头部，防止被飞来的物体击中。 即使风势减弱，也切勿外出！风力将很快再次变得危险。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -443821,6 +443969,10 @@
                 {
                     "text": "[发布机构]：[地点]的火灾预警现已生效，有效期至[时间]。请立即带上家人和宠物撤离，切勿拖延。 该区域能见度将下降，道路可能被堵塞。若不立即撤离，您可能会被困、受伤甚至丧生。请立即离开[地点]附近的区域。预计将出现能见度降低、浓烟弥漫和呼吸困难的情况。驾驶时请务必小心。请留意该区域内执勤的公共安全人员，并遵照其指示。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[发布机构]：[地点]的火灾预警现已生效，有效期至[时间]。请立即带上家人和宠物撤离，切勿拖延。 该区域能见度将降低，道路可能受阻。若不立即撤离，您可能会被困、受伤甚至丧生。请立即离开[地点]附近的区域。预计将出现能见度降低、浓烟弥漫及呼吸困难的情况。驾驶时请务必小心。请留意该区域内执勤的公共安全人员，并遵从他们的指示。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -443943,6 +444095,10 @@
                 {
                     "text": "[发布机构]：已针对[地点]发布“煮沸用水警报”，该警报有效期至[时间]。您所在社区的自来水可能导致身体不适。如有瓶装水，请使用瓶装水。 在将自来水或过滤水煮沸之前，请勿饮用、烹饪、刷牙或用于家庭清洁。将水煮沸至滚沸状态并保持三分钟。使用前请待水冷却。 请勿使用未煮沸的水制成的冰块。如果您给孩子喂食配方奶粉，请使用即食型配方奶粉。请确保宠物不要饮用未煮沸的水。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[发布机构]：已针对[地点]发布“煮沸用水警报”，该警报有效期至[时间]。您所在社区的自来水可能导致身体不适。如有条件，请使用瓶装水。 在将自来水或过滤水煮沸之前，请勿饮用、烹饪、刷牙或用于家庭清洁。将水煮沸至滚沸状态并保持三分钟。使用前请待水冷却。 请勿使用未煮沸的水制成的冰块。如果您给孩子喂食配方奶粉，请使用即饮型配方奶粉。请确保宠物不要饮用未煮沸的水。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -444065,6 +444221,10 @@
                 {
                     "text": "[发布机构]：[地点]地区已发布9-1-1服务中断警报。 紧急情况下，请直接拨打当地电话号码联系警方、消防、医疗或其他紧急服务部门。若您拨打9-1-1，可能无法获得帮助。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[发布机构]：[地点] 地区已发布 9-1-1 服务中断警报。 紧急情况下，请直接拨打当地的电话号码联系警方、消防、医疗或其他紧急服务部门。若您拨打9-1-1，可能无法获得帮助。[URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -444189,6 +444349,10 @@
                 {
                     "text": "[발신 기관]: [지역]에 대해 [시간]까지 ‘갑작스러운 홍수 비상사태’가 발효 중입니다. 이는 매우 위험하며 생명을 위협하는 상황입니다. 홍수 위험이 있는 지역에서 대피하거나 대피 명령을 받은 경우가 아니라면 이동을 시도하지 마십시오. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[발신 기관]: [지역]에 대해 [시간]까지 ‘갑작스러운 홍수 비상사태’가 발효 중입니다. 이는 극도로 위험하며 생명을 위협하는 상황입니다. 홍수 위험이 있는 지역에서 대피하거나 대피 명령을 받은 경우가 아니라면 이동을 시도하지 마십시오. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -444311,6 +444475,10 @@
                 {
                     "text": "[발령 기관]: [지역]에 대해 [시간]까지 생명을 위협하는 강풍으로 인한 즉각적인 위험이 예상됨에 따라 ‘극심한 강풍 경보’가 발효 중입니다. 즉시 튼튼한 건물의 내부 방으로 대피하고, 창문에서 멀리 떨어져 주십시오. 날아오는 물체로부터 머리를 보호하십시오. 바람이 잦아들더라도 절대 밖으로 나가지 마십시오! 바람이 금세 다시 위험해질 것입니다. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[발령 기관]: [지역]에 대해 [시간]까지 생명을 위협할 수 있는 강풍으로 인한 즉각적인 위험이 예상됨에 따라 ‘극심한 강풍 경보’가 발효 중입니다. 즉시 튼튼한 건물의 내부 방으로 대피하고, 창문에서 멀리 떨어져 주십시오. 날아오는 물체로부터 머리를 보호하십시오. 바람이 잦아들더라도 절대로 밖으로 나가지 마십시오! 바람은 금세 다시 위험해질 것입니다. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -444433,6 +444601,10 @@
                 {
                     "text": "[발령 기관]: [장소]에 대한 화재 경보가 [시간]까지 발효 중입니다. 지체 없이 가족과 반려동물을 대피시키십시오. 해당 지역의 시야가 확보되지 않을 것이며 도로가 막힐 수 있습니다. 지금 대피하지 않으면 갇히거나 부상을 입거나 사망할 위험이 있습니다. [장소] 인근 지역을 즉시 떠나십시오. 시야가 확보되지 않고, 연기가 자욱하며, 호흡이 곤란해질 것으로 예상됩니다. 운전 시 각별히 주의하십시오. 해당 지역에서 활동 중인 공공 안전 요원을 주의 깊게 살피고 그들의 지시에 따르십시오. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[발신 기관]: [지역]에 대한 화재 경보가 [시간]까지 발효 중입니다. 지체 없이 가족과 반려동물을 대피시키십시오. 해당 지역의 시야가 확보되지 않을 수 있으며 도로가 막힐 수 있습니다. 지금 대피하지 않으면 갇히거나 부상을 입거나 사망할 수 있습니다. [장소] 인근 지역을 즉시 떠나십시오. 시야가 확보되지 않고, 연기가 심하며, 호흡이 곤란할 수 있습니다. 운전 시 각별히 주의하십시오. 해당 지역에서 활동 중인 공공 안전 요원을 주의 깊게 살피고 그들의 지시에 따르십시오. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -444555,6 +444727,10 @@
                 {
                     "text": "[발령 기관]: [지역]에 ‘물 끓여 사용 주의보’가 발령되었으며, 이 주의보는 [시간]까지 유효합니다. 해당 지역의 수돗물을 마시면 건강에 해로울 수 있습니다. 가능하다면 생수를 사용하십시오. 수돗물이나 정수된 물은 끓이기 전까지 마시거나, 요리하거나, 양치질하거나, 집안 청소에 사용하지 마십시오. 물을 3분 동안 끓여 완전히 끓어오르게 하십시오. 사용하기 전에 물이 식을 때까지 기다리십시오. 끓이지 않은 물로 만든 얼음은 사용하지 마십시오. 유아용 분유를 먹일 경우, 바로 사용할 수 있는 분유를 사용하십시오. 반려동물이 끓이지 않은 물을 마시지 않도록 주의하십시오. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[발령 기관]: [지역]에 대해 ‘물 끓여 마시기 주의보’가 발령되었으며, 이 주의보는 [시간]까지 유효합니다. 해당 지역의 수돗물을 마시면 건강에 해로울 수 있습니다. 가능하면 생수를 사용하십시오. 수돗물이나 정수된 물은 끓이기 전까지 마시거나, 요리하거나, 양치질하거나, 집안 청소에 사용하지 마십시오. 물을 완전히 끓어오를 때까지 3분간 끓이십시오. 사용하기 전에 물이 식을 때까지 기다리십시오. 끓이지 않은 물로 만든 얼음은 사용하지 마십시오. 아이에게 분유를 먹일 경우, 바로 먹을 수 있는 분유를 사용하십시오. 반려동물이 끓이지 않은 물을 마시지 않도록 주의하십시오. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -444677,6 +444853,10 @@
                 {
                     "text": "[발신 기관]: [지역명]에 대해 ‘9-1-1 서비스 중단 경보’가 발령되었습니다. 비상 상황 시에는 경찰, 소방, 구급대 또는 기타 응급 서비스 기관에 해당 지역의 전화번호로 직접 연락해 주십시오. 9-1-1로 전화를 걸 경우 도움을 받지 못할 수 있습니다. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[발신 기관]: [지역명]에 대해 9-1-1 서비스 중단 경보가 발령되었습니다. 비상 상황 시에는 경찰, 소방, 구급대 또는 기타 응급 서비스 기관에 해당 지역의 전화번호로 직접 연락해 주십시오. 9-1-1로 전화를 걸 경우 도움을 받지 못할 수 있습니다. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -444725,6 +444905,10 @@
                 {
                     "text": "[भेजने वाली एजेंसी]: [स्थान] के लिए [समय] तक बाढ़ की आपात स्थिति लागू है। यह अत्यंत खतरनाक और जानलेवा स्थिति है। जब तक आप किसी ऐसे क्षेत्र से भाग नहीं रहे हैं जहाँ बाढ़ आ सकती है या आप निकासी आदेश के अधीन नहीं हैं, यात्रा करने का प्रयास न करें। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रेषक एजेंसी]: [स्थान] के लिए [समय] तक बाढ़ की आपात स्थिति लागू है। यह अत्यंत खतरनाक और जानलेवा स्थिति है। जब तक आप किसी ऐसे क्षेत्र से भाग नहीं रहे हैं जहाँ बाढ़ आ सकती है या आपके पास निकासी आदेश नहीं है, यात्रा का प्रयास न करें। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -444771,6 +444955,10 @@
                 {
                     "text": "[प्रेषक एजेंसी]: [स्थान] के लिए [समय] तक जानलेवा तेज हवाओं के तत्काल खतरे के कारण एक अत्यधिक हवा चेतावनी लागू है। अभी एक मज़बूत इमारत के अंदर, खिड़कियों से दूर किसी कमरे में शरण लें। उड़ने वाली वस्तुओं से अपना सिर बचाएं। यदि हवा शांत हो जाए तो भी बाहर न जाएँ! हवाएँ जल्द ही फिर से खतरनाक हो जाएँगी। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रेषक एजेंसी]: [स्थान] के लिए [समय] तक जानलेवा तेज हवाओं के तत्काल खतरे के कारण एक अत्यधिक हवा चेतावनी लागू है। अभी एक मज़बूत इमारत के अंदर, खिड़कियों से दूर, किसी कमरे में शरण लें। उड़ने वाली वस्तुओं से अपना सिर बचाएँ। यदि हवा शांत हो जाए तो भी बाहर न जाएँ! हवाएँ जल्द ही फिर से खतरनाक हो जाएँगी। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -444817,6 +445005,10 @@
                 {
                     "text": "[भेजने वाली एजेंसी]: [स्थान] में आग की चेतावनी [समय] तक लागू है। अपने परिवार और पालतू जानवरों को अभी निकालें, देरी न करें। क्षेत्र में दृश्यता कम हो जाएगी और सड़कें अवरुद्ध हो सकती हैं। यदि आप अभी नहीं निकलते हैं, तो आप फंस सकते हैं, घायल हो सकते हैं, या मारे जा सकते हैं। [LOCATION] के पास के क्षेत्रों को छोड़ दें। दृश्यता में कमी, घना धुआं, और सांस लेने में कठिनाई की उम्मीद करें। ड्राइविंग करते समय सावधान रहें। क्षेत्र में काम कर रहे सार्वजनिक सुरक्षा कर्मियों पर नज़र रखें और उनके निर्देशों का पालन करें। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[भेजने वाली एजेंसी]: [स्थान] में आग की चेतावनी [समय] तक लागू है। अपने परिवार और पालतू जानवरों को अभी निकालें, देरी न करें। क्षेत्र में दृश्यता कम हो जाएगी और सड़कें अवरुद्ध हो सकती हैं। यदि आप अभी नहीं निकलते हैं, तो आप फंस सकते हैं, घायल हो सकते हैं, या मारे जा सकते हैं। [LOCATION] के पास के क्षेत्रों को छोड़ दें। दृश्यता में कमी, घना धुआं, और सांस लेने में कठिनाई की उम्मीद करें। ड्राइविंग करते समय सावधान रहें। क्षेत्र में काम कर रहे सार्वजनिक सुरक्षा कर्मियों पर नज़र रखें और उनके निर्देशों का पालन करें। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -444863,6 +445055,10 @@
                 {
                     "text": "[प्रेषक एजेंसी]: [स्थान] के लिए पानी उबालने की चेतावनी जारी की गई है और यह [समय] तक लागू रहेगी। आपके समुदाय का पानी आपको बीमार कर सकता है। यदि उपलब्ध हो तो बोतलबंद पानी का उपयोग करें। जब तक आप पानी को उबाल न लें, तब तक नल के पानी या फ़िल्टर किए हुए पानी को न पिएँ, उससे खाना न पकाएँ, दाँत न धोएँ, या घर की सफ़ाई न करें। पानी को तीन मिनट तक अच्छी तरह से उबालें। उपयोग करने से पहले पानी को ठंडा होने दें। उबाले बिना पानी से बनी बर्फ का उपयोग न करें। यदि आप अपने बच्चे को दूध पिलाने के लिए फॉर्मूला का उपयोग करते हैं, तो तैयार-प्रयोग फॉर्मूला का उपयोग करें। सुनिश्चित करें कि पालतू जानवर उबाला हुआ पानी न पिएं। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रेषक एजेंसी]: [स्थान] के लिए पानी उबालने की चेतावनी जारी की गई है और यह [समय] तक लागू रहेगी। आपके समुदाय का पानी आपको बीमार कर सकता है। यदि उपलब्ध हो तो बोतलबंद पानी का उपयोग करें। जब तक पानी को उबाला न हो, तब तक नल के पानी या फ़िल्टर किए हुए पानी को न पिएँ, उससे खाना न पकाएँ, दाँत न धोएँ, या घर की सफ़ाई न करें। पानी को तीन मिनट तक अच्छी तरह से उबालें। उपयोग करने से पहले पानी को ठंडा होने दें। उबाले बिना पानी से बनी बर्फ का उपयोग न करें। यदि आप अपने बच्चे को दूध पिलाने के लिए फॉर्मूला का उपयोग करते हैं, तो तैयार-प्रयोग फॉर्मूला का उपयोग करें। सुनिश्चित करें कि पालतू जानवर उबाला हुआ पानी न पिएँ। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -444909,6 +445105,10 @@
                 {
                     "text": "[भेजने वाली एजेंसी]: [स्थान] के लिए 9-1-1 सेवा बाधित होने की चेतावनी लागू है। आपात स्थिति में कृपया पुलिस, अग्निशमन, चिकित्सा या अन्य आपातकालीन सेवाओं को उनके स्थानीय फोन नंबरों पर सीधे संपर्क करें। यदि आप 9-1-1 डायल करते हैं, तो आपको मदद नहीं मिल सकती। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[भेजने वाली एजेंसी]: [स्थान] के लिए 9-1-1 आउटेज अलर्ट लागू है। आपात स्थिति में कृपया पुलिस, अग्निशमन, चिकित्सा या अन्य आपातकालीन सेवाओं को उनके स्थानीय फोन नंबरों पर सीधे संपर्क करें। यदि आप 9-1-1 डायल करते हैं, तो आपको मदद नहीं मिल सकती। [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -444957,6 +445157,10 @@
                 {
                     "text": "[AHENSYANG NAGPAHAYAG]: May bisa ang emerhensiya para sa biglaang pagbaha sa [LOCATION] hanggang [TIME]. Ito ay isang napakadelikado at nakapanganib sa buhay na sitwasyon. Huwag maglakbay maliban kung tumatakas ka mula sa lugar na maaaring baha o may utos na lumikas. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AHENSYANG NAGPAPADALA]: May bisa ang emerhensiya sa biglaang pagbaha para sa [LOCATION] hanggang [TIME]. Ito ay isang napakadelikado at nakapanganib sa buhay na sitwasyon. Huwag maglakbay maliban kung tumatakas ka mula sa lugar na maaaring baha o may utos na lumikas. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -445003,6 +445207,10 @@
                 {
                     "text": "[AHENSYANG NAGPAPADALA]: May bisa ang PANG-EXTREMO PABULONG-BAYONG PAALALA para sa [LUGAR] dahil sa agarang panganib ng mga nakamamatay na hangin hanggang [ORAS]. Magtago NGAYON sa isang panloob na silid ng matibay na gusali, malayo sa mga bintana. Protektahan ang iyong ulo mula sa mga lumilipad na bagay. HUWAG lumabas kahit humupa ang hangin! Muli itong magiging mapanganib agad. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AHENSYANG NAGPAPADALA]: May bisa ang PANG-EXTREMO PABULONG-BAYONG PAALALA para sa [LUGAR] dahil sa agarang panganib ng mga hangin na maaaring magbanta sa buhay hanggang [ORAS]. Magtago NGAYON sa isang panloob na silid ng matibay na gusali, malayo sa mga bintana. Protektahan ang iyong ulo mula sa mga lumilipad na bagay. HUWAG lumabas kahit humupa ang hangin! Mabilis itong muling magiging mapanganib. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -445049,6 +445257,10 @@
                 {
                     "text": "[AHENSYANG NAGPAPADALA]: May bisa ang babala sa sunog sa [LOCATION] hanggang [TIME]. I-evakuate na ang iyong pamilya at mga alagang hayop ngayon, huwag mag-atubili. Mababawasan ang visibility sa lugar at maaaring barado ang mga kalsada. Kung hindi ka aalis ngayon, maaari kang maipit, masaktan, o mamatay. UMALIS sa mga lugar malapit sa [LOCATION]. Asahan ang mababang visibility, makapal na usok, at kahirapan sa paghinga. Mag-ingat sa pagmamaneho. Bantayan ang mga tauhan ng pampublikong kaligtasan na nasa lugar at sundin ang kanilang mga tagubilin. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AHENSYANG NAGPAPADALA]: May bisa ang babala sa sunog sa [LOCATION] hanggang [TIME]. I-evacuate na ang iyong pamilya at mga alagang hayop ngayon, huwag mag-atubili. Mababawasan ang visibility sa lugar at maaaring barado ang mga kalsada. Kung hindi ka aalis ngayon, maaari kang maipit, masaktan, o mamatay. UMALIS sa mga lugar malapit sa [LOCATION]. Asahan ang mababang visibility, makapal na usok, at kahirapan sa paghinga. Mag-ingat sa pagmamaneho. Bantayan ang mga tauhan ng pampublikong kaligtasan na nasa lugar at sundin ang kanilang mga tagubilin. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -445095,6 +445307,10 @@
                 {
                     "text": "[AHENSYANG NAGPAPARALA]: Isang PAALALA SA PAGKAPAKALO NG TUBIG ang inilabas para sa [LUGAR] at magiging epektibo hanggang [ORAS]. Ang tubig sa inyong komunidad ay maaaring magdulot ng sakit. Gumamit ng tubig sa bote kung mayroon. Huwag uminom, magluto, magsipilyo, o maglinis ng bahay gamit ang tubig mula sa gripo o pinagsalaang tubig hangga't hindi ito pinakukuluan. Pakuluan nang buong bula sa loob ng TATLONG MINUTO. Hayaan munang lumamig ang tubig bago gamitin. Huwag gumamit ng yelo na gawa sa tubig na hindi pinakulo. Kung gumagamit ka ng gatas na pulbos para pakain sa iyong anak, gumamit ng gatas na pulbos na handa nang gamitin. Tiyaking hindi umiinom ang mga alagang hayop ng tubig na hindi pinakulo. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AHENSYANG NAGPAPADALA]: Isang PAALALA SA PAGKAPAKALO NG TUBIG ang inilabas para sa [LUGAR] at magiging epektibo hanggang [ORAS]. Ang tubig sa inyong komunidad ay maaaring magdulot ng karamdaman. Gumamit ng bote na tubig kung mayroon. Huwag uminom, magluto, magsipilyo, o maglinis ng bahay gamit ang tubig mula sa gripo o pinagsalaang tubig hangga't hindi ito pinakukuluan. Pakuluan nang buong bula sa loob ng TATLONG MINUTO. Hayaan munang lumamig ang tubig bago gamitin. Huwag gumamit ng yelo na gawa sa tubig na hindi pinakulo. Kung gumagamit ka ng gatas na pulbos para pakain sa iyong anak, gumamit ng gatas na pulbos na handa nang gamitin. Tiyaking hindi umiinom ang mga alagang hayop ng tubig na hindi pinakulo. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -445141,6 +445357,10 @@
                 {
                     "text": "[AHENSYANG NAGPAPADALA]: May bisa ang babala ng pagkaantala ng 9-1-1 para sa [LOKASYON]. Mangyaring direktang tawagan ang pulis, bumbero, medikal, o iba pang serbisyong pang-emergency sa kanilang lokal na numero ng telepono kung sakaling may emerhensiya. Kung tatawag ka sa 9-1-1, maaaring hindi ka matulungan. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AHENSYANG NAGPAPADALA]: May bisa ang PAALALA SA PAGSAGIP NG 9-1-1 para sa [LOKASYON]. Mangyaring direktang tawagan ang pulis, bumbero, medikal, o iba pang serbisyong pang-emergency sa kanilang lokal na numero ng telepono kung sakaling may emerhensiya. Kung tatawag ka sa 9-1-1, maaaring hindi ka matulungan. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -445260,6 +445480,10 @@
                 {
                     "text": "[AGENCE ÉMETTRICE] : Une ALERTE D'INONDATION SOUDAINE est en vigueur pour [LIEU] jusqu'à [HEURE]. Il s'agit d'une situation extrêmement dangereuse et pouvant mettre la vie en danger. Ne vous déplacez pas, sauf si vous fuyez une zone susceptible d'être inondée ou si vous faites l'objet d'un ordre d'évacuation. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISME ÉMETTEUR] : Une ALERTE D'INONDATION SOUDAINE est en vigueur pour [LIEU] jusqu'à [HEURE]. Il s'agit d'une situation extrêmement dangereuse et pouvant mettre la vie en danger. Ne vous déplacez pas, sauf si vous fuyez une zone susceptible d'être inondée ou si vous faites l'objet d'un ordre d'évacuation. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -445370,6 +445594,10 @@
                 {
                     "text": "[AGENCE D'ÉMISSION] : Une ALERTE DE VENTS EXTRÊMES est en vigueur pour [LIEU] en raison d'un danger immédiat de vents pouvant mettre la vie en danger jusqu'à [HEURE]. Mettez-vous à l'abri IMMÉDIATEMENT dans une pièce intérieure d'un bâtiment solide, loin des fenêtres. Protégez votre tête contre les objets projetés. Ne sortez PAS même si le vent s'apaise ! Les vents redeviendront rapidement dangereux. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISME ÉMETTEUR] : Une ALERTE DE VENTS EXTRÊMES est en vigueur pour [LIEU] en raison d'un danger immédiat de vents pouvant mettre la vie en danger jusqu'à [HEURE]. Mettez-vous à l'abri IMMÉDIATEMENT dans une pièce intérieure d'un bâtiment solide, loin des fenêtres. Protégez votre tête contre les objets projetés. Ne sortez PAS même si le vent se calme ! Les vents redeviendront rapidement dangereux. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -445480,6 +445708,10 @@
                 {
                     "text": "[ORGANISME ÉMETTEUR] : Une ALERTE INCENDIE est en vigueur à [LIEU] jusqu'à [HEURE]. Évacuez immédiatement votre famille et vos animaux de compagnie, sans tarder. La visibilité dans la zone sera réduite et les routes risquent d’être bloquées. Si vous ne partez pas tout de suite, vous pourriez vous retrouver piégé, blessé ou perdre la vie. QUITTEZ les zones situées à proximité de [LIEU]. Préparez-vous à une visibilité réduite, à une forte fumée et à des difficultés respiratoires. Soyez prudent au volant. Soyez attentif aux équipes de sécurité publique intervenant dans la zone et suivez leurs consignes. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISME ÉMETTEUR] : Une ALERTE INCENDIE à [LIEU] est en vigueur jusqu'à [HEURE]. Évacuez immédiatement votre famille et vos animaux de compagnie, sans tarder. La visibilité dans la zone sera réduite et les routes risquent d'être bloquées. Si vous ne partez pas immédiatement, vous pourriez vous retrouver piégé, blessé ou perdre la vie. QUITTEZ les zones situées à proximité de [LIEU]. Préparez-vous à une visibilité réduite, à une fumée dense et à des difficultés respiratoires. Soyez prudent au volant. Soyez attentif aux équipes de sécurité publique intervenant dans la zone et suivez leurs consignes. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -445590,6 +445822,10 @@
                 {
                     "text": "[ORGANISME ÉMETTEUR] : Une ALERTE DE FAIRE BOUILLIR L'EAU a été émise pour [LIEU] et reste en vigueur jusqu'à [HEURE]. L'eau de votre commune peut vous rendre malade. Utilisez de l'eau en bouteille si vous en disposez. Ne buvez pas l'eau du robinet ou l'eau filtrée, ne l'utilisez pas pour cuisiner, vous brosser les dents ou nettoyer votre logement tant que vous ne l'avez pas fait bouillir. Portez l'eau à ébullition pendant TROIS MINUTES. Laissez l'eau refroidir avant de l'utiliser. N’utilisez pas de glaçons préparés avec de l’eau qui n’a pas été portée à ébullition. Si vous nourrissez votre enfant avec du lait en poudre, utilisez du lait prêt à l’emploi. Veillez à ce que vos animaux de compagnie ne boivent pas d’eau qui n’a pas été portée à ébullition. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISME ÉMETTEUR] : Une ALERTE DE FAIRE BOUILLIR L'EAU a été émise pour [LIEU] et reste en vigueur jusqu'à [HEURE]. L'eau de votre commune peut vous rendre malade. Utilisez de l'eau en bouteille si vous en disposez. Ne buvez pas, ne cuisinez pas, ne vous brossez pas les dents et ne nettoyez pas votre logement avec de l'eau du robinet ou de l'eau filtrée tant que vous ne l'avez pas fait bouillir. Portez l'eau à ébullition pendant TROIS MINUTES. Laissez l'eau refroidir avant de l'utiliser. N’utilisez pas de glaçons préparés avec de l’eau qui n’a pas été portée à ébullition. Si vous utilisez du lait en poudre pour nourrir votre enfant, utilisez du lait en poudre prêt à l’emploi. Veillez à ce que vos animaux de compagnie ne boivent pas d’eau qui n’a pas été portée à ébullition. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -445700,6 +445936,10 @@
                 {
                     "text": "[ORGANISME D'ORIGINE] : Une ALERTE DE PANNE DU 9-1-1 est en vigueur pour [LIEU]. En cas d'urgence, veuillez contacter directement la police, les pompiers, les services médicaux ou tout autre service d'urgence en composant leurs numéros de téléphone locaux. Si vous composez le 9-1-1, il se peut que vous n'obteniez pas d'aide. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ORGANISME D'ORIGINE] : Une ALERTE DE PANNE DU 9-1-1 est en vigueur pour [LIEU]. En cas d'urgence, veuillez contacter directement la police, les pompiers, les services médicaux ou tout autre service d'urgence en composant leurs numéros de téléphone locaux. Si vous composez le 9-1-1, il se peut que vous n'obteniez pas d'aide. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -445762,6 +446002,10 @@
                 {
                     "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ [ਸਮਾਂ] ਤੱਕ ਇੱਕ ਫਲੈਸ਼ ਫਲੱਡ ਐਮਰਜੈਂਸੀ ਲਾਗੂ ਹੈ। ਇਹ ਇੱਕ ਬਹੁਤ ਹੀ ਖਤਰਨਾਕ ਅਤੇ ਜਾਨਲੇਵਾ ਸਥਿਤੀ ਹੈ। ਯਾਤਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨਾ ਕਰੋ ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਕਿਸੇ ਅਜਿਹੇ ਖੇਤਰ ਤੋਂ ਨਹੀਂ ਭੱਜ ਰਹੇ ਹੋ ਜੋ ਹੜ੍ਹ ਆ ਸਕਦਾ ਹੈ ਜਾਂ ਤੁਹਾਡੇ ਉੱਤੇ ਨਿਕਾਸੀ ਦਾ ਹੁਕਮ ਨਹੀਂ ਹੈ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ [ਸਮਾਂ] ਤੱਕ ਇੱਕ ਫਲੈਸ਼ ਫਲੱਡ ਐਮਰਜੈਂਸੀ ਲਾਗੂ ਹੈ। ਇਹ ਇੱਕ ਬਹੁਤ ਹੀ ਖਤਰਨਾਕ ਅਤੇ ਜਾਨਲੇਵਾ ਸਥਿਤੀ ਹੈ। ਯਾਤਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨਾ ਕਰੋ ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਕਿਸੇ ਅਜਿਹੇ ਖੇਤਰ ਤੋਂ ਨਹੀਂ ਭੱਜ ਰਹੇ ਹੋ ਜੋ ਹੜ੍ਹ ਆ ਸਕਦਾ ਹੈ ਜਾਂ ਤੁਹਾਡੇ ਉੱਤੇ ਨਿਕਾਸੀ ਦਾ ਹੁਕਮ ਨਹੀਂ ਹੈ। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -445808,6 +446052,10 @@
                 {
                     "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ [ਸਮਾਂ] ਤੱਕ ਜਾਨਲੇਵਾ ਹਵਾਵਾਂ ਦੇ ਤੁਰੰਤ ਖ਼ਤਰੇ ਕਾਰਨ ਇੱਕ ਅਤਿ-ਤੀਬਰ ਹਵਾ ਚੇਤਾਵਨੀ ਲਾਗੂ ਹੈ। ਹੁਣੇ ਹੀ ਕਿਸੇ ਮਜ਼ਬੂਤ ਇਮਾਰਤ ਦੇ ਅੰਦਰਲੇ ਕਮਰੇ ਵਿੱਚ, ਖਿੜਕੀਆਂ ਤੋਂ ਦੂਰ, ਸੁਰੱਖਿਅਤ ਠਹਿਰੋ। ਉੱਡਣ ਵਾਲੀਆਂ ਵਸਤੂਆਂ ਤੋਂ ਆਪਣਾ ਸਿਰ ਬਚਾਓ। ਜੇ ਹਵਾ ਸ਼ਾਂਤ ਹੋ ਜਾਵੇ ਤਾਂ ਵੀ ਬਾਹਰ ਨਾ ਜਾਓ! ਹਵਾਵਾਂ ਜਲਦੀ ਹੀ ਦੁਬਾਰਾ ਖਤਰਨਾਕ ਹੋ ਜਾਣਗੀਆਂ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ [ਸਮਾਂ] ਤੱਕ ਜਾਨਲੇਵਾ ਹਵਾਵਾਂ ਦੇ ਤੁਰੰਤ ਖ਼ਤਰੇ ਕਾਰਨ ਇੱਕ ਅਤਿ-ਤੀਬਰ ਹਵਾ ਚੇਤਾਵਨੀ ਲਾਗੂ ਹੈ। ਹੁਣੇ ਹੀ ਕਿਸੇ ਮਜ਼ਬੂਤ ਇਮਾਰਤ ਦੇ ਅੰਦਰਲੇ ਕਮਰੇ ਵਿੱਚ, ਖਿੜਕੀਆਂ ਤੋਂ ਦੂਰ, ਸੁਰੱਖਿਅਤ ਠਹਿਰੋ। ਉੱਡਣ ਵਾਲੀਆਂ ਵਸਤੂਆਂ ਤੋਂ ਆਪਣਾ ਸਿਰ ਬਚਾਓ। ਜੇ ਹਵਾ ਸ਼ਾਂਤ ਹੋ ਜਾਵੇ ਤਾਂ ਵੀ ਬਾਹਰ ਨਾ ਜਾਓ! ਹਵਾਵਾਂ ਜਲਦੀ ਹੀ ਦੁਬਾਰਾ ਖਤਰਨਾਕ ਹੋ ਜਾਣਗੀਆਂ। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -445854,6 +446102,10 @@
                 {
                     "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਵਿੱਚ ਅੱਗ ਦੀ ਚੇਤਾਵਨੀ [ਸਮਾਂ] ਤੱਕ ਲਾਗੂ ਹੈ। ਆਪਣੇ ਪਰਿਵਾਰ ਅਤੇ ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਨੂੰ ਹੁਣੇ ਹੀ ਬਾਹਰ ਕੱਢੋ, ਦੇਰੀ ਨਾ ਕਰੋ। ਇਲਾਕੇ ਵਿੱਚ ਦ੍ਰਿਸ਼ਟੀ ਘੱਟ ਹੋ ਜਾਵੇਗੀ ਅਤੇ ਸੜਕਾਂ ਬੰਦ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਜੇ ਤੁਸੀਂ ਹੁਣੇ ਨਹੀਂ ਨਿਕਲਦੇ, ਤਾਂ ਤੁਸੀਂ ਫਸ ਸਕਦੇ ਹੋ, ਜ਼ਖਮੀ ਹੋ ਸਕਦੇ ਹੋ, ਜਾਂ ਮਾਰੇ ਜਾ ਸਕਦੇ ਹੋ। [LOCATION] ਦੇ ਨੇੜੇ ਦੇ ਇਲਾਕਿਆਂ ਨੂੰ ਛੱਡ ਦਿਓ। ਘੱਟ ਦ੍ਰਿਸ਼ਟੀ, ਭਾਰੀ ਧੂੰਆਂ, ਅਤੇ ਸਾਹ ਲੈਣ ਵਿੱਚ ਮੁਸ਼ਕਲ ਦੀ ਉਮੀਦ ਕਰੋ। ਗੱਡੀ ਚਲਾਉਂਦੇ ਸਮੇਂ ਸਾਵਧਾਨ ਰਹੋ। ਇਲਾਕੇ ਵਿੱਚ ਕੰਮ ਕਰ ਰਹੇ ਜਨਤਕ ਸੁਰੱਖਿਆ ਕਰਮਚਾਰੀਆਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ ਅਤੇ ਉਹਨਾਂ ਦੀਆਂ ਹਦਾਇਤਾਂ ਦੀ ਪਾਲਣਾ ਕਰੋ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਵਿੱਚ ਅੱਗ ਦੀ ਚੇਤਾਵਨੀ [ਸਮਾਂ] ਤੱਕ ਲਾਗੂ ਹੈ। ਆਪਣੇ ਪਰਿਵਾਰ ਅਤੇ ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਨੂੰ ਹੁਣੇ ਹੀ ਬਾਹਰ ਕੱਢੋ, ਦੇਰੀ ਨਾ ਕਰੋ। ਇਲਾਕੇ ਵਿੱਚ ਦ੍ਰਿਸ਼ਟੀ ਘੱਟ ਹੋ ਜਾਵੇਗੀ ਅਤੇ ਸੜਕਾਂ ਬੰਦ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਜੇ ਤੁਸੀਂ ਹੁਣੇ ਨਹੀਂ ਜਾਂਦੇ, ਤਾਂ ਤੁਸੀਂ ਫਸ ਸਕਦੇ ਹੋ, ਜ਼ਖਮੀ ਹੋ ਸਕਦੇ ਹੋ, ਜਾਂ ਮਾਰੇ ਜਾ ਸਕਦੇ ਹੋ। [LOCATION] ਦੇ ਨੇੜੇ ਦੇ ਇਲਾਕਿਆਂ ਨੂੰ ਛੱਡ ਦਿਓ। ਘੱਟ ਦ੍ਰਿਸ਼ਟੀ, ਭਾਰੀ ਧੂੰਆਂ, ਅਤੇ ਸਾਹ ਲੈਣ ਵਿੱਚ ਮੁਸ਼ਕਲ ਦੀ ਉਮੀਦ ਕਰੋ। ਗੱਡੀ ਚਲਾਉਂਦੇ ਸਮੇਂ ਸਾਵਧਾਨ ਰਹੋ। ਇਲਾਕੇ ਵਿੱਚ ਕੰਮ ਕਰ ਰਹੇ ਜਨਤਕ ਸੁਰੱਖਿਆ ਕਰਮਚਾਰੀਆਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ ਅਤੇ ਉਹਨਾਂ ਦੀਆਂ ਹਦਾਇਤਾਂ ਦੀ ਪਾਲਣਾ ਕਰੋ। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -445900,6 +446152,10 @@
                 {
                     "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ ਪਾਣੀ ਉਬਾਲਣ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਇਹ [ਸਮਾਂ] ਤੱਕ ਲਾਗੂ ਰਹੇਗੀ। ਤੁਹਾਡੇ ਇਲਾਕੇ ਦਾ ਪਾਣੀ ਤੁਹਾਨੂੰ ਬਿਮਾਰ ਕਰ ਸਕਦਾ ਹੈ। ਜੇਕਰ ਉਪਲਬਧ ਹੋਵੇ ਤਾਂ ਬੋਤਲਬੰਦ ਪਾਣੀ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਪਾਣੀ ਨੂੰ ਉਬਾਲ ਨਹੀਂ ਲੈਂਦੇ, ਉਦੋਂ ਤੱਕ ਇਸਨੂੰ ਪੀਣ, ਖਾਣਾ ਪਕਾਉਣ, ਦੰਦ ਸਾਫ਼ ਕਰਨ ਜਾਂ ਘਰ ਸਾਫ਼ ਕਰਨ ਲਈ ਨਾ ਵਰਤੋ। ਪਾਣੀ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਉਬਾਲੋ, ਅਤੇ ਇਹ ਉਬਲਣ ਤੋਂ ਬਾਅਦ ਤਿੰਨ ਮਿੰਟ ਹੋਰ ਉਬਲਣ ਦਿਓ। ਵਰਤਣ ਤੋਂ ਪਹਿਲਾਂ ਪਾਣੀ ਨੂੰ ਠੰਡਾ ਹੋਣ ਦਿਓ। ਉਬਾਲੇ ਨਾ ਗਏ ਪਾਣੀ ਨਾਲ ਬਣੀ ਬਰਫ਼ ਦੀ ਵਰਤੋਂ ਨਾ ਕਰੋ। ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਨੂੰ ਖੁਆਉਣ ਲਈ ਫਾਰਮੂਲਾ ਵਰਤਦੇ ਹੋ, ਤਾਂ ਤਿਆਰ-ਵਰਤੋਂ ਵਾਲਾ ਫਾਰਮੂਲਾ ਵਰਤੋ। ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਪਾਲਤੂ ਜਾਨਵਰ ਉਬਾਲੇ ਨਾ ਗਏ ਪਾਣੀ ਨੂੰ ਨਾ ਪੀਣ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ ਪਾਣੀ ਉਬਾਲਣ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਇਹ [ਸਮਾਂ] ਤੱਕ ਲਾਗੂ ਰਹੇਗੀ। ਤੁਹਾਡੇ ਇਲਾਕੇ ਦਾ ਪਾਣੀ ਤੁਹਾਨੂੰ ਬਿਮਾਰ ਕਰ ਸਕਦਾ ਹੈ। ਜੇਕਰ ਉਪਲਬਧ ਹੋਵੇ ਤਾਂ ਬੋਤਲਬੰਦ ਪਾਣੀ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਪਾਣੀ ਨੂੰ ਉਬਾਲ ਨਹੀਂ ਲੈਂਦੇ, ਉਦੋਂ ਤੱਕ ਇਸਨੂੰ ਪੀਣ, ਖਾਣਾ ਪਕਾਉਣ, ਦੰਦ ਸਾਫ਼ ਕਰਨ ਜਾਂ ਘਰ ਸਾਫ਼ ਕਰਨ ਲਈ ਨਾ ਵਰਤੋ। ਪਾਣੀ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਉਬਾਲੋ, ਅਤੇ ਇਹ ਉਬਲਣ ਤੋਂ ਬਾਅਦ ਤਿੰਨ ਮਿੰਟ ਹੋਰ ਉਬਲਣ ਦਿਓ। ਵਰਤਣ ਤੋਂ ਪਹਿਲਾਂ ਪਾਣੀ ਨੂੰ ਠੰਡਾ ਹੋਣ ਦਿਓ। ਉਬਾਲੇ ਨਾ ਗਏ ਪਾਣੀ ਨਾਲ ਬਣੀ ਬਰਫ਼ ਦੀ ਵਰਤੋਂ ਨਾ ਕਰੋ। ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਨੂੰ ਖੁਆਉਣ ਲਈ ਫਾਰਮੂਲਾ ਵਰਤਦੇ ਹੋ, ਤਾਂ ਤਿਆਰ-ਵਰਤੋਂ ਵਾਲਾ ਫਾਰਮੂਲਾ ਵਰਤੋ। ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਪਾਲਤੂ ਜਾਨਵਰ ਉਬਾਲੇ ਨਾ ਗਏ ਪਾਣੀ ਨੂੰ ਨਾ ਪੀਣ। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -445946,6 +446202,10 @@
                 {
                     "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ 9-1-1 ਆਊਟੇਜ ਅਲਰਟ ਲਾਗੂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਐਮਰਜੈਂਸੀ ਦੀ ਸਥਿਤੀ ਵਿੱਚ ਸਿੱਧਾ ਪੁਲਿਸ, ਫਾਇਰ, ਮੈਡੀਕਲ ਜਾਂ ਹੋਰ ਐਮਰਜੈਂਸੀ ਸੇਵਾਵਾਂ ਨੂੰ ਉਹਨਾਂ ਦੇ ਸਥਾਨਕ ਫੋਨ ਨੰਬਰਾਂ 'ਤੇ ਸੰਪਰਕ ਕਰੋ। ਜੇ ਤੁਸੀਂ 9-1-1 ਡਾਇਲ ਕਰੋਗੇ ਤਾਂ ਤੁਹਾਨੂੰ ਮਦਦ ਨਹੀਂ ਮਿਲੇਗੀ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ਭੇਜਣ ਵਾਲੀ ਏਜੰਸੀ]: [ਸਥਾਨ] ਲਈ 9-1-1 ਆਊਟੇਜ ਅਲਰਟ ਲਾਗੂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਐਮਰਜੈਂਸੀ ਦੀ ਸਥਿਤੀ ਵਿੱਚ ਸਿੱਧਾ ਪੁਲਿਸ, ਫਾਇਰ, ਮੈਡੀਕਲ ਜਾਂ ਹੋਰ ਐਮਰਜੈਂਸੀ ਸੇਵਾਵਾਂ ਨੂੰ ਉਹਨਾਂ ਦੇ ਸਥਾਨਕ ਫੋਨ ਨੰਬਰਾਂ 'ਤੇ ਸੰਪਰਕ ਕਰੋ। ਜੇ ਤੁਸੀਂ 9-1-1 ਡਾਇਲ ਕਰੋਗੇ ਤਾਂ ਤੁਹਾਨੂੰ ਮਦਦ ਨਹੀਂ ਮਿਲੇਗੀ। [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -445994,6 +446254,10 @@
                 {
                     "text": "[పంపిన సంస్థ]: [ప్రదేశం]లో [సమయం] వరకు వరద అత్యవసర పరిస్థితి అమలులో ఉంది. ఇది అత్యంత ప్రమాదకరమైన మరియు ప్రాణాంతకమైన పరిస్థితి. వరద వచ్చే ప్రమాదం ఉన్న ప్రాంతం నుండి మీరు తరలివెళ్తున్నట్లయితే లేదా తరలింపు ఆదేశం ఉంటే తప్ప ప్రయాణించడానికి ప్రయత్నించవద్దు. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[పంపిన సంస్థ]: [ప్రదేశం]లో [సమయం] వరకు వరద అత్యవసర పరిస్థితి అమలులో ఉంది. ఇది అత్యంత ప్రమాదకరమైన మరియు ప్రాణాంతకమైన పరిస్థితి. వరద వచ్చే ప్రమాదం ఉన్న ప్రాంతం నుండి మీరు తరలివెళ్తున్నట్లయితే లేదా తరలింపు ఆదేశం ఉంటే తప్ప ప్రయాణించడానికి ప్రయత్నించవద్దు. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -446040,6 +446304,10 @@
                 {
                     "text": "[పంపే సంస్థ]: [ప్రాంతం]లో ప్రాణాంతకమైన గాలుల తక్షణ ప్రమాదం కారణంగా, [సమయం] వరకు తీవ్రమైన గాలి హెచ్చరిక అమలులో ఉంది. వెంటనే ఒక పటిష్టమైన భవనంలోని లోపలి గదిలో కిటికీలకు దూరంగా ఆశ్రయం తీసుకోండి. ఎగిరి వచ్చే వస్తువుల నుండి మీ తలను రక్షించుకోండి. గాలి నెమ్మదిగా ఉన్నా బయటకు వెళ్లవద్దు! గాలులు త్వరలోనే మళ్లీ ప్రమాదకరంగా మారతాయి. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[పంపే సంస్థ]: [ప్రాంతం]లో ప్రాణాంతకమైన గాలుల తక్షణ ప్రమాదం కారణంగా, [సమయం] వరకు తీవ్రమైన గాలి హెచ్చరిక అమలులో ఉంది. వెంటనే ఒక పటిష్టమైన భవనంలోని లోపలి గదిలో కిటికీలకు దూరంగా ఆశ్రయం తీసుకోండి. ఎగిరి వచ్చే వస్తువుల నుండి మీ తలను రక్షించుకోండి. గాలి నెమ్మదిగా ఉన్నా బయటకు వెళ్లవద్దు! గాలులు త్వరలోనే మళ్లీ ప్రమాదకరంగా మారతాయి. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -446086,6 +446354,10 @@
                 {
                     "text": "[పంపే సంస్థ]: [ప్రదేశం]లో [సమయం] వరకు అగ్నిప్రమాద హెచ్చరిక అమలులో ఉంది. మీ కుటుంబాన్ని మరియు పెంపుడు జంతువులను ఇప్పుడే ఖాళీ చేయండి, ఆలస్యం చేయవద్దు. ఆ ప్రాంతంలో దృశ్యమానత తగ్గిపోతుంది మరియు రోడ్లు మూసుకుపోవచ్చు. మీరు ఇప్పుడు బయలుదేరకపోతే, మీరు చిక్కుకుపోవచ్చు, గాయపడవచ్చు లేదా మరణించవచ్చు. [ప్రదేశం] సమీప ప్రాంతాల నుండి బయలుదేరండి. తగ్గిన దృశ్యమానత, దట్టమైన పొగ మరియు శ్వాస తీసుకోవడంలో ఇబ్బందిని ఆశించండి. డ్రైవింగ్ చేసేటప్పుడు జాగ్రత్త వహించండి. ఆ ప్రాంతంలో పనిచేస్తున్న ప్రజా భద్రతా సిబ్బందిని గమనించి, వారి సూచనలను పాటించండి. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[పంపే సంస్థ]: [ప్రదేశం]లో [సమయం] వరకు అగ్నిప్రమాద హెచ్చరిక అమలులో ఉంది. మీ కుటుంబాన్ని మరియు పెంపుడు జంతువులను ఇప్పుడే ఖాళీ చేయండి, ఆలస్యం చేయవద్దు. ఆ ప్రాంతంలో దృశ్యమానత తగ్గిపోతుంది మరియు రోడ్లు మూసుకుపోవచ్చు. మీరు ఇప్పుడు బయలుదేరకపోతే, మీరు చిక్కుకుపోవచ్చు, గాయపడవచ్చు లేదా మరణించవచ్చు. [ప్రదేశం] సమీప ప్రాంతాల నుండి బయలుదేరండి. తగ్గిన దృశ్యమానత, దట్టమైన పొగ మరియు శ్వాస తీసుకోవడంలో ఇబ్బందిని ఆశించండి. డ్రైవింగ్ చేసేటప్పుడు జాగ్రత్త వహించండి. ఆ ప్రాంతంలో పనిచేస్తున్న ప్రజా భద్రతా సిబ్బందిని గమనించండి మరియు వారి సూచనలను పాటించండి. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -446132,6 +446404,10 @@
                 {
                     "text": "[పంపే సంస్థ]: [ప్రదేశం] కోసం నీటిని మరిగించమని హెచ్చరిక జారీ చేయబడింది మరియు ఇది [సమయం] వరకు అమలులో ఉంటుంది. మీ ప్రాంతంలోని నీరు మిమ్మల్ని అనారోగ్యానికి గురిచేయవచ్చు. అందుబాటులో ఉంటే బాటిల్ వాటర్ ఉపయోగించండి. నల్లా నీరు లేదా ఫిల్టర్ చేసిన నీటిని మరిగించకుండా తాగవద్దు, వంట చేయవద్దు, పళ్ళు తోముకోవద్దు లేదా ఇల్లు శుభ్రం చేయవద్దు. నీటిని పూర్తిగా మూడు నిమిషాల పాటు మరగనివ్వండి. ఉపయోగించే ముందు నీటిని చల్లార్చండి. వేడి చేయని నీటితో చేసిన ఐస్‌ను ఉపయోగించవద్దు. మీరు మీ పిల్లలకు ఫార్ములాతో పాలు పట్టడానికి ఉపయోగిస్తే, సిద్ధంగా ఉండే ఫార్ములాను వాడండి. పెంపుడు జంతువులు వేడి చేయని నీటిని తాగకుండా చూసుకోండి. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[పంపే సంస్థ]: [ప్రదేశం] కోసం నీటిని మరిగించమని హెచ్చరిక జారీ చేయబడింది మరియు ఇది [సమయం] వరకు అమలులో ఉంటుంది. మీ ప్రాంతంలోని నీరు మిమ్మల్ని అనారోగ్యానికి గురిచేయవచ్చు. అందుబాటులో ఉంటే బాటిల్ వాటర్ ఉపయోగించండి. నల్లా నీరు లేదా ఫిల్టర్ చేసిన నీటిని మరిగించకుండా తాగవద్దు, వంట చేయవద్దు, పళ్ళు తోముకోవద్దు లేదా ఇల్లు శుభ్రం చేయవద్దు. నీటిని పూర్తిగా మూడు నిమిషాల పాటు మరగనివ్వండి. ఉపయోగించే ముందు నీటిని చల్లార్చండి. వేడి చేయని నీటితో చేసిన ఐస్‌ను ఉపయోగించవద్దు. మీరు మీ పిల్లలకు ఫార్ములాతో పాలు పట్టడానికి ఉపయోగిస్తే, సిద్ధంగా ఉండే ఫార్ములాను వాడండి. పెంపుడు జంతువులు వేడి చేయని నీటిని తాగకుండా చూసుకోండి. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -446178,6 +446454,10 @@
                 {
                     "text": "[పంపే సంస్థ]: [ప్రదేశం] కోసం 9-1-1 అంతరాయం హెచ్చరిక అమలులో ఉంది. అత్యవసర పరిస్థితిలో, దయచేసి పోలీసు, అగ్నిమాపక, వైద్య, లేదా ఇతర అత్యవసర సేవలను వారి స్థానిక ఫోన్ నంబర్లలో నేరుగా సంప్రదించండి. మీరు 9-1-1 డయల్ చేస్తే, మీకు సహాయం అందకపోవచ్చు. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[పంపే సంస్థ]: [ప్రదేశం] కోసం 9-1-1 అంతరాయం హెచ్చరిక అమలులో ఉంది. అత్యవసర పరిస్థితిలో, దయచేసి పోలీసు, అగ్నిమాపక, వైద్య, లేదా ఇతర అత్యవసర సేవలను వారి స్థానిక ఫోన్ నంబర్లలో నేరుగా సంప్రదించండి. మీరు 9-1-1 డయల్ చేస్తే, మీకు సహాయం అందకపోవచ్చు. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -446304,6 +446584,10 @@
                 {
                     "text": "[発信機関]：[場所]において、[時刻]まで「鉄砲水による緊急事態」が発令されています。これは極めて危険で、生命に関わる状況です。洪水のおそれがある地域からの避難や、避難指示が出されている場合を除き、移動は控えてください。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[発信機関]：[場所]において、[時刻]まで「鉄砲水による緊急事態」が発令されています。これは極めて危険で、生命に関わる状況です。洪水の恐れがある地域からの避難や、避難指示が出されている場合を除き、移動は控えてください。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -446414,6 +446698,10 @@
                 {
                     "text": "[発信機関]：[地域名]では、[時刻]まで生命を脅かす強風による差し迫った危険があるため、「極度の強風警報」が発令されています。直ちに、頑丈な建物の窓から離れた内側の部屋に避難してください。飛来物から頭部を保護してください。 風が収まっても、決して外に出ないでください！ 風はすぐに再び危険な状態に戻ります。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[発信機関]：[地域名]において、「生命を脅かす強風による差し迫った危険」があるとして、「極度の強風警報」が発令されています。この警報は[時刻]まで有効です。直ちに、頑丈な建物の窓から離れた内側の部屋に避難してください。飛来物から頭部を保護してください。 風が弱まったとしても、決して外に出ないでください！ 風はすぐに再び危険な状態に戻ります。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -446524,6 +446812,10 @@
                 {
                     "text": "[発信機関]：[場所]において、[時刻]まで火災警報が発令されています。ご家族やペットを連れて、今すぐ避難してください。遅れることなく行動してください。 当該地域では視界が悪化し、道路が通行不能になる可能性があります。今すぐ避難しないと、閉じ込められたり、けがをしたり、命を落とす恐れがあります。[場所]付近から直ちに避難してください。視界の悪化、濃い煙、呼吸困難が予想されます。運転の際は十分注意してください。現場で活動している公安職員に注意し、その指示に従ってください。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[発信機関]：[場所]において、[時刻]まで火災警報が発令されています。ご家族やペットを連れて、今すぐ避難してください。遅れることなく行動してください。 当該地域では視界が悪化し、道路が通行不能になる可能性があります。今すぐ避難しなければ、閉じ込められたり、けがをしたり、命を落とす恐れがあります。[場所]付近から直ちに避難してください。視界の悪化、激しい煙、呼吸困難が予想されます。運転の際は十分注意してください。現場で活動している公安関係者の指示に従ってください。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -446634,6 +446926,10 @@
                 {
                     "text": "[発信機関]：[地域名]に対し「沸騰水注意報」が発令され、[時刻]まで有効です。この地域の水道水を飲むと体調を崩す恐れがあります。可能であれば、ペットボトル入り飲料水をご利用ください。 水道水やろ過水は、沸騰させるまでは飲用、調理、歯磨き、家の掃除に使用しないでください。水を完全に沸騰させてから3分間煮沸してください。使用前に水を冷ましてください。 沸騰させていない水で作った氷は使用しないでください。お子様に粉ミルクを与える場合は、すぐに使えるタイプのものをご使用ください。ペットが沸騰させていない水を飲まないように注意してください。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[発信機関]：[地域名]に対し「沸騰水注意報」が発令され、[時刻]まで有効です。お住まいの地域の水道水を飲むと体調を崩す恐れがあります。可能であれば、ペットボトル入り飲料水をご利用ください。 水道水やろ過水は、沸騰させるまでは飲用、調理、歯磨き、家の掃除に使用しないでください。水を完全に沸騰させてから3分間煮沸してください。使用前に水を冷ましてください。 沸騰させていない水で作った氷は使用しないでください。お子様に粉ミルクを与える場合は、すぐに使えるタイプのものをご使用ください。ペットが沸騰させていない水を飲まないように注意してください。[URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -446744,6 +447040,10 @@
                 {
                     "text": "[発信元]：[地域名]において、「9-1-1 サービス停止警報」が発令されています。 緊急時には、警察、消防、救急、その他の緊急サービスに、各機関の現地の電話番号から直接ご連絡ください。9-1-1に電話しても、助けが得られない可能性があります。[URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[発信元]：[地域名]において、「9-1-1 サービス停止警報」が発令されています。 緊急時には、警察、消防、救急、その他の緊急サービスに、各機関の現地の電話番号から直接ご連絡ください。9-1-1に電話しても、助けが得られない可能性があります。[URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -446799,6 +447099,10 @@
                 {
                     "text": "[URL] ۔ﮟﯾﺮﮐ ﮧﻧ ﺶﺷﻮﮐ ﯽﮐ ﮯﻧﺮﮐ ﺮﻔﺳ ،ﻮﮨ ﺎﯿﮔ ﺎﯾﺩ ﮧﻧ ﻢﮑﺣ ﺎﮐ ﻼﺨﻧﺍ ﻮﮐ ﭖﺁ ﺎﯾ ﻮﮨ ﺎﺘﮑﺳ ﻮﮨ ﮦﺩﺯ ﺏﻼﯿﺳ ﻮﺟ ﮞﻮﮨ ﮧﻧ ﺭﺍﺮﻓ ﮯﺳ ﮯﻗﻼﻋ ﮯﺴﯾﺍ ﯽﺴﮐ ﭖﺁ ﮏﺗ ﺐﺟ ۔ﮯﮨ ﻝﺎﺤﺗﺭﻮﺻ ﺍﻮﯿﻟ ﻥﺎﺟ ﺭﻭﺍ ﮎﺎﻧﺮﻄﺧ ﯽﺋﺎﮩﺘﻧﺍ ﮧﯾ ۔ﮯﮨ ﺬﻓﺎﻧ ﻝﺎﺤﺗﺭﻮﺻ ﯽﻣﺎﮕﻨﮨ ﯽﮐ ﺏﻼﯿﺳ ﮏﺗ [TIME] ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] ۔ﮟﯾﺮﮐ ﮧﻧ ﺶﺷﻮﮐ ﯽﮐ ﮯﻧﺮﮐ ﺮﻔﺳ ،ﻮﮨ ﺎﯿﮔ ﺎﯾﺩ ﮧﻧ ﻢﮑﺣ ﺎﮐ ﻼﺨﻧﺍ ﻮﮐ ﭖﺁ ﺎﯾ ﻮﮨ ﺎﺘﮑﺳ ﻮﮨ ﮦﺩﺯ ﺏﻼﯿﺳ ﻮﺟ ﮞﻮﮨ ﮧﻧ ﺭﺍﺮﻓ ﮯﺳ ﮯﻗﻼﻋ ﮯﺴﯾﺍ ﯽﺴﮐ ﭖﺁ ﮏﺗ ﺐﺟ ۔ﮯﮨ ﻝﺎﺤﺗﺭﻮﺻ ﺍﻮﯿﻟ ﻥﺎﺟ ﺭﻭﺍ ﮎﺎﻧﺮﻄﺧ ﯽﺋﺎﮩﺘﻧﺍ ﮧﯾ ۔ﮯﮨ ﺬﻓﺎﻧ ﻝﺎﺤﺗﺭﻮﺻ ﯽﻣﺎﮕﻨﮨ ﯽﮐ ﺏﻼﯿﺳ ﮏﺗ [TIME] ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -446845,6 +447149,10 @@
                 {
                     "text": "[URL] ۔ﯽﮔ ﮯﺋﺎﺟ ﻮﮨ ﮎﺎﻧﺮﻄﺧ ﮦﺭﺎﺑﻭﺩ ﺪﻠﺟ ﺍﻮﮨ !ﮟﯿﻠﮑﻧ ﮧﻧ ﺮﮨﺎﺑ ﯽﮭﺑ ﺐﺗ ﮯﺋﺎﺟ ﻮﮨ ﻥﻮﮑﺳﺮﭘ ﺍﻮﮨ ﺮﮔﺍ ۔ﮟﯿﮭﮐﺭ ﻅﻮﻔﺤﻣ ﺮﺳ ﺎﻨﭘﺍ ﮯﺳ ﺀﺎﯿﺷﺍ ﯽﺋﻮﮨ ﯽﺗﮌﺍ ۔ﮟﯿﻟ ﮦﺎﻨﭘ ﺭﻭﺩ ﮯﺳ ﮞﻮﯿﮐﮍﮭﮐ ،ﮟﯿﻣ ﮮﺮﻤﮐ ﯽﻧﻭﺭﺪﻧﺍ ﮯﮐ ﺕﺭﺎﻤﻋ ﻁﻮﺒﻀﻣ ﮏﯾﺍ ﯽﮭﺑﺍ ۔ﮯﮨ ﺬﻓﺎﻧ ﮏﺗ [TIME] ﮓﻨﻧﺭﺍﻭ ﯽﮐ ﮞﺅﺍﻮﮨ ﺰﯿﺗ ﮎﺎﻧﺮﻄﺧ ﯽﺋﺎﮩﺘﻧﺍ ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] ۔ﯽﮔ ﮯﺋﺎﺟ ﻮﮨ ﮎﺎﻧﺮﻄﺧ ﮦﺭﺎﺑﻭﺩ ﺪﻠﺟ ﺍﻮﮨ !ﮟﯿﻠﮑﻧ ﮧﻧ ﺮﮨﺎﺑ ﯽﮭﺑ ﻮﺗ ﮯﺋﺎﺟ ﻮﮨ ﻥﻮﮑﺳﺮﭘ ﺍﻮﮨ ﺮﮔﺍ ۔ﮟﯿﮭﮐﺭ ﻅﻮﻔﺤﻣ ﺮﺳ ﺎﻨﭘﺍ ﮯﺳ ﺀﺎﯿﺷﺍ ﯽﻟﺍﻭ ﮯﻧﮌﺍ ۔ﮟﯿﻟ ﮦﺎﻨﭘ ﺭﻭﺩ ﮯﺳ ﮞﻮﯿﮐﮍﮭﮐ ،ﮟﯿﻣ ﮮﺮﻤﮐ ﯽﻧﻭﺭﺪﻧﺍ ﮯﮐ ﺕﺭﺎﻤﻋ ﻁﻮﺒﻀﻣ ﮏﯾﺍ ﯽﮭﺑﺍ ۔ﮯﮨ ﺬﻓﺎﻧ ﮏﺗ [TIME] ﮓﻨﻧﺭﺍﻭ ﯽﮐ ﮞﺅﺍﻮﮨ ﺰﯿﺗ ﮎﺎﻧﺮﻄﺧ ﯽﺋﺎﮩﺘﻧﺍ ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -446891,6 +447199,10 @@
                 {
                     "text": "[URL] ۔ﮟﯾﺮﮐ ﻞﻤﻋ ﺮﭘ ﺕﺎﯾﺍﺪﮨ ﯽﮐ ﻥﺍ ﺭﻭﺍ ﮟﯿﮭﮐﺭ ﺮﻈﻧ ﺮﭘ ﮯﻠﻤﻋ ﮯﮐ ﻆﻔﺤﺗ ﯽﻣﺍﻮﻋ ﮯﻟﺍﻭ ﮯﻧﺮﮐ ﻡﺎﮐ ﮟﯿﻣ ﮯﻗﻼﻋ ۔ﮟﯾﺮﮐ ﻁﺎﯿﺘﺣﺍ ﻥﺍﺭﻭﺩ ﮯﮐ ﮓﻧﻮﯿﺋﺍﺭﮈ ۔ﮟﯿﮭﮐﺭ ﻊﻗﻮﺗ ﯽﮐ ﯼﺭﺍﻮﺷﺩ ﮟﯿﻣ ﮯﻨﯿﻟ ﺲﻧﺎﺳ ﺭﻭﺍ ﮞﺍﻮﮬﺩ ﯼﺭﺎﮭﺑ ،ﺮﻈﻧ ﻢﮐ ۔ﮟﯾﺩ ﮌﻮﮭﭼ ﮯﻗﻼﻋ ﮯﮐ ﺐﯾﺮﻗ ﮯﮐ [LOCATION] ۔ﮟﯿﮨ ﮯﺘﮑﺳ ﻮﮨ ﮎﻼﮨ ﺎﯾ ﮟﯿﮨ ﮯﺘﮑﺳ ﻮﮨ ﯽﻤﺧﺯ ،ﮟﯿﮨ ﮯﺘﮑﺳ ﺲﻨﮭﭘ ﻮﺗ ﮯﺋﻮﮨ ﮟﯿﮩﻧ ﮧﻧﺍﻭﺭ ﯽﮭﺑﺍ ﭖﺁ ﺮﮔﺍ ۔ﮟﯿﮨ ﯽﺘﮑﺳ ﻮﮨ ﺪﻨﺑ ﮟﯿﮐﮍﺳ ﺭﻭﺍ ﯽﮔ ﮯﺋﺎﺟ ﻮﮨ ﻢﮐ ﺮﻈﻧ ﮟﯿﻣ ﮯﻗﻼﻋ ۔ﮟﯾﺮﮐ ﮧﻧ ﺮﯿﺧﺎﺗ ،ﮟﯿﻟﺎﮑﻧ ﯽﮭﺑﺍ ﺭﻮﻧﺎﺟ ﻮﺘﻟﺎﭘ ﺭﻭﺍ ﻥﺍﺪﻧﺎﺧ ﺎﻨﭘﺍ ۔ﮯﮨ ﺬﻓﺎﻧ ﮏﺗ [TIME] ﮓﻨﻧﺭﺍﻭ ﯽﮐ ﮒﺁ ﮟﯿﻣ [SENDING AGENCY]: [LOCATION]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] ۔ﮟﯾﺮﮐ ﻞﻤﻋ ﺮﭘ ﺕﺎﯾﺍﺪﮨ ﯽﮐ ﻥﺍ ﺭﻭﺍ ﮟﯿﮭﮐﺭ ﺮﻈﻧ ﺮﭘ ﮯﻠﻤﻋ ﮯﮐ ﻆﻔﺤﺗ ﯽﻣﺍﻮﻋ ﮯﻟﺍﻭ ﮯﻧﺮﮐ ﻡﺎﮐ ﮟﯿﻣ ﮯﻗﻼﻋ ۔ﮟﯾﺮﮐ ﻁﺎﯿﺘﺣﺍ ﻥﺍﺭﻭﺩ ﮯﮐ ﮓﻧﻮﯿﺋﺍﺭﮈ ۔ﮟﯿﮭﮐﺭ ﻊﻗﻮﺗ ﯽﮐ ﯼﺭﺍﻮﺷﺩ ﮟﯿﻣ ﮯﻨﯿﻟ ﺲﻧﺎﺳ ﺭﻭﺍ ﮞﺍﻮﮬﺩ ﯼﺭﺎﮭﺑ ،ﺮﻈﻧ ﻢﮐ ۔ﮟﯾﺩ ﮌﻮﮭﭼ ﮯﻗﻼﻋ ﮯﮐ ﺐﯾﺮﻗ ﮯﮐ [LOCATION] ۔ﮟﯿﮨ ﮯﺘﮑﺳ ﻮﮨ ﮎﻼﮨ ﺎﯾ ﮟﯿﮨ ﮯﺘﮑﺳ ﻮﮨ ﯽﻤﺧﺯ ،ﮟﯿﮨ ﮯﺘﮑﺳ ﺲﻨﮭﭘ ﻮﺗ ﮯﺋﻮﮨ ﮟﯿﮩﻧ ﮧﻧﺍﻭﺭ ﯽﮭﺑﺍ ﭖﺁ ﺮﮔﺍ ۔ﮟﯿﮨ ﯽﺘﮑﺳ ﻮﮨ ﺪﻨﺑ ﮟﯿﮐﮍﺳ ﺭﻭﺍ ﯽﮔ ﮯﺋﺎﺟ ﻮﮨ ﻢﮐ ﺮﻈﻧ ﮟﯿﻣ ﮯﻗﻼﻋ ۔ﮟﯾﺮﮐ ﮧﻧ ﺮﯿﺧﺎﺗ ،ﮟﯿﻟﺎﮑﻧ ﯽﮭﺑﺍ ﺭﻮﻧﺎﺟ ﻮﺘﻟﺎﭘ ﺭﻭﺍ ﻥﺍﺪﻧﺎﺧ ﺎﻨﭘﺍ ۔ﮯﮨ ﺬﻓﺎﻧ ﮏﺗ [TIME] ﮓﻨﻧﺭﺍﻭ ﯽﮐ ﮒﺁ ﮟﯿﻣ [SENDING AGENCY]: [LOCATION]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -446937,6 +447249,10 @@
                 {
                     "text": "[URL] ۔ﮟﯿﺌﭘ ﮧﻧ ﯽﻧﺎﭘ ﯽﺋﻮﮐ ﮦﻭﻼﻋ ﮯﮐ ﯽﻧﺎﭘ ﮯﺋﻮﮨ ﮯﻟﺎﺑﺍ ﺭﻮﻧﺎﺟ ﻮﺘﻟﺎﭘ ﮧﮐ ﮟﯿﺋﺎﻨﺑ ﯽﻨﯿﻘﯾ ۔ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﻻﻮﻣﺭﺎﻓ ﺭﺎﯿﺗ ﻮﺗ ﮟﯿﮨ ﮯﺗﻼﭘ ﻻﻮﻣﺭﺎﻓ ﻮﮐ ﮯﭽﺑ ﮯﻨﭘﺍ ﭖﺁ ﺮﮔﺍ ۔ﮟﯾﺮﮐ ﮧﻧ ﻝﺎﻤﻌﺘﺳﺍ ﻑﺮﺑ ﯽﻨﺑ ﮯﺳ ﯽﻧﺎﭘ ﮯﺋﻮﮨ ﮯﻟﺎﺑﺍ ۔ﮟﯾﺩ ﮯﻧﻮﮨ ﺍﮉﻨﮭﭨ ﻮﮐ ﯽﻧﺎﭘ ﮯﻠﮩﭘ ﮯﺳ ﻝﺎﻤﻌﺘﺳﺍ ۔ﮟﯿﻟﺎﺑﺍ ﺡﺮﻃ ﯽﮭﭼﺍ ﮏﺗ ﭧﻨﻣ ﻦﯿﺗ ﻮﮐ ﯽﻧﺎﭘ ۔ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﯽﺋﺎﻔﺻ ﯽﮐ ﺮﮭﮔ ﯽﮨ ﮧﻧ ﺭﻭﺍ ،ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻑﺎﺻ ﺖﻧﺍﺩ ﮧﻧ ،ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮟﯿﻣ ﮯﻧﺎﮑﭘ ﮧﻧ ،ﮟﯿﺌﭘ ﮧﻧ ﺮﯿﻐﺑ ﮯﻟﺎﺑﺍ ﻮﮐ ﯽﻧﺎﭘ ﮦﺪﺷ ﺮﭩﻠﻓ ﺎﯾ ﯽﻧﺎﭘ ﮯﮐ ﮯﮑﻠﻧ ۔ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﯽﻧﺎﭘ ﺪﻨﺑ ﻞﺗﻮﺑ ﺮﭘ ﮯﻧﻮﮨ ﺏﺎﯿﺘﺳﺩ ۔ﮯﮨ ﺎﺘﮑﺳ ﺮﮐ ﺭﺎﻤﯿﺑ ﻮﮐ ﭖﺁ ﯽﻧﺎﭘ ﺎﮐ ﯽﭩﻧﻮﯿﻤﮐ ﯽﮐ ﭖﺁ ۔ﺎﮔ ﮯﮨﺭ ﺭﺍﺮﻗﺮﺑ ﮏﺗ [TIME] ﮧﯾ ﺭﻭﺍ ﮯﮨ ﺎﯿﮔ ﺎﯿﮐ ﯼﺭﺎﺟ ﭦﺮﻟﺍ ﺎﮐ ﮯﻨﻟﺎﺑﺍ ﯽﻧﺎﭘ ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] ۔ﮟﯿﺌﭘ ﮧﻧ ﯽﻧﺎﭘ ﺮﯿﻐﺑ ﮯﻟﺎﺑﺍ ﺭﻮﻧﺎﺟ ﻮﺘﻟﺎﭘ ﮧﮐ ﮟﯿﺋﺎﻨﺑ ﯽﻨﯿﻘﯾ ۔ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ (ready-to-use formula) ﻻﻮﻣﺭﺎﻓ ﮯﮐ ﻝﺎﻤﻌﺘﺳﺍ ﺭﺎﯿﺗ ﻮﺗ ﮟﯿﮨ ﮯﺗﻼﭘ ﻻﻮﻣﺭﺎﻓ ﻮﮐ ﮯﭽﺑ ﮯﻨﭘﺍ ﭖﺁ ﺮﮔﺍ ۔ﮟﯾﺮﮐ ﮧﻧ ﻝﺎﻤﻌﺘﺳﺍ ﻑﺮﺑ ﯽﻨﺑ ﮯﺳ ﯽﻧﺎﭘ ﺮﯿﻐﺑ ﮯﻟﺎﺑﺍ ۔ﮟﯾﺩ ﮯﻧﻮﮨ ﺍﮉﻨﮭﭨ ﻮﮐ ﯽﻧﺎﭘ ﮯﻠﮩﭘ ﮯﺳ ﻝﺎﻤﻌﺘﺳﺍ ۔ﮟﯿﻟﺎﺑﺍ ﮏﺗ ﭧﻨﻣ ﻦﯿﺗ ﺮﭘ ﻝﺎﺑﺍ ﺰﯿﺗ ﻮﮐ ﯽﻧﺎﭘ ۔ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﯽﺋﺎﻔﺻ ﯽﮐ ﺮﮭﮔ ﯽﮨ ﮧﻧ ﺭﻭﺍ ،ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮯﯿﻟ ﮯﮐ ﮯﻧﺮﮐ ﻑﺎﺻ ﺖﻧﺍﺩ ﮧﻧ ،ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﮟﯿﻣ ﮯﻧﺎﮑﭘ ﮧﻧ ،ﮟﯿﺌﭘ ﮧﻧ ﺮﯿﻐﺑ ﮯﻟﺎﺑﺍ ﻮﮐ ﯽﻧﺎﭘ ﮦﺪﺷ ﺮﭩﻠﻓ ﺎﯾ ﯽﻧﺎﭘ ﮯﮐ ﮯﮑﻠﻧ ۔ﮟﯾﺮﮐ ﻝﺎﻤﻌﺘﺳﺍ ﯽﻧﺎﭘ ﺪﻨﺑ ﻞﺗﻮﺑ ﺮﭘ ﮯﻧﻮﮨ ﺏﺎﯿﺘﺳﺩ ۔ﮯﮨ ﺎﺘﮑﺳ ﺮﮐ ﺭﺎﻤﯿﺑ ﻮﮐ ﭖﺁ ﯽﻧﺎﭘ ﺎﮐ ﯽﭩﻧﻮﯿﻤﮐ ﯽﮐ ﭖﺁ ۔ﺎﮔ ﮯﮨﺭ ﺭﺍﺮﻗﺮﺑ ﮏﺗ [TIME] ﮧﯾ ﺭﻭﺍ ﮯﮨ ﺎﯿﮔ ﺎﯿﮐ ﯼﺭﺎﺟ ﭦﺮﻟﺍ ﺎﮐ ﮯﻨﻟﺎﺑﺍ ﯽﻧﺎﭘ ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -446983,6 +447299,10 @@
                 {
                     "text": "[URL] ۔ﮯﻠﻣ ﮧﻧ ﺩﺪﻣ ﻮﮐ ﭖﺁ ﮧﮐ ﮯﮨ ﻦﮑﻤﻣ ﻮﺗ ﮯﮔ ﮟﯾﺮﮐ ﻞﺋﺍﮈ 1-1-9 ﭖﺁ ﺮﮔﺍ ۔ﮟﯾﺮﮐ ﮧﻄﺑﺍﺭ ﺮﭘ ﮞﻭﺮﺒﻤﻧ ﻥﻮﻓ ﯽﻣﺎﻘﻣ ﮯﮐ ﻥﺍ ﻮﮐ ﺕﺎﻣﺪﺧ ﯽﻣﺎﮕﻨﮨ ﺮﮕﯾﺩ ﺎﯾ ﯽﺒﻃ ،ﺮﺋﺎﻓ ،ﺲﯿﻟﻮﭘ ﺖﺳﺍﺭ ﮦﺍﺮﺑ ﮟﯿﻣ ﻝﺎﺣ ﺕﺭﻮﺻ ﯽﻣﺎﮕﻨﮨ ۔ﮯﮨ ﺬﻓﺎﻧ ﮓﻨﻧﺭﺍﻭ ﯽﮐ ﻞﻠﺧ ﮟﯿﻣ ﺱﻭﺮﺳ 1-1-9 ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] ۔ﮯﻠﻣ ﮧﻧ ﺩﺪﻣ ﻮﮐ ﭖﺁ ﮧﮐ ﮯﮨ ﻦﮑﻤﻣ ﻮﺗ ﮯﮔ ﮟﯾﺮﮐ ﻞﺋﺍﮈ 1-1-9 ﭖﺁ ﺮﮔﺍ ۔ﮟﯾﺮﮐ ﮧﻄﺑﺍﺭ ﺮﭘ ﮞﻭﺮﺒﻤﻧ ﻥﻮﻓ ﯽﻣﺎﻘﻣ ﮯﮐ ﻥﺍ ﻮﮐ ﺕﺎﻣﺪﺧ ﯽﻣﺎﮕﻨﮨ ﺮﮕﯾﺩ ﺎﯾ ﯽﺒﻃ ،ﺮﺋﺎﻓ ،ﺲﯿﻟﻮﭘ ﺖﺳﺍﺭ ﮦﺍﺮﺑ ﮟﯿﻣ ﻝﺎﺣ ﺕﺭﻮﺻ ﯽﻣﺎﮕﻨﮨ ۔ﮯﮨ ﺬﻓﺎﻧ ﮓﻨﻧﺭﺍﻭ ﯽﮐ ﻞﻠﺧ ﮟﯿﻣ ﺱﻭﺮﺳ 1-1-9 ﮯﯿﻟ ﮯﮐ [SENDING AGENCY]: [LOCATION]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -447102,6 +447422,10 @@
                 {
                     "text": "[ABSENDER]: Für [ORT] gilt bis [ZEIT] ein NOTFALLWARNHINWEIS wegen STURZFLUT. Es handelt sich um eine äußerst gefährliche und lebensbedrohliche Situation. Unterlassen Sie jegliche Reisen, es sei denn, Sie fliehen aus einem Gebiet, das von Überschwemmungen bedroht ist, oder es liegt eine Evakuierungsanordnung vor. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ABSENDER]: Für [ORT] gilt bis [ZEIT] eine WARNUNG VOR PLÖTZLICHEN ÜBERSCHWEMMUNGEN. Es handelt sich um eine äußerst gefährliche und lebensbedrohliche Situation. Unterlassen Sie jegliche Reisen, es sei denn, Sie fliehen aus einem Gebiet, das von Überschwemmungen bedroht ist, oder es liegt eine Evakuierungsanordnung vor. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -447212,6 +447536,10 @@
                 {
                     "text": "[AUSSTELLENDE BEHÖRDE]: Für [ORT] gilt bis [ZEIT] eine EXTREME WINDWARNUNG wegen unmittelbarer Gefahr durch lebensbedrohliche Windböen. Suchen Sie JETZT Schutz in einem Innenraum eines stabilen Gebäudes, fern von Fenstern. Schützen Sie Ihren Kopf vor herumfliegenden Gegenständen. Gehen Sie NICHT nach draußen, wenn sich der Wind beruhigt! Die Windböen werden schnell wieder gefährlich. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AUSSTELLENDE BEHÖRDE]: Für [ORT] gilt bis [ZEIT] eine WARNUNG VOR EXTREMEN WINDEN aufgrund unmittelbarer Lebensgefahr durch starke Winde. Suchen Sie JETZT Schutz in einem Innenraum eines stabilen Gebäudes, fern von Fenstern. Schützen Sie Ihren Kopf vor herumfliegenden Gegenständen. Gehen Sie NICHT nach draußen, wenn der Wind nachlässt! Der Wind wird schnell wieder gefährlich werden. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -447322,6 +447650,10 @@
                 {
                     "text": "[ABSENDER]: In [ORT] gilt bis [ZEIT] eine BRANDWARNUNG. Evakuieren Sie Ihre Familie und Haustiere sofort, zögern Sie nicht. Die Sichtverhältnisse in der Gegend werden eingeschränkt sein und Straßen können blockiert werden. Wenn Sie jetzt nicht flüchten, könnten Sie eingeschlossen, verletzt oder getötet werden. VERLASSEN SIE Gebiete in der Nähe von [ORT]. Rechnen Sie mit eingeschränkter Sicht, starker Rauchentwicklung und Atembeschwerden. Seien Sie beim Fahren vorsichtig. Achten Sie auf Einsatzkräfte der öffentlichen Sicherheit, die in der Gegend im Einsatz sind, und befolgen Sie deren Anweisungen. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ABSENDER]: In [ORT] gilt bis [ZEIT] eine BRANDWARNUNG. Evakuieren Sie Ihre Familie und Haustiere sofort, zögern Sie nicht. Die Sichtverhältnisse in der Gegend werden eingeschränkt sein und Straßen können blockiert werden. Wenn Sie jetzt nicht gehen, könnten Sie eingeschlossen, verletzt oder getötet werden. VERLASSEN SIE Gebiete in der Nähe von [ORT]. Rechnen Sie mit eingeschränkter Sicht, starker Rauchentwicklung und Atembeschwerden. Seien Sie vorsichtig beim Fahren. Achten Sie auf Einsatzkräfte, die in der Gegend im Einsatz sind, und befolgen Sie deren Anweisungen. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -447432,6 +447764,10 @@
                 {
                     "text": "[AUSSTELLENDE BEHÖRDE]: Für [ORT] wurde eine WASSERABKOCHVERFÜGUNG erlassen, die bis [ZEIT] gilt. Das Wasser in Ihrer Gemeinde kann zu Erkrankungen führen. Verwenden Sie nach Möglichkeit Wasser aus Flaschen. Trinken Sie kein Leitungswasser oder gefiltertes Wasser, kochen Sie nicht damit, putzen Sie sich nicht die Zähne damit und reinigen Sie Ihre Wohnung nicht damit, bevor Sie es abgekocht haben. Bringen Sie das Wasser DREI MINUTEN lang zum Kochen. Lassen Sie das Wasser vor der Verwendung abkühlen. Verwenden Sie kein Eis, das aus nicht abgekochtem Wasser hergestellt wurde. Wenn Sie Ihr Kind mit Säuglingsnahrung füttern, verwenden Sie gebrauchsfertige Säuglingsnahrung. Achten Sie darauf, dass Haustiere kein nicht abgekochtes Wasser trinken. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[AUSSTELLENDE BEHÖRDE]: Für [ORT] wurde eine WARNUNG ZUM ABKOCHEN VON WASSER herausgegeben, die bis [ZEIT] gilt. Das Wasser in Ihrer Gemeinde kann zu Erkrankungen führen. Verwenden Sie nach Möglichkeit Wasser aus Flaschen. Trinken Sie kein Leitungswasser oder gefiltertes Wasser, kochen Sie nicht damit, putzen Sie sich nicht die Zähne damit und reinigen Sie Ihre Wohnung nicht damit, bevor Sie es abgekocht haben. Bringen Sie das Wasser DREI MINUTEN lang zum Kochen. Lassen Sie das Wasser vor der Verwendung abkühlen. Verwenden Sie kein Eis, das aus nicht abgekochtem Wasser hergestellt wurde. Wenn Sie Ihr Kind mit Säuglingsnahrung füttern, verwenden Sie gebrauchsfertige Säuglingsnahrung. Achten Sie darauf, dass Haustiere kein Wasser trinken, das nicht abgekocht wurde. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -447542,6 +447878,10 @@
                 {
                     "text": "[ABSENDER]: Für [ORT] gilt derzeit eine 9-1-1-Ausfallwarnung. Bitte wenden Sie sich im Notfall direkt an die Polizei, die Feuerwehr, den Rettungsdienst oder andere Notdienste unter deren lokalen Telefonnummern. Wenn Sie die 9-1-1 wählen, erhalten Sie möglicherweise keine Hilfe. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ABSENDER]: Für [ORT] gilt derzeit eine 9-1-1-Ausfallwarnung. Bitte wenden Sie sich im Notfall direkt an die Polizei, die Feuerwehr, den Rettungsdienst oder andere Notdienste unter deren lokalen Telefonnummern. Wenn Sie die 9-1-1 wählen, erhalten Sie möglicherweise keine Hilfe. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -447610,6 +447950,10 @@
                 {
                     "text": "[GÖNDEREN KURUM]: [YER] için [SAAT]'e kadar bir ANİ SEL ACİL DURUMU yürürlüktedir. Bu, son derece tehlikeli ve hayati tehlike arz eden bir durumdur. Sel tehlikesi bulunan bir bölgeden kaçmıyorsanız veya tahliye emri altında değilseniz, seyahat etmeye kalkışmayınız. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[GÖNDEREN KURUM]: [YER] için [SAAT]'e kadar bir ANİ SEL ACİL DURUMU yürürlüktedir. Bu, son derece tehlikeli ve hayati tehlike arz eden bir durumdur. Sel tehlikesi bulunan bir bölgeden kaçmıyorsanız veya tahliye emri altında değilseniz, seyahat etmeye kalkışmayın. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -447676,6 +448020,10 @@
                 {
                     "text": "[YAYINLAYAN KURUM]: [YER] için, [SAAT]'e kadar hayatı tehdit eden rüzgarların oluşturduğu acil tehlike nedeniyle AŞIRI RÜZGAR UYARISI yürürlüktedir. HEMEN sağlam bir binanın pencerelerden uzak, iç kısmındaki bir odaya sığının. Başınızı uçan nesnelerden koruyun. Rüzgâr dinse bile dışarı ÇIKMAYIN! Rüzgâr kısa sürede tekrar tehlikeli hale gelecektir. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[YAYINLAYAN KURUM]: [YER] için, [SAAT]'e kadar hayatı tehdit eden rüzgarların yarattığı acil tehlike nedeniyle AŞIRI RÜZGAR UYARISI yürürlüktedir. HEMEN sağlam bir binanın pencerelerden uzak bir iç odasına sığının. Başınızı uçan nesnelerden koruyun. Rüzgâr dinse bile DIŞARI ÇIKMAYIN! Rüzgârlar kısa sürede tekrar tehlikeli hale gelecektir. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -447742,6 +448090,10 @@
                 {
                     "text": "[GÖNDEREN KURUM]: [YER]’de bir YANGIN UYARISI, [SAAT]’e kadar yürürlükte olacaktır. Ailenizi ve evcil hayvanlarınızı hemen tahliye edin, gecikmeyin. Bölgedeki görüş mesafesi azalacak ve yollar tıkanabilir. Hemen ayrılmazsanız, mahsur kalabilir, yaralanabilir veya hayatını kaybedebilirsiniz. [YER] yakınlarındaki bölgelerden AYRILIN. Görüş mesafesinin azalması, yoğun duman ve nefes almada zorluk yaşanması beklenmektedir. Araç kullanırken dikkatli olun. Bölgede görev yapan kamu güvenliği personeline dikkat edin ve talimatlarına uyun. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[GÖNDEREN KURUM]: [YER]’de bir YANGIN UYARISI [SAAT]’e kadar yürürlüktedir. Ailenizi ve evcil hayvanlarınızı hemen tahliye edin, gecikmeyin. Bölgedeki görüş mesafesi azalacak ve yollar tıkanabilir. Hemen ayrılmazsanız, mahsur kalabilir, yaralanabilir veya hayatını kaybedebilirsiniz. [YER] yakınlarındaki bölgelerden AYRILIN. Görüş mesafesinin azalması, yoğun duman ve nefes almada zorluk yaşanması beklenmektedir. Araç kullanırken dikkatli olun. Bölgede görev yapan kamu güvenliği personeline dikkat edin ve talimatlarına uyun. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -447808,6 +448160,10 @@
                 {
                     "text": "[GÖNDEREN KURUM]: [YER] için bir SUYU KAYNATMA UYARISI yayınlanmıştır ve bu uyarı [SAAT] tarihine kadar yürürlüktedir. Bölgenizdeki su sağlığınızı bozabilir. Mümkünse şişelenmiş su kullanın. Musluk suyunu veya filtrelenmiş suyu kaynatana kadar içmeyin, yemek pişirmede kullanmayın, dişlerinizi fırçalamayın veya evinizi temizlemek için kullanmayın. Suyu ÜÇ DAKİKA boyunca kaynatın. Kullanmadan önce suyun soğumasını bekleyin. Kaynatılmamış sudan yapılmış buz kullanmayın. Çocuğunuzu mama ile besliyorsanız, kullanıma hazır mama kullanın. Evcil hayvanlarınızın kaynatılmamış su içmemesine dikkat edin. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[GÖNDEREN KURUM]: [YER] için bir SUYU KAYNATIN UYARISI yayınlanmıştır ve bu uyarı [SAAT] tarihine kadar yürürlüktedir. Bölgenizdeki su sağlığınızı bozabilir. Mümkünse şişelenmiş su kullanın. Musluk suyunu veya filtrelenmiş suyu kaynatana kadar içmeyin, yemek pişirmede kullanmayın, dişlerinizi fırçalamayın ve evinizi temizlemede kullanmayın. Suyu ÜÇ DAKİKA boyunca kaynatın. Kullanmadan önce suyun soğumasını bekleyin. Kaynatılmamış suyla yapılmış buz kullanmayın. Çocuğunuzu beslemek için mama kullanıyorsanız, kullanıma hazır mama kullanın. Evcil hayvanlarınızın kaynatılmamış su içmemesine dikkat edin. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -447874,6 +448230,10 @@
                 {
                     "text": "[GÖNDEREN KURUM]: [YER] için bir 9-1-1 HİZMET KESİNTİSİ UYARISI yürürlüktedir. Acil bir durum olması halinde lütfen polis, itfaiye, sağlık veya diğer acil durum hizmetlerini yerel telefon numaralarından doğrudan arayın. 9-1-1'i ararsanız yardım alamayabilirsiniz. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[GÖNDEREN KURUM]: [YER] için bir 9-1-1 HİZMET KESİNTİSİ UYARISI yürürlüktedir. Acil bir durum olması halinde lütfen polis, itfaiye, sağlık veya diğer acil durum hizmetlerini yerel telefon numaralarından doğrudan arayın. 9-1-1'i ararsanız yardım alamayabilirsiniz. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -447922,6 +448282,10 @@
                 {
                     "text": "[SHIRIKA LINALOTUMIA]: Dharura ya mafuriko ya ghafla iko katika [ENEO] hadi [SAA]. Hii ni hali hatari sana na inayohatarisha maisha. Usijaribu kusafiri isipokuwa ukitoroka eneo linaloweza kufurika au uko chini ya amri ya kuhama. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[SHIRIKA LINALOTUMIA]: Dharura ya mafuriko ya ghafla iko katika [ENEO] hadi [SAA]. Hii ni hali hatari sana na inayohatarisha maisha. Usijaribu kusafiri isipokuwa ukitoroka eneo linaloweza kufurika au uko chini ya amri ya kuhama. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -447968,6 +448332,10 @@
                 {
                     "text": "[TAASISI YA UTANGAZAJI]: ONYO LA DZIBAJI LA UPEPO Mkali linaanza kutumika kwa [ENEO] kutokana na hatari ya papo hapo ya upepo unaoweza kusababisha kifo hadi [SAA]. Jificheni SASA katika chumba cha ndani cha jengo imara, mbali na madirisha. Linda kichwa chako dhidi ya vitu vinavyoruka. USITOKE nje hata kama upepo utaisha! Upepo utakuwa hatari tena haraka. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[TAASISI YA UTANGAZAJI]: ONYO LA DZIBAJI LA UPEPO Mkali linaanza kutumika kwa [ENEO] kutokana na hatari ya papo hapo ya upepo unaoweza kusababisha kifo hadi [SAA]. Jificheni SASA katika chumba cha ndani cha jengo imara, mbali na madirisha. Linda kichwa chako dhidi ya vitu vinavyoruka. USITOKE nje hata kama upepo utaisha! Upepo utakuwa hatari tena haraka. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -448014,6 +448382,10 @@
                 {
                     "text": "[SHIRIKA LINALOTUMIA]: ONYO LA MOTO katika [ENEO] linaanza kutumika hadi [SAA]. Wahame familia yako na wanyama wako wa kufugwa sasa, usichelewe. Uonekano katika eneo utapungua na barabara zinaweza kuziba. Ikiwa hutahama sasa, unaweza kukwama, kujeruhiwa, au kuuawa. Toka maeneo yaliyo karibu na [LOCATION]. Tarajia uonekano mdogo, moshi mwingi, na ugumu wa kupumua. Kuwa mwangalifu unapokuendesha gari. Angalia maafisa wa usalama wa umma wanaofanya kazi katika eneo hilo na fuata maagizo yao. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[SHIRIKA LINALOTUMIA]: ONYO LA MOTO katika [ENEO] linaanza kutumika hadi [SAA]. Wahame familia yako na wanyama vipenzi sasa, usichelewe. Uonekano katika eneo utapungua na barabara zinaweza kuziba. Ikiwa hutahama sasa, unaweza kukwama, kujeruhiwa, au kuuawa. ONDOKA maeneo karibu na [LOCATION]. Tarajia uonekano mdogo, moshi mwingi, na ugumu wa kupumua. Kuwa mwangalifu unapokuendesha gari. Angalia maafisa wa usalama wa umma wanaofanya kazi katika eneo hilo na ufuate maagizo yao. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -448060,6 +448432,10 @@
                 {
                     "text": "[TAASISI YA UHAMISHI]: TAARIFA YA KUCHEMSHA MAJI imetolewa kwa [ENEO] na itaendelea kutumika hadi [SAA]. Maji katika jamii yako yanaweza kukufanya uugue. Tumia maji ya chupa ikiwa yanapatikana. Usinywe, usipike, usifue meno, au usisafishe nyumba yako kwa kutumia maji ya bomba au maji yaliyochujwa hadi uyachemshe. Chemsha maji kwa moto mkali kwa dakika TATU. Acha maji yapoe kabla ya kuyatumia. Usitumie barafu iliyotengenezwa kwa maji ambayo hayajachemshwa. Ikiwa unatumia maziwa ya unga (formula) kumlisha mtoto wako, tumia yale yaliyotayarishwa tayari. Hakikisha wanyama vipenzi hawanywi maji ambayo hayajachemshwa. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[TAASISI YA UHAMISHI]: TAARIFA YA KUCHEMSHA MAJI imetolewa kwa [ENEO] na itaendelea kutumika hadi [SAA]. Maji katika jamii yako yanaweza kukufanya uugue. Tumia maji ya chupa ikiwa yanapatikana. Usinywe, usipike, usifue meno, au usisafishe nyumba yako kwa kutumia maji ya bomba au maji yaliyochujwa hadi uyachemshe. Chemsha maji kwa moto mkali kwa dakika TATU. Acha maji yapoe kabla ya kuyatumia. Usitumie barafu iliyotengenezwa kwa maji ambayo hayajachemshwa. Ikiwa unatumia maziwa ya unga (formula) kumlisha mtoto wako, tumia yale yaliyotayarishwa tayari. Hakikisha wanyama vipenzi hawanywi maji ambayo hayajachemshwa. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -448106,6 +448482,10 @@
                 {
                     "text": "[SHIRIKA LINALOTUMIA]: TAARIFA YA KATIZA YA 9-1-1 inatumika kwa [ENEO]. Tafadhali wasiliana na polisi, zima moto, huduma za matibabu, au huduma nyingine za dharura moja kwa moja kupitia nambari zao za simu za eneo husika endapo kuna dharura. Ukipiga 9-1-1, huenda usipate msaada. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[SHIRIKA LINALOTUMIA]: TAARIFA YA KATIZA YA 9-1-1 inatumika kwa [ENEO]. Tafadhali wasiliana na polisi, zima moto, huduma za matibabu, au huduma nyingine za dharura moja kwa moja kupitia nambari zao za simu za eneo husika endapo kuna dharura. Ukipiga 9-1-1, huenda usipate msaada. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -448159,6 +448539,10 @@
                 {
                     "text": "[DAHUU ERGITUU]: [Bakka] keessatti hanga [Yeroo]tti balaan lolaa tasaa raawwatamaa jira. Kun haala baay'ee balaafamaa fi lubbuu namaa balaadhaaf saaxiluudha. Naannoo lolaan miidhamuu danda'u irraa yoo baqachaa jiraattan yookaan ajaja baqachiisuu jala yoo jiraattan malee imaluuf hin yaalinaa. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[DAHUU ERGITUU]: [Bakka] keessatti hanga [Yeroo]tti balaan lolaa tasaa raawwatamaa jira. Kun haala baay'ee balaafamaa fi lubbuu namaa balaadhaaf saaxiluudha. Naannoo lolaan miidhamuu danda'u irraa yoo baqachaa jiraattan yookaan ajaja baqachiisuu jala yoo jiraattan malee imaluuf hin yaalinaa. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -448205,6 +448589,10 @@
                 {
                     "text": "[DAAHHASA ERGITUU]: [Bakka]f, sababa balaa cimaa bubbee lubbuu namaa galaafatuu danda'uuf, akeekkachiisni bubbee cimaa hanga [Yeroo]tti jira. AMMA kutaa keessoo gamoo jabaa, foddaa irraa fagaatee of eegaa. Mataa keessan wantoota balali'an irraa eegaa. Yoo bubbeen tasgabbaa'e illee ALIIN hin ba'inaa! Bubbeen dafee deebi'ee balaafamaa ta'a. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[DAAHHASA ERGITUU]: [Bakka]f, sababa balaa cimaa bubbee lubbuu namaa galaafatuu danda'uuf, akeekkachiisni bubbee cimaa hanga [Yeroo]tti jira. AMMA kutaa keessoo gamoo jabaa, foddaa irraa fagaatee of eegaa. Mataa keessan wantoota balali'an irraa eegaa. Yoo bubbeen tasgabbaa'e illee ALIIN hin ba'inaa! Bubbeen dafee deebi'ee balaafamaa ta'a. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -448251,6 +448639,10 @@
                 {
                     "text": "[DAAHHASA ERGITUU]: [Bakka] keessatti Akeekkachiisni Ibiddaa hanga [Yeroo]tti hojiirra jira. Maatii fi bineensota manaa keessan amma baasaa, hin turinaa. Mul'annaan naannoo sanaa ni hir'ata, daandiiwwanis cufamuu danda'u. Yoo amma ba'uu baattan, qabamuu, miidhamuu, yookaan ajjeefamuu dandeessu. Naannoo [IDDOO]tti dhiyoo jiran irraa BA'AA. Mul'annaan hir'achuu, aara baay'ee, fi rakkoo hargansuu eegaa. Yeroo konkolaachiftan of eeggadhaa. Hojjetoota nageenya ummataa naannoo sana keessa hojjetan eeggadhaa, akkasumas ajaja isaanii hordofaa. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[DAAHHASA ERGITUU]: [Bakka] keessatti Akeekkachiisni Ibiddaa hanga [Yeroo]tti hojiirra jira. Maatii fi bineensota manaa keessan amma baasaa, hin turinaa. Mul'annaan naannoo sanaa ni hir'ata, daandiiwwanis cufamuu danda'u. Yoo amma ba'uu baattan, qabamuu, miidhamuu, yookaan ajjeefamuu dandeessu. Naannoo [IDDOO]tti dhiyoo jiran irraa BA'AA. Mul'annaan hir'achuu, aara baay'ee, fi rakkoo hargansuu eegaa. Yeroo konkolaachiftan of eeggadhaa. Hojjetoota nageenya ummataa naannoo sana keessa hojjetan eegaa, ajajajii isaaniis hordofaa. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -448297,6 +448689,10 @@
                 {
                     "text": "[DAHUU ERGITUU]: [Bakka]f akeekkachiisni bishaan danfisanii akka dhuguuf baheera, hanga [Yeroo]tti hojiirra oola. Bishaan naannoo keessanii isin dhukkubsuu danda'a. Yoo argame bishaan qaruuraa fayyadamaa. Bishaan boollaa yookaan bishaan calaltame hanga danfistutti hin dhuginaa, ittiin hin bilcheessinaa, ittiin ilkaan keessan hin rigadhaa, yookaan ittiin mana keessan hin qulqulleessinaa. Bishaan daqiiqaa SADIITAF guutummaatti akka danfu taasisaa. Bishaan sana osoo hin fayyadamin dura akka qabbanaa'u taasisaa. Bishaan danfifame hin taaneen cabbii qopheessite hin fayyadaminaa. Yoo daa'ima keessan sooruuf foormulaa fayyadamtan, isa qophaa'e fayyadamaa. Bineensonni manaa bishaan danfifame hin taane akka hin dhugne mirkaneeffadhaa. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[DAHUU ERGITUU]: [Bakka]f akeekkachiisni bishaan danfisanii akka dhuguuf baheera, kunis hanga [Yeroo]tti tura. Bishaan naannoo keessanii isin dhukkubsuu danda'a. Yoo argame bishaan qaruuraa fayyadamaa. Bishaan boollaa yookaan bishaan calaltame hanga danfistutti hin dhuginaa, ittiin hin bilcheessinaa, ittiin ilkaan keessan hin rigadhaa, yookaan ittiin mana keessan hin qulqulleessinaa. Bishaan daqiiqaa SADIITAF guutummaatti akka danfu taasisaa. Bishaan sana osoo hin fayyadamin dura akka qabbanaa'u taasisaa. Bishaan danfifame hin taaneen cabbii qopheessite hin fayyadaminaa. Yoo daa'ima keessan sooruuf foormulaa fayyadamtan, isa qophaa'e fayyadamaa. Bineensonni manaa bishaan danfifame hin taane akka hin dhugne mirkaneeffadhaa. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -448343,6 +448739,10 @@
                 {
                     "text": "[DAAHHASA ERGITUU]: [Bakka]f akeekkachiisni addaan cituu tajaajila 9-1-1 hojii irra ooleera. Yoo haalli hatattamaa uumame, maaloo poolisii, ibidda dhaamsitoota, tajaajila yaalaa, yookaan tajaajila hatattamaa biroo kallattiin lakkoofsa bilbilaa naannoo isaaniitiin qunnamaa. Yoo 9-1-1 bilbiltan, gargaarsi isin hin argamsiifamuu danda'a. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[DAAHHASA ERGITUU]: [Bakka]f akeekkachiisni addaan cituu tajaajila 9-1-1 hojiirra ooleera. Yoo haalli hatattamaa uumame, maaloo poolisii, ibidda dhaamsitoota, tajaajila yaalaa, yookaan tajaajila hatattamaa biroo lakkoofsa bilbilaa naannoo isaaniitiin kallattiin quunnamaa. Yoo 9-1-1 bilbiltan, gargaarsi isin hin argamsiifamuu danda'a. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -448387,6 +448787,10 @@
                 {
                     "text": "[ENTE EMITTENTE]: È in vigore un’EMERGENZA PER INONDAZIONE IMPROVVISA a [LUOGO] fino alle [ORA]. Si tratta di una situazione estremamente pericolosa e potenzialmente letale. Non tentate di spostarvi a meno che non stiate fuggendo da un’area a rischio di inondazione o siate soggetti a un ordine di evacuazione. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ENTITÀ EMITTENTE]: È in vigore un’EMERGENZA PER INONDAZIONE IMPROVVISA a [LUOGO] fino alle [ORA]. Si tratta di una situazione estremamente pericolosa e potenzialmente letale. Non tentate di spostarvi a meno che non stiate fuggendo da un’area a rischio di inondazione o siate soggetti a un ordine di evacuazione. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -448429,6 +448833,10 @@
                 {
                     "text": "[ENTITÀ EMITTENTE]: È in vigore un ALLARME PER VENTI ESTREMI per [LUOGO] a causa del pericolo immediato di venti potenzialmente letali fino alle [ORA]. Mettetevi al riparo SUBITO in una stanza interna di un edificio solido, lontano dalle finestre. Proteggete la testa da oggetti volanti. NON uscite all’aperto anche se il vento dovesse calmarsi! I venti torneranno rapidamente a essere pericolosi. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ENTITÀ EMITTENTE]: È in vigore un ALLARME PER VENTI ESTREMI per [LUOGO] a causa del pericolo immediato di venti potenzialmente letali fino alle [ORA]. Mettiti al riparo SUBITO in una stanza interna di un edificio solido, lontano dalle finestre. Proteggi la testa da oggetti volanti. NON uscite all’aperto anche se il vento dovesse calmarsi! I venti torneranno rapidamente a essere pericolosi. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -448471,6 +448879,10 @@
                 {
                     "text": "[ENTE EMITTENTE]: È in vigore un ALLARME INCENDIO a [LUOGO] fino alle [ORA]. Evacuate subito la vostra famiglia e gli animali domestici, senza indugiare. La visibilità nella zona sarà ridotta e le strade potrebbero essere bloccate. Se non vi allontanate subito, potreste rimanere intrappolati, ferirvi o perdere la vita. ALLONTANATEVI dalle zone vicine a [LUOGO]. Prevedete visibilità ridotta, fumo denso e difficoltà respiratorie. Prestate attenzione alla guida. Prestate attenzione al personale di pubblica sicurezza che opera nella zona e seguite le loro istruzioni. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ENTITÀ EMITTENTE]: È in vigore un ALLARME INCENDIO a [LUOGO] fino alle [ORA]. Evacuate subito la vostra famiglia e gli animali domestici, senza indugiare. La visibilità nella zona sarà ridotta e le strade potrebbero essere bloccate. Se non ve ne andate subito, potreste rimanere intrappolati, ferirvi o perdere la vita. ALLONTANATEVI dalle zone vicine a [LUOGO]. Si prevedono visibilità ridotta, fumo denso e difficoltà respiratorie. Prestate attenzione durante la guida. Prestate attenzione al personale di pubblica sicurezza che opera nella zona e seguite le loro istruzioni. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -448513,6 +448925,10 @@
                 {
                     "text": "[ENTE EMITTENTE]: È stato emesso un AVVISO DI BOLLITURA DELL’ACQUA per [LUOGO], in vigore fino alle [ORA]. L’acqua della vostra comunità può causare malesseri. Utilizzate acqua in bottiglia, se disponibile. Non bere, non cucinare, non lavarti i denti e non pulire la casa con acqua del rubinetto o acqua filtrata finché non l’avrai fatta bollire. Porta l’acqua a ebollizione completa per TRE MINUTI. Lascia raffreddare l’acqua prima di usarla. Non utilizzate ghiaccio preparato con acqua non bollita. Se utilizzate latte in polvere per nutrire il vostro bambino, utilizzate latte in polvere pronto all’uso. Assicuratevi che gli animali domestici non bevano acqua non bollita. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ENTITÀ EMITTENTE]: È stato emesso un AVVISO DI BOLLITURA DELL’ACQUA per [LUOGO], in vigore fino alle [ORA]. L’acqua della vostra comunità può causare malesseri. Utilizzate acqua in bottiglia, se disponibile. Non bere, non cucinare, non lavarti i denti né pulire la casa con acqua del rubinetto o filtrata finché non l’hai fatta bollire. Porta l’acqua a ebollizione completa per TRE MINUTI. Lascia raffreddare l’acqua prima di usarla. Non utilizzate ghiaccio preparato con acqua che non sia stata fatta bollire. Se utilizzate latte in polvere per nutrire il vostro bambino, utilizzate latte in polvere pronto all’uso. Assicuratevi che gli animali domestici non bevano acqua che non sia stata fatta bollire. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -448555,6 +448971,10 @@
                 {
                     "text": "[ENTITÀ MANDANTE]: È in vigore un AVVISO DI INTERRUZIONE DEL SERVIZIO 9-1-1 per [LUOGO]. In caso di emergenza, si prega di contattare direttamente la polizia, i vigili del fuoco, i servizi medici o altri servizi di emergenza ai rispettivi numeri di telefono locali. Se si compone il 9-1-1, potrebbe non essere possibile ricevere assistenza. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ENTITÀ MANDANTE]: È in vigore un ALLARME PER INTERRUZIONE DEL SERVIZIO 9-1-1 per [LUOGO]. In caso di emergenza, si prega di contattare direttamente la polizia, i vigili del fuoco, i servizi medici o altri servizi di emergenza ai rispettivi numeri di telefono locali. Se si compone il 9-1-1, potrebbe non essere possibile ricevere assistenza. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -448604,6 +449024,10 @@
                 {
                     "text": "[لیږونکې اداره]: د [ځای] لپاره د [وخت] پورې د ناڅاپي سېلاب بیړنی حالت نافذ دی. دا یو خورا خطرناک او د ژوند لپاره ګواښوونکی حالت دی. سفر ته هڅه مه کوئ، مګر دا چې تاسو له داسې سیمې څخه تښتئ چې ممکن سېلاب ونیسي، یا د تخلیې امر مو پر تاسو وي. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[لیږونکې اداره]: د [ځای] لپاره د [وخت] پورې د ناڅاپي سېلاب بیړنی حالت نافذ دی. دا یو خورا خطرناک او د ژوند لپاره ګواښوونکی حالت دی. سفر ته هڅه مه کوئ، مګر دا چې تاسو له داسې سیمې څخه تښتئ چې ممکن سېلاب ونیسي، یا د تخلیې امر مو پر تاسو وي. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -448646,6 +449070,10 @@
                 {
                     "text": "[لیږونکې اداره]: د [ځای] لپاره د [وخت] پورې د ژوند ګواښونکو بادونو د سمدستي خطر له امله د سختو بادونو خبرداری په اغېز کې دی. همدا اوس د یوې کلکې ودانۍ په داخلي کوټه کې، له کړکیو لرې پناه واخلئ. خپل سر د الوتونکو شیانو څخه وساتئ. که باد ارام شي هم بهر مه وځئ! بادونه به ژر بېرته خطرناک شي. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[لیږونکې اداره]: د [ځای] لپاره د [وخت] پورې د ژوند ګواښونکو بادونو د سمدستي خطر له امله د سختو بادونو خبرداری په اغېز کې دی. همدا اوس د یوې کلکې ودانۍ په داخلي کوټه کې، له کړکیو لرې پناه واخلئ. خپل سر د الوتونکو شیانو څخه وساتئ. که باد ارام شي هم بهر مه وځئ! بادونه به ژر بېرته خطرناک شي. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -448688,6 +449116,10 @@
                 {
                     "text": "[لیږونکې اداره]: په [ځای] کې د اور لګېدنې خبرداری تر [وخت] پورې په اغېز کې دی. خپله کورنۍ او څاروي اوس له دې ځایه وباسئ، ځنډ مه کوئ. په سیمه کې به لید کم وي او سړکونه ممکن بند شي. که تاسو اوس ونه وځئ، ممکن بند پاتې شئ، ټپي شئ، یا ووژل شئ. د [ځای] شاوخوا سیمو ته له ورتګ څخه ډډه وکړئ. د لید کموالي، ګڼ لوګي، او د ساه اخیستلو ستونزو تمه ولرئ. د موټر چلولو پر مهال محتاط اوسئ. په سیمه کې د عامه خوندیتوب کارکوونکو ته پام وکړئ او د هغوی لارښوونې تعقیب کړئ. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[لیږونکې اداره]: په [ځای] کې د اور لګېدنې خبرداری تر [وخت] پورې په اغېز کې دی. خپله کورنۍ او څاروي اوس له دې ځایه وباسئ، ځنډ مه کوئ. په سیمه کې به لید کم وي او سړکونه ممکن بند شي. که تاسو اوس ونه وځئ، ممکن بند پاتې شئ، ټپي شئ، یا ووژل شئ. د [ځای] شاوخوا سیمو ته له ورتګ څخه ډډه وکړئ. د لید کموالي، ګڼ لوګي، او د ساه اخیستلو ستونزو تمه ولرئ. د موټر چلولو پر مهال محتاط اوسئ. په سیمه کې د عامه خوندیتوب کارکوونکو ته پام وکړئ او د هغوی لارښوونې تعقیب کړئ. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -448730,6 +449162,10 @@
                 {
                     "text": "[لیږونکې اداره]: د [ځای] لپاره د اوبو جوشولو خبرتیا صادره شوې او تر [وخت] پورې به په اغېز کې وي. ستاسو په سیمه کې اوبه کیدای شي تاسو ناروغ کړي. که شتون ولري، له بوتلونو اوبه وکاروئ. تر هغه وخته پورې چې اوبه جوش نه کړئ، د نل یا فلټر شويو اوبو څخه د څښلو، پخلي کولو، د غاښونو مینځلو، یا د کور پاکولو لپاره کار مه اخلئ. اوبه د دریو دقیقو لپاره په ښه توګه جوش کړئ. د کارولو دمخه اوبه یخې کړئ. له هغه اوبو څخه جوړ شوی یخ مه کاروئ چې نه دي ايشول شوي. که تاسو خپل ماشوم ته د شیدو فارمولا کاروئ، نو له مخکې چمتو شوې فارمولا وکاروئ. ډاډ ترلاسه کړئ چې کورني څاروي هغه اوبه نه څښي چې نه دي ايشول شوي. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[لیږونکې اداره]: د [ځای] لپاره د اوبو جوشولو خبرتیا صادره شوې او تر [وخت] پورې به په اغېز کې وي. ستاسو په سیمه کې اوبه کیدای شي تاسو ناروغ کړي. که شتون ولري، له بوتلونو اوبه وکاروئ. تر هغه وخته پورې چې اوبه جوش نه کړئ، د نل یا فلټر شويو اوبو څخه د څښلو، پخلي کولو، د غاښونو مینځلو، یا د کور پاکولو لپاره کار مه اخلئ. اوبه د دریو دقیقو لپاره په پوره جوش سره ومینځئ. د کارولو دمخه اوبه یخې کړئ. له هغه اوبو څخه جوړ شوی یخ مه کاروئ چې نه دي ايشول شوي. که تاسو خپل ماشوم ته د شیدو فارمولا کاروئ، نو له مخکې چمتو شوې فارمولا وکاروئ. ډاډ ترلاسه کړئ چې کورني ژوي هغه اوبه نه څښي چې نه دي ايشول شوي. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -448772,6 +449208,10 @@
                 {
                     "text": "[لیږونکې اداره]: د [ځای] لپاره د ۹-۱-۱ د خرابوالي خبرتیا په اغېز کې ده. مهرباني وکړئ د بیړني حالت په صورت کې د پولیسو، اور وژنې، طبي، یا نورو بیړنیو خدماتو سره د هغوی په سیمه ییزو تلیفون شمېرو مستقیمه اړیکه ونیسئ. که تاسو ۹-۱-۱ ته زنګ ووهئ، ممکن مرسته درسره ونه شي. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[لیږونکې اداره]: د [ځای] لپاره د ۹-۱-۱ د خرابوالي خبرتیا په اغېز کې ده. مهرباني وکړئ د بیړني حالت په صورت کې د پولیسو، اور وژنې، طبي، یا نورو بیړنیو خدماتو سره د هغوی په سیمه ییزو تلیفون شمېرو مستقیمه اړیکه ونیسئ. که تاسو ۹-۱-۱ ته زنګ ووهئ، ممکن مرسته درسره ونه شي. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -448816,6 +449256,10 @@
                 {
                     "text": "[அனுப்பும் முகமை]: [இடம்]-இல் [நேரம்] வரை வெள்ளப்பெருக்கு அவசரநிலை அமலில் உள்ளது. இது மிகவும் அபாயகரமான மற்றும் உயிருக்கு ஆபத்தான சூழ்நிலையாகும். வெள்ளம் வரக்கூடிய பகுதியிலிருந்து நீங்கள் வெளியேறவில்லை என்றாலோ அல்லது வெளியேறுமாறு உத்தரவிடப்படவில்லை என்றாலோ பயணம் செய்ய முயற்சிக்க வேண்டாம். [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[அனுப்பும் நிறுவனம்]: [இடம்]-இல் [நேரம்] வரை பெருவெள்ள அவசரநிலை அமலில் உள்ளது. இது மிகவும் அபாயகரமான மற்றும் உயிருக்கு ஆபத்தான சூழ்நிலையாகும். வெள்ளம் வரக்கூடிய பகுதியிலிருந்து நீங்கள் வெளியேறவில்லை என்றாலோ அல்லது வெளியேறுமாறு உத்தரவிடப்படவில்லை என்றாலோ பயணம் செய்ய முயற்சிக்க வேண்டாம். [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -448858,6 +449302,10 @@
                 {
                     "text": "[அனுப்பும் முகமை]: [இடம்]-க்கு, உயிருக்கு ஆபத்தை விளைவிக்கும் பலத்த காற்று உடனடி அபாயம் இருப்பதால், [நேரம்] வரை தீவிர காற்று எச்சரிக்கை அமலில் உள்ளது. இப்போதே ஒரு உறுதியான கட்டிடத்தின் உட்புற அறையில், ஜன்னல்களுக்கு விலகி, பாதுகாப்பு தேடுங்கள். பறக்கும் பொருட்களிலிருந்து உங்கள் தலையைப் பாதுகாத்துக் கொள்ளுங்கள். காற்று தணிக்கையடைந்தாலும் வெளியே செல்ல வேண்டாம்! காற்று மீண்டும் விரைவில் அபாயகரமானதாக மாறும். [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[அனுப்பும் முகமை]: [இடம்]-க்கு, உயிருக்கு ஆபத்தை விளைவிக்கும் பலத்த காற்று உடனடியாக வீசும் அபாயம் இருப்பதால், [நேரம்] வரை தீவிர காற்று எச்சரிக்கை அமலில் உள்ளது. இப்போதே ஒரு உறுதியான கட்டிடத்தின் உட்புற அறையில், ஜன்னல்களுக்கு விலகிப் பாதுகாப்பான இடத்திற்குச் செல்லவும். பறக்கும் பொருட்களிலிருந்து உங்கள் தலையைப் பாதுகாக்கவும். காற்று தணிக்கையடைந்தாலும் வெளியே செல்ல வேண்டாம்! காற்று மீண்டும் விரைவில் அபாயகரமானதாக மாறும். [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -448900,6 +449348,10 @@
                 {
                     "text": "[அனுப்பும் நிறுவனம்]: [இடம்]-இல் [நேரம்] வரை தீ எச்சரிக்கை அமலில் உள்ளது. உங்கள் குடும்பத்தினரையும் செல்லப்பிராணிகளையும் இப்போதே வெளியேற்றுங்கள், தாமதப்படுத்த வேண்டாம். பகுதியில் பார்வைக் குறைபாடு ஏற்படும் மற்றும் சாலைகள் தடைபடக்கூடும். நீங்கள் இப்போது வெளியேறாவிட்டால், நீங்கள் சிக்கிக்கொள்ளலாம், காயமடையலாம் அல்லது கொல்லப்படலாம். [இடம்] அருகிலுள்ள பகுதிகளை விட்டு வெளியேறுங்கள். பார்வைக் குறைபாடு, அடர்த்தியான புகை மற்றும் சுவாசத்தில் சிரமம் ஆகியவற்றை எதிர்பார்க்கவும். வாகனம் ஓட்டும்போது கவனமாக இருங்கள். அப்பகுதியில் பணியாற்றும் பொதுப் பாதுகாப்புப் பணியாளர்களைக் கவனித்து, அவர்களின் அறிவுரைகளைப் பின்பற்றவும். [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[அனுப்பும் நிறுவனம்]: [இடம்]-இல் [நேரம்] வரை தீ எச்சரிக்கை அமலில் உள்ளது. உங்கள் குடும்பத்தினரையும் செல்லப்பிராணிகளையும் இப்போதே வெளியேற்றுங்கள், தாமதப்படுத்தாதீர்கள். பகுதியில் பார்வைக் குறைபாடு ஏற்படும் மற்றும் சாலைகள் தடுக்கப்படலாம். நீங்கள் இப்போது வெளியேறினால்தான், சிக்கி, காயமடைய அல்லது கொல்லப்படாமல் இருக்க முடியும். [இடம்] அருகிலுள்ள பகுதிகளை விட்டு வெளியேறுங்கள். பார்வைக் குறைபாடு, அடர்த்தியான புகை மற்றும் சுவாசத்தில் சிரமம் ஆகியவற்றை எதிர்பார்க்கலாம். வாகனம் ஓட்டும்போது கவனமாக இருங்கள். அப்பகுதியில் பணியாற்றும் பொதுப் பாதுகாப்புப் பணியாளர்களைக் கவனித்து, அவர்களின் அறிவுரைகளைப் பின்பற்றுங்கள். [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -448942,6 +449394,10 @@
                 {
                     "text": "[அனுப்பும் முகமை]: [இடம்]-க்கு குடிநீரை கொதிக்கவைத்துப் பயன்படுத்துமாறு எச்சரிக்கை விடுக்கப்பட்டுள்ளது, இது [நேரம்] வரை அமலில் இருக்கும். உங்கள் பகுதியில் உள்ள நீர் உங்களை நோய்வாய்ப்படுத்தக்கூடும். கிடைத்தால் பாட்டில் நீரைப் பயன்படுத்தவும். குடிநீரைக் கொதிக்க வைக்கும் வரை, குழாய் நீர் அல்லது வடிகட்டிய நீரைக் குடிக்கவோ, சமைக்கவோ, பல் துலக்கவோ அல்லது வீட்டைச் சுத்தம் செய்யவோ பயன்படுத்த வேண்டாம். தண்ணீரை முழுமையாகக் கொதிக்க வைத்து, மூன்று நிமிடங்கள் கொதிக்க விடவும். பயன்படுத்தும் முன் தண்ணீரை ஆற விடவும். கொதிக்க வைக்கப்படாத நீரில் செய்யப்பட்ட பனிக்கட்டியைப் பயன்படுத்த வேண்டாம். உங்கள் குழந்தைக்கு உணவளிக்க நீங்கள் ஃபார்முலா பயன்படுத்தினால், பயன்படுத்தத் தயாராக உள்ள ஃபார்முலாவைப் பயன்படுத்தவும். செல்லப்பிராணிகள் கொதிக்க வைக்கப்படாத நீரைக் குடிப்பதை உறுதிசெய்யவும். [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[அனுப்பும் முகமை]: [இடம்]-க்கு குடிநீரை கொதிக்கவைத்துப் பயன்படுத்துவதற்கான எச்சரிக்கை விடுக்கப்பட்டுள்ளது, இது [நேரம்] வரை அமலில் இருக்கும். உங்கள் பகுதியில் உள்ள நீர் உங்களை நோய்வாய்ப்படுத்தக்கூடும். கிடைத்தால் பாட்டில் நீரைப் பயன்படுத்தவும். குழாய் நீர் அல்லது வடிகட்டிய நீரை காய்ச்சி அருந்தும் வரை, சமைக்கவும், பல் துலக்கவும், அல்லது உங்கள் வீட்டை சுத்தம் செய்யவும் பயன்படுத்த வேண்டாம். நீரை முழுமையாக கொதிக்க வைத்து, மூன்று நிமிடங்கள் கொதிக்க விடவும். பயன்படுத்துவதற்கு முன்பு நீரை ஆற விடவும். கொதிக்க வைக்கப்படாத நீரில் செய்யப்பட்ட பனிக்கட்டியைப் பயன்படுத்த வேண்டாம். உங்கள் குழந்தைக்கு உணவளிக்க நீங்கள் ஃபார்முலா பயன்படுத்தினால், பயன்படுத்தத் தயாராக உள்ள ஃபார்முலாவைப் பயன்படுத்தவும். செல்லப்பிராணிகள் கொதிக்க வைக்கப்படாத நீரைக் குடிப்பதை உறுதிசெய்யவும். [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -448984,6 +449440,10 @@
                 {
                     "text": "[அனுப்பும் நிறுவனம்]: [இடம்]-க்கு 9-1-1 சேவைத் தடை எச்சரிக்கை நடைமுறையில் உள்ளது. அவசர காலத்தில், தயவுசெய்து காவல்துறை, தீயணைப்பு, மருத்துவம் அல்லது பிற அவசர சேவைகளை அவர்களின் உள்ளூர் தொலைபேசி எண்களில் நேரடியாகத் தொடர்பு கொள்ளவும். நீங்கள் 9-1-1-ஐ அழைத்தால், உங்களுக்கு உதவி கிடைக்காமல் போகலாம். [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[அனுப்பும் நிறுவனம்]: [இடம்]-க்கு 9-1-1 சேவைத் தடை எச்சரிக்கை நடைமுறையில் உள்ளது. அவசர காலத்தில், தயவுசெய்து காவல்துறை, தீயணைப்பு, மருத்துவம் அல்லது பிற அவசர சேவைகளை அவர்களின் உள்ளூர் தொலைபேசி எண்களில் நேரடியாகத் தொடர்பு கொள்ளவும். நீங்கள் 9-1-1-ஐ அழைத்தால், உங்களுக்கு உதவி கிடைக்காமல் போகலாம். [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449028,6 +449488,10 @@
                 {
                     "text": "[URL] .יוניפ תארוה םתלביקש וא ףצוהל לולעש רוזאמ םיטלמנ םתא ןכ םא אלא עוסנל תוסנל ןיא .םייח ןכסמה רתויב ןכוסמ בצמב רבודמ .[העש] העשה דע [םוקימ]-ב ימואתפ ןופטיש לשב םוריח בצמ זרכוה :[רדשמה ףוג]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .יוניפ תארוה םתלביקש וא ףצוהל לולעש רוזאמ םיטלמנ םתא ןכ םא אלא עוסנל תוסנל ןיא .םייח ןכסמה רתויב ןכוסמ בצמב רבודמ .[העש] העשה דע [םוקימ]-ב ימואתפ ןופטיש לשב םוריח בצמ זרכוה :[רדשמה ףוג]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449070,6 +449534,10 @@
                 {
                     "text": "[URL] .תונכוסמ תויהל הרהמב ורזחי תוחורה !תעגרנ חורה םא םג הצוחה ואצת לא .םיפע םיצפח ינפמ שארה לע ונגה .תונולחמ קחרה ,ביצי הנבמ לש ימינפ רדחב תעכ הסחמ ואצמ .[העש] העשה דע םייח תונכסמה תוחור לש תידיימ הנכס לשב [םוקימ]-ב ףקותב תינוציק חור תרהזא :[רדשמה ףוג]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .תונכוסמ תויהל הרהמב ורזחי תוחורה !תעגרנ חורה םא םג הצוחה ואצת לא .םיפע םיצפח ינפמ שארה לע ונגה .תונולחמ קחרה ,ביצי הנבמ לש ימינפ רדחב תעכ הסחמ ואצמ .[העש] העשה דע םייח תונכסמה תוחור לש תידיימ הנכס לשב [םוקימ]-ב ףקותב תינוציק חור תרהזא :[רדשמה ףוג]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449112,6 +449580,10 @@
                 {
                     "text": "[URL] .םהיתוארוה יפל ולעפו רוזאב םילעופה ןוחטיבה תוחוכ ישנאל בל ומיש .תוריהזב ועס .המישנ יישקו דבכ ןשע ,תלבגומ תוארל ופצ .[םוקימ]ל םיכומסה םירוזאה תא ובזע .גרהיהל וא עצפיהל ,דכליהל םילולע םתא ,תעכ ובזעת אל םא .םסחיהל םילולע םישיבכהו תלבגומ היהת רוזאב תואר .והמהמתת לא ,דימ םכלש דמחמה תויחו םכתחפשמ תא ונפ .[העש] דע ףקותב [םוקימ]-ב הפירש תרהזא :[םסרפמה ףוגה]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .םהיתוארוה יפל ולעפו רוזאב םילעופה ןוחטיבה תוחוכ ישנאל בל ומיש .תוריהזב ועס .המישנ יישקו דבכ ןשע ,תלבגומ תוארל ופצ .[םוקימ]ל םיכומסה םירוזאה תא ובזע .גרהיהל וא עצפיהל ,דכליהל םילולע םתא ,תעכ ובזעת אל םא .םסחיהל םילולע םישיבכהו תלבגומ היהת רוזאב תואר .והמהמתת לא ,דימ םכלש דמחמה תויחו םכתחפשמ ינב תא ונפ .[העש] דע ףקותב [םוקימ]-ב הפירש תרהזא :[םסרפמה ףוגה]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -449154,6 +449626,10 @@
                 {
                     "text": "[URL] .וחתרוה אלש םימ תותוש ןניא דמחמ תויחש ואדו .שומישל הנכומ תבוכרתב ושמתשה ,תוקוניתל ןוזמ תבוכרתב םכדלי תא םיליכאמ םתא םא .וחתרוה אלש םיממ ןכוהש חרקב שמתשהל ןיא .שומישה ינפל ררקתהל םימל ונת .תוקד שולש ךשמל האלמ החיתרל םימה תא ואיבה .םתוא וחיתרתש דע םיננוסמ םימב וא זרב ימב תיבה תא תוקנל וא םייניש חצחצל ,לשבל ,תותשל ןיא .ןתינ םא ,םיקובקבמ םימב ושמתשה .תולחמל םורגל םילולע םכלש הליהקב םימה .[העש] דע ףקותב איהו ,[םוקימ] רובע \"םימ תחתרהב ךרוצ לע הארתה\" זרכוה :[םסרפמה ףוגה]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .וחתרוה אלש םימ תותוש ןניא דמחמ תויחש ואדו .שומישל הנכומ תבוכרתב ושמתשה ,תוקוניתל ןוזמ תבוכרתב םכדלי תא םיליכאמ םתא םא .וחתרוה אלש םיממ ןכוהש חרקב שמתשהל ןיא .שומישה ינפל ררקתהל םימל ונת .תוקד שולש ךשמל האלמ החיתרל םימה תא ואיבה .םתוא וחיתרתש דע םיננוסמ םימב וא זרב ימב תיבה תא תוקנל וא םייניש חצחצל ,לשבל ,תותשל ןיא .שי םא ,םיקובקבמ םימב ושמתשה .תולחמל םורגל םילולע םכלש הליהקב םימה .[העש] דע ףקותב איהו [םוקימ] רובע \"םימ תחתרה\" תרהזא הזרכוה :[םסרפמה ףוגה]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -449196,6 +449672,10 @@
                 {
                     "text": "[URL] .הרזע ולבקת אלש ןכתיי ,9-1-1 וגייחת םא .םהלש םיימוקמה ןופלטה ירפסמ תועצמאב םירחא םוריח יתורישל וא האופרה יתורישל ,תואבכל ,הרטשמל תורישי ונפ אנא ,םוריח הרקמב .[םוקימ]-ב ףקותב 9-1-1 םוריחה וקב םישוביש לע הארתה :[חלושה ףוגה]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[URL] .הרזע ולבקת אלש ןכתיי ,9-1-1-ל ורשקתת םא .םהלש םיימוקמה ןופלטה ירפסמ תועצמאב םירחא םוריח יתורישל וא האופרה יתורישל ,תואבכל ,הרטשמל תורישי ונפ אנא ,םוריח הרקמב .[םוקימ]-ב ףקותב 9-1-1 תורישב שוביש לע הארתה :[חלושה ףוגה]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449245,6 +449725,10 @@
                 {
                     "text": "[पठाउने निकाय]: [स्थान] मा [समय] सम्म बाढी आपतकाल लागू छ। यो अत्यन्तै खतरनाक र ज्यान जोखिमपूर्ण अवस्था हो। बाढी आउन सक्ने क्षेत्रबाट भाग्न वा निकासी आदेश अन्तर्गत नभएसम्म यात्रा नगर्नुहोस्। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[पठाउने निकाय]: [स्थान] मा [समय] सम्म बाढी आपतकाल लागू छ। यो अत्यन्तै खतरनाक र ज्यान जोखिमपूर्ण अवस्था हो। बाढी आउन सक्ने क्षेत्रबाट भाग्न वा निकासी आदेश अन्तर्गत नभएसम्म यात्रा नगर्नुहोस्। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449287,6 +449771,10 @@
                 {
                     "text": "[पठाउने निकाय]: [स्थान] का लागि [समय] सम्म जीवनघातक हावाको तत्काल खतराका कारण अत्यधिक हावाको चेतावनी लागू गरिएको छ। अहिले नै बलियो भवनको भित्री कोठामा झ्यालबाट टाढा सुरक्षित स्थानमा जानुहोस्। उड्ने वस्तुहरूबाट आफ्नो टाउको जोगाउनुहोस्। हावा शान्त भए पनि बाहिर ननिस्कनुहोस्! हावा चाँडै फेरि खतरनाक हुनेछ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[पठाउने निकाय]: [स्थान] का लागि [समय] सम्म जीवनघातक हावाको तत्काल खतराका कारण अत्यधिक हावाको चेतावनी लागू गरिएको छ। अहिले नै बलियो भवनको भित्री कोठामा झ्यालबाट टाढा सुरक्षित स्थानमा जानुहोस्। उड्ने वस्तुहरूबाट आफ्नो टाउको जोगाउनुहोस्। हावा शान्त भए पनि बाहिर ननिस्कनुहोस्! हावा चाँडै फेरि खतरनाक हुनेछ। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449329,6 +449817,10 @@
                 {
                     "text": "[पठाउने निकाय]: [स्थान] मा [समय] सम्म आगोको चेतावनी लागू छ। आफ्नो परिवार र घरपालुवा जनावरहरूलाई अहिले नै सुरक्षित स्थानमा सार्नुहोस्, ढिला नगर्नुहोस्। क्षेत्रमा दृश्यता कम हुनेछ र सडकहरू अवरुद्ध हुन सक्छन्। यदि तपाईं अहिले नै बाहिर निस्कनुभएन भने, तपाईं फस्न, घाइते हुन वा मृत्यु हुन सक्नुहुन्छ। [स्थान] नजिकका क्षेत्रहरू छोड्नुहोस्। दृश्यता कम, बाक्लो धुवाँ र सास फेर्न गाह्रो हुने अपेक्षा गर्नुहोस्। गाडी चलाउँदा सावधान रहनुहोस्। क्षेत्रमा कार्यरत सार्वजनिक सुरक्षाकर्मीहरूलाई हेर्नुहोस् र उनीहरूको निर्देशन पालना गर्नुहोस्। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[पठाउने निकाय]: [स्थान] मा [समय] सम्म आगोको चेतावनी लागू छ। आफ्नो परिवार र घरपालुवा जनावरहरूलाई अहिले नै सुरक्षित स्थानमा सार्नुहोस्, ढिला नगर्नुहोस्। क्षेत्रमा दृश्यता कम हुनेछ र सडकहरू अवरुद्ध हुन सक्छन्। यदि तपाईं अहिले नै बाहिर निस्कनुभएन भने, तपाईं फस्न, घाइते हुन वा मृत्यु हुन सक्नुहुन्छ। [स्थान] नजिकका क्षेत्रहरू छोड्नुहोस्। दृश्यता कम, बाक्लो धुवाँ र सास फेर्न गाह्रो हुने अपेक्षा गर्नुहोस्। गाडी चलाउँदा सावधान रहनुहोस्। क्षेत्रमा कार्यरत सार्वजनिक सुरक्षाकर्मीहरूलाई हेर्नुहोस् र उनीहरूको निर्देशन पालना गर्नुहोस्। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -449371,6 +449863,10 @@
                 {
                     "text": "[पठाउने निकाय]: [स्थान] का लागि पानी उमाल्ने चेतावनी जारी गरिएको छ र यो [समय] सम्म लागू हुनेछ। तपाईंको समुदायको पानीले तपाईंलाई बिरामी बनाउन सक्छ। उपलब्ध भएमा बोतलको पानी प्रयोग गर्नुहोस्। पानी उमाले बिना धाराको वा फिल्टर गरिएको पानी पिउनु, पकाउनु, दाँत माझ्नु वा घर सफा गर्न प्रयोग नगर्नुहोस्। पानीलाई तीन मिनेटसम्म राम्ररी उमाल्नुहोस्। प्रयोग गर्नु अघि पानीलाई चिसो हुन दिनुहोस्। उमालिएको पानीले बनाएको बरफ प्रयोग नगर्नुहोस्। यदि तपाईंले आफ्नो बच्चालाई दूध खुवाउन फर्मुला प्रयोग गर्नुहुन्छ भने, तयार-प्रयोग फर्मुला प्रयोग गर्नुहोस्। घरपालुवा जनावरहरूले नउमालिएको पानी नपिउनुहोस् भनी सुनिश्चित गर्नुहोस्। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[पठाउने निकाय]: [स्थान] का लागि पानी उमाल्ने चेतावनी जारी गरिएको छ र यो [समय] सम्म लागू हुनेछ। तपाईंको समुदायको पानीले तपाईंलाई बिरामी बनाउन सक्छ। उपलब्ध भएमा बोतलको पानी प्रयोग गर्नुहोस्। पानी उमाले बिना धाराको वा फिल्टर गरिएको पानी पिउनु, पकाउनु, दाँत माझ्नु वा घर सफा गर्न प्रयोग नगर्नुहोस्। पानीलाई तीन मिनेटसम्म राम्ररी उमाल्नुहोस्। प्रयोग गर्नु अघि पानीलाई चिसो हुन दिनुहोस्। उमालिएको पानीले बनाएको बरफ प्रयोग नगर्नुहोस्। यदि तपाईंले आफ्नो बच्चालाई दूध खुवाउन फर्मुला प्रयोग गर्नुहुन्छ भने, तयार-प्रयोग फर्मुला प्रयोग गर्नुहोस्। घरपालुवा जनावरहरूले नउमालिएको पानी नपिउनुहोस् भनी सुनिश्चित गर्नुहोस्। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -449413,6 +449909,10 @@
                 {
                     "text": "[पठाउने निकाय]: [स्थान] का लागि ९-१-१ सेवा अवरोध चेतावनी लागू छ। आपतकालीन अवस्थामा कृपया प्रहरी, दमकल, स्वास्थ्य सेवा वा अन्य आपतकालीन सेवाहरूलाई उनीहरूको स्थानीय फोन नम्बरमा सिधै सम्पर्क गर्नुहोस्। यदि तपाईंले ९-१-१ डायल गर्नुभयो भने, तपाईंले सहयोग नपाउन सक्नुहुन्छ। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[पठाउने निकाय]: [स्थान] का लागि ९-१-१ सेवा अवरोध चेतावनी लागू छ। आपतकालीन अवस्थामा कृपया प्रहरी, दमकल, स्वास्थ्य सेवा वा अन्य आपतकालीन सेवाहरूलाई उनीहरूको स्थानीय फोन नम्बरमा सिधै सम्पर्क गर्नुहोस्। यदि तपाईंले ९-१-१ डायल गर्नुभयो भने, तपाईंले सहयोग नपाउन सक्नुहुन्छ। [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449457,6 +449957,10 @@
                 {
                     "text": "[ပို့ဆောင်ရေးအေဂျင်စီ] သည် [တည်နေရာ] တွင် [အချိန်] အထိ မိုးရေကြီးမြန်မြန်အရေးပေါ်သတိပေးချက် ထုတ်ပြန်ထားပါသည်။ ဤအခြေအနေသည် အလွန်အန္တရာယ်ရှိပြီး အသက်အန္တရာယ်ကို ထိခိုက်စေနိုင်ပါသည်။ မိုးရေကြီးနိုင်သည့် ဒေသမှ ထွက်ပြေးနေသူများ သို့မဟုတ် ထွက်ခွာရန် အမိန့်ထုတ်ထားသူများမှသာ ခရီးထွက်ရန် ကြိုးစားပါ၊ အခြားသူများ မခရီးထွက်သင့်ပါ။ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ပို့ဆောင်ရေးအေဂျင်စီ] သည် [တည်နေရာ] တွင် [အချိန်] အထိ မိုးရေကြီးမြန်မြန်အရေးပေါ်သတိပေးချက် ထုတ်ပြန်ထားပါသည်။ ဤအခြေအနေသည် အလွန်အန္တရာယ်ရှိပြီး အသက်အန္တရာယ်ကို ထိခိုက်စေနိုင်ပါသည်။ မိုးရေကြီးနိုင်သည့် ဒေသမှ ထွက်ပြေးနေသူများ သို့မဟုတ် ထွက်ခွာရန် အမိန့်ထုတ်ထားသူများမှသာ ခရီးထွက်ရန် ကြိုးစားပါ၊ မဟုတ်ပါက မခရီးထွက်ပါနှင့်။ [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449499,6 +450003,10 @@
                 {
                     "text": "[ပို့ဆောင်ရေးအေဂျင်စီ] မှ [တည်နေရာ] အတွက် အသက်အန္တရာယ်ဖြစ်စေနိုင်သည့် ပြင်းထန်သော လေပြင်းသတိပေးချက်ကို [အချိန်] အထိ ထုတ်ပြန်ထားပါသည်။ ခိုင်ခံ့သော အဆောက်အဦးအတွင်း ပြတင်းပေါက်များမှ ဝေးသော နေရာတစ်ခုတွင် ချက်ချင်းကာကွယ်ပါ။ ပျံသန်းလာနိုင်သည့် ပစ္စည်းများမှ ဦးခေါင်းကို ကာကွယ်ပါ။ လေတိတ်သွားပါကလည်း ပြင်ပသို့ မထွက်ပါနှင့်! လေပြန်လည်အန္တရာယ်ဖြစ်လာနိုင်ပါသည်။ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ပို့ဆောင်ရေးအေဂျင်စီ] မှ [တည်နေရာ] အတွက် အသက်အန္တရာယ်ဖြစ်စေနိုင်သည့် ပြင်းထန်သော လေပြင်းသတိပေးချက်ကို [အချိန်] အထိ ထုတ်ပြန်ထားပါသည်။ ခိုင်ခံ့သော အဆောက်အဦးအတွင်း ပြတင်းပေါက်များမှ ဝေးသော နေရာတစ်ခုတွင် ချက်ချင်းကာကွယ်ပါ။ ပျံသန်းလာနိုင်သည့် ပစ္စည်းများမှ ဦးခေါင်းကို ကာကွယ်ပါ။ လေတိတ်သွားပါကလည်း ပြင်ပသို့ မထွက်ပါနှင့်! လေပြန်လည်အန္တရာယ်ဖြစ်လာနိုင်ပါသည်။ [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449541,6 +450049,10 @@
                 {
                     "text": "[ပို့ဆောင်ရေးအေဂျင်စီ]: [တည်နေရာ] တွင် မီးသတိပေးချက်သည် [အချိန်] အထိ ဆောင်ရွက်နေပါသည်။ မိသားစုနှင့် အိမ်မွေးတိရစ္ဆာန်များကို ယခုချက်ချင်း ထွက်ခွာကာ နောက်ကျမနေပါနှင့်။ ဧရိယာအတွင်း မြင်ကွင်းကျဆင်းပြီး လမ်းများ ပိတ်ဆို့နိုင်ပါသည်။ ယခုထွက်မလာပါက ဖမ်းဆီးခံရခြင်း၊ ဒဏ်ရာရခြင်း သို့မဟုတ် သေဆုံးနိုင်ပါသည်။ [LOCATION] အနီးရှိ ဧရိယာများမှ ထွက်ခွာပါ။ မြင်ကွင်းကျဆင်းခြင်း၊ မီးခိုးထူထပ်ခြင်းနှင့် အသက်ရှူခက်ခဲခြင်းများ ဖြစ်နိုင်ပါသည်။ မောင်းနှင်ရာတွင် သတိထားပါ။ ဧရိယာအတွင်း လုံခြုံရေးဝန်ထမ်းများ၏ လမ်းညွှန်ချက်များကို လိုက်နာပါ။ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ပို့ဆောင်ရေးအေဂျင်စီ]: [တည်နေရာ] တွင် မီးသတိပေးချက်သည် [အချိန်] အထိ ဆောင်ရွက်နေပါသည်။ မိသားစုနှင့် အိမ်မွေးတိရစ္ဆာန်များကို ယခုချက်ချင်း ထွက်ခွာကာ နောက်ကျမနေပါနှင့်။ ဧရိယာအတွင်း မြင်ကွင်းကျဆင်းပြီး လမ်းများ ပိတ်ဆို့နိုင်ပါသည်။ ယခုထွက်မလာပါက ဖမ်းဆီးခံရခြင်း၊ ဒဏ်ရာရခြင်း သို့မဟုတ် သေဆုံးနိုင်ပါသည်။ [LOCATION] အနီးရှိ ဧရိယာများမှ ထွက်ခွာပါ။ မြင်ကွင်းကျဆင်းခြင်း၊ မီးခိုးထူထပ်ခြင်းနှင့် အသက်ရှူခက်ခဲခြင်းများ ဖြစ်နိုင်ပါသည်။ မောင်းနှင်ရာတွင် သတိထားပါ။ ဧရိယာအတွင်း လုံခြုံရေးဝန်ထမ်းများ၏ လမ်းညွှန်ချက်များကို လိုက်နာပါ။ [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -449583,6 +450095,10 @@
                 {
                     "text": "[ပို့ဆောင်ရေးအေဂျင်စီ] မှ [တည်နေရာ] အတွက် ရေပြုတ်သောက်ရန် သတိပေးချက် ထုတ်ပြန်ထားပြီး [အချိန်] အထိ သက်တမ်းရှိပါသည်။ သင့်ဒေသရှိ ရေကြောင့် ကျန်းမာရေးထိခိုက်နိုင်ပါသည်။ ရရှိနိုင်ပါက ဘူးရေ သောက်ပါ။ ရေချိုင့်ရေ သို့မဟုတ် စစ်ထုတ်ထားသော ရေကို မချက်မီ မသောက်၊ မချက်မီ မချက်ပြုတ်၊ မချက်မီ သွားတိုက်၊ မချက်မီ အိမ်သန့်ရှင်းရေး မလုပ်ပါနှင့်။ ရေကို ပြင်းပြင်းထန်ထန် တစ်မိနစ်သုံးချက် (၃ မိနစ်) ပြုတ်ပါ။ အသုံးမပြုမီ ရေအေးအောင် ခဏစောင့်ပါ။ မပြုတ်ထားသော ရေဖြင့် ပြုလုပ်ထားသည့် ရေခဲကို မသုံးပါနှင့်။ ကလေးအား နို့မှုန့်ဖြင့် ကျွေးမည့်အခါ အသုံးပြုရန် ပြင်ဆင်ပြီးသား နို့မှုန့်ကိုသာ သုံးပါ။ အိမ်မွေးတိရစ္ဆာန်များ မပြုတ်ထားသော ရေမသောက်စေရန် သေချာစေပါ။ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ပို့ဆောင်ရေးအေဂျင်စီ] မှ [တည်နေရာ] အတွက် ရေပြုတ်သောက်ရန် သတိပေးချက် ထုတ်ပြန်ထားပြီး [အချိန်] အထိ သက်တမ်းရှိပါသည်။ သင့်ဒေသရှိ ရေကြောင့် ကျန်းမာရေးထိခိုက်နိုင်ပါသည်။ ရရှိနိုင်ပါက ဘူးရေ သောက်ပါ။ ရေချိုင့်ရေ သို့မဟုတ် စစ်ထုတ်ထားသော ရေကို မချက်မီ မသောက်၊ မချက်မီ မချက်ပြုတ်၊ မချက်မီ သွားတိုက်၊ မချက်မီ အိမ်သန့်ရှင်းရေး မလုပ်ပါနှင့်။ ရေကို ပြင်းပြင်းထန်ထန် တစ်မိနစ်သုံးချက် (၃ မိနစ်) ပြုတ်ပါ။ အသုံးမပြုမီ ရေအေးအောင် ခဏစောင့်ပါ။ မပြုတ်ထားသော ရေဖြင့် ပြုလုပ်ထားသည့် ရေခဲကို မသုံးပါနှင့်။ ကလေးအား နို့မှုန့်ဖြင့် ကျွေးမည့်အခါ အသုံးပြုရန် ပြင်ဆင်ပြီးသား နို့မှုန့်ကိုသာ သုံးပါ။ အိမ်မွေးတိရစ္ဆာန်များ မပြုတ်ထားသော ရေမသောက်စေရန် သေချာစေပါ။ [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -449625,6 +450141,10 @@
                 {
                     "text": "[ပို့ဆောင်ရေးအေဂျင်စီ]: [တည်နေရာ] အတွက် 9-1-1 ဆက်သွယ်မှုပျက်ကွက်မှု သတိပေးချက် ထုတ်ပြန်ထားပါသည်။ အရေးပေါ်အခြေအနေဖြစ်ပါက ရဲ၊ မီးသတ်၊ ဆေးဘက်ဆိုင်ရာ သို့မဟုတ် အခြားအရေးပေါ်ဝန်ဆောင်မှုများကို ဒေသဆိုင်ရာ ဖုန်းနံပါတ်များဖြင့် တိုက်ရိုက် ဆက်သွယ်ပါ။ 9-1-1 ကို ခေါ်ဆိုပါက အကူအညီ မရနိုင်ပါ။ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[ပို့ဆောင်ရေးအေဂျင်စီ]: [တည်နေရာ] အတွက် 9-1-1 ဆက်သွယ်မှုပျက်ကွက်မှု သတိပေးချက် ထုတ်ပြန်ထားပါသည်။ အရေးပေါ်အခြေအနေဖြစ်ပါက ရဲ၊ မီးသတ်၊ ဆေးဘက်ဆိုင်ရာ သို့မဟုတ် အခြားအရေးပေါ်ဝန်ဆောင်မှုများကို ဒေသဆိုင်ရာ ဖုန်းနံပါတ်များဖြင့် တိုက်ရိုက် ဆက်သွယ်ပါ။ 9-1-1 ကို ခေါ်ဆိုပါက ကူညီမှု မရနိုင်ပါ။ [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449669,6 +450189,10 @@
                 {
                     "text": "[หน่วยงานที่ส่ง]: ประกาศภาวะฉุกเฉินจากน้ำท่วมฉับพลัน มีผลบังคับใช้สำหรับ [สถานที่] จนถึง [เวลา] นี่เป็นสถานการณ์ที่อันตรายอย่างยิ่งและอาจคุกคามชีวิต อย่าพยายามเดินทาง เว้นแต่คุณกำลังหนีออกจากพื้นที่ที่อาจเกิดน้ำท่วม หรือได้รับคำสั่งให้อพยพ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[หน่วยงานที่ส่ง]: ประกาศภาวะฉุกเฉินจากน้ำท่วมฉับพลัน มีผลบังคับใช้สำหรับ [สถานที่] จนถึง [เวลา] นี่เป็นสถานการณ์ที่อันตรายอย่างยิ่งและอาจคุกคามชีวิต อย่าพยายามเดินทาง เว้นแต่คุณกำลังหนีออกจากพื้นที่ที่อาจเกิดน้ำท่วม หรือได้รับคำสั่งให้อพยพ [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449711,6 +450235,10 @@
                 {
                     "text": "[หน่วยงานที่ส่ง]: คำเตือนลมแรงสุดขีด มีผลบังคับใช้สำหรับ [สถานที่] เนื่องจากมีความเสี่ยงทันทีจากลมที่อาจคุกคามชีวิต จนถึง [เวลา]. ให้หาที่หลบภัยทันทีในห้องด้านในของอาคารที่มั่นคง และอยู่ห่างจากหน้าต่าง ป้องกันศีรษะจากวัตถุที่ปลิวมา อย่าออกไปข้างนอกแม้ลมจะสงบลง! ลมจะกลับมาเป็นอันตรายอย่างรวดเร็ว [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[หน่วยงานที่ส่ง]: คำเตือนลมแรงสุดขีด มีผลบังคับใช้สำหรับ [สถานที่] เนื่องจากมีความเสี่ยงทันทีจากลมที่อาจคุกคามชีวิต จนถึง [เวลา]. ให้หาที่หลบภัยทันทีในห้องด้านในของอาคารที่มั่นคง และอยู่ห่างจากหน้าต่าง ป้องกันศีรษะจากวัตถุที่ปลิวมา อย่าออกไปข้างนอกแม้ลมจะสงบลง! ลมจะกลับมาเป็นอันตรายได้อย่างรวดเร็ว [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449753,6 +450281,10 @@
                 {
                     "text": "[หน่วยงานที่ส่ง]: คำเตือนเกี่ยวกับไฟไหม้ใน [สถานที่] มีผลจนถึง [เวลา]. ให้พาครอบครัวและสัตว์เลี้ยงอพยพทันที อย่าล่าช้า ทัศนวิสัยในพื้นที่จะลดลง และถนนอาจถูกปิดกั้น หากไม่ออกจากพื้นที่ทันที คุณอาจถูกติดอยู่ ได้รับบาดเจ็บ หรือเสียชีวิต โปรดออกจากพื้นที่ใกล้ [สถานที่] เตรียมตัวรับมือกับทัศนวิสัยที่ลดลง ควันหนาทึบ และหายใจลำบาก ขับรถด้วยความระมัดระวัง สังเกตเจ้าหน้าที่ความปลอดภัยสาธารณะที่ปฏิบัติงานในพื้นที่ และปฏิบัติตามคำสั่งของพวกเขา [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[หน่วยงานที่ส่ง]: คำเตือนเกี่ยวกับไฟไหม้ใน [สถานที่] มีผลจนถึง [เวลา]. ให้พาครอบครัวและสัตว์เลี้ยงอพยพทันที อย่าล่าช้า ทัศนวิสัยในพื้นที่ดังกล่าวจะลดลง และถนนอาจถูกปิดกั้น หากไม่ออกจากพื้นที่ทันที คุณอาจถูกติดอยู่ ได้รับบาดเจ็บ หรือเสียชีวิต โปรดออกจากพื้นที่ใกล้ [สถานที่] เตรียมตัวรับมือกับทัศนวิสัยที่ลดลง ควันหนาทึบ และหายใจลำบาก โปรดระมัดระวังขณะขับรถ สังเกตเจ้าหน้าที่ความปลอดภัยสาธารณะที่ปฏิบัติงานในพื้นที่ดังกล่าว และปฏิบัติตามคำสั่งของพวกเขา [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -449795,6 +450327,10 @@
                 {
                     "text": "[หน่วยงานที่ออกประกาศ]: ได้ออกประกาศเตือนให้ต้มน้ำก่อนดื่มสำหรับ [สถานที่] และมีผลบังคับใช้จนถึง [เวลา] น้ำในชุมชนของคุณอาจทำให้คุณป่วยได้ โปรดใช้น้ำดื่มบรรจุขวดหากมีอยู่ อย่าดื่มน้ำจากก๊อกหรือน้ำที่ผ่านเครื่องกรองน้ำ อย่าใช้ทำอาหาร อย่าใช้แปรงฟัน และอย่าใช้ทำความสะอาดบ้าน จนกว่าจะต้มน้ำให้เดือดพล่านเป็นเวลาสามนาที ให้รอให้น้ำเย็นลงก่อนใช้งาน อย่าใช้น้ำแข็งที่ทำจากน้ำที่ยังไม่ต้มให้เดือด หากท่านใช้นมผงสำหรับเด็ก ให้ใช้นมผงแบบพร้อมใช้ และตรวจสอบให้แน่ใจว่าสัตว์เลี้ยงไม่ดื่มน้ำที่ยังไม่ต้มให้เดือด [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[หน่วยงานที่ออกประกาศ]: ได้ออกประกาศเตือนให้ต้มน้ำก่อนดื่มสำหรับ [สถานที่] และมีผลบังคับใช้จนถึง [เวลา] น้ำในชุมชนของคุณอาจทำให้คุณป่วยได้ โปรดใช้น้ำดื่มบรรจุขวดหากมีอยู่ อย่าดื่มน้ำจากก๊อกหรือน้ำกรอง อย่าใช้ทำอาหาร อย่าใช้แปรงฟัน และอย่าใช้ทำความสะอาดบ้านด้วยน้ำจากก๊อกหรือน้ำกรอง จนกว่าจะต้มให้เดือดสนิทเป็นเวลาสามนาที ให้รอให้น้ำเย็นลงก่อนใช้ อย่าใช้น้ำแข็งที่ทำจากน้ำที่ยังไม่ต้มให้เดือด หากท่านใช้นมผงสำหรับเด็ก ให้ใช้นมผงแบบพร้อมใช้ และตรวจสอบให้แน่ใจว่าสัตว์เลี้ยงไม่ดื่มน้ำที่ยังไม่ต้มให้เดือด [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -449837,6 +450373,10 @@
                 {
                     "text": "[หน่วยงานที่ส่ง]: มีคำเตือนเกี่ยวกับความขัดข้องของระบบ 9-1-1 สำหรับ [สถานที่] ในกรณีฉุกเฉิน โปรดติดต่อตำรวจ หน่วยดับเพลิง หน่วยแพทย์ หรือบริการฉุกเฉินอื่น ๆ โดยตรงผ่านหมายเลขโทรศัพท์ท้องถิ่นของพวกเขา หากท่านโทรไปยังหมายเลข 9-1-1 ท่านอาจไม่ได้รับความช่วยเหลือ [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[หน่วยงานที่ส่ง]: มีคำเตือนเกี่ยวกับความขัดข้องของระบบ 9-1-1 สำหรับ [สถานที่] ในกรณีฉุกเฉิน โปรดติดต่อตำรวจ หน่วยดับเพลิง หน่วยแพทย์ หรือบริการฉุกเฉินอื่น ๆ โดยตรงผ่านหมายเลขโทรศัพท์ท้องถิ่นของพวกเขา หากท่านโทรไปยัง 9-1-1 ท่านอาจไม่ได้รับความช่วยเหลือ [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449854,6 +450394,10 @@
                 {
                     "text": "[প্রেরক সংস্থা]: [অবস্থান]-এ [সময়] পর্যন্ত হঠাৎ বন্যা জরুরি অবস্থা কার্যকর রয়েছে। এটি অত্যন্ত বিপজ্জনক এবং প্রাণঘাতী পরিস্থিতি। যদি আপনি এমন কোনো এলাকা থেকে পালাচ্ছেন না যেখানে বন্যা হতে পারে বা আপনার বিরুদ্ধে কোনো স্থানত্যাগের আদেশ না থাকে, তবে ভ্রমণের চেষ্টা করবেন না। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[প্রেরক সংস্থা]: [অবস্থান]-এ [সময়] পর্যন্ত হঠাৎ বন্যা জরুরি অবস্থা কার্যকর রয়েছে। এটি অত্যন্ত বিপজ্জনক এবং প্রাণঘাতী পরিস্থিতি। যদি আপনি এমন কোনো এলাকা থেকে পালাচ্ছেন না যেখানে বন্যা হতে পারে বা আপনার বিরুদ্ধে কোনো স্থানত্যাগের আদেশ না থাকে, তবে ভ্রমণের চেষ্টা করবেন না। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449864,6 +450408,10 @@
                 {
                     "text": "[প্রেরক সংস্থা]: [অবস্থান]-এ জীবনহানিকর ঝড়ের তীব্র ঝুঁকির কারণে [সময়] পর্যন্ত একটি চরম বাতাস সতর্কতা জারি করা হয়েছে। এখনই একটি মজবুত ভবনের অভ্যন্তরীণ কোনো কক্ষে, জানালার থেকে দূরে আশ্রয় নিন। উড়ে আসা বস্তু থেকে আপনার মাথা রক্ষা করুন। বাতাস শান্ত হলেও বাইরে যাবেন না! বাতাস দ্রুত আবার বিপজ্জনক হয়ে উঠবে। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[প্রেরক সংস্থা]: [অবস্থান]-এ জীবনহানিকর ঝড়ের তীব্র ঝুঁকির কারণে [সময়] পর্যন্ত একটি চরম বাতাস সতর্কতা জারি করা হয়েছে। এখনই একটি মজবুত ভবনের অভ্যন্তরীণ কোনো কক্ষে, জানালার থেকে দূরে আশ্রয় নিন। উড়ে আসা বস্তু থেকে আপনার মাথা রক্ষা করুন। বাতাস শান্ত হলেও বাইরে যাবেন না! বাতাস দ্রুত আবার বিপজ্জনক হয়ে উঠবে। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449874,6 +450422,10 @@
                 {
                     "text": "[SENDING AGENCY]: [LOCATION]-এ আগুন সতর্কতা [TIME] পর্যন্ত বলবৎ রয়েছে। আপনার পরিবার ও পোষ্যদের এখনই সরিয়ে নিন, দেরি করবেন না। এলাকায় দৃশ্যমানতা কমে যাবে এবং রাস্তাগুলো বন্ধ হয়ে যেতে পারে। যদি আপনি এখনই বের না হন, আপনি আটকা পড়তে, আহত হতে বা নিহত হতে পারেন। [LOCATION]-এর আশেপাশের এলাকা ছেড়ে যান। দৃশ্যমানতা কমে যাওয়া, প্রবল ধোঁয়া এবং শ্বাসপ্রশ্বাসে অসুবিধা আশা করুন। গাড়ি চালানোর সময় সতর্ক থাকুন। এলাকায় কাজরত জনসুরক্ষা কর্মীদের দিকে নজর রাখুন এবং তাদের নির্দেশনা অনুসরণ করুন। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[SENDING AGENCY]: [LOCATION]-এ আগুন সতর্কতা [TIME] পর্যন্ত বলবৎ রয়েছে। আপনার পরিবার ও পোষ্যদের এখনই সরিয়ে নিন, দেরি করবেন না। এলাকায় দৃশ্যমানতা কমে যাবে এবং রাস্তাগুলো বন্ধ হয়ে যেতে পারে। যদি আপনি এখনই বের না হন, আপনি আটকা পড়তে, আহত হতে বা নিহত হতে পারেন। [LOCATION]-এর আশেপাশের এলাকা ছেড়ে যান। দৃশ্যমানতা কমে যাওয়া, প্রবল ধোঁয়া এবং শ্বাসপ্রশ্বাসে অসুবিধা আশা করুন। গাড়ি চালানোর সময় সতর্ক থাকুন। এলাকায় কাজরত জনসুরক্ষা কর্মীদের দিকে নজর রাখুন এবং তাদের নির্দেশনা অনুসরণ করুন। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -449884,6 +450436,10 @@
                 {
                     "text": "[প্রেরক সংস্থা]: [অবস্থান]-এ পানির ফুটানোর সতর্কতা জারি করা হয়েছে এবং এটি [সময়] পর্যন্ত বলবৎ থাকবে। আপনার এলাকায় থাকা পানি আপনাকে অসুস্থ করে দিতে পারে। বোতলজাত পানি ব্যবহার করুন, যদি তা পাওয়া যায়। নল বা ফিল্টার করা পানি ফুটিয়ে না নিয়ে পান করবেন না, রান্না করবেন না, দাঁত ব্রাশ করবেন না বা বাড়ি পরিষ্কার করবেন না। পানি তিন মিনিট ধরে ভালোভাবে ফোটান। ব্যবহারের আগে পানি ঠান্ডা হতে দিন। ফুটিয়ে না নেওয়া পানি দিয়ে তৈরি বরফ ব্যবহার করবেন না। যদি আপনি শিশুকে খাওয়ানোর জন্য ফর্মুলা ব্যবহার করেন, তাহলে প্রস্তুত-ব্যবহারযোগ্য ফর্মুলা ব্যবহার করুন। নিশ্চিত করুন যে পোষা প্রাণীরা ফুটিয়ে না নেওয়া পানি পান না করে। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[প্রেরক সংস্থা]: [অবস্থান]-এ পানির ফুটানোর সতর্কতা জারি করা হয়েছে এবং এটি [সময়] পর্যন্ত বলবৎ থাকবে। আপনার এলাকায় থাকা পানি আপনাকে অসুস্থ করে দিতে পারে। বোতলজাত পানি ব্যবহার করুন, যদি তা পাওয়া যায়। নল বা ফিল্টার করা পানি ফুটিয়ে না নিয়ে পান করবেন না, রান্না করবেন না, দাঁত ব্রাশ করবেন না বা বাড়ি পরিষ্কার করবেন না। পানি তিন মিনিট ধরে ভালোভাবে ফুটিয়ে নিন। ব্যবহারের আগে পানি ঠান্ডা হতে দিন। ফুটিয়ে না নেওয়া পানি দিয়ে তৈরি বরফ ব্যবহার করবেন না। যদি আপনি শিশুকে খাওয়ানোর জন্য ফর্মুলা ব্যবহার করেন, তাহলে প্রস্তুত-ব্যবহারযোগ্য ফর্মুলা ব্যবহার করুন। নিশ্চিত করুন যে পোষা প্রাণীরা ফুটিয়ে না নেওয়া পানি পান না করে। [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -449894,6 +450450,10 @@
                 {
                     "text": "[প্রেরক সংস্থা]: [অবস্থান]-এর জন্য ৯-১-১ বিভ্রাট সতর্কতা কার্যকর রয়েছে। জরুরি পরিস্থিতিতে সরাসরি পুলিশ, দমকল, চিকিৎসা বা অন্যান্য জরুরি সেবার স্থানীয় ফোন নম্বরে যোগাযোগ করুন। যদি আপনি 9-1-1 ডায়াল করেন, সাহায্য নাও পেতে পারেন। [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[প্রেরক সংস্থা]: [অবস্থান]-এর জন্য ৯-১-১ বিভ্রাট সতর্কতা কার্যকর রয়েছে। জরুরি পরিস্থিতিতে সরাসরি পুলিশ, দমকল, চিকিৎসা বা অন্যান্য জরুরি সেবার স্থানীয় ফোন নম্বরে যোগাযোগ করুন। যদি আপনি 9-1-1 ডায়াল করেন, সাহায্য নাও পেতে পারেন। [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449916,6 +450476,10 @@
                 {
                     "text": "[EBONGISELI OYO ETINDI]: LIKAMBO YA LISITA YA MBANGU ezali na [ESIKA] kino [NGONGA]. Oyo ezali likambo ya likama mingi mpenza mpe ekoki koboma bomoi. Komeka te kosala mobembo, longola sé soki ozali kokima esika oyo ekoki kozinda na mai to soki bazwi mokano ya kolongola bato. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[EBONGISELI OYO ETINDI]: LIKAMBO YA MBANGU YA NDENGE: MPUKA YA MBANGU ezali na [ESIKA] kino [NGONGA]. Oyo ezali likambo ya likama mingi mpenza mpe ekoki koboma bomoi. Komeka te kosala mobembo, longola sé soki ozali kokima esika oyo ekoki kozinda na mai to soki bazwi mokano ya kolongola bato. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449926,6 +450490,10 @@
                 {
                     "text": "[EBONGISELI OYO EZALI KOPESA LISOLO]: LIKEBISI MAKASI MPO NA MOPEPE ya makasi ezali mpo na [ESIKA] mpo na likama ya mbala moko ya mopepe oyo ekoki koboma bato kino [NGONGA]. Bókima SIKOYO na kati ya shambre ya ndako ya makasi, mosika na maninisa. Bóbátela mitó na bino liboso ya biloko oyo ezali kopumbwa. BÓKÓMÁ na libándá TE ata soki mopɛpɛ ekitani! Mopɛpɛ ekozonga lisusu na makasi na lombangu. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[EBONGISELI OYO EZALI KOTINDIKA]: LIKEBISI MAKASI MPO NA MOPEPE ya makasi ezali mpo na [ESIKA] mpo na likama ya mbala moko ya mopepe oyo ekoki koboma bato kino [NGONGA]. Bómibomba SIKOYO na kati ya ndako ya makasi, mosika na maninisa. Bóbátela motó na bino liboso ya biloko oyo ezali kopumbwa. BÓKÓMÁ na libándá TE ata soki mopɛpɛ ekitani! Mopɛpɛ ekozonga lisusu na makasi na lombangu. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449936,6 +450504,10 @@
                 {
                     "text": "[EBONGISELI OYO EZALI KOTINDA]: LIKEBISI YA MOTO na [ESIKA] ezali kosala kino [NGONGA]. Bimisa libota na yo mpe banyama na yo ya ndako sik'oyo, kozongisa nsima te. Komona na esika yango ekokita mpe banzela ekoki kokangama. Soki obimi sikoyo te, okoki kokangama, kozoka, to kokufa. BIMA na bisika oyo ezali pene na [LOCATION]. Zela komona moke, milinga mingi, mpe mpasi ya kopema. Keba ntango ozali kokumba. Talá basali ya bokengi ya bato oyo bazali na esika yango mpe landa malako na bango. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[EBONGISELI OYO EZALI KOTINDA]: LIKEBISI YA MOTO na [ESIKA] ezali kosala kino [NGONGA]. Bimisa libota na yo mpe banyama na yo sik'oyo, kozongisa nsima te. Komona na esika yango ekokita mpe banzela ekoki kokangama. Soki obimi sikoyo te, okoki kokangama, kozoka, to kokufa. BIMA na bisika oyo ezali pene na [ESIKA]. Zela komona moke, milinga mingi, mpe mpasi ya kopema. Keba ntango ozali kokumba. Talá basali ya bokengi ya bato oyo bazali na esika yango mpe landa malako na bango. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -449946,6 +450518,10 @@
                 {
                     "text": "[EBONGISELI]: LIKEBISI YA KOTOKISA MAI EBIMISAMI mpo na [ESIKA] mpe ekowumela kino [NGONGA]. Mai ya robine na mboka na bino ekoki kobɛbisela bino nzoto. Salelá mai ya bidɔ soki ezali. Komela te, kolamba na yango te, kosukola mino na yango te, to kopɛtɔla ndako na yango te mayi ya robine to mayi ya filtre kino okolɛmbisa yango. Tika mayi etɔka makasi na mɔ́tɔ na boumeli ya MINITI MISATO. Tika mayi epola liboso ya kosalela yango. Kosalela te glace oyo esalemi na mayi oyo elambi te. Soki osalelaka miliki ya poudre mpo na koleisa mwana na yo, salelá oyo esilá kobongisama. Salá ete banyama na yo ya ndako bámela te mayi oyo elambi te. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[EBONGISELI]: LIKEBISI YA KOTOKISA MAI EBIMISAMI mpo na [ESIKA] mpe ekowumela kino [NGONGA]. Mai ya robine na mboka na bino ekoki kobebisa nzoto na bino. Salelá mai ya milangi soki ezali. Komela te, kolamba na yango te, kosukola mino na yango te, to kopɛtɔla ndako na yango te mayi ya robine to mayi ya filtre kino oko tɔkisa yango. Tɔkisa mayi makasi na mɔtɔ mpo etɔka malamu na boumeli ya MINITI MISATO. Tika mayi malɛmba liboso ya kosalela yango. Kosalela te glace oyo esalemi na mayi oyo elambi te. Soki osalelaka miliki ya poudre mpo na koleisa mwana na yo, salela oyo esila kobongisama. Salá ete banyama na yo ya ndako bámela te mayi oyo elambi te. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -449956,6 +450532,10 @@
                 {
                     "text": "[EBONGISELI YA KOTINDA]: Liyebisi ya bokati ya 9-1-1 ezali kosala mpo na [ESIKA]. Soki likambo ya lombangu ezali, benga polisi, babomi-mɔ́tɔ, basungi ya bokolɔngɔnɔ, to misala misusu ya lombangu mbala moko na banimero na bango ya telefone ya esika na bino. Soki obengi 9-1-1, ekoki kozala ete ozwa lisalisi te. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[EBONGISELI YA KOTINDA]: Liyebisi ya bokati ya 9-1-1 ezali kosala mpo na [ESIKA]. Soki likambo ya lombangu ezali, benga polisi, babomi-mɔ́tɔ, basungi ya bokolɔngɔnɔ, to misala misusu ya lombangu mbala moko na banimero na bango ya telefone ya esika na bino. Soki obengi 9-1-1, ekoki kozala ete okozwa lisalisi te. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -449973,6 +450553,10 @@
                 {
                     "text": "[അയച്ച ഏജൻസി]: [സ്ഥലം]-ൽ വെള്ളപ്പൊക്ക അടിയന്തരാവസ്ഥ [സമയം] വരെ പ്രാബല്യത്തിൽ. ഇത് അതീവ അപകടകരവും ജീവന് ഭീഷണിയുമായ ഒരു സാഹചര്യമാണ്. വെള്ളപ്പൊക്കമുണ്ടാകാൻ സാധ്യതയുള്ള പ്രദേശത്ത് നിന്ന് ഒഴിഞ്ഞുപോവുകയോ ഒഴിപ്പിക്കൽ ഉത്തരവ് നിലവിലുണ്ടായിരിക്കുകയോ ചെയ്യുന്നില്ലെങ്കിൽ യാത്ര ചെയ്യാൻ ശ്രമിക്കരുത്. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[അയച്ച ഏജൻസി]: [സ്ഥലം]-ൽ വെള്ളപ്പൊക്ക അടിയന്തരാവസ്ഥ [സമയം] വരെ പ്രാബല്യത്തിലാണ്. ഇത് അതീവ അപകടകരവും ജീവന് ഭീഷണിയുമുള്ള ഒരു സാഹചര്യമാണ്. വെള്ളപ്പൊക്കമുണ്ടാകാൻ സാധ്യതയുള്ള പ്രദേശത്ത് നിന്ന് രക്ഷപ്പെടുകയോ ഒഴിപ്പിക്കൽ ഉത്തരവ് നിലവിലുണ്ടെങ്കിലോ അല്ലാതെ യാത്ര ചെയ്യാൻ ശ്രമിക്കരുത്. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -449983,6 +450567,10 @@
                 {
                     "text": "[അയച്ച ഏജൻസി]: [സ്ഥലം]-ൽ, ജീവന് ഭീഷണിയായേക്കാവുന്ന ശക്തമായ കാറ്റിനുള്ള ഉടനടിയുള്ള അപകടസാധ്യത കാരണം, [സമയം] വരെ ഒരു കടുത്ത കാറ്റു മുന്നറിയിപ്പ് നിലവിലുണ്ട്. ഉറപ്പുള്ള കെട്ടിടത്തിൻ്റെ ഉൾവശത്തുള്ള മുറിയിൽ, ജനലുകളിൽ നിന്ന് മാറി ഉടൻ തന്നെ അഭയം തേടുക. പറക്കുന്ന വസ്തുക്കളിൽ നിന്ന് നിങ്ങളുടെ തല സംരക്ഷിക്കുക. കാറ്റ് ശാന്തമായാലും പുറത്തുപോകരുത്! കാറ്റ് പെട്ടെന്ന് വീണ്ടും അപകടകരമാകും. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[അയച്ച ഏജൻസി]: [സ്ഥലം]-ൽ, ജീവന് ഭീഷണിയായേക്കാവുന്ന ശക്തമായ കാറ്റിനുള്ള ഉടനടിയുള്ള അപകടസാധ്യത കാരണം, [സമയം] വരെ ഒരു കടുത്ത കാറ്റു മുന്നറിയിപ്പ് നിലവിലുണ്ട്. ഉറപ്പുള്ള കെട്ടിടത്തിൻ്റെ അകത്തുള്ള മുറിയിൽ, ജനലുകളിൽ നിന്ന് അകന്ന് ഉടൻ തന്നെ അഭയം തേടുക. പറക്കുന്ന വസ്തുക്കളിൽ നിന്ന് നിങ്ങളുടെ തല സംരക്ഷിക്കുക. കാറ്റ് ശാന്തമായാലും പുറത്തുപോകരുത്! കാറ്റ് പെട്ടെന്ന് വീണ്ടും അപകടകരമാകും. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -449993,6 +450581,10 @@
                 {
                     "text": "[SENDING AGENCY]: [LOCATION]-ൽ തീപിടുത്തം സംബന്ധിച്ച മുന്നറിയിപ്പ് [TIME] വരെ പ്രാബല്യത്തിൽ. നിങ്ങളുടെ കുടുംബത്തെയും വളർത്തുമൃഗങ്ങളെയും ഉടൻ ഒഴിപ്പിക്കുക, വൈകരുത്. പ്രദേശത്തെ കാഴ്ചാശേഷി കുറയുകയും റോഡുകൾ തടസ്സപ്പെടുകയും ചെയ്യാം. നിങ്ങൾ ഇപ്പോൾ തന്നെ ഒഴിഞ്ഞുപോയില്ലെങ്കിൽ, കുടുങ്ങിപ്പോകാനോ പരിക്കേൽക്കാനോ മരിക്കാനോ സാധ്യതയുണ്ട്. [സ്ഥലം]-ന് സമീപമുള്ള പ്രദേശങ്ങളിൽ നിന്ന് ഒഴിഞ്ഞുപോകുക. കാഴ്ചാശേഷി കുറയാനും, കനത്ത പുകയുണ്ടാകാനും, ശ്വാസം എടുക്കാൻ ബുദ്ധിമുട്ടുണ്ടാകാനും സാധ്യതയുണ്ട്. വാഹനമോടിക്കുമ്പോൾ ശ്രദ്ധിക്കുക. പ്രദേശത്ത് പ്രവർത്തിക്കുന്ന പൊതുസുരക്ഷാ ഉദ്യോഗസ്ഥരെ ശ്രദ്ധിക്കുകയും അവരുടെ നിർദ്ദേശങ്ങൾ പാലിക്കുകയും ചെയ്യുക. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[SENDING AGENCY]: [LOCATION]-ൽ തീപിടുത്തം സംബന്ധിച്ച മുന്നറിയിപ്പ് [TIME] വരെ പ്രാബല്യത്തിൽ. നിങ്ങളുടെ കുടുംബത്തെയും വളർത്തുമൃഗങ്ങളെയും ഉടൻ തന്നെ ഒഴിപ്പിക്കുക, വൈകരുത്. പ്രദേശത്തെ കാഴ്ചാശേഷി കുറയുകയും റോഡുകൾ തടസ്സപ്പെടുകയും ചെയ്യാം. നിങ്ങൾ ഇപ്പോൾ ഒഴിഞ്ഞുപോയില്ലെങ്കിൽ, കുടുങ്ങിപ്പോകാനോ പരിക്കേൽക്കാനോ മരിക്കാനോ സാധ്യതയുണ്ട്. [സ്ഥലം]-ന് സമീപമുള്ള പ്രദേശങ്ങളിൽ നിന്ന് ഒഴിഞ്ഞുപോകുക. കാഴ്ചാശേഷി കുറയാനും, കനത്ത പുകയുണ്ടാകാനും, ശ്വാസം എടുക്കാൻ ബുദ്ധിമുട്ടുണ്ടാകാനും സാധ്യതയുണ്ട്. വാഹനമോടിക്കുമ്പോൾ ശ്രദ്ധിക്കുക. പ്രദേശത്ത് പ്രവർത്തിക്കുന്ന പൊതുസുരക്ഷാ ഉദ്യോഗസ്ഥരെ ശ്രദ്ധിക്കുകയും അവരുടെ നിർദ്ദേശങ്ങൾ പാലിക്കുകയും ചെയ്യുക. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -450003,6 +450595,10 @@
                 {
                     "text": "[അയയ്‌ക്കുന്ന ഏജൻസി]: [സ്ഥലം]-ൽ ജലം തിളപ്പിച്ച് മാത്രം ഉപയോഗിക്കാനുള്ള മുന്നറിയിപ്പ് നൽകിയിരിക്കുന്നു. ഇത് [സമയം] വരെ പ്രാബല്യത്തിൽ തുടരും. നിങ്ങളുടെ പ്രദേശത്തെ വെള്ളം ആരോഗ്യത്തിന് ഹാനികരമായേക്കാം. കുപ്പിവെള്ളം ലഭ്യമെങ്കിൽ അത് ഉപയോഗിക്കുക. കുടിവെള്ളം അല്ലെങ്കിൽ ഫിൽട്ടർ ചെയ്ത വെള്ളം തിളപ്പിക്കുന്നത് വരെ കുടിക്കുകയോ, പാചകം ചെയ്യുകയോ, പല്ല് തേയ്ക്കുകയോ, വീട് വൃത്തിയാക്കുകയോ ചെയ്യരുത്. വെള്ളം നന്നായി തിളപ്പിച്ച് മൂന്ന് മിനിറ്റ് നേരം വേവിക്കുക. ഉപയോഗിക്കുന്നതിന് മുമ്പ് വെള്ളം തണുക്കാൻ അനുവദിക്കുക. തിളപ്പിക്കാത്ത വെള്ളത്തിൽ നിന്ന് ഉണ്ടാക്കിയ ഐസ് ഉപയോഗിക്കരുത്. നിങ്ങളുടെ കുഞ്ഞിന് പാൽ നൽകാൻ ഫോർമുല ഉപയോഗിക്കുകയാണെങ്കിൽ, തയ്യാറാക്കിയ ഫോർമുല ഉപയോഗിക്കുക. വളർത്തുമൃഗങ്ങൾ തിളപ്പിക്കാത്ത വെള്ളം കുടിക്കുന്നില്ലെന്ന് ഉറപ്പാക്കുക. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[അയയ്‌ക്കുന്ന ഏജൻസി]: [സ്ഥലം]-ൽ ജലം തിളപ്പിക്കാനുള്ള മുന്നറിയിപ്പ് നൽകിയിരിക്കുന്നു, ഇത് [സമയം] വരെ പ്രാബല്യത്തിൽ തുടരും. നിങ്ങളുടെ സമൂഹത്തിലെ വെള്ളം നിങ്ങളെ അസുഖബാധിതരാക്കിയേക്കാം. ലഭ്യമെങ്കിൽ കുപ്പിവെള്ളം ഉപയോഗിക്കുക. കുടിവെള്ളം അല്ലെങ്കിൽ ഫിൽട്ടർ ചെയ്ത വെള്ളം തിളപ്പിക്കുന്നത് വരെ കുടിക്കുകയോ, പാചകം ചെയ്യുകയോ, പല്ല് തേയ്ക്കുകയോ, വീട് വൃത്തിയാക്കുകയോ ചെയ്യരുത്. വെള്ളം നന്നായി തിളപ്പിച്ച് മൂന്ന് മിനിറ്റ് നേരം വേവിക്കുക. ഉപയോഗിക്കുന്നതിന് മുമ്പ് വെള്ളം തണുക്കാൻ അനുവദിക്കുക. തിളപ്പിക്കാത്ത വെള്ളത്തിൽ നിന്ന് ഉണ്ടാക്കിയ ഐസ് ഉപയോഗിക്കരുത്. നിങ്ങളുടെ കുഞ്ഞിന് പാൽ കൊടുക്കാൻ ഫോർമുല ഉപയോഗിക്കുകയാണെങ്കിൽ, തയ്യാറാക്കിയ ഫോർമുല ഉപയോഗിക്കുക. വളർത്തുമൃഗങ്ങൾ തിളപ്പിക്കാത്ത വെള്ളം കുടിക്കുന്നില്ലെന്ന് ഉറപ്പാക്കുക. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -450013,6 +450609,10 @@
                 {
                     "text": "[അയയ്‌ക്കുന്ന ഏജൻസി]: [സ്ഥലം]-ൽ 9-1-1 സേവന തടസ്സ അറിയിപ്പ് നിലവിലുണ്ട്. അടിയന്തര സാഹചര്യങ്ങളിൽ പോലീസ്, അഗ്നിശമന സേവനം, മെഡിക്കൽ, അല്ലെങ്കിൽ മറ്റ് അടിയന്തര സേവനങ്ങൾ എന്നിവയെ അവരുടെ പ്രാദേശിക ഫോൺ നമ്പറുകളിൽ നേരിട്ട് ബന്ധപ്പെടുക. നിങ്ങൾ 9-1-1 ഡയൽ ചെയ്താൽ, നിങ്ങൾക്ക് സഹായം ലഭിച്ചേക്കില്ല. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[അയയ്‌ക്കുന്ന ഏജൻസി]: [സ്ഥലം]-ൽ 9-1-1 സേവന തടസ്സ അറിയിപ്പ് നിലവിലുണ്ട്. അടിയന്തര സാഹചര്യങ്ങളിൽ പോലീസ്, അഗ്നിശമന സേവനം, മെഡിക്കൽ, അല്ലെങ്കിൽ മറ്റ് അടിയന്തര സേവനങ്ങളെ അവരുടെ പ്രാദേശിക ഫോൺ നമ്പറുകളിൽ നേരിട്ട് ബന്ധപ്പെടുക. നിങ്ങൾ 9-1-1 ഡയൽ ചെയ്താൽ, നിങ്ങൾക്ക് സഹായം ലഭിച്ചേക്കില്ല. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -450025,6 +450625,10 @@
                 {
                     "text": "[प्रसारण संस्था]: [स्थान] साठी [वेळ] पर्यंत अचानक पूर आपत्कालीन परिस्थिती लागू आहे. ही अत्यंत धोकादायक आणि जीवघेणी परिस्थिती आहे. पूर येऊ शकणाऱ्या भागातून पळून जात असाल किंवा स्थलांतर आदेशाखाली असाल, तरच प्रवास करण्याचा प्रयत्न करा; अन्यथा प्रवास करू नका. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रसारण संस्था]: [स्थान] साठी [वेळ] पर्यंत अचानक पूर आपत्कालीन परिस्थिती लागू आहे. ही अत्यंत धोकादायक आणि जीवघेणी परिस्थिती आहे. जर तुम्ही पूर येऊ शकणाऱ्या भागातून पळून जात असाल किंवा स्थलांतर आदेशाखाली असाल, तरच प्रवास करण्याचा प्रयत्न करा; अन्यथा प्रवास करू नका. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -450035,6 +450639,10 @@
                 {
                     "text": "[प्रसारण संस्था]: [स्थान] साठी जीवघेण्या वाऱ्यांचा तात्काळ धोका असल्यामुळे [वेळ] पर्यंत तीव्र वारा चेतावणी लागू आहे.  आताच मजबूत इमारतीच्या आतील खोलीत, खिडक्यांपासून दूर आश्रय घ्या. उडणाऱ्या वस्तूंपासून आपले डोके सुरक्षित ठेवा. वाऱ्याचा वेग कमी झाला तरी बाहेर जाऊ नका! वारा लवकरच पुन्हा धोकादायक होईल. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रसारण संस्था]: [स्थान] साठी जीवघेण्या वाऱ्यांचा तात्काळ धोका असल्यामुळे [वेळ] पर्यंत तीव्र वारा चेतावणी लागू आहे. ताबडतोब मजबूत इमारतीच्या आतील खोलीत, खिडक्यांपासून दूर सुरक्षित जागा घ्या. उडणाऱ्या वस्तूंपासून आपले डोके सुरक्षित ठेवा. वाऱ्याचा वेग कमी झाला तरी बाहेर जाऊ नका! वारा लवकरच पुन्हा धोकादायक होईल. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -450045,6 +450653,10 @@
                 {
                     "text": "[SENDING AGENCY]: [LOCATION] येथे आग चेतावणी [TIME] पर्यंत लागू आहे. आपल्या कुटुंबाला आणि पाळीव प्राण्यांना ताबडतोब बाहेर काढा, विलंब करू नका. या परिसरातील दृश्यमानता कमी होईल आणि रस्ते अडथळित होऊ शकतात. जर तुम्ही आत्ताच निघून गेलात नाही, तर तुम्ही अडकून, जखमी किंवा ठार होऊ शकता. [LOCATION] जवळील परिसर सोडा. दृश्यमानता कमी होणे, घनदाट धूर आणि श्वास घेण्यात अडचण याची अपेक्षा करा. वाहन चालवताना काळजी घ्या. परिसरात कार्यरत सार्वजनिक सुरक्षा कर्मचाऱ्यांकडे लक्ष द्या आणि त्यांच्या सूचनांचे पालन करा. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[SENDING AGENCY]: [LOCATION] येथे आग चेतावणी [TIME] पर्यंत लागू आहे. आपल्या कुटुंबाला आणि पाळीव प्राण्यांना ताबडतोब बाहेर काढा, विलंब करू नका. या परिसरातील दृश्यमानता कमी होईल आणि रस्ते अडथळित होऊ शकतात. जर तुम्ही आत्ताच निघून गेलात नाही, तर तुम्ही अडकून, जखमी किंवा ठार होऊ शकता. [LOCATION] जवळील परिसर सोडा. दृश्यमानता कमी होणे, घनदाट धूर आणि श्वास घेण्यात अडचण याची अपेक्षा करा. वाहन चालवताना काळजी घ्या. परिसरात कार्यरत सार्वजनिक सुरक्षा कर्मचाऱ्यांकडे लक्ष द्या आणि त्यांच्या सूचनांचे पालन करा. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -450055,6 +450667,10 @@
                 {
                     "text": "[प्रसारण संस्था]: [स्थान] साठी पाणी उकळण्याचा इशारा जारी करण्यात आला आहे आणि तो [वेळ] पर्यंत लागू आहे. आपल्या परिसरातील पाणी आपल्याला आजारी पडू शकते. उपलब्ध असल्यास बाटलीबंद पाणी वापरा. नळाचे किंवा फिल्टर केलेले पाणी उकळले नसेल तोपर्यंत ते पिण्यासाठी, स्वयंपाकासाठी, दात घासण्यासाठी किंवा घर स्वच्छ करण्यासाठी वापरू नका. पाणी तीन मिनिटे जोरदार उकळी आणा. वापरण्यापूर्वी पाणी थंड होऊ द्या. उकळलेले नसलेले पाण्याने बनवलेले बर्फ वापरू नका. जर आपण आपल्या बाळाला फॉर्म्युला देत असाल, तर तयार-वापरण्यायोग्य फॉर्म्युला वापरा. पाळीव प्राणी उकळलेले नसलेले पाणी पिणार नाहीत याची खात्री करा. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रसारण संस्था]: [स्थान] साठी पाणी उकळण्याचा इशारा जारी करण्यात आला आहे आणि तो [वेळ] पर्यंत लागू आहे. आपल्या परिसरातील पाणी आपल्याला आजारी पडू शकते. उपलब्ध असल्यास बाटलीबंद पाणी वापरा. नळाचे किंवा फिल्टर केलेले पाणी उकळले नसेल तोपर्यंत ते पिण्यासाठी, स्वयंपाकासाठी, दात घासण्यासाठी किंवा घर स्वच्छ करण्यासाठी वापरू नका. पाणी तीन मिनिटे जोरदार उकळी आणा. वापरण्यापूर्वी पाणी थंड होऊ द्या. उकळलेले नसलेले पाण्याने बनवलेले बर्फ वापरू नका. जर आपण आपल्या बाळाला फॉर्म्युला देत असाल, तर तयार-वापरण्यायोग्य फॉर्म्युला वापरा. पाळीव प्राणी उकळलेले नसलेले पाणी पिणार नाहीत याची खात्री करा. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -450065,6 +450681,10 @@
                 {
                     "text": "[प्रेषक संस्था]: [स्थान] साठी 9-1-1 सेवा खंडित होण्याची चेतावणी लागू आहे. आपत्कालीन परिस्थितीत पोलिस, अग्निशमन, वैद्यकीय किंवा इतर आपत्कालीन सेवा थेट त्यांच्या स्थानिक फोन क्रमांकावर संपर्क करा. जर तुम्ही 9-1-1 डायल केले, तर तुम्हाला मदत मिळणार नाही. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[प्रेषक संस्था]: [स्थान] साठी 9-1-1 सेवा खंडित होण्याची चेतावणी लागू आहे. आपत्कालीन परिस्थितीत पोलिस, अग्निशमन, वैद्यकीय किंवा इतर आपत्कालीन सेवा थेट त्यांच्या स्थानिक फोन क्रमांकावर संपर्क करा. जर तुम्ही 9-1-1 डायल केले, तर तुम्हाला मदत मिळणार नाही. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         },
@@ -450077,6 +450697,10 @@
                 {
                     "text": "[INHLANGANO ETHUMELA]: ISIMO SOSHUSHUZU OLUSHESHA SISEMTHETHWENI e-[LOCATION] kuze kube ngu-[TIME]. Lesi yisimo esiyingozi kakhulu futhi esibeka impilo engcupheni. Ungazami ukuhamba ngaphandle kokuthi uyabaleka endaweni engase igcwale amanzi noma usaphansi komyalo wokududuzwa. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[INHLANGANO ETHUMELA]: ISIMO SOSHUSHUZU OLUSHESHA SISEMTHETHWENI e-[LOCATION] kuze kube ngu-[TIME]. Lesi yisimo esiyingozi kakhulu futhi esibeka impilo engcupheni. Ungazami ukuhamba ngaphandle kokuthi uyabaleka endaweni engase igcwale amanzi noma useyalelwe ukuba uphume endaweni. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "extreme_wind": [
@@ -450087,6 +450711,10 @@
                 {
                     "text": "[INHLANGANO ETHUMELA]: ISIXWAYISO ESIPHAKEME SOMoya sisebenza e-[LOCATION] ngenxa yengozi esheshayo yemimoya eyingozi empilweni kuze kube ngu-[TIME]. Zifihle MANJE egumbini langaphakathi lesakhiwo esiqinile, kude nefasitela. Vikela ikhanda lakho ezintweni ezindizayo. Ungaphumi ngaphandle noma uma umoya uthule! Umoya uzobuya usibe yingozi ngokushesha. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[INHLANGANO ETHUMELA]: ISIXWAYISO ESIPHAKEME SOMoya sisebenza e-[LOCATION] ngenxa yengozi esheshayo yemimoya eyingozi empilweni kuze kube ngu-[TIME]. Zifihle MANJE egumbini langaphakathi lesakhiwo esiqinile, kude nefasitela. Vikela ikhanda lakho ezintweni ezindizayo. Ungaphumi ngaphandle noma uma umoya uthule! Umoya uzobuya usibe yingozi ngokushesha. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "fire": [
@@ -450097,6 +450725,10 @@
                 {
                     "text": "[INHLANGANO ETHUMELA]: ISIXWAYISO SOMLILO e-[LOCATION] sisebenza kuze kube ngu-[TIME]. Susa umndeni wakho nezilwane zakho manje, ungabambezi. Ukubonakala endaweni kuzoncipha futhi imigwaqo ingavaleka. Uma ungashiyi manje, ungavaleleka, ulimale, noma ubulawe. SHIYA izindawo eziseduze kwe-[LOCATION]. Lindela ukubonakala okuncane, intuthu eningi, nobunzima bokuphefumula. Qaphela uma ushayela. Bheka abasebenzi bezokuphepha komphakathi abasebenza endaweni bese ulandela imiyalelo yabo. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[INHLANGANO ETHUMELA]: ISIXWAYISO SOMLILO e-[LOCATION] sisebenza kuze kube ngu-[TIME]. Susa umndeni wakho nezilwane zakho manje, ungabambezi. Ukubonakala endaweni kuzoncipha futhi imigwaqo ingavaleka. Uma ungashiyi manje, ungavaleleka, ulimale, noma ubulawe. SHIYA izindawo eziseduze kwe-[LOCATION]. Lindela ukubonakala okuncane, intuthu eningi, nobunzima bokuphefumula. Qaphela uma ushayela. Bheka abasebenzi bezokuphepha komphakathi abasebenza endaweni bese ulandela imiyalelo yabo. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "boil_water_notice": [
@@ -450107,6 +450739,10 @@
                 {
                     "text": "[IKHAMPANI YOKUHANJISA AMANZI]: Kukhishiwe isexwayiso sokubilisa amanzi endaweni ethi [LOCATION] futhi sizosebenza kuze kube ngu-[TIME]. Amanzi emphakathini wakho angakubangela isifo. Sebenzisa amanzi abhodleleni uma etholakala. Ungaphuzi, ungapheki ngayo, ungahlanza amazinyo ngayo, noma ungahlanza indlu yakho ngamanzi avela epompini noma ahlungiwe kuze uyibilise. Bilisa amanzi kuze aphenduke umvunguvungu wamanzi imizuzu emithathu. Vumela amanzi apholile ngaphambi kokuwasebenzisa. Ungasebenzisi iqhwa elenziwe ngamanzi angakabiwa. Uma usebenzisa ifomula ukondla ingane yakho, sebenzisa ifomula esele ilungele ukusetshenziswa. Qinisekisa ukuthi izilwane ezifuywayo aziphuzi amanzi angakabiwa. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[IKHAMPANI YOKUHANJISA AMANZI]: Kukhishiwe isexwayiso sokubilisa amanzi endaweni ethi [LOCATION] futhi sizosebenza kuze kube ngu-[TIME]. Amanzi emphakathini wakho angakubangela isifo. Sebenzisa amanzi abhodleleni uma etholakala. Ungaphuzi, ungapheki ngayo, ungahlanza amazinyo ngayo, noma ungahlanza indlu yakho ngamanzi avela epompini noma ahlungiwe kuze uyibilise. Bilisa amanzi kuze aphenduke umvunguvungu wamanzi imizuzu emithathu. Vumela amanzi aphole ngaphambi kokuwasebenzisa. Ungasebenzisi iqhwa elenziwe ngamanzi angakabiwa. Uma usebenzisa ifomula ukondla ingane yakho, sebenzisa ifomula esele ilungele ukusetshenziswa. Qinisekisa ukuthi izilwane ezifuywayo aziphuzi amanzi angakabiwa. [URL]",
+                    "date": "2026-10-16"
                 }
             ],
             "911_outage": [
@@ -450117,6 +450753,10 @@
                 {
                     "text": "[INHLANGANO ETHUMELA]: ISIXWAYISO SOKUPHUTHA KWE-9-1-1 sisebenza e-[LOCATION]. Sicela uxhumane ngqo namaphoyisa, abacimi bomlilo, izinsiza zezokwelapha, noma ezinye izinsiza eziphuthumayo ngenombolo yazo yendawo uma kunesimo esiphuthumayo. Uma ushaya u-9-1-1, kungenzeka ungatholi usizo. [URL]",
                     "date": "2026-09-24"
+                },
+                {
+                    "text": "[INHLANGANO ETHUMELA]: ISIXWAYISO SOKUPHUTHA KWE-9-1-1 sisebenza e-[LOCATION]. Sicela uxhumane ngqo namaphoyisa, abacimi bomlilo, izinsiza zezokwelapha, noma ezinye izinsiza eziphuthumayo ngenombolo yazo yendawo uma kunesimo esiphuthumayo. Uma ushaya u-9-1-1, kungenzeka ungatholi usizo. [URL]",
+                    "date": "2026-10-16"
                 }
             ]
         }
